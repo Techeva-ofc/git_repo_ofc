@@ -1,0 +1,25 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "ofc_Floor_form"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [{
+        "id": "column_0",
+        "label": "Floor Name",
+        "name": "add_floor"
+    }],
+    "considerFilterWhenGetTotal": "",
+    "filters": [],
+    "id": "list_ofc_Floor_form",
+    "name": "List - Create Floor",
+    "order": "",
+    "orderBy": "",
+    "pageSize": 0,
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
+}

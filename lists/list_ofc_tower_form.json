@@ -1,0 +1,37 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "ofc_tower_form"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "id": "column_1",
+            "label": "Tower Name",
+            "name": "tower_name"
+        },
+        {
+            "id": "column_2",
+            "label": "Tower Number",
+            "name": "tower_no"
+        },
+        {
+            "id": "column_3",
+            "label": "Tower Seq No.",
+            "name": "tower_seq_no"
+        }
+    ],
+    "considerFilterWhenGetTotal": "",
+    "filters": [],
+    "id": "list_ofc_tower_form",
+    "name": "List - Create Tower",
+    "order": "",
+    "orderBy": "",
+    "pageSize": 0,
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
+}

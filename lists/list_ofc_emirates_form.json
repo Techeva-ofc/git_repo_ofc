@@ -1,0 +1,25 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "ofc_emirates_form"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [{
+        "id": "column_0",
+        "label": "Emirates Name",
+        "name": "emirates_name"
+    }],
+    "considerFilterWhenGetTotal": "",
+    "filters": [],
+    "id": "list_ofc_emirates_form",
+    "name": "List - Create Emirates Form",
+    "order": "",
+    "orderBy": "",
+    "pageSize": 0,
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
+}
