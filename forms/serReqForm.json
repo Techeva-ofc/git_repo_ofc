@@ -242,7 +242,59 @@
                             "fileType": "",
                             "fileTypeMsg": "Invalid file type",
                             "id": "serReqCustomerDoc",
-                            "label": "Upload Document(s)",
+                            "label": "Document upload by Customer",
+                            "maxSize": "",
+                            "maxSizeMsg": "File size limit exceeded",
+                            "multiple": "true",
+                            "padding": "",
+                            "permissionType": "",
+                            "readonly": "",
+                            "removeFile": "",
+                            "resizeHeight": "",
+                            "resizeMethod": "",
+                            "resizeQuality": "0.8",
+                            "resizeWidth": "",
+                            "size": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            }
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.FileUpload",
+                        "properties": {
+                            "attachment": "",
+                            "fileType": "",
+                            "fileTypeMsg": "Invalid file type",
+                            "id": "serReqCorncordiarDoc",
+                            "label": "Document upload by Concordia",
+                            "maxSize": "",
+                            "maxSizeMsg": "File size limit exceeded",
+                            "multiple": "true",
+                            "padding": "",
+                            "permissionType": "",
+                            "readonly": "",
+                            "removeFile": "",
+                            "resizeHeight": "",
+                            "resizeMethod": "",
+                            "resizeQuality": "0.8",
+                            "resizeWidth": "",
+                            "size": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            }
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.FileUpload",
+                        "properties": {
+                            "attachment": "",
+                            "fileType": "",
+                            "fileTypeMsg": "Invalid file type",
+                            "id": "serReqFopDrawUpload",
+                            "label": "Approved FOP Drawing",
                             "maxSize": "",
                             "maxSizeMsg": "File size limit exceeded",
                             "multiple": "true",
