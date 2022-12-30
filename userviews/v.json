@@ -518,7 +518,7 @@
                 "className": "org.joget.plugin.enterprise.CrudMenu",
                 "properties": {
                     "add-afterSaved": "list",
-                    "add-cancelButtonLabel": "Reset",
+                    "add-cancelButtonLabel": "",
                     "add-customFooter": "",
                     "add-customHeader": "",
                     "add-messageShowAfterComplete": "",
