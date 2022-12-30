@@ -8,60 +8,158 @@
     "checkboxPosition": "left",
     "columns": [
         {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
             "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
             "hidden": "false",
             "id": "column_0",
             "label": "DMCC SR Number",
             "name": "inspDmcc",
-            "sortable": "false"
+            "sortable": "true",
+            "style": "",
+            "width": ""
         },
         {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
             "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
             "hidden": "false",
             "id": "column_1",
             "label": "Company Address",
             "name": "nspBillingAdd",
-            "sortable": "false"
+            "sortable": "true",
+            "style": "",
+            "width": ""
         },
         {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
             "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
             "hidden": "false",
             "id": "column_2",
             "label": "Location",
             "name": "inspLocation",
-            "sortable": "false"
+            "sortable": "true",
+            "style": "",
+            "width": ""
         },
         {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
             "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
             "hidden": "false",
             "id": "column_3",
             "label": "Tower Number",
             "name": "insp_tower",
-            "sortable": "false"
+            "sortable": "true",
+            "style": "",
+            "width": ""
         },
         {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
             "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
             "hidden": "false",
             "id": "column_4",
             "label": "License Number",
             "name": "serReq_licenc_no",
-            "sortable": "false"
+            "sortable": "true",
+            "style": "",
+            "width": ""
         },
         {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
             "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
             "hidden": "false",
             "id": "column_5",
             "label": "TRN Number",
             "name": "serReq_trn_no",
-            "sortable": "false"
+            "sortable": "true",
+            "style": "",
+            "width": ""
         },
         {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
             "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
             "hidden": "false",
             "id": "column_6",
             "label": "Service Category",
             "name": "inspServiceCat",
-            "sortable": "false"
+            "sortable": "true",
+            "style": "",
+            "width": ""
         }
     ],
     "considerFilterWhenGetTotal": "",
