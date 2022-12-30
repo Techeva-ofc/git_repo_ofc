@@ -21,6 +21,14 @@
     "checkboxPosition": "left",
     "columns": [
         {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_0",
+            "label": "DMCC SR Number",
+            "name": "serReqDmccSrNo",
+            "sortable": "false"
+        },
+        {
             "action": {
                 "className": "",
                 "properties": {}
