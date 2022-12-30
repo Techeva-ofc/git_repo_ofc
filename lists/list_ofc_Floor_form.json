@@ -12,7 +12,15 @@
         "name": "add_floor"
     }],
     "considerFilterWhenGetTotal": "",
-    "filters": [],
+    "filters": [{
+        "id": "filter_0",
+        "label": "Floor Name",
+        "name": "add_floor",
+        "type": {
+            "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+            "properties": {}
+        }
+    }],
     "id": "list_ofc_Floor_form",
     "name": "List - Create Floor",
     "order": "",
