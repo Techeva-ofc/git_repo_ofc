@@ -257,7 +257,7 @@
                     "properties": {
                         "controlField": "",
                         "id": "companyCity",
-                        "label": "City",
+                        "label": "Location",
                         "multiple": "",
                         "options": [],
                         "optionsBinder": {
