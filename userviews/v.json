@@ -424,7 +424,7 @@
                     "enableOffline": "",
                     "id": "0d0a197a-9b88-40d6-bf53-17aec5e01371",
                     "keyName": "",
-                    "label": "Manage Create City",
+                    "label": "Manage Location",
                     "list-abortRelatedRunningProcesses": "",
                     "list-confirmation": "",
                     "list-customFooter": "",
@@ -447,7 +447,7 @@
             }],
             "properties": {
                 "id": "category-b0571a3d-34d6-450e-90b0-f71fc76b0d52",
-                "label": "<i class='fa fa-tasks'><\/i>Manage Create City"
+                "label": "<i class=\"fa fa-tasks\"><\/i>Manage Location"
             }
         },
         {
