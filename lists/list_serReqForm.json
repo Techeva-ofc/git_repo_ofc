@@ -21,12 +21,26 @@
     "checkboxPosition": "left",
     "columns": [
         {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
             "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
             "hidden": "false",
             "id": "column_0",
             "label": "DMCC SR Number",
             "name": "serReqDmccSrNo",
-            "sortable": "false"
+            "sortable": "true",
+            "style": "",
+            "width": ""
         },
         {
             "action": {
@@ -46,25 +60,53 @@
             "id": "column_9",
             "label": "Company Name",
             "name": "ofc_company_tab.companyName",
-            "sortable": "false",
+            "sortable": "true",
             "style": "",
             "width": ""
         },
         {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
             "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
             "hidden": "false",
             "id": "column_2",
             "label": "Service Categoy",
             "name": "serReqServCat",
-            "sortable": "false"
+            "sortable": "true",
+            "style": "",
+            "width": ""
         },
         {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
             "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
             "hidden": "false",
             "id": "column_3",
             "label": "Total Amount",
             "name": "serReqTotAmt",
-            "sortable": "false"
+            "sortable": "true",
+            "style": "",
+            "width": ""
         },
         {
             "action": {
@@ -84,7 +126,7 @@
             "id": "column_5",
             "label": "Created Date",
             "name": "dateCreated",
-            "sortable": "false",
+            "sortable": "true",
             "style": "",
             "width": ""
         },
@@ -106,7 +148,7 @@
             "id": "column_6",
             "label": "SR Status",
             "name": "status",
-            "sortable": "false",
+            "sortable": "true",
             "style": "",
             "width": ""
         }
