@@ -12,7 +12,15 @@
         "name": "emirates_name"
     }],
     "considerFilterWhenGetTotal": "",
-    "filters": [],
+    "filters": [{
+        "id": "filter_0",
+        "label": "Emirates Name",
+        "name": "emirates_name",
+        "type": {
+            "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+            "properties": {}
+        }
+    }],
     "id": "list_ofc_emirates_form",
     "name": "List - Create Emirates Form",
     "order": "",
