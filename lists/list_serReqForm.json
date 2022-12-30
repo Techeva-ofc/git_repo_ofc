@@ -104,7 +104,7 @@
             "id": "column_1",
             "label": "Location",
             "name": "ofc_company_tab.companyCity",
-            "sortable": "false",
+            "sortable": "true",
             "style": "",
             "width": ""
         },
