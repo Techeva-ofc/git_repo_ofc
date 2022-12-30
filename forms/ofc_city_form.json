@@ -54,7 +54,7 @@
             "comment": "",
             "id": "add_city",
             "join": "",
-            "label": "Add City",
+            "label": "Add Location",
             "loadBinder": {
                 "className": "",
                 "properties": {}
