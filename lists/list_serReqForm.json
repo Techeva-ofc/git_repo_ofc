@@ -73,6 +73,14 @@
             "sortable": "false"
         },
         {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_4",
+            "label": "ofc_company_tab.compCity",
+            "name": "ofc_company_tab.compCity",
+            "sortable": "false"
+        },
+        {
             "action": {
                 "className": "",
                 "properties": {}
