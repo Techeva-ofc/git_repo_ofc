@@ -21,6 +21,14 @@
     "checkboxPosition": "left",
     "columns": [
         {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_1",
+            "label": "ofc_company_tab.companyCity",
+            "name": "ofc_company_tab.companyCity",
+            "sortable": "false"
+        },
+        {
             "action": {
                 "className": "",
                 "properties": {}
@@ -63,6 +71,14 @@
             "sortable": "true",
             "style": "",
             "width": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_4",
+            "label": "ofc_company_tab.compCity",
+            "name": "ofc_company_tab.compCity",
+            "sortable": "false"
         },
         {
             "action": {
