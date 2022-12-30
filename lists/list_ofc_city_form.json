@@ -53,7 +53,15 @@
     "considerFilterWhenGetTotal": "",
     "description": "",
     "disableResponsive": "",
-    "filters": [],
+    "filters": [{
+        "id": "filter_0",
+        "label": "Location Name",
+        "name": "cityName",
+        "type": {
+            "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+            "properties": {}
+        }
+    }],
     "hidePageSize": "true",
     "id": "list_ofc_city_form",
     "name": "List - Create City",
