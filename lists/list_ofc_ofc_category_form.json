@@ -25,7 +25,7 @@
             "id": "column_2",
             "label": "Service Category Code",
             "name": "ofc_category_code",
-            "sortable": "false",
+            "sortable": "true",
             "style": "",
             "width": ""
         },
@@ -46,7 +46,7 @@
             "id": "column_1",
             "label": "OFC category name",
             "name": "ofc_category_name",
-            "sortable": "false",
+            "sortable": "true",
             "style": "",
             "width": ""
         },
@@ -68,7 +68,7 @@
             "id": "column_0",
             "label": "Service Category Fee (AED)",
             "name": "serReq_fees",
-            "sortable": "false",
+            "sortable": "true",
             "style": "",
             "width": ""
         }
