@@ -569,15 +569,6 @@
                </packageParticipant>
             </entry>
             <entry>
-               <string>ofc_serviceReq_form_assp_main_assignment_process::ofc_serviceReq_form_assp_main_assp_applicant</string>
-               <packageParticipant>
-                  <processDefId>ofc_serviceReq_form_assp_main_assignment_process</processDefId>
-                  <participantId>ofc_serviceReq_form_assp_main_assp_applicant</participantId>
-                  <type>requester</type>
-                  <value>runProcess</value>
-               </packageParticipant>
-            </entry>
-            <entry>
                <string>serReqForm_assignment_process::serReqForm_assp_applicant_hod</string>
                <packageParticipant>
                   <processDefId>serReqForm_assignment_process</processDefId>
