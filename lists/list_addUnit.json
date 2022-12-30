@@ -35,7 +35,15 @@
         }
     ],
     "considerFilterWhenGetTotal": "",
-    "filters": [],
+    "filters": [{
+        "id": "filter_0",
+        "label": "Unit Name",
+        "name": "unitName",
+        "type": {
+            "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+            "properties": {}
+        }
+    }],
     "id": "list_addUnit",
     "name": "List - Create Unit",
     "order": "",
