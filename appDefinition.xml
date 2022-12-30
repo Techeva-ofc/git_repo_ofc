@@ -1,4 +1,5 @@
 <appDefinition>
+   <appId>ofc_app</appId>
    <id>ofc_app</id>
    <version></version>
    <name>Operational Fitness Certificate</name>
