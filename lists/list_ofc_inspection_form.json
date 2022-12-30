@@ -67,7 +67,35 @@
     "considerFilterWhenGetTotal": "",
     "description": "",
     "disableResponsive": "",
-    "filters": [],
+    "filters": [
+        {
+            "id": "filter_0",
+            "label": "DMCC SR Number",
+            "name": "inspDmcc",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {}
+            }
+        },
+        {
+            "id": "filter_1",
+            "label": "Location",
+            "name": "inspLocation",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {}
+            }
+        },
+        {
+            "id": "filter_2",
+            "label": "Tower Number",
+            "name": "insp_tower",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {}
+            }
+        }
+    ],
     "hidePageSize": "true",
     "id": "list_ofc_inspection_form",
     "name": "List - Inspection Summery",
