@@ -10,7 +10,7 @@
                     "properties": {
                         "encryption": "",
                         "id": "cityName",
-                        "label": "City Name",
+                        "label": "Location Name",
                         "maxlength": "",
                         "placeholder": "",
                         "readonly": "",
@@ -31,7 +31,7 @@
                     "properties": {
                         "encryption": "",
                         "id": "cityCode",
-                        "label": "City Code",
+                        "label": "Location Code",
                         "maxlength": "",
                         "placeholder": "",
                         "readonly": "",
