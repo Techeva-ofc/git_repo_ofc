@@ -8,9 +8,25 @@
     "checkboxPosition": "left",
     "columns": [
         {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
             "id": "column_0",
-            "label": "City",
-            "name": "companyCity"
+            "label": "Location",
+            "name": "companyCity",
+            "sortable": "false",
+            "style": "",
+            "width": ""
         },
         {
             "id": "column_1",
