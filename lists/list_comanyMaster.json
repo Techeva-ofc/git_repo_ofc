@@ -93,6 +93,8 @@
         }
     ],
     "considerFilterWhenGetTotal": "",
+    "description": "",
+    "disableResponsive": "",
     "filters": [
         {
             "datalist_type": "filter",
@@ -119,13 +121,28 @@
             }
         }
     ],
+    "hidePageSize": "true",
     "id": "list_comanyMaster",
     "name": "List - Company",
     "order": "",
     "orderBy": "",
-    "pageSize": 0,
+    "pageSize": "0",
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "responsiveView": [
+        {
+            "breakpoint": "",
+            "columns": "",
+            "view": "Mobile"
+        },
+        {
+            "breakpoint": "",
+            "columns": "",
+            "view": "Tablet"
+        }
+    ],
     "rowActions": [],
+    "searchPopup": "",
+    "showDataWhenFilterSet": "",
     "showPageSizeSelector": "true",
-    "useSession": "false"
+    "useSession": ""
 }
