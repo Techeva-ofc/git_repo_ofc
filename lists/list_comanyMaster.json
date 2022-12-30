@@ -8,9 +8,25 @@
     "checkboxPosition": "left",
     "columns": [
         {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
             "id": "column_2",
             "label": "Company Name",
-            "name": "companyName"
+            "name": "companyName",
+            "sortable": "true",
+            "style": "",
+            "width": ""
         },
         {
             "action": {
@@ -29,19 +45,51 @@
             "id": "column_0",
             "label": "Location",
             "name": "companyCity",
-            "sortable": "false",
+            "sortable": "true",
             "style": "",
             "width": ""
         },
         {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
             "id": "column_1",
             "label": "Company Address",
-            "name": "companyAddress"
+            "name": "companyAddress",
+            "sortable": "true",
+            "style": "",
+            "width": ""
         },
         {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
             "id": "column_3",
             "label": "Email Id",
-            "name": "emailId"
+            "name": "emailId",
+            "sortable": "true",
+            "style": "",
+            "width": ""
         }
     ],
     "considerFilterWhenGetTotal": "",
