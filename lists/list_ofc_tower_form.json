@@ -8,14 +8,6 @@
     "checkboxPosition": "left",
     "columns": [
         {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_0",
-            "label": "ID",
-            "name": "id",
-            "sortable": "false"
-        },
-        {
             "id": "column_1",
             "label": "Tower Name",
             "name": "tower_name"
