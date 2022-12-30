@@ -159,7 +159,7 @@
                         "noframe": "true",
                         "parentSubFormId": "compTower",
                         "permissionHidden": "",
-                        "readonly": "true",
+                        "readonly": "",
                         "readonlyLabel": "",
                         "storeBinder": {
                             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
