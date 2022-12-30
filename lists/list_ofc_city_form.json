@@ -24,7 +24,7 @@
             "id": "column_1",
             "label": "Location Name",
             "name": "cityName",
-            "sortable": "false",
+            "sortable": "true",
             "style": "",
             "width": ""
         },
@@ -45,7 +45,7 @@
             "id": "column_0",
             "label": "Location Code",
             "name": "cityCode",
-            "sortable": "false",
+            "sortable": "true",
             "style": "",
             "width": ""
         }
