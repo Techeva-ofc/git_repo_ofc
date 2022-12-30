@@ -144,7 +144,7 @@
                             "placeholder": "",
                             "postfix": "",
                             "prefix": "",
-                            "readonly": "true",
+                            "readonly": "",
                             "readonlyLabel": "",
                             "size": "",
                             "storeNumeric": "true",
@@ -170,7 +170,7 @@
                             "placeholder": "",
                             "postfix": "",
                             "prefix": "",
-                            "readonly": "true",
+                            "readonly": "",
                             "readonlyLabel": "",
                             "size": "",
                             "storeNumeric": "true",
@@ -180,7 +180,7 @@
                                 "className": "",
                                 "properties": {}
                             },
-                            "value": "25",
+                            "value": "",
                             "workflowVariable": ""
                         }
                     },
