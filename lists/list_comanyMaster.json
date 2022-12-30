@@ -8,6 +8,11 @@
     "checkboxPosition": "left",
     "columns": [
         {
+            "id": "column_2",
+            "label": "Company Name",
+            "name": "companyName"
+        },
+        {
             "action": {
                 "className": "",
                 "properties": {}
@@ -32,11 +37,6 @@
             "id": "column_1",
             "label": "Company Address",
             "name": "companyAddress"
-        },
-        {
-            "id": "column_2",
-            "label": "Company Name",
-            "name": "companyName"
         },
         {
             "id": "column_3",
