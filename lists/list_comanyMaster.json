@@ -1,0 +1,46 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "comanyMaster"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "id": "column_0",
+            "label": "City",
+            "name": "companyCity"
+        },
+        {
+            "id": "column_1",
+            "label": "Company Address",
+            "name": "companyAddress"
+        },
+        {
+            "id": "column_2",
+            "label": "Company Name",
+            "name": "companyName"
+        },
+        {
+            "id": "column_3",
+            "label": "Email Id",
+            "name": "emailId"
+        },
+        {
+            "id": "column_4",
+            "label": "ID",
+            "name": "id"
+        }
+    ],
+    "filters": [],
+    "id": "list_comanyMaster",
+    "name": "List - Company",
+    "order": "",
+    "orderBy": "",
+    "pageSize": 0,
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
+}

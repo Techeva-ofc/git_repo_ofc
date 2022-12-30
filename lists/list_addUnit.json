@@ -1,0 +1,48 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "addUnit"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_2",
+            "label": "Unit Name",
+            "name": "unitName",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_5",
+            "label": "Tower",
+            "name": "unitTower",
+            "sortable": "false"
+        },
+        {
+            "id": "column_1",
+            "label": "Floor",
+            "name": "unitFloor"
+        },
+        {
+            "id": "column_0",
+            "label": "Area(Sq ft.)",
+            "name": "area_sqft"
+        }
+    ],
+    "considerFilterWhenGetTotal": "",
+    "filters": [],
+    "id": "list_addUnit",
+    "name": "List - Create Unit",
+    "order": "",
+    "orderBy": "",
+    "pageSize": 0,
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
+}

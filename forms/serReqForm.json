@@ -1,0 +1,323 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [{
+        "className": "org.joget.apps.form.model.Section",
+        "elements": [
+            {
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.plugin.enterprise.AjaxSubForm",
+                    "properties": {
+                        "ajax": "true",
+                        "collapsible": "",
+                        "collapsibleExpanded": "true",
+                        "collapsibleLabelCollapsed": "View Details",
+                        "collapsibleLabelExpanded": "Hide Details",
+                        "formDefId": "comanyMaster",
+                        "hideEmpty": "",
+                        "id": "companyDetails",
+                        "label": "",
+                        "noLoad": "",
+                        "noframe": "",
+                        "parentSubFormId": "companyName",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "storeBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "subFormParentId": ""
+                    }
+                }],
+                "properties": {"width": "49%"}
+            },
+            {
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "serReqUserName",
+                            "label": "User Name",
+                            "maxlength": "25",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "#currentUser.email#",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "",
+                            "id": "companyName",
+                            "label": "Company Name",
+                            "multiple": "",
+                            "options": [],
+                            "optionsBinder": {
+                                "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                                "properties": {
+                                    "addEmptyOption": "",
+                                    "cacheInterval": "",
+                                    "emptyLabel": "Select",
+                                    "extraCondition": "",
+                                    "formDefId": "comanyMaster",
+                                    "groupingColumn": "",
+                                    "idColumn": "",
+                                    "labelColumn": "companyName",
+                                    "useAjax": ""
+                                }
+                            },
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.IdGeneratorField",
+                        "properties": {
+                            "envVariable": "counter",
+                            "format": "SR??????",
+                            "hidden": "",
+                            "id": "serReqDmccSrNo",
+                            "label": "DMCC SR Number",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "",
+                            "id": "serReqServCat",
+                            "label": "Service Categoy",
+                            "multiple": "",
+                            "options": [],
+                            "optionsBinder": {
+                                "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                                "properties": {
+                                    "addEmptyOption": "",
+                                    "cacheInterval": "",
+                                    "emptyLabel": "",
+                                    "extraCondition": "",
+                                    "formDefId": "ofc_ofc_category_form",
+                                    "groupingColumn": "ofc_category_code",
+                                    "idColumn": "ofc_category_name",
+                                    "labelColumn": "ofc_category_name",
+                                    "useAjax": ""
+                                }
+                            },
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "serReqSerCharg",
+                            "label": "Service Charge(inclusive of VAT)",
+                            "maxlength": "",
+                            "numOfDecimal": "2",
+                            "permissionHidden": "",
+                            "placeholder": "",
+                            "postfix": "",
+                            "prefix": "",
+                            "readonly": "true",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "storeNumeric": "true",
+                            "style": "us",
+                            "useThousandSeparator": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "600",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "serReqVat",
+                            "label": "VAT(5%)",
+                            "maxlength": "",
+                            "numOfDecimal": "2",
+                            "permissionHidden": "",
+                            "placeholder": "",
+                            "postfix": "",
+                            "prefix": "",
+                            "readonly": "true",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "storeNumeric": "true",
+                            "style": "us",
+                            "useThousandSeparator": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "25",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.plugin.enterprise.CalculationField",
+                        "properties": {
+                            "equation": "",
+                            "hidden": "",
+                            "id": "serReqTotAmt",
+                            "label": "Total Amount",
+                            "numOfDecimal": "2",
+                            "postfix": "",
+                            "prefix": "",
+                            "readonlyLabel": "",
+                            "storeNumeric": "",
+                            "style": "us",
+                            "useThousandSeparator": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "variables": [
+                                {
+                                    "fieldId": "serReqVat",
+                                    "operation": "sum",
+                                    "variableName": "VAT"
+                                },
+                                {
+                                    "fieldId": "serReqSerCharg",
+                                    "operation": "sum",
+                                    "variableName": "Service Charge"
+                                }
+                            ],
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextArea",
+                        "properties": {
+                            "cols": "20",
+                            "id": "serReqDesc",
+                            "label": "Description",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "rows": "5",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.FileUpload",
+                        "properties": {
+                            "attachment": "",
+                            "fileType": "",
+                            "fileTypeMsg": "Invalid file type",
+                            "id": "serReqCustomerDoc",
+                            "label": "Upload Document(s)",
+                            "maxSize": "",
+                            "maxSizeMsg": "File size limit exceeded",
+                            "multiple": "true",
+                            "padding": "",
+                            "permissionType": "",
+                            "readonly": "",
+                            "removeFile": "",
+                            "resizeHeight": "",
+                            "resizeMethod": "",
+                            "resizeQuality": "0.8",
+                            "resizeWidth": "",
+                            "size": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            }
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "status",
+                            "label": "Status",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    }
+                ],
+                "properties": {"width": "49%"}
+            }
+        ],
+        "properties": {
+            "comment": "",
+            "id": "serReqSumr",
+            "join": "",
+            "label": "Service Request Page",
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "permissionReadonly": "",
+            "readonly": "",
+            "readonlyLabel": "",
+            "regex": "",
+            "reverse": "",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "visibilityControl": "",
+            "visibilityValue": ""
+        }
+    }],
+    "properties": {
+        "description": "",
+        "id": "serReqForm",
+        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "name": "Service Request Form",
+        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "tableName": "ofc_serReqs_tab"
+    }
+}
