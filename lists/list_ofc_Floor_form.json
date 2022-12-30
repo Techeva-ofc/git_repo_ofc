@@ -7,9 +7,25 @@
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
     "columns": [{
+        "action": {
+            "className": "",
+            "properties": {}
+        },
+        "alignment": "",
+        "datalist_type": "column",
+        "exclude_export": "",
+        "format": {
+            "className": "",
+            "properties": {}
+        },
+        "headerAlignment": "",
+        "hidden": "false",
         "id": "column_0",
         "label": "Floor Name",
-        "name": "add_floor"
+        "name": "add_floor",
+        "sortable": "true",
+        "style": "",
+        "width": ""
     }],
     "considerFilterWhenGetTotal": "",
     "filters": [{
