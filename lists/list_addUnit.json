@@ -95,8 +95,6 @@
         }
     ],
     "considerFilterWhenGetTotal": "",
-    "description": "",
-    "disableResponsive": "",
     "filters": [{
         "id": "filter_0",
         "label": "Unit Name",
@@ -106,28 +104,13 @@
             "properties": {}
         }
     }],
-    "hidePageSize": "true",
     "id": "list_addUnit",
     "name": "List - Create Unit",
     "order": "",
     "orderBy": "",
-    "pageSize": "0",
+    "pageSize": 0,
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
-    "responsiveView": [
-        {
-            "breakpoint": "",
-            "columns": "",
-            "view": "Mobile"
-        },
-        {
-            "breakpoint": "",
-            "columns": "",
-            "view": "Tablet"
-        }
-    ],
     "rowActions": [],
-    "searchPopup": "",
-    "showDataWhenFilterSet": "",
     "showPageSizeSelector": "true",
-    "useSession": ""
+    "useSession": "false"
 }
