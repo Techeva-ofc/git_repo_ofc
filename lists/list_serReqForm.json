@@ -11,7 +11,7 @@
             "functionColumns": [],
             "groupBy": "",
             "joins": [{
-                "fieldId": null,
+                "fieldId": "ofc_company_tab.companyName",
                 "joinFieldId": "companyName",
                 "tableName": "ofc_company_tab"
             }]
