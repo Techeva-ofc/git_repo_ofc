@@ -6,18 +6,12 @@
     },
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
-    "columns": [
-        {
-            "id": "column_0",
-            "label": "Emirates Name",
-            "name": "emirates_name"
-        },
-        {
-            "id": "column_1",
-            "label": "ID",
-            "name": "id"
-        }
-    ],
+    "columns": [{
+        "id": "column_0",
+        "label": "Emirates Name",
+        "name": "emirates_name"
+    }],
+    "considerFilterWhenGetTotal": "",
     "filters": [],
     "id": "list_ofc_emirates_form",
     "name": "List - Create Emirates Form",
