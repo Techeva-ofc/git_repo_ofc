@@ -252,15 +252,6 @@
                </packageActivityPlugin>
             </entry>
             <entry>
-               <string>ofc_serviceReq_form_assp_main_assignment_process::clarification_needed_notification</string>
-               <packageActivityPlugin>
-                  <processDefId>ofc_serviceReq_form_assp_main_assignment_process</processDefId>
-                  <activityDefId>clarification_needed_notification</activityDefId>
-                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
-                  <pluginProperties>{     &quot;host&quot;: &quot;&quot;,     &quot;port&quot;: &quot;&quot;,     &quot;security&quot;: &quot;&quot;,     &quot;username&quot;: &quot;&quot;,     &quot;password&quot;: &quot;&quot;,     &quot;from&quot;: &quot;&quot;,     &quot;toSpecific&quot;: &quot;&quot;,     &quot;toParticipantId&quot;: &quot;ofc_serviceReq_form_assp_main_assp_applicant&quot;,     &quot;cc&quot;: &quot;&quot;,     &quot;subject&quot;: &quot;Your Seervice request - Assignment Process Main Form (#form.ofc_serviceReq_tab.caseNo#) Needs Clarification&quot;,     &quot;message&quot;: &quot;Hi,\n\nYour Seervice request - Assignment Process Main Form (#form.ofc_serviceReq_tab.caseNo#) requires clarification.\n\n==  This is a system generated message. == &quot;,     &quot;isHtml&quot;: &quot;&quot;,     &quot;formDefId&quot;: &quot;&quot;,     &quot;fields&quot;: [],     &quot;files&quot;: [] }</pluginProperties>
-               </packageActivityPlugin>
-            </entry>
-            <entry>
                <string>ofc_serviceReq_form_assignment_process::assignment_due_notification</string>
                <packageActivityPlugin>
                   <processDefId>ofc_serviceReq_form_assignment_process</processDefId>
