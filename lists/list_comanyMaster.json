@@ -26,13 +26,9 @@
             "id": "column_3",
             "label": "Email Id",
             "name": "emailId"
-        },
-        {
-            "id": "column_4",
-            "label": "ID",
-            "name": "id"
         }
     ],
+    "considerFilterWhenGetTotal": "",
     "filters": [],
     "id": "list_comanyMaster",
     "name": "List - Company",
