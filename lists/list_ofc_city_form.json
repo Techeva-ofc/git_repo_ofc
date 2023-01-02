@@ -1,54 +1,16 @@
 {
     "actions": [],
     "binder": {
-        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
-        "properties": {"formDefId": "ofc_city_form"}
+        "className": "",
+        "properties": {}
     },
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
-    "columns": [
-        {
-            "action": {
-                "className": "",
-                "properties": {}
-            },
-            "alignment": "",
-            "datalist_type": "column",
-            "exclude_export": "",
-            "format": {
-                "className": "",
-                "properties": {}
-            },
-            "headerAlignment": "",
-            "hidden": "false",
-            "id": "column_1",
-            "label": "Location Name",
-            "name": "cityName",
-            "sortable": "true",
-            "style": "",
-            "width": ""
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_0",
-            "label": "Emirates",
-            "name": "LocEmirates",
-            "sortable": "false"
-        }
-    ],
+    "columns": [],
     "considerFilterWhenGetTotal": "",
     "description": "",
     "disableResponsive": "",
-    "filters": [{
-        "id": "filter_0",
-        "label": "Location Name",
-        "name": "cityName",
-        "type": {
-            "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-            "properties": {}
-        }
-    }],
+    "filters": [],
     "hidePageSize": "true",
     "id": "list_ofc_city_form",
     "name": "List - Create City",
