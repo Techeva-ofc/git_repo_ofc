@@ -29,25 +29,12 @@
             "width": ""
         },
         {
-            "action": {
-                "className": "",
-                "properties": {}
-            },
-            "alignment": "",
-            "datalist_type": "column",
-            "exclude_export": "",
-            "format": {
-                "className": "",
-                "properties": {}
-            },
-            "headerAlignment": "",
+            "filterable": true,
             "hidden": "false",
             "id": "column_0",
-            "label": "Location Code",
-            "name": "cityCode",
-            "sortable": "true",
-            "style": "",
-            "width": ""
+            "label": "Emirates",
+            "name": "LocEmirates",
+            "sortable": "false"
         }
     ],
     "considerFilterWhenGetTotal": "",
