@@ -27,18 +27,30 @@
                     }
                 },
                 {
-                    "className": "org.joget.apps.form.lib.TextField",
+                    "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
-                        "encryption": "",
-                        "id": "cityCode",
-                        "label": "Location Code",
-                        "maxlength": "",
-                        "placeholder": "",
+                        "controlField": "",
+                        "id": "LocEmerates",
+                        "label": "Select Box",
+                        "multiple": "",
+                        "options": [],
+                        "optionsBinder": {
+                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                            "properties": {
+                                "addEmptyOption": "",
+                                "cacheInterval": "",
+                                "emptyLabel": "",
+                                "extraCondition": "",
+                                "formDefId": "ofc_emirates_form",
+                                "groupingColumn": "",
+                                "idColumn": "",
+                                "labelColumn": "emirates_name",
+                                "useAjax": ""
+                            }
+                        },
                         "readonly": "",
                         "readonlyLabel": "",
                         "size": "",
-                        "storeNumeric": "",
-                        "style": "",
                         "validator": {
                             "className": "",
                             "properties": {}
