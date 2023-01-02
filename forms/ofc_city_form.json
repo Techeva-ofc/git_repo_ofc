@@ -30,8 +30,8 @@
                     "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
                         "controlField": "",
-                        "id": "LocEmerates",
-                        "label": "Select Box",
+                        "id": "LocEmirates",
+                        "label": "Emirates",
                         "multiple": "",
                         "options": [],
                         "optionsBinder": {
