@@ -1,0 +1,204 @@
+2023-01-31  0:58:20 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-01-31  0:58:20 0 [Note] InnoDB: Uses event mutexes
+2023-01-31  0:58:20 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2023-01-31  0:58:20 0 [Note] InnoDB: Number of pools: 1
+2023-01-31  0:58:20 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-01-31  0:58:20 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2023-01-31  0:58:20 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-01-31  0:58:21 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=32558227
+2023-01-31  0:58:24 0 [ERROR] InnoDB: Refusing to load '.\mysql\gtid_slave_pos.ibd' (id=4, flags=0x21); dictionary contains id=3, flags=0x21
+2023-01-31  0:58:24 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2023-01-31  0:58:24 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2023-01-31  0:58:24 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`gtid_slave_pos``. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting-datadict.html for how to resolve the issue.
+2023-01-31  0:58:24 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`gtid_slave_pos` because it could not be opened.
+2023-01-31  0:58:24 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-01-31  0:58:24 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-01-31  0:58:24 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-01-31  0:58:24 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2023-01-31  0:58:24 0 [Note] InnoDB: Waiting for purge to start
+2023-01-31  0:58:24 0 [Note] InnoDB: 10.3.9 started; log sequence number 32558236; transaction id 49471
+2023-01-31  0:58:24 0 [Note] InnoDB: Loading buffer pool(s) from C:\Joget-DX7-Enterprise\mariadb-10.3.9-win32\data\ib_buffer_pool
+2023-01-31  0:58:25 0 [Note] InnoDB: Buffer pool(s) load completed at 230131  0:58:25
+2023-01-31  0:58:25 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-01-31  0:58:25 0 [Note] Server socket created on IP: '::'.
+2023-02-01  5:13:27 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-02-01  5:13:27 0 [Note] InnoDB: Uses event mutexes
+2023-02-01  5:13:27 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2023-02-01  5:13:27 0 [Note] InnoDB: Number of pools: 1
+2023-02-01  5:13:27 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-02-01  5:13:27 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2023-02-01  5:13:27 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-02-01  5:13:34 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-02-01  5:13:34 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-02-01  5:13:34 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-02-01  5:13:34 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2023-02-01  5:13:34 0 [Note] InnoDB: Waiting for purge to start
+2023-02-01  5:13:34 0 [Note] InnoDB: 10.3.9 started; log sequence number 45591358; transaction id 68605
+2023-02-01  5:13:34 0 [Note] InnoDB: Loading buffer pool(s) from C:\Joget-DX7-Enterprise\mariadb-10.3.9-win32\data\ib_buffer_pool
+2023-02-01  5:13:34 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-02-01  5:13:35 0 [Note] Server socket created on IP: '::'.
+2023-02-01 23:58:27 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-02-01 23:58:27 0 [Note] InnoDB: Uses event mutexes
+2023-02-01 23:58:27 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2023-02-01 23:58:27 0 [Note] InnoDB: Number of pools: 1
+2023-02-01 23:58:27 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-02-01 23:58:27 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2023-02-01 23:58:27 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-02-01 23:58:27 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=49496534
+2023-02-01 23:58:35 0 [ERROR] InnoDB: Refusing to load '.\mysql\gtid_slave_pos.ibd' (id=4, flags=0x21); dictionary contains id=3, flags=0x21
+2023-02-01 23:58:35 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2023-02-01 23:58:35 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2023-02-01 23:58:35 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`gtid_slave_pos``. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting-datadict.html for how to resolve the issue.
+2023-02-01 23:58:35 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`gtid_slave_pos` because it could not be opened.
+2023-02-01 23:58:35 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-02-01 23:58:35 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2023-02-01 23:58:35 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-02-01 23:58:35 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-02-01 23:58:36 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2023-02-01 23:58:36 0 [Note] InnoDB: Waiting for purge to start
+2023-02-01 23:58:36 0 [Note] InnoDB: Waiting for purge to start
+2023-02-01 23:58:36 0 [Note] InnoDB: Waiting for purge to start
+2023-02-01 23:58:36 0 [Note] InnoDB: Waiting for purge to start
+2023-02-01 23:58:36 0 [Note] InnoDB: 10.3.9 started; log sequence number 49496543; transaction id 76411
+2023-02-01 23:58:36 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-02-01 23:58:36 0 [Note] InnoDB: Loading buffer pool(s) from C:\Joget-DX7-Enterprise\mariadb-10.3.9-win32\data\ib_buffer_pool
+2023-02-01 23:58:36 0 [Note] Server socket created on IP: '::'.
+2023-02-03  6:04:30 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-02-03  6:04:30 0 [Note] InnoDB: Uses event mutexes
+2023-02-03  6:04:30 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2023-02-03  6:04:30 0 [Note] InnoDB: Number of pools: 1
+2023-02-03  6:04:30 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-02-03  6:04:30 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2023-02-03  6:04:30 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-02-03  6:04:31 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=70261445
+2023-02-03  6:04:37 0 [ERROR] InnoDB: Refusing to load '.\mysql\gtid_slave_pos.ibd' (id=4, flags=0x21); dictionary contains id=3, flags=0x21
+2023-02-03  6:04:37 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2023-02-03  6:04:37 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2023-02-03  6:04:37 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`gtid_slave_pos``. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting-datadict.html for how to resolve the issue.
+2023-02-03  6:04:37 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`gtid_slave_pos` because it could not be opened.
+2023-02-03  6:04:37 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-02-03  6:04:37 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2023-02-03  6:04:37 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-02-03  6:04:37 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-02-03  6:04:37 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2023-02-03  6:04:37 0 [Note] InnoDB: Waiting for purge to start
+2023-02-03  6:04:37 0 [Note] InnoDB: 10.3.9 started; log sequence number 70261454; transaction id 86936
+2023-02-03  6:04:37 0 [Note] InnoDB: Loading buffer pool(s) from C:\Joget-DX7-Enterprise\mariadb-10.3.9-win32\data\ib_buffer_pool
+2023-02-03  6:04:37 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-02-03  6:04:37 0 [Note] Server socket created on IP: '::'.
+2023-02-04  3:17:14 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-02-04  3:17:14 0 [Note] InnoDB: Uses event mutexes
+2023-02-04  3:17:14 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2023-02-04  3:17:14 0 [Note] InnoDB: Number of pools: 1
+2023-02-04  3:17:14 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-02-04  3:17:14 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2023-02-04  3:17:14 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-02-04  3:17:15 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=76663936
+2023-02-04  3:17:19 0 [ERROR] InnoDB: Refusing to load '.\mysql\gtid_slave_pos.ibd' (id=4, flags=0x21); dictionary contains id=3, flags=0x21
+2023-02-04  3:17:19 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2023-02-04  3:17:19 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2023-02-04  3:17:19 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`gtid_slave_pos``. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting-datadict.html for how to resolve the issue.
+2023-02-04  3:17:19 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`gtid_slave_pos` because it could not be opened.
+2023-02-04  3:17:19 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-02-04  3:17:19 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2023-02-04  3:17:19 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-02-04  3:17:19 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-02-04  3:17:19 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2023-02-04  3:17:19 0 [Note] InnoDB: Waiting for purge to start
+2023-02-04  3:17:19 0 [Note] InnoDB: 10.3.9 started; log sequence number 76663945; transaction id 91056
+2023-02-04  3:17:19 0 [Note] InnoDB: Loading buffer pool(s) from C:\Joget-DX7-Enterprise\mariadb-10.3.9-win32\data\ib_buffer_pool
+2023-02-04  3:17:20 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-02-04  3:17:20 0 [Note] Server socket created on IP: '::'.
+2023-02-04  3:56:40 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-02-04  3:56:40 0 [Note] InnoDB: Uses event mutexes
+2023-02-04  3:56:40 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2023-02-04  3:56:40 0 [Note] InnoDB: Number of pools: 1
+2023-02-04  3:56:40 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-02-04  3:56:40 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2023-02-04  3:56:40 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-02-04  3:56:42 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-02-04  3:56:42 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-02-04  3:56:42 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-02-04  3:56:42 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2023-02-04  3:56:42 0 [Note] InnoDB: Waiting for purge to start
+2023-02-04  3:56:42 0 [Note] InnoDB: 10.3.9 started; log sequence number 76708510; transaction id 91170
+2023-02-04  3:56:42 0 [Note] InnoDB: Loading buffer pool(s) from C:\Joget-DX7-Enterprise\mariadb-10.3.9-win32\data\ib_buffer_pool
+2023-02-04  3:56:42 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-02-04  3:56:42 0 [Note] Server socket created on IP: '::'.
+2023-02-05  2:10:46 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-02-05  2:10:46 0 [Note] InnoDB: Uses event mutexes
+2023-02-05  2:10:46 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2023-02-05  2:10:46 0 [Note] InnoDB: Number of pools: 1
+2023-02-05  2:10:46 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-02-05  2:10:46 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2023-02-05  2:10:46 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-02-05  2:10:46 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=76929206
+2023-02-05  2:10:58 0 [ERROR] InnoDB: Refusing to load '.\mysql\gtid_slave_pos.ibd' (id=4, flags=0x21); dictionary contains id=3, flags=0x21
+2023-02-05  2:10:58 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2023-02-05  2:10:58 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2023-02-05  2:10:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`gtid_slave_pos``. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting-datadict.html for how to resolve the issue.
+2023-02-05  2:10:58 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`gtid_slave_pos` because it could not be opened.
+2023-02-05  2:10:58 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-02-05  2:10:58 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2023-02-05  2:10:58 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-02-05  2:10:58 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-02-05  2:10:58 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2023-02-05  2:10:58 0 [Note] InnoDB: Waiting for purge to start
+2023-02-05  2:10:59 0 [Note] InnoDB: 10.3.9 started; log sequence number 76929215; transaction id 91766
+2023-02-05  2:10:59 0 [Note] InnoDB: Loading buffer pool(s) from C:\Joget-DX7-Enterprise\mariadb-10.3.9-win32\data\ib_buffer_pool
+2023-02-05  2:10:59 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-02-05  2:10:59 0 [Note] Server socket created on IP: '::'.
+2023-02-06  1:09:31 0 [ERROR] InnoDB: The innodb_system data file 'ibdata1' must be writable
+2023-02-06  1:09:31 0 [ERROR] InnoDB: The innodb_system data file 'ibdata1' must be writable
+2023-02-06  1:09:31 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2023-02-06  1:09:31 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2023-02-06  1:09:31 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-02-06  1:09:31 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2023-02-06  1:09:31 0 [ERROR] Aborting
+
+2023-02-06  6:23:07 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-02-06  6:23:07 0 [Note] InnoDB: Uses event mutexes
+2023-02-06  6:23:07 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2023-02-06  6:23:08 0 [Note] InnoDB: Number of pools: 1
+2023-02-06  6:23:08 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-02-06  6:23:08 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2023-02-06  6:23:08 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-02-06  6:23:08 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=77079923
+2023-02-06  6:23:15 0 [ERROR] InnoDB: Refusing to load '.\mysql\gtid_slave_pos.ibd' (id=4, flags=0x21); dictionary contains id=3, flags=0x21
+2023-02-06  6:23:15 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2023-02-06  6:23:15 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2023-02-06  6:23:15 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`gtid_slave_pos``. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting-datadict.html for how to resolve the issue.
+2023-02-06  6:23:15 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`gtid_slave_pos` because it could not be opened.
+2023-02-06  6:23:15 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-02-06  6:23:15 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2023-02-06  6:23:15 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-02-06  6:23:15 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-02-06  6:23:15 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2023-02-06  6:23:15 0 [Note] InnoDB: Waiting for purge to start
+2023-02-06  6:23:15 0 [Note] InnoDB: 10.3.9 started; log sequence number 77079932; transaction id 92403
+2023-02-06  6:23:15 0 [Note] InnoDB: Loading buffer pool(s) from C:\Joget-DX7-Enterprise\mariadb-10.3.9-win32\data\ib_buffer_pool
+2023-02-06  6:23:15 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-02-06  6:23:16 0 [Note] Server socket created on IP: '::'.
+2023-02-06  9:44:40 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-02-06  9:44:40 0 [Note] InnoDB: Uses event mutexes
+2023-02-06  9:44:40 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2023-02-06  9:44:40 0 [Note] InnoDB: Number of pools: 1
+2023-02-06  9:44:40 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-02-06  9:44:40 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2023-02-06  9:44:40 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-02-06  9:44:40 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=77244356
+2023-02-06  9:44:49 0 [ERROR] InnoDB: Refusing to load '.\mysql\gtid_slave_pos.ibd' (id=4, flags=0x21); dictionary contains id=3, flags=0x21
+2023-02-06  9:44:49 0 [ERROR] InnoDB: Operating system error number 203 in a file operation.
+2023-02-06  9:44:49 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2023-02-06  9:44:49 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`gtid_slave_pos``. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting-datadict.html for how to resolve the issue.
+2023-02-06  9:44:49 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`gtid_slave_pos` because it could not be opened.
+2023-02-06  9:44:49 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-02-06  9:44:49 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2023-02-06  9:44:49 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-02-06  9:44:49 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-02-06  9:44:49 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2023-02-06  9:44:49 0 [Note] InnoDB: Waiting for purge to start
+2023-02-06  9:44:49 0 [Note] InnoDB: 10.3.9 started; log sequence number 77244365; transaction id 93080
+2023-02-06  9:44:49 0 [Note] InnoDB: Loading buffer pool(s) from C:\Joget-DX7-Enterprise\mariadb-10.3.9-win32\data\ib_buffer_pool
+2023-02-06  9:44:49 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-02-06  9:44:49 0 [Note] Server socket created on IP: '::'.
