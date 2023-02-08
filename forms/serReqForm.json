@@ -12,7 +12,7 @@
                             "autoPopulate": "",
                             "id": "field16",
                             "label": "",
-                            "value": "<html><div class=\"circular--portrait\"> <img src=\"images/woman-portrait.png\" /> <\/div>\n<style>.circular--portrait { position: relative; width: 200px; height: 200px; overflow: hidden; border-radius: 50%; } .circular--portrait img { width: 100%; height: auto; }\n<\/style>\n<\/html>"
+                            "value": "<html>\n    <style>.circular--portrait { position: relative; width: 200px; height: 200px; overflow: hidden; border-radius: 50%; } .circular--portrait img { width: 100%; height: auto; }\n<\/style>\n    <body><div class=\"circular--portrait\"> <img src=\"images/woman-portrait.png\" /> <\/div><\/body>\n\n<\/html>"
                         }
                     },
                     {
