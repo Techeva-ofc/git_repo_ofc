@@ -9,9 +9,9 @@
                     "className": "org.joget.apps.form.lib.CustomHTML",
                     "properties": {
                         "autoPopulate": "",
-                        "id": "concordiaLogo",
+                        "id": "field3",
                         "label": "",
-                        "value": "<html>\n    <style>.circular--portrait { position: relative; width: 200px; height: 100px; overflow: hidden; border-radius: 50%; } .circular--portrait img { width: 100%; height: auto; }\n<\/style>\n    <body><h1>CONCORDIA <\/h1><div class=\"circular--portrait\"> <img src=\"http://www.example.com/demo-image.jpg\" />\n    <img src=\"https://www.jquery-az.com/html/images/banana.jpg\" title=\"Title of image\" alt=\"alt text here\"/><\/div>\n<\/body><\/html>"
+                        "value": "<html><body> <style>.circular--portrait { position: relative; width: 200px; height: 100px; overflow: hidden; border-radius: 50%; } .circular--portrait img { width: 100%; height: auto; }\r\n<\/style>\r\n    <div class=\"circular--portrait\"> <img src=\"/images/logo.png\" /> <\/div>\r\n<\/body><\/html>"
                     }
                 }],
                 "properties": {"width": "100%"}
