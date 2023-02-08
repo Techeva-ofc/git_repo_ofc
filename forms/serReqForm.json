@@ -11,7 +11,7 @@
                         "autoPopulate": "",
                         "id": "field16",
                         "label": "",
-                        "value": "<html>\n    <style>.circular--portrait { position: relative; width: 200px; height: 100px; overflow: hidden; border-radius: 50%; } .circular--portrait img { width: 100%; height: auto; }\n<\/style>\n    <body><div class=\"circular--portrait\"> <img src=\"/images/logo.png\" /> <\/div><\/body>\n\n<\/html>"
+                        "value": "<html>\n    <style>.circular--portrait { position: relative; width: 200px; height: 100px; overflow: hidden; border-radius: 50%; } .circular--portrait img { width: 100%; height: auto; }\n<\/style>\n    <body><h1>CONCORDIA <\/h1><div class=\"circular--portrait\"> <img src=\"/images/logo.png\" /> <\/div>\n\n\n\n \n<title>Text Example<\/title>\n<style>\ndiv.container {\nbackground-color: #ffffff;\n}\ndiv.container p {\nfont-family: Arial;\nfont-size: 22px;\nfont-style: normal;\nfont-weight: normal;\ntext-decoration: none;\ntext-transform: none;\ncolor: #000000;\nbackground-color: #ffffff;\n}\n<\/style>\n\n<div class=\"container\">\n<p>CONCORDIA<\/p>\n<\/div><\/body><\/html>"
                     }
                 }],
                 "properties": {"width": "100%"}
