@@ -413,15 +413,46 @@
             "className": "org.joget.apps.form.model.Section",
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
-                "elements": [{
-                    "className": "org.joget.apps.form.lib.CustomHTML",
-                    "properties": {
-                        "autoPopulate": "",
-                        "id": "field16",
-                        "label": "",
-                        "value": "<html>\n    <style>.circular--portrait { position: relative; width: 200px; height: 100px; overflow: hidden; border-radius: 50%; } .circular--portrait img { width: 100%; height: auto; }\n<\/style>\n    <body><div class=\"circular--portrait\"> <img src=\"/images/logo.png\" /> <\/div><\/body>\n\n<\/html>"
+                "elements": [
+                    {
+                        "className": "org.joget.plugin.enterprise.SpreadSheetGrid",
+                        "properties": {
+                            "disabledAdd": "false",
+                            "disabledDelete": "false",
+                            "errorMessage": "Invalid number of rows",
+                            "fixedColumnsLeft": "0",
+                            "headerSorting": "true",
+                            "id": "field17",
+                            "label": "Spreadsheet",
+                            "maxHeight": "",
+                            "minSpareRows": "1",
+                            "readonly": "False",
+                            "showRowNumber": "true"
+                        }
+                    },
+                    {
+                        "className": "org.joget.plugin.enterprise.RichTextEditorField",
+                        "properties": {
+                            "editor": "",
+                            "id": "field18",
+                            "inlineSwitch": "",
+                            "label": "Rich Text Editor",
+                            "mode": "",
+                            "permissionType": "",
+                            "qmode": "",
+                            "readonly": "False"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "autoPopulate": "",
+                            "id": "field16",
+                            "label": "",
+                            "value": "<html>\n    <style>.circular--portrait { position: relative; width: 200px; height: 100px; overflow: hidden; border-radius: 50%; } .circular--portrait img { width: 100%; height: auto; }\n<\/style>\n    <body><div class=\"circular--portrait\"> <img src=\"/images/logo.png\" /> <\/div><\/body>\n\n<\/html>"
+                        }
                     }
-                }],
+                ],
                 "properties": {"width": "100%"}
             }],
             "properties": {
