@@ -191,12 +191,12 @@
             }
         }
     ],
-    "hidePageSize": "true",
+    "hidePageSize": "",
     "id": "list_ofc_tower_form",
     "name": "List - Create Tower",
-    "order": "",
+    "order": "1",
     "orderBy": "",
-    "pageSize": "0",
+    "pageSize": "100",
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
     "responsiveView": [
         {
