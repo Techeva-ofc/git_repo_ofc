@@ -11,7 +11,7 @@
                         "autoPopulate": "",
                         "id": "concordiaLogo",
                         "label": "",
-                        "value": "<html>\n    <style>.circular--portrait { position: relative; width: 200px; height: 100px; overflow: hidden; border-radius: 50%; } .circular--portrait img { width: 100%; height: auto; }\n<\/style>\n    <body><h1>CONCORDIA <\/h1><div class=\"circular--portrait\"> <img src=\"/images/logo.png\" /> <\/div>\n<\/body><\/html>"
+                        "value": "<html>\n    <style>.circular--portrait { position: relative; width: 200px; height: 100px; overflow: hidden; border-radius: 50%; } .circular--portrait img { width: 100%; height: auto; }\n<\/style>\n    <body><h1>CONCORDIA <\/h1><div class=\"circular--portrait\"> <img src=\"http://www.example.com/demo-image.jpg\" /> <\/div>\n<\/body><\/html>"
                     }
                 }],
                 "properties": {"width": "100%"}
