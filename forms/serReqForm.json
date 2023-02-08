@@ -8,9 +8,9 @@
                 "elements": [{
                     "className": "org.joget.apps.form.lib.CustomHTML",
                     "properties": {
-                        "autoPopulate": "",
+                        "autoPopulate": "true",
                         "id": "field3",
-                        "label": "",
+                        "label": "<html><body> <style>.circular--portrait { position: relative; width: 200px; height: 100px; overflow: hidden; border-radius: 50%; } .circular--portrait img { width: 100%; height: auto; } <\/style>     <div class=\"circular--portrait\"> <img src=\"/images/logo.png\" /> <\/div> <\/body><\/html>",
                         "value": "<html><body> <style>.circular--portrait { position: relative; width: 200px; height: 100px; overflow: hidden; border-radius: 50%; } .circular--portrait img { width: 100%; height: auto; }\r\n<\/style>\r\n    <div class=\"circular--portrait\"> <img src=\"/images/logo.png\" /> <\/div>\r\n<\/body><\/html>"
                     }
                 }],
@@ -20,7 +20,7 @@
                 "comment": "",
                 "id": "section2",
                 "join": "",
-                "label": "",
+                "label": "CONCORDIA",
                 "loadBinder": {
                     "className": "",
                     "properties": {}
