@@ -238,6 +238,7 @@
             "href": "https://www.youtube.com/watch?v=-Ke6JYqTM_s",
             "hrefColumn": "ofc_company_tab.companyName;serReqTotAmt;serReqServCat",
             "hrefParam": "compnayName;totalAmount;serviceCategory",
+            "iframename": "test",
             "label": "Payment",
             "rules": [{
                 "field": "status",
@@ -245,7 +246,7 @@
                 "operator": "=",
                 "value": "Closed"
             }],
-            "target": "popup"
+            "target": "iframe"
         },
         "type": "text"
     }],
