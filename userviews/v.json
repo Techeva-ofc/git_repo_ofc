@@ -1050,7 +1050,7 @@
                         "redirectTargetOnComplete": "",
                         "redirectUrlAfterComplete": "",
                         "redirectUrlOnCancel": "",
-                        "showInPopupDialog": "Yes",
+                        "showInPopupDialog": "",
                         "submitButtonLabel": "Pay",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
