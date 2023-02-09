@@ -102,8 +102,14 @@
         "description": "",
         "id": "paymentForm",
         "loadBinder": {
-            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-            "properties": {}
+            "className": "org.joget.apps.form.lib.BeanShellFormBinder",
+            "properties": {
+                "autoHandleFiles": "",
+                "autoHandleWorkflowVariable": "true",
+                "cacheInterval": "",
+                "script": "<script type=\"text/javascript\">\nconst product = urlParams.get('companyName')\nalert(product);\nconsole.log(product);\n\n<\/script>",
+                "useAjax": ""
+            }
         },
         "name": "Payment",
         "noPermissionMessage": "",
