@@ -245,7 +245,7 @@
                 "operator": "=",
                 "value": "Closed"
             }],
-            "target": "_parent"
+            "target": "popup"
         },
         "type": "text"
     }],
