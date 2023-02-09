@@ -86,7 +86,7 @@
                         "errorMessage": "Invalid number of rows",
                         "formDefId": "",
                         "height": "500",
-                        "id": "caddSubListUnitArea",
+                        "id": "addSubListUnitArea",
                         "label": "",
                         "listId": "list_ofc_unitArea_form",
                         "loadBinder": {
