@@ -165,7 +165,7 @@
                         "variables": [{
                             "fieldId": "addSubListUnitArea.area_sqft",
                             "operation": "sum",
-                            "variableName": "Area Sqft"
+                            "variableName": "area_sqft"
                         }],
                         "workflowVariable": ""
                     }
