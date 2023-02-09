@@ -235,7 +235,7 @@
         "properties": {
             "confirmation": "",
             "datalist_type": "row_action",
-            "href": "serReqForm",
+            "href": "paymentForm",
             "hrefColumn": "ofc_company_tab.companyName;serReqTotAmt;serReqServCat",
             "hrefParam": "compnayName;totalAmount;serviceCategory",
             "label": "Payment",
