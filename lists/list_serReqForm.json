@@ -235,7 +235,7 @@
         "properties": {
             "confirmation": "",
             "datalist_type": "row_action",
-            "href": "https://www.youtube.com/watch?v=-Ke6JYqTM_s",
+            "href": "http://localhost:8080/jw/web/console/app/ofc_app/5/userview/builder/v?menuId=7C32FE0128D749ECAA32E7DE4E642380",
             "hrefColumn": "ofc_company_tab.companyName;serReqTotAmt;serReqServCat",
             "hrefParam": "compnayName;totalAmount;serviceCategory",
             "label": "Payment",
