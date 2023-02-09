@@ -1065,7 +1065,7 @@
                         "id": "7C32FE0128D749ECAA32E7DE4E642380",
                         "label": "Service Request Payment Page",
                         "userviewCacheDuration": "20",
-                        "userviewCacheScope": ""
+                        "userviewCacheScope": "application"
                     }
                 }
             ],
