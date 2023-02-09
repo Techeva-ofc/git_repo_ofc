@@ -235,7 +235,7 @@
         "properties": {
             "confirmation": "",
             "datalist_type": "row_action",
-            "href": "http://localhost:8080/jw/web/console/app/ofc_app/5/userview/builder/v?menuId=7C32FE0128D749ECAA32E7DE4E642380",
+            "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/serReqForm_crud?_mode=edit&id=0116a515-b517-4bb9-afc6-d9082c5403bd",
             "hrefColumn": "ofc_company_tab.companyName;serReqTotAmt;serReqServCat",
             "hrefParam": "compnayName;totalAmount;serviceCategory",
             "label": "Payment",
@@ -245,7 +245,7 @@
                 "operator": "=",
                 "value": "Closed"
             }],
-            "target": "_self"
+            "target": "popup"
         },
         "type": "text"
     }],
