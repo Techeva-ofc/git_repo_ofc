@@ -1055,18 +1055,6 @@
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
-                },
-                {
-                    "className": "org.joget.apps.userview.lib.HtmlPage",
-                    "properties": {
-                        "content": "<p>&lt;!DOCTYPE html&gt;<br />&lt;html&gt;<br />&lt;body&gt;<\/p>\n<p>&lt;h2&gt;HTML Forms&lt;/h2&gt;<\/p>\n<p>&lt;form action=\"/action_page.php\"&gt;<br />&lt;label for=\"fname\"&gt;First name:&lt;/label&gt;&lt;br&gt;<br />&lt;input type=\"text\" id=\"fname\" name=\"fname\" value=\"John\"&gt;&lt;br&gt;<br />&lt;label for=\"lname\"&gt;Last name:&lt;/label&gt;&lt;br&gt;<br />&lt;input type=\"text\" id=\"lname\" name=\"lname\" value=\"Doe\"&gt;&lt;br&gt;&lt;br&gt;<br />&lt;input type=\"submit\" value=\"Submit\"&gt;<br />&lt;/form&gt;<\/p>\n<p>&lt;p&gt;If you click the \"Submit\" button, the form-data will be sent to a page called \"/action_page.php\".&lt;/p&gt;<\/p>\n<p>&lt;/body&gt;<br />&lt;/html&gt;<\/p>",
-                        "customId": "paymentpage",
-                        "enableOffline": "",
-                        "id": "7C32FE0128D749ECAA32E7DE4E642380",
-                        "label": "Service Request Payment Page",
-                        "userviewCacheDuration": "20",
-                        "userviewCacheScope": "application"
-                    }
                 }
             ],
             "properties": {
