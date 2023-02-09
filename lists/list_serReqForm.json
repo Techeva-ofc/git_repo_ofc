@@ -235,7 +235,7 @@
         "properties": {
             "confirmation": "",
             "datalist_type": "row_action",
-            "href": "paymentForm",
+            "href": "https://docs.ngenius-payments.com/reference/findorder",
             "hrefColumn": "ofc_company_tab.companyName;serReqTotAmt;serReqServCat",
             "hrefParam": "compnayName;totalAmount;serviceCategory",
             "label": "Payment",
@@ -245,7 +245,7 @@
                 "operator": "=",
                 "value": "Closed"
             }],
-            "target": "_self"
+            "target": "popup"
         },
         "type": "text"
     }],
