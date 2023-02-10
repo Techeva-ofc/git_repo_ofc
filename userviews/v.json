@@ -1028,7 +1028,7 @@
                 {
                     "className": "org.joget.apps.userview.lib.HtmlPage",
                     "properties": {
-                        "content": "<pre class=\"language-javascript\"><code>&lt;script type='text/javascript'&gt;\n \n \n    alert(urlParams.get('totalAmount'));\n&lt;/script&gt;<\/code><\/pre>\n<p><\/p>",
+                        "content": "<pre class=\"language-javascript\"><code>&lt;script type='text/javascript'&gt;\n \n \n    alert(\"helo\");\n&lt;/script&gt;<\/code><\/pre>\n<p><\/p>",
                         "customId": "paymentPageHtml",
                         "enableOffline": "",
                         "id": "595B9239A38541D2879DB4C628C5E864",
