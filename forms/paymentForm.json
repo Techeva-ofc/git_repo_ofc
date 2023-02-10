@@ -74,7 +74,7 @@
                         "autoPopulate": "",
                         "id": "field4",
                         "label": "",
-                        "value": "<script language='text/javascript'>\n  \n    alert(\"Alert!\");\n\n    alert(\"Alert!\");\n\n    alert(\"Alert!\");\n\n<\/script>"
+                        "value": "<script type='text/javascript'>\n  \n    alert(\"Alert!\");\n\n    alert(\"Alert!\");\n\n    alert(\"Alert!\");\n\n<\/script>"
                     }
                 }
             ],
