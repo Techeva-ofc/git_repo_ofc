@@ -71,9 +71,10 @@
                 {
                     "className": "org.joget.apps.form.lib.CustomHTML",
                     "properties": {
-                        "autoPopulate": "False",
+                        "autoPopulate": "",
                         "id": "field4",
-                        "label": ""
+                        "label": "",
+                        "value": "<script language='text/javascript'>\n  \n    alert(\"Alert!\");\n\n    alert(\"Alert!\");\n\n    alert(\"Alert!\");\n\n<\/script>"
                     }
                 }
             ],
