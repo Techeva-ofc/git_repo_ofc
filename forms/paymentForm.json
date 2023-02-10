@@ -76,42 +76,6 @@
                         "label": "",
                         "value": "<script type=\"text/javascript\">\r\n\r\nvar person {\r\n   \"name\":\"test\",\r\n   \"age\":20    \r\n}\r\n\r\n//document.write(person.name);\r\nalert(person.name);\r\n\r\n<\/script>"
                     }
-                },
-                {
-                    "className": "org.joget.apps.form.lib.CustomHTML",
-                    "properties": {
-                        "autoPopulate": "False",
-                        "id": "field5",
-                        "label": "",
-                        "value": "undefined"
-                    }
-                },
-                {
-                    "className": "org.joget.apps.form.lib.CustomHTML",
-                    "properties": {
-                        "autoPopulate": "False",
-                        "id": "field5",
-                        "label": "",
-                        "value": "undefined"
-                    }
-                },
-                {
-                    "className": "org.joget.apps.form.lib.CustomHTML",
-                    "properties": {
-                        "autoPopulate": "False",
-                        "id": "field5",
-                        "label": "",
-                        "value": "undefined"
-                    }
-                },
-                {
-                    "className": "org.joget.apps.form.lib.CustomHTML",
-                    "properties": {
-                        "autoPopulate": "",
-                        "id": "field4",
-                        "label": "",
-                        "value": "<script type='text/javascript'>\n var person {\n   \"name\":\"test\",\n   \"age\":20    \n}\n\n//document.write(person.name);\nalert(person.name);\n \n    alert(urlParams.get('name'));\n<\/script>"
-                    }
                 }
             ],
             "properties": {"width": "100%"}
