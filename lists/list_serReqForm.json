@@ -235,7 +235,7 @@
         "properties": {
             "confirmation": "",
             "datalist_type": "row_action",
-            "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/paymentForm",
+            "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/paymentForm?name=abc",
             "hrefColumn": "ofc_company_tab.companyName;serReqTotAmt;serReqServCat",
             "hrefParam": "compnayName;totalAmount;serviceCategory",
             "label": "Payment",
