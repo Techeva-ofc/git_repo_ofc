@@ -67,6 +67,14 @@
                         "value": "",
                         "workflowVariable": ""
                     }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
+                        "autoPopulate": "False",
+                        "id": "field4",
+                        "label": ""
+                    }
                 }
             ],
             "properties": {"width": "100%"}
@@ -102,14 +110,8 @@
         "description": "",
         "id": "paymentForm",
         "loadBinder": {
-            "className": "org.joget.apps.form.lib.BeanShellFormBinder",
-            "properties": {
-                "autoHandleFiles": "",
-                "autoHandleWorkflowVariable": "true",
-                "cacheInterval": "",
-                "script": "<script language='text/javascript'>\n  \n    alert(\"Alert!\");\n\n    alert(\"Alert!\");\n\n    alert(\"Alert!\");\n\n<\/script>",
-                "useAjax": ""
-            }
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
         },
         "name": "Payment",
         "noPermissionMessage": "",
