@@ -1048,7 +1048,7 @@
                         "customId": "paymentForm",
                         "enableOffline": "",
                         "fieldPassover": "",
-                        "fieldPassoverMethod": "param",
+                        "fieldPassoverMethod": "append",
                         "formId": "paymentForm",
                         "id": "E314405690DB48EFA584339DB3348B49",
                         "keyName": "",
