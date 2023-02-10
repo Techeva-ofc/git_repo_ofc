@@ -386,9 +386,10 @@
                 "className": "",
                 "properties": {}
             },
+            "permissionHidden": "",
             "permissionReadonly": "",
-            "readonly": "",
-            "readonlyLabel": "",
+            "readonly": "true",
+            "readonlyLabel": "true",
             "regex": "",
             "reverse": "",
             "storeBinder": {
@@ -402,9 +403,25 @@
     "properties": {
         "description": "",
         "id": "serviceRequestView",
-        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "name": "Service Request View Form",
-        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "tableName": "ofc_serReqsView_tab"
     }
 }
