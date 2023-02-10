@@ -107,7 +107,7 @@
                 "autoHandleFiles": "",
                 "autoHandleWorkflowVariable": "true",
                 "cacheInterval": "",
-                "script": "<script type='text/javascript'>\nvar product = urlParams.get('compnayName')\nalert(product);\n\n<\/script>",
+                "script": "<script type='text/javascript'>\nvar product = urlParams.get('compnayName');\nalert(\"Hello\");\n\n<\/script>",
                 "useAjax": ""
             }
         },
