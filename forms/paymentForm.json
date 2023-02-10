@@ -74,7 +74,7 @@
                         "autoPopulate": "",
                         "id": "field5",
                         "label": "",
-                        "value": "<script type=\"text/javascript\">\r\n\r\n   alert(\"fail\");\r\n\r\n   alert(\"fail\");\r\n\r\n var sitePersonel = {};\r\nvar employees = []\r\nsitePersonel.employees = employees;\r\nalert(sitePersonel);\r\n//alert(sitePersonel);\r\n//console.log(sitePersonel);\r\n\r\nvar firstName = \"John\";\r\nvar lastName = \"Smith\";\r\nvar employee = {\r\n  \"firstName\": firstName,\r\n  \"lastName\": lastName\r\n}\r\nsitePersonel.employees.push(employee);\r\nalert(sitePersonel);\r\n \r\n \r\n\r\nvar manager = \"Jane Doe\";\r\nsitePersonel.employees[0].manager = manager;\r\nalert(sitePersonel);\r\n\r\nalert(JSON.stringify(sitePersonel));\r\n\r\nalert(\"Hello\");\r\n\r\n<\/script>"
+                        "value": "<script type=\"text/javascript\">\r\n\r\n  $.ajax({\r\n  url: \"/post/post_url.php\",\r\n  type: \"POST\",\r\n  data: parameters,\r\n  success: function(){\r\n    alert('success');\r\n  },\r\n  error: function(){\r\n    alert('failure');\r\n  }\r\n});\r\n\r\n var sitePersonel = {};\r\nvar employees = []\r\nsitePersonel.employees = employees;\r\nalert(sitePersonel);\r\n//alert(sitePersonel);\r\n//console.log(sitePersonel);\r\n\r\nvar firstName = \"John\";\r\nvar lastName = \"Smith\";\r\nvar employee = {\r\n  \"firstName\": firstName,\r\n  \"lastName\": lastName\r\n}\r\nsitePersonel.employees.push(employee);\r\nalert(sitePersonel);\r\n \r\n \r\n\r\nvar manager = \"Jane Doe\";\r\nsitePersonel.employees[0].manager = manager;\r\nalert(sitePersonel);\r\n\r\nalert(JSON.stringify(sitePersonel));\r\n\r\nalert(\"Hello\");\r\n\r\n<\/script>"
                     }
                 }
             ],
