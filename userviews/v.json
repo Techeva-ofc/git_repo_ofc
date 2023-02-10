@@ -1026,18 +1026,6 @@
                     }
                 },
                 {
-                    "className": "org.joget.apps.userview.lib.HtmlPage",
-                    "properties": {
-                        "content": "<pre class=\"language-javascript\"><code>&lt;script type='text/javascript'&gt;\n \n \n    alert(\"helo\");\n&lt;/script&gt;<\/code><\/pre>\n<p><\/p>",
-                        "customId": "paymentPageHtml",
-                        "enableOffline": "",
-                        "id": "595B9239A38541D2879DB4C628C5E864",
-                        "label": "Payment Page",
-                        "userviewCacheDuration": "20",
-                        "userviewCacheScope": ""
-                    }
-                },
-                {
                     "className": "org.joget.apps.userview.lib.FormMenu",
                     "properties": {
                         "actionAfterSaved": "",
@@ -1052,17 +1040,17 @@
                         "formId": "paymentForm",
                         "id": "E314405690DB48EFA584339DB3348B49",
                         "keyName": "",
-                        "label": "Payment Form",
+                        "label": "Payment",
                         "loadDataWithKey": "",
                         "messageShowAfterComplete": "Payment request sent !!",
                         "paramName": "",
-                        "readonly": "",
-                        "readonlyLabel": "",
+                        "readonly": "Yes",
+                        "readonlyLabel": "true",
                         "redirectTargetOnCancel": "top",
                         "redirectTargetOnComplete": "",
                         "redirectUrlAfterComplete": "",
                         "redirectUrlOnCancel": "",
-                        "showInPopupDialog": "",
+                        "showInPopupDialog": "Yes",
                         "submitButtonLabel": "Pay",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
