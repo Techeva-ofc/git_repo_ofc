@@ -79,24 +79,6 @@
                 {
                     "className": "org.joget.apps.form.lib.CustomHTML",
                     "properties": {
-                        "autoPopulate": "False",
-                        "id": "field5",
-                        "label": "",
-                        "value": "undefined"
-                    }
-                },
-                {
-                    "className": "org.joget.apps.form.lib.CustomHTML",
-                    "properties": {
-                        "autoPopulate": "False",
-                        "id": "field5",
-                        "label": "",
-                        "value": "undefined"
-                    }
-                },
-                {
-                    "className": "org.joget.apps.form.lib.CustomHTML",
-                    "properties": {
                         "autoPopulate": "",
                         "id": "field4",
                         "label": "",
