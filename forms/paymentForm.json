@@ -107,7 +107,7 @@
                 "autoHandleFiles": "",
                 "autoHandleWorkflowVariable": "true",
                 "cacheInterval": "",
-                "script": "<script type='text/javascript'>\n  \n    alert(\"Alert!\");\n\n<\/script>",
+                "script": "<script language='text/javascript'>\n  \n    alert(\"Alert!\");\n\n    alert(\"Alert!\");\n\n    alert(\"Alert!\");\n\n<\/script>",
                 "useAjax": ""
             }
         },
