@@ -71,9 +71,37 @@
                 {
                     "className": "org.joget.apps.form.lib.CustomHTML",
                     "properties": {
+                        "autoPopulate": "",
+                        "id": "field5",
+                        "label": "",
+                        "value": "<script type=\"text/javascript\">\r\n\r\nvar person {\r\n   \"name\":\"test\",\r\n   \"age\":20    \r\n}\r\n\r\n//document.write(person.name);\r\nalert(person.name);\r\n\r\n<\/script>"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
                         "autoPopulate": "False",
                         "id": "field5",
-                        "label": ""
+                        "label": "",
+                        "value": "undefined"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
+                        "autoPopulate": "False",
+                        "id": "field5",
+                        "label": "",
+                        "value": "undefined"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
+                        "autoPopulate": "False",
+                        "id": "field5",
+                        "label": "",
+                        "value": "undefined"
                     }
                 },
                 {
