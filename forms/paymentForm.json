@@ -107,7 +107,7 @@
                 "autoHandleFiles": "",
                 "autoHandleWorkflowVariable": "true",
                 "cacheInterval": "",
-                "script": "\n\n<script type='text/javascript'>\n  // Shorthand for $( document ).ready()\n    alert(\"Alert!\");\n   //console.log(\"Logging into the console...\");\n \n<\/script>",
+                "script": "<script type='text/javascript'>\n  \n    alert(\"Alert!\");\n\n    alert(\"Alert!\");\n\n    alert(\"Alert!\");\n\n<\/script>",
                 "useAjax": ""
             }
         },
