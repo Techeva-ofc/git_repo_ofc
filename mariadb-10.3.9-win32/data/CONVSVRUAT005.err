@@ -1,0 +1,279 @@
+22002222--1100--1177  1177::5588::3300  00  [[NNote] InnoDB: Mutexes and rw_locks use Windows interlocked funcottieo]n sI
+nnoDB: Mutexes and rw_locks use Windows interlocked functions
+2022-10-17 17:58:30 0 [Note] InnoDB: Uses event 2m0u2t2e-x1e0s-
+17 17:58:30 0 [Note] InnoDB: Uses event mutexes
+2022-10-17 17:58:30 0 [Note] InnoDB: Compressed 2t0a2b2l-e1s0 -u1s7e  1z7l:5i8b: 310.2 .03 
+[Note] InnoDB: Compressed tables use zlib 1.2.3
+2022-10-17 17:58:30 0 [N2o0t2e2]- 1I0nn-o1D7B :1 7N:u5m8b:e3r0  o0f  [pNoootles]:  I1n
+noDB: Number of pools: 1
+2022-10-17 17:58:30 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2022-10-17 17:58:30 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2022-10-17 17:58:30 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2022-10-17 17:58:30 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2022-10-17 17:58:30 0 [Note] InnoDB: Completed initialization of buffer pool
+2022-10-17 17:58:30 0 [Note] InnoDB: Completed initialization of buffer pool
+2022-10-17 17:58:30 0 [ERROR] InnoDB: Operating system error number 32 in a file operation.
+2022-10-17 17:58:30 0 [ERROR] InnoDB: The error means that another program is using InnoDB's files. This might be a backup or antivirus software or another instance of MySQL. Please close it to get rid of this error.
+2022-10-17 17:58:30 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=32558227
+2022-10-17 17:58:32 0 [ERROR] InnoDB: Refusing to load '.\mysql\gtid_slave_pos.ibd' (id=4, flags=0x21); dictionary contains id=3, flags=0x21
+2022-10-17 17:58:32 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`gtid_slave_pos``. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting-datadict.html for how to resolve the issue.
+2022-10-17 17:58:32 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`gtid_slave_pos` because it could not be opened.
+2022-10-17 17:58:32 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2022-10-17 17:58:32 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2022-10-17 17:58:32 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2022-10-17 17:58:32 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2022-10-17 17:58:32 0 [Note] InnoDB: Waiting for purge to start
+2022-10-17 17:58:32 0 [Note] InnoDB: 10.3.9 started; log sequence number 32558236; transaction id 49471
+2022-10-17 17:58:32 0 [Note] InnoDB: Loading buffer pool(s) from C:\Joget-DX7-Enterprise\mariadb-10.3.9-win32\data\ib_buffer_pool
+2022-10-17 17:58:32 0 [Note] InnoDB: Buffer pool(s) load completed at 221017 17:58:32
+2022-10-17 17:58:32 0 [Note] Plugin 'FEEDBACK' is disabled.
+2022-10-17 17:58:32 0 [Note] Server socket created on IP: '::'.
+2022-10-20 11:54:56 0 [ERROR] InnoDB: The innodb_system data file 'ibdata1' must be writable
+2022-10-20 11:54:56 0 [ERROR] InnoDB: The innodb_system data file 'ibdata1' must be writable
+2022-10-20 11:54:56 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2022-10-20 11:54:56 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2022-10-20 11:54:56 0 [Note] Plugin 'FEEDBACK' is disabled.
+2022-10-20 11:54:56 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2022-10-20 11:54:56 0 [ERROR] Aborting
+
+2022-10-20 11:55:44 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2022-10-20 11:55:44 0 [Note] InnoDB: Uses event mutexes
+2022-10-20 11:55:44 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2022-10-20 11:55:44 0 [Note] InnoDB: Number of pools: 1
+2022-10-20 11:55:44 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2022-10-20 11:55:44 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2022-10-20 11:55:44 0 [Note] InnoDB: Completed initialization of buffer pool
+2022-10-20 11:55:45 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2022-10-20 11:55:45 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2022-10-20 11:55:45 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2022-10-20 11:55:45 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2022-10-20 11:55:45 0 [Note] InnoDB: Waiting for purge to start
+2022-10-20 11:55:45 0 [Note] InnoDB: 10.3.9 started; log sequence number 33319635; transaction id 50695
+2022-10-20 11:55:45 0 [Note] InnoDB: Loading buffer pool(s) from C:\Joget-DX7-Enterprise\mariadb-10.3.9-win32\data\ib_buffer_pool
+2022-10-20 11:55:45 0 [Note] Plugin 'FEEDBACK' is disabled.
+2022-10-20 11:55:45 0 [Note] Server socket created on IP: '::'.
+2022-10-20 14:38:54 0 [ERROR] InnoDB: The innodb_system data file 'ibdata1' must be writable
+2022-10-20 14:38:54 0 [ERROR] InnoDB: The innodb_system data file 'ibdata1' must be writable
+2022-10-20 14:38:54 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2022-10-20 14:38:54 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2022-10-20 14:38:54 0 [Note] Plugin 'FEEDBACK' is disabled.
+2022-10-20 14:38:54 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2022-10-20 14:38:54 0 [ERROR] Aborting
+
+2022-10-31 11:32:29 0 [ERROR] InnoDB: The innodb_system data file 'ibdata1' must be writable
+2022-10-31 11:32:29 0 [ERROR] InnoDB: The innodb_system data file 'ibdata1' must be writable
+2022-10-31 11:32:29 0 [ERROR] InnoDB: The innodb_system data file 'ibdata1' must be writable
+2022-10-31 11:32:29 0 [ERROR] InnoDB: The innodb_system data file 'ibdata1' must be writable
+2022-10-31 11:32:29 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2022-10-31 11:32:29 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2022-10-31 11:32:29 0 [ERROR] Plugin2022-10-31 11:32:29 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+ 'InnoDB' registration as a STORAGE ENGINE failed.
+2022-10-31 11:32:29 0 [Note] Plugin 'FEEDBACK' is disabled.
+2022-10-31 11:32:29 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2022-10-31 11:32:29 0 [ERROR] Aborting
+
+2022-10-31 11:32:29 0 [Note] Plugin 'FEEDBACK' is disabled.
+2022-10-31 11:32:29 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2022-10-31 11:32:29 0 [ERROR] Aborting
+
+2022-11-14  8:38:42 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2022-11-14  8:38:42 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2022-11-14  8:38:42 0 [Note] InnoDB: Uses event mutexes
+2022-11-14  8:38:42 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2022-11-14  8:38:42 0 [Note] InnoDB: Number of pools: 1
+2022-11-14  8:38:42 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2022-11-14  8:38:42 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2022-11-14  8:38:42 0 [Note] InnoDB: Completed initialization of buffer pool
+2022-11-14  8:38:42 0 [Note] InnoDB: Uses event mutexes
+2022-11-14  8:38:42 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2022-11-14  8:38:42 0 [Note] InnoDB: Number of pools: 1
+2022-11-14  8:38:42 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2022-11-14  8:38:42 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2022-11-14  8:38:42 0 [Note] InnoDB: Completed initialization of buffer pool
+2022-11-14  8:38:42 0 [ERROR] InnoDB: Operating system error number 32 in a file operation.
+2022-11-14  8:38:42 0 [ERROR] InnoDB: The error means that another program is using InnoDB's files. This might be a backup or antivirus software or another instance of MySQL. Please close it to get rid of this error.
+2022-11-14  8:38:42 0 [ERROR] InnoDB: The innodb_system data file 'ibdata1' must be writable
+2022-11-14  8:38:42 0 [ERROR] InnoDB: The innodb_system data file 'ibdata1' must be writable
+2022-11-14  8:38:42 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2022-11-14  8:38:42 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2022-11-14  8:38:42 0 [Note] Plugin 'FEEDBACK' is disabled.
+2022-11-14  8:38:42 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2022-11-14  8:38:42 0 [ERROR] Aborting
+
+2022-11-14  8:38:44 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2022-11-14  8:38:44 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2022-11-14  8:38:44 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2022-11-14  8:38:44 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2022-11-14  8:38:44 0 [Note] InnoDB: Waiting for purge to start
+2022-11-14  8:38:45 0 [Note] InnoDB: 10.3.9 started; log sequence number 35858699; transaction id 55184
+2022-11-14  8:38:45 0 [Note] InnoDB: Loading buffer pool(s) from C:\Joget-DX7-Enterprise\mariadb-10.3.9-win32\data\ib_buffer_pool
+2022-11-14  8:38:45 0 [Note] Plugin 'FEEDBACK' is disabled.
+2022-11-14  8:38:45 0 [Note] Server socket created on IP: '::'.
+2022-11-14  8:38:52 0 [ERROR] InnoDB: Operating system error number 32 in a file operation.
+2022-11-14  8:38:52 0 [ERROR] InnoDB: The error means that another program is using InnoDB's files. This might be a backup or antivirus software or another instance of MySQL. Please close it to get rid of this error.
+2022-11-14  8:39:02 0 [ERROR] InnoDB: Operating system error number 32 in a file operation.
+2022-11-14  8:39:02 0 [ERROR] InnoDB: The error means that another program is using InnoDB's files. This might be a backup or antivirus software or another instance of MySQL. Please close it to get rid of this error.
+2022-11-14  8:39:12 0 [ERROR] InnoDB: Operating system error number 32 in a file operation.
+2022-11-14  8:39:12 0 [ERROR] InnoDB: The error means that another program is using InnoDB's files. This might be a backup or antivirus software or another instance of MySQL. Please close it to get rid of this error.
+2022-11-14  8:39:23 0 [ERROR] InnoDB: Operating system error number 32 in a file operation.
+2022-11-14  8:39:23 0 [ERROR] InnoDB: The error means that another program is using InnoDB's files. This might be a backup or antivirus software or another instance of MySQL. Please close it to get rid of this error.
+2022-11-14  8:39:56 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2022-11-14  8:39:56 0 [Note] InnoDB: Uses event mutexes
+2022-11-14  8:39:56 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2022-11-14  8:39:56 0 [Note] InnoDB: Number of pools: 1
+2022-11-14  8:39:56 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2022-11-14  8:39:56 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2022-11-14  8:39:56 0 [Note] InnoDB: Completed initialization of buffer pool
+2022-11-14  8:39:57 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2022-11-14  8:39:57 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2022-11-14  8:39:57 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2022-11-14  8:39:57 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2022-11-14  8:39:57 0 [Note] InnoDB: Waiting for purge to start
+2022-11-14  8:39:58 0 [Note] InnoDB: 10.3.9 started; log sequence number 35858708; transaction id 55184
+2022-11-14  8:39:58 0 [Note] InnoDB: Loading buffer pool(s) from C:\Joget-DX7-Enterprise\mariadb-10.3.9-win32\data\ib_buffer_pool
+2022-11-14  8:39:58 0 [Note] Plugin 'FEEDBACK' is disabled.
+2022-11-14  8:39:58 0 [Note] Server socket created on IP: '::'.
+2022-12-23 12:51:41 0 [ERROR] InnoDB: The innodb_system data file 'ibdata1' must be wr2itable
+022-12-23 12:51:41 0 [ERROR] InnoDB: The innodb_system data file 'ibdata1' must be writable
+2022-12-23 12:51:41 0 [ERROR] InnoDB: The innodb_system data file 'ibdata1' must be writable
+2022-12-23 12:51:41 0 [ERROR] InnoDB: The innodb_system data file 'ibdata1' must be writable
+2022-12-23 12:51:41 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2022-12-23 12:51:41 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2022-12-23 12:51:41 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2022-12-23 12:51:41 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2022-12-23 12:51:41 0 [Note] Plugin 'FEEDBACK' is disabled.
+2022-12-23 12:51:41 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2022-12-23 12:51:41 0 [ERROR] Aborting
+
+2022-12-23 12:51:41 0 [Note] Plugin 'FEEDBACK' is disabled.
+2022-12-23 12:51:41 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2022-12-23 12:51:41 0 [ERROR] Aborting
+
+2022-12-23 12:53:03 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2022-12-23 12:53:03 0 [Note] InnoDB: Uses event mutexes
+2022-12-23 12:53:03 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2022-12-23 12:53:03 0 [Note] InnoDB: Number of pools: 1
+2022-12-23 12:53:03 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2022-12-23 12:53:03 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2022-12-23 12:53:03 0 [Note] InnoDB: Completed initialization of buffer pool
+2022-12-23 12:53:06 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2022-12-23 12:53:06 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2022-12-23 12:53:06 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2022-12-23 12:53:06 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2022-12-23 12:53:06 0 [Note] InnoDB: 10.3.9 started; log sequence number 43333051; transaction id 67361
+2022-12-23 12:53:06 0 [Note] InnoDB: Loading buffer pool(s) from C:\Joget-DX7-Enterprise\mariadb-10.3.9-win32\data\ib_buffer_pool
+2022-12-23 12:53:06 0 [Note] Plugin 'FEEDBACK' is disabled.
+2022-12-23 12:53:06 0 [Note] Server socket created on IP: '::'.
+2022-12-30 21:56:28 0 [ERROR] InnoDB: The innodb_system data file 'ibdata1' must be writable
+2022-12-30 21:56:28 0 [ERROR] InnoDB: The innodb_system data file 'ibdata1' must be writable
+2022-12-30 21:56:28 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2022-12-30 21:56:28 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2022-12-30 21:56:28 0 [Note] Plugin 'FEEDBACK' is disabled.
+2022-12-30 21:56:28 0 [ERROR] Unknown/unsupported storage engine: InnoDB
+2022-12-30 21:56:28 0 [ERROR] Aborting
+
+2023-01-28 10:48:08 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-01-28 10:48:08 0 [Note] InnoDB: Uses event mutexes
+2023-01-28 10:48:08 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2023-01-28 10:48:08 0 [Note] InnoDB: Number of pools: 1
+2023-01-28 10:48:08 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-01-28 10:48:08 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2023-01-28 10:48:08 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-01-28 10:48:08 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=57187407
+2023-01-28 10:48:16 0 [ERROR] InnoDB: Refusing to load '.\mysql\gtid_slave_pos.ibd' (id=4, flags=0x21); dictionary contains id=3, flags=0x21
+2023-01-28 10:48:16 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`gtid_slave_pos``. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting-datadict.html for how to resolve the issue.
+2023-01-28 10:48:16 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`gtid_slave_pos` because it could not be opened.
+2023-01-28 10:48:16 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-01-28 10:48:16 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2023-01-28 10:48:16 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-01-28 10:48:16 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-01-28 10:48:16 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2023-01-28 10:48:16 0 [Note] InnoDB: Waiting for purge to start
+2023-01-28 10:48:16 0 [Note] InnoDB: 10.3.9 started; log sequence number 57187416; transaction id 95379
+2023-01-28 10:48:16 0 [Note] InnoDB: Loading buffer pool(s) from C:\Joget-DX7-Enterprise\mariadb-10.3.9-win32\data\ib_buffer_pool
+2023-01-28 10:48:16 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-01-28 10:48:16 0 [Note] Server socket created on IP: '::'.
+2023-02-01 11:27:51 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-02-01 11:27:51 0 [Note] InnoDB: Uses event mutexes
+2023-02-01 11:27:51 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2023-02-01 11:27:51 0 [Note] InnoDB: Number of pools: 1
+2023-02-01 11:27:51 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-02-01 11:27:51 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2023-02-01 11:27:51 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-02-01 11:27:51 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=58962916
+2023-02-01 11:27:58 0 [ERROR] InnoDB: Refusing to load '.\mysql\gtid_slave_pos.ibd' (id=4, flags=0x21); dictionary contains id=3, flags=0x21
+2023-02-01 11:27:58 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`gtid_slave_pos``. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting-datadict.html for how to resolve the issue.
+2023-02-01 11:27:58 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`gtid_slave_pos` because it could not be opened.
+2023-02-01 11:27:58 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-02-01 11:27:58 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2023-02-01 11:27:58 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-02-01 11:27:58 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-02-01 11:27:58 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2023-02-01 11:27:58 0 [Note] InnoDB: Waiting for purge to start
+2023-02-01 11:27:58 0 [Note] InnoDB: 10.3.9 started; log sequence number 58962925; transaction id 98746
+2023-02-01 11:27:58 0 [Note] InnoDB: Loading buffer pool(s) from C:\Joget-DX7-Enterprise\mariadb-10.3.9-win32\data\ib_buffer_pool
+2023-02-01 11:27:58 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-02-01 11:27:58 0 [Note] Server socket created on IP: '::'.
+2023-02-02  9:18:20 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-02-02  9:18:20 0 [Note] InnoDB: Uses event mutexes
+2023-02-02  9:18:20 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2023-02-02  9:18:20 0 [Note] InnoDB: Number of pools: 1
+2023-02-02  9:18:20 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-02-02  9:18:20 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2023-02-02  9:18:20 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-02-02  9:18:20 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=58972488
+2023-02-02  9:18:26 0 [ERROR] InnoDB: Refusing to load '.\mysql\gtid_slave_pos.ibd' (id=4, flags=0x21); dictionary contains id=3, flags=0x21
+2023-02-02  9:18:26 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`gtid_slave_pos``. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting-datadict.html for how to resolve the issue.
+2023-02-02  9:18:26 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`gtid_slave_pos` because it could not be opened.
+2023-02-02  9:18:26 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-02-02  9:18:26 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2023-02-02  9:18:26 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-02-02  9:18:26 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-02-02  9:18:26 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2023-02-02  9:18:26 0 [Note] InnoDB: Waiting for purge to start
+2023-02-02  9:18:26 0 [Note] InnoDB: 10.3.9 started; log sequence number 58972497; transaction id 98788
+2023-02-02  9:18:26 0 [Note] InnoDB: Loading buffer pool(s) from C:\Joget-DX7-Enterprise\mariadb-10.3.9-win32\data\ib_buffer_pool
+2023-02-02  9:18:26 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-02-02  9:18:26 0 [Note] Server socket created on IP: '::'.
+2023-02-02 15:50:47 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-02-02 15:50:47 0 [Note] InnoDB: Uses event mutexes
+2023-02-02 15:50:47 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2023-02-02 15:50:47 0 [Note] InnoDB: Number of pools: 1
+2023-02-02 15:50:47 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-02-02 15:50:47 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2023-02-02 15:50:47 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-02-02 15:50:48 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=58983320
+2023-02-02 15:50:54 0 [ERROR] InnoDB: Refusing to load '.\mysql\gtid_slave_pos.ibd' (id=4, flags=0x21); dictionary contains id=3, flags=0x21
+2023-02-02 15:50:54 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`gtid_slave_pos``. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting-datadict.html for how to resolve the issue.
+2023-02-02 15:50:54 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`gtid_slave_pos` because it could not be opened.
+2023-02-02 15:50:54 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-02-02 15:50:55 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2023-02-02 15:50:55 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-02-02 15:50:55 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-02-02 15:50:55 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2023-02-02 15:50:55 0 [Note] InnoDB: Waiting for purge to start
+2023-02-02 15:50:55 0 [Note] InnoDB: 10.3.9 started; log sequence number 58983329; transaction id 98862
+2023-02-02 15:50:55 0 [Note] InnoDB: Loading buffer pool(s) from C:\Joget-DX7-Enterprise\mariadb-10.3.9-win32\data\ib_buffer_pool
+2023-02-02 15:50:55 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-02-02 15:50:55 0 [Note] Server socket created on IP: '::'.
+2023-02-06 14:13:54 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-02-06 14:13:54 0 [Note] InnoDB: Uses event mutexes
+2023-02-06 14:13:54 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2023-02-06 14:13:54 0 [Note] InnoDB: Number of pools: 1
+2023-02-06 14:13:54 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-02-06 14:13:54 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2023-02-06 14:13:54 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-02-06 14:13:54 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=66019881
+2023-02-06 14:14:02 0 [ERROR] InnoDB: Refusing to load '.\mysql\gtid_slave_pos.ibd' (id=4, flags=0x21); dictionary contains id=3, flags=0x21
+2023-02-06 14:14:02 0 [ERROR] InnoDB: Could not find a valid tablespace file for ``mysql`.`gtid_slave_pos``. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting-datadict.html for how to resolve the issue.
+2023-02-06 14:14:02 0 [Warning] InnoDB: Ignoring tablespace for `mysql`.`gtid_slave_pos` because it could not be opened.
+2023-02-06 14:14:02 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-02-06 14:14:02 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2023-02-06 14:14:02 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-02-06 14:14:02 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-02-06 14:14:02 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2023-02-06 14:14:02 0 [Note] InnoDB: Waiting for purge to start
+2023-02-06 14:14:02 0 [Note] InnoDB: 10.3.9 started; log sequence number 66019890; transaction id 110578
+2023-02-06 14:14:02 0 [Note] InnoDB: Loading buffer pool(s) from C:\Joget-DX7-Enterprise\mariadb-10.3.9-win32\data\ib_buffer_pool
+2023-02-06 14:14:03 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-02-06 14:14:03 0 [Note] Server socket created on IP: '::'.
