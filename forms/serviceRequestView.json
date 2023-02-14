@@ -439,8 +439,8 @@
             },
             "permissionHidden": "",
             "permissionReadonly": "",
-            "readonly": "true",
-            "readonlyLabel": "true",
+            "readonly": "",
+            "readonlyLabel": "",
             "regex": "",
             "reverse": "",
             "storeBinder": {
