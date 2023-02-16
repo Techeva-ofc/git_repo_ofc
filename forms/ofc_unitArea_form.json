@@ -10,7 +10,7 @@
                     "properties": {
                         "controlField": "",
                         "id": "unitAreaTower",
-                        "label": "Tower",
+                        "label": "Tower/VIlla",
                         "multiple": "",
                         "options": [],
                         "optionsBinder": {
