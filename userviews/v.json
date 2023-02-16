@@ -388,8 +388,8 @@
     ],
     "className": "org.joget.apps.userview.model.Userview",
     "properties": {
-        "description": "[No value. Click to edit.]",
-        "footerMessage": "© CONCORDIA DMCC \u2013 All Rights Reserved.",
+        "description": "",
+        "footerMessage": "© Deva Reading \u2013 All Rights Reserved.",
         "id": "v",
         "logoutText": "Logout",
         "name": "Dewa Reading App",
