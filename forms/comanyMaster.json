@@ -184,7 +184,7 @@
                     "properties": {
                         "cols": "20",
                         "id": "companyAddress",
-                        "label": "Company",
+                        "label": "Address",
                         "placeholder": "",
                         "readonly": "",
                         "readonlyLabel": "",
