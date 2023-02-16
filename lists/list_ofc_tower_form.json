@@ -41,29 +41,8 @@
             },
             "headerAlignment": "",
             "hidden": "false",
-            "id": "column_3",
-            "label": "Tower Seq No.",
-            "name": "tower_seq_no",
-            "sortable": "true",
-            "style": "",
-            "width": ""
-        },
-        {
-            "action": {
-                "className": "",
-                "properties": {}
-            },
-            "alignment": "",
-            "datalist_type": "column",
-            "exclude_export": "",
-            "format": {
-                "className": "",
-                "properties": {}
-            },
-            "headerAlignment": "",
-            "hidden": "false",
             "id": "column_1",
-            "label": "Tower Name",
+            "label": "Tower/Villa Name",
             "name": "tower_name",
             "sortable": "true",
             "style": "",
@@ -84,7 +63,7 @@
             "headerAlignment": "",
             "hidden": "false",
             "id": "column_2",
-            "label": "Tower Number",
+            "label": "Tower/Villa Number",
             "name": "tower_no",
             "sortable": "true",
             "style": "",
@@ -140,30 +119,27 @@
     "disableResponsive": "",
     "filters": [
         {
+            "datalist_type": "filter",
+            "filterParamName": "d-8282008-fn_tower_name",
+            "hidden": "",
             "id": "filter_1",
-            "label": "Tower Name",
+            "label": "Tower/Villa Name",
             "name": "tower_name",
             "type": {
                 "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-                "properties": {}
+                "properties": {"defaultValue": ""}
             }
         },
         {
-            "id": "filter_0",
-            "label": "Tower Seq No.",
-            "name": "tower_seq_no",
-            "type": {
-                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-                "properties": {}
-            }
-        },
-        {
+            "datalist_type": "filter",
+            "filterParamName": "d-8282008-fn_tower_no",
+            "hidden": "",
             "id": "filter_2",
-            "label": "Tower Number",
+            "label": "Tower/Villa Number",
             "name": "tower_no",
             "type": {
                 "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-                "properties": {}
+                "properties": {"defaultValue": ""}
             }
         },
         {
