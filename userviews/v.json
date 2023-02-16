@@ -421,7 +421,7 @@
                 "loginBackground": "#appResource.footerimage.jpg#",
                 "loginPageBottom": "",
                 "loginPageTop": "",
-                "logo": "#appResource.MicrosoftTeams-image_(1).png#",
+                "logo": "#appResource.MicrosoftTeams-image_(2).png#",
                 "profile": "",
                 "removeAssignmentTitle": "",
                 "reopenTab": "",
@@ -448,6 +448,6 @@
             }
         },
         "userviewDescription": "",
-        "userview_thumbnail": "#appResource.MicrosoftTeams-image_(1).png#"
+        "userview_thumbnail": "#appResource.MicrosoftTeams-image_(2).png#"
     }}
 }
