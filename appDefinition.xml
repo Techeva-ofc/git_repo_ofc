@@ -189,11 +189,27 @@
          <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
       </appResource>
       <appResource>
+         <id>MicrosoftTeams-image_(2).png</id>
+         <appId>ofc_app</appId>
+         <appVersion>5</appVersion>
+         <filesize>22991</filesize>
+         <permissionClass></permissionClass>
+         <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
+      </appResource>
+      <appResource>
          <id>thumb.png</id>
          <appId>ofc_app</appId>
          <appVersion>5</appVersion>
          <filesize>893541</filesize>
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.thumb.png#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
+      </appResource>
+      <appResource>
+         <id>WhatsApp_Image_2023-02-15_at_08.26.22.jpg</id>
+         <appId>ofc_app</appId>
+         <appVersion>5</appVersion>
+         <filesize>43616</filesize>
+         <permissionClass></permissionClass>
+         <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
       </appResource>
    </resourceList>
    <license>QAzPBJl5PamQ03yarC2D5tEJktpiORMM11qkIqc2hGQgt/NsaVpwqA==</license>
