@@ -402,6 +402,7 @@
             "className": "",
             "properties": {}
         },
+        "tempDisablePermissionChecking": "",
         "theme": {
             "className": "org.joget.plugin.enterprise.XadminTheme",
             "properties": {
@@ -420,7 +421,7 @@
                 "loginBackground": "#appResource.footerimage.jpg#",
                 "loginPageBottom": "",
                 "loginPageTop": "",
-                "logo": "#appResource.logo-white.png#",
+                "logo": "#appResource.MicrosoftTeams-image_(1).png#",
                 "profile": "",
                 "removeAssignmentTitle": "",
                 "reopenTab": "",
@@ -447,6 +448,6 @@
             }
         },
         "userviewDescription": "",
-        "userview_thumbnail": "#appResource.icon.jpg#"
+        "userview_thumbnail": "#appResource.MicrosoftTeams-image_(1).png#"
     }}
 }
