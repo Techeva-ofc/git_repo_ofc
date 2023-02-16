@@ -197,6 +197,14 @@
          <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
       </appResource>
       <appResource>
+         <id>MicrosoftTeams-image_(2).png</id>
+         <appId>ofc_app</appId>
+         <appVersion>5</appVersion>
+         <filesize>22991</filesize>
+         <permissionClass></permissionClass>
+         <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
+      </appResource>
+      <appResource>
          <id>thumb.png</id>
          <appId>ofc_app</appId>
          <appVersion>5</appVersion>
