@@ -184,7 +184,7 @@
                     "properties": {
                         "cols": "20",
                         "id": "companyAddress",
-                        "label": "Company Address",
+                        "label": "Company",
                         "placeholder": "",
                         "readonly": "",
                         "readonlyLabel": "",
@@ -195,53 +195,6 @@
                         },
                         "value": "",
                         "workflowVariable": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.form.lib.TextField",
-                    "properties": {
-                        "encryption": "",
-                        "id": "field10",
-                        "label": "Dewa Reading",
-                        "maxlength": "",
-                        "placeholder": "",
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "size": "",
-                        "storeNumeric": "",
-                        "style": "",
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "value": "",
-                        "workflowVariable": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.form.lib.FileUpload",
-                    "properties": {
-                        "attachment": "",
-                        "fileType": "",
-                        "fileTypeMsg": "Invalid file type",
-                        "id": "field9",
-                        "label": "Document Upload Dewa Reading",
-                        "maxSize": "",
-                        "maxSizeMsg": "File size limit exceeded",
-                        "multiple": "true",
-                        "padding": "",
-                        "permissionType": "",
-                        "readonly": "",
-                        "removeFile": "",
-                        "resizeHeight": "",
-                        "resizeMethod": "",
-                        "resizeQuality": "0.8",
-                        "resizeWidth": "",
-                        "size": "",
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        }
                     }
                 },
                 {
