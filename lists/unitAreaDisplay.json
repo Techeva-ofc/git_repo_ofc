@@ -85,7 +85,7 @@
             "headerAlignment": "",
             "hidden": "false",
             "id": "column_3",
-            "label": "Tower",
+            "label": "Tower/Villa",
             "name": "ofc_tower_tab.tower_name",
             "sortable": "true",
             "style": "",
@@ -137,10 +137,10 @@
         },
         {
             "datalist_type": "filter",
-            "filterParamName": "d-5048916-fn_ofc_tower_tab.tower_name",
+            "filterParamName": "d-253407-fn_ofc_tower_tab.tower_name",
             "hidden": "",
             "id": "filter_2",
-            "label": "Tower",
+            "label": "Tower/Villa",
             "name": "ofc_tower_tab.tower_name",
             "type": {
                 "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
