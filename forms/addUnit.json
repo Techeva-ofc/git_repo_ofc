@@ -10,7 +10,7 @@
                     "properties": {
                         "controlField": "",
                         "id": "tower_name",
-                        "label": "Tower",
+                        "label": "Tower/Villa",
                         "multiple": "",
                         "options": [],
                         "optionsBinder": {
