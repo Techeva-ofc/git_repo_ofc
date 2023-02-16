@@ -86,9 +86,9 @@
             },
             "headerAlignment": "",
             "hidden": "false",
-            "id": "column_3",
-            "label": "Tower/Villa Location",
-            "name": "ofc_tower_tab.tower_location",
+            "id": "column_2",
+            "label": "Created Date",
+            "name": "ofc_company_tab.dateCreated",
             "sortable": "false",
             "style": "",
             "width": ""
@@ -108,9 +108,9 @@
             },
             "headerAlignment": "",
             "hidden": "false",
-            "id": "column_4",
-            "label": "Emirates",
-            "name": "ofc_tower_tab.tower_emirates",
+            "id": "column_1",
+            "label": "Status",
+            "name": "status",
             "sortable": "false",
             "style": "",
             "width": ""
@@ -119,32 +119,18 @@
     "considerFilterWhenGetTotal": "",
     "description": "",
     "disableResponsive": "",
-    "filters": [
-        {
-            "datalist_type": "filter",
-            "filterParamName": "d-6717465-fn_ofc_tower_tab.tower_name",
-            "hidden": "",
-            "id": "filter_4",
-            "label": "Tower/Villa Name",
-            "name": "ofc_tower_tab.tower_name",
-            "type": {
-                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-                "properties": {"defaultValue": ""}
-            }
-        },
-        {
-            "datalist_type": "filter",
-            "filterParamName": "d-6717465-fn_ofc_tower_tab.tower_location",
-            "hidden": "",
-            "id": "filter_0",
-            "label": "Tower/Villa Location",
-            "name": "ofc_tower_tab.tower_location",
-            "type": {
-                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-                "properties": {"defaultValue": ""}
-            }
+    "filters": [{
+        "datalist_type": "filter",
+        "filterParamName": "d-6717465-fn_ofc_tower_tab.tower_name",
+        "hidden": "",
+        "id": "filter_4",
+        "label": "Tower/Villa Name",
+        "name": "ofc_tower_tab.tower_name",
+        "type": {
+            "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+            "properties": {"defaultValue": ""}
         }
-    ],
+    }],
     "hidePageSize": "true",
     "id": "list_serReqForm",
     "name": "List - Service Request Form",
