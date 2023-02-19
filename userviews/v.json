@@ -1061,7 +1061,7 @@
                         "redirectUrlAfterComplete": "",
                         "redirectUrlOnCancel": "",
                         "showInPopupDialog": "",
-                        "submitButtonLabel": "",
+                        "submitButtonLabel": "Checkout",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
