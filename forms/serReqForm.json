@@ -118,7 +118,7 @@
                             "formDefId": "ofc_category1",
                             "hideEmpty": "",
                             "id": "serReqOfcCat",
-                            "label": "Service Category",
+                            "label": "",
                             "noLoad": "",
                             "noframe": "true",
                             "parentSubFormId": "ofc_category_name",
