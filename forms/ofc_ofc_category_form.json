@@ -101,7 +101,7 @@
                 {
                     "className": "org.joget.plugin.enterprise.CalculationField",
                     "properties": {
-                        "equation": "(Service Category Fees/100)*5 + serReq_fees",
+                        "equation": "",
                         "hidden": "",
                         "id": "serReqTotAmt",
                         "label": "Total Amount",
