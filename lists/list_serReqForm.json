@@ -121,14 +121,6 @@
             "width": ""
         },
         {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_3",
-            "label": "ofc_ofc_category_tab.ofc_category_name",
-            "name": "ofc_ofc_category_tab.ofc_category_name",
-            "sortable": "false"
-        },
-        {
             "action": {
                 "className": "",
                 "properties": {}
@@ -143,9 +135,9 @@
             },
             "headerAlignment": "",
             "hidden": "false",
-            "id": "column_2",
-            "label": "Service Categoy",
-            "name": "serReqServCat",
+            "id": "column_3",
+            "label": "Service Category",
+            "name": "ofc_ofc_category_tab.ofc_category_name",
             "sortable": "true",
             "style": "",
             "width": ""
