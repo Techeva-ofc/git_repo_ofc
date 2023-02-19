@@ -78,7 +78,7 @@
                         "className": "org.joget.apps.form.lib.SelectBox",
                         "properties": {
                             "controlField": "",
-                            "id": "serReqServCat",
+                            "id": "ofc_category_name",
                             "label": "Service Categoy",
                             "multiple": "",
                             "options": [],
