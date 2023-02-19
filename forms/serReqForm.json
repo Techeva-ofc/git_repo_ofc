@@ -263,7 +263,7 @@
                                 "className": "",
                                 "properties": {}
                             },
-                            "value": "closed",
+                            "value": "close",
                             "workflowVariable": ""
                         }
                     }
