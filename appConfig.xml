@@ -1,4 +1,5 @@
 <appDefinition>
+   <appId>ofc_app</appId>
    <id>ofc_app</id>
    <version></version>
    <name>Operational Fitness Certificate</name>
@@ -20,22 +21,16 @@
    <environmentVariableList>
       <environmentVariable>
          <id>counter</id>
-         <appId>ofc_app</appId>
-         <appVersion>5</appVersion>
          <value>3</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
       <environmentVariable>
          <id>ofc_serviceReq_form_assp_counter</id>
-         <appId>ofc_app</appId>
-         <appVersion>5</appVersion>
          <value>5</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
       <environmentVariable>
          <id>serReqForm_assp_counter</id>
-         <appId>ofc_app</appId>
-         <appVersion>5</appVersion>
          <value>12</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
