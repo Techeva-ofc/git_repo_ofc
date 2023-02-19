@@ -1040,7 +1040,7 @@
                     "properties": {
                         "actionAfterSaved": "",
                         "actionOnCancel": "",
-                        "cancelButtonLabel": "",
+                        "cancelButtonLabel": "cancel",
                         "customFooter": "",
                         "customHeader": "",
                         "customId": "serRequestView",
