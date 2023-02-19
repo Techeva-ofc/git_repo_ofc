@@ -9,27 +9,6 @@
                     "className": "org.joget.apps.form.lib.TextField",
                     "properties": {
                         "encryption": "",
-                        "id": "companyName",
-                        "label": "Company Name",
-                        "maxlength": "",
-                        "placeholder": "",
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "size": "",
-                        "storeNumeric": "",
-                        "style": "",
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "value": "",
-                        "workflowVariable": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.form.lib.TextField",
-                    "properties": {
-                        "encryption": "",
                         "id": "ownerFirstName",
                         "label": "Owner First Name",
                         "maxlength": "",
@@ -210,7 +189,7 @@
                         "collapsibleExpanded": "",
                         "collapsibleLabelCollapsed": "View Details",
                         "collapsibleLabelExpanded": "Hide Details",
-                        "formDefId": "addUnit",
+                        "formDefId": "unit1",
                         "hideEmpty": "",
                         "id": "ajaxSubFormTower",
                         "label": "",
@@ -425,9 +404,9 @@
     }],
     "properties": {
         "description": "",
-        "id": "comanyMaster",
+        "id": "company1",
         "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
-        "name": "Company",
+        "name": "Company1",
         "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
         "tableName": "ofc_company_tab"
     }

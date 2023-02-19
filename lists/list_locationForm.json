@@ -94,8 +94,8 @@
     "hidePageSize": "true",
     "id": "list_locationForm",
     "name": "List - Location",
-    "order": "",
-    "orderBy": "",
+    "order": "1",
+    "orderBy": "dateModified",
     "pageSize": "0",
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
     "responsiveView": [

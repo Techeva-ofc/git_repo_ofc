@@ -432,10 +432,10 @@
     ],
     "properties": {
         "description": "",
-        "id": "ofc_tower_form",
+        "id": "ofc_tower1_form",
         "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
-        "name": "Create Tower",
+        "name": "Tower Form1",
         "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
-        "tableName": "ofc_tower_tab"
+        "tableName": "ofc_tower1_tab"
     }
 }

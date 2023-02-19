@@ -207,18 +207,28 @@
                         "checkUTF8": "",
                         "columnMapping": [
                             {
-                                "col": "1",
-                                "field": "tower_name",
+                                "col": "10",
+                                "field": "c_tower_seq_no",
                                 "formatted": "false"
                             },
                             {
-                                "col": "2",
-                                "field": "tower_no",
+                                "col": "9",
+                                "field": "c_tower_name",
                                 "formatted": "false"
                             },
                             {
-                                "col": "3",
-                                "field": "tower_seq_no",
+                                "col": "11",
+                                "field": "c_tower_no",
+                                "formatted": "false"
+                            },
+                            {
+                                "col": "13",
+                                "field": "c_towerEmirates",
+                                "formatted": "false"
+                            },
+                            {
+                                "col": "14",
+                                "field": "c_towerLocation",
                                 "formatted": "false"
                             }
                         ],
@@ -1028,24 +1038,30 @@
                 {
                     "className": "org.joget.apps.userview.lib.FormMenu",
                     "properties": {
-                        "actionAfterSaved": "reload",
-                        "actionOnCancel": "closepopup",
-                        "afterSavedReloadTarget": "top",
+                        "actionAfterSaved": "",
+                        "actionOnCancel": "",
                         "cancelButtonLabel": "",
                         "customFooter": "",
                         "customHeader": "",
                         "customId": "serRequestView",
                         "enableOffline": "",
+                        "fieldPassover": "",
+                        "fieldPassoverMethod": "append",
                         "formId": "serviceRequestView",
                         "id": "1560676B3F4E421BB874A41FDB72ACD7",
                         "keyName": "",
                         "label": "Service Request View Form",
                         "loadDataWithKey": "",
                         "messageShowAfterComplete": "",
-                        "readonly": "",
-                        "readonlyLabel": "",
+                        "paramName": "",
+                        "readonly": "Yes",
+                        "readonlyLabel": "true",
+                        "redirectTargetOnCancel": "top",
+                        "redirectTargetOnComplete": "",
+                        "redirectUrlAfterComplete": "",
+                        "redirectUrlOnCancel": "",
                         "showInPopupDialog": "",
-                        "submitButtonLabel": "Continue to checkout",
+                        "submitButtonLabel": "",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
