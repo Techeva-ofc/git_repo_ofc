@@ -116,18 +116,11 @@
                             "className": "",
                             "properties": {}
                         },
-                        "variables": [
-                            {
-                                "fieldId": "serReq_vat",
-                                "operation": "sum",
-                                "variableName": "VAT"
-                            },
-                            {
-                                "fieldId": "serReq_fees",
-                                "operation": "sum",
-                                "variableName": "Service Category Fee"
-                            }
-                        ],
+                        "variables": [{
+                            "fieldId": "serReq_vat",
+                            "operation": "sum",
+                            "variableName": "VAT"
+                        }],
                         "workflowVariable": ""
                     }
                 }
