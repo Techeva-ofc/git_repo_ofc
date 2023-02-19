@@ -118,7 +118,7 @@
                         },
                         "variables": [
                             {
-                                "fieldId": "serReqVat",
+                                "fieldId": "serReq_vat",
                                 "operation": "sum",
                                 "variableName": "VAT"
                             },
