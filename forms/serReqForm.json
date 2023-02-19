@@ -421,7 +421,7 @@
                             "id": "companyDetails",
                             "label": "",
                             "noLoad": "",
-                            "noframe": "",
+                            "noframe": "true",
                             "parentSubFormId": "companyName",
                             "readonly": "",
                             "readonlyLabel": "",
