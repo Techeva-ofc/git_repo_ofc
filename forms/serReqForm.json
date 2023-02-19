@@ -75,9 +75,42 @@
                         }
                     },
                     {
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "",
+                            "id": "serReqServCat",
+                            "label": "Service Categoy",
+                            "multiple": "",
+                            "options": [],
+                            "optionsBinder": {
+                                "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                                "properties": {
+                                    "addEmptyOption": "true",
+                                    "cacheInterval": "",
+                                    "emptyLabel": "Select",
+                                    "extraCondition": "",
+                                    "formDefId": "ofc_ofc_category_form",
+                                    "groupingColumn": "",
+                                    "idColumn": "",
+                                    "labelColumn": "ofc_category_name",
+                                    "useAjax": "true"
+                                }
+                            },
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
                         "className": "org.joget.plugin.enterprise.AjaxSubForm",
                         "properties": {
-                            "ajax": "",
+                            "ajax": "true",
                             "collapsible": "",
                             "collapsibleExpanded": "true",
                             "collapsibleLabelCollapsed": "View Details",
@@ -96,40 +129,7 @@
                                 "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                                 "properties": {}
                             },
-                            "subFormParentId": ""
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.SelectBox",
-                        "properties": {
-                            "controlField": "",
-                            "id": "serReqServCat",
-                            "label": "Service Categoy",
-                            "multiple": "",
-                            "options": [],
-                            "optionsBinder": {
-                                "className": "org.joget.apps.form.lib.FormOptionsBinder",
-                                "properties": {
-                                    "addEmptyOption": "true",
-                                    "cacheInterval": "",
-                                    "emptyLabel": "Select",
-                                    "extraCondition": "",
-                                    "formDefId": "ofc_ofc_category_form",
-                                    "groupingColumn": "ofc_category_code",
-                                    "idColumn": "ofc_category_name",
-                                    "labelColumn": "ofc_category_name",
-                                    "useAjax": "true"
-                                }
-                            },
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "size": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "",
-                            "workflowVariable": ""
+                            "subFormParentId": "ofc_category_name"
                         }
                     },
                     {
