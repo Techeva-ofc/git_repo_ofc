@@ -23,7 +23,7 @@
                 },
                 {
                     "fieldId": "",
-                    "joinFieldId": "ofc_ofc_category_tab.ofc_category_name",
+                    "joinFieldId": "ofc_category_name",
                     "tableName": "ofc_ofc_category_tab"
                 }
             ]
@@ -121,26 +121,12 @@
             "width": ""
         },
         {
-            "action": {
-                "className": "",
-                "properties": {}
-            },
-            "alignment": "",
-            "datalist_type": "column",
-            "exclude_export": "",
             "filterable": true,
-            "format": {
-                "className": "",
-                "properties": {}
-            },
-            "headerAlignment": "",
             "hidden": "false",
             "id": "column_3",
             "label": "ofc_ofc_category_tab.ofc_category_name",
             "name": "ofc_ofc_category_tab.ofc_category_name",
-            "sortable": "false",
-            "style": "",
-            "width": ""
+            "sortable": "false"
         },
         {
             "action": {
