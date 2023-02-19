@@ -966,11 +966,11 @@
                     "className": "org.joget.plugin.enterprise.CrudMenu",
                     "properties": {
                         "add-afterSaved": "list",
-                        "add-cancelButtonLabel": "",
+                        "add-cancelButtonLabel": "cancel",
                         "add-customFooter": "",
                         "add-customHeader": "",
                         "add-messageShowAfterComplete": "",
-                        "add-saveButtonLabel": "",
+                        "add-saveButtonLabel": "Checkout",
                         "addFormId": "serReqForm",
                         "buttonPosition": "topLeft",
                         "cacheAllLinks": "",
