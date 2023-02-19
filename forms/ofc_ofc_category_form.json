@@ -52,7 +52,7 @@
                     "properties": {
                         "encryption": "",
                         "id": "serReq_fees",
-                        "label": "Total Amount",
+                        "label": "Service Category Fees",
                         "maxlength": "",
                         "numOfDecimal": "2",
                         "placeholder": "",
@@ -104,7 +104,7 @@
                         "equation": "",
                         "hidden": "",
                         "id": "serReqTotAmt",
-                        "label": "Service Category Fees",
+                        "label": "Total Amount",
                         "numOfDecimal": "2",
                         "postfix": "",
                         "prefix": "",
