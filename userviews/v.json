@@ -1060,7 +1060,7 @@
                         "redirectTargetOnComplete": "",
                         "redirectUrlAfterComplete": "",
                         "redirectUrlOnCancel": "",
-                        "showInPopupDialog": "Yes",
+                        "showInPopupDialog": "",
                         "submitButtonLabel": "checkout to continue",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
