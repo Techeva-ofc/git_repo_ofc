@@ -1055,13 +1055,13 @@
                         "messageShowAfterComplete": "",
                         "paramName": "",
                         "readonly": "Yes",
-                        "readonlyLabel": "true",
+                        "readonlyLabel": "",
                         "redirectTargetOnCancel": "top",
                         "redirectTargetOnComplete": "",
                         "redirectUrlAfterComplete": "",
                         "redirectUrlOnCancel": "",
                         "showInPopupDialog": "",
-                        "submitButtonLabel": "Checkout",
+                        "submitButtonLabel": "Checkout button",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
