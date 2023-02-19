@@ -418,7 +418,7 @@
                             "collapsibleLabelExpanded": "Hide Details",
                             "formDefId": "company1",
                             "hideEmpty": "",
-                            "id": "companyDetails",
+                            "id": "ajaxCompanyDetails",
                             "label": "",
                             "noLoad": "",
                             "noframe": "",
