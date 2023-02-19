@@ -101,7 +101,7 @@
                 {
                     "className": "org.joget.plugin.enterprise.CalculationField",
                     "properties": {
-                        "equation": "",
+                        "equation": "subtotal - ( serReqVat + serReq_fees)",
                         "hidden": "",
                         "id": "serReqTotAmt",
                         "label": "Total Amount",
