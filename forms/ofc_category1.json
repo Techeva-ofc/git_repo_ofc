@@ -92,7 +92,7 @@
             "comment": "",
             "id": "add_ofc_category",
             "join": "",
-            "label": "Add Service Category",
+            "label": "",
             "loadBinder": {
                 "className": "",
                 "properties": {}
