@@ -59,7 +59,7 @@
                 {
                     "className": "org.joget.plugin.enterprise.CalculationField",
                     "properties": {
-                        "equation": "serReqVat%serReq_fees",
+                        "equation": "( serReqVat + serReq_fees)",
                         "hidden": "",
                         "id": "serReqTotAmt",
                         "label": "Total Amount",
