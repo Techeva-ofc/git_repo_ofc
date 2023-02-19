@@ -101,7 +101,7 @@
                 {
                     "className": "org.joget.plugin.enterprise.CalculationField",
                     "properties": {
-                        "equation": "(Service Category Fees/100)*5) + (Service Category Fees)",
+                        "equation": "(Service Category Fees/100)*5) + Service Category Fees",
                         "hidden": "",
                         "id": "serReqTotAmt",
                         "label": "Total Amount",
@@ -116,18 +116,11 @@
                             "className": "",
                             "properties": {}
                         },
-                        "variables": [
-                            {
-                                "fieldId": "serReq_vat",
-                                "operation": "sum",
-                                "variableName": "VAT"
-                            },
-                            {
-                                "fieldId": "serReq_fees",
-                                "operation": "sum",
-                                "variableName": "Service Category Fees"
-                            }
-                        ],
+                        "variables": [{
+                            "fieldId": "serReq_fees",
+                            "operation": "sum",
+                            "variableName": "Service Category Fees"
+                        }],
                         "workflowVariable": ""
                     }
                 }
