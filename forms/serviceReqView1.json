@@ -394,6 +394,6 @@
                 "useAjax": ""
             }
         },
-        "tableName": "ofc_company_tab"
+        "tableName": "ofc_serReqs_tab"
     }
 }
