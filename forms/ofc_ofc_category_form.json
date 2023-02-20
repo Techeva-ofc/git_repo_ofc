@@ -75,7 +75,7 @@
                 {
                     "className": "org.joget.plugin.enterprise.CalculationField",
                     "properties": {
-                        "equation": "(Service Category Total(VAT Inclusive)/100)*5",
+                        "equation": "((Service Category Total(VAT Inclusive))/100)*5",
                         "hidden": "",
                         "id": "serReq_vat",
                         "label": "VAT(5%)",
