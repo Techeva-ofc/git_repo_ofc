@@ -11,6 +11,7 @@
                     "id": "activityName",
                     "label": "Activity Name",
                     "maxlength": "",
+                    "permission_rules": {},
                     "placeholder": "",
                     "readonly": "",
                     "readonlyLabel": "",
@@ -37,10 +38,12 @@
                 "properties": {}
             },
             "permission": {
-                "className": "",
+                "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                 "properties": {}
             },
+            "permissionComment": "",
             "permissionReadonly": "",
+            "permission_rules": {},
             "readonly": "",
             "readonlyLabel": "",
             "regex": "",
@@ -58,6 +61,7 @@
         "id": "ofc_activity_form",
         "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
         "name": "Activity",
+        "permission_rules": [],
         "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
         "tableName": "ofc_activity_tab"
     }
