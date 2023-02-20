@@ -1,0 +1,31 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [{
+        "className": "org.joget.apps.form.model.Section",
+        "elements": [{
+            "className": "org.joget.apps.form.model.Column",
+            "elements": [{
+                "className": "org.joget.apps.form.lib.CustomHTML",
+                "properties": {
+                    "autoPopulate": "",
+                    "id": "field1",
+                    "label": "",
+                    "value": "<script type=\"text/javascript\"> \n\n$(document).ready(function(){\n    var draft= $('<input id=\"saveAsDraft\" name=\"draft\" class=\"form-button\" type=\"submit\" value=\"#i18n.saveAsDraft#\"/>');\n    draft.insertBefore($('input#submit.form-button'));\n \n    $('input#saveAsDraft.form-button').on('click',function(event){\n        event.stopPropagation();\n       \n        $('input#submit.form-button').trigger(\"click\");\n        event.preventDefault();\n    });\n});\n\n\n<\/script>"
+                }
+            }],
+            "properties": {"width": "100%"}
+        }],
+        "properties": {
+            "id": "section1",
+            "label": "Section"
+        }
+    }],
+    "properties": {
+        "description": "",
+        "id": "submitBtnForm",
+        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "name": "Submit Form",
+        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "tableName": "submit"
+    }
+}
