@@ -285,7 +285,7 @@
                             "autoPopulate": "",
                             "id": "checkoutBtn",
                             "label": "",
-                            "value": "<script language='text/javascript'>\n\n\n\n$(document).ready(function(){\n    var draft= $('<input id=\"saveAsDraft\" name=\"draft\" class=\"form-button\" type=\"submit\" value=\"#i18n.saveAsDraft#\"/>');\n    draft.insertBefore($('input#submit.form-button'));\n \n    $('input#saveAsDraft.form-button').on('click',function(event){\n        event.stopPropagation();\n        $(\"input[name='status']\").val(0);\n        $('input#submit.form-button').trigger(\"click\");\n        event.preventDefault();\n    });\n});\n\n\n<\/script>"
+                            "value": "<script type=\"text/javascript\"> \n\n$(document).ready(function(){\n    var draft= $('<input id=\"saveAsDraft\" name=\"draft\" class=\"form-button\" type=\"submit\" value=\"#i18n.saveAsDraft#\"/>');\n    draft.insertBefore($('input#submit.form-button'));\n \n    $('input#saveAsDraft.form-button').on('click',function(event){\n        event.stopPropagation();\n       \n        $('input#submit.form-button').trigger(\"click\");\n        event.preventDefault();\n    });\n});\n\n\n<\/script>"
                         }
                     }
                 ],
