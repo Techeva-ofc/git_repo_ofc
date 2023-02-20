@@ -359,7 +359,7 @@
             "regex": "",
             "reverse": "",
             "storeBinder": {
-                "className": "",
+                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                 "properties": {}
             },
             "visibilityControl": "",
