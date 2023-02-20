@@ -278,6 +278,15 @@
                             "storeNumeric": "False",
                             "style": ""
                         }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "autoPopulate": "",
+                            "id": "checkoutBtn",
+                            "label": "",
+                            "value": "<input type=\"submit\" value=\"Checkout\"/>"
+                        }
                     }
                 ],
                 "properties": {
