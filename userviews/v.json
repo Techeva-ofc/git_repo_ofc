@@ -1092,11 +1092,8 @@
         "__": "",
         "hideThisUserviewInAppCenter": "",
         "permission": {
-            "className": "org.joget.apps.userview.lib.UserPermission",
-            "properties": {
-                "allowedUsernames": "",
-                "orgId": ""
-            }
+            "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+            "properties": {"allowedUsernames": ""}
         },
         "tempDisablePermissionChecking": "",
         "theme": {
