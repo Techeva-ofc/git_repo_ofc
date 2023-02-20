@@ -10,13 +10,15 @@
                     "enableOffline": "",
                     "id": "3B6F25A638EF40FFAD3C5DAAC41BA98F",
                     "label": "Welcome",
+                    "permission_rules": {},
                     "userviewCacheDuration": "",
                     "userviewCacheScope": ""
                 }
             }],
             "properties": {
                 "id": "category-EE74E4F4426241BD9BC3BC73B1D24AC7",
-                "label": "<i class=\"fa fa-home\"><\/i> Home"
+                "label": "<i class=\"fa fa-home\"><\/i> Home",
+                "permission_rules": {}
             }
         },
         {
@@ -70,6 +72,7 @@
                     "list-newButtonLabel": "",
                     "list-newLinkTarget": "",
                     "list-showDeleteButton": "yes",
+                    "permission_rules": {},
                     "rowCount": "",
                     "selectionType": "multiple",
                     "userviewCacheDuration": "",
@@ -84,7 +87,8 @@
                 "permission": {
                     "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
-                }
+                },
+                "permission_rules": {}
             }
         },
         {
@@ -138,6 +142,7 @@
                     "list-newButtonLabel": "",
                     "list-newLinkTarget": "",
                     "list-showDeleteButton": "yes",
+                    "permission_rules": {},
                     "rowCount": "",
                     "selectionType": "multiple",
                     "userviewCacheDuration": "",
@@ -152,7 +157,8 @@
                 "permission": {
                     "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
-                }
+                },
+                "permission_rules": {}
             }
         },
         {
@@ -207,6 +213,7 @@
                         "list-newButtonLabel": "",
                         "list-newLinkTarget": "",
                         "list-showDeleteButton": "yes",
+                        "permission_rules": {},
                         "rowCount": "",
                         "selectionType": "multiple",
                         "userviewCacheDuration": "",
@@ -257,6 +264,7 @@
                         "label": "Import Data",
                         "messageOnError": "Error in Upload !!",
                         "messageOnSuccess": "Successfully uploaded !!",
+                        "permission_rules": {},
                         "redirectUrl": "",
                         "rowStart": "2",
                         "userviewCacheDuration": "20",
@@ -272,7 +280,8 @@
                     "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
                 },
-                "permissionComment": ""
+                "permissionComment": "",
+                "permission_rules": {}
             }
         },
         {
@@ -326,6 +335,7 @@
                     "list-newButtonLabel": "",
                     "list-newLinkTarget": "",
                     "list-showDeleteButton": "yes",
+                    "permission_rules": {},
                     "rowCount": "",
                     "selectionType": "multiple",
                     "userviewCacheDuration": "",
@@ -339,7 +349,8 @@
                     "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
                 },
-                "permissionComment": ""
+                "permissionComment": "",
+                "permission_rules": {}
             }
         },
         {
@@ -393,6 +404,7 @@
                     "list-newButtonLabel": "",
                     "list-newLinkTarget": "",
                     "list-showDeleteButton": "yes",
+                    "permission_rules": {},
                     "rowCount": "",
                     "selectionType": "multiple",
                     "userviewCacheDuration": "",
@@ -406,7 +418,8 @@
                     "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
                 },
-                "permissionComment": ""
+                "permissionComment": "",
+                "permission_rules": {}
             }
         },
         {
@@ -460,6 +473,7 @@
                     "list-newButtonLabel": "",
                     "list-newLinkTarget": "",
                     "list-showDeleteButton": "yes",
+                    "permission_rules": {},
                     "rowCount": "",
                     "selectionType": "multiple",
                     "userviewCacheDuration": "",
@@ -473,7 +487,8 @@
                     "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
                 },
-                "permissionComment": ""
+                "permissionComment": "",
+                "permission_rules": {}
             }
         },
         {
@@ -527,6 +542,7 @@
                     "list-newButtonLabel": "",
                     "list-newLinkTarget": "",
                     "list-showDeleteButton": "yes",
+                    "permission_rules": {},
                     "rowCount": "",
                     "selectionType": "multiple",
                     "userviewCacheDuration": "",
@@ -540,7 +556,8 @@
                     "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
                 },
-                "permissionComment": ""
+                "permissionComment": "",
+                "permission_rules": {}
             }
         },
         {
@@ -594,6 +611,7 @@
                     "list-newButtonLabel": "",
                     "list-newLinkTarget": "",
                     "list-showDeleteButton": "yes",
+                    "permission_rules": {},
                     "rowCount": "",
                     "selectionType": "multiple",
                     "userviewCacheDuration": "",
@@ -607,7 +625,8 @@
                     "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
                 },
-                "permissionComment": ""
+                "permissionComment": "",
+                "permission_rules": {}
             }
         },
         {
@@ -661,6 +680,7 @@
                     "list-newButtonLabel": "",
                     "list-newLinkTarget": "",
                     "list-showDeleteButton": "yes",
+                    "permission_rules": {},
                     "rowCount": "",
                     "selectionType": "multiple",
                     "userviewCacheDuration": "",
@@ -674,7 +694,8 @@
                     "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
                 },
-                "permissionComment": ""
+                "permissionComment": "",
+                "permission_rules": {}
             }
         },
         {
@@ -728,6 +749,7 @@
                     "list-newButtonLabel": "",
                     "list-newLinkTarget": "",
                     "list-showDeleteButton": "yes",
+                    "permission_rules": {},
                     "rowCount": "",
                     "selectionType": "multiple",
                     "userviewCacheDuration": "",
@@ -741,7 +763,8 @@
                     "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
                 },
-                "permissionComment": ""
+                "permissionComment": "",
+                "permission_rules": {}
             }
         },
         {
@@ -795,6 +818,7 @@
                     "list-newButtonLabel": "",
                     "list-newLinkTarget": "",
                     "list-showDeleteButton": "yes",
+                    "permission_rules": {},
                     "rowCount": "",
                     "selectionType": "multiple",
                     "userviewCacheDuration": "",
@@ -808,7 +832,8 @@
                     "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
                 },
-                "permissionComment": ""
+                "permissionComment": "",
+                "permission_rules": {}
             }
         },
         {
@@ -863,6 +888,7 @@
                         "list-newButtonLabel": "",
                         "list-newLinkTarget": "",
                         "list-showDeleteButton": "yes",
+                        "permission_rules": {},
                         "rowCount": "",
                         "selectionType": "multiple",
                         "userviewCacheDuration": "",
@@ -918,6 +944,7 @@
                         "list-newButtonLabel": "",
                         "list-newLinkTarget": "",
                         "list-showDeleteButton": "yes",
+                        "permission_rules": {},
                         "rowCount": "",
                         "selectionType": "multiple",
                         "userviewCacheDuration": "",
@@ -932,7 +959,8 @@
                     "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
                 },
-                "permissionComment": ""
+                "permissionComment": "",
+                "permission_rules": {}
             }
         },
         {
@@ -950,6 +978,7 @@
                         "keyName": "",
                         "label": "New Service Request",
                         "messageShowAfterComplete": "",
+                        "permission_rules": {},
                         "processDefId": "serReqForm_approver_process",
                         "redirectTarget": "",
                         "redirectUrlAfterComplete": "",
@@ -1003,6 +1032,7 @@
                         "list-newButtonLabel": "Add New",
                         "list-newLinkTarget": "",
                         "list-showDeleteButton": "",
+                        "permission_rules": {},
                         "rowCount": "",
                         "selectionType": "multiple",
                         "userviewCacheDuration": "",
@@ -1025,6 +1055,7 @@
                         "label": "Service Request Approval",
                         "list-customFooter": "",
                         "list-customHeader": "",
+                        "permission_rules": {},
                         "processId": "serReqForm_approver_process",
                         "rowCount": "true",
                         "showDetail": "",
@@ -1052,6 +1083,7 @@
                         "loadDataWithKey": "",
                         "messageShowAfterComplete": "",
                         "paramName": "",
+                        "permission_rules": {},
                         "readonly": "",
                         "readonlyLabel": "",
                         "redirectTargetOnCancel": "top",
@@ -1071,10 +1103,14 @@
                 "id": "category-72998b3f-3b8e-4108-9fb9-0a46b89fb9ce",
                 "label": "<i class='fa fa-users'><\/i> Service Request Form Approval Process",
                 "permission": {
-                    "className": "",
-                    "properties": {}
+                    "className": "org.joget.apps.userview.lib.UserPermission",
+                    "properties": {
+                        "allowedUsernames": "admin;user",
+                        "orgId": ""
+                    }
                 },
-                "permissionComment": ""
+                "permissionComment": "",
+                "permission_rules": {}
             }
         }
     ],
@@ -1094,6 +1130,7 @@
             "className": "",
             "properties": {}
         },
+        "permission_rules": [],
         "tempDisablePermissionChecking": "",
         "theme": {
             "className": "org.joget.plugin.enterprise.XadminTheme",
