@@ -364,7 +364,7 @@
             "comment": "",
             "id": "serReqSumr",
             "join": "",
-            "label": "Service Request Page",
+            "label": "Service Request  view Page",
             "loadBinder": {
                 "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                 "properties": {}
@@ -376,7 +376,7 @@
             "permissionHidden": "",
             "permissionReadonly": "",
             "readonly": "true",
-            "readonlyLabel": "true",
+            "readonlyLabel": "",
             "regex": "",
             "reverse": "",
             "storeBinder": {
