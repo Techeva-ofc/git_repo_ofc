@@ -25,6 +25,11 @@
                     "fieldId": "",
                     "joinFieldId": "ofc_category_name",
                     "tableName": "ofc_ofc_category_tab"
+                },
+                {
+                    "fieldId": "",
+                    "joinFieldId": "ofc_company_tab.ownerFirstName",
+                    "tableName": "ofc_company_tab"
                 }
             ]
         }
