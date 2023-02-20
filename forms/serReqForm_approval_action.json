@@ -131,6 +131,11 @@
         "id": "serReqForm_approval_action",
         "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
         "name": "Service Request Form Approval Action",
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+            "properties": {}
+        },
         "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
         "tableName": "ofc_serReqs_tab_a"
     }
