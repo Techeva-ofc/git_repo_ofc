@@ -990,7 +990,7 @@
                         "loadDataWithKey": "",
                         "messageShowAfterComplete": "Redirect to payment page",
                         "paramName": "",
-                        "readonly": "Yes",
+                        "readonly": "",
                         "readonlyLabel": "",
                         "redirectTargetOnCancel": "top",
                         "redirectTargetOnComplete": "",
