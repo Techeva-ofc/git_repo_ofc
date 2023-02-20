@@ -127,16 +127,27 @@
         }
     }],
     "properties": {
-        "elementUniqueKey": "4895",
+        "description": "",
         "id": "serReqForm_approval_action",
-        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "name": "Service Request Form Approval Action",
         "noPermissionMessage": "",
         "permission": {
-            "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+            "className": "",
             "properties": {}
         },
-        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "tableName": "ofc_serReqs_tab_a"
     }
 }
