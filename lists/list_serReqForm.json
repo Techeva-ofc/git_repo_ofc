@@ -30,6 +30,16 @@
                     "fieldId": "",
                     "joinFieldId": "ofc_company_tab.ownerFirstName",
                     "tableName": "ofc_serReqs_tab"
+                },
+                {
+                    "fieldId": "",
+                    "joinFieldId": "ofc_company_tab.ownerFirstName",
+                    "tableName": "ofc_serReqs_tab"
+                },
+                {
+                    "fieldId": "",
+                    "joinFieldId": "ofc_company_tab.ownerFirstName",
+                    "tableName": "ofc_serReqs_tab"
                 }
             ]
         }
