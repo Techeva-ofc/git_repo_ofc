@@ -1094,7 +1094,7 @@
         "permission": {
             "className": "org.joget.apps.userview.lib.UserPermission",
             "properties": {
-                "allowedUsernames": "admin;user",
+                "allowedUsernames": "",
                 "orgId": ""
             }
         },
