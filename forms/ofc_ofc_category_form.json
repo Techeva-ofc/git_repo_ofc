@@ -51,7 +51,7 @@
                     "className": "org.joget.apps.form.lib.TextField",
                     "properties": {
                         "encryption": "",
-                        "id": "serReq_fees",
+                        "id": "serReqTotAmt",
                         "label": "Total Amount",
                         "maxlength": "",
                         "numOfDecimal": "2",
@@ -103,7 +103,7 @@
                     "properties": {
                         "equation": "",
                         "hidden": "",
-                        "id": "serReqTotAmt",
+                        "id": "serReq_fees",
                         "label": "Service Category Fees",
                         "numOfDecimal": "2",
                         "postfix": "",
@@ -118,9 +118,9 @@
                         },
                         "variables": [
                             {
-                                "fieldId": "serReq_fees",
+                                "fieldId": "serReqTotAmt",
                                 "operation": "sum",
-                                "variableName": "Service Category Fees"
+                                "variableName": "Total Amount"
                             },
                             {
                                 "fieldId": "serReq_vat",
