@@ -250,7 +250,7 @@
                 "operator": "=",
                 "value": "Closed"
             }],
-            "target": "_top"
+            "target": "_parent"
         },
         "type": "text"
     }],
