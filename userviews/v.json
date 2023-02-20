@@ -267,7 +267,12 @@
             ],
             "properties": {
                 "id": "category-0656c558-d29b-4f40-bf51-67b17595921a",
-                "label": "<i class=\"fa fa-tasks\"><\/i>Manage Tower "
+                "label": "<i class=\"fa fa-tasks\"><\/i>Manage Tower ",
+                "permission": {
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                    "properties": {}
+                },
+                "permissionComment": ""
             }
         },
         {
@@ -329,7 +334,12 @@
             }],
             "properties": {
                 "id": "category-d35049fd-7b71-42e3-944b-0ddf66270ac5",
-                "label": "<i class=\"fa fa-tasks\"><\/i>Manage Floor"
+                "label": "<i class=\"fa fa-tasks\"><\/i>Manage Floor",
+                "permission": {
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                    "properties": {}
+                },
+                "permissionComment": ""
             }
         },
         {
@@ -391,7 +401,12 @@
             }],
             "properties": {
                 "id": "category-c1b9eaab-6a04-49f4-92c2-161f4d0b330f",
-                "label": "<i class='fa fa-tasks'><\/i>Manage Unit Area"
+                "label": "<i class='fa fa-tasks'><\/i>Manage Unit Area",
+                "permission": {
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                    "properties": {}
+                },
+                "permissionComment": ""
             }
         },
         {
@@ -453,7 +468,12 @@
             }],
             "properties": {
                 "id": "category-290a0101-dc49-490d-8291-7ffa985b1195",
-                "label": "<i class=\"fa fa-tasks\"><\/i>Tower Floor Area mapping"
+                "label": "<i class=\"fa fa-tasks\"><\/i>Tower Floor Area mapping",
+                "permission": {
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                    "properties": {}
+                },
+                "permissionComment": ""
             }
         },
         {
@@ -515,7 +535,12 @@
             }],
             "properties": {
                 "id": "category-a3256966-f6a7-4a48-a745-9080bfee6c25",
-                "label": "<i class='fa fa-tasks'><\/i>Manage Activity"
+                "label": "<i class='fa fa-tasks'><\/i>Manage Activity",
+                "permission": {
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                    "properties": {}
+                },
+                "permissionComment": ""
             }
         },
         {
@@ -577,7 +602,12 @@
             }],
             "properties": {
                 "id": "category-2449f176-5762-4dfc-bd3e-c81832736383",
-                "label": "<i class=\"fa fa-tasks\"><\/i>Manage Company"
+                "label": "<i class=\"fa fa-tasks\"><\/i>Manage Company",
+                "permission": {
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                    "properties": {}
+                },
+                "permissionComment": ""
             }
         },
         {
@@ -639,7 +669,12 @@
             }],
             "properties": {
                 "id": "category-954504b0-51b3-4c4e-bc3d-c5ef549edfe3",
-                "label": "<i class=\"fa fa-tasks\"><\/i>Manage Service Category"
+                "label": "<i class=\"fa fa-tasks\"><\/i>Manage Service Category",
+                "permission": {
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                    "properties": {}
+                },
+                "permissionComment": ""
             }
         },
         {
@@ -701,7 +736,12 @@
             }],
             "properties": {
                 "id": "category-c54667e1-c36c-43b5-a8c6-3755352a20e2",
-                "label": "<i class='fa fa-tasks'><\/i>Manage Checklist Type"
+                "label": "<i class='fa fa-tasks'><\/i>Manage Checklist Type",
+                "permission": {
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                    "properties": {}
+                },
+                "permissionComment": ""
             }
         },
         {
@@ -763,7 +803,12 @@
             }],
             "properties": {
                 "id": "category-93be2553-d2cf-4ed0-a82e-6adb81e1f6b7",
-                "label": "<i class=\"fa fa-tasks\"><\/i>Manage Fitout Checklist"
+                "label": "<i class=\"fa fa-tasks\"><\/i>Manage Fitout Checklist",
+                "permission": {
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                    "properties": {}
+                },
+                "permissionComment": ""
             }
         },
         {
@@ -882,7 +927,12 @@
             ],
             "properties": {
                 "id": "category-c3069ab6-9844-43ab-b589-4324e47e9eb2",
-                "label": "<i class=\"fa fa-tasks\"><\/i>Inspection Summery"
+                "label": "<i class=\"fa fa-tasks\"><\/i>Inspection Summery",
+                "permission": {
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                    "properties": {}
+                },
+                "permissionComment": ""
             }
         },
         {
@@ -1017,7 +1067,15 @@
             ],
             "properties": {
                 "id": "category-72998b3f-3b8e-4108-9fb9-0a46b89fb9ce",
-                "label": "<i class='fa fa-users'><\/i> Service Request Form Approval Process"
+                "label": "<i class='fa fa-users'><\/i> Service Request Form Approval Process",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.UserPermission",
+                    "properties": {
+                        "allowedUsernames": "user",
+                        "orgId": ""
+                    }
+                },
+                "permissionComment": ""
             }
         }
     ],
