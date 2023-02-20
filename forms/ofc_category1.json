@@ -49,7 +49,7 @@
                             "properties": {}
                         },
                         "variables": [{
-                            "fieldId": "serReq_fees",
+                            "fieldId": "serReqTotAmt",
                             "operation": "sum",
                             "variableName": "Service Category Total"
                         }],
@@ -76,7 +76,7 @@
                         },
                         "variables": [
                             {
-                                "fieldId": "serReq_fees",
+                                "fieldId": "serReqTotAmt",
                                 "operation": "sum",
                                 "variableName": "Service Category Total"
                             },
