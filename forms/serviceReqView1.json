@@ -266,6 +266,18 @@
                             "value": "Closed",
                             "workflowVariable": ""
                         }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "false",
+                            "id": "field14",
+                            "label": "Text Field",
+                            "readonly": "False",
+                            "readonlyLabel": "False",
+                            "storeNumeric": "False",
+                            "style": ""
+                        }
                     }
                 ],
                 "properties": {
