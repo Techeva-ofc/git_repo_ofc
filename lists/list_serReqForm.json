@@ -212,8 +212,11 @@
     "pageSize": "0",
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
     "permission": {
-        "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
-        "properties": {}
+        "className": "org.joget.apps.userview.lib.UserPermission",
+        "properties": {
+            "allowedUsernames": "admin;user",
+            "orgId": ""
+        }
     },
     "responsiveView": [
         {
