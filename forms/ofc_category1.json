@@ -9,8 +9,8 @@
                     "className": "org.joget.apps.form.lib.TextField",
                     "properties": {
                         "encryption": "",
-                        "id": "serReq_fees",
-                        "label": "Service Category Fees",
+                        "id": "serReqTotAmt",
+                        "label": "Service Category Total(VAT Inclusive)",
                         "maxlength": "",
                         "numOfDecimal": "2",
                         "placeholder": "",
@@ -33,10 +33,10 @@
                 {
                     "className": "org.joget.plugin.enterprise.CalculationField",
                     "properties": {
-                        "equation": "(Service Category Fees/100)*5",
+                        "equation": "(Service Category Fee/100)*5",
                         "hidden": "",
                         "id": "serReq_vat",
-                        "label": "VAT",
+                        "label": "VAT(5%)",
                         "numOfDecimal": "2",
                         "postfix": "",
                         "prefix": "",
@@ -51,7 +51,7 @@
                         "variables": [{
                             "fieldId": "serReq_fees",
                             "operation": "sum",
-                            "variableName": "Service Category Fees"
+                            "variableName": "Service Category Fee"
                         }],
                         "workflowVariable": ""
                     }
@@ -59,10 +59,10 @@
                 {
                     "className": "org.joget.plugin.enterprise.CalculationField",
                     "properties": {
-                        "equation": "",
+                        "equation": "(Service Category Total-VAT)",
                         "hidden": "",
-                        "id": "serReqTotAmt",
-                        "label": "Total Amount",
+                        "id": "serReq_fees",
+                        "label": "Service Category Fee",
                         "numOfDecimal": "2",
                         "postfix": "",
                         "prefix": "",
@@ -78,7 +78,7 @@
                             {
                                 "fieldId": "serReq_fees",
                                 "operation": "sum",
-                                "variableName": "Service Category Fees"
+                                "variableName": "Service Category Total"
                             },
                             {
                                 "fieldId": "serReq_vat",
