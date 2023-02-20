@@ -33,18 +33,23 @@
                 }
             }],
             "properties": {
-                "elementUniqueKey": "4920",
+                "comment": "",
                 "id": "section1",
+                "join": "",
                 "label": "",
                 "loadBinder": {
                     "className": "",
                     "properties": {}
                 },
                 "permission": {
-                    "className": "",
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
                 },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
                 "regex": "",
+                "reverse": "",
                 "storeBinder": {
                     "className": "",
                     "properties": {}
@@ -97,18 +102,23 @@
                 }
             }],
             "properties": {
-                "elementUniqueKey": "4927",
+                "comment": "",
                 "id": "section2",
+                "join": "",
                 "label": "Approval",
                 "loadBinder": {
                     "className": "",
                     "properties": {}
                 },
                 "permission": {
-                    "className": "",
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
                 },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
                 "regex": "",
+                "reverse": "",
                 "storeBinder": {
                     "className": "",
                     "properties": {}
@@ -194,18 +204,23 @@
                 }
             }],
             "properties": {
-                "elementUniqueKey": "4938",
+                "comment": "",
                 "id": "section3",
+                "join": "",
                 "label": "Approval Trails",
                 "loadBinder": {
                     "className": "",
                     "properties": {}
                 },
                 "permission": {
-                    "className": "",
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
                 },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
                 "regex": "",
+                "reverse": "",
                 "storeBinder": {
                     "className": "",
                     "properties": {}
