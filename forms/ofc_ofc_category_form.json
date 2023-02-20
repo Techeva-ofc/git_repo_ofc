@@ -101,7 +101,7 @@
                 {
                     "className": "org.joget.plugin.enterprise.CalculationField",
                     "properties": {
-                        "equation": "",
+                        "equation": "(Total Amount-VAT)",
                         "hidden": "",
                         "id": "serReq_fees",
                         "label": "Service Category Fees",
