@@ -42,10 +42,15 @@
     "hidePageSize": "true",
     "id": "list_ofc_emirates_form",
     "name": "List - Create Emirates Form",
+    "noPermissionMessage": "",
     "order": "1",
     "orderBy": "dateModified",
     "pageSize": "0",
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "permission": {
+        "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+        "properties": {}
+    },
     "responsiveView": [
         {
             "breakpoint": "",
