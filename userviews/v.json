@@ -988,7 +988,7 @@
                         "keyName": "",
                         "label": "Service Request View Form",
                         "loadDataWithKey": "",
-                        "messageShowAfterComplete": "",
+                        "messageShowAfterComplete": "Redirect to payment page",
                         "paramName": "",
                         "readonly": "",
                         "readonlyLabel": "",
