@@ -906,7 +906,7 @@
                         "add-customFooter": "",
                         "add-customHeader": "",
                         "add-messageShowAfterComplete": "",
-                        "add-saveButtonLabel": "Checkout",
+                        "add-saveButtonLabel": "Save",
                         "addFormId": "serReqForm",
                         "buttonPosition": "topLeft",
                         "cacheAllLinks": "",
