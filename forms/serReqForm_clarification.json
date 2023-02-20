@@ -156,6 +156,11 @@
         "id": "serReqForm_clarification",
         "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
         "name": "Service Request Form Clarification",
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+            "properties": {}
+        },
         "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
         "tableName": "ofc_serReqs_tab"
     }
