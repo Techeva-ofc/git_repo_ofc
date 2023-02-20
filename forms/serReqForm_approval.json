@@ -240,7 +240,7 @@
         "name": "Service Request Form Approval",
         "noPermissionMessage": "",
         "permission": {
-            "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+            "className": "",
             "properties": {}
         },
         "postProcessor": {
