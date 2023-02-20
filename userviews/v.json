@@ -976,7 +976,7 @@
                     "properties": {
                         "actionAfterSaved": "",
                         "actionOnCancel": "",
-                        "cancelButtonLabel": "cancel",
+                        "cancelButtonLabel": "",
                         "customFooter": "",
                         "customHeader": "",
                         "customId": "serRequestView",
@@ -988,7 +988,7 @@
                         "keyName": "",
                         "label": "Service Request View Form",
                         "loadDataWithKey": "",
-                        "messageShowAfterComplete": "",
+                        "messageShowAfterComplete": "Payment",
                         "paramName": "",
                         "readonly": "Yes",
                         "readonlyLabel": "true",
