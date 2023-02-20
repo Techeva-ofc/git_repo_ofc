@@ -217,7 +217,6 @@
     ],
     "properties": {
         "description": "",
-        "elementUniqueKey": "4919",
         "id": "serReqForm_approval",
         "loadBinder": {
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
@@ -229,6 +228,11 @@
             "className": "",
             "properties": {}
         },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "create",
         "storeBinder": {
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
