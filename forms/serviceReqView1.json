@@ -266,27 +266,6 @@
                             "value": "Closed",
                             "workflowVariable": ""
                         }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.SubForm",
-                        "properties": {
-                            "formDefId": "submitBtnForm",
-                            "id": "field15",
-                            "label": "",
-                            "loadBinder": {
-                                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                                "properties": {}
-                            },
-                            "noframe": "",
-                            "parentSubFormId": "",
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "storeBinder": {
-                                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                                "properties": {}
-                            },
-                            "subFormParentId": ""
-                        }
                     }
                 ],
                 "properties": {
@@ -375,7 +354,7 @@
             },
             "permissionHidden": "",
             "permissionReadonly": "",
-            "readonly": "true",
+            "readonly": "",
             "readonlyLabel": "",
             "regex": "",
             "reverse": "",
