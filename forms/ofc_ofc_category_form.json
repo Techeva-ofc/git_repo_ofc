@@ -125,7 +125,7 @@
                             {
                                 "fieldId": "serReq_vat",
                                 "operation": "sum",
-                                "variableName": "VAT(5%)"
+                                "variableName": "VAT"
                             }
                         ],
                         "workflowVariable": ""
