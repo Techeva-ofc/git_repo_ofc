@@ -145,8 +145,14 @@
                 }
             }],
             "properties": {
+                "comment": "",
+                "hide": "",
                 "id": "category-13cc278c-6cd5-4073-b4df-f2edb4cf9b6c",
-                "label": "<i class='fa fa-tasks'><\/i>Manage Location"
+                "label": "<i class='fa fa-tasks'><\/i>Manage Location",
+                "permission": {
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                    "properties": {}
+                }
             }
         },
         {
