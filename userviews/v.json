@@ -993,7 +993,7 @@
                         "readonly": "",
                         "readonlyLabel": "",
                         "redirectTargetOnCancel": "top",
-                        "redirectTargetOnComplete": "top",
+                        "redirectTargetOnComplete": "",
                         "redirectUrlAfterComplete": "",
                         "redirectUrlOnCancel": "",
                         "showInPopupDialog": "",
