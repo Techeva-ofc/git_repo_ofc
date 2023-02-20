@@ -23,7 +23,7 @@
         "id": "column_0",
         "label": "Activity Name",
         "name": "activityName",
-        "permission_rules": {"34453ddc-875e-dfbf-08db-232c3661ac65": {}},
+        "permission_rules": {},
         "sortable": "true",
         "style": "",
         "width": ""
@@ -33,7 +33,7 @@
         "id": "filter_0",
         "label": "Activity Name",
         "name": "activityName",
-        "permission_rules": {"34453ddc-875e-dfbf-08db-232c3661ac65": {}},
+        "permission_rules": {},
         "type": {
             "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
             "properties": {}
@@ -45,14 +45,7 @@
     "orderBy": "",
     "pageSize": 0,
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
-    "permission_rules": [{
-        "permission": {
-            "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
-            "properties": {}
-        },
-        "permission_key": "34453ddc-875e-dfbf-08db-232c3661ac65",
-        "permission_name": "Databuilder"
-    }],
+    "permission_rules": [],
     "rowActions": [],
     "showPageSizeSelector": "true",
     "useSession": "false"
