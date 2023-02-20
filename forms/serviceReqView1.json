@@ -268,24 +268,24 @@
                         }
                     },
                     {
-                        "className": "org.joget.apps.form.lib.TextField",
+                        "className": "org.joget.apps.form.lib.SubForm",
                         "properties": {
-                            "encryption": "false",
-                            "id": "field14",
-                            "label": "Text Field",
-                            "readonly": "False",
-                            "readonlyLabel": "False",
-                            "storeNumeric": "False",
-                            "style": ""
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.CustomHTML",
-                        "properties": {
-                            "autoPopulate": "",
-                            "id": "checkoutBtn",
+                            "formDefId": "submitBtnForm",
+                            "id": "field15",
                             "label": "",
-                            "value": "<script type=\"text/javascript\"> \n\n$(document).ready(function(){\n    var draft= $('<input id=\"saveAsDraft\" name=\"draft\" class=\"form-button\" type=\"submit\" value=\"#i18n.saveAsDraft#\"/>');\n    draft.insertBefore($('input#submit.form-button'));\n \n    $('input#saveAsDraft.form-button').on('click',function(event){\n        event.stopPropagation();\n       \n        $('input#submit.form-button').trigger(\"click\");\n        event.preventDefault();\n    });\n});\n\n\n<\/script>"
+                            "loadBinder": {
+                                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                                "properties": {}
+                            },
+                            "noframe": "",
+                            "parentSubFormId": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "storeBinder": {
+                                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                                "properties": {}
+                            },
+                            "subFormParentId": ""
                         }
                     }
                 ],
