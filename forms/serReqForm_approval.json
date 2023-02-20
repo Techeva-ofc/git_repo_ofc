@@ -42,7 +42,7 @@
                     "properties": {}
                 },
                 "permission": {
-                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                    "className": "",
                     "properties": {}
                 },
                 "permissionReadonly": "",
@@ -111,7 +111,7 @@
                     "properties": {}
                 },
                 "permission": {
-                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                    "className": "",
                     "properties": {}
                 },
                 "permissionReadonly": "",
@@ -213,7 +213,7 @@
                     "properties": {}
                 },
                 "permission": {
-                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                    "className": "",
                     "properties": {}
                 },
                 "permissionReadonly": "",
