@@ -20,68 +20,53 @@
                             },
                             {
                                 "grouping": "",
-                                "label": "Manage Emirates",
-                                "value": "emirates"
+                                "label": "Master Admin",
+                                "value": "master admin"
                             },
                             {
                                 "grouping": "",
-                                "label": "Manage Location",
-                                "value": "location"
+                                "label": "Super admin",
+                                "value": "super admin"
                             },
                             {
                                 "grouping": "",
-                                "label": "Manage Tower",
-                                "value": "tower"
+                                "label": "Admin",
+                                "value": "admin"
                             },
                             {
                                 "grouping": "",
-                                "label": "Manage Floor",
-                                "value": "floor"
+                                "label": "User",
+                                "value": "user"
                             },
                             {
                                 "grouping": "",
-                                "label": "Manage Unit Area",
-                                "value": "unit_area"
+                                "label": "Dwg Reviewer",
+                                "value": "dwg reviewer"
                             },
                             {
                                 "grouping": "",
-                                "label": "Tower Floor Area Mapping",
-                                "value": "tower floor area mapping"
+                                "label": "Inspector",
+                                "value": "inspector"
                             },
                             {
                                 "grouping": "",
-                                "label": "Manage Activity",
-                                "value": "activity"
+                                "label": "Finance",
+                                "value": "finance"
                             },
                             {
                                 "grouping": "",
-                                "label": "Manage Company",
-                                "value": "company"
+                                "label": "Viewer",
+                                "value": "viewer"
                             },
                             {
                                 "grouping": "",
-                                "label": "Manage Category",
-                                "value": "service category"
+                                "label": "Client",
+                                "value": "client"
                             },
                             {
                                 "grouping": "",
-                                "label": "Manage Checklist Type",
-                                "value": "checklist type"
-                            },
-                            {
-                                "grouping": "",
-                                "label": "Manage Fitout Checklist",
-                                "value": "fitout checklist"
-                            },
-                            {
-                                "grouping": "",
-                                "label": "Inspection Summary",
-                                "value": "inspection summary"
-                            },
-                            {
-                                "grouping": "",
-                                "label": "Service Request Summary",
-                                "value": "service request summary"
+                                "label": "Contractor",
+                                "value": "contractor"
                             }
                         ],
                         "optionsBinder": {
