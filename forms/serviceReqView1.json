@@ -273,7 +273,7 @@
                             "autoPopulate": "",
                             "id": "field14",
                             "label": "",
-                            "value": "<html>\n    \n    <input type=\"button\" onclick=\"xadmin.add_tab('Service Request Summery','/jw/web/userview/ofc_app/v/_/serReqForm_crud',true)\"/>\n<\/html>"
+                            "value": "<html>\n    \n    <input type=\"button\" value=\"Add tab\" onclick=\"add_tab('Service Request Summery','/jw/web/userview/ofc_app/v/_/serReqForm_crud',true)\"/>\n<\/html>"
                         }
                     }
                 ],
