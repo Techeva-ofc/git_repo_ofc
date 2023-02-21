@@ -36,7 +36,7 @@
          <id>PERMISSION_</id>
          <appId>ofc_app</appId>
          <appVersion>1</appVersion>
-         <value>admin;user</value>
+         <value>admin</value>
          <remarks>permissionRequest:8C13941FFEEB4033B804D5F2D89B4827</remarks>
       </environmentVariable>
       <environmentVariable>
