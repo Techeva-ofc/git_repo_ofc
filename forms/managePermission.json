@@ -188,17 +188,12 @@
                             "value": ""
                         }],
                         "optionsBinder": {
-                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                            "className": "org.joget.plugin.enterprise.GroupOptionsBinder",
                             "properties": {
                                 "addEmptyOption": "",
                                 "cacheInterval": "",
                                 "emptyLabel": "",
-                                "extraCondition": "",
-                                "formDefId": "managePermission",
-                                "groupingColumn": "",
-                                "idColumn": "",
-                                "labelColumn": "groupName",
-                                "useAjax": ""
+                                "orgId": "ORG-001"
                             }
                         },
                         "readonly": "",
