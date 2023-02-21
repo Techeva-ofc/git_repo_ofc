@@ -92,13 +92,75 @@
                     "className": "org.joget.apps.form.lib.CheckBox",
                     "properties": {
                         "controlField": "",
-                        "id": "master",
-                        "label": "Master Admiin",
-                        "options": [{
-                            "grouping": "",
-                            "label": "Manage Emirates",
-                            "value": "Manage Emirates"
-                        }],
+                        "id": "formmenu",
+                        "label": "Select modules that can be access(Check all that apply)",
+                        "options": [
+                            {
+                                "grouping": "",
+                                "label": "Manage Emirates",
+                                "value": "emirates"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Manage Location",
+                                "value": "location"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Manage Tower",
+                                "value": "tower"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Manage Floor",
+                                "value": "floor"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Manage Unit Area",
+                                "value": "unit_area"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Tower Floor Area Mapping",
+                                "value": "tower floor area mapping"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Manage Activity",
+                                "value": "activity"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Manage Company",
+                                "value": "company"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Manage Category",
+                                "value": "service category"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Manage Checklist Type",
+                                "value": "checklist type"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Manage Fitout Checklist",
+                                "value": "fitout checklist"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Inspection Summary",
+                                "value": "inspection summary"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Service Request Summary",
+                                "value": "service request summary"
+                            }
+                        ],
                         "optionsBinder": {
                             "className": "",
                             "properties": {}
