@@ -4,7 +4,131 @@
         "className": "org.joget.apps.form.model.Section",
         "elements": [{
             "className": "org.joget.apps.form.model.Column",
-            "elements": [],
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "groupName",
+                        "label": "User Group",
+                        "multiple": "",
+                        "options": [
+                            {
+                                "grouping": "",
+                                "label": "",
+                                "value": ""
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Manage Emirates",
+                                "value": "emirates"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Manage Location",
+                                "value": "location"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Manage Tower",
+                                "value": "tower"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Manage Floor",
+                                "value": "floor"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Manage Unit Area",
+                                "value": "unit_area"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Tower Floor Area Mapping",
+                                "value": "tower floor area mapping"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Manage Activity",
+                                "value": "activity"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Manage Company",
+                                "value": "company"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Manage Category",
+                                "value": "service category"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Manage Checklist Type",
+                                "value": "checklist type"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Manage Fitout Checklist",
+                                "value": "fitout checklist"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Inspection Summary",
+                                "value": "inspection summary"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Service Request Summary",
+                                "value": "service request summary"
+                            }
+                        ],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "Please select a Group",
+                                "type": "alphabet"
+                            }
+                        },
+                        "value": "",
+                        "workflowVariable": "usergroup"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.CheckBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "master",
+                        "label": "Master Admiin",
+                        "options": [{
+                            "grouping": "",
+                            "label": "Manage Emirates",
+                            "value": "Manage Emirates"
+                        }],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                }
+            ],
             "properties": {"width": "100%"}
         }],
         "properties": {
