@@ -266,6 +266,15 @@
                             "value": "Closed",
                             "workflowVariable": ""
                         }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "autoPopulate": "",
+                            "id": "field14",
+                            "label": "",
+                            "value": "<html>\n    \n    <input type=\"button\" onclick=\"xadmin.add_tab('Service Request Summery','/jw/web/userview/ofc_app/v/_/serReqForm_crud',true)\"/>\n<\/html>"
+                        }
                     }
                 ],
                 "properties": {
