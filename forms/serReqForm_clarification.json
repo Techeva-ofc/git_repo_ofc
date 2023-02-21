@@ -152,27 +152,11 @@
         }
     ],
     "properties": {
-        "description": "",
+        "elementUniqueKey": "5013",
         "id": "serReqForm_clarification",
-        "loadBinder": {
-            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-            "properties": {}
-        },
+        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
         "name": "Service Request Form Clarification",
-        "noPermissionMessage": "",
-        "permission": {
-            "className": "",
-            "properties": {}
-        },
-        "postProcessor": {
-            "className": "",
-            "properties": {}
-        },
-        "postProcessorRunOn": "create",
-        "storeBinder": {
-            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-            "properties": {}
-        },
+        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
         "tableName": "ofc_serReqs_tab"
     }
 }

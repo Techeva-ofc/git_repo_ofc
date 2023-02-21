@@ -33,9 +33,8 @@
                 }
             }],
             "properties": {
-                "comment": "",
+                "elementUniqueKey": "4920",
                 "id": "section1",
-                "join": "",
                 "label": "",
                 "loadBinder": {
                     "className": "",
@@ -45,11 +44,7 @@
                     "className": "",
                     "properties": {}
                 },
-                "permissionReadonly": "",
-                "readonly": "",
-                "readonlyLabel": "",
                 "regex": "",
-                "reverse": "",
                 "storeBinder": {
                     "className": "",
                     "properties": {}
@@ -102,9 +97,8 @@
                 }
             }],
             "properties": {
-                "comment": "",
+                "elementUniqueKey": "4927",
                 "id": "section2",
-                "join": "",
                 "label": "Approval",
                 "loadBinder": {
                     "className": "",
@@ -114,11 +108,7 @@
                     "className": "",
                     "properties": {}
                 },
-                "permissionReadonly": "",
-                "readonly": "",
-                "readonlyLabel": "",
                 "regex": "",
-                "reverse": "",
                 "storeBinder": {
                     "className": "",
                     "properties": {}
@@ -204,9 +194,8 @@
                 }
             }],
             "properties": {
-                "comment": "",
+                "elementUniqueKey": "4938",
                 "id": "section3",
-                "join": "",
                 "label": "Approval Trails",
                 "loadBinder": {
                     "className": "",
@@ -216,11 +205,7 @@
                     "className": "",
                     "properties": {}
                 },
-                "permissionReadonly": "",
-                "readonly": "",
-                "readonlyLabel": "",
                 "regex": "",
-                "reverse": "",
                 "storeBinder": {
                     "className": "",
                     "properties": {}
@@ -232,6 +217,7 @@
     ],
     "properties": {
         "description": "",
+        "elementUniqueKey": "4919",
         "id": "serReqForm_approval",
         "loadBinder": {
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
@@ -243,11 +229,6 @@
             "className": "",
             "properties": {}
         },
-        "postProcessor": {
-            "className": "",
-            "properties": {}
-        },
-        "postProcessorRunOn": "create",
         "storeBinder": {
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}

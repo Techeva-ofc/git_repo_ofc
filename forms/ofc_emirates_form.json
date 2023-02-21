@@ -37,10 +37,9 @@
                 "properties": {}
             },
             "permission": {
-                "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                "className": "",
                 "properties": {}
             },
-            "permissionComment": "",
             "permissionReadonly": "",
             "readonly": "",
             "readonlyLabel": "",

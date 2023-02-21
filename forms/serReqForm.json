@@ -368,25 +368,9 @@
     "properties": {
         "description": "",
         "id": "serReqForm",
-        "loadBinder": {
-            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-            "properties": {}
-        },
+        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
         "name": "Service Request Form",
-        "noPermissionMessage": "",
-        "permission": {
-            "className": "",
-            "properties": {}
-        },
-        "postProcessor": {
-            "className": "",
-            "properties": {}
-        },
-        "postProcessorRunOn": "create",
-        "storeBinder": {
-            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-            "properties": {}
-        },
+        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
         "tableName": "ofc_serReqs_tab"
     }
 }

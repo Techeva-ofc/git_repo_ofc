@@ -201,20 +201,24 @@
                 "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
                 "properties": {"defaultValue": ""}
             }
+        },
+        {
+            "id": "filter_2",
+            "label": "Service Categoy",
+            "name": "serReqServCat",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {}
+            }
         }
     ],
     "hidePageSize": "true",
     "id": "list_serReqForm",
     "name": "List - Service Request Form",
-    "noPermissionMessage": "",
     "order": "1",
     "orderBy": "dateModified",
     "pageSize": "0",
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
-    "permission": {
-        "className": "",
-        "properties": {}
-    },
     "responsiveView": [
         {
             "breakpoint": "",
