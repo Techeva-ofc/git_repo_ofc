@@ -104,7 +104,7 @@
                         "equation": "(Service Category Total-VAT)",
                         "hidden": "",
                         "id": "serReq_fees",
-                        "label": "Service Category Fees",
+                        "label": "Service Category Fee",
                         "numOfDecimal": "2",
                         "postfix": "",
                         "prefix": "",
