@@ -174,6 +174,43 @@
                         "value": "",
                         "workflowVariable": ""
                     }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.MultiSelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "field3",
+                        "label": "Multi Select Box",
+                        "multiple": "true",
+                        "options": [{
+                            "grouping": "",
+                            "label": "",
+                            "value": ""
+                        }],
+                        "optionsBinder": {
+                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                            "properties": {
+                                "addEmptyOption": "",
+                                "cacheInterval": "",
+                                "emptyLabel": "",
+                                "extraCondition": "",
+                                "formDefId": "managePermission",
+                                "groupingColumn": "",
+                                "idColumn": "",
+                                "labelColumn": "groupName",
+                                "useAjax": ""
+                            }
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "width": "40%",
+                        "workflowVariable": ""
+                    }
                 }
             ],
             "properties": {"width": "100%"}
