@@ -1154,7 +1154,7 @@
                 "fontControl": "true",
                 "homeUrl": "#appResource.icon.jpg#",
                 "inbox": "current",
-                "js": "alert(\"hello\");",
+                "js": "",
                 "loginBackground": "#appResource.footerimage.jpg#",
                 "loginPageBottom": "",
                 "loginPageTop": "",
