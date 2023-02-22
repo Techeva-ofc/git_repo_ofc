@@ -1301,7 +1301,7 @@
                 "fontControl": "true",
                 "homeUrl": "#appResource.icon.jpg#",
                 "inbox": "current",
-                "js": "$('#myFormID :input').attr('readonly','readonly');",
+                "js": "formControls.forEach(element => {\r\n     if (element.getName() !== \"\" && element.getName() !== null)\r\n     {\r\n                element.setDisabled(true);\r\n         \r\n     }})",
                 "loginBackground": "#appResource.footerimage.jpg#",
                 "loginPageBottom": "",
                 "loginPageTop": "",
