@@ -1139,6 +1139,7 @@
             "className": "",
             "properties": {}
         },
+        "tempDisablePermissionChecking": "",
         "theme": {
             "className": "org.joget.plugin.enterprise.XadminTheme",
             "properties": {
@@ -1153,7 +1154,7 @@
                 "fontControl": "true",
                 "homeUrl": "#appResource.icon.jpg#",
                 "inbox": "current",
-                "js": "",
+                "js": "<script type=\"text/javascript\">\r\nalert(\"hello\");\r\n<\/script>",
                 "loginBackground": "#appResource.footerimage.jpg#",
                 "loginPageBottom": "",
                 "loginPageTop": "",
