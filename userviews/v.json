@@ -1113,7 +1113,7 @@
                 "comment": "Category for Manager and ConCordia Admin",
                 "hide": "",
                 "id": "category-72998b3f-3b8e-4108-9fb9-0a46b89fb9ce",
-                "label": "&amp;lt;i class=\"fa fa-users\"&amp;gt;&amp;lt;/i&amp;gt; Service Request Form Approval Process",
+                "label": "Service Request Form Approval Process",
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
@@ -1258,7 +1258,7 @@
                 "comment": "Category for Admin and User",
                 "hide": "",
                 "id": "category-65C5C8D5BF7440CBB77B809FA91117EF",
-                "label": "&lt;i class=\"fa fa-users\"&gt;&lt;/i&gt; Service Request Form Approval Process",
+                "label": "Service Request Form Approval Process",
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
