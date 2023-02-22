@@ -10,7 +10,7 @@
                 "field": "usertype",
                 "join": "AND",
                 "operator": "=",
-                "value": "Concordia Admin"
+                "value": "ConCordia Admin"
             }],
             "formDefId": "serReqForm",
             "functionColumns": [],
