@@ -39,6 +39,28 @@
             },
             "alignment": "",
             "datalist_type": "column",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "true",
+            "id": "column_2",
+            "include_export": "",
+            "label": "usertype",
+            "name": "usertype",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
             "exclude_export": "",
             "filterable": true,
             "format": {
@@ -200,15 +222,6 @@
             "type": {
                 "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
                 "properties": {"defaultValue": ""}
-            }
-        },
-        {
-            "id": "filter_2",
-            "label": "Service Categoy",
-            "name": "serReqServCat",
-            "type": {
-                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-                "properties": {}
             }
         }
     ],
