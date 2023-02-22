@@ -1107,6 +1107,47 @@
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
+                }
+            ],
+            "properties": {
+                "comment": "",
+                "hide": "",
+                "id": "category-72998b3f-3b8e-4108-9fb9-0a46b89fb9ce",
+                "label": "&amp;lt;i class=\"fa fa-users\"&amp;gt;&amp;lt;/i&amp;gt; Service Request Form Approval Process",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                    "properties": {
+                        "allowedGroupIds": "G-001;G-002",
+                        "orgId": ""
+                    }
+                },
+                "permissionComment": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.RunProcess",
+                    "properties": {
+                        "actionAfterSaved": "",
+                        "customId": "serReqForm_submit",
+                        "enableOffline": "",
+                        "fieldPassover": "",
+                        "fieldPassoverMethod": "append",
+                        "id": "AF59ED3161BF43C3A3A864A80A366186",
+                        "keyName": "",
+                        "label": "New Service Request",
+                        "messageShowAfterComplete": "",
+                        "processDefId": "serReqForm_approver_process",
+                        "redirectTarget": "",
+                        "redirectUrlAfterComplete": "",
+                        "runProcessDirectly": "Yes",
+                        "runProcessSubmitLabel": "",
+                        "showInPopupDialog": "",
+                        "userviewCacheDuration": "",
+                        "userviewCacheScope": ""
+                    }
                 },
                 {
                     "className": "org.joget.plugin.enterprise.CrudMenu",
@@ -1122,7 +1163,7 @@
                         "cacheAllLinks": "",
                         "cacheListAction": "",
                         "checkboxPosition": "no",
-                        "customId": "serReqForm_crud1",
+                        "customId": "serReqForm_crud",
                         "datalistId": "list_serReqForm",
                         "edit-afterSaved": "list",
                         "edit-allowRecordTraveling": "",
@@ -1140,9 +1181,9 @@
                         "edit-saveButtonLabel": "",
                         "editFormId": "",
                         "enableOffline": "",
-                        "id": "3946DECAA8F9437FACF567A09B9249D0",
+                        "id": "633C4534F069448CB27FC5EE045B26A1",
                         "keyName": "",
-                        "label": "Service Request Summary1",
+                        "label": "Service Request Summary",
                         "list-customFooter": "",
                         "list-customHeader": "",
                         "list-editLinkLabel": "",
@@ -1156,15 +1197,72 @@
                         "userviewCacheDuration": "",
                         "userviewCacheScope": ""
                     }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.DataListInboxMenu",
+                    "properties": {
+                        "appFilter": "process",
+                        "assignment-customFooter": "",
+                        "assignment-customHeader": "",
+                        "cacheAllLinks": "",
+                        "cacheListAction": "",
+                        "customId": "serReqForm_inbox",
+                        "datalistId": "list_serReqForm",
+                        "enableOffline": "",
+                        "id": "26FB53C7CDCB48FFB1DCEC08BFB0A6FA",
+                        "keyName": "",
+                        "label": "Service Request Approval",
+                        "list-customFooter": "",
+                        "list-customHeader": "",
+                        "processId": "serReqForm_approver_process",
+                        "rowCount": "true",
+                        "showDetail": "",
+                        "showPopup": "",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "actionAfterSaved": "",
+                        "actionOnCancel": "",
+                        "cancelButtonLabel": "cancel",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "serRequestView",
+                        "enableOffline": "",
+                        "fieldPassover": "",
+                        "fieldPassoverMethod": "append",
+                        "formId": "serviceReqView1",
+                        "id": "C4663712ACFD45468FD60D6004F63AEA",
+                        "keyName": "",
+                        "label": "Service Request View Form",
+                        "loadDataWithKey": "",
+                        "messageShowAfterComplete": "",
+                        "paramName": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "redirectTargetOnCancel": "top",
+                        "redirectTargetOnComplete": "",
+                        "redirectUrlAfterComplete": "",
+                        "redirectUrlOnCancel": "",
+                        "showInPopupDialog": "",
+                        "submitButtonLabel": "checkout to continue",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
                 }
             ],
             "properties": {
-                "id": "category-72998b3f-3b8e-4108-9fb9-0a46b89fb9ce",
-                "label": "<i class=\"fa fa-users\"><\/i> Service Request Form Approval Process",
+                "comment": "",
+                "hide": "",
+                "id": "category-65C5C8D5BF7440CBB77B809FA91117EF",
+                "label": "&lt;i class=\"fa fa-users\"&gt;&lt;/i&gt; Service Request Form Approval Process",
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
-                        "allowedGroupIds": "G-003;G-001;G-002;G-004",
+                        "allowedGroupIds": "G-003;G-004",
                         "orgId": ""
                     }
                 },
