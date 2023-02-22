@@ -266,6 +266,19 @@
                             "value": "New",
                             "workflowVariable": ""
                         }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
+                            "id": "usertype",
+                            "useDefaultWhenEmpty": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "#currentUser.firstName# #currentUser.lastName#",
+                            "workflowVariable": ""
+                        }
                     }
                 ],
                 "properties": {
