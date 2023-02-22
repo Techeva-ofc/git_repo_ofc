@@ -36,22 +36,16 @@
    <environmentVariableList>
       <environmentVariable>
          <id>counter</id>
-         <appId>ofc_app</appId>
-         <appVersion>7</appVersion>
          <value>5</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
       <environmentVariable>
          <id>ofc_serviceReq_form_assp_counter</id>
-         <appId>ofc_app</appId>
-         <appVersion>7</appVersion>
          <value>5</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
       <environmentVariable>
          <id>serReqForm_assp_counter</id>
-         <appId>ofc_app</appId>
-         <appVersion>7</appVersion>
          <value>6</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
