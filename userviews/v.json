@@ -1034,7 +1034,7 @@
                         "edit-readonly": "",
                         "edit-readonlyLabel": "",
                         "edit-saveButtonLabel": "",
-                        "editFormId": "serReqForm",
+                        "editFormId": "",
                         "enableOffline": "",
                         "id": "1B69E70488274008851F6B6FE6E5D4AE",
                         "keyName": "",
@@ -1111,7 +1111,7 @@
             ],
             "properties": {
                 "id": "category-72998b3f-3b8e-4108-9fb9-0a46b89fb9ce",
-                "label": "<i class='fa fa-users'><\/i> Service Request Form Approval Process",
+                "label": "<i class=\"fa fa-users\"><\/i> Service Request Form Approval Process",
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
