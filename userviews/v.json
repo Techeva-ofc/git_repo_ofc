@@ -1301,7 +1301,7 @@
                 "fontControl": "true",
                 "homeUrl": "#appResource.icon.jpg#",
                 "inbox": "current",
-                "js": "alert(document.getElementById(\"4ddc29e6-733e-4dde-aed3-4d2b550db6de\"));\n",
+                "js": "",
                 "loginBackground": "#appResource.footerimage.jpg#",
                 "loginPageBottom": "",
                 "loginPageTop": "",
