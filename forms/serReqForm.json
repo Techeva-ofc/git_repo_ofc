@@ -279,15 +279,6 @@
                             "value": "#currentUser.firstName# #currentUser.lastName#",
                             "workflowVariable": ""
                         }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.CustomHTML",
-                        "properties": {
-                            "autoPopulate": "",
-                            "id": "customtag",
-                            "label": "hide edit",
-                            "value": "<script type=\"text/javascript\">\r\n$(document).ready( function(){\r\n $(\"#edit\").hide();\r\n});\r\n<\/script>"
-                        }
                     }
                 ],
                 "properties": {
