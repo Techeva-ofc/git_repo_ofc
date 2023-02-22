@@ -1301,7 +1301,7 @@
                 "fontControl": "true",
                 "homeUrl": "#appResource.icon.jpg#",
                 "inbox": "current",
-                "js": "const myElement = document.getElementById(\"serReqForm_crud\");\nalert(myElement);",
+                "js": "alert(document.getElementById(\"serReqForm_crud\"));\n",
                 "loginBackground": "#appResource.footerimage.jpg#",
                 "loginPageBottom": "",
                 "loginPageTop": "",
