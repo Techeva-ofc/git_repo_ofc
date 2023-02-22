@@ -1154,7 +1154,7 @@
                 "fontControl": "true",
                 "homeUrl": "#appResource.icon.jpg#",
                 "inbox": "current",
-                "js": "<script type=\"text/javascript\">\r\nalert(\"hello\");\r\n<\/script>",
+                "js": "alert(\"hello\");",
                 "loginBackground": "#appResource.footerimage.jpg#",
                 "loginPageBottom": "",
                 "loginPageTop": "",
