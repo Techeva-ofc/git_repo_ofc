@@ -10,18 +10,7 @@
             "formDefId": "ofc_tower_form",
             "functionColumns": [],
             "groupBy": "",
-            "joins": [
-                {
-                    "fieldId": "",
-                    "joinFieldId": "towerEmirates",
-                    "tableName": "ofc_emirates_tab"
-                },
-                {
-                    "fieldId": "",
-                    "joinFieldId": "towerLocation",
-                    "tableName": "ofc_location_tab"
-                }
-            ]
+            "joins": []
         }
     },
     "buttonPosition": "bottomLeft",
