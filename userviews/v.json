@@ -906,7 +906,7 @@
                         "add-customFooter": "",
                         "add-customHeader": "",
                         "add-messageShowAfterComplete": "",
-                        "add-saveButtonLabel": "Save",
+                        "add-saveButtonLabel": "Checkout",
                         "addFormId": "serReqForm",
                         "buttonPosition": "topLeft",
                         "cacheAllLinks": "",
@@ -976,7 +976,7 @@
                     "properties": {
                         "actionAfterSaved": "",
                         "actionOnCancel": "",
-                        "cancelButtonLabel": "",
+                        "cancelButtonLabel": "cancel",
                         "customFooter": "",
                         "customHeader": "",
                         "customId": "serRequestView",
@@ -997,7 +997,7 @@
                         "redirectUrlAfterComplete": "",
                         "redirectUrlOnCancel": "",
                         "showInPopupDialog": "",
-                        "submitButtonLabel": "Checkout",
+                        "submitButtonLabel": "checkout to continue",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }

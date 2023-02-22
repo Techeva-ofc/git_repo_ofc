@@ -32,12 +32,19 @@
                         "properties": {
                             "controlField": "",
                             "id": "isPrimeCustomer",
-                            "label": "Prime Customer",
-                            "options": [{
-                                "grouping": "",
-                                "label": "",
-                                "value": "isPrimeMemebr"
-                            }],
+                            "label": "Prime",
+                            "options": [
+                                {
+                                    "grouping": "",
+                                    "label": "Yes",
+                                    "value": "prime"
+                                },
+                                {
+                                    "grouping": "",
+                                    "label": "No",
+                                    "value": "nonPrime"
+                                }
+                            ],
                             "optionsBinder": {
                                 "className": "",
                                 "properties": {}
@@ -49,7 +56,7 @@
                                 "className": "",
                                 "properties": {}
                             },
-                            "value": "yes",
+                            "value": "",
                             "workflowVariable": ""
                         }
                     },
@@ -263,7 +270,7 @@
                                 "className": "",
                                 "properties": {}
                             },
-                            "value": "Closed",
+                            "value": "New",
                             "workflowVariable": ""
                         }
                     }
@@ -368,25 +375,9 @@
     "properties": {
         "description": "",
         "id": "serReqForm",
-        "loadBinder": {
-            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-            "properties": {}
-        },
+        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
         "name": "Service Request Form",
-        "noPermissionMessage": "",
-        "permission": {
-            "className": "",
-            "properties": {}
-        },
-        "postProcessor": {
-            "className": "",
-            "properties": {}
-        },
-        "postProcessorRunOn": "create",
-        "storeBinder": {
-            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-            "properties": {}
-        },
+        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
         "tableName": "ofc_serReqs_tab"
     }
 }

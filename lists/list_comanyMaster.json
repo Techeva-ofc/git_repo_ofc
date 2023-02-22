@@ -23,7 +23,7 @@
                 },
                 {
                     "fieldId": "",
-                    "joinFieldId": "ofc_tower_tab.towerLocation",
+                    "joinFieldId": "locName",
                     "tableName": "ofc_location_tab"
                 }
             ]

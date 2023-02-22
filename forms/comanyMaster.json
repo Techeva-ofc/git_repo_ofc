@@ -314,7 +314,7 @@
                     "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
                         "controlField": "",
-                        "id": "companyLocation",
+                        "id": "locName",
                         "label": "Location",
                         "multiple": "",
                         "options": [],
@@ -327,7 +327,7 @@
                                 "extraCondition": "",
                                 "formDefId": "locationForm",
                                 "groupingColumn": "",
-                                "idColumn": "locName",
+                                "idColumn": "",
                                 "labelColumn": "locName",
                                 "useAjax": "true"
                             }
@@ -344,36 +344,27 @@
                     }
                 },
                 {
-                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "className": "org.joget.plugin.enterprise.AjaxSubForm",
                     "properties": {
-                        "controlField": "",
-                        "id": "companyEmirates",
-                        "label": "Emirates",
-                        "multiple": "",
-                        "options": [],
-                        "optionsBinder": {
-                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
-                            "properties": {
-                                "addEmptyOption": "",
-                                "cacheInterval": "",
-                                "emptyLabel": "",
-                                "extraCondition": "",
-                                "formDefId": "ofc_emirates_form",
-                                "groupingColumn": "emirates_name",
-                                "idColumn": "",
-                                "labelColumn": "emirates_name",
-                                "useAjax": ""
-                            }
-                        },
+                        "ajax": "true",
+                        "collapsible": "",
+                        "collapsibleExpanded": "true",
+                        "collapsibleLabelCollapsed": "View Details",
+                        "collapsibleLabelExpanded": "Hide Details",
+                        "formDefId": "location1",
+                        "hideEmpty": "",
+                        "id": "serReqLocation",
+                        "label": "",
+                        "noLoad": "",
+                        "noframe": "true",
+                        "parentSubFormId": "locName",
                         "readonly": "",
                         "readonlyLabel": "",
-                        "size": "",
-                        "validator": {
-                            "className": "",
+                        "storeBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                             "properties": {}
                         },
-                        "value": "",
-                        "workflowVariable": ""
+                        "subFormParentId": ""
                     }
                 },
                 {
