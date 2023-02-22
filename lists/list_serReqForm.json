@@ -56,6 +56,14 @@
             "width": ""
         },
         {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_6",
+            "label": "ofc_tower_tab.Created By",
+            "name": "ofc_tower_tab.createdBy",
+            "sortable": "false"
+        },
+        {
             "action": {
                 "className": "",
                 "properties": {}
