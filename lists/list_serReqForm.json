@@ -6,7 +6,12 @@
             "aggregateField": [],
             "customSelectionValue": "",
             "extraCondition": "",
-            "filters": [],
+            "filters": [{
+                "field": "usertype",
+                "join": "AND",
+                "operator": "=",
+                "value": "Concordia Admin"
+            }],
             "formDefId": "serReqForm",
             "functionColumns": [],
             "groupBy": "",
