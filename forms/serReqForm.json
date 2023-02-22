@@ -285,7 +285,7 @@
                         "properties": {
                             "autoPopulate": "",
                             "id": "customtag",
-                            "label": "",
+                            "label": "hide edit",
                             "value": "<script type=\"text/javascript\">\r\n$(document).ready( function(){\r\n $(\"#edit\").hide();\r\n});\r\n<\/script>"
                         }
                     }
