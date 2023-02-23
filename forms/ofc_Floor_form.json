@@ -57,8 +57,36 @@
         "description": "",
         "id": "ofc_Floor_form",
         "loadBinder": {
-            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-            "properties": {}
+            "className": "org.joget.plugin.enterprise.DirectoryUserFormBinder",
+            "properties": {
+                "autoHandleFiles": "",
+                "autoHandleWorkflowVariable": "true",
+                "type": {
+                    "className": "",
+                    "properties": {
+                        "active": "active",
+                        "department": "department",
+                        "email": "email",
+                        "employeeCode": "employeeCode",
+                        "endDate": "endDate",
+                        "firstName": "firstName",
+                        "grade": "grade",
+                        "groups": "groups",
+                        "isHod": "isHod",
+                        "jobTitle": "jobTitle",
+                        "lastName": "lastName",
+                        "locale": "locale",
+                        "organization": "organization",
+                        "password": "password",
+                        "reportTo": "reportTo",
+                        "startDate": "startDate",
+                        "timeZone": "timeZone",
+                        "useGridForOrgChart": "",
+                        "userRoles": "userRoles",
+                        "username": "username"
+                    }
+                }
+            }
         },
         "name": "Create Floor",
         "noPermissionMessage": "Sorry no permission to edit user account!<br/>",
@@ -72,8 +100,36 @@
         },
         "postProcessorRunOn": "create",
         "storeBinder": {
-            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-            "properties": {}
+            "className": "org.joget.plugin.enterprise.DirectoryUserFormBinder",
+            "properties": {
+                "autoHandleFiles": "",
+                "autoHandleWorkflowVariable": "true",
+                "type": {
+                    "className": "",
+                    "properties": {
+                        "active": "active",
+                        "department": "department",
+                        "email": "email",
+                        "employeeCode": "employeeCode",
+                        "endDate": "endDate",
+                        "firstName": "firstName",
+                        "grade": "grade",
+                        "groups": "groups",
+                        "isHod": "isHod",
+                        "jobTitle": "jobTitle",
+                        "lastName": "lastName",
+                        "locale": "locale",
+                        "organization": "organization",
+                        "password": "password",
+                        "reportTo": "reportTo",
+                        "startDate": "startDate",
+                        "timeZone": "timeZone",
+                        "useGridForOrgChart": "",
+                        "userRoles": "userRoles",
+                        "username": "username"
+                    }
+                }
+            }
         },
         "tableName": "ofc_floor_tab"
     }
