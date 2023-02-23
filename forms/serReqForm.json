@@ -60,60 +60,6 @@
                         }
                     },
                     {
-                        "className": "org.joget.apps.form.lib.CheckBox",
-                        "properties": {
-                            "controlField": "",
-                            "id": "isPrimeCustomer",
-                            "label": "Prime",
-                            "options": [
-                                {
-                                    "grouping": "",
-                                    "label": "Yes",
-                                    "value": "prime"
-                                },
-                                {
-                                    "grouping": "",
-                                    "label": "No",
-                                    "value": "nonPrime"
-                                }
-                            ],
-                            "optionsBinder": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "permissionHidden": "",
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "",
-                            "workflowVariable": ""
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.TextField",
-                        "properties": {
-                            "encryption": "",
-                            "id": "serReqDmccSrNo",
-                            "label": "DMCC SR No.",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "size": "",
-                            "storeNumeric": "",
-                            "style": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "",
-                            "workflowVariable": ""
-                        }
-                    },
-                    {
                         "className": "org.joget.apps.form.lib.SelectBox",
                         "properties": {
                             "controlField": "",
