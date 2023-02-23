@@ -28,6 +28,38 @@
                         }
                     },
                     {
+                        "className": "org.joget.apps.form.lib.Radio",
+                        "properties": {
+                            "controlField": "",
+                            "id": "primeCustomer",
+                            "label": "Prime Customer",
+                            "options": [
+                                {
+                                    "grouping": "",
+                                    "label": "Yes",
+                                    "value": "yes"
+                                },
+                                {
+                                    "grouping": "",
+                                    "label": "No",
+                                    "value": "no"
+                                }
+                            ],
+                            "optionsBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
                         "className": "org.joget.apps.form.lib.CheckBox",
                         "properties": {
                             "controlField": "",
