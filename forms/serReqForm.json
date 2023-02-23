@@ -179,7 +179,7 @@
                     {
                         "className": "org.joget.plugin.enterprise.AjaxSubForm",
                         "properties": {
-                            "ajax": "",
+                            "ajax": "true",
                             "collapsible": "",
                             "collapsibleExpanded": "true",
                             "collapsibleLabelCollapsed": "View Details",
@@ -188,8 +188,8 @@
                             "hideEmpty": "",
                             "id": "documentupload",
                             "label": "",
-                            "noLoad": "",
-                            "noframe": "",
+                            "noLoad": "true",
+                            "noframe": "true",
                             "parentSubFormId": "",
                             "readonly": "",
                             "readonlyLabel": "",
