@@ -72,7 +72,7 @@
                                 "properties": {
                                     "addEmptyOption": "true",
                                     "cacheInterval": "",
-                                    "emptyLabel": "",
+                                    "emptyLabel": "Select",
                                     "extraCondition": "",
                                     "formDefId": "ofc_category1",
                                     "groupingColumn": "",
