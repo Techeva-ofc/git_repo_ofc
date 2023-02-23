@@ -78,9 +78,9 @@
                         "multiple": "true",
                         "padding": "",
                         "permissionPlugin": {
-                            "className": "org.joget.apps.userview.lib.UserPermission",
+                            "className": "org.joget.apps.userview.lib.GroupPermission",
                             "properties": {
-                                "allowedUsernames": "",
+                                "allowedGroupIds": "G-007",
                                 "orgId": ""
                             }
                         },
