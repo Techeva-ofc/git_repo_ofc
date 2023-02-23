@@ -108,8 +108,11 @@
                 "properties": {}
             },
             "permission": {
-                "className": "",
-                "properties": {}
+                "className": "org.joget.apps.userview.lib.GroupPermission",
+                "properties": {
+                    "allowedGroupIds": "G-009;G-010",
+                    "orgId": ""
+                }
             },
             "permissionReadonly": "",
             "readonly": "",
