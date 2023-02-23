@@ -197,8 +197,8 @@
     "hidePageSize": "true",
     "id": "list_ofc_inspection_form",
     "name": "List - Inspection Summery",
-    "order": "",
-    "orderBy": "",
+    "order": "1",
+    "orderBy": "dateModified",
     "pageSize": "0",
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
     "responsiveView": [
