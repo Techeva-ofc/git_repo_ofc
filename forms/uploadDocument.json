@@ -78,11 +78,8 @@
                         "multiple": "true",
                         "padding": "",
                         "permissionPlugin": {
-                            "className": "org.joget.apps.userview.lib.GroupPermission",
-                            "properties": {
-                                "allowedGroupIds": "G-007",
-                                "orgId": ""
-                            }
+                            "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                            "properties": {}
                         },
                         "permissionType": "custom",
                         "readonly": "",
