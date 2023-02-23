@@ -56,9 +56,25 @@
     "properties": {
         "description": "",
         "id": "ofc_Floor_form",
-        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "name": "Create Floor",
-        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "noPermissionMessage": "Sorry no permission to edit user account!<br/>",
+        "permission": {
+            "className": "org.joget.apps.userview.lib.BeanShellPermission",
+            "properties": {"script": "import org.joget.apps.form.model.FormRow;\r\nimport org.joget.apps.form.model.FormRowSet;\r\nimport org.joget.apps.form.service.FormUtil;\r\nimport org.joget.workflow.util.WorkflowUtil;\r\nimport org.joget.apps.app.service.AppUtil;\r\nimport org.joget.directory.dao.RoleDao;\r\nimport org.joget.directory.model.Role;\r\nimport org.joget.directory.model.User;\r\nimport org.joget.directory.model.service.DirectoryManager;\r\nimport org.joget.workflow.model.service.WorkflowUserManager;\r\n\r\nboolean isAdmin = WorkflowUtil.isCurrentUserInRole(WorkflowUtil.ROLE_USER);\r\nif (isAdmin) {\r\n    return true;\r\n}\r\n\r\nboolean result = false;\r\n\r\nDirectoryManager directoryManager = (DirectoryManager)AppUtil.getApplicationContext().getBean(\"directoryManager\");\r\nRoleDao roleDao = (RoleDao)AppUtil.getApplicationContext().getBean(\"roleDao\");\r\nString username = \"#requestParam.id#\";\r\nUser user = directoryManager.getUserByUsername(username);\r\nRole adminRole = roleDao.getRole(WorkflowUserManager.ROLE_ADMIN);\r\n\r\nboolean userisAdmin = user.getRoles().contains(adminRole);\r\n\r\nif (userisAdmin) {\r\n    return false;\r\n} else\r\n\treturn true;"}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "tableName": "ofc_floor_tab"
     }
 }
