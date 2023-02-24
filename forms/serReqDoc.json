@@ -20,7 +20,7 @@
                     "formDefId": "",
                     "height": "500",
                     "id": "ofc_serReqApprovalDoc_grid",
-                    "label": "Document for Approval",
+                    "label": "**Documents required below for approval processing",
                     "listId": "list_serReqApprovalDoc",
                     "loadBinder": {
                         "className": "",
@@ -77,8 +77,29 @@
             "properties": {"width": "100%"}
         }],
         "properties": {
+            "comment": "",
             "id": "section1",
-            "label": "Section"
+            "join": "",
+            "label": "",
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "permissionReadonly": "",
+            "readonly": "",
+            "readonlyLabel": "",
+            "regex": "",
+            "reverse": "",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "visibilityControl": "",
+            "visibilityValue": ""
         }
     }],
     "properties": {
