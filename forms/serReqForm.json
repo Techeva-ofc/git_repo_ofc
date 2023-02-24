@@ -426,57 +426,6 @@
                             }
                         },
                         {
-                            "className": "org.joget.apps.form.lib.SelectBox",
-                            "properties": {
-                                "controlField": "",
-                                "id": "ofc_category_name",
-                                "label": "Service Categoy",
-                                "multiple": "",
-                                "options": [],
-                                "optionsBinder": {
-                                    "className": "org.joget.apps.form.lib.FormOptionsBinder",
-                                    "properties": {
-                                        "addEmptyOption": "true",
-                                        "cacheInterval": "",
-                                        "emptyLabel": "Select",
-                                        "extraCondition": "",
-                                        "formDefId": "ofc_category1",
-                                        "groupingColumn": "",
-                                        "idColumn": "",
-                                        "labelColumn": "ofc_category_name",
-                                        "useAjax": "true"
-                                    }
-                                },
-                                "readonly": "",
-                                "readonlyLabel": "",
-                                "size": "",
-                                "validator": {
-                                    "className": "",
-                                    "properties": {}
-                                },
-                                "value": "",
-                                "workflowVariable": ""
-                            }
-                        },
-                        {
-                            "className": "org.joget.apps.form.lib.TextArea",
-                            "properties": {
-                                "cols": "20",
-                                "id": "serReqDesc",
-                                "label": "Description",
-                                "placeholder": "",
-                                "readonly": "",
-                                "readonlyLabel": "",
-                                "rows": "5",
-                                "validator": {
-                                    "className": "",
-                                    "properties": {}
-                                },
-                                "value": "",
-                                "workflowVariable": ""
-                            }
-                        },
-                        {
                             "className": "org.joget.apps.form.lib.FileUpload",
                             "properties": {
                                 "attachment": "",
