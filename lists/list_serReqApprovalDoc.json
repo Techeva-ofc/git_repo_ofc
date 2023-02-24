@@ -8,11 +8,6 @@
     "checkboxPosition": "left",
     "columns": [
         {
-            "id": "column_0",
-            "label": "Description (optional)",
-            "name": "description"
-        },
-        {
             "id": "column_1",
             "label": "Document ID (If any)",
             "name": "docid"
@@ -23,11 +18,12 @@
             "name": "doctype"
         },
         {
-            "id": "column_3",
-            "label": "ID",
-            "name": "id"
+            "id": "column_0",
+            "label": "Description (optional)",
+            "name": "description"
         }
     ],
+    "considerFilterWhenGetTotal": "",
     "filters": [],
     "id": "list_serReqApprovalDoc",
     "name": "List - Document for Approval",
