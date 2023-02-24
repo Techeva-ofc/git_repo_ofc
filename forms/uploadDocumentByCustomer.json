@@ -11,7 +11,7 @@
                     "fileType": "",
                     "fileTypeMsg": "Invalid file type",
                     "id": "serReqCorncordiarDoc",
-                    "label": "Document upload by Concordia",
+                    "label": "Document upload by Customer",
                     "maxSize": "",
                     "maxSizeMsg": "File size limit exceeded",
                     "multiple": "true",
