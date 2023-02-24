@@ -11,36 +11,6 @@
                         "attachment": "",
                         "fileType": "",
                         "fileTypeMsg": "Invalid file type",
-                        "id": "serReqCorncordiarDoc",
-                        "label": "Document upload by Concordia",
-                        "maxSize": "",
-                        "maxSizeMsg": "File size limit exceeded",
-                        "multiple": "true",
-                        "padding": "",
-                        "permissionPlugin": {
-                            "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
-                            "properties": {}
-                        },
-                        "permissionType": "custom",
-                        "readonly": "",
-                        "removeFile": "",
-                        "resizeHeight": "",
-                        "resizeMethod": "",
-                        "resizeQuality": "0.8",
-                        "resizeWidth": "",
-                        "size": "",
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        }
-                    }
-                },
-                {
-                    "className": "org.joget.apps.form.lib.FileUpload",
-                    "properties": {
-                        "attachment": "",
-                        "fileType": "",
-                        "fileTypeMsg": "Invalid file type",
                         "id": "serReqFopDrawUpload",
                         "label": "Approved FOP Drawing",
                         "maxSize": "",
@@ -130,9 +100,25 @@
     "properties": {
         "description": "",
         "id": "uploadDocument",
-        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "name": "Upload Document",
-        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "tableName": "ofc_doc_upload"
     }
 }
