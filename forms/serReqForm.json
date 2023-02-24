@@ -294,7 +294,7 @@
                                     "className": "",
                                     "properties": {}
                                 },
-                                "value": "Closed",
+                                "value": "New",
                                 "workflowVariable": ""
                             }
                         }
@@ -368,6 +368,39 @@
                     "className": "org.joget.apps.form.model.Column",
                     "elements": [
                         {
+                            "className": "org.joget.apps.form.lib.SelectBox",
+                            "properties": {
+                                "controlField": "",
+                                "id": "ofc_category_name",
+                                "label": "Service Categoy",
+                                "multiple": "",
+                                "options": [],
+                                "optionsBinder": {
+                                    "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                                    "properties": {
+                                        "addEmptyOption": "true",
+                                        "cacheInterval": "",
+                                        "emptyLabel": "Select",
+                                        "extraCondition": "",
+                                        "formDefId": "ofc_category1",
+                                        "groupingColumn": "",
+                                        "idColumn": "",
+                                        "labelColumn": "ofc_category_name",
+                                        "useAjax": "true"
+                                    }
+                                },
+                                "readonly": "",
+                                "readonlyLabel": "",
+                                "size": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
                             "className": "org.joget.plugin.enterprise.AjaxSubForm",
                             "properties": {
                                 "ajax": "true",
@@ -390,6 +423,39 @@
                                     "properties": {}
                                 },
                                 "subFormParentId": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.SelectBox",
+                            "properties": {
+                                "controlField": "",
+                                "id": "ofc_category_name",
+                                "label": "Service Categoy",
+                                "multiple": "",
+                                "options": [],
+                                "optionsBinder": {
+                                    "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                                    "properties": {
+                                        "addEmptyOption": "true",
+                                        "cacheInterval": "",
+                                        "emptyLabel": "Select",
+                                        "extraCondition": "",
+                                        "formDefId": "ofc_category1",
+                                        "groupingColumn": "",
+                                        "idColumn": "",
+                                        "labelColumn": "ofc_category_name",
+                                        "useAjax": "true"
+                                    }
+                                },
+                                "readonly": "",
+                                "readonlyLabel": "",
+                                "size": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "",
+                                "workflowVariable": ""
                             }
                         },
                         {
@@ -485,7 +551,8 @@
                                 "validator": {
                                     "className": "",
                                     "properties": {}
-                                }
+                                },
+                                "value": "New"
                             }
                         },
                         {
@@ -497,7 +564,7 @@
                                     "className": "",
                                     "properties": {}
                                 },
-                                "value": "Closed",
+                                "value": "New",
                                 "workflowVariable": ""
                             }
                         }
