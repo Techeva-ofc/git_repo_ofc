@@ -68,9 +68,25 @@
     "properties": {
         "description": "",
         "id": "uploadDocumentByCustomer",
-        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "name": "Upload Document By Customer",
-        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "tableName": "ofc_doc_upload"
     }
 }
