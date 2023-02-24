@@ -1268,6 +1268,62 @@
                 },
                 "permissionComment": ""
             }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.plugin.enterprise.CrudMenu",
+                "properties": {
+                    "add-afterSaved": "list",
+                    "add-afterSavedRedirectParamName": "",
+                    "add-afterSavedRedirectParamvalue": "",
+                    "add-afterSavedRedirectUrl": "",
+                    "add-cancelButtonLabel": "",
+                    "add-customFooter": "",
+                    "add-customHeader": "",
+                    "add-messageShowAfterComplete": "",
+                    "add-saveButtonLabel": "",
+                    "addFormId": "serReqApprovalDoc",
+                    "buttonPosition": "bottomLeft",
+                    "checkboxPosition": "left",
+                    "customId": "serReqApprovalDoc_crud",
+                    "datalistId": "list_serReqApprovalDoc",
+                    "edit-afterSaved": "list",
+                    "edit-afterSavedRedirectParamName": "",
+                    "edit-afterSavedRedirectParamvalue": "",
+                    "edit-afterSavedRedirectUrl": "",
+                    "edit-allowRecordTraveling": "",
+                    "edit-backButtonLabel": "",
+                    "edit-customFooter": "",
+                    "edit-customHeader": "",
+                    "edit-firstButtonLabel": "",
+                    "edit-lastButtonLabel": "",
+                    "edit-messageShowAfterComplete": "",
+                    "edit-moreActions": [],
+                    "edit-nextButtonLabel": "",
+                    "edit-prevButtonLabel": "",
+                    "edit-readonly": "",
+                    "edit-readonlyLabel": "",
+                    "edit-saveButtonLabel": "",
+                    "editFormId": "serReqApprovalDoc",
+                    "id": "ba2cbffb-8d34-426c-9f09-29cf0b7b2d0a",
+                    "keyName": "",
+                    "label": "Manage Document for Approval",
+                    "list-customFooter": "",
+                    "list-customHeader": "",
+                    "list-deleteButtonLabel": "",
+                    "list-editLinkLabel": "",
+                    "list-moreActions": [],
+                    "list-newButtonLabel": "",
+                    "list-showDeleteButton": "yes",
+                    "rowCount": "true",
+                    "selectionType": "multiple"
+                }
+            }],
+            "properties": {
+                "id": "category-64cef807-5dca-4af2-a1ab-f8783d8b3015",
+                "label": "<i class='fa fa-tasks'><\/i>Manage Document for Approval"
+            }
         }
     ],
     "className": "org.joget.apps.userview.model.Userview",
