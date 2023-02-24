@@ -225,6 +225,30 @@
                         }
                     },
                     {
+                        "className": "org.joget.plugin.enterprise.AjaxSubForm",
+                        "properties": {
+                            "ajax": "true",
+                            "collapsible": "",
+                            "collapsibleExpanded": "true",
+                            "collapsibleLabelCollapsed": "View Details",
+                            "collapsibleLabelExpanded": "Hide Details",
+                            "formDefId": "serReqDoc",
+                            "hideEmpty": "",
+                            "id": "missingdocuments",
+                            "label": "",
+                            "noLoad": "",
+                            "noframe": "true",
+                            "parentSubFormId": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "storeBinder": {
+                                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                                "properties": {}
+                            },
+                            "subFormParentId": ""
+                        }
+                    },
+                    {
                         "className": "org.joget.apps.form.lib.HiddenField",
                         "properties": {
                             "id": "status",
