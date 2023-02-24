@@ -212,6 +212,30 @@
                             "value": "New",
                             "workflowVariable": ""
                         }
+                    },
+                    {
+                        "className": "org.joget.plugin.enterprise.AjaxSubForm",
+                        "properties": {
+                            "ajax": "true",
+                            "collapsible": "",
+                            "collapsibleExpanded": "true",
+                            "collapsibleLabelCollapsed": "View Details",
+                            "collapsibleLabelExpanded": "Hide Details",
+                            "formDefId": "uploadDocument",
+                            "hideEmpty": "",
+                            "id": "uploaddocument",
+                            "label": "",
+                            "noLoad": "",
+                            "noframe": "true",
+                            "parentSubFormId": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "storeBinder": {
+                                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                                "properties": {}
+                            },
+                            "subFormParentId": ""
+                        }
                     }
                 ],
                 "properties": {
