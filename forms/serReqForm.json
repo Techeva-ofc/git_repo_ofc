@@ -169,7 +169,7 @@
                                     "properties": {
                                         "addEmptyOption": "true",
                                         "cacheInterval": "",
-                                        "emptyLabel": "Activity Location",
+                                        "emptyLabel": "Select",
                                         "extraCondition": "",
                                         "formDefId": "ofc_category1",
                                         "groupingColumn": "",
