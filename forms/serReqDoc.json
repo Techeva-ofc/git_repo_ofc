@@ -44,7 +44,7 @@
                             "width": "100"
                         }
                     ],
-                    "pageSize": "20",
+                    "pageSize": "15",
                     "readonly": "",
                     "readonlyLabel": "",
                     "requestParams": [],
