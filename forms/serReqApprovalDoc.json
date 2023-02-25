@@ -22,8 +22,8 @@
                             "className": "org.joget.apps.form.lib.DefaultValidator",
                             "properties": {
                                 "mandatory": "true",
-                                "message": "alphabets only",
-                                "type": "alphabet"
+                                "message": "",
+                                "type": ""
                             }
                         },
                         "value": "",
