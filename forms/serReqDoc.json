@@ -33,7 +33,7 @@
                             "formatType": "text",
                             "label": "Type of Document",
                             "value": "doctype",
-                            "width": ""
+                            "width": "10px"
                         },
                         {
                             "editable": "yes",
@@ -41,7 +41,7 @@
                             "formatType": "nl2br",
                             "label": "Remakrs",
                             "value": "description",
-                            "width": ""
+                            "width": "100px"
                         }
                     ],
                     "pageSize": "20",
