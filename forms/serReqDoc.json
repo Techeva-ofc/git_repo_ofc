@@ -31,20 +31,12 @@
                             "editable": "no",
                             "format": "",
                             "formatType": "text",
-                            "label": "Document ID",
-                            "value": "docid",
-                            "width": ""
-                        },
-                        {
-                            "editable": "no",
-                            "format": "",
-                            "formatType": "text",
                             "label": "Type of Document",
                             "value": "doctype",
                             "width": ""
                         },
                         {
-                            "editable": "no",
+                            "editable": "yes",
                             "format": "",
                             "formatType": "text",
                             "label": "Remarks",
@@ -110,9 +102,25 @@
     "properties": {
         "description": "",
         "id": "serReqDoc",
-        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "name": "Document Missing",
-        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "tableName": "ofc_doc_missing"
     }
 }
