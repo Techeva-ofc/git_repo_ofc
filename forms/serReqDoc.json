@@ -41,7 +41,7 @@
                             "formatType": "nl2br",
                             "label": "Remarks",
                             "value": "description",
-                            "width": ""
+                            "width": "100"
                         }
                     ],
                     "pageSize": "20",
