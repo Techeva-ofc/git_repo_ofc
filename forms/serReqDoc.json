@@ -38,7 +38,7 @@
                         {
                             "editable": "yes",
                             "format": "",
-                            "formatType": "nl2br",
+                            "formatType": "html",
                             "label": "Remarks",
                             "value": "description",
                             "width": "100"
