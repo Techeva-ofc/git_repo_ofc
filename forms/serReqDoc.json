@@ -20,8 +20,8 @@
                         "errorMessage": "Invalid number of rows",
                         "formDefId": "",
                         "height": "500",
-                        "id": "field2",
-                        "label": "List Grid",
+                        "id": "ofc_serReqApprovalDoc_grid",
+                        "label": "",
                         "listId": "list_serReqApprovalDoc",
                         "loadBinder": {
                             "className": "",
