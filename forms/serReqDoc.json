@@ -41,7 +41,7 @@
                             "formatType": "nl2br",
                             "label": "Remakrs",
                             "value": "description",
-                            "width": "1000px"
+                            "width": "750px"
                         }
                     ],
                     "pageSize": "20",
