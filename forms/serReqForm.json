@@ -370,7 +370,7 @@
                 "comment": "",
                 "id": "ofc_missingdocs",
                 "join": "",
-                "label": "Section",
+                "label": "",
                 "loadBinder": {
                     "className": "",
                     "properties": {}
