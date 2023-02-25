@@ -190,6 +190,30 @@
                             }
                         },
                         {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "ofc_parent_category_name",
+                                "label": "Parent Service Request",
+                                "maxlength": "",
+                                "placeholder": "",
+                                "readonly": "",
+                                "readonlyLabel": "",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "org.joget.apps.form.lib.BeanShellValidator",
+                                    "properties": {
+                                        "decoration": "",
+                                        "script": "var parent_category = document.getElementById(\"ofc_parent_category_name\");\nvar service_category = document.getElementById(\"ofc_category_name\");\nvar selected_text = service_category.options[service_category.selectedIndex].text;\n if(selected_text=='Activity Location'||selected_text=='Location Amendment')\n   parent_category.style.display='block';\n else  \n   parent_category.style.display='none';"
+                                    }
+                                },
+                                "value": "",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
                             "className": "org.joget.apps.form.lib.TextArea",
                             "properties": {
                                 "cols": "20",
