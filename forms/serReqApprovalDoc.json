@@ -31,18 +31,15 @@
                     }
                 },
                 {
-                    "className": "org.joget.apps.form.lib.TextField",
+                    "className": "org.joget.apps.form.lib.TextArea",
                     "properties": {
-                        "encryption": "",
+                        "cols": "20",
                         "id": "description",
-                        "label": "Description (optional)",
-                        "maxlength": "",
+                        "label": "Description(optional)",
                         "placeholder": "",
                         "readonly": "",
                         "readonlyLabel": "",
-                        "size": "",
-                        "storeNumeric": "",
-                        "style": "",
+                        "rows": "5",
                         "validator": {
                             "className": "",
                             "properties": {}
