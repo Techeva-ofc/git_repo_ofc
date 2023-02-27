@@ -12,7 +12,7 @@
             "groupBy": "",
             "joins": [{
                 "fieldId": "ofc_doc_missing.id",
-                "joinFieldId": "ofc_doc_missing.createdByName",
+                "joinFieldId": "id",
                 "tableName": "ofc_doc_missing"
             }]
         }
@@ -27,6 +27,7 @@
             "name": "doctype"
         },
         {
+            "datalist_type": "column",
             "id": "column_0",
             "label": "Description (optional)",
             "name": "description"
