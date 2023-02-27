@@ -125,7 +125,7 @@
                                     "className": "",
                                     "properties": {}
                                 },
-                                "value": "#form.TABLE.COLUMN#",
+                                "value": "#appDef.version##form.TABLE.COLUMN#",
                                 "workflowVariable": ""
                             }
                         },
