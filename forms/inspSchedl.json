@@ -37,7 +37,18 @@
                         "id": "inspectorNames",
                         "label": "Inspector Name",
                         "multiple": "",
-                        "options": [],
+                        "options": [
+                            {
+                                "grouping": "",
+                                "label": "Inspector1",
+                                "value": "Inspector1"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Inspector2",
+                                "value": "Inspector2"
+                            }
+                        ],
                         "optionsBinder": {
                             "className": "org.joget.plugin.enterprise.JdbcOptionsBinder",
                             "properties": {
