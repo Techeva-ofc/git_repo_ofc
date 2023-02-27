@@ -780,7 +780,7 @@
                         "cacheListAction": "",
                         "checkboxPosition": "no",
                         "customId": "ofc_inspection_form_crud",
-                        "datalistId": "inspectionNameList",
+                        "datalistId": "list_ofc_inspection_form",
                         "edit-afterSaved": "list",
                         "edit-allowRecordTraveling": "",
                         "edit-backButtonLabel": "",
@@ -814,7 +814,7 @@
                         "list-moreActions": [{
                             "confirmation": "",
                             "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/inspSchedl_crud?_mode=edit",
-                            "hrefColumn": null,
+                            "hrefColumn": "",
                             "hrefParam": "serReqDmccSrno",
                             "hrefTarget": "_self",
                             "label": "Schedule Insp"
