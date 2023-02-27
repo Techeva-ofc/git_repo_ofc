@@ -125,7 +125,7 @@
                                     "className": "",
                                     "properties": {}
                                 },
-                                "value": "#currentUser.firstName#",
+                                "value": "#binder.options.FORM_DEF_ID.FIELD_ID#",
                                 "workflowVariable": ""
                             }
                         },
