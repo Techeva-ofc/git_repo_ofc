@@ -101,8 +101,11 @@
                                 "readonlyLabel": "",
                                 "size": "",
                                 "validator": {
-                                    "className": "",
-                                    "properties": {}
+                                    "className": "org.joget.apps.form.lib.BeanShellValidator",
+                                    "properties": {
+                                        "decoration": "",
+                                        "script": "var e = document.getElementById(\"ddlViewBy\");\r\nvar value = e.value;\r\nvar text = e.options[e.selectedIndex].text;"
+                                    }
                                 },
                                 "value": "",
                                 "workflowVariable": ""
