@@ -418,14 +418,8 @@
         "description": "",
         "id": "serReqForm",
         "loadBinder": {
-            "className": "org.joget.apps.form.lib.BeanShellFormBinder",
-            "properties": {
-                "autoHandleFiles": "",
-                "autoHandleWorkflowVariable": "true",
-                "cacheInterval": "",
-                "script": "var parent_category = document.getElementById(\"ofc_parent_category_name\");\r\nvar service_category = document.getElementById(\"ofc_category_name\");\r\nvar selected_text = service_category.options[service_category.selectedIndex].text;\r\n if(selected_text=='Activity Location'||selected_text=='Location Amendment')\r\n  parent_category.style.display='block';\r\n else  \r\n  parent_category.style.display='none';\r\n\r\n",
-                "useAjax": ""
-            }
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
         },
         "name": "Service Request Form",
         "noPermissionMessage": "",
