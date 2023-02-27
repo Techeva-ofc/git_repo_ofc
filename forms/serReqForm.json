@@ -125,7 +125,7 @@
                                     "className": "",
                                     "properties": {}
                                 },
-                                "value": "#form.ofc_category_name",
+                                "value": "#binder.FORM_DEF_ID.FIELD_ID#",
                                 "workflowVariable": ""
                             }
                         },
