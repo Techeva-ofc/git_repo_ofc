@@ -222,9 +222,9 @@
             "properties": {
                 "confirmation": "",
                 "datalist_type": "row_action",
-                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/inspectionSchedule_crud?_mode=edit",
-                "hrefColumn": "id",
-                "hrefParam": "id",
+                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/inspSchedl_crud?_mode=edit",
+                "hrefColumn": "",
+                "hrefParam": "",
                 "label": "Schedule",
                 "rules": [{
                     "field": "c_status",
