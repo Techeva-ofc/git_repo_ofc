@@ -60,14 +60,6 @@
             "width": ""
         },
         {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_2",
-            "label": "ofc_doc_missing.ofc_serReqApprovalDoc_grid",
-            "name": "ofc_doc_missing.ofc_serReqApprovalDoc_grid",
-            "sortable": "false"
-        },
-        {
             "action": {
                 "className": "",
                 "properties": {}
