@@ -34,7 +34,7 @@
                     "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
                         "controlField": "",
-                        "id": "inspectorNameList",
+                        "id": "inspectorNames",
                         "label": "Inspector Name",
                         "multiple": "",
                         "options": [],
@@ -43,7 +43,7 @@
                             "properties": {
                                 "addEmpty": "true",
                                 "cacheInterval": "",
-                                "emptyLabel": "",
+                                "emptyLabel": "Select",
                                 "jdbcDatasource": "default",
                                 "sql": "select username from app_fd_ofc_user \r\nWHERE groupid='G-006' AND groupname='Inspector'",
                                 "useAjax": ""
@@ -56,7 +56,7 @@
                             "className": "",
                             "properties": {}
                         },
-                        "value": "",
+                        "value": "inspectorNames",
                         "workflowVariable": ""
                     }
                 }
