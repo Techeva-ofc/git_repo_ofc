@@ -25,11 +25,6 @@
                     "fieldId": "",
                     "joinFieldId": "ofc_category_name",
                     "tableName": "ofc_ofc_category_tab"
-                },
-                {
-                    "fieldId": "",
-                    "joinFieldId": "ofc_doc_missing.ofc_serReqApprovalDoc_grid",
-                    "tableName": "ofc_doc_missing"
                 }
             ]
         }
