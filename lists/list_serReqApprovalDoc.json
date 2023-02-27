@@ -10,11 +10,7 @@
             "formDefId": "serReqApprovalDoc",
             "functionColumns": [],
             "groupBy": "",
-            "joins": [{
-                "fieldId": "ofc_doc_missing.id",
-                "joinFieldId": "id",
-                "tableName": "ofc_doc_missing"
-            }]
+            "joins": []
         }
     },
     "buttonPosition": "bottomLeft",
