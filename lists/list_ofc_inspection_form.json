@@ -250,7 +250,7 @@
                 "hrefParam": "id",
                 "label": "View",
                 "rules": [],
-                "target": "_self"
+                "target": "popup"
             },
             "type": "text"
         }
