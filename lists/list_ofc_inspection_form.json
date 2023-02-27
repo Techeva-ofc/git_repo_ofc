@@ -165,6 +165,14 @@
             "sortable": "true",
             "style": "",
             "width": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_7",
+            "label": "c_status",
+            "name": "c_status",
+            "sortable": "false"
         }
     ],
     "considerFilterWhenGetTotal": "",
