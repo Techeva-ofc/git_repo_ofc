@@ -232,7 +232,7 @@
                     "operator": "=",
                     "value": "Payment Completed"
                 }],
-                "target": "_self"
+                "target": "popup"
             },
             "type": "text"
         },
