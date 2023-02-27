@@ -2,17 +2,26 @@
     "actions": [],
     "binder": {
         "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
-        "properties": {"formDefId": "serReqApprovalDoc"}
+        "properties": {
+            "aggregateField": [],
+            "customSelectionValue": "",
+            "extraCondition": "",
+            "filters": [],
+            "formDefId": "serReqApprovalDoc",
+            "functionColumns": [],
+            "groupBy": "",
+            "joins": [{
+                "fieldId": "ofc_doc_missing.id",
+                "joinFieldId": "ofc_doc_missing.createdByName",
+                "tableName": "ofc_doc_missing"
+            }]
+        }
     },
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
     "columns": [
         {
-            "id": "column_1",
-            "label": "Document ID (If any)",
-            "name": "docid"
-        },
-        {
+            "datalist_type": "column",
             "id": "column_2",
             "label": "Document Type",
             "name": "doctype"
@@ -24,14 +33,31 @@
         }
     ],
     "considerFilterWhenGetTotal": "",
+    "description": "",
+    "disableResponsive": "",
     "filters": [],
+    "hidePageSize": "",
     "id": "list_serReqApprovalDoc",
     "name": "List - Document for Approval",
     "order": "",
     "orderBy": "",
-    "pageSize": 0,
+    "pageSize": "0",
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "responsiveView": [
+        {
+            "breakpoint": "",
+            "columns": "",
+            "view": "Mobile"
+        },
+        {
+            "breakpoint": "",
+            "columns": "",
+            "view": "Tablet"
+        }
+    ],
     "rowActions": [],
+    "searchPopup": "",
+    "showDataWhenFilterSet": "",
     "showPageSizeSelector": "true",
-    "useSession": "false"
+    "useSession": ""
 }
