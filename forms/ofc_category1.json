@@ -50,7 +50,7 @@
                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
-                "visibilityControl": "#form.ofc_ofc_category_tab.ofc_category_name;#form.ofc_ofc_category_tab.ofc_category_name",
+                "visibilityControl": "ofc_ofc_category_tab.ofc_category_name;ofc_ofc_category_tab.ofc_category_name",
                 "visibilityValue": "Local Amendment;Activity Location"
             }
         },
