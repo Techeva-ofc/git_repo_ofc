@@ -392,9 +392,10 @@
                 "className": "",
                 "properties": {}
             },
+            "permissionHidden": "",
             "permissionReadonly": "",
-            "readonly": "",
-            "readonlyLabel": "",
+            "readonly": "true",
+            "readonlyLabel": "true",
             "regex": "",
             "reverse": "",
             "storeBinder": {
