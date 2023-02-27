@@ -200,10 +200,15 @@
             "confirmation": "",
             "datalist_type": "row_action",
             "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/inspectionSchedule_crud?_mode=edit",
-            "hrefColumn": "",
-            "hrefParam": "",
-            "label": "Schedule Inspection",
-            "rules": [],
+            "hrefColumn": "id",
+            "hrefParam": "id",
+            "label": "Schedule",
+            "rules": [{
+                "field": "c_status",
+                "join": "AND",
+                "operator": "=",
+                "value": "Payment Completed"
+            }],
             "target": "_self"
         },
         "type": "text"
