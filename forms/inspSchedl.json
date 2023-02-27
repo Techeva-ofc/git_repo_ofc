@@ -33,30 +33,22 @@
                 {
                     "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
-                        "controlField": "groupid",
+                        "controlField": "",
                         "id": "inspectorNames",
                         "label": "Inspector Name",
                         "multiple": "",
-                        "options": [
-                            {
-                                "grouping": "",
-                                "label": "Inspector1",
-                                "value": "Inspector1"
-                            },
-                            {
-                                "grouping": "",
-                                "label": "Inspector2",
-                                "value": "Inspector2"
-                            }
-                        ],
+                        "options": [],
                         "optionsBinder": {
-                            "className": "org.joget.plugin.enterprise.JdbcOptionsBinder",
+                            "className": "org.joget.plugin.enterprise.UserOptionsBinder",
                             "properties": {
-                                "addEmpty": "true",
+                                "addEmptyOption": "true",
                                 "cacheInterval": "",
+                                "deptId": "",
                                 "emptyLabel": "Select",
-                                "jdbcDatasource": "default",
-                                "sql": "select username from app_fd_ofc_user \r\nWHERE groupid='G-006' AND groupname='Inspector'",
+                                "groupId": "",
+                                "grouping": "",
+                                "optionLabel": "",
+                                "orgId": "",
                                 "useAjax": ""
                             }
                         },
