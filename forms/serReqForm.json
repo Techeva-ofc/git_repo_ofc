@@ -125,7 +125,7 @@
                                     "className": "",
                                     "properties": {}
                                 },
-                                "value": "#binder.options.FORM_DEF_ID.FIELD_ID#",
+                                "value": "#binder.options.APP_ID.FORM_DEF_ID.FIELD_ID#",
                                 "workflowVariable": ""
                             }
                         },
