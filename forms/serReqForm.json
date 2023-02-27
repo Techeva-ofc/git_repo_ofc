@@ -122,11 +122,8 @@
                                 "storeNumeric": "",
                                 "style": "",
                                 "validator": {
-                                    "className": "org.joget.apps.form.lib.BeanShellValidator",
-                                    "properties": {
-                                        "decoration": "",
-                                        "script": "var parent_category = document.getElementById(\"ofc_parent_category_name\");\nalert(parent_category);"
-                                    }
+                                    "className": "",
+                                    "properties": {}
                                 },
                                 "value": "",
                                 "workflowVariable": ""
