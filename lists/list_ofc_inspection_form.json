@@ -167,12 +167,26 @@
             "width": ""
         },
         {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
             "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
             "hidden": "false",
             "id": "column_7",
-            "label": "c_status",
+            "label": "Status",
             "name": "c_status",
-            "sortable": "false"
+            "sortable": "true",
+            "style": "",
+            "width": ""
         }
     ],
     "considerFilterWhenGetTotal": "",
