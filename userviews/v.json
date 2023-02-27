@@ -1065,14 +1065,7 @@
                     "list-customHeader": "",
                     "list-editLinkLabel": "",
                     "list-editLinkTarget": "",
-                    "list-moreActions": [{
-                        "confirmation": "",
-                        "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/inspSchedl_crud",
-                        "hrefColumn": "id",
-                        "hrefParam": "id",
-                        "hrefTarget": "_self",
-                        "label": "view"
-                    }],
+                    "list-moreActions": [],
                     "list-newButtonLabel": "",
                     "list-newLinkTarget": "",
                     "list-showDeleteButton": "",
