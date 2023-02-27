@@ -33,7 +33,7 @@
                 {
                     "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
-                        "controlField": "",
+                        "controlField": "group",
                         "id": "inspectorNames",
                         "label": "Inspector Name",
                         "multiple": "",
@@ -56,7 +56,7 @@
                             "className": "",
                             "properties": {}
                         },
-                        "value": "inspectorNames",
+                        "value": "",
                         "workflowVariable": ""
                     }
                 }
