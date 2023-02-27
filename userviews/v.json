@@ -802,7 +802,7 @@
                         "edit-readonly": "",
                         "edit-readonlyLabel": "",
                         "edit-saveButtonLabel": "",
-                        "editFormId": "",
+                        "editFormId": "inspSchedl",
                         "enableOffline": "",
                         "id": "c7fa1fb4-7088-472d-9198-f371af8dfab6",
                         "keyName": "id",
