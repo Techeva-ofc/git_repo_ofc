@@ -8,11 +8,6 @@
     "checkboxPosition": "left",
     "columns": [
         {
-            "id": "column_0",
-            "label": "ID",
-            "name": "id"
-        },
-        {
             "id": "column_1",
             "label": "Inspection Date",
             "name": "inspSchedlDate"
@@ -23,6 +18,7 @@
             "name": "inspectorNames"
         }
     ],
+    "considerFilterWhenGetTotal": "",
     "filters": [],
     "id": "list_inspSchedl",
     "name": "List - Inspection Schedule",
