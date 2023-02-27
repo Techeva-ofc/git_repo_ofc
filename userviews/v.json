@@ -814,9 +814,9 @@
                         "list-moreActions": [{
                             "confirmation": "",
                             "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/inspSchedl_crud?_mode=edit",
-                            "hrefColumn": "",
+                            "hrefColumn": "C_serReqDmccSrNo",
                             "hrefParam": "serReqDmccSrno",
-                            "hrefTarget": "_self",
+                            "hrefTarget": "popup",
                             "label": "Schedule Insp"
                         }],
                         "list-newButtonLabel": "",
