@@ -125,7 +125,7 @@
                                     "className": "",
                                     "properties": {}
                                 },
-                                "value": "ofc_category_name",
+                                "value": "#form.ofc_category_name",
                                 "workflowVariable": ""
                             }
                         },
