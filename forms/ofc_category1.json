@@ -149,10 +149,10 @@
             "properties": {
                 "comment": "",
                 "id": "ofc_parent_service_request",
-                "join": "",
+                "join": ";",
                 "label": "",
                 "loadBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
                 "permission": {
@@ -162,14 +162,14 @@
                 "permissionReadonly": "",
                 "readonly": "",
                 "readonlyLabel": "",
-                "regex": "",
-                "reverse": "",
+                "regex": ";",
+                "reverse": ";",
                 "storeBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
-                "visibilityControl": "",
-                "visibilityValue": ""
+                "visibilityControl": "ofc_category_name;ofc_category_name",
+                "visibilityValue": "Local Amendment;Activity Location"
             }
         }
     ],
