@@ -75,7 +75,7 @@
             "properties": {
                 "comment": "",
                 "id": "section2",
-                "join": "or;or",
+                "join": "",
                 "label": "Section",
                 "loadBinder": {
                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
@@ -88,14 +88,14 @@
                 "permissionReadonly": "",
                 "readonly": "",
                 "readonlyLabel": "",
-                "regex": ";",
-                "reverse": ";",
+                "regex": "",
+                "reverse": "",
                 "storeBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
-                "visibilityControl": "ofc_category_name;ofc_category_name",
-                "visibilityValue": "New License;Activity Location"
+                "visibilityControl": "ofc_category_name",
+                "visibilityValue": "New License"
             }
         }
     ],
