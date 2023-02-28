@@ -12,7 +12,11 @@
                         "id": "ofc_category_name",
                         "label": "Service Categoy",
                         "multiple": "",
-                        "options": [],
+                        "options": [{
+                            "grouping": "",
+                            "label": "New License",
+                            "value": "New License"
+                        }],
                         "optionsBinder": {
                             "className": "org.joget.apps.form.lib.FormOptionsBinder",
                             "properties": {
