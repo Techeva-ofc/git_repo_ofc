@@ -39,12 +39,17 @@
                         "multiple": "",
                         "options": [],
                         "optionsBinder": {
-                            "className": "org.joget.plugin.enterprise.GroupOptionsBinder",
+                            "className": "org.joget.plugin.enterprise.UserOptionsBinder",
                             "properties": {
                                 "addEmptyOption": "",
                                 "cacheInterval": "",
+                                "deptId": "",
                                 "emptyLabel": "",
-                                "orgId": ""
+                                "groupId": "G-001",
+                                "grouping": "",
+                                "optionLabel": "",
+                                "orgId": "",
+                                "useAjax": ""
                             }
                         },
                         "readonly": "",
