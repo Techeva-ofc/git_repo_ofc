@@ -7,24 +7,62 @@
             "elements": [{
                 "className": "org.joget.apps.form.lib.FileUpload",
                 "properties": {
-                    "attachment": "False",
+                    "attachment": "",
+                    "fileType": "",
                     "fileTypeMsg": "Invalid file type",
-                    "id": "field1",
-                    "label": "File Upload",
+                    "id": "serReqCorncordiarDoc",
+                    "label": "Document upload by Customer",
+                    "maxSize": "",
                     "maxSizeMsg": "File size limit exceeded",
-                    "multiple": "False",
-                    "permissionType": "",
-                    "readonly": "False",
-                    "removeFile": "false",
+                    "multiple": "",
+                    "padding": "",
+                    "permissionPlugin": {
+                        "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                        "properties": {}
+                    },
+                    "permissionType": "custom",
+                    "readonly": "",
+                    "removeFile": "",
+                    "resizeHeight": "",
                     "resizeMethod": "",
-                    "resizeQuality": "0.8"
+                    "resizeQuality": "0.8",
+                    "resizeWidth": "",
+                    "size": "",
+                    "validator": {
+                        "className": "",
+                        "properties": {}
+                    }
                 }
             }],
             "properties": {"width": "100%"}
         }],
         "properties": {
+            "comment": "",
             "id": "section1",
-            "label": "Section"
+            "join": "",
+            "label": "",
+            "loadBinder": {
+                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                "properties": {}
+            },
+            "permission": {
+                "className": "org.joget.apps.userview.lib.GroupPermission",
+                "properties": {
+                    "allowedGroupIds": "G-009;G-010",
+                    "orgId": ""
+                }
+            },
+            "permissionReadonly": "",
+            "readonly": "",
+            "readonlyLabel": "",
+            "regex": "",
+            "reverse": "",
+            "storeBinder": {
+                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                "properties": {}
+            },
+            "visibilityControl": "",
+            "visibilityValue": ""
         }
     }],
     "properties": {
