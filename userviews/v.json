@@ -1021,8 +1021,16 @@
             ],
             "properties": {
                 "comment": "Service Category for Manager &amp; Concordia Admin",
+                "hide": "",
                 "id": "category-72998b3f-3b8e-4108-9fb9-0a46b89fb9ce",
-                "label": "<i class='fa fa-users'><\/i> Service Request Form Approval Process"
+                "label": "<i class='fa fa-users'><\/i> Service Request Form Approval Process",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                    "properties": {
+                        "allowedGroupIds": "G-001;G-002",
+                        "orgId": ""
+                    }
+                }
             }
         },
         {
@@ -1157,8 +1165,16 @@
             ],
             "properties": {
                 "comment": "Service Category for Admin and User",
+                "hide": "",
                 "id": "category-133FA284E1184C7B9BFAE7035553C056",
-                "label": "<i class='fa fa-users'><\/i> Service Request Form Approval Process"
+                "label": "<i class='fa fa-users'><\/i> Service Request Form Approval Process",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                    "properties": {
+                        "allowedGroupIds": "G-003;G-004",
+                        "orgId": ""
+                    }
+                }
             }
         },
         {
