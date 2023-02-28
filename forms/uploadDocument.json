@@ -42,17 +42,14 @@
                         "fileType": "",
                         "fileTypeMsg": "Invalid file type",
                         "id": "serReqCorncordiarDoc",
-                        "label": "Document upload by Customer",
+                        "label": "Document upload by Concordia",
                         "maxSize": "",
                         "maxSizeMsg": "File size limit exceeded",
-                        "multiple": "",
+                        "multiple": "true",
                         "padding": "",
                         "permissionPlugin": {
-                            "className": "org.joget.apps.userview.lib.GroupPermission",
-                            "properties": {
-                                "allowedGroupIds": "G-009;G-010",
-                                "orgId": ""
-                            }
+                            "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                            "properties": {}
                         },
                         "permissionType": "custom",
                         "readonly": "",
