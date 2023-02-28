@@ -1291,8 +1291,17 @@
                 }
             }],
             "properties": {
+                "comment": "",
+                "hide": "",
                 "id": "category-d09c8b11-f16d-491f-95ea-8910376e00a4",
-                "label": "<i class='fa fa-tasks'><\/i>Manage Document for Approval"
+                "label": "<i class='fa fa-tasks'><\/i>Manage Document for Approval",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                    "properties": {
+                        "allowedGroupIds": "G-003;G-001;G-002",
+                        "orgId": ""
+                    }
+                }
             }
         }
     ],
