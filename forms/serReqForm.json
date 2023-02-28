@@ -422,30 +422,6 @@
                             }
                         },
                         {
-                            "className": "org.joget.apps.form.lib.TextField",
-                            "properties": {
-                                "encryption": "",
-                                "id": "field20",
-                                "label": "Text Field",
-                                "maxlength": "",
-                                "placeholder": "",
-                                "readonly": "",
-                                "readonlyLabel": "",
-                                "size": "",
-                                "storeNumeric": "",
-                                "style": "",
-                                "validator": {
-                                    "className": "org.joget.apps.form.lib.BeanShellValidator",
-                                    "properties": {
-                                        "decoration": "",
-                                        "script": "alert(#currentUser.firstName#);"
-                                    }
-                                },
-                                "value": "#currentUser.locale#",
-                                "workflowVariable": ""
-                            }
-                        },
-                        {
                             "className": "org.joget.plugin.enterprise.AjaxSubForm",
                             "properties": {
                                 "ajax": "true",
