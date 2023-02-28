@@ -9,7 +9,7 @@
                     "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
                         "controlField": "",
-                        "id": "ofc_category_name",
+                        "id": "ofc_category_name1",
                         "label": "Service Categoy",
                         "multiple": "",
                         "options": [],
@@ -94,7 +94,7 @@
                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
-                "visibilityControl": "#binder.options.FORM_DEF_ID.FIELD_ID#",
+                "visibilityControl": "#binder.options.Test.ofc_category_name1#",
                 "visibilityValue": "New License"
             }
         }
