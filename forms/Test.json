@@ -12,24 +12,26 @@
                         "id": "ofc_category_name",
                         "label": "Service Categoy",
                         "multiple": "",
-                        "options": [{
-                            "grouping": "",
-                            "label": "New License",
-                            "value": "New License"
-                        }],
-                        "optionsBinder": {
-                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
-                            "properties": {
-                                "addEmptyOption": "true",
-                                "cacheInterval": "",
-                                "emptyLabel": "Select",
-                                "extraCondition": "",
-                                "formDefId": "ofc_category1",
-                                "groupingColumn": "",
-                                "idColumn": "",
-                                "labelColumn": "ofc_category_name",
-                                "useAjax": "true"
+                        "options": [
+                            {
+                                "grouping": "",
+                                "label": "New License",
+                                "value": "New License"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Role of user",
+                                "value": "approved"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Document ID",
+                                "value": "yes"
                             }
+                        ],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
                         },
                         "readonly": "",
                         "readonlyLabel": "",
