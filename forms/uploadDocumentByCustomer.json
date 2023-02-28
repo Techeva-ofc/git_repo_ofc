@@ -46,11 +46,8 @@
                 "properties": {}
             },
             "permission": {
-                "className": "org.joget.apps.userview.lib.GroupPermission",
-                "properties": {
-                    "allowedGroupIds": "G-009;G-010",
-                    "orgId": ""
-                }
+                "className": "",
+                "properties": {}
             },
             "permissionReadonly": "",
             "readonly": "",
@@ -68,9 +65,25 @@
     "properties": {
         "description": "",
         "id": "uploadDocumentByCustomer",
-        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "name": "Upload Document By Customer",
-        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "tableName": "ofc_doc_upload"
     }
 }
