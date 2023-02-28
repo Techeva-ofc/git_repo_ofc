@@ -15,7 +15,7 @@
                     "deleteSubformData": "",
                     "disabledAdd": "",
                     "disabledDelete": "",
-                    "enableSorting": "true",
+                    "enableSorting": "",
                     "errorMessage": "Invalid number of rows",
                     "formDefId": "",
                     "height": "500",
@@ -49,7 +49,7 @@
                     "readonlyLabel": "",
                     "requestParams": [],
                     "showRowNumber": "",
-                    "sortField": "doctype",
+                    "sortField": "",
                     "storeBinder": {
                         "className": "",
                         "properties": {}
