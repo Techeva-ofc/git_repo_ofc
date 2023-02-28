@@ -438,7 +438,7 @@
                                     "className": "",
                                     "properties": {}
                                 },
-                                "value": "#assignment.activityName#",
+                                "value": "#currentUser.locale#",
                                 "workflowVariable": ""
                             }
                         },
