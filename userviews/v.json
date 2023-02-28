@@ -587,7 +587,7 @@
                     "add-customHeader": "",
                     "add-messageShowAfterComplete": "",
                     "add-saveButtonLabel": "",
-                    "addFormId": "ofc_ofc_category_form",
+                    "addFormId": "",
                     "buttonPosition": "bottomLeft",
                     "cacheAllLinks": "",
                     "cacheListAction": "",
