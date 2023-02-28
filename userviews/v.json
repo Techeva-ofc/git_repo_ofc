@@ -764,6 +764,77 @@
         },
         {
             "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.plugin.enterprise.CrudMenu",
+                "properties": {
+                    "add-afterSaved": "list",
+                    "add-cancelButtonLabel": "",
+                    "add-customFooter": "",
+                    "add-customHeader": "",
+                    "add-messageShowAfterComplete": "",
+                    "add-saveButtonLabel": "",
+                    "addFormId": "serReqApprovalDoc",
+                    "buttonPosition": "bottomLeft",
+                    "cacheAllLinks": "",
+                    "cacheListAction": "",
+                    "checkboxPosition": "left",
+                    "customId": "serReqApprovalDoc_crud",
+                    "datalistId": "list_serReqApprovalDoc",
+                    "edit-afterSaved": "list",
+                    "edit-allowRecordTraveling": "",
+                    "edit-backButtonLabel": "",
+                    "edit-customFooter": "",
+                    "edit-customHeader": "",
+                    "edit-firstButtonLabel": "",
+                    "edit-lastButtonLabel": "",
+                    "edit-messageShowAfterComplete": "",
+                    "edit-moreActions": [],
+                    "edit-nextButtonLabel": "",
+                    "edit-prevButtonLabel": "",
+                    "edit-readonly": "",
+                    "edit-readonlyLabel": "",
+                    "edit-saveButtonLabel": "",
+                    "editFormId": "serReqApprovalDoc",
+                    "enableOffline": "",
+                    "id": "bca80e17-3ba3-48ae-8148-f57b4d74394b",
+                    "keyName": "",
+                    "label": "Manage Document for Approval",
+                    "list-abortRelatedRunningProcesses": "",
+                    "list-confirmation": "",
+                    "list-customFooter": "",
+                    "list-customHeader": "",
+                    "list-deleteButtonLabel": "",
+                    "list-deleteFiles": "",
+                    "list-deleteGridData": "",
+                    "list-deleteSubformData": "",
+                    "list-editLinkLabel": "",
+                    "list-editLinkTarget": "",
+                    "list-moreActions": [],
+                    "list-newButtonLabel": "",
+                    "list-newLinkTarget": "",
+                    "list-showDeleteButton": "yes",
+                    "rowCount": "true",
+                    "selectionType": "multiple",
+                    "userviewCacheDuration": "",
+                    "userviewCacheScope": ""
+                }
+            }],
+            "properties": {
+                "comment": "",
+                "hide": "",
+                "id": "category-d09c8b11-f16d-491f-95ea-8910376e00a4",
+                "label": "<i class='fa fa-tasks'><\/i>Manage Document for Approval",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                    "properties": {
+                        "allowedGroupIds": "G-003;G-001;G-002",
+                        "orgId": ""
+                    }
+                }
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
             "menus": [
                 {
                     "className": "org.joget.plugin.enterprise.CrudMenu",
@@ -1231,77 +1302,6 @@
             "properties": {
                 "id": "category-503dda77-7481-448a-baff-f82937c375e7",
                 "label": "<i class='fa fa-tasks'><\/i>Manage Inspection Schedule"
-            }
-        },
-        {
-            "className": "org.joget.apps.userview.model.UserviewCategory",
-            "menus": [{
-                "className": "org.joget.plugin.enterprise.CrudMenu",
-                "properties": {
-                    "add-afterSaved": "list",
-                    "add-cancelButtonLabel": "",
-                    "add-customFooter": "",
-                    "add-customHeader": "",
-                    "add-messageShowAfterComplete": "",
-                    "add-saveButtonLabel": "",
-                    "addFormId": "serReqApprovalDoc",
-                    "buttonPosition": "bottomLeft",
-                    "cacheAllLinks": "",
-                    "cacheListAction": "",
-                    "checkboxPosition": "left",
-                    "customId": "serReqApprovalDoc_crud",
-                    "datalistId": "list_serReqApprovalDoc",
-                    "edit-afterSaved": "list",
-                    "edit-allowRecordTraveling": "",
-                    "edit-backButtonLabel": "",
-                    "edit-customFooter": "",
-                    "edit-customHeader": "",
-                    "edit-firstButtonLabel": "",
-                    "edit-lastButtonLabel": "",
-                    "edit-messageShowAfterComplete": "",
-                    "edit-moreActions": [],
-                    "edit-nextButtonLabel": "",
-                    "edit-prevButtonLabel": "",
-                    "edit-readonly": "",
-                    "edit-readonlyLabel": "",
-                    "edit-saveButtonLabel": "",
-                    "editFormId": "serReqApprovalDoc",
-                    "enableOffline": "",
-                    "id": "bca80e17-3ba3-48ae-8148-f57b4d74394b",
-                    "keyName": "",
-                    "label": "Manage Document for Approval",
-                    "list-abortRelatedRunningProcesses": "",
-                    "list-confirmation": "",
-                    "list-customFooter": "",
-                    "list-customHeader": "",
-                    "list-deleteButtonLabel": "",
-                    "list-deleteFiles": "",
-                    "list-deleteGridData": "",
-                    "list-deleteSubformData": "",
-                    "list-editLinkLabel": "",
-                    "list-editLinkTarget": "",
-                    "list-moreActions": [],
-                    "list-newButtonLabel": "",
-                    "list-newLinkTarget": "",
-                    "list-showDeleteButton": "yes",
-                    "rowCount": "true",
-                    "selectionType": "multiple",
-                    "userviewCacheDuration": "",
-                    "userviewCacheScope": ""
-                }
-            }],
-            "properties": {
-                "comment": "",
-                "hide": "",
-                "id": "category-d09c8b11-f16d-491f-95ea-8910376e00a4",
-                "label": "<i class='fa fa-tasks'><\/i>Manage Document for Approval",
-                "permission": {
-                    "className": "org.joget.apps.userview.lib.GroupPermission",
-                    "properties": {
-                        "allowedGroupIds": "G-003;G-001;G-002",
-                        "orgId": ""
-                    }
-                }
             }
         }
     ],
