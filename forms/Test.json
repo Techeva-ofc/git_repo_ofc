@@ -100,7 +100,7 @@
                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
-                "visibilityControl": "ofc_category_name",
+                "visibilityControl": "#binder.options.FORM_DEF_ID.FIELD_ID#",
                 "visibilityValue": "New License"
             }
         }
