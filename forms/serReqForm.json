@@ -438,7 +438,7 @@
                                     "className": "",
                                     "properties": {}
                                 },
-                                "value": "#binder.options.ofc_category_name#",
+                                "value": "#binder.options.serReqSumr2.ofc_category_name#",
                                 "workflowVariable": ""
                             }
                         },
