@@ -12,26 +12,20 @@
                         "id": "ofc_category_name",
                         "label": "Service Categoy",
                         "multiple": "",
-                        "options": [
-                            {
-                                "grouping": "",
-                                "label": "New License",
-                                "value": "New License"
-                            },
-                            {
-                                "grouping": "",
-                                "label": "Role of user",
-                                "value": "approved"
-                            },
-                            {
-                                "grouping": "",
-                                "label": "Document ID",
-                                "value": "yes"
-                            }
-                        ],
+                        "options": [],
                         "optionsBinder": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                            "properties": {
+                                "addEmptyOption": "true",
+                                "cacheInterval": "",
+                                "emptyLabel": "Select",
+                                "extraCondition": "",
+                                "formDefId": "ofc_category1",
+                                "groupingColumn": "",
+                                "idColumn": "",
+                                "labelColumn": "ofc_category_name",
+                                "useAjax": ""
+                            }
                         },
                         "readonly": "",
                         "readonlyLabel": "",
@@ -100,7 +94,7 @@
                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
-                "visibilityControl": "#binder.options.FORM_DEF_ID.FIELD_ID#",
+                "visibilityControl": "#binder.Test.ofc_category_name#",
                 "visibilityValue": "New License"
             }
         }
@@ -108,9 +102,25 @@
     "properties": {
         "description": "",
         "id": "Test",
-        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "name": "TestForm",
-        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "tableName": "ofc_test"
     }
 }
