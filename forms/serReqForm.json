@@ -219,7 +219,14 @@
                                 "maxSizeMsg": "File size limit exceeded",
                                 "multiple": "true",
                                 "padding": "",
-                                "permissionType": "",
+                                "permissionPlugin": {
+                                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                                    "properties": {
+                                        "allowedGroupIds": "G-009;G-010",
+                                        "orgId": ""
+                                    }
+                                },
+                                "permissionType": "custom",
                                 "readonly": "",
                                 "removeFile": "",
                                 "resizeHeight": "",
@@ -245,7 +252,14 @@
                                 "maxSizeMsg": "File size limit exceeded",
                                 "multiple": "true",
                                 "padding": "",
-                                "permissionType": "",
+                                "permissionPlugin": {
+                                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                                    "properties": {
+                                        "allowedGroupIds": "G-003;G-001;G-002",
+                                        "orgId": ""
+                                    }
+                                },
+                                "permissionType": "custom",
                                 "readonly": "",
                                 "removeFile": "",
                                 "resizeHeight": "",
@@ -271,7 +285,14 @@
                                 "maxSizeMsg": "File size limit exceeded",
                                 "multiple": "true",
                                 "padding": "",
-                                "permissionType": "",
+                                "permissionPlugin": {
+                                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                                    "properties": {
+                                        "allowedGroupIds": "G-003;G-001;G-002",
+                                        "orgId": ""
+                                    }
+                                },
+                                "permissionType": "custom",
                                 "readonly": "",
                                 "removeFile": "",
                                 "resizeHeight": "",
