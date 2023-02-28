@@ -39,17 +39,12 @@
                         "multiple": "",
                         "options": [],
                         "optionsBinder": {
-                            "className": "org.joget.plugin.enterprise.UserOptionsBinder",
+                            "className": "org.joget.plugin.enterprise.GroupOptionsBinder",
                             "properties": {
-                                "addEmptyOption": "true",
+                                "addEmptyOption": "",
                                 "cacheInterval": "",
-                                "deptId": "",
-                                "emptyLabel": "Select",
-                                "groupId": "G-006",
-                                "grouping": "",
-                                "optionLabel": "",
-                                "orgId": "",
-                                "useAjax": ""
+                                "emptyLabel": "",
+                                "orgId": ""
                             }
                         },
                         "readonly": "",
@@ -95,9 +90,25 @@
     "properties": {
         "description": "",
         "id": "inspSchedl",
-        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "name": "Inspection Schedule",
-        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "tableName": "ofc_inspSchdl_tab"
     }
 }
