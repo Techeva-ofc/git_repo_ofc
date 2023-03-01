@@ -207,6 +207,14 @@
                </packageActivityPlugin>
             </entry>
             <entry>
+               <string>inspectionReport::sendEmail</string>
+               <packageActivityPlugin>
+                  <processDefId>inspectionReport</processDefId>
+                  <activityDefId>sendEmail</activityDefId>
+                  <pluginName>org.joget.plugin.enterprise.ExportFormEmailTool</pluginName>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
                <string>serReqForm_approver_process::email_on_rejected</string>
                <packageActivityPlugin>
                   <processDefId>serReqForm_approver_process</processDefId>
@@ -263,21 +271,21 @@
                </packageParticipant>
             </entry>
             <entry>
-               <string>serReqForm_assignment_process::serReqForm_assp_applicant_hod</string>
-               <packageParticipant>
-                  <processDefId>serReqForm_assignment_process</processDefId>
-                  <participantId>serReqForm_assp_applicant_hod</participantId>
-                  <type>requesterHod</type>
-                  <value>runProcess</value>
-               </packageParticipant>
-            </entry>
-            <entry>
                <string>inspectionReport::processStartWhiteList</string>
                <packageParticipant>
                   <processDefId>inspectionReport</processDefId>
                   <participantId>processStartWhiteList</participantId>
                   <type>role</type>
                   <value>adminUser</value>
+               </packageParticipant>
+            </entry>
+            <entry>
+               <string>serReqForm_assignment_process::serReqForm_assp_applicant_hod</string>
+               <packageParticipant>
+                  <processDefId>serReqForm_assignment_process</processDefId>
+                  <participantId>serReqForm_assp_applicant_hod</participantId>
+                  <type>requesterHod</type>
+                  <value>runProcess</value>
                </packageParticipant>
             </entry>
             <entry>
