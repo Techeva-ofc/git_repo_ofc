@@ -45,6 +45,22 @@
         {
             "filterable": true,
             "hidden": "false",
+            "id": "column_4",
+            "label": "ofc_company_tab.companyLocation",
+            "name": "ofc_company_tab.companyLocation",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_3",
+            "label": "ofc_company_tab.companyName",
+            "name": "ofc_company_tab.companyName",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
             "id": "column_6",
             "label": "ofc_serReqs_tab.status",
             "name": "ofc_serReqs_tab.status",
