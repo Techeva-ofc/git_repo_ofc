@@ -16,6 +16,14 @@
             "id": "column_3",
             "label": "Upload Photos",
             "name": "imageupload"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_0",
+            "label": "Status of Inspection",
+            "name": "inspectionStatus",
+            "sortable": "false"
         }
     ],
     "considerFilterWhenGetTotal": "",
