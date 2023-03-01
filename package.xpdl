@@ -7,9 +7,6 @@
     </PackageHeader>
     <Script Type="text/javascript"/>
     <Participants>
-        <Participant Id="participant1" Name="Participant 1">
-            <ParticipantType Type="ROLE"/>
-        </Participant>
         <Participant Id="serReqForm_approver" Name="Approver">
             <ParticipantType Type="ROLE"/>
         </Participant>
@@ -28,55 +25,14 @@
         <Participant Id="serReqForm_assp_assignee" Name="Assignee">
             <ParticipantType Type="ROLE"/>
         </Participant>
+        <Participant Id="inspector" Name="Inspector">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
     </Participants>
     <Applications>
         <Application Id="default_application"/>
     </Applications>
     <WorkflowProcesses>
-        <WorkflowProcess Id="process1" Name="Process 1">
-            <ProcessHeader DurationUnit="h"/>
-            <DataFields>
-                <DataField Id="status" IsArray="FALSE">
-                    <DataType>
-                        <BasicType Type="STRING"/>
-                    </DataType>
-                </DataField>
-            </DataFields>
-            <Activities>
-                <Activity Id="saveRequest" Name="Save Request">
-                    <Implementation>
-                        <No/>
-                    </Implementation>
-                    <Performer>participant1</Performer>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="participant1"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="184,33"/>
-                    </ExtendedAttributes>
-                </Activity>
-                <Activity Id="requestSaved" Name="requestSaved">
-                    <Implementation>
-                        <Tool Id="default_application"/>
-                    </Implementation>
-                    <Performer>participant1</Performer>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="participant1"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="454,35"/>
-                    </ExtendedAttributes>
-                </Activity>
-            </Activities>
-            <Transitions>
-                <Transition From="saveRequest" Id="transition1" To="requestSaved">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                    </ExtendedAttributes>
-                </Transition>
-            </Transitions>
-            <ExtendedAttributes>
-                <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="participant1"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=participant1,CONNECTING_ACTIVITY_ID=saveRequest,X_OFFSET=75,Y_OFFSET=46,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=participant1,CONNECTING_ACTIVITY_ID=requestSaved,X_OFFSET=684,Y_OFFSET=50,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
-            </ExtendedAttributes>
-        </WorkflowProcess>
         <WorkflowProcess Id="serReqForm_approver_process" Name="Service Request Form Approval Process">
             <ProcessHeader DurationUnit="h"/>
             <DataFields>
@@ -235,9 +191,7 @@
             </ExtendedAttributes>
         </WorkflowProcess>
         <WorkflowProcess Id="serReqForm_assignment_process" Name="Service Request Form Assignment Process">
-            <ProcessHeader DurationUnit="h">
-                <Created>2023-03-01 19:30:19</Created>
-            </ProcessHeader>
+            <ProcessHeader DurationUnit="h"/>
             <DataFields>
                 <DataField Id="status" IsArray="FALSE">
                     <DataType>
@@ -637,6 +591,81 @@
                 <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=serReqForm_assp_applicant,CONNECTING_ACTIVITY_ID=new_submission_notification,X_OFFSET=66,Y_OFFSET=37,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
                 <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=serReqForm_assp_applicant,CONNECTING_ACTIVITY_ID=closed_notification,X_OFFSET=1568,Y_OFFSET=48,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
                 <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=serReqForm_assp_applicant,CONNECTING_ACTIVITY_ID=rejected_notification,X_OFFSET=579,Y_OFFSET=37,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+            </ExtendedAttributes>
+        </WorkflowProcess>
+        <WorkflowProcess Id="inspectionReport" Name="Inspection Report Process">
+            <ProcessHeader DurationUnit="h"/>
+            <DataFields>
+                <DataField Id="status" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+            </DataFields>
+            <Activities>
+                <Activity Id="saveReport" Name="Save Report">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>inspector</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="inspector"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="184,33"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="reportSaved" Name="reportSaved">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>inspector</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="inspector"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="454,35"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="checkstatus" Name="Report Status">
+                    <Route/>
+                    <Performer>inspector</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="inspector"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="714,39.000003051757815"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="sendEmail" Name="Send Email">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>inspector</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="inspector"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="865,4.200000000000003"/>
+                    </ExtendedAttributes>
+                </Activity>
+            </Activities>
+            <Transitions>
+                <Transition From="saveReport" Id="transition1" To="reportSaved">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="reportSaved" Id="transition2" To="checkstatus">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="checkstatus" Id="transition4" To="sendEmail">
+                    <Condition Type="CONDITION">status === 'completed'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;status&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;completed&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+            </Transitions>
+            <ExtendedAttributes>
+                <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="inspector"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=inspector,CONNECTING_ACTIVITY_ID=saveReport,X_OFFSET=75,Y_OFFSET=46,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=inspector,CONNECTING_ACTIVITY_ID=sendEmail,X_OFFSET=1254,Y_OFFSET=34,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=inspector,CONNECTING_ACTIVITY_ID=checkstatus,X_OFFSET=943,Y_OFFSET=97,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
             </ExtendedAttributes>
         </WorkflowProcess>
     </WorkflowProcesses>

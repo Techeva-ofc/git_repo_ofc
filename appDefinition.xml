@@ -86,17 +86,6 @@
                </packageActivityForm>
             </entry>
             <entry>
-               <string>process1::saveRequest</string>
-               <packageActivityForm>
-                  <processDefId>process1</processDefId>
-                  <activityDefId>saveRequest</activityDefId>
-                  <formId>serReqForm</formId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>true</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
                <string>serReqForm_approver_process::approval</string>
                <packageActivityForm>
                   <processDefId>serReqForm_approver_process</processDefId>
@@ -146,12 +135,12 @@
                </packageActivityPlugin>
             </entry>
             <entry>
-               <string>process1::requestSaved</string>
+               <string>serReqForm_assignment_process::rejected_notification</string>
                <packageActivityPlugin>
-                  <processDefId>process1</processDefId>
-                  <activityDefId>requestSaved</activityDefId>
-                  <pluginName>org.joget.plugin.enterprise.ExportFormEmailTool</pluginName>
-                  <pluginProperties>{&quot;formDefId&quot;:&quot;serReqForm&quot;,&quot;fileName&quot;:&quot;OFC serviceRequest&quot;,&quot;hideEmptyValueField&quot;:&quot;&quot;,&quot;showNotSelectedOptions&quot;:&quot;&quot;,&quot;toSpecific&quot;:&quot;#currentUser.email#&quot;,&quot;toParticipantId&quot;:&quot;#currentUser.email#&quot;,&quot;cc&quot;:&quot;dt-sarla@alphadxb.com&quot;,&quot;bcc&quot;:&quot;dt-sarla@alphadxb.com&quot;,&quot;subject&quot;:&quot;OFC- Service Request detail&quot;,&quot;message&quot;:&quot;Hi #currentUser.firstName#\n\n\nYour Service request has been Resolved.\n\nThanks and Regards,\n Sarla \n(Alphadxb)&quot;,&quot;isHtml&quot;:&quot;&quot;,&quot;from&quot;:&quot;dt.sarla.alpha@gmail.com&quot;,&quot;host&quot;:&quot;smtp.gmail.com&quot;,&quot;port&quot;:&quot;587&quot;,&quot;security&quot;:&quot;TLS&quot;,&quot;username&quot;:&quot;dt.sarla.alpha@gmail.com&quot;,&quot;password&quot;:&quot;%%%%XLCjnL1iKQlnwi6Y8Wt7dYu3jkgfeXmahA8oxypI/Jg=%%%%&quot;,&quot;formatting&quot;:&quot;&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;repeatHeader&quot;:&quot;&quot;,&quot;footerHtml&quot;:&quot;&quot;,&quot;repeatFooter&quot;:&quot;&quot;,&quot;attachmentFormDefId&quot;:&quot;&quot;,&quot;fields&quot;:[],&quot;files&quot;:[],&quot;icsAttachement&quot;:&quot;&quot;}</pluginProperties>
+                  <processDefId>serReqForm_assignment_process</processDefId>
+                  <activityDefId>rejected_notification</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{     &quot;host&quot;: &quot;&quot;,     &quot;port&quot;: &quot;&quot;,     &quot;security&quot;: &quot;&quot;,     &quot;username&quot;: &quot;&quot;,     &quot;password&quot;: &quot;&quot;,     &quot;from&quot;: &quot;&quot;,     &quot;toSpecific&quot;: &quot;&quot;,     &quot;toParticipantId&quot;: &quot;serReqForm_assp_applicant&quot;,     &quot;cc&quot;: &quot;&quot;,     &quot;subject&quot;: &quot;Your Service Request Form (#form.ofc_serReqs_tab.caseNo#) Has Been Rejected&quot;,     &quot;message&quot;: &quot;Hi,\n\nYour Service Request Form (#form.ofc_serReqs_tab.caseNo#) has been rejected.\n\n==  This is a system generated message. == &quot;,     &quot;isHtml&quot;: &quot;&quot;,     &quot;formDefId&quot;: &quot;&quot;,     &quot;fields&quot;: [],     &quot;files&quot;: [] }</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
@@ -164,15 +153,6 @@
                </packageActivityPlugin>
             </entry>
             <entry>
-               <string>serReqForm_assignment_process::rejected_notification</string>
-               <packageActivityPlugin>
-                  <processDefId>serReqForm_assignment_process</processDefId>
-                  <activityDefId>rejected_notification</activityDefId>
-                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
-                  <pluginProperties>{     &quot;host&quot;: &quot;&quot;,     &quot;port&quot;: &quot;&quot;,     &quot;security&quot;: &quot;&quot;,     &quot;username&quot;: &quot;&quot;,     &quot;password&quot;: &quot;&quot;,     &quot;from&quot;: &quot;&quot;,     &quot;toSpecific&quot;: &quot;&quot;,     &quot;toParticipantId&quot;: &quot;serReqForm_assp_applicant&quot;,     &quot;cc&quot;: &quot;&quot;,     &quot;subject&quot;: &quot;Your Service Request Form (#form.ofc_serReqs_tab.caseNo#) Has Been Rejected&quot;,     &quot;message&quot;: &quot;Hi,\n\nYour Service Request Form (#form.ofc_serReqs_tab.caseNo#) has been rejected.\n\n==  This is a system generated message. == &quot;,     &quot;isHtml&quot;: &quot;&quot;,     &quot;formDefId&quot;: &quot;&quot;,     &quot;fields&quot;: [],     &quot;files&quot;: [] }</pluginProperties>
-               </packageActivityPlugin>
-            </entry>
-            <entry>
                <string>serReqForm_approver_process::email_on_received</string>
                <packageActivityPlugin>
                   <processDefId>serReqForm_approver_process</processDefId>
@@ -182,21 +162,21 @@
                </packageActivityPlugin>
             </entry>
             <entry>
-               <string>serReqForm_assignment_process::new_assignment_notification</string>
-               <packageActivityPlugin>
-                  <processDefId>serReqForm_assignment_process</processDefId>
-                  <activityDefId>new_assignment_notification</activityDefId>
-                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
-                  <pluginProperties>{     &quot;host&quot;: &quot;&quot;,     &quot;port&quot;: &quot;&quot;,     &quot;security&quot;: &quot;&quot;,     &quot;username&quot;: &quot;&quot;,     &quot;password&quot;: &quot;&quot;,     &quot;from&quot;: &quot;&quot;,     &quot;toSpecific&quot;: &quot;&quot;,     &quot;toParticipantId&quot;: &quot;serReqForm_assp_assignee&quot;,     &quot;cc&quot;: &quot;&quot;,     &quot;subject&quot;: &quot;You Received New Assignment for Service Request Form (#form.ofc_serReqs_tab.caseNo#)&quot;,     &quot;message&quot;: &quot;Hi,\n\nYou received new assignment for Service Request Form (#form.ofc_serReqs_tab.caseNo#).\n\n==  This is a system generated message. == &quot;,     &quot;isHtml&quot;: &quot;&quot;,     &quot;formDefId&quot;: &quot;&quot;,     &quot;fields&quot;: [],     &quot;files&quot;: [] }</pluginProperties>
-               </packageActivityPlugin>
-            </entry>
-            <entry>
                <string>serReqForm_assignment_process::activity_trail_update</string>
                <packageActivityPlugin>
                   <processDefId>serReqForm_assignment_process</processDefId>
                   <activityDefId>activity_trail_update</activityDefId>
                   <pluginName>org.joget.plugin.enterprise.PresetFormDataTool</pluginName>
                   <pluginProperties>{     &quot;formDefId&quot;: &quot;serReqForm_assp_action&quot;,     &quot;fields&quot;: [{             &quot;field&quot;: &quot;id&quot;         }, {             &quot;field&quot;: &quot;username&quot;         }, {             &quot;field&quot;: &quot;action&quot;         }, {             &quot;field&quot;: &quot;remarks&quot;         }, {             &quot;field&quot;: &quot;fk&quot;         }],     &quot;data&quot;: &quot;#date.yyyyMMddHHmmssSSS#,-,Assignment Due,System Activity,#form.ofc_serReqs_tab.id#&quot; }</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>serReqForm_assignment_process::new_assignment_notification</string>
+               <packageActivityPlugin>
+                  <processDefId>serReqForm_assignment_process</processDefId>
+                  <activityDefId>new_assignment_notification</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{     &quot;host&quot;: &quot;&quot;,     &quot;port&quot;: &quot;&quot;,     &quot;security&quot;: &quot;&quot;,     &quot;username&quot;: &quot;&quot;,     &quot;password&quot;: &quot;&quot;,     &quot;from&quot;: &quot;&quot;,     &quot;toSpecific&quot;: &quot;&quot;,     &quot;toParticipantId&quot;: &quot;serReqForm_assp_assignee&quot;,     &quot;cc&quot;: &quot;&quot;,     &quot;subject&quot;: &quot;You Received New Assignment for Service Request Form (#form.ofc_serReqs_tab.caseNo#)&quot;,     &quot;message&quot;: &quot;Hi,\n\nYou received new assignment for Service Request Form (#form.ofc_serReqs_tab.caseNo#).\n\n==  This is a system generated message. == &quot;,     &quot;isHtml&quot;: &quot;&quot;,     &quot;formDefId&quot;: &quot;&quot;,     &quot;fields&quot;: [],     &quot;files&quot;: [] }</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
@@ -256,27 +236,9 @@
          </packageActivityPluginMap>
          <packageParticipantMap>
             <entry>
-               <string>process1::participant1</string>
-               <packageParticipant>
-                  <processDefId>process1</processDefId>
-                  <participantId>participant1</participantId>
-                  <type>user</type>
-                  <value>Customer,admin</value>
-               </packageParticipant>
-            </entry>
-            <entry>
                <string>serReqForm_approver_process::processStartWhiteList</string>
                <packageParticipant>
                   <processDefId>serReqForm_approver_process</processDefId>
-                  <participantId>processStartWhiteList</participantId>
-                  <type>role</type>
-                  <value>adminUser</value>
-               </packageParticipant>
-            </entry>
-            <entry>
-               <string>process1::processStartWhiteList</string>
-               <packageParticipant>
-                  <processDefId>process1</processDefId>
                   <participantId>processStartWhiteList</participantId>
                   <type>role</type>
                   <value>adminUser</value>
@@ -307,6 +269,15 @@
                   <participantId>serReqForm_assp_applicant_hod</participantId>
                   <type>requesterHod</type>
                   <value>runProcess</value>
+               </packageParticipant>
+            </entry>
+            <entry>
+               <string>inspectionReport::processStartWhiteList</string>
+               <packageParticipant>
+                  <processDefId>inspectionReport</processDefId>
+                  <participantId>processStartWhiteList</participantId>
+                  <type>role</type>
+                  <value>adminUser</value>
                </packageParticipant>
             </entry>
             <entry>
