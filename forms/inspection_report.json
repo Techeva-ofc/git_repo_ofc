@@ -131,6 +131,84 @@
                         },
                         "width": "60"
                     }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "inspectionStatus",
+                        "label": "Status of Inspection",
+                        "multiple": "",
+                        "options": [
+                            {
+                                "grouping": "",
+                                "label": "Select",
+                                "value": "select"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Completed",
+                                "value": "completed"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Action Required",
+                                "value": "action required"
+                            }
+                        ],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "inspectionStatus",
+                        "label": "Status of Inspection",
+                        "multiple": "",
+                        "options": [
+                            {
+                                "grouping": "",
+                                "label": "Select",
+                                "value": "select"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Completed",
+                                "value": "completed"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Action Required",
+                                "value": "action required"
+                            }
+                        ],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
                 }
             ],
             "properties": {"width": "100%"}
