@@ -8,11 +8,6 @@
     "checkboxPosition": "left",
     "columns": [
         {
-            "id": "column_0",
-            "label": "Group Description",
-            "name": "groupdes"
-        },
-        {
             "id": "column_1",
             "label": "Group ID",
             "name": "groupid"
@@ -21,8 +16,14 @@
             "id": "column_2",
             "label": "Group Name",
             "name": "groupname"
+        },
+        {
+            "id": "column_0",
+            "label": "Group Description",
+            "name": "groupdes"
         }
     ],
+    "considerFilterWhenGetTotal": "",
     "filters": [],
     "id": "list_createGroup",
     "name": "List - Create New Group",
