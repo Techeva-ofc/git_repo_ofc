@@ -75,51 +75,51 @@
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
                 "elements": [{
-                    "className": "org.joget.plugin.enterprise.AdvancedGrid",
+                    "className": "org.joget.plugin.enterprise.FormGrid",
                     "properties": {
+                        "abortRelatedRunningProcesses": "",
+                        "deleteFiles": "",
+                        "deleteGridData": "",
                         "deleteMessage": "Delete row?",
+                        "deleteSubformData": "",
                         "disabledAdd": "",
                         "disabledDelete": "",
+                        "enableSorting": "true",
                         "errorMessage": "Invalid number of rows",
                         "formDefId": "createUser",
-                        "hint": "Click to edit. Enter to save.",
-                        "id": "userlist",
-                        "keyToSave": "13",
-                        "label": "",
+                        "height": "500",
+                        "id": "field2",
+                        "label": "Form Grid",
                         "loadBinder": {
-                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
-                            "properties": {
-                                "foreignKey": "uname",
-                                "formDefId": "createUser"
-                            }
+                            "className": "",
+                            "properties": {}
                         },
                         "options": [{
-                            "formatType": "",
+                            "format": "",
+                            "formatType": "text",
                             "label": "User ID",
-                            "readonly": "",
                             "value": "uname",
                             "width": ""
                         }],
-                        "pagingOptions": "10,20,50,100",
+                        "pageSize": "20",
                         "readonly": "",
-                        "recordPerPage": "20",
-                        "search": "true",
-                        "showRowNumber": "true",
-                        "sortIndx": "",
+                        "readonlyLabel": "",
+                        "showRowNumber": "",
+                        "sortField": "uname",
                         "storeBinder": {
-                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
-                            "properties": {
-                                "foreignKey": "uname",
-                                "formDefId": "createUser"
-                            }
+                            "className": "",
+                            "properties": {}
                         },
+                        "submit-label-normal": "",
+                        "submit-label-readonly": "",
                         "uniqueKey": "",
                         "validateMaxRow": "",
                         "validateMinRow": "",
                         "validator": {
                             "className": "",
                             "properties": {}
-                        }
+                        },
+                        "width": "900"
                     }
                 }],
                 "properties": {"width": "100%"}
