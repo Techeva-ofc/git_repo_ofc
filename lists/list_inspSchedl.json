@@ -1,0 +1,32 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "inspSchedl"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "id": "column_1",
+            "label": "Inspection Date",
+            "name": "inspSchedlDate"
+        },
+        {
+            "id": "column_2",
+            "label": "Inspector Name",
+            "name": "inspectorNames"
+        }
+    ],
+    "considerFilterWhenGetTotal": "",
+    "filters": [],
+    "id": "list_inspSchedl",
+    "name": "List - Inspection Schedule",
+    "order": "",
+    "orderBy": "",
+    "pageSize": 0,
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
+}

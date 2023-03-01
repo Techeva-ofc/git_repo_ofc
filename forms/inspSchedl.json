@@ -1,0 +1,119 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [{
+        "className": "org.joget.apps.form.model.Section",
+        "elements": [{
+            "className": "org.joget.apps.form.model.Column",
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.lib.DatePicker",
+                    "properties": {
+                        "allowManual": "true",
+                        "currentDateAs": "",
+                        "dataFormat": "yyyy-MM-dd",
+                        "datePickerType": "dateTime",
+                        "endDateFieldId": "",
+                        "format": "",
+                        "format24hr": "",
+                        "id": "inspSchedlDate",
+                        "label": "Inspection Date",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "startDateFieldId": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": "",
+                        "yearRange": "c-10:c+10"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "inspectorNames",
+                        "label": "Inspector Name",
+                        "multiple": "",
+                        "options": [],
+                        "optionsBinder": {
+                            "className": "org.joget.plugin.enterprise.UserOptionsBinder",
+                            "properties": {
+                                "addEmptyOption": "",
+                                "cacheInterval": "",
+                                "deptId": "",
+                                "emptyLabel": "",
+                                "groupId": "G-006",
+                                "grouping": "",
+                                "optionLabel": "",
+                                "orgId": "",
+                                "useAjax": ""
+                            }
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                }
+            ],
+            "properties": {"width": "100%"}
+        }],
+        "properties": {
+            "comment": "",
+            "id": "inspectionSchedule",
+            "join": "",
+            "label": "inspection Schedule",
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "permissionReadonly": "",
+            "readonly": "",
+            "readonlyLabel": "",
+            "regex": "",
+            "reverse": "",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "visibilityControl": "",
+            "visibilityValue": ""
+        }
+    }],
+    "properties": {
+        "description": "",
+        "id": "inspSchedl",
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "name": "Inspection Schedule",
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "tableName": "ofc_inspSchdl_tab"
+    }
+}
