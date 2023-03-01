@@ -52,18 +52,15 @@
                     }
                 },
                 {
-                    "className": "org.joget.apps.form.lib.TextField",
+                    "className": "org.joget.apps.form.lib.TextArea",
                     "properties": {
-                        "encryption": "",
+                        "cols": "20",
                         "id": "groupDes",
                         "label": "Group Description",
-                        "maxlength": "",
                         "placeholder": "",
                         "readonly": "",
                         "readonlyLabel": "",
-                        "size": "",
-                        "storeNumeric": "",
-                        "style": "",
+                        "rows": "100",
                         "validator": {
                             "className": "",
                             "properties": {}
