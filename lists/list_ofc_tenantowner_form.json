@@ -1,0 +1,31 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "ofc_tenantowner_form"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "id": "column_0",
+            "label": "Add Tenant Owner Option",
+            "name": "add_tenantowner"
+        },
+        {
+            "id": "column_1",
+            "label": "ID",
+            "name": "id"
+        }
+    ],
+    "filters": [],
+    "id": "list_ofc_tenantowner_form",
+    "name": "List - Tenant/Owner",
+    "order": "",
+    "orderBy": "",
+    "pageSize": 0,
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
+}

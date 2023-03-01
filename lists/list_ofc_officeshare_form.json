@@ -1,0 +1,31 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "ofc_officeshare_form"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "id": "column_0",
+            "label": "ID",
+            "name": "id"
+        },
+        {
+            "id": "column_1",
+            "label": "Office Sharing Option",
+            "name": "office_share_option"
+        }
+    ],
+    "filters": [],
+    "id": "list_ofc_officeshare_form",
+    "name": "List - Office Sharing",
+    "order": "",
+    "orderBy": "",
+    "pageSize": 0,
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
+}
