@@ -20,6 +20,28 @@
                </packageActivityForm>
             </entry>
             <entry>
+               <string>serReqForm_assignment_process::verify</string>
+               <packageActivityForm>
+                  <processDefId>serReqForm_assignment_process</processDefId>
+                  <activityDefId>verify</activityDefId>
+                  <formId>serReqForm_assp_main</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>serReqForm_assignment_process::runProcess</string>
+               <packageActivityForm>
+                  <processDefId>serReqForm_assignment_process</processDefId>
+                  <activityDefId>runProcess</activityDefId>
+                  <formId>serReqForm_assp_main</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
                <string>serviceRequestViewTool::runProcess</string>
                <packageActivityForm>
                   <processDefId>serviceRequestViewTool</processDefId>
@@ -28,6 +50,39 @@
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>serReqForm_assignment_process::assign</string>
+               <packageActivityForm>
+                  <processDefId>serReqForm_assignment_process</processDefId>
+                  <activityDefId>assign</activityDefId>
+                  <formId>serReqForm_assp_main</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>serReqForm_assignment_process::resolve</string>
+               <packageActivityForm>
+                  <processDefId>serReqForm_assignment_process</processDefId>
+                  <activityDefId>resolve</activityDefId>
+                  <formId>serReqForm_assp_main</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>serReqForm_assignment_process::clarify</string>
+               <packageActivityForm>
+                  <processDefId>serReqForm_assignment_process</processDefId>
+                  <activityDefId>clarify</activityDefId>
+                  <formId>serReqForm_assp_main</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
             <entry>
@@ -55,6 +110,42 @@
          </packageActivityFormMap>
          <packageActivityPluginMap>
             <entry>
+               <string>serReqForm_assignment_process::clarification_needed_notification</string>
+               <packageActivityPlugin>
+                  <processDefId>serReqForm_assignment_process</processDefId>
+                  <activityDefId>clarification_needed_notification</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{     &quot;host&quot;: &quot;&quot;,     &quot;port&quot;: &quot;&quot;,     &quot;security&quot;: &quot;&quot;,     &quot;username&quot;: &quot;&quot;,     &quot;password&quot;: &quot;&quot;,     &quot;from&quot;: &quot;&quot;,     &quot;toSpecific&quot;: &quot;&quot;,     &quot;toParticipantId&quot;: &quot;serReqForm_assp_applicant&quot;,     &quot;cc&quot;: &quot;&quot;,     &quot;subject&quot;: &quot;Your Service Request Form (#form.ofc_serReqs_tab.caseNo#) Needs Clarification&quot;,     &quot;message&quot;: &quot;Hi,\n\nYour Service Request Form (#form.ofc_serReqs_tab.caseNo#) requires clarification.\n\n==  This is a system generated message. == &quot;,     &quot;isHtml&quot;: &quot;&quot;,     &quot;formDefId&quot;: &quot;&quot;,     &quot;fields&quot;: [],     &quot;files&quot;: [] }</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>serReqForm_assignment_process::assignment_rejected_notification</string>
+               <packageActivityPlugin>
+                  <processDefId>serReqForm_assignment_process</processDefId>
+                  <activityDefId>assignment_rejected_notification</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{     &quot;host&quot;: &quot;&quot;,     &quot;port&quot;: &quot;&quot;,     &quot;security&quot;: &quot;&quot;,     &quot;username&quot;: &quot;&quot;,     &quot;password&quot;: &quot;&quot;,     &quot;from&quot;: &quot;&quot;,     &quot;toSpecific&quot;: &quot;&quot;,     &quot;toParticipantId&quot;: &quot;serReqForm_assp_applicant_hod&quot;,     &quot;cc&quot;: &quot;&quot;,     &quot;subject&quot;: &quot;Service Request Form (#form.ofc_serReqs_tab.caseNo#) Requires Your Attention&quot;,     &quot;message&quot;: &quot;Hi,\n\nService Request Form (#form.ofc_serReqs_tab.caseNo#) requires your attention.\n\n==  This is a system generated message. == &quot;,     &quot;isHtml&quot;: &quot;&quot;,     &quot;formDefId&quot;: &quot;&quot;,     &quot;fields&quot;: [],     &quot;files&quot;: [] }</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>serReqForm_assignment_process::closed_notification</string>
+               <packageActivityPlugin>
+                  <processDefId>serReqForm_assignment_process</processDefId>
+                  <activityDefId>closed_notification</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{     &quot;host&quot;: &quot;&quot;,     &quot;port&quot;: &quot;&quot;,     &quot;security&quot;: &quot;&quot;,     &quot;username&quot;: &quot;&quot;,     &quot;password&quot;: &quot;&quot;,     &quot;from&quot;: &quot;&quot;,     &quot;toSpecific&quot;: &quot;&quot;,     &quot;toParticipantId&quot;: &quot;serReqForm_assp_assignee&quot;,     &quot;cc&quot;: &quot;&quot;,     &quot;subject&quot;: &quot;Service Request Form (#form.ofc_serReqs_tab.caseNo#) Has Been Closed&quot;,     &quot;message&quot;: &quot;Hi,\n\nService Request Form (#form.ofc_serReqs_tab.caseNo#) has been closed.\n\n==  This is a system generated message. == &quot;,     &quot;isHtml&quot;: &quot;&quot;,     &quot;formDefId&quot;: &quot;&quot;,     &quot;fields&quot;: [],     &quot;files&quot;: [] }</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>serReqForm_assignment_process::assignment_due_notification</string>
+               <packageActivityPlugin>
+                  <processDefId>serReqForm_assignment_process</processDefId>
+                  <activityDefId>assignment_due_notification</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{     &quot;host&quot;: &quot;&quot;,     &quot;port&quot;: &quot;&quot;,     &quot;security&quot;: &quot;&quot;,     &quot;username&quot;: &quot;&quot;,     &quot;password&quot;: &quot;&quot;,     &quot;from&quot;: &quot;&quot;,     &quot;toSpecific&quot;: &quot;&quot;,     &quot;toParticipantId&quot;: &quot;serReqForm_assp_applicant_hod&quot;,     &quot;cc&quot;: &quot;&quot;,     &quot;subject&quot;: &quot;Service Request Form (#form.ofc_serReqs_tab.caseNo#) Requires Your Attention&quot;,     &quot;message&quot;: &quot;Hi,\n\nService Request Form (#form.ofc_serReqs_tab.caseNo#) requires your attention.\n\n==  This is a system generated message. == &quot;,     &quot;isHtml&quot;: &quot;&quot;,     &quot;formDefId&quot;: &quot;&quot;,     &quot;fields&quot;: [],     &quot;files&quot;: [] }</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
                <string>process1::requestSaved</string>
                <packageActivityPlugin>
                   <processDefId>process1</processDefId>
@@ -64,12 +155,75 @@
                </packageActivityPlugin>
             </entry>
             <entry>
+               <string>serReqForm_assignment_process::reopened_notification</string>
+               <packageActivityPlugin>
+                  <processDefId>serReqForm_assignment_process</processDefId>
+                  <activityDefId>reopened_notification</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{     &quot;host&quot;: &quot;&quot;,     &quot;port&quot;: &quot;&quot;,     &quot;security&quot;: &quot;&quot;,     &quot;username&quot;: &quot;&quot;,     &quot;password&quot;: &quot;&quot;,     &quot;from&quot;: &quot;&quot;,     &quot;toSpecific&quot;: &quot;&quot;,     &quot;toParticipantId&quot;: &quot;serReqForm_assp_assignee&quot;,     &quot;cc&quot;: &quot;&quot;,     &quot;subject&quot;: &quot;Service Request Form (#form.ofc_serReqs_tab.caseNo#) Has Been Re-opened&quot;,     &quot;message&quot;: &quot;Hi,\n\nService Request Form (#form.ofc_serReqs_tab.caseNo#) has been Re-opened.\n\n==  This is a system generated message. == &quot;,     &quot;isHtml&quot;: &quot;&quot;,     &quot;formDefId&quot;: &quot;&quot;,     &quot;fields&quot;: [],     &quot;files&quot;: [] }</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>serReqForm_assignment_process::rejected_notification</string>
+               <packageActivityPlugin>
+                  <processDefId>serReqForm_assignment_process</processDefId>
+                  <activityDefId>rejected_notification</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{     &quot;host&quot;: &quot;&quot;,     &quot;port&quot;: &quot;&quot;,     &quot;security&quot;: &quot;&quot;,     &quot;username&quot;: &quot;&quot;,     &quot;password&quot;: &quot;&quot;,     &quot;from&quot;: &quot;&quot;,     &quot;toSpecific&quot;: &quot;&quot;,     &quot;toParticipantId&quot;: &quot;serReqForm_assp_applicant&quot;,     &quot;cc&quot;: &quot;&quot;,     &quot;subject&quot;: &quot;Your Service Request Form (#form.ofc_serReqs_tab.caseNo#) Has Been Rejected&quot;,     &quot;message&quot;: &quot;Hi,\n\nYour Service Request Form (#form.ofc_serReqs_tab.caseNo#) has been rejected.\n\n==  This is a system generated message. == &quot;,     &quot;isHtml&quot;: &quot;&quot;,     &quot;formDefId&quot;: &quot;&quot;,     &quot;fields&quot;: [],     &quot;files&quot;: [] }</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
                <string>serReqForm_approver_process::email_on_received</string>
                <packageActivityPlugin>
                   <processDefId>serReqForm_approver_process</processDefId>
                   <activityDefId>email_on_received</activityDefId>
                   <pluginName>org.joget.plugin.enterprise.ExportFormEmailTool</pluginName>
                   <pluginProperties>{&quot;formDefId&quot;:&quot;serReqForm&quot;,&quot;fileName&quot;:&quot;OFC ServiceRequest&quot;,&quot;hideEmptyValueField&quot;:&quot;&quot;,&quot;showNotSelectedOptions&quot;:&quot;&quot;,&quot;toSpecific&quot;:&quot;dt-sagar@alphadxb.com&quot;,&quot;toParticipantId&quot;:&quot;sagargupta21091996@gmail.com&quot;,&quot;cc&quot;:&quot;dt.sarla@alphadxb.com&quot;,&quot;bcc&quot;:&quot;dt.sarla.alpha@gmail.com&quot;,&quot;subject&quot;:&quot;OFC Test- Your Service request as been Send (#date.yyyy-MM-dd&apos;T&apos;HH:mm:ss#)&quot;,&quot;message&quot;:&quot;Dear  #form.ofc_company_tab.companyName[{form.ofc_serReqs_tab.companyName}]#,\n \n#form.ofc_serReqs_tab.serReqServCat# service request has been created succesfully.\nKindly finish the payment by logging into OFC to proceed for Inspection.\n \nThank you,\nConcordia Fitout Team&quot;,&quot;isHtml&quot;:&quot;&quot;,&quot;from&quot;:&quot;sagargupta21091996@gmail.com&quot;,&quot;host&quot;:&quot;smtp.gmail.com&quot;,&quot;port&quot;:&quot;587&quot;,&quot;security&quot;:&quot;TLS&quot;,&quot;username&quot;:&quot;sagargupta21091996@gmail.com&quot;,&quot;password&quot;:&quot;%%%%ESa/Rgkc9DhaMrczaA92KdlDwEt8h7ag+2c4tBuDJ1o=%%%%&quot;,&quot;formatting&quot;:&quot;&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;repeatHeader&quot;:&quot;&quot;,&quot;footerHtml&quot;:&quot;&quot;,&quot;repeatFooter&quot;:&quot;true&quot;,&quot;attachmentFormDefId&quot;:&quot;serReqForm&quot;,&quot;fields&quot;:[],&quot;files&quot;:[],&quot;icsAttachement&quot;:&quot;&quot;}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>serReqForm_assignment_process::new_assignment_notification</string>
+               <packageActivityPlugin>
+                  <processDefId>serReqForm_assignment_process</processDefId>
+                  <activityDefId>new_assignment_notification</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{     &quot;host&quot;: &quot;&quot;,     &quot;port&quot;: &quot;&quot;,     &quot;security&quot;: &quot;&quot;,     &quot;username&quot;: &quot;&quot;,     &quot;password&quot;: &quot;&quot;,     &quot;from&quot;: &quot;&quot;,     &quot;toSpecific&quot;: &quot;&quot;,     &quot;toParticipantId&quot;: &quot;serReqForm_assp_assignee&quot;,     &quot;cc&quot;: &quot;&quot;,     &quot;subject&quot;: &quot;You Received New Assignment for Service Request Form (#form.ofc_serReqs_tab.caseNo#)&quot;,     &quot;message&quot;: &quot;Hi,\n\nYou received new assignment for Service Request Form (#form.ofc_serReqs_tab.caseNo#).\n\n==  This is a system generated message. == &quot;,     &quot;isHtml&quot;: &quot;&quot;,     &quot;formDefId&quot;: &quot;&quot;,     &quot;fields&quot;: [],     &quot;files&quot;: [] }</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>serReqForm_assignment_process::activity_trail_update</string>
+               <packageActivityPlugin>
+                  <processDefId>serReqForm_assignment_process</processDefId>
+                  <activityDefId>activity_trail_update</activityDefId>
+                  <pluginName>org.joget.plugin.enterprise.PresetFormDataTool</pluginName>
+                  <pluginProperties>{     &quot;formDefId&quot;: &quot;serReqForm_assp_action&quot;,     &quot;fields&quot;: [{             &quot;field&quot;: &quot;id&quot;         }, {             &quot;field&quot;: &quot;username&quot;         }, {             &quot;field&quot;: &quot;action&quot;         }, {             &quot;field&quot;: &quot;remarks&quot;         }, {             &quot;field&quot;: &quot;fk&quot;         }],     &quot;data&quot;: &quot;#date.yyyyMMddHHmmssSSS#,-,Assignment Due,System Activity,#form.ofc_serReqs_tab.id#&quot; }</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>serReqForm_assignment_process::updated_notification</string>
+               <packageActivityPlugin>
+                  <processDefId>serReqForm_assignment_process</processDefId>
+                  <activityDefId>updated_notification</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{     &quot;host&quot;: &quot;&quot;,     &quot;port&quot;: &quot;&quot;,     &quot;security&quot;: &quot;&quot;,     &quot;username&quot;: &quot;&quot;,     &quot;password&quot;: &quot;&quot;,     &quot;from&quot;: &quot;&quot;,     &quot;toSpecific&quot;: &quot;&quot;,     &quot;toParticipantId&quot;: &quot;serReqForm_assp_assignee&quot;,     &quot;cc&quot;: &quot;&quot;,     &quot;subject&quot;: &quot;Service Request Form (#form.ofc_serReqs_tab.caseNo#) Has Been Re-opened&quot;,     &quot;message&quot;: &quot;Hi,\n\nService Request Form (#form.ofc_serReqs_tab.caseNo#) has been re-opened.\n\n==  This is a system generated message. == &quot;,     &quot;isHtml&quot;: &quot;&quot;,     &quot;formDefId&quot;: &quot;&quot;,     &quot;fields&quot;: [],     &quot;files&quot;: [] }</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>serReqForm_assignment_process::resolved_notification</string>
+               <packageActivityPlugin>
+                  <processDefId>serReqForm_assignment_process</processDefId>
+                  <activityDefId>resolved_notification</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{     &quot;host&quot;: &quot;&quot;,     &quot;port&quot;: &quot;&quot;,     &quot;security&quot;: &quot;&quot;,     &quot;username&quot;: &quot;&quot;,     &quot;password&quot;: &quot;&quot;,     &quot;from&quot;: &quot;&quot;,     &quot;toSpecific&quot;: &quot;&quot;,     &quot;toParticipantId&quot;: &quot;serReqForm_assp_applicant&quot;,     &quot;cc&quot;: &quot;&quot;,     &quot;subject&quot;: &quot;Your Service Request Form (#form.ofc_serReqs_tab.caseNo#) Has Been Resolved&quot;,     &quot;message&quot;: &quot;Hi,\n\nYour Service Request Form (#form.ofc_serReqs_tab.caseNo#) has been Resolved.\n\n==  This is a system generated message. == &quot;,     &quot;isHtml&quot;: &quot;&quot;,     &quot;formDefId&quot;: &quot;&quot;,     &quot;fields&quot;: [],     &quot;files&quot;: [] }</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>serReqForm_assignment_process::new_submission_notification</string>
+               <packageActivityPlugin>
+                  <processDefId>serReqForm_assignment_process</processDefId>
+                  <activityDefId>new_submission_notification</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{     &quot;host&quot;: &quot;&quot;,     &quot;port&quot;: &quot;&quot;,     &quot;security&quot;: &quot;&quot;,     &quot;username&quot;: &quot;&quot;,     &quot;password&quot;: &quot;&quot;,     &quot;from&quot;: &quot;&quot;,     &quot;toSpecific&quot;: &quot;&quot;,     &quot;toParticipantId&quot;: &quot;serReqForm_assp_applicant_hod&quot;,     &quot;cc&quot;: &quot;&quot;,     &quot;subject&quot;: &quot;New Service Request Form (#form.ofc_serReqs_tab.caseNo#) Received&quot;,     &quot;message&quot;: &quot;Hi,\n\nA new Service Request Form (#form.ofc_serReqs_tab.caseNo#) has been received.\n\n==  This is a system generated message. == &quot;,     &quot;isHtml&quot;: &quot;&quot;,     &quot;formDefId&quot;: &quot;&quot;,     &quot;fields&quot;: [],     &quot;files&quot;: [] }</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
@@ -138,6 +292,33 @@
                </packageParticipant>
             </entry>
             <entry>
+               <string>serReqForm_assignment_process::processStartWhiteList</string>
+               <packageParticipant>
+                  <processDefId>serReqForm_assignment_process</processDefId>
+                  <participantId>processStartWhiteList</participantId>
+                  <type>role</type>
+                  <value>adminUser</value>
+               </packageParticipant>
+            </entry>
+            <entry>
+               <string>serReqForm_assignment_process::serReqForm_assp_applicant_hod</string>
+               <packageParticipant>
+                  <processDefId>serReqForm_assignment_process</processDefId>
+                  <participantId>serReqForm_assp_applicant_hod</participantId>
+                  <type>requesterHod</type>
+                  <value>runProcess</value>
+               </packageParticipant>
+            </entry>
+            <entry>
+               <string>serReqForm_assignment_process::serReqForm_assp_assignee</string>
+               <packageParticipant>
+                  <processDefId>serReqForm_assignment_process</processDefId>
+                  <participantId>serReqForm_assp_assignee</participantId>
+                  <type>workflowVariable</type>
+                  <value>assignee,user</value>
+               </packageParticipant>
+            </entry>
+            <entry>
                <string>serReqForm_approver_process::serReqForm_applicant</string>
                <packageParticipant>
                   <processDefId>serReqForm_approver_process</processDefId>
@@ -155,6 +336,15 @@
                   <value>adminUser</value>
                </packageParticipant>
             </entry>
+            <entry>
+               <string>serReqForm_assignment_process::serReqForm_assp_applicant</string>
+               <packageParticipant>
+                  <processDefId>serReqForm_assignment_process</processDefId>
+                  <participantId>serReqForm_assp_applicant</participantId>
+                  <type>requester</type>
+                  <value>runProcess</value>
+               </packageParticipant>
+            </entry>
          </packageParticipantMap>
       </packageDefinition>
    </packageDefinitionList>
@@ -169,49 +359,49 @@
       <appResource>
          <id>banner1.png</id>
          <appId>ofc_app</appId>
-         <appVersion>7</appVersion>
+         <appVersion>5</appVersion>
          <filesize>262144</filesize>
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.banner1.png#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>footerimage.jpg</id>
          <appId>ofc_app</appId>
-         <appVersion>7</appVersion>
+         <appVersion>5</appVersion>
          <filesize>49352</filesize>
          <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>icon.jpg</id>
          <appId>ofc_app</appId>
-         <appVersion>7</appVersion>
+         <appVersion>5</appVersion>
          <filesize>20631</filesize>
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.icon.jpg#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>logo-concordia.png</id>
          <appId>ofc_app</appId>
-         <appVersion>7</appVersion>
+         <appVersion>5</appVersion>
          <filesize>6216</filesize>
          <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>logo-white.png</id>
          <appId>ofc_app</appId>
-         <appVersion>7</appVersion>
+         <appVersion>5</appVersion>
          <filesize>6773</filesize>
          <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>logo.png</id>
          <appId>ofc_app</appId>
-         <appVersion>7</appVersion>
+         <appVersion>5</appVersion>
          <filesize>10875</filesize>
          <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>thumb.png</id>
          <appId>ofc_app</appId>
-         <appVersion>7</appVersion>
+         <appVersion>5</appVersion>
          <filesize>893541</filesize>
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.thumb.png#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
       </appResource>

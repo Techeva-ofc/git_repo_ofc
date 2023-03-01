@@ -1,0 +1,58 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {
+            "filters": [{
+                "field": "submittedBy",
+                "join": "AND",
+                "operator": "=",
+                "value": "#currentUser.username#"
+            }],
+            "formDefId": "serReqForm_assp_main"
+        }
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "id": "column_0",
+            "label": "Case No.",
+            "name": "caseNo"
+        },
+        {
+            "id": "column_1",
+            "label": "approval_status",
+            "name": "approval_status"
+        },
+        {
+            "id": "column_2",
+            "label": "Approved FOP Drawing",
+            "name": "serReqFopDrawUpload"
+        },
+        {
+            "id": "column_3",
+            "label": "bearer_access_token",
+            "name": "bearer_access_token"
+        },
+        {
+            "id": "column_4",
+            "label": "status",
+            "name": "status"
+        }
+    ],
+    "filters": [{
+        "id": "filter_0",
+        "label": "Case No.",
+        "name": "caseNo"
+    }],
+    "id": "list_serReqForm_mySubmission",
+    "name": "List - My Service Request Form Submission",
+    "order": "",
+    "orderBy": "",
+    "pageSize": 0,
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
+}

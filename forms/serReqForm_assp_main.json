@@ -1,0 +1,424 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.IdGeneratorField",
+                    "properties": {
+                        "envVariable": "serReqForm_assp_counter",
+                        "format": "??????",
+                        "hidden": "",
+                        "id": "caseNo",
+                        "label": "Case No.",
+                        "workflowVariable": ""
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "id": "section5",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "regex": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.SubForm",
+                    "properties": {
+                        "formDefId": "serReqForm",
+                        "id": "field1",
+                        "label": "",
+                        "loadBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "noframe": "true",
+                        "parentSubFormId": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "storeBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "subFormParentId": ""
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "id": "section_editable",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.BeanShellPermission",
+                    "properties": {"script": "return \"Clarification Needed\".equals(\"#form.ofc_serReqs_tab.status?java#\")\n    || \"#form.ofc_serReqs_tab.status?java#\".startsWith(\"#form.\");"}
+                },
+                "regex": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.SubForm",
+                    "properties": {
+                        "formDefId": "serReqForm",
+                        "id": "field1_1",
+                        "label": "",
+                        "loadBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "noframe": "true",
+                        "parentSubFormId": "",
+                        "readonly": "true",
+                        "readonlyLabel": "true",
+                        "storeBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "subFormParentId": ""
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "id": "section_readonly",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.BeanShellPermission",
+                    "properties": {"script": "return !(\"Clarification Needed\".equals(\"#form.ofc_serReqs_tab.status?java#\") \n    || \"#form.ofc_serReqs_tab.status?java#\".startsWith(\"#form.\"));"}
+                },
+                "regex": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "id": "status",
+                        "label": "Status",
+                        "maxlength": "",
+                        "readonly": "true",
+                        "readonlyLabel": "true",
+                        "size": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "id": "section6",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.BeanShellPermission",
+                    "properties": {"script": "return \"edit\".equals(\"#requestParam._mode#\");"}
+                },
+                "regex": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
+                            "id": "status",
+                            "useDefaultWhenEmpty": "",
+                            "value": "New",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
+                            "id": "submittedBy",
+                            "useDefaultWhenEmpty": "true",
+                            "value": "#currentUser.username#",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.SubForm",
+                        "properties": {
+                            "formDefId": "serReqForm_assp_action",
+                            "id": "act_sf",
+                            "label": "",
+                            "loadBinder": {
+                                "className": "org.joget.apps.form.lib.BeanShellFormBinder",
+                                "properties": {
+                                    "script": "return null;",
+                                    "useAjax": ""
+                                }
+                            },
+                            "noframe": "true",
+                            "parentSubFormId": "last_activity",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "storeBinder": {
+                                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                                "properties": {}
+                            },
+                            "subFormParentId": "fk"
+                        }
+                    }
+                ],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "id": "section1",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.BeanShellPermission",
+                    "properties": {"script": "return !\"edit\".equals(\"#requestParam._mode#\");"}
+                },
+                "regex": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.plugin.enterprise.FormGrid",
+                        "properties": {
+                            "deleteMessage": "Delete row?",
+                            "disabledAdd": "",
+                            "disabledDelete": "",
+                            "enableSorting": "",
+                            "errorMessage": "Invalid number of rows",
+                            "formDefId": "serReqForm_assp_action",
+                            "height": "500",
+                            "id": "activity_trail",
+                            "label": "",
+                            "loadBinder": {
+                                "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                                "properties": {
+                                    "foreignKey": "fk",
+                                    "formDefId": "serReqForm_assp_action"
+                                }
+                            },
+                            "options": [
+                                {
+                                    "format": "",
+                                    "formatType": "text",
+                                    "label": "Username",
+                                    "value": "username",
+                                    "width": ""
+                                },
+                                {
+                                    "format": "",
+                                    "formatType": "text",
+                                    "label": "Action",
+                                    "value": "action",
+                                    "width": ""
+                                },
+                                {
+                                    "format": "",
+                                    "formatType": "html",
+                                    "label": "Remarks",
+                                    "value": "remarks",
+                                    "width": ""
+                                },
+                                {
+                                    "format": "",
+                                    "formatType": "text",
+                                    "label": "Date",
+                                    "value": "dateCreated",
+                                    "width": ""
+                                }
+                            ],
+                            "readonly": "true",
+                            "readonlyLabel": "",
+                            "showRowNumber": "",
+                            "sortField": "sort",
+                            "storeBinder": {
+                                "className": "org.joget.apps.form.lib.BeanShellFormBinder",
+                                "properties": {
+                                    "script": "return null;",
+                                    "useAjax": ""
+                                }
+                            },
+                            "submit-label-normal": "",
+                            "submit-label-readonly": "",
+                            "uniqueKey": "",
+                            "validateMaxRow": "",
+                            "validateMinRow": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "width": "900"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "autoPopulate": "",
+                            "id": "hidden",
+                            "label": "",
+                            "value": "<style>\n[name$='activity_trail'] .grid-action-header, [name$='activity_trail'] .grid-action-cell {display:none !important;}\n<\/style>"
+                        }
+                    }
+                ],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "id": "section-activity_trail",
+                "label": "Activity Trail",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.BeanShellPermission",
+                    "properties": {"script": "return !\"#form.ofc_serReqs_tab.status?java#\".startsWith(\"#form.\");"}
+                },
+                "regex": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "id": "participants",
+                        "useDefaultWhenEmpty": "",
+                        "value": "#form.ofc_serReqs_tab.participants?html#;(#currentUser.username?html#)",
+                        "workflowVariable": ""
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "id": "section-participated",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.BeanShellPermission",
+                    "properties": {"script": "return \"New\".equals(\"#form.ofc_serReqs_tab.status?java#\")\n    || \"Assigned\".equals(\"#form.ofc_serReqs_tab.status?java#\")\n    || \"Re-assigned\".equals(\"#form.ofc_serReqs_tab.status?java#\")\n    || \"Re-opened\".equals(\"#form.ofc_serReqs_tab.status?java#\");"}
+                },
+                "regex": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        }
+    ],
+    "properties": {
+        "description": "",
+        "id": "serReqForm_assp_main",
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "name": "Service Request Form - Assignment Process Main Form",
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "org.joget.plugin.enterprise.FormDataUpdateTool",
+            "properties": {
+                "fields": [{
+                    "field": "status",
+                    "value": "#requestParam.act_sf_serReqForm_assp_action_action#"
+                }],
+                "formDefId": "serReqForm_assp_main"
+            }
+        },
+        "postProcessorRunOn": "update",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "tableName": "ofc_serReqs_tab"
+    }
+}
