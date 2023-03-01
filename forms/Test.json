@@ -12,20 +12,21 @@
                         "id": "ofc_category_name1",
                         "label": "Service Categoy",
                         "multiple": "",
-                        "options": [],
-                        "optionsBinder": {
-                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
-                            "properties": {
-                                "addEmptyOption": "true",
-                                "cacheInterval": "",
-                                "emptyLabel": "Select",
-                                "extraCondition": "",
-                                "formDefId": "ofc_category1",
-                                "groupingColumn": "",
-                                "idColumn": "",
-                                "labelColumn": "ofc_category_name",
-                                "useAjax": ""
+                        "options": [
+                            {
+                                "grouping": "",
+                                "label": "Type of Document",
+                                "value": "approved"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Role of user",
+                                "value": "yes"
                             }
+                        ],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
                         },
                         "readonly": "",
                         "readonlyLabel": "",
@@ -94,8 +95,8 @@
                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
-                "visibilityControl": "#binder.options.Test.ofc_category_name1#",
-                "visibilityValue": "New License"
+                "visibilityControl": "ofc_category_name1",
+                "visibilityValue": "approved"
             }
         }
     ],
