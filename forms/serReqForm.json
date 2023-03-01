@@ -447,6 +447,24 @@
                             }
                         },
                         {
+                            "className": "org.joget.apps.form.lib.TextArea",
+                            "properties": {
+                                "cols": "20",
+                                "id": "serReqDesc",
+                                "label": "Description",
+                                "placeholder": "",
+                                "readonly": "",
+                                "readonlyLabel": "",
+                                "rows": "5",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
                             "className": "org.joget.apps.form.lib.FileUpload",
                             "properties": {
                                 "attachment": "",
