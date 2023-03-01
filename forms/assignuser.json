@@ -75,51 +75,27 @@
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
                 "elements": [{
-                    "className": "org.joget.plugin.enterprise.FormGrid",
+                    "className": "org.joget.plugin.enterprise.AjaxSubForm",
                     "properties": {
-                        "abortRelatedRunningProcesses": "",
-                        "deleteFiles": "",
-                        "deleteGridData": "",
-                        "deleteMessage": "Delete row?",
-                        "deleteSubformData": "",
-                        "disabledAdd": "",
-                        "disabledDelete": "",
-                        "enableSorting": "true",
-                        "errorMessage": "Invalid number of rows",
-                        "formDefId": "createUser",
-                        "height": "500",
+                        "ajax": "true",
+                        "collapsible": "",
+                        "collapsibleExpanded": "true",
+                        "collapsibleLabelCollapsed": "View Details",
+                        "collapsibleLabelExpanded": "Hide Details",
+                        "formDefId": "createGroup",
+                        "hideEmpty": "",
                         "id": "field2",
-                        "label": "Form Grid",
-                        "loadBinder": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "options": [{
-                            "format": "",
-                            "formatType": "text",
-                            "label": "User ID",
-                            "value": "uname",
-                            "width": ""
-                        }],
-                        "pageSize": "20",
+                        "label": "",
+                        "noLoad": "",
+                        "noframe": "",
+                        "parentSubFormId": "",
                         "readonly": "",
                         "readonlyLabel": "",
-                        "showRowNumber": "",
-                        "sortField": "uname",
                         "storeBinder": {
-                            "className": "",
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                             "properties": {}
                         },
-                        "submit-label-normal": "",
-                        "submit-label-readonly": "",
-                        "uniqueKey": "",
-                        "validateMaxRow": "",
-                        "validateMinRow": "",
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "width": "900"
+                        "subFormParentId": ""
                     }
                 }],
                 "properties": {"width": "100%"}
