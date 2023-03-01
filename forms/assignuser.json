@@ -1,17 +1,147 @@
 {
     "className": "org.joget.apps.form.model.Form",
-    "elements": [{
-        "className": "org.joget.apps.form.model.Section",
-        "elements": [{
-            "className": "org.joget.apps.form.model.Column",
-            "elements": [],
-            "properties": {"width": "100%"}
-        }],
-        "properties": {
-            "id": "section1",
-            "label": "Section"
+    "elements": [
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "groupname",
+                        "label": "Group ID",
+                        "multiple": "",
+                        "options": [],
+                        "optionsBinder": {
+                            "className": "org.joget.plugin.enterprise.JdbcOptionsBinder",
+                            "properties": {
+                                "addEmpty": "true",
+                                "cacheInterval": "",
+                                "emptyLabel": "Select",
+                                "jdbcDatasource": "default",
+                                "sql": "select groupid from app_fd_ofc_group",
+                                "useAjax": ""
+                            }
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "",
+                                "type": ""
+                            }
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "groupinfo",
+                "join": "",
+                "label": "Group Details",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.plugin.enterprise.AdvancedGrid",
+                    "properties": {
+                        "deleteMessage": "Delete row?",
+                        "disabledAdd": "",
+                        "disabledDelete": "",
+                        "errorMessage": "Invalid number of rows",
+                        "formDefId": "createUser",
+                        "hint": "Click to edit. Enter to save.",
+                        "id": "userlist",
+                        "keyToSave": "13",
+                        "label": "",
+                        "loadBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "options": [{
+                            "formatType": "",
+                            "label": "User ID",
+                            "readonly": "",
+                            "value": "uname",
+                            "width": ""
+                        }],
+                        "pagingOptions": "10,20,50,100",
+                        "readonly": "",
+                        "recordPerPage": "20",
+                        "search": "true",
+                        "showRowNumber": "true",
+                        "sortIndx": "",
+                        "storeBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "uniqueKey": "",
+                        "validateMaxRow": "",
+                        "validateMinRow": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        }
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "userinfo",
+                "join": "",
+                "label": "User Details",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
         }
-    }],
+    ],
     "properties": {
         "description": "",
         "id": "assignuser",
