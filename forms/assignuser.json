@@ -10,7 +10,7 @@
                     "properties": {
                         "controlField": "",
                         "id": "groupname",
-                        "label": "Group ID",
+                        "label": "Group Name",
                         "multiple": "",
                         "options": [],
                         "optionsBinder": {
@@ -23,7 +23,7 @@
                                 "formDefId": "createGroup",
                                 "groupingColumn": "",
                                 "idColumn": "",
-                                "labelColumn": "groupid",
+                                "labelColumn": "groupname",
                                 "useAjax": ""
                             }
                         },
