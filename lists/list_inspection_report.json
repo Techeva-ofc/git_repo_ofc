@@ -8,16 +8,6 @@
     "checkboxPosition": "left",
     "columns": [
         {
-            "id": "column_0",
-            "label": "ID",
-            "name": "id"
-        },
-        {
-            "id": "column_1",
-            "label": "inspectionReportGrid",
-            "name": "inspectionReportGrid"
-        },
-        {
             "id": "column_2",
             "label": "Name of Inspector",
             "name": "currentuser"
@@ -28,6 +18,7 @@
             "name": "imageupload"
         }
     ],
+    "considerFilterWhenGetTotal": "",
     "filters": [],
     "id": "list_inspection_report",
     "name": "List - Inspection Report",
