@@ -1,0 +1,41 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "createUser"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "id": "column_0",
+            "label": "First Name",
+            "name": "fname"
+        },
+        {
+            "id": "column_1",
+            "label": "",
+            "name": "groupDes"
+        },
+        {
+            "id": "column_2",
+            "label": "",
+            "name": "groupId"
+        },
+        {
+            "id": "column_3",
+            "label": "",
+            "name": "groupName"
+        }
+    ],
+    "filters": [],
+    "id": "list_createUser",
+    "name": "List - Create New User",
+    "order": "",
+    "orderBy": "",
+    "pageSize": 0,
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
+}
