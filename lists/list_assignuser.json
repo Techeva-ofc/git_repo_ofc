@@ -1,0 +1,51 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "assignuser"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "options": [],
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "true",
+                            "cacheInterval": "",
+                            "emptyLabel": "select",
+                            "extraCondition": "",
+                            "formDefId": "createGroup",
+                            "groupingColumn": "",
+                            "idColumn": "",
+                            "labelColumn": "groupname",
+                            "useAjax": ""
+                        }
+                    }
+                }
+            },
+            "id": "column_0",
+            "label": "Group Name",
+            "name": "groupname"
+        },
+        {
+            "id": "column_1",
+            "label": "ID",
+            "name": "id"
+        }
+    ],
+    "filters": [],
+    "id": "list_assignuser",
+    "name": "List - Assign User",
+    "order": "",
+    "orderBy": "",
+    "pageSize": 0,
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
+}
