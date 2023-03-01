@@ -72,15 +72,14 @@
                     }
                 },
                 {
-                    "className": "org.joget.apps.form.lib.TextArea",
+                    "className": "org.joget.apps.form.lib.PasswordField",
                     "properties": {
-                        "cols": "40",
                         "id": "password",
                         "label": "Password",
-                        "placeholder": "",
+                        "maxlength": "",
                         "readonly": "",
                         "readonlyLabel": "",
-                        "rows": "1",
+                        "size": "25px",
                         "validator": {
                             "className": "org.joget.apps.form.lib.DefaultValidator",
                             "properties": {
@@ -89,29 +88,26 @@
                                 "type": ""
                             }
                         },
-                        "value": "",
-                        "workflowVariable": ""
+                        "value": "%%%%YZcq6iVDi/vZqUdhYh5H1g==%%%%"
                     }
                 },
                 {
-                    "className": "org.joget.apps.form.lib.TextArea",
+                    "className": "org.joget.apps.form.lib.PasswordField",
                     "properties": {
-                        "cols": "40",
                         "id": "confirmpassword",
                         "label": "Confirm Password",
-                        "placeholder": "",
+                        "maxlength": "",
                         "readonly": "",
                         "readonlyLabel": "",
-                        "rows": "1",
+                        "size": "25px",
                         "validator": {
                             "className": "org.joget.plugin.enterprise.EqualValueValidator",
                             "properties": {
-                                "errorMsg": "*New Password and Confirm Password do not match",
+                                "errorMsg": "Password and Confirm Password do not match",
                                 "fieldId": "password"
                             }
                         },
-                        "value": "",
-                        "workflowVariable": ""
+                        "value": "%%%%YZcq6iVDi/vZqUdhYh5H1g==%%%%"
                     }
                 },
                 {
