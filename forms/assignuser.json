@@ -20,7 +20,7 @@
                                 "cacheInterval": "",
                                 "emptyLabel": "Select",
                                 "jdbcDatasource": "default",
-                                "sql": "select groupid from app_fd_ofc_group;",
+                                "sql": "select c_groupid from app_fd_ofc_group;",
                                 "useAjax": ""
                             }
                         },
