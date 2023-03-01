@@ -44,20 +44,12 @@
                         "height": "500",
                         "id": "inspectionReportGrid",
                         "label": "",
-                        "listId": "list_checklistTypeFom",
+                        "listId": "list_ofc_inspChecklist_form",
                         "loadBinder": {
                             "className": "",
                             "properties": {}
                         },
                         "options": [
-                            {
-                                "editable": "no",
-                                "format": "",
-                                "formatType": "text",
-                                "label": "Checklist Type",
-                                "value": "checklistType",
-                                "width": ""
-                            },
                             {
                                 "editable": "no",
                                 "format": "",
@@ -72,6 +64,14 @@
                                 "formatType": "text",
                                 "label": "Checkpoint",
                                 "value": "checkpointName",
+                                "width": ""
+                            },
+                            {
+                                "editable": "no",
+                                "format": "",
+                                "formatType": "text",
+                                "label": "Type",
+                                "value": "ofc_chklistType_tab.checklistType",
                                 "width": ""
                             },
                             {
