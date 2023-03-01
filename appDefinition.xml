@@ -211,7 +211,7 @@
                <packageActivityPlugin>
                   <processDefId>inspectionReport</processDefId>
                   <activityDefId>sendEmail</activityDefId>
-                  <pluginName>org.joget.plugin.enterprise.ExportFormEmailTool</pluginName>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
                </packageActivityPlugin>
             </entry>
             <entry>
