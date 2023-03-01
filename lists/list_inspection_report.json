@@ -2,7 +2,42 @@
     "actions": [],
     "binder": {
         "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
-        "properties": {"formDefId": "inspection_report"}
+        "properties": {
+            "aggregateField": [],
+            "customSelectionValue": "",
+            "extraCondition": "",
+            "filters": [],
+            "formDefId": "inspection_report",
+            "functionColumns": [],
+            "groupBy": "",
+            "joins": [
+                {
+                    "fieldId": "",
+                    "joinFieldId": "ofc_serReqs_tab.serReqDmccSrNo",
+                    "tableName": "ofc_serReqs_tab"
+                },
+                {
+                    "fieldId": "",
+                    "joinFieldId": "ofc_company_tab.licenseNumber",
+                    "tableName": "ofc_company_tab"
+                },
+                {
+                    "fieldId": "",
+                    "joinFieldId": "ofc_serReqs_tab.companyName",
+                    "tableName": "ofc_company_tab"
+                },
+                {
+                    "fieldId": "",
+                    "joinFieldId": "ofc_company_tab.companyLocation",
+                    "tableName": "ofc_company_tab"
+                },
+                {
+                    "fieldId": "",
+                    "joinFieldId": "ofc_serReqs_tab.status",
+                    "tableName": "ofc_serReqs_tab"
+                }
+            ]
+        }
     },
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
