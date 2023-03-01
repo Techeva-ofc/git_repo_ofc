@@ -8,26 +8,52 @@
     "checkboxPosition": "left",
     "columns": [
         {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_5",
+            "label": "Username",
+            "name": "uname",
+            "sortable": "false"
+        },
+        {
             "id": "column_0",
             "label": "First Name",
             "name": "fname"
         },
         {
+            "filterable": true,
+            "hidden": "false",
             "id": "column_1",
-            "label": "",
-            "name": "groupDes"
+            "label": "Last Name",
+            "name": "lastname",
+            "sortable": "false"
         },
         {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_4",
+            "label": "Email",
+            "name": "email",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
             "id": "column_2",
-            "label": "",
-            "name": "groupId"
+            "label": "Role(s)",
+            "name": "role",
+            "sortable": "false"
         },
         {
+            "filterable": true,
+            "hidden": "false",
             "id": "column_3",
-            "label": "",
-            "name": "groupName"
+            "label": "Status",
+            "name": "status",
+            "sortable": "false"
         }
     ],
+    "considerFilterWhenGetTotal": "",
     "filters": [],
     "id": "list_createUser",
     "name": "List - Create New User",
