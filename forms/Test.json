@@ -12,21 +12,20 @@
                         "id": "ofc_category_name1",
                         "label": "Service Categoy",
                         "multiple": "",
-                        "options": [
-                            {
-                                "grouping": "",
-                                "label": "Type of Document",
-                                "value": "approved"
-                            },
-                            {
-                                "grouping": "",
-                                "label": "Role of user",
-                                "value": "yes"
-                            }
-                        ],
+                        "options": [],
                         "optionsBinder": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                            "properties": {
+                                "addEmptyOption": "true",
+                                "cacheInterval": "",
+                                "emptyLabel": "select",
+                                "extraCondition": "",
+                                "formDefId": "checklistTypeFom",
+                                "groupingColumn": "",
+                                "idColumn": "",
+                                "labelColumn": "checklistType",
+                                "useAjax": ""
+                            }
                         },
                         "readonly": "",
                         "readonlyLabel": "",
