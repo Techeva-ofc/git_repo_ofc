@@ -108,7 +108,7 @@
                 {
                     "className": "org.joget.plugin.enterprise.ImageUpload",
                     "properties": {
-                        "createThumbnail": "true",
+                        "createThumbnail": "",
                         "fileType": ".jpeg;.jpg;.gif;.png",
                         "fileTypeMsg": "Only jpeg,jpg,png type of photos can be upload",
                         "height": "60",
