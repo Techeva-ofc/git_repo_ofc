@@ -33,11 +33,33 @@
             "name": "groupname"
         },
         {
+            "action": {
+                "className": "org.joget.plugin.enterprise.JdbcDatalistAction",
+                "properties": {
+                    "confirmation": "",
+                    "jdbcDatasource": "default",
+                    "label": "User ID",
+                    "query": "select c_uname from app_fd_ofc_user;"
+                }
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
             "id": "column_1",
             "label": "ID",
-            "name": "id"
+            "name": "id",
+            "sortable": "false",
+            "style": "",
+            "width": ""
         }
     ],
+    "considerFilterWhenGetTotal": "",
     "filters": [],
     "id": "list_assignuser",
     "name": "List - Assign User",
