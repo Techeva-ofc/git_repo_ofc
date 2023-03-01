@@ -54,13 +54,13 @@
                 {
                     "className": "org.joget.apps.form.lib.TextArea",
                     "properties": {
-                        "cols": "20",
+                        "cols": "50",
                         "id": "groupDes",
                         "label": "Group Description",
                         "placeholder": "",
                         "readonly": "",
                         "readonlyLabel": "",
-                        "rows": "100",
+                        "rows": "10",
                         "validator": {
                             "className": "",
                             "properties": {}
