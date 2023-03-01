@@ -14,13 +14,16 @@
                         "multiple": "",
                         "options": [],
                         "optionsBinder": {
-                            "className": "org.joget.plugin.enterprise.JdbcOptionsBinder",
+                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
                             "properties": {
-                                "addEmpty": "true",
+                                "addEmptyOption": "true",
                                 "cacheInterval": "",
-                                "emptyLabel": "Select",
-                                "jdbcDatasource": "default",
-                                "sql": "select c_groupid from app_fd_ofc_group;",
+                                "emptyLabel": "select",
+                                "extraCondition": "",
+                                "formDefId": "createGroup",
+                                "groupingColumn": "",
+                                "idColumn": "",
+                                "labelColumn": "groupid",
                                 "useAjax": ""
                             }
                         },
