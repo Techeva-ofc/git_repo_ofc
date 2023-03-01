@@ -10,82 +10,16 @@
             "formDefId": "inspection_report",
             "functionColumns": [],
             "groupBy": "",
-            "joins": [
-                {
-                    "fieldId": "",
-                    "joinFieldId": "ofc_serReqs_tab.serReqDmccSrNo",
-                    "tableName": "ofc_serReqs_tab"
-                },
-                {
-                    "fieldId": "",
-                    "joinFieldId": "ofc_company_tab.licenseNumber",
-                    "tableName": "ofc_company_tab"
-                },
-                {
-                    "fieldId": "",
-                    "joinFieldId": "ofc_serReqs_tab.companyName",
-                    "tableName": "ofc_company_tab"
-                },
-                {
-                    "fieldId": "",
-                    "joinFieldId": "ofc_company_tab.companyLocation",
-                    "tableName": "ofc_company_tab"
-                },
-                {
-                    "fieldId": "",
-                    "joinFieldId": "ofc_serReqs_tab.status",
-                    "tableName": "ofc_serReqs_tab"
-                }
-            ]
+            "joins": []
         }
     },
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
     "columns": [
         {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_4",
-            "label": "ofc_company_tab.companyLocation",
-            "name": "ofc_company_tab.companyLocation",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_3",
-            "label": "ofc_company_tab.companyName",
-            "name": "ofc_company_tab.companyName",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_6",
-            "label": "ofc_serReqs_tab.status",
-            "name": "ofc_serReqs_tab.status",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_5",
-            "label": "ofc_company_tab.licenseNumber",
-            "name": "ofc_company_tab.licenseNumber",
-            "sortable": "false"
-        },
-        {
             "id": "column_2",
             "label": "Name of Inspector",
             "name": "currentuser"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_1",
-            "label": "ofc_serReqs_tab.serReqDmccSrNo",
-            "name": "ofc_serReqs_tab.serReqDmccSrNo",
-            "sortable": "false"
         },
         {
             "action": {
