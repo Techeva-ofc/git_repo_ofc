@@ -1,0 +1,36 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "createGroup"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "id": "column_0",
+            "label": "Group Description",
+            "name": "groupdes"
+        },
+        {
+            "id": "column_1",
+            "label": "Group ID",
+            "name": "groupid"
+        },
+        {
+            "id": "column_2",
+            "label": "Group Name",
+            "name": "groupname"
+        }
+    ],
+    "filters": [],
+    "id": "list_createGroup",
+    "name": "List - Create New Group",
+    "order": "",
+    "orderBy": "",
+    "pageSize": 0,
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
+}
