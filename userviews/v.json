@@ -1310,52 +1310,6 @@
         },
         {
             "className": "org.joget.apps.userview.model.UserviewCategory",
-            "menus": [],
-            "properties": {
-                "id": "category-4986acf9-e058-495d-82e7-f810589d971d",
-                "label": "<i class='fa fa-tasks'><\/i>Manage Inspection Report"
-            }
-        },
-        {
-            "className": "org.joget.apps.userview.model.UserviewCategory",
-            "menus": [{
-                "className": "org.joget.apps.userview.lib.FormMenu",
-                "properties": {
-                    "actionAfterSaved": "",
-                    "actionOnCancel": "",
-                    "cancelButtonLabel": "",
-                    "customFooter": "",
-                    "customHeader": "",
-                    "customId": "",
-                    "enableOffline": "",
-                    "fieldPassover": "",
-                    "fieldPassoverMethod": "append",
-                    "formId": "inspSchedl",
-                    "id": "9F284589874C460CB2EB6DD278C661DD",
-                    "keyName": "",
-                    "label": "Form",
-                    "loadDataWithKey": "",
-                    "messageShowAfterComplete": "",
-                    "paramName": "",
-                    "readonly": "",
-                    "readonlyLabel": "",
-                    "redirectTargetOnCancel": "top",
-                    "redirectTargetOnComplete": "",
-                    "redirectUrlAfterComplete": "",
-                    "redirectUrlOnCancel": "",
-                    "showInPopupDialog": "",
-                    "submitButtonLabel": "",
-                    "userviewCacheDuration": "20",
-                    "userviewCacheScope": ""
-                }
-            }],
-            "properties": {
-                "id": "category-5AA7638E7EB847439D865D3F8A98DD61",
-                "label": "New Category"
-            }
-        },
-        {
-            "className": "org.joget.apps.userview.model.UserviewCategory",
             "menus": [{
                 "className": "org.joget.apps.userview.lib.FormMenu",
                 "properties": {
