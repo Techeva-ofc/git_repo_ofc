@@ -59,22 +59,6 @@
             "sortable": "false"
         },
         {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_4",
-            "label": "ofc_company_tab.companyName",
-            "name": "ofc_company_tab.companyName",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_3",
-            "label": "ofc_company_tab.companyLocation",
-            "name": "ofc_company_tab.companyLocation",
-            "sortable": "false"
-        },
-        {
             "id": "column_2",
             "label": "Name of Inspector",
             "name": "currentuser"
