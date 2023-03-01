@@ -10,7 +10,7 @@
                     "properties": {
                         "encryption": "",
                         "id": "currentuser",
-                        "label": "Name of Inspector",
+                        "label": "Reported By",
                         "maxlength": "",
                         "permissionHidden": "",
                         "placeholder": "",
@@ -170,7 +170,7 @@
                         "properties": {
                             "controlField": "",
                             "id": "inspectionStatus",
-                            "label": "Status of Inspection",
+                            "label": "Status",
                             "multiple": "",
                             "options": [
                                 {
