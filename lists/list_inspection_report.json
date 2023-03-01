@@ -8,65 +8,50 @@
     "checkboxPosition": "left",
     "columns": [
         {
-            "id": "column_0",
-            "label": "ID",
-            "name": "id"
-        },
-        {
-            "id": "column_1",
-            "label": "inspectionReportGrid",
-            "name": "inspectionReportGrid"
-        },
-        {
             "id": "column_2",
-            "label": "Reported By",
+            "label": "Name of Inspector",
             "name": "currentuser"
         },
         {
-            "format": {
-                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
-                "properties": {
-                    "options": [
-                        {
-                            "grouping": "",
-                            "label": "Select",
-                            "value": "select"
-                        },
-                        {
-                            "grouping": "",
-                            "label": "Completed",
-                            "value": "completed"
-                        },
-                        {
-                            "grouping": "",
-                            "label": "Action Required",
-                            "value": "action required"
-                        }
-                    ],
-                    "optionsBinder": {
-                        "className": "",
-                        "properties": {}
-                    }
-                }
-            },
             "id": "column_3",
-            "label": "Status",
-            "name": "inspectionStatus"
-        },
-        {
-            "id": "column_4",
             "label": "Upload Photos",
             "name": "imageupload"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_0",
+            "label": "Status of Inspection",
+            "name": "inspectionStatus",
+            "sortable": "false"
         }
     ],
+    "considerFilterWhenGetTotal": "",
+    "description": "",
+    "disableResponsive": "",
     "filters": [],
+    "hidePageSize": "",
     "id": "list_inspection_report",
     "name": "List - Inspection Report",
     "order": "",
     "orderBy": "",
-    "pageSize": 0,
+    "pageSize": "0",
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "responsiveView": [
+        {
+            "breakpoint": "",
+            "columns": "",
+            "view": "Mobile"
+        },
+        {
+            "breakpoint": "",
+            "columns": "",
+            "view": "Tablet"
+        }
+    ],
     "rowActions": [],
+    "searchPopup": "",
+    "showDataWhenFilterSet": "",
     "showPageSizeSelector": "true",
-    "useSession": "false"
+    "useSession": ""
 }
