@@ -20,6 +20,17 @@
                </packageActivityForm>
             </entry>
             <entry>
+               <string>inspectionReport::runProcess</string>
+               <packageActivityForm>
+                  <processDefId>inspectionReport</processDefId>
+                  <activityDefId>runProcess</activityDefId>
+                  <formId>inspection_report</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
                <string>serReqForm_approver_process::runProcess</string>
                <packageActivityForm>
                   <processDefId>serReqForm_approver_process</processDefId>
