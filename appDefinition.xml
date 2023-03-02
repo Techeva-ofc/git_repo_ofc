@@ -66,14 +66,6 @@
          </packageActivityFormMap>
          <packageActivityPluginMap>
             <entry>
-               <string>inspectionReport::sendEmail</string>
-               <packageActivityPlugin>
-                  <processDefId>inspectionReport</processDefId>
-                  <activityDefId>sendEmail</activityDefId>
-                  <pluginName>org.joget.plugin.enterprise.ExportFormEmailTool</pluginName>
-               </packageActivityPlugin>
-            </entry>
-            <entry>
                <string>serReqForm_approver_process::email_on_received</string>
                <packageActivityPlugin>
                   <processDefId>serReqForm_approver_process</processDefId>
