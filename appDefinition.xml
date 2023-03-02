@@ -9,6 +9,17 @@
          <name>Operational Fitness Certificate</name>
          <packageActivityFormMap>
             <entry>
+               <string>inspectionReport::saveReport</string>
+               <packageActivityForm>
+                  <processDefId>inspectionReport</processDefId>
+                  <activityDefId>saveReport</activityDefId>
+                  <formId>inspection_report</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
                <string>serReqForm_approver_process::runProcess</string>
                <packageActivityForm>
                   <processDefId>serReqForm_approver_process</processDefId>
