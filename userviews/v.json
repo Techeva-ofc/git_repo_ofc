@@ -1146,7 +1146,7 @@
                         "cacheListAction": "",
                         "checkboxPosition": "left",
                         "customId": "serReqForm_crud",
-                        "datalistId": "list_serReqForm1",
+                        "datalistId": "list_ofc_inspChecklist_form",
                         "edit-afterSaved": "list",
                         "edit-allowRecordTraveling": "",
                         "edit-backButtonLabel": "",
