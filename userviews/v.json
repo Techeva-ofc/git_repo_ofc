@@ -1358,30 +1358,6 @@
                     }
                 },
                 {
-                    "className": "org.joget.plugin.enterprise.DataListInboxMenu",
-                    "properties": {
-                        "appFilter": "process",
-                        "assignment-customFooter": "",
-                        "assignment-customHeader": "",
-                        "cacheAllLinks": "",
-                        "cacheListAction": "",
-                        "customId": "serReqForm_inbox",
-                        "datalistId": "list_serReqForm1",
-                        "enableOffline": "",
-                        "id": "129384B32B8E492C8F7CA9D4B16D064C",
-                        "keyName": "",
-                        "label": "Service Request Submitted",
-                        "list-customFooter": "",
-                        "list-customHeader": "",
-                        "processId": "serReqForm_approver_process",
-                        "rowCount": "true",
-                        "showDetail": "",
-                        "showPopup": "",
-                        "userviewCacheDuration": "20",
-                        "userviewCacheScope": ""
-                    }
-                },
-                {
                     "className": "org.joget.apps.userview.lib.FormMenu",
                     "properties": {
                         "actionAfterSaved": "",
