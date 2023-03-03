@@ -1146,7 +1146,7 @@
                         "cacheListAction": "",
                         "checkboxPosition": "left",
                         "customId": "serReqForm_crud",
-                        "datalistId": "list_serReqForm",
+                        "datalistId": "list_serReqForm1",
                         "edit-afterSaved": "list",
                         "edit-allowRecordTraveling": "",
                         "edit-backButtonLabel": "",
