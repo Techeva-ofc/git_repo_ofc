@@ -1358,6 +1358,30 @@
                     }
                 },
                 {
+                    "className": "org.joget.plugin.enterprise.DataListInboxMenu",
+                    "properties": {
+                        "appFilter": "process",
+                        "assignment-customFooter": "",
+                        "assignment-customHeader": "",
+                        "cacheAllLinks": "",
+                        "cacheListAction": "",
+                        "customId": "serReqForm_inbox",
+                        "datalistId": "list_serReqForm1",
+                        "enableOffline": "",
+                        "id": "129384B32B8E492C8F7CA9D4B16D064C",
+                        "keyName": "",
+                        "label": "Service Request Submitted",
+                        "list-customFooter": "",
+                        "list-customHeader": "",
+                        "processId": "serReqForm_approver_process",
+                        "rowCount": "true",
+                        "showDetail": "",
+                        "showPopup": "",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
                     "className": "org.joget.apps.userview.lib.FormMenu",
                     "properties": {
                         "actionAfterSaved": "",
@@ -1444,6 +1468,62 @@
             "menus": [],
             "properties": {
                 "id": "category-af142127-c078-4a1b-8028-4ea74f4e6d75",
+                "label": "<i class='fa fa-tasks'><\/i>Manage Service Request Form"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.plugin.enterprise.CrudMenu",
+                "properties": {
+                    "add-afterSaved": "list",
+                    "add-afterSavedRedirectParamName": "",
+                    "add-afterSavedRedirectParamvalue": "",
+                    "add-afterSavedRedirectUrl": "",
+                    "add-cancelButtonLabel": "",
+                    "add-customFooter": "",
+                    "add-customHeader": "",
+                    "add-messageShowAfterComplete": "",
+                    "add-saveButtonLabel": "",
+                    "addFormId": "serReqForm",
+                    "buttonPosition": "bottomLeft",
+                    "checkboxPosition": "left",
+                    "customId": "serReqForm_crud",
+                    "datalistId": "list_serReqForm",
+                    "edit-afterSaved": "list",
+                    "edit-afterSavedRedirectParamName": "",
+                    "edit-afterSavedRedirectParamvalue": "",
+                    "edit-afterSavedRedirectUrl": "",
+                    "edit-allowRecordTraveling": "",
+                    "edit-backButtonLabel": "",
+                    "edit-customFooter": "",
+                    "edit-customHeader": "",
+                    "edit-firstButtonLabel": "",
+                    "edit-lastButtonLabel": "",
+                    "edit-messageShowAfterComplete": "",
+                    "edit-moreActions": [],
+                    "edit-nextButtonLabel": "",
+                    "edit-prevButtonLabel": "",
+                    "edit-readonly": "",
+                    "edit-readonlyLabel": "",
+                    "edit-saveButtonLabel": "",
+                    "editFormId": "serReqForm",
+                    "id": "c4a5566f-cf67-49c4-9831-271531f07470",
+                    "keyName": "",
+                    "label": "Manage Service Request Form",
+                    "list-customFooter": "",
+                    "list-customHeader": "",
+                    "list-deleteButtonLabel": "",
+                    "list-editLinkLabel": "",
+                    "list-moreActions": [],
+                    "list-newButtonLabel": "",
+                    "list-showDeleteButton": "yes",
+                    "rowCount": "true",
+                    "selectionType": "multiple"
+                }
+            }],
+            "properties": {
+                "id": "category-b10a1797-8435-44c5-b7ad-7ff2518f9b8b",
                 "label": "<i class='fa fa-tasks'><\/i>Manage Service Request Form"
             }
         }
