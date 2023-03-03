@@ -1146,7 +1146,7 @@
                         "cacheListAction": "",
                         "checkboxPosition": "left",
                         "customId": "serReqForm_crud",
-                        "datalistId": "list_ofc_inspChecklist_form",
+                        "datalistId": "list_serReqForm1",
                         "edit-afterSaved": "list",
                         "edit-allowRecordTraveling": "",
                         "edit-backButtonLabel": "",
@@ -1165,7 +1165,7 @@
                         "enableOffline": "",
                         "id": "c4a5566f-cf67-49c4-9831-271531f07470",
                         "keyName": "",
-                        "label": "Manage Service Request Form",
+                        "label": "Service Request Summary",
                         "list-abortRelatedRunningProcesses": "",
                         "list-confirmation": "",
                         "list-customFooter": "",
@@ -1180,55 +1180,6 @@
                         "list-newButtonLabel": "",
                         "list-newLinkTarget": "",
                         "list-showDeleteButton": "yes",
-                        "rowCount": "true",
-                        "selectionType": "multiple",
-                        "userviewCacheDuration": "",
-                        "userviewCacheScope": ""
-                    }
-                },
-                {
-                    "className": "org.joget.plugin.enterprise.CrudMenu",
-                    "properties": {
-                        "add-afterSaved": "list",
-                        "add-cancelButtonLabel": "",
-                        "add-customFooter": "",
-                        "add-customHeader": "",
-                        "add-messageShowAfterComplete": "",
-                        "add-saveButtonLabel": "Update",
-                        "addFormId": "serReqForm",
-                        "buttonPosition": "bottomLeft",
-                        "cacheAllLinks": "",
-                        "cacheListAction": "",
-                        "checkboxPosition": "left",
-                        "customId": "serReqForm_crud",
-                        "datalistId": "list_serReqForm1",
-                        "edit-afterSaved": "list",
-                        "edit-allowRecordTraveling": "",
-                        "edit-backButtonLabel": "",
-                        "edit-customFooter": "",
-                        "edit-customHeader": "",
-                        "edit-firstButtonLabel": "",
-                        "edit-lastButtonLabel": "",
-                        "edit-messageShowAfterComplete": "",
-                        "edit-moreActions": [],
-                        "edit-nextButtonLabel": "",
-                        "edit-prevButtonLabel": "",
-                        "edit-readonly": "",
-                        "edit-readonlyLabel": "",
-                        "edit-saveButtonLabel": "",
-                        "editFormId": "serReqForm",
-                        "enableOffline": "",
-                        "id": "76445787-fbce-45dc-aaad-09d8e864fcce",
-                        "keyName": "",
-                        "label": "Service Request Summary",
-                        "list-customFooter": "",
-                        "list-customHeader": "",
-                        "list-editLinkLabel": "",
-                        "list-editLinkTarget": "",
-                        "list-moreActions": [],
-                        "list-newButtonLabel": "",
-                        "list-newLinkTarget": "",
-                        "list-showDeleteButton": "",
                         "rowCount": "true",
                         "selectionType": "multiple",
                         "userviewCacheDuration": "",
@@ -1519,22 +1470,6 @@
                     }
                 },
                 "permissionComment": ""
-            }
-        },
-        {
-            "className": "org.joget.apps.userview.model.UserviewCategory",
-            "menus": [],
-            "properties": {
-                "id": "category-af142127-c078-4a1b-8028-4ea74f4e6d75",
-                "label": "<i class='fa fa-tasks'><\/i>Manage Service Request Form"
-            }
-        },
-        {
-            "className": "org.joget.apps.userview.model.UserviewCategory",
-            "menus": [],
-            "properties": {
-                "id": "category-b10a1797-8435-44c5-b7ad-7ff2518f9b8b",
-                "label": "<i class='fa fa-tasks'><\/i>Manage Service Request Form"
             }
         }
     ],
