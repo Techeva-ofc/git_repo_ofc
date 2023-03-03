@@ -164,7 +164,7 @@
                                     "width": ""
                                 },
                                 {
-                                    "editable": "yes",
+                                    "editable": "no",
                                     "format": "",
                                     "formatType": "image",
                                     "label": "Value",
