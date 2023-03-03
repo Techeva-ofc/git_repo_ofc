@@ -162,6 +162,14 @@
                                     "label": "Remarks(if any)",
                                     "value": "remarks",
                                     "width": ""
+                                },
+                                {
+                                    "editable": "yes",
+                                    "format": "",
+                                    "formatType": "image",
+                                    "label": "Value",
+                                    "value": "value",
+                                    "width": ""
                                 }
                             ],
                             "pageSize": "20",
