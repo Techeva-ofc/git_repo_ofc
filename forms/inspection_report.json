@@ -70,6 +70,49 @@
                             "value": "",
                             "workflowVariable": ""
                         }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "",
+                            "id": "reporttype",
+                            "label": "Checklist Type",
+                            "multiple": "",
+                            "options": [
+                                {
+                                    "grouping": "",
+                                    "label": "OFC",
+                                    "value": "OFC"
+                                },
+                                {
+                                    "grouping": "",
+                                    "label": "OAFC",
+                                    "value": "OAFC"
+                                },
+                                {
+                                    "grouping": "",
+                                    "label": "Fitout",
+                                    "value": "Fitout"
+                                }
+                            ],
+                            "optionsBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "mandatory": "true",
+                                    "message": "Please choose the type",
+                                    "type": ""
+                                }
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
                     }
                 ],
                 "properties": {"width": "100%"}
