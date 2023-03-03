@@ -1332,8 +1332,11 @@
                 "id": "category-72998b3f-3b8e-4108-9fb9-0a46b89fb9ce",
                 "label": "<i class=\"fa fa-users\"><\/i> Service Request Form Approval Process",
                 "permission": {
-                    "className": "",
-                    "properties": {}
+                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                    "properties": {
+                        "allowedGroupIds": "G-003;G-001;G-002",
+                        "orgId": ""
+                    }
                 },
                 "permissionComment": ""
             }
@@ -1511,7 +1514,7 @@
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
-                        "allowedGroupIds": "G-003;G-010;G-001",
+                        "allowedGroupIds": "G-010",
                         "orgId": ""
                     }
                 },
