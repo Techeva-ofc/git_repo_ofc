@@ -1470,6 +1470,62 @@
                 "id": "category-83072b77-c2ea-40e8-999d-ab79f9748e7d",
                 "label": "<i class='fa fa-tasks'><\/i>Manage Service Request Form"
             }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.plugin.enterprise.CrudMenu",
+                "properties": {
+                    "add-afterSaved": "list",
+                    "add-afterSavedRedirectParamName": "",
+                    "add-afterSavedRedirectParamvalue": "",
+                    "add-afterSavedRedirectUrl": "",
+                    "add-cancelButtonLabel": "",
+                    "add-customFooter": "",
+                    "add-customHeader": "",
+                    "add-messageShowAfterComplete": "",
+                    "add-saveButtonLabel": "",
+                    "addFormId": "serReqForm",
+                    "buttonPosition": "bottomLeft",
+                    "checkboxPosition": "left",
+                    "customId": "serReqForm_crud",
+                    "datalistId": "list_serReqForm",
+                    "edit-afterSaved": "list",
+                    "edit-afterSavedRedirectParamName": "",
+                    "edit-afterSavedRedirectParamvalue": "",
+                    "edit-afterSavedRedirectUrl": "",
+                    "edit-allowRecordTraveling": "",
+                    "edit-backButtonLabel": "",
+                    "edit-customFooter": "",
+                    "edit-customHeader": "",
+                    "edit-firstButtonLabel": "",
+                    "edit-lastButtonLabel": "",
+                    "edit-messageShowAfterComplete": "",
+                    "edit-moreActions": [],
+                    "edit-nextButtonLabel": "",
+                    "edit-prevButtonLabel": "",
+                    "edit-readonly": "",
+                    "edit-readonlyLabel": "",
+                    "edit-saveButtonLabel": "",
+                    "editFormId": "serReqForm",
+                    "id": "0863cdd4-53bb-4e0f-92de-3ea4019b99f2",
+                    "keyName": "",
+                    "label": "Manage Service Request Form",
+                    "list-customFooter": "",
+                    "list-customHeader": "",
+                    "list-deleteButtonLabel": "",
+                    "list-editLinkLabel": "",
+                    "list-moreActions": [],
+                    "list-newButtonLabel": "",
+                    "list-showDeleteButton": "yes",
+                    "rowCount": "true",
+                    "selectionType": "multiple"
+                }
+            }],
+            "properties": {
+                "id": "category-af142127-c078-4a1b-8028-4ea74f4e6d75",
+                "label": "<i class='fa fa-tasks'><\/i>Manage Service Request Form"
+            }
         }
     ],
     "className": "org.joget.apps.userview.model.Userview",
