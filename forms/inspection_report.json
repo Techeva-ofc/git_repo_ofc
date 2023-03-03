@@ -245,8 +245,12 @@
                             "readonlyLabel": "",
                             "size": "",
                             "validator": {
-                                "className": "",
-                                "properties": {}
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "mandatory": "true",
+                                    "message": "Please enter the status",
+                                    "type": ""
+                                }
                             },
                             "value": "",
                             "workflowVariable": "status"
