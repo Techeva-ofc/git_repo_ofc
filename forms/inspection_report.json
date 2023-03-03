@@ -5,28 +5,73 @@
             "className": "org.joget.apps.form.model.Section",
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
-                "elements": [{
-                    "className": "org.joget.apps.form.lib.TextField",
-                    "properties": {
-                        "encryption": "",
-                        "id": "currentuser",
-                        "label": "Reported By",
-                        "maxlength": "",
-                        "permissionHidden": "",
-                        "placeholder": "",
-                        "readonly": "true",
-                        "readonlyLabel": "",
-                        "size": "",
-                        "storeNumeric": "",
-                        "style": "",
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "value": "#currentUser.fullName#",
-                        "workflowVariable": ""
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "currentuser",
+                            "label": "Reported By",
+                            "maxlength": "",
+                            "permissionHidden": "",
+                            "placeholder": "",
+                            "readonly": "true",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "#currentUser.fullName#",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "",
+                            "id": "reporttype",
+                            "label": "Checklist Type",
+                            "multiple": "",
+                            "options": [
+                                {
+                                    "grouping": "",
+                                    "label": "OFC",
+                                    "value": "OFC"
+                                },
+                                {
+                                    "grouping": "",
+                                    "label": "OAFC",
+                                    "value": "OAFC"
+                                },
+                                {
+                                    "grouping": "",
+                                    "label": "Fitout",
+                                    "value": "Fitout"
+                                }
+                            ],
+                            "optionsBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "mandatory": "true",
+                                    "message": "Please choose the type",
+                                    "type": ""
+                                }
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
                     }
-                }],
+                ],
                 "properties": {"width": "100%"}
             }],
             "properties": {
