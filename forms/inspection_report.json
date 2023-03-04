@@ -333,7 +333,7 @@
                 "join": "",
                 "label": "Please fill inpection details below",
                 "loadBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
                 "permission": {
@@ -346,7 +346,7 @@
                 "regex": "",
                 "reverse": "",
                 "storeBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
                 "visibilityControl": "reporttype",
@@ -388,7 +388,7 @@
                 "join": "",
                 "label": "",
                 "loadBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
                 "permission": {
@@ -401,7 +401,7 @@
                 "regex": "",
                 "reverse": "",
                 "storeBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
                 "visibilityControl": "reporttype",
