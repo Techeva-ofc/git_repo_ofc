@@ -338,6 +338,24 @@
                 "target": "popup"
             },
             "type": "text"
+        },
+        {
+            "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+            "icon": "<i class=\"fas fa-link\"><\/i>",
+            "id": "rowAction_2",
+            "label": "Hyperlink",
+            "name": "Data List Hyperlink Action",
+            "properties": {
+                "confirmation": "",
+                "datalist_type": "row_action",
+                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/inspection_report",
+                "hrefColumn": "C_serReqDmccSrNo",
+                "hrefParam": "serReqDmccSrNo",
+                "label": "Generate Report",
+                "rules": [],
+                "target": "popup"
+            },
+            "type": "text"
         }
     ],
     "searchPopup": "",
