@@ -514,7 +514,7 @@
             }],
             "properties": {
                 "comment": "",
-                "id": "section6",
+                "id": "othernoncompliance",
                 "join": "",
                 "label": "Other Non-Compliance",
                 "loadBinder": {
@@ -568,7 +568,7 @@
             }],
             "properties": {
                 "comment": "",
-                "id": "section7",
+                "id": "fitoutnoncompliance",
                 "join": "",
                 "label": "Fitout Non-Compliance",
                 "loadBinder": {
