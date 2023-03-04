@@ -1,38 +1,75 @@
 {
     "actions": [],
     "binder": {
-        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
-        "properties": {"formDefId": "ofc_inspection_form"}
+        "className": "org.joget.plugin.enterprise.JdbcDataListBinder",
+        "properties": {
+            "jdbcDatasource": "default",
+            "optimisePaging": "",
+            "primaryKey": "username",
+            "sql": "SELECT sr.id, sr.dateCreated, sr.C_serReqDmccSrNo, c.c_licenseNumber, sr.c_serReqServCat, \r\nc.c_companyName, c.c_companyLocation, t.c_tower_seq_no, t.c_tower_name ,sr.c_status \r\nFROM app_fd_ofc_serreqs_tab sr\r\nINNER JOIN app_fd_ofc_company_tab c\r\nON sr.c_companyName = c.id\r\nINNER JOIN app_fd_ofc_location_tab l\r\nON c.c_companyLocation = l.c_locName\r\nINNER JOIN app_fd_ofc_tower_tab t\r\nON c.c_tower_name = t.c_tower_name\r\nWHERE sr.c_status = 'Payment Completed' or sr.c_status = 'Inspection Scheduled'"
+        }
     },
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
     "columns": [
         {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_6",
+            "label": "dateCreated",
+            "name": "dateCreated",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
             "id": "column_0",
-            "label": "Company Address",
-            "name": "nspBillingAdd"
+            "label": "C_serReqDmccSrNo",
+            "name": "C_serReqDmccSrNo",
+            "sortable": "false"
         },
         {
+            "filterable": true,
+            "hidden": "false",
             "id": "column_1",
-            "label": "DMCC SR Number",
-            "name": "inspDmcc"
+            "label": "c_licenseNumber",
+            "name": "c_licenseNumber",
+            "sortable": "false"
         },
         {
+            "filterable": true,
+            "hidden": "false",
             "id": "column_2",
-            "label": "ID",
-            "name": "id"
+            "label": "c_companyName",
+            "name": "c_companyName",
+            "sortable": "false"
         },
         {
+            "filterable": true,
+            "hidden": "false",
             "id": "column_3",
-            "label": "License Number",
-            "name": "serReq_licenc_no"
+            "label": "c_companyLocation",
+            "name": "c_companyLocation",
+            "sortable": "false"
         },
         {
+            "filterable": true,
+            "hidden": "false",
             "id": "column_4",
-            "label": "Location",
-            "name": "inspLocation"
+            "label": "c_tower_seq_no",
+            "name": "c_tower_seq_no",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_5",
+            "label": "c_tower_name",
+            "name": "c_tower_name",
+            "sortable": "false"
         }
     ],
+    "considerFilterWhenGetTotal": "",
     "filters": [],
     "id": "list_ofc_inspection_form_1",
     "name": "List - Inspection Summery",
