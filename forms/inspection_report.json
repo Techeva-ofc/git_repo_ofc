@@ -128,9 +128,9 @@
                 "comment": "",
                 "id": "inspectedCheck",
                 "join": "",
-                "label": "Inspection CheckList",
+                "label": "",
                 "loadBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
                 "permission": {
@@ -143,7 +143,7 @@
                 "regex": "",
                 "reverse": "",
                 "storeBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
                 "visibilityControl": "",
