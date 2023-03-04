@@ -14,7 +14,7 @@
                 "join": "",
                 "label": "Service Request Form",
                 "loadBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
                 "permission": {
@@ -23,12 +23,12 @@
                 },
                 "permissionHidden": "",
                 "permissionReadonly": "",
-                "readonly": "true",
-                "readonlyLabel": "true",
+                "readonly": "",
+                "readonlyLabel": "",
                 "regex": "",
                 "reverse": "",
                 "storeBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
                 "visibilityControl": "",
