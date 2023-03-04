@@ -5,7 +5,7 @@
         "properties": {
             "aggregateField": [],
             "customSelectionValue": "",
-            "extraCondition": "",
+            "extraCondition": "customProperties.name IN (\"#currentUser.firstName#\")",
             "filters": [],
             "formDefId": "serReqForm",
             "functionColumns": [],
