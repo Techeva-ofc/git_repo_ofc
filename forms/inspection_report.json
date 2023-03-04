@@ -236,13 +236,23 @@
                                 },
                                 {
                                     "grouping": "",
-                                    "label": "Completed",
-                                    "value": "completed"
+                                    "label": "Partial Compliance",
+                                    "value": "Partial Compliance"
                                 },
                                 {
                                     "grouping": "",
-                                    "label": "Action Required",
-                                    "value": "action required"
+                                    "label": "Full Compliance",
+                                    "value": "Full Compliance"
+                                },
+                                {
+                                    "grouping": "",
+                                    "label": "Other Non-Compliance",
+                                    "value": "Other Non-Compliance"
+                                },
+                                {
+                                    "grouping": "",
+                                    "label": "Fitout Non-Compliance",
+                                    "value": "Fitout Non-Compliance"
                                 }
                             ],
                             "optionsBinder": {
