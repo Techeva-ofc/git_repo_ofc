@@ -5,7 +5,7 @@
         "properties": {
             "aggregateField": [],
             "customSelectionValue": "",
-            "extraCondition": "customProperties.(ofc_company_tab.companyName) IN (\"#currentUser.firstName#\")",
+            "extraCondition": "customProperties.companyName IN (\"#currentUser.firstName#\")",
             "filters": [],
             "formDefId": "serReqForm",
             "functionColumns": [],
