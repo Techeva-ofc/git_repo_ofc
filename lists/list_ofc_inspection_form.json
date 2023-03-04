@@ -280,7 +280,7 @@
     ],
     "hidePageSize": "true",
     "id": "list_ofc_inspection_form",
-    "name": "List - Inspection Summery",
+    "name": "List - Inspection Summary_Userview",
     "order": "1",
     "orderBy": "dateCreated",
     "pageSize": "0",
