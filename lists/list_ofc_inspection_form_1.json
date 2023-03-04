@@ -10,12 +10,31 @@
             "formDefId": "serReqForm",
             "functionColumns": [],
             "groupBy": "",
-            "joins": []
+            "joins": [
+                {
+                    "fieldId": "",
+                    "joinFieldId": "companyName",
+                    "tableName": "ofc_company_tab"
+                },
+                {
+                    "fieldId": "",
+                    "joinFieldId": "ofc_company_tab.tower_name",
+                    "tableName": "ofc_tower_tab"
+                }
+            ]
         }
     },
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
     "columns": [
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_3",
+            "label": "DMCC SR No.",
+            "name": "serReqDmccSrNo",
+            "sortable": "false"
+        },
         {
             "filterable": true,
             "hidden": "false",
@@ -43,9 +62,25 @@
         {
             "filterable": true,
             "hidden": "false",
-            "id": "column_3",
-            "label": "DMCC SR No.",
-            "name": "serReqDmccSrNo",
+            "id": "column_4",
+            "label": "ofc_company_tab.companyAddress",
+            "name": "ofc_company_tab.companyAddress",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_5",
+            "label": "ofc_company_tab.companyName",
+            "name": "ofc_company_tab.companyName",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_6",
+            "label": "ofc_tower_tab.tower_name",
+            "name": "ofc_tower_tab.tower_name",
             "sortable": "false"
         }
     ],
