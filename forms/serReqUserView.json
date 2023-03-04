@@ -10,7 +10,7 @@
                     "properties": {
                         "formDefId": "serReqForm",
                         "id": "serreqform",
-                        "label": "",
+                        "label": "Service Request Details",
                         "loadBinder": {
                             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                             "properties": {}
@@ -55,7 +55,7 @@
             "comment": "",
             "id": "serReqForm_Userview",
             "join": "",
-            "label": "Service Request Form",
+            "label": "",
             "loadBinder": {
                 "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                 "properties": {}
