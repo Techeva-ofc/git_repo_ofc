@@ -7,10 +7,10 @@
             "customSelectionValue": "",
             "extraCondition": "",
             "filters": [{
-                "field": "status",
+                "field": "InspectionStatus",
                 "join": "AND",
                 "operator": "=",
-                "value": "Inspection Scheduled"
+                "value": "Partial Compliance"
             }],
             "formDefId": "serReqForm",
             "functionColumns": [],
