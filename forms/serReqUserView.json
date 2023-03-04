@@ -4,7 +4,28 @@
         "className": "org.joget.apps.form.model.Section",
         "elements": [{
             "className": "org.joget.apps.form.model.Column",
-            "elements": [],
+            "elements": [{
+                "className": "org.joget.apps.form.lib.SubForm",
+                "properties": {
+                    "formDefId": "serReqForm",
+                    "id": "subform",
+                    "label": "",
+                    "loadBinder": {
+                        "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                        "properties": {}
+                    },
+                    "noframe": "",
+                    "parentSubFormId": "",
+                    "permissionHidden": "",
+                    "readonly": "true",
+                    "readonlyLabel": "true",
+                    "storeBinder": {
+                        "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                        "properties": {}
+                    },
+                    "subFormParentId": ""
+                }
+            }],
             "properties": {"width": "100%"}
         }],
         "properties": {
