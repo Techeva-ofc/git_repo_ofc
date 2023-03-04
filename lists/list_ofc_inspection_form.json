@@ -358,7 +358,7 @@
                     "operator": "=",
                     "value": "Inspection Scheduled"
                 }],
-                "target": "popup"
+                "target": "_self"
             },
             "type": "text"
         }
