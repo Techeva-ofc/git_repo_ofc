@@ -49,8 +49,11 @@
                 "properties": {}
             },
             "permission": {
-                "className": "",
-                "properties": {}
+                "className": "org.joget.apps.userview.lib.UserPermission",
+                "properties": {
+                    "allowedUsernames": "ashiq.ahamed",
+                    "orgId": ""
+                }
             },
             "permissionReadonly": "",
             "readonly": "",
