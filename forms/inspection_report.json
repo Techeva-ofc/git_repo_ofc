@@ -464,13 +464,22 @@
                     {
                         "className": "org.joget.apps.form.lib.TextField",
                         "properties": {
-                            "encryption": "false",
-                            "id": "field7",
-                            "label": "Text Field",
-                            "readonly": "False",
-                            "readonlyLabel": "False",
-                            "storeNumeric": "False",
-                            "style": ""
+                            "encryption": "",
+                            "id": "remarkfield",
+                            "label": "Remarks(If any)",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
                         }
                     },
                     {
@@ -480,15 +489,23 @@
                             "fileType": ".jpeg;.jpg;.gif;.png",
                             "fileTypeMsg": "Invalid file type",
                             "height": "60",
-                            "id": "field9",
-                            "label": "Image Upload",
+                            "id": "imageupload",
+                            "label": "Upload image(s) for reference",
+                            "maxSize": "",
                             "maxSizeMsg": "File size limit exceeded",
-                            "multiple": "False",
+                            "multiple": "",
+                            "padding": "",
                             "permissionType": "",
-                            "readonly": "False",
-                            "removeFile": "false",
+                            "readonly": "",
+                            "removeFile": "",
+                            "resizeHeight": "",
                             "resizeMethod": "",
                             "resizeQuality": "0.8",
+                            "resizeWidth": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
                             "width": "60"
                         }
                     }
