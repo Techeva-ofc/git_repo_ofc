@@ -213,9 +213,9 @@
                 "comment": "",
                 "id": "report",
                 "join": "",
-                "label": "Report",
+                "label": "",
                 "loadBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
                 "permission": {
@@ -228,7 +228,7 @@
                 "regex": "",
                 "reverse": "",
                 "storeBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
                 "visibilityControl": "",
