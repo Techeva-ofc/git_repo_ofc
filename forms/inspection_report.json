@@ -542,7 +542,28 @@
             "className": "org.joget.apps.form.model.Section",
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
-                "elements": [],
+                "elements": [{
+                    "className": "org.joget.plugin.enterprise.RichTextEditorField",
+                    "properties": {
+                        "editor": "",
+                        "height": "",
+                        "id": "commentsfitoutnoncompliance",
+                        "label": "Comments",
+                        "mode": "",
+                        "permissionType": "",
+                        "placeholder": "",
+                        "readonly": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "Mandatory",
+                                "type": ""
+                            }
+                        },
+                        "value": ""
+                    }
+                }],
                 "properties": {"width": "100%"}
             }],
             "properties": {
