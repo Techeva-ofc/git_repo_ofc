@@ -386,7 +386,7 @@
                 "comment": "",
                 "id": "partialcompliance",
                 "join": "",
-                "label": "",
+                "label": "Partial Compliance",
                 "loadBinder": {
                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
@@ -516,7 +516,7 @@
                 "comment": "",
                 "id": "section6",
                 "join": "",
-                "label": "Section",
+                "label": "Other Non-Compliance",
                 "loadBinder": {
                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
