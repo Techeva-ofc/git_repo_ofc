@@ -1475,6 +1475,62 @@
                 },
                 "permissionComment": ""
             }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.plugin.enterprise.CrudMenu",
+                "properties": {
+                    "add-afterSaved": "list",
+                    "add-afterSavedRedirectParamName": "",
+                    "add-afterSavedRedirectParamvalue": "",
+                    "add-afterSavedRedirectUrl": "",
+                    "add-cancelButtonLabel": "",
+                    "add-customFooter": "",
+                    "add-customHeader": "",
+                    "add-messageShowAfterComplete": "",
+                    "add-saveButtonLabel": "",
+                    "addFormId": "inspection_report",
+                    "buttonPosition": "bottomLeft",
+                    "checkboxPosition": "left",
+                    "customId": "inspection_report_crud",
+                    "datalistId": "list_inspection_report",
+                    "edit-afterSaved": "list",
+                    "edit-afterSavedRedirectParamName": "",
+                    "edit-afterSavedRedirectParamvalue": "",
+                    "edit-afterSavedRedirectUrl": "",
+                    "edit-allowRecordTraveling": "",
+                    "edit-backButtonLabel": "",
+                    "edit-customFooter": "",
+                    "edit-customHeader": "",
+                    "edit-firstButtonLabel": "",
+                    "edit-lastButtonLabel": "",
+                    "edit-messageShowAfterComplete": "",
+                    "edit-moreActions": [],
+                    "edit-nextButtonLabel": "",
+                    "edit-prevButtonLabel": "",
+                    "edit-readonly": "",
+                    "edit-readonlyLabel": "",
+                    "edit-saveButtonLabel": "",
+                    "editFormId": "inspection_report",
+                    "id": "95398cb7-328f-4a8d-8f1e-0804ceb8d779",
+                    "keyName": "",
+                    "label": "Manage Inspection Report",
+                    "list-customFooter": "",
+                    "list-customHeader": "",
+                    "list-deleteButtonLabel": "",
+                    "list-editLinkLabel": "",
+                    "list-moreActions": [],
+                    "list-newButtonLabel": "",
+                    "list-showDeleteButton": "yes",
+                    "rowCount": "true",
+                    "selectionType": "multiple"
+                }
+            }],
+            "properties": {
+                "id": "category-f9247dc3-e89f-4f67-a86e-7bd82027555b",
+                "label": "<i class='fa fa-tasks'><\/i>Manage Inspection Report"
+            }
         }
     ],
     "className": "org.joget.apps.userview.model.Userview",
