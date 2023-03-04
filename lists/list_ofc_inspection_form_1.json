@@ -6,7 +6,12 @@
             "aggregateField": [],
             "customSelectionValue": "",
             "extraCondition": "",
-            "filters": [],
+            "filters": [{
+                "field": "status",
+                "join": "AND",
+                "operator": "=",
+                "value": "Inspection Scheduled"
+            }],
             "formDefId": "serReqForm",
             "functionColumns": [],
             "groupBy": "",
