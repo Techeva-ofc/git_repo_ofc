@@ -18,7 +18,7 @@
                 "id": "category-EE74E4F4426241BD9BC3BC73B1D24AC7",
                 "label": "<i class='fa fa-home'><\/i> Home",
                 "permission": {
-                    "className": "",
+                    "className": "org.joget.apps.userview.lib.LoggedInUserPermission",
                     "properties": {}
                 },
                 "permissionComment": ""
@@ -85,7 +85,7 @@
                 "id": "category-3c667d47-854f-458f-97f0-3fb07397f12f",
                 "label": "<i class=\"fa fa-tasks\"><\/i>Manage Emirates",
                 "permission": {
-                    "className": "",
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
                 },
                 "permissionComment": ""
@@ -152,7 +152,7 @@
                 "id": "category-13cc278c-6cd5-4073-b4df-f2edb4cf9b6c",
                 "label": "<i class='fa fa-tasks'><\/i>Manage Location",
                 "permission": {
-                    "className": "",
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
                 },
                 "permissionComment": ""
@@ -272,7 +272,7 @@
                 "id": "category-0656c558-d29b-4f40-bf51-67b17595921a",
                 "label": "<i class=\"fa fa-tasks\"><\/i>Manage Tower ",
                 "permission": {
-                    "className": "",
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
                 },
                 "permissionComment": ""
@@ -339,7 +339,7 @@
                 "id": "category-d35049fd-7b71-42e3-944b-0ddf66270ac5",
                 "label": "<i class=\"fa fa-tasks\"><\/i>Manage Floor",
                 "permission": {
-                    "className": "",
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
                 },
                 "permissionComment": ""
@@ -406,7 +406,7 @@
                 "id": "category-c1b9eaab-6a04-49f4-92c2-161f4d0b330f",
                 "label": "<i class='fa fa-tasks'><\/i>Manage Unit Area",
                 "permission": {
-                    "className": "",
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
                 },
                 "permissionComment": ""
@@ -473,7 +473,7 @@
                 "id": "category-290a0101-dc49-490d-8291-7ffa985b1195",
                 "label": "<i class=\"fa fa-tasks\"><\/i>Tower Floor Area mapping",
                 "permission": {
-                    "className": "",
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
                 },
                 "permissionComment": ""
@@ -1307,6 +1307,8 @@
                         "keyName": "",
                         "label": "New Service Request",
                         "messageShowAfterComplete": "",
+                        "permissionDeny": "",
+                        "permissionHidden": "true",
                         "processDefId": "serReqForm_approver_process",
                         "redirectTarget": "",
                         "redirectUrlAfterComplete": "",
@@ -1382,6 +1384,8 @@
                         "label": "Service Request Submitted",
                         "list-customFooter": "",
                         "list-customHeader": "",
+                        "permissionDeny": "",
+                        "permissionHidden": "true",
                         "processId": "serReqForm_approver_process",
                         "rowCount": "true",
                         "showDetail": "",
@@ -1410,7 +1414,7 @@
                         "messageShowAfterComplete": "",
                         "paramName": "",
                         "permissionDeny": "",
-                        "permissionHidden": "",
+                        "permissionHidden": "true",
                         "readonly": "",
                         "readonlyLabel": "",
                         "redirectTargetOnCancel": "top",
@@ -1443,7 +1447,7 @@
                         "messageShowAfterComplete": "",
                         "paramName": "",
                         "permissionDeny": "",
-                        "permissionHidden": "",
+                        "permissionHidden": "true",
                         "readonly": "Yes",
                         "readonlyLabel": "true",
                         "redirectTargetOnCancel": "top",
@@ -1465,7 +1469,7 @@
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
-                        "allowedGroupIds": "G-010",
+                        "allowedGroupIds": "G-009;G-010",
                         "orgId": ""
                     }
                 },
