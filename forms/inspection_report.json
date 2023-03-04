@@ -404,7 +404,7 @@
                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
-                "visibilityControl": "reporttype",
+                "visibilityControl": "inspectionStatus",
                 "visibilityValue": "Partial Compliance"
             }
         },
@@ -518,7 +518,7 @@
                 "join": "",
                 "label": "Section",
                 "loadBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
                 "permission": {
@@ -531,10 +531,10 @@
                 "regex": "",
                 "reverse": "",
                 "storeBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
-                "visibilityControl": "reporttype",
+                "visibilityControl": "inspectionStatus",
                 "visibilityValue": "Other Non-Compliance"
             }
         },
@@ -588,7 +588,7 @@
                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
-                "visibilityControl": "reporttype",
+                "visibilityControl": "inspectionStatus",
                 "visibilityValue": "Fitout Non-Compliance"
             }
         }
