@@ -1071,6 +1071,37 @@
                     }
                 },
                 {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "actionAfterSaved": "",
+                        "actionOnCancel": "",
+                        "cancelButtonLabel": "",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "inspectionReportForm",
+                        "enableOffline": "",
+                        "fieldPassover": "",
+                        "fieldPassoverMethod": "append",
+                        "formId": "inspection_report",
+                        "id": "E141DF4EA6ED46A1BABB11DCF16B56CF",
+                        "keyName": "",
+                        "label": "Inspection Report Form",
+                        "loadDataWithKey": "",
+                        "messageShowAfterComplete": "",
+                        "paramName": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "redirectTargetOnCancel": "top",
+                        "redirectTargetOnComplete": "",
+                        "redirectUrlAfterComplete": "",
+                        "redirectUrlOnCancel": "",
+                        "showInPopupDialog": "",
+                        "submitButtonLabel": "",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
                     "className": "org.joget.plugin.enterprise.CrudMenu",
                     "properties": {
                         "add-afterSaved": "list",
@@ -1084,7 +1115,7 @@
                         "cacheAllLinks": "",
                         "cacheListAction": "",
                         "checkboxPosition": "left",
-                        "customId": "inspection_report_crud",
+                        "customId": "inspectionreport",
                         "datalistId": "list_inspection_report",
                         "edit-afterSaved": "list",
                         "edit-allowRecordTraveling": "",
