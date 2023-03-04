@@ -540,7 +540,7 @@
                 "id": "category-a3256966-f6a7-4a48-a745-9080bfee6c25",
                 "label": "<i class='fa fa-tasks'><\/i>Manage Activity",
                 "permission": {
-                    "className": "",
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
                 },
                 "permissionComment": ""
@@ -607,7 +607,7 @@
                 "id": "category-2449f176-5762-4dfc-bd3e-c81832736383",
                 "label": "<i class=\"fa fa-tasks\"><\/i>Manage Company",
                 "permission": {
-                    "className": "",
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
                 },
                 "permissionComment": ""
@@ -674,7 +674,7 @@
                 "id": "category-954504b0-51b3-4c4e-bc3d-c5ef549edfe3",
                 "label": "<i class=\"fa fa-tasks\"><\/i>Manage Service Category",
                 "permission": {
-                    "className": "",
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
                 },
                 "permissionComment": ""
@@ -741,7 +741,7 @@
                 "id": "category-c54667e1-c36c-43b5-a8c6-3755352a20e2",
                 "label": "<i class='fa fa-tasks'><\/i>Manage Checklist Type",
                 "permission": {
-                    "className": "",
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
                 },
                 "permissionComment": ""
@@ -808,7 +808,7 @@
                 "id": "category-93be2553-d2cf-4ed0-a82e-6adb81e1f6b7",
                 "label": "<i class=\"fa fa-tasks\"><\/i>Manage Fitout Checklist",
                 "permission": {
-                    "className": "",
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
                 },
                 "permissionComment": ""
@@ -877,7 +877,7 @@
                 "id": "category-d09c8b11-f16d-491f-95ea-8910376e00a4",
                 "label": "<i class='fa fa-tasks'><\/i>Manage Document for Approval",
                 "permission": {
-                    "className": "",
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
                 },
                 "permissionComment": ""
