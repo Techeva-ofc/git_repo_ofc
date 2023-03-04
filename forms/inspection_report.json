@@ -349,7 +349,7 @@
                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
-                "visibilityControl": "reporttype",
+                "visibilityControl": "inspectionStatus",
                 "visibilityValue": "Full Compliance"
             }
         },
