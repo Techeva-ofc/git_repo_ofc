@@ -473,8 +473,11 @@
                         "label": "",
                         "listId": "list_ofc_checklist_form",
                         "loadBinder": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                            "properties": {
+                                "foreignKey": "fk",
+                                "formDefId": "ofc_subform"
+                            }
                         },
                         "options": [
                             {
@@ -517,8 +520,11 @@
                         "showRowNumber": "",
                         "sortField": "sort",
                         "storeBinder": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                            "properties": {
+                                "foreignKey": "fk",
+                                "formDefId": "ofc_subform"
+                            }
                         },
                         "submit-label-normal": "",
                         "submit-label-readonly": "",
