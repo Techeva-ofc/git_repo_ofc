@@ -245,7 +245,7 @@
                         "height": "500",
                         "id": "inspectionReportGrid_ofc",
                         "label": "",
-                        "listId": "ofc_type",
+                        "listId": "list_ofc_checklist_form",
                         "loadBinder": {
                             "className": "org.joget.plugin.enterprise.MultirowFormBinder",
                             "properties": {
@@ -452,8 +452,8 @@
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "",
-                "visibilityValue": ""
+                "visibilityControl": "inspectionStatus",
+                "visibilityValue": "Partial Compliance"
             }
         },
         {
