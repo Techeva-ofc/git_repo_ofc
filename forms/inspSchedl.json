@@ -118,8 +118,8 @@
                     "className": "org.joget.plugin.enterprise.MultiSelectBox",
                     "properties": {
                         "controlField": "",
-                        "id": "test_checkbox",
-                        "label": "Multi Select Box",
+                        "id": "checklisttype_multi",
+                        "label": "Checklist Type",
                         "multiple": "true",
                         "options": [],
                         "optionsBinder": {
