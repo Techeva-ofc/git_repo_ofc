@@ -1,0 +1,31 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "serReqDocMissing"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "id": "column_0",
+            "label": "ID",
+            "name": "id"
+        },
+        {
+            "id": "column_1",
+            "label": "ofc_serReqApprovalDoc_grid",
+            "name": "ofc_serReqApprovalDoc_grid"
+        }
+    ],
+    "filters": [],
+    "id": "list_serReqDocMissing",
+    "name": "List - Document Missing",
+    "order": "",
+    "orderBy": "",
+    "pageSize": 0,
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
+}
