@@ -277,11 +277,11 @@
                                     "width": ""
                                 },
                                 {
-                                    "editable": "no",
+                                    "editable": "yes",
                                     "format": "",
                                     "formatType": "image",
-                                    "label": "Value",
-                                    "value": "value",
+                                    "label": "Upload Image(s)",
+                                    "value": "image",
                                     "width": ""
                                 }
                             ],
