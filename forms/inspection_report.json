@@ -564,9 +564,9 @@
                 "comment": "",
                 "id": "othernoncompliance",
                 "join": "",
-                "label": "",
+                "label": "Other Non-Compliance",
                 "loadBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
                 "permission": {
@@ -579,11 +579,11 @@
                 "regex": "",
                 "reverse": "",
                 "storeBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
-                "visibilityControl": "",
-                "visibilityValue": ""
+                "visibilityControl": "inspectionStatus",
+                "visibilityValue": "Other Non-Compliance"
             }
         },
         {
