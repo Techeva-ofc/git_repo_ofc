@@ -88,7 +88,7 @@
                                 "addEmpty": "",
                                 "cacheInterval": "",
                                 "jdbcDatasource": "default",
-                                "sql": "select * from app_fd_ofc_chklisttype_tab",
+                                "sql": "select c_checkListType from app_fd_ofc_chklisttype_tab",
                                 "useAjax": ""
                             }
                         },
