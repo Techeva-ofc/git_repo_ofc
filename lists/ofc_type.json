@@ -27,6 +27,14 @@
             "label": "c_checkpointName",
             "name": "c_checkpointName",
             "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_0",
+            "label": "c_checkListTypeData",
+            "name": "c_checkListTypeData",
+            "sortable": "false"
         }
     ],
     "considerFilterWhenGetTotal": "",
