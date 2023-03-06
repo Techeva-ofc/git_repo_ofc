@@ -244,7 +244,7 @@
                             "errorMessage": "Invalid number of rows",
                             "formDefId": "",
                             "height": "500",
-                            "id": "inspectionReportGrid",
+                            "id": "inspectionReportGrid_ofc",
                             "label": "",
                             "listId": "ofc_type",
                             "loadBinder": {
@@ -322,9 +322,9 @@
                             "errorMessage": "Invalid number of rows",
                             "formDefId": "",
                             "height": "500",
-                            "id": "field10",
-                            "label": "List Grid",
-                            "listId": "list_ofc_checklist_form",
+                            "id": "inspectionReportGrid_oafc",
+                            "label": "",
+                            "listId": "oafc_type",
                             "loadBinder": {
                                 "className": "",
                                 "properties": {}
@@ -342,7 +342,85 @@
                                     "editable": "no",
                                     "format": "",
                                     "formatType": "text",
-                                    "label": "Name",
+                                    "label": "Checkpoint",
+                                    "value": "checkpointName",
+                                    "width": ""
+                                },
+                                {
+                                    "editable": "yes",
+                                    "format": "",
+                                    "formatType": "text",
+                                    "label": "Remarks(if any)",
+                                    "value": "remarks",
+                                    "width": ""
+                                },
+                                {
+                                    "editable": "yes",
+                                    "format": "",
+                                    "formatType": "image",
+                                    "label": "Upload Image(s)",
+                                    "value": "image",
+                                    "width": ""
+                                }
+                            ],
+                            "pageSize": "20",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "requestParams": [],
+                            "showRowNumber": "",
+                            "sortField": "sort",
+                            "storeBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "submit-label-normal": "",
+                            "submit-label-readonly": "",
+                            "uniqueKey": "",
+                            "validateMaxRow": "",
+                            "validateMinRow": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "width": "900"
+                        }
+                    },
+                    {
+                        "className": "org.joget.plugin.enterprise.ListGrid",
+                        "properties": {
+                            "abortRelatedRunningProcesses": "",
+                            "buttonLabel": "",
+                            "deleteFiles": "",
+                            "deleteGridData": "",
+                            "deleteMessage": "Delete row?",
+                            "deleteSubformData": "",
+                            "disabledAdd": "",
+                            "disabledDelete": "",
+                            "enableSorting": "true",
+                            "errorMessage": "Invalid number of rows",
+                            "formDefId": "",
+                            "height": "500",
+                            "id": "inspectionReportGrid_ofc",
+                            "label": "",
+                            "listId": "fitout_type",
+                            "loadBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "options": [
+                                {
+                                    "editable": "no",
+                                    "format": "",
+                                    "formatType": "text",
+                                    "label": "Code",
+                                    "value": "checkpointCode",
+                                    "width": ""
+                                },
+                                {
+                                    "editable": "no",
+                                    "format": "",
+                                    "formatType": "text",
+                                    "label": "Checkpoint",
                                     "value": "checkpointName",
                                     "width": ""
                                 },
