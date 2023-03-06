@@ -13,33 +13,6 @@
     "checkboxPosition": "left",
     "columns": [
         {
-            "action": {
-                "className": "org.joget.plugin.enterprise.JdbcDatalistAction",
-                "properties": {
-                    "confirmation": "",
-                    "jdbcDatasource": "default",
-                    "label": "JDBC",
-                    "query": "select * from app_fd_ofc_chklisttype_tab"
-                }
-            },
-            "alignment": "",
-            "datalist_type": "column",
-            "exclude_export": "",
-            "filterable": true,
-            "format": {
-                "className": "",
-                "properties": {}
-            },
-            "headerAlignment": "",
-            "hidden": "false",
-            "id": "column_0",
-            "label": "c_checkListTypeData",
-            "name": "c_checkListTypeData",
-            "sortable": "false",
-            "style": "",
-            "width": ""
-        },
-        {
             "filterable": true,
             "hidden": "false",
             "id": "column_1",
@@ -62,7 +35,7 @@
     "filters": [],
     "hidePageSize": "",
     "id": "ofc_type",
-    "name": "OFC",
+    "name": "List - OFC",
     "order": "",
     "orderBy": "",
     "pageSize": "0",
