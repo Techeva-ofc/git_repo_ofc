@@ -83,16 +83,12 @@
                         "multiple": "",
                         "options": [],
                         "optionsBinder": {
-                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                            "className": "org.joget.plugin.enterprise.JdbcOptionsBinder",
                             "properties": {
-                                "addEmptyOption": "true",
+                                "addEmpty": "",
                                 "cacheInterval": "",
-                                "emptyLabel": "Select",
-                                "extraCondition": "",
-                                "formDefId": "checklistTypeFom",
-                                "groupingColumn": "",
-                                "idColumn": "",
-                                "labelColumn": "checklistType",
+                                "jdbcDatasource": "default",
+                                "sql": "select * from app_fd_ofc_chklisttype_tab",
                                 "useAjax": ""
                             }
                         },
