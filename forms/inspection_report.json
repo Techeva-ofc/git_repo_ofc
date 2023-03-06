@@ -446,14 +446,14 @@
                 "permissionReadonly": "",
                 "readonly": "",
                 "readonlyLabel": "",
-                "regex": "true",
+                "regex": "",
                 "reverse": "",
                 "storeBinder": {
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "reporttype",
-                "visibilityValue": "OFC"
+                "visibilityControl": "",
+                "visibilityValue": ""
             }
         },
         {
