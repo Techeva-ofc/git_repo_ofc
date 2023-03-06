@@ -23,8 +23,11 @@
                     "label": "",
                     "listId": "list_serReqApprovalDoc",
                     "loadBinder": {
-                        "className": "",
-                        "properties": {}
+                        "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                        "properties": {
+                            "foreignKey": "referencekey",
+                            "formDefId": "serReqDocMissingSubform"
+                        }
                     },
                     "options": [
                         {
@@ -51,8 +54,11 @@
                     "showRowNumber": "",
                     "sortField": "sort",
                     "storeBinder": {
-                        "className": "",
-                        "properties": {}
+                        "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                        "properties": {
+                            "foreignKey": "referencekey",
+                            "formDefId": "serReqDocMissingSubform"
+                        }
                     },
                     "submit-label-normal": "",
                     "submit-label-readonly": "",
