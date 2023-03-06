@@ -374,7 +374,7 @@
                         "height": "500",
                         "id": "partialcompliance",
                         "label": "Partial Compliance Reason",
-                        "listId": "list_ofc_emirates_form",
+                        "listId": "list_ofc_inspChecklist_form",
                         "loadBinder": {
                             "className": "",
                             "properties": {}
