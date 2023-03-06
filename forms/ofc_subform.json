@@ -19,19 +19,6 @@
                     }
                 },
                 {
-                    "className": "org.joget.apps.form.lib.HiddenField",
-                    "properties": {
-                        "id": "fk",
-                        "useDefaultWhenEmpty": "",
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "value": "",
-                        "workflowVariable": ""
-                    }
-                },
-                {
                     "className": "org.joget.apps.form.lib.TextField",
                     "properties": {
                         "encryption": "",
