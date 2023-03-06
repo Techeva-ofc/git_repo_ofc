@@ -342,7 +342,22 @@
                                 "className": "",
                                 "properties": {}
                             },
-                            "options": [],
+                            "options": [
+                                {
+                                    "formatType": "",
+                                    "label": "type",
+                                    "readonly": "",
+                                    "value": "checklistType",
+                                    "width": ""
+                                },
+                                {
+                                    "formatType": "",
+                                    "label": "name",
+                                    "readonly": "",
+                                    "value": "createdByName",
+                                    "width": ""
+                                }
+                            ],
                             "pagingOptions": "10,20,50,100",
                             "readonly": "",
                             "recordPerPage": "20",
