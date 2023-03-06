@@ -471,7 +471,7 @@
                         "height": "500",
                         "id": "inspectionReportGrid_fitout",
                         "label": "",
-                        "listId": "fitout_type",
+                        "listId": "list_ofc_checklist_form",
                         "loadBinder": {
                             "className": "",
                             "properties": {}
