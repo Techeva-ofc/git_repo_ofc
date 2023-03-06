@@ -1,42 +1,25 @@
 {
     "actions": [],
     "binder": {
-        "className": "org.joget.plugin.enterprise.JdbcDataListBinder",
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
         "properties": {
-            "jdbcDatasource": "default",
-            "optimisePaging": "",
-            "primaryKey": "username",
-            "sql": "SELECT * FROM OFC"
+            "aggregateField": [],
+            "customSelectionValue": "",
+            "extraCondition": "",
+            "filters": [],
+            "formDefId": "ofc_checklist_form",
+            "functionColumns": [],
+            "groupBy": "",
+            "joins": [{
+                "fieldId": "",
+                "joinFieldId": "checkListTypeData",
+                "tableName": "ofc_chklistType_tab"
+            }]
         }
     },
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
-    "columns": [
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_1",
-            "label": "c_checkpointCode",
-            "name": "c_checkpointCode",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_2",
-            "label": "c_checkpointName",
-            "name": "c_checkpointName",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_0",
-            "label": "c_checkListTypeData",
-            "name": "c_checkListTypeData",
-            "sortable": "false"
-        }
-    ],
+    "columns": [],
     "considerFilterWhenGetTotal": "",
     "description": "",
     "disableResponsive": "",
