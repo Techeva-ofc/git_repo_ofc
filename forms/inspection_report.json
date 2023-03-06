@@ -469,7 +469,7 @@
                         "errorMessage": "Invalid number of rows",
                         "formDefId": "",
                         "height": "500",
-                        "id": "inspectionReportGrid_ofc",
+                        "id": "inspectionReportGrid_fitout",
                         "label": "",
                         "listId": "fitout_type",
                         "loadBinder": {
