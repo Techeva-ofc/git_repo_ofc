@@ -1,0 +1,41 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "ofc_subform"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "id": "column_0",
+            "label": "Checkpoint Code",
+            "name": "checkpointCode"
+        },
+        {
+            "id": "column_1",
+            "label": "Checkpoint Name",
+            "name": "checkpointName"
+        },
+        {
+            "id": "column_2",
+            "label": "checkpointStatus",
+            "name": "checkpointStatus"
+        },
+        {
+            "id": "column_3",
+            "label": "ID",
+            "name": "id"
+        }
+    ],
+    "filters": [],
+    "id": "list_ofc_subform",
+    "name": "List - OFC Checklist Subform",
+    "order": "",
+    "orderBy": "",
+    "pageSize": 0,
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
+}
