@@ -43,8 +43,8 @@
                     "className": "org.joget.apps.form.lib.TextField",
                     "properties": {
                         "encryption": "",
-                        "id": "remarks",
-                        "label": "Remarks",
+                        "id": "checkpointName",
+                        "label": "Checkpoint Name",
                         "maxlength": "",
                         "placeholder": "",
                         "readonly": "",
