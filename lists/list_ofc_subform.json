@@ -18,9 +18,20 @@
             "name": "checkpointName"
         },
         {
+            "filterable": true,
+            "hidden": "false",
             "id": "column_2",
-            "label": "checkpointStatus",
-            "name": "checkpointStatus"
+            "label": "Remarks",
+            "name": "remarks",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_4",
+            "label": "Upload Image",
+            "name": "image",
+            "sortable": "false"
         },
         {
             "id": "column_3",
@@ -28,6 +39,7 @@
             "name": "id"
         }
     ],
+    "considerFilterWhenGetTotal": "",
     "filters": [],
     "id": "list_ofc_subform",
     "name": "List - OFC Checklist Subform",
