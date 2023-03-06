@@ -29,7 +29,7 @@
                             "permissionHidden": "",
                             "placeholder": "",
                             "readonly": "true",
-                            "readonlyLabel": "",
+                            "readonlyLabel": "true",
                             "size": "",
                             "storeNumeric": "",
                             "style": "",
