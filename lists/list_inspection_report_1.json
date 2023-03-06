@@ -1,0 +1,66 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "inspection_report"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "options": [],
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "true",
+                            "cacheInterval": "",
+                            "emptyLabel": "Select",
+                            "extraCondition": "",
+                            "formDefId": "checklistTypeFom",
+                            "groupingColumn": "",
+                            "idColumn": "",
+                            "labelColumn": "checklistType",
+                            "useAjax": "true"
+                        }
+                    }
+                }
+            },
+            "id": "column_0",
+            "label": "Checklist Type",
+            "name": "reporttype"
+        },
+        {
+            "id": "column_1",
+            "label": "Comments",
+            "name": "commentsfitoutnoncompliance"
+        },
+        {
+            "id": "column_2",
+            "label": "ID",
+            "name": "id"
+        },
+        {
+            "id": "column_3",
+            "label": "",
+            "name": "inspectionReportGrid"
+        },
+        {
+            "id": "column_4",
+            "label": "inspectionReportGrid_oafc",
+            "name": "inspectionReportGrid_oafc"
+        }
+    ],
+    "filters": [],
+    "id": "list_inspection_report_1",
+    "name": "List - Inspection Report",
+    "order": "",
+    "orderBy": "",
+    "pageSize": 0,
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
+}
