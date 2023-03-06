@@ -10,16 +10,48 @@
             "formDefId": "inspSchedl",
             "functionColumns": [],
             "groupBy": "",
-            "joins": [{
-                "fieldId": "",
-                "joinFieldId": "checklisttype",
-                "tableName": "ofc_checklist_tab"
-            }]
+            "joins": [
+                {
+                    "fieldId": "",
+                    "joinFieldId": "checklisttype",
+                    "tableName": "ofc_checklist_tab"
+                },
+                {
+                    "fieldId": "",
+                    "joinFieldId": "checklisttype_multi",
+                    "tableName": "ofc_serReqs_tab"
+                }
+            ]
         }
     },
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
-    "columns": [],
+    "columns": [
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_0",
+            "label": "ofc_checklist_tab.checkpointName",
+            "name": "ofc_checklist_tab.checkpointName",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_1",
+            "label": "ofc_checklist_tab.checkpointCode",
+            "name": "ofc_checklist_tab.checkpointCode",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_2",
+            "label": "ofc_serReqs_tab.checklisttype_multi",
+            "name": "ofc_serReqs_tab.checklisttype_multi",
+            "sortable": "false"
+        }
+    ],
     "considerFilterWhenGetTotal": "",
     "description": "",
     "filters": [],
