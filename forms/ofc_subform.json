@@ -40,15 +40,23 @@
                     }
                 },
                 {
-                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "className": "org.joget.apps.form.lib.TextField",
                     "properties": {
-                        "id": "checkpointStatus",
-                        "useDefaultWhenEmpty": "",
+                        "encryption": "",
+                        "id": "remarks",
+                        "label": "Remarks",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "storeNumeric": "",
+                        "style": "",
                         "validator": {
                             "className": "",
                             "properties": {}
                         },
-                        "value": "Yes",
+                        "value": "",
                         "workflowVariable": ""
                     }
                 },
@@ -56,8 +64,50 @@
                     "className": "org.joget.apps.form.lib.TextField",
                     "properties": {
                         "encryption": "",
-                        "id": "checkpointName",
-                        "label": "Checkpoint Name",
+                        "id": "remarks",
+                        "label": "Remarks",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "storeNumeric": "",
+                        "style": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "id": "image",
+                        "label": "Upload Image",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "storeNumeric": "",
+                        "style": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "id": "image",
+                        "label": "Upload Image",
                         "maxlength": "",
                         "placeholder": "",
                         "readonly": "",
