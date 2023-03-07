@@ -26,14 +26,14 @@
             "name": "inspSchedlDate"
         },
         {
-            "id": "column_2",
-            "label": "InspectionStatus",
-            "name": "InspectionStatus"
-        },
-        {
             "id": "column_3",
             "label": "Inspector Name",
             "name": "inspectorNames"
+        },
+        {
+            "id": "column_2",
+            "label": "InspectionStatus",
+            "name": "InspectionStatus"
         },
         {
             "filterable": true,
