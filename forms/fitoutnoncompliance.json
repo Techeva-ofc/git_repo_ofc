@@ -19,7 +19,7 @@
                                 "addEmpty": "",
                                 "cacheInterval": "",
                                 "jdbcDatasource": "default",
-                                "sql": "select * from checkpoint_list",
+                                "sql": "select * from dir_user",
                                 "useAjax": ""
                             }
                         },
