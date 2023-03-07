@@ -20,7 +20,7 @@
                                 "cacheInterval": "",
                                 "emptyLabel": "",
                                 "jdbcDatasource": "default",
-                                "sql": "selec coee FROM app_fd_ofc_checklist_tab;",
+                                "sql": "selec coee FROM dir_user",
                                 "useAjax": "true"
                             }
                         },
