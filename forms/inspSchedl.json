@@ -163,25 +163,36 @@
                 "className": "org.joget.apps.form.model.Column",
                 "elements": [
                     {
-                        "className": "org.joget.plugin.enterprise.PopupSelectBox",
+                        "className": "org.joget.apps.form.lib.SelectBox",
                         "properties": {
-                            "buttonLabel": "Select",
-                            "displayField": "checkpointName",
-                            "height": "500",
-                            "id": "checkpointlist",
-                            "idField": "",
-                            "label": "Checkpoint Name",
-                            "listId": "list_ofc_checklist_form",
+                            "controlField": "",
+                            "id": "checkpoints",
+                            "label": "Checkpoints",
                             "multiple": "",
+                            "options": [],
+                            "optionsBinder": {
+                                "className": "org.joget.plugin.enterprise.JdbcOptionsBinder",
+                                "properties": {
+                                    "addEmpty": "true",
+                                    "cacheInterval": "",
+                                    "emptyLabel": "Select",
+                                    "jdbcDatasource": "default",
+                                    "sql": "select id, concat( c_checkpointCode,'-',c_checkpointName) FROM app_fd_ofc_checklist_tab",
+                                    "useAjax": ""
+                                }
+                            },
                             "readonly": "",
                             "readonlyLabel": "",
-                            "requestParams": [],
+                            "size": "",
                             "validator": {
-                                "className": "",
-                                "properties": {}
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "mandatory": "true",
+                                    "message": "mandatory",
+                                    "type": ""
+                                }
                             },
                             "value": "",
-                            "width": "900",
                             "workflowVariable": ""
                         }
                     },
