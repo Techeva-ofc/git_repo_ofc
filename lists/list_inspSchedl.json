@@ -44,8 +44,8 @@
             "filterable": true,
             "hidden": "false",
             "id": "column_0",
-            "label": "Checkpoints",
-            "name": "checkpoints",
+            "label": "ofc_chklistType_tab.checklistType",
+            "name": "ofc_chklistType_tab.checklistType",
             "sortable": "false"
         }
     ],
