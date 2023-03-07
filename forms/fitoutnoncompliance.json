@@ -20,7 +20,7 @@
                                 "cacheInterval": "",
                                 "emptyLabel": "",
                                 "jdbcDatasource": "default",
-                                "sql": "select concat( c_checkpointCode,'-',c_checkpointName) FROM app_fd_ofc_checklist_tab",
+                                "sql": "select c_checkpointCode FROM app_fd_ofc_checklist_tab",
                                 "useAjax": "true"
                             }
                         },
