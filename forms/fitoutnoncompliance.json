@@ -19,7 +19,7 @@
                                 "addEmpty": "",
                                 "cacheInterval": "",
                                 "jdbcDatasource": "default",
-                                "sql": "SELECT\n     *\nFROM\n     app_fd_ofc_checklist_tab",
+                                "sql": "SELECT c.c_checkpointCode \n    \nFROM\n     app_fd_ofc_checklist_tab c",
                                 "useAjax": ""
                             }
                         },
