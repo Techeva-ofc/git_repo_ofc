@@ -8,38 +8,30 @@
                 {
                     "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
+                        "controlField": "",
                         "id": "field2",
                         "label": "Select Box",
-                        "multiple": "False",
-                        "readonly": "False",
-                        "readonlyLabel": "False"
-                    }
-                },
-                {
-                    "className": "org.joget.plugin.enterprise.ImageUpload",
-                    "properties": {
-                        "createThumbnail": "true",
-                        "fileType": ".jpeg;.jpg;.gif;.png",
-                        "fileTypeMsg": "Invalid file type",
-                        "height": "60",
-                        "id": "field2",
-                        "label": "Image Upload",
-                        "maxSize": "",
-                        "maxSizeMsg": "File size limit exceeded",
-                        "multiple": "true",
-                        "padding": "",
-                        "permissionType": "",
+                        "multiple": "",
+                        "options": [],
+                        "optionsBinder": {
+                            "className": "org.joget.plugin.enterprise.JdbcOptionsBinder",
+                            "properties": {
+                                "addEmpty": "",
+                                "cacheInterval": "",
+                                "jdbcDatasource": "default",
+                                "sql": "select * from checkpoint_list",
+                                "useAjax": ""
+                            }
+                        },
                         "readonly": "",
-                        "removeFile": "",
-                        "resizeHeight": "",
-                        "resizeMethod": "",
-                        "resizeQuality": "0.8",
-                        "resizeWidth": "",
+                        "readonlyLabel": "",
+                        "size": "",
                         "validator": {
                             "className": "",
                             "properties": {}
                         },
-                        "width": "60"
+                        "value": "",
+                        "workflowVariable": ""
                     }
                 },
                 {
