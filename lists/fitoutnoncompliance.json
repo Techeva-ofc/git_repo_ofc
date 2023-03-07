@@ -1,0 +1,17 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "",
+        "name": "",
+        "properties": {}
+    },
+    "columns": [],
+    "description": "",
+    "filters": [],
+    "id": "fitoutnoncompliance",
+    "name": "List  -  Fitout Non Compliance",
+    "order": "",
+    "orderBy": "",
+    "pageSize": "0",
+    "rowActions": []
+}
