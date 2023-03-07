@@ -78,43 +78,6 @@
                     }
                 },
                 {
-                    "className": "org.joget.apps.form.lib.SelectBox",
-                    "properties": {
-                        "controlField": "",
-                        "id": "checklisttype",
-                        "label": "Checkkist Type",
-                        "multiple": "",
-                        "options": [],
-                        "optionsBinder": {
-                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
-                            "properties": {
-                                "addEmptyOption": "true",
-                                "cacheInterval": "",
-                                "emptyLabel": "Select",
-                                "extraCondition": "",
-                                "formDefId": "checklistTypeFom",
-                                "groupingColumn": "",
-                                "idColumn": "",
-                                "labelColumn": "checklistType",
-                                "useAjax": ""
-                            }
-                        },
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "size": "",
-                        "validator": {
-                            "className": "org.joget.apps.form.lib.DefaultValidator",
-                            "properties": {
-                                "mandatory": "true",
-                                "message": "This field is mandatory",
-                                "type": ""
-                            }
-                        },
-                        "value": "",
-                        "workflowVariable": ""
-                    }
-                },
-                {
                     "className": "org.joget.plugin.enterprise.MultiSelectBox",
                     "properties": {
                         "controlField": "",
@@ -139,8 +102,12 @@
                         "readonly": "",
                         "readonlyLabel": "",
                         "validator": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "mandatory",
+                                "type": ""
+                            }
                         },
                         "value": "",
                         "width": "40%",
