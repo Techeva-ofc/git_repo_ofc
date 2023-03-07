@@ -20,7 +20,7 @@
                                 "cacheInterval": "",
                                 "emptyLabel": "",
                                 "jdbcDatasource": "default",
-                                "sql": "select * from checkpoint_list",
+                                "sql": "select concat( c_checkpointCode,'-',c_checkpointName) FROM app_fd_ofc_checklist_tab",
                                 "useAjax": "true"
                             }
                         },
@@ -77,9 +77,25 @@
     "properties": {
         "description": "",
         "id": "fitoutnoncompliance",
-        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "name": "Fitout Non Compliance",
-        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "tableName": "ofc_fitout_non_comp"
     }
 }
