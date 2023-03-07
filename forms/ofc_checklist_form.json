@@ -103,7 +103,7 @@
                         "idField": "",
                         "label": "Popup Select Box",
                         "listId": "list_ofc_checklist_form",
-                        "multiple": "true",
+                        "multiple": "",
                         "readonly": "",
                         "readonlyLabel": "",
                         "requestParams": [],
@@ -114,25 +114,6 @@
                         "value": "",
                         "width": "900",
                         "workflowVariable": ""
-                    }
-                },
-                {
-                    "className": "org.joget.plugin.enterprise.ImageUpload",
-                    "properties": {
-                        "createThumbnail": "true",
-                        "fileType": ".jpeg;.jpg;.gif;.png",
-                        "fileTypeMsg": "Invalid file type",
-                        "height": "60",
-                        "id": "field5",
-                        "label": "Image Upload",
-                        "maxSizeMsg": "File size limit exceeded",
-                        "multiple": "False",
-                        "permissionType": "",
-                        "readonly": "False",
-                        "removeFile": "false",
-                        "resizeMethod": "",
-                        "resizeQuality": "0.8",
-                        "width": "60"
                     }
                 },
                 {
