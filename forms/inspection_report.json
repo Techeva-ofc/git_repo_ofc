@@ -611,7 +611,7 @@
                                 "formatType": "",
                                 "label": "Code",
                                 "readonly": "",
-                                "value": "checkpointCode",
+                                "value": "checkListTypeData",
                                 "width": ""
                             },
                             {
