@@ -19,7 +19,7 @@
                                 "addEmpty": "",
                                 "cacheInterval": "",
                                 "jdbcDatasource": "default",
-                                "sql": "SELECT\n    add_floor\nFROM\n    app_fd_ofc_floor_tab",
+                                "sql": "SELECT\n    'add_floor'\nFROM\n    app_fd_ofc_floor_tab",
                                 "useAjax": ""
                             }
                         },
