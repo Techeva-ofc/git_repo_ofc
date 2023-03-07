@@ -188,7 +188,7 @@
                     "properties": {}
                 },
                 "visibilityControl": "hidesection",
-                "visibilityValue": "Yes"
+                "visibilityValue": "No"
             }
         }
     ],
