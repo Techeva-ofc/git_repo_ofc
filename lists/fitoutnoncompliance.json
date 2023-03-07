@@ -10,7 +10,18 @@
             "formDefId": "fitoutnoncompliance",
             "functionColumns": [],
             "groupBy": "",
-            "joins": []
+            "joins": [
+                {
+                    "fieldId": "",
+                    "joinFieldId": "ofc_checklist_tab.checkpointCode",
+                    "tableName": "ofc_checklist_tab"
+                },
+                {
+                    "fieldId": "",
+                    "joinFieldId": "ofc_checklist_tab.checkpointName",
+                    "tableName": "ofc_checklist_tab"
+                }
+            ]
         }
     },
     "buttonPosition": "bottomLeft",
@@ -28,8 +39,16 @@
             "filterable": true,
             "hidden": "false",
             "id": "column_1",
-            "label": "Check Point List",
-            "name": "checkpointlist",
+            "label": "ofc_checklist_tab.checkpointCode",
+            "name": "ofc_checklist_tab.checkpointCode",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_2",
+            "label": "ofc_checklist_tab.checkpointName",
+            "name": "ofc_checklist_tab.checkpointName",
             "sortable": "false"
         }
     ],
