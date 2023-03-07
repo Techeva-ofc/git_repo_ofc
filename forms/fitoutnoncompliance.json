@@ -16,11 +16,12 @@
                         "optionsBinder": {
                             "className": "org.joget.plugin.enterprise.JdbcOptionsBinder",
                             "properties": {
-                                "addEmpty": "",
+                                "addEmpty": "true",
                                 "cacheInterval": "",
+                                "emptyLabel": "",
                                 "jdbcDatasource": "default",
-                                "sql": "select * from dir_user",
-                                "useAjax": ""
+                                "sql": "select * from checkpoint_list",
+                                "useAjax": "true"
                             }
                         },
                         "readonly": "",
