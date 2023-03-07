@@ -26,32 +26,14 @@
     },
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
-    "columns": [
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_0",
-            "label": "Image Upload",
-            "name": "field2",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_1",
-            "label": "ofc_checklist_tab.checkpointCode",
-            "name": "ofc_checklist_tab.checkpointCode",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_2",
-            "label": "ofc_checklist_tab.checkpointName",
-            "name": "ofc_checklist_tab.checkpointName",
-            "sortable": "false"
-        }
-    ],
+    "columns": [{
+        "filterable": true,
+        "hidden": "false",
+        "id": "column_0",
+        "label": "Image Upload",
+        "name": "field2",
+        "sortable": "false"
+    }],
     "considerFilterWhenGetTotal": "",
     "description": "",
     "filters": [],
