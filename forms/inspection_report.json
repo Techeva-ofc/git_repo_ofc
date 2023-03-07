@@ -23,7 +23,7 @@
                                 "className": "",
                                 "properties": {}
                             },
-                            "value": "#variable.checktype#",
+                            "value": "#binder.inspSchedl.checklisttype_multi#",
                             "workflowVariable": ""
                         }
                     },
