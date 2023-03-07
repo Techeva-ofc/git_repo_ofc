@@ -4,25 +4,45 @@
         "className": "org.joget.apps.form.model.Section",
         "elements": [{
             "className": "org.joget.apps.form.model.Column",
-            "elements": [{
-                "className": "org.joget.plugin.enterprise.ImageUpload",
-                "properties": {
-                    "createThumbnail": "true",
-                    "fileType": ".jpeg;.jpg;.gif;.png",
-                    "fileTypeMsg": "Invalid file type",
-                    "height": "60",
-                    "id": "field2",
-                    "label": "Image Upload",
-                    "maxSizeMsg": "File size limit exceeded",
-                    "multiple": "False",
-                    "permissionType": "",
-                    "readonly": "False",
-                    "removeFile": "false",
-                    "resizeMethod": "",
-                    "resizeQuality": "0.8",
-                    "width": "60"
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "id": "field2",
+                        "label": "Select Box",
+                        "multiple": "False",
+                        "readonly": "False",
+                        "readonlyLabel": "False"
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.ImageUpload",
+                    "properties": {
+                        "createThumbnail": "true",
+                        "fileType": ".jpeg;.jpg;.gif;.png",
+                        "fileTypeMsg": "Invalid file type",
+                        "height": "60",
+                        "id": "field2",
+                        "label": "Image Upload",
+                        "maxSize": "",
+                        "maxSizeMsg": "File size limit exceeded",
+                        "multiple": "true",
+                        "padding": "",
+                        "permissionType": "",
+                        "readonly": "",
+                        "removeFile": "",
+                        "resizeHeight": "",
+                        "resizeMethod": "",
+                        "resizeQuality": "0.8",
+                        "resizeWidth": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "width": "60"
+                    }
                 }
-            }],
+            ],
             "properties": {"width": "100%"}
         }],
         "properties": {
