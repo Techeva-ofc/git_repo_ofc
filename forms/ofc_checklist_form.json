@@ -94,6 +94,29 @@
                     }
                 },
                 {
+                    "className": "org.joget.plugin.enterprise.PopupSelectBox",
+                    "properties": {
+                        "buttonLabel": "Select",
+                        "displayField": "checkpointName",
+                        "height": "500",
+                        "id": "field6",
+                        "idField": "",
+                        "label": "Popup Select Box",
+                        "listId": "list_ofc_checklist_form",
+                        "multiple": "true",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "requestParams": [],
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "width": "900",
+                        "workflowVariable": ""
+                    }
+                },
+                {
                     "className": "org.joget.plugin.enterprise.ImageUpload",
                     "properties": {
                         "createThumbnail": "true",
