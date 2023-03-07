@@ -379,14 +379,6 @@
                                 "width": ""
                             },
                             {
-                                "editable": "no",
-                                "format": "",
-                                "formatType": "text",
-                                "label": "Code",
-                                "value": "ofc_checklist_tab.checkpointCode",
-                                "width": ""
-                            },
-                            {
                                 "editable": "yes",
                                 "format": "",
                                 "formatType": "text",
