@@ -13,16 +13,13 @@
                     "multiple": "",
                     "options": [],
                     "optionsBinder": {
-                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "className": "org.joget.plugin.enterprise.JdbcOptionsBinder",
                         "properties": {
-                            "addEmptyOption": "true",
+                            "addEmpty": "true",
                             "cacheInterval": "",
                             "emptyLabel": "Select",
-                            "extraCondition": "",
-                            "formDefId": "ofc_checklist_form",
-                            "groupingColumn": "checkpointCode",
-                            "idColumn": "",
-                            "labelColumn": "checkpointCode",
+                            "jdbcDatasource": "default",
+                            "sql": "select c_checkpointCode, c_checkpointName from app_fd_ofc_checklist_tab",
                             "useAjax": "true"
                         }
                     },
