@@ -361,7 +361,7 @@
                         "height": "500",
                         "id": "inspectionReportGrid_fitout",
                         "label": "",
-                        "listId": "list_ofc_checklist_form",
+                        "listId": "fitoutnoncompliance",
                         "loadBinder": {
                             "className": "org.joget.plugin.enterprise.MultirowFormBinder",
                             "properties": {
@@ -374,16 +374,16 @@
                                 "editable": "no",
                                 "format": "",
                                 "formatType": "text",
-                                "label": "Code",
-                                "value": "checkpointCode",
+                                "label": "Image",
+                                "value": "field2",
                                 "width": ""
                             },
                             {
                                 "editable": "no",
                                 "format": "",
                                 "formatType": "text",
-                                "label": "Checkpoint",
-                                "value": "checkpointName",
+                                "label": "Code",
+                                "value": "ofc_checklist_tab.checkpointCode",
                                 "width": ""
                             },
                             {
