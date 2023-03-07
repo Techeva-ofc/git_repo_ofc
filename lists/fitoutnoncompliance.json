@@ -10,18 +10,7 @@
             "formDefId": "fitoutnoncompliance",
             "functionColumns": [],
             "groupBy": "",
-            "joins": [
-                {
-                    "fieldId": "",
-                    "joinFieldId": "ofc_checklist_tab.checkpointCode",
-                    "tableName": "ofc_checklist_tab"
-                },
-                {
-                    "fieldId": "",
-                    "joinFieldId": "ofc_checklist_tab.checkpointName",
-                    "tableName": "ofc_checklist_tab"
-                }
-            ]
+            "joins": []
         }
     },
     "buttonPosition": "bottomLeft",
