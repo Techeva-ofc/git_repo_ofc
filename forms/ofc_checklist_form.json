@@ -94,22 +94,16 @@
                     }
                 },
                 {
-                    "className": "org.joget.plugin.enterprise.ImageUpload",
+                    "className": "org.joget.plugin.enterprise.PopupSelectBox",
                     "properties": {
-                        "createThumbnail": "true",
-                        "fileType": ".jpeg;.jpg;.gif;.png",
-                        "fileTypeMsg": "Invalid file type",
-                        "height": "60",
-                        "id": "field5",
-                        "label": "Image Upload",
-                        "maxSizeMsg": "File size limit exceeded",
-                        "multiple": "False",
-                        "permissionType": "",
-                        "readonly": "False",
-                        "removeFile": "false",
-                        "resizeMethod": "",
-                        "resizeQuality": "0.8",
-                        "width": "60"
+                        "buttonLabel": "Select",
+                        "height": "500",
+                        "id": "field6",
+                        "label": "Popup Select Box",
+                        "multiple": "true",
+                        "readonly": "false",
+                        "readonlyLabel": "false",
+                        "width": "900"
                     }
                 }
             ],
@@ -123,9 +117,25 @@
     "properties": {
         "description": "",
         "id": "ofc_checklist_form",
-        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "name": "Fitout Checklist Form",
-        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "tableName": "ofc_checklist_tab"
     }
 }
