@@ -2,7 +2,20 @@
     "actions": [],
     "binder": {
         "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
-        "properties": {"formDefId": "inspSchedl"}
+        "properties": {
+            "aggregateField": [],
+            "customSelectionValue": "",
+            "extraCondition": "",
+            "filters": [],
+            "formDefId": "inspSchedl",
+            "functionColumns": [],
+            "groupBy": "",
+            "joins": [{
+                "fieldId": "",
+                "joinFieldId": "checkpoints",
+                "tableName": "ofc_checklist_tab"
+            }]
+        }
     },
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
@@ -21,6 +34,14 @@
             "id": "column_3",
             "label": "Inspector Name",
             "name": "inspectorNames"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_0",
+            "label": "Checkpoints",
+            "name": "checkpoints",
+            "sortable": "false"
         }
     ],
     "considerFilterWhenGetTotal": "",
