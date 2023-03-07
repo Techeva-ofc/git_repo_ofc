@@ -589,8 +589,8 @@
                         "disabledAdd": "",
                         "disabledDelete": "",
                         "errorMessage": "Invalid number of rows",
-                        "formDefId": "ofc_checklist_form",
-                        "hint": "Click to edit. Tab to save.",
+                        "formDefId": "inspSchedl",
+                        "hint": "Click to edit. OK to save.",
                         "id": "field10",
                         "keyToSave": "9",
                         "label": "Advanced Grid",
@@ -601,23 +601,23 @@
                         "options": [
                             {
                                 "formatType": "",
-                                "label": "Code",
+                                "label": "Checkpoint Name",
                                 "readonly": "",
-                                "value": "field6",
+                                "value": "checkpointlist",
                                 "width": ""
                             },
                             {
                                 "formatType": "",
                                 "label": "Image upload",
                                 "readonly": "",
-                                "value": "field5",
+                                "value": "imageupload",
                                 "width": ""
                             }
                         ],
                         "pagingOptions": "10,20,50,100",
                         "readonly": "",
                         "recordPerPage": "20",
-                        "search": "",
+                        "search": "true",
                         "showRowNumber": "true",
                         "sortIndx": "",
                         "storeBinder": {
