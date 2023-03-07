@@ -112,7 +112,7 @@
                             },
                             "value": "",
                             "width": "40%",
-                            "workflowVariable": ""
+                            "workflowVariable": "checktype"
                         }
                     },
                     {
