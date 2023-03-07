@@ -6,14 +6,19 @@
             "aggregateField": [],
             "customSelectionValue": "",
             "extraCondition": "",
-            "filters": [],
+            "filters": [{
+                "field": "ofc_chklistType_tab.checklistType",
+                "join": "AND",
+                "operator": "=",
+                "value": "#requestParam.checklisttype_multi#"
+            }],
             "formDefId": "inspSchedl",
             "functionColumns": [],
             "groupBy": "",
             "joins": [{
                 "fieldId": "",
-                "joinFieldId": "checkpoints",
-                "tableName": "ofc_checklist_tab"
+                "joinFieldId": "checklisttype_multi",
+                "tableName": "ofc_chklistType_tab"
             }]
         }
     },
