@@ -97,13 +97,61 @@
                     "className": "org.joget.plugin.enterprise.PopupSelectBox",
                     "properties": {
                         "buttonLabel": "Select",
+                        "displayField": "checkpointName",
                         "height": "500",
                         "id": "field6",
+                        "idField": "",
                         "label": "Popup Select Box",
+                        "listId": "list_ofc_checklist_form",
                         "multiple": "true",
-                        "readonly": "false",
-                        "readonlyLabel": "false",
-                        "width": "900"
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "requestParams": [],
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "width": "900",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.ImageUpload",
+                    "properties": {
+                        "createThumbnail": "true",
+                        "fileType": ".jpeg;.jpg;.gif;.png",
+                        "fileTypeMsg": "Invalid file type",
+                        "height": "60",
+                        "id": "field5",
+                        "label": "Image Upload",
+                        "maxSizeMsg": "File size limit exceeded",
+                        "multiple": "False",
+                        "permissionType": "",
+                        "readonly": "False",
+                        "removeFile": "false",
+                        "resizeMethod": "",
+                        "resizeQuality": "0.8",
+                        "width": "60"
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.ImageUpload",
+                    "properties": {
+                        "createThumbnail": "true",
+                        "fileType": ".jpeg;.jpg;.gif;.png",
+                        "fileTypeMsg": "Invalid file type",
+                        "height": "60",
+                        "id": "field5",
+                        "label": "Image Upload",
+                        "maxSizeMsg": "File size limit exceeded",
+                        "multiple": "False",
+                        "permissionType": "",
+                        "readonly": "False",
+                        "removeFile": "false",
+                        "resizeMethod": "",
+                        "resizeQuality": "0.8",
+                        "width": "60"
                     }
                 }
             ],
