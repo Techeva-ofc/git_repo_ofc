@@ -1,197 +1,106 @@
 {
     "className": "org.joget.apps.form.model.Form",
-    "elements": [
-        {
-            "className": "org.joget.apps.form.model.Section",
-            "elements": [{
-                "className": "org.joget.apps.form.model.Column",
-                "elements": [
-                    {
-                        "className": "org.joget.apps.form.lib.TextField",
-                        "properties": {
-                            "encryption": "",
-                            "id": "checkpointCode",
-                            "label": "Checkpoint Code",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "size": "",
-                            "storeNumeric": "",
-                            "style": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "",
-                            "workflowVariable": ""
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.HiddenField",
-                        "properties": {
-                            "id": "checkpointStatus",
-                            "useDefaultWhenEmpty": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "Yes",
-                            "workflowVariable": ""
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.TextField",
-                        "properties": {
-                            "encryption": "",
-                            "id": "checkpointName",
-                            "label": "Checkpoint Name",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "size": "",
-                            "storeNumeric": "",
-                            "style": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "",
-                            "workflowVariable": ""
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.SelectBox",
-                        "properties": {
-                            "controlField": "",
-                            "id": "checkListTypeData",
-                            "label": "CheckList Type",
-                            "multiple": "",
-                            "options": [],
-                            "optionsBinder": {
-                                "className": "org.joget.apps.form.lib.FormOptionsBinder",
-                                "properties": {
-                                    "addEmptyOption": "true",
-                                    "cacheInterval": "",
-                                    "emptyLabel": "Select",
-                                    "extraCondition": "",
-                                    "formDefId": "checklistTypeFom",
-                                    "groupingColumn": "",
-                                    "idColumn": "",
-                                    "labelColumn": "checklistType",
-                                    "useAjax": ""
-                                }
-                            },
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "size": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "",
-                            "workflowVariable": ""
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.HiddenField",
-                        "properties": {
-                            "id": "hidesection",
-                            "useDefaultWhenEmpty": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "Yes",
-                            "workflowVariable": ""
-                        }
+    "elements": [{
+        "className": "org.joget.apps.form.model.Section",
+        "elements": [{
+            "className": "org.joget.apps.form.model.Column",
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "id": "checkpointCode",
+                        "label": "Checkpoint Code",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "storeNumeric": "",
+                        "style": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
                     }
-                ],
-                "properties": {"width": "100%"}
-            }],
-            "properties": {
-                "id": "section1",
-                "label": "Section"
-            }
-        },
-        {
-            "className": "org.joget.apps.form.model.Section",
-            "elements": [{
-                "className": "org.joget.apps.form.model.Column",
-                "elements": [
-                    {
-                        "className": "org.joget.plugin.enterprise.PopupSelectBox",
-                        "properties": {
-                            "buttonLabel": "Select",
-                            "displayField": "add_floor",
-                            "height": "500",
-                            "id": "field6",
-                            "idField": "",
-                            "label": "Popup Select Box",
-                            "listId": "list_ofc_Floor_form",
-                            "multiple": "",
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "requestParams": [],
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "",
-                            "width": "900",
-                            "workflowVariable": ""
-                        }
-                    },
-                    {
-                        "className": "org.joget.plugin.enterprise.ImageUpload",
-                        "properties": {
-                            "createThumbnail": "true",
-                            "fileType": ".jpeg;.jpg;.gif;.png",
-                            "fileTypeMsg": "Invalid file type",
-                            "height": "60",
-                            "id": "field5",
-                            "label": "Image Upload",
-                            "maxSizeMsg": "File size limit exceeded",
-                            "multiple": "False",
-                            "permissionType": "",
-                            "readonly": "False",
-                            "removeFile": "false",
-                            "resizeMethod": "",
-                            "resizeQuality": "0.8",
-                            "width": "60"
-                        }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "id": "checkpointStatus",
+                        "useDefaultWhenEmpty": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "Yes",
+                        "workflowVariable": ""
                     }
-                ],
-                "properties": {"width": "100%"}
-            }],
-            "properties": {
-                "comment": "",
-                "id": "section2",
-                "join": "",
-                "label": "",
-                "loadBinder": {
-                    "className": "",
-                    "properties": {}
                 },
-                "permission": {
-                    "className": "",
-                    "properties": {}
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "id": "checkpointName",
+                        "label": "Checkpoint Name",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "storeNumeric": "",
+                        "style": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
                 },
-                "permissionReadonly": "",
-                "readonly": "",
-                "readonlyLabel": "",
-                "regex": "",
-                "reverse": "",
-                "storeBinder": {
-                    "className": "",
-                    "properties": {}
-                },
-                "visibilityControl": "hidesection",
-                "visibilityValue": "No"
-            }
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "checkListTypeData",
+                        "label": "CheckList Type",
+                        "multiple": "",
+                        "options": [],
+                        "optionsBinder": {
+                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                            "properties": {
+                                "addEmptyOption": "true",
+                                "cacheInterval": "",
+                                "emptyLabel": "Select",
+                                "extraCondition": "",
+                                "formDefId": "checklistTypeFom",
+                                "groupingColumn": "",
+                                "idColumn": "",
+                                "labelColumn": "checklistType",
+                                "useAjax": ""
+                            }
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                }
+            ],
+            "properties": {"width": "100%"}
+        }],
+        "properties": {
+            "id": "section1",
+            "label": "Section"
         }
-    ],
+    }],
     "properties": {
         "description": "",
         "id": "ofc_checklist_form",
