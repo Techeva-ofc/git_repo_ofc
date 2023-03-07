@@ -591,25 +591,54 @@
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
                 "elements": [{
-                    "className": "org.joget.plugin.enterprise.RichTextEditorField",
+                    "className": "org.joget.plugin.enterprise.AdvancedGrid",
                     "properties": {
-                        "editor": "",
-                        "height": "",
-                        "id": "commentsfitoutnoncompliance",
-                        "label": "Comments",
-                        "mode": "",
-                        "permissionType": "",
-                        "placeholder": "",
-                        "readonly": "",
-                        "validator": {
-                            "className": "org.joget.apps.form.lib.DefaultValidator",
-                            "properties": {
-                                "mandatory": "true",
-                                "message": "Mandatory",
-                                "type": ""
-                            }
+                        "deleteMessage": "Delete row?",
+                        "disabledAdd": "",
+                        "disabledDelete": "",
+                        "errorMessage": "Invalid number of rows",
+                        "formDefId": "ofc_checklist_form",
+                        "hint": "Click to edit. Tab to save.",
+                        "id": "field10",
+                        "keyToSave": "9",
+                        "label": "Advanced Grid",
+                        "loadBinder": {
+                            "className": "",
+                            "properties": {}
                         },
-                        "value": ""
+                        "options": [
+                            {
+                                "formatType": "",
+                                "label": "Code",
+                                "readonly": "",
+                                "value": "checkpointCode",
+                                "width": ""
+                            },
+                            {
+                                "formatType": "",
+                                "label": "Image upload",
+                                "readonly": "",
+                                "value": "field5",
+                                "width": ""
+                            }
+                        ],
+                        "pagingOptions": "10,20,50,100",
+                        "readonly": "",
+                        "recordPerPage": "20",
+                        "search": "",
+                        "showRowNumber": "true",
+                        "sortIndx": "",
+                        "storeBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "uniqueKey": "",
+                        "validateMaxRow": "",
+                        "validateMinRow": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        }
                     }
                 }],
                 "properties": {"width": "100%"}
