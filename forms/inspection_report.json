@@ -532,9 +532,9 @@
                         "options": [
                             {
                                 "formatType": "",
-                                "label": "Checkpoint Name",
+                                "label": "Checkpoint",
                                 "readonly": "",
-                                "value": "checkpointlist",
+                                "value": "checkpoints",
                                 "width": ""
                             },
                             {
