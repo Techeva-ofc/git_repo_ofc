@@ -20,7 +20,7 @@
                                 "cacheInterval": "",
                                 "emptyLabel": "",
                                 "jdbcDatasource": "default",
-                                "sql": "selec coee FROM dir_user",
+                                "sql": "select * FROM dir_user",
                                 "useAjax": "true"
                             }
                         },
