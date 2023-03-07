@@ -192,15 +192,23 @@
                             "fileType": ".jpeg;.jpg;.gif;.png",
                             "fileTypeMsg": "Invalid file type",
                             "height": "60",
-                            "id": "field5",
+                            "id": "imageupload",
                             "label": "Image Upload",
+                            "maxSize": "",
                             "maxSizeMsg": "File size limit exceeded",
-                            "multiple": "False",
+                            "multiple": "",
+                            "padding": "",
                             "permissionType": "",
-                            "readonly": "False",
-                            "removeFile": "false",
+                            "readonly": "",
+                            "removeFile": "",
+                            "resizeHeight": "",
                             "resizeMethod": "",
                             "resizeQuality": "0.8",
+                            "resizeWidth": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
                             "width": "60"
                         }
                     }
