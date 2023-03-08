@@ -58,7 +58,7 @@
                         "className": "org.joget.apps.form.lib.SelectBox",
                         "properties": {
                             "controlField": "",
-                            "id": "inspectionStatus",
+                            "id": "inspectionreportStatus",
                             "label": "Status",
                             "multiple": "",
                             "options": [
