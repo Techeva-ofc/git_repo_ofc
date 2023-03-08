@@ -1,0 +1,46 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "serReqUserView"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "id": "column_0",
+            "label": "approval_status",
+            "name": "approval_status"
+        },
+        {
+            "id": "column_1",
+            "label": "Approved FOP Drawing",
+            "name": "serReqFopDrawUpload"
+        },
+        {
+            "id": "column_2",
+            "label": "bearer_access_token",
+            "name": "bearer_access_token"
+        },
+        {
+            "id": "column_3",
+            "label": "",
+            "name": "caseNo"
+        },
+        {
+            "id": "column_4",
+            "label": "",
+            "name": "checklisttype_multi"
+        }
+    ],
+    "filters": [],
+    "id": "list_serReqUserView",
+    "name": "List - Service Request Form Userview",
+    "order": "",
+    "orderBy": "",
+    "pageSize": 0,
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
+}
