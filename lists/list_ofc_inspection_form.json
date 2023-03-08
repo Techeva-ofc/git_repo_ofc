@@ -348,9 +348,9 @@
             "properties": {
                 "confirmation": "",
                 "datalist_type": "row_action",
-                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/inspectionReport",
-                "hrefColumn": "C_serReqDmccSrNo",
-                "hrefParam": "serReqDmccSrNo",
+                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/inspectionScheduleReportForm",
+                "hrefColumn": "C_serReqDmccSrNo;id",
+                "hrefParam": "serReqDmccSrNo;id",
                 "label": "Generate Report",
                 "rules": [{
                     "field": "c_status",
