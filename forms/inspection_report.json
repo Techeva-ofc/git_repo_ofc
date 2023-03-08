@@ -15,7 +15,7 @@
                                 "className": "",
                                 "properties": {}
                             },
-                            "value": "#requestParam.KEY#",
+                            "value": "",
                             "workflowVariable": ""
                         }
                     },
