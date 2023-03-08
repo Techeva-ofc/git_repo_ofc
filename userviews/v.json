@@ -1489,7 +1489,7 @@
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
-                        "allowedGroupIds": "G-010",
+                        "allowedGroupIds": "G-010;G-001",
                         "orgId": ""
                     }
                 },
