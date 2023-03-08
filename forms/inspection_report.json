@@ -252,7 +252,7 @@
                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
-                "visibilityControl": "inspectionStatus",
+                "visibilityControl": "inspectionreportStatus",
                 "visibilityValue": "Full Compliance"
             }
         },
@@ -360,7 +360,7 @@
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "inspectionStatus",
+                "visibilityControl": "inspectionreportStatus",
                 "visibilityValue": "Partial Compliance"
             }
         },
@@ -490,7 +490,7 @@
                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
-                "visibilityControl": "inspectionStatus",
+                "visibilityControl": "inspectionreportStatus",
                 "visibilityValue": "Other Non-Compliance"
             }
         },
@@ -573,7 +573,7 @@
                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
-                "visibilityControl": "inspectionStatus",
+                "visibilityControl": "inspectionreportStatus",
                 "visibilityValue": "Fitout Non-Compliance"
             }
         }
