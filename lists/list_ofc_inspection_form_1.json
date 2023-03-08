@@ -1,0 +1,46 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "ofc_inspection_form"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "id": "column_0",
+            "label": "Company Address",
+            "name": "nspBillingAdd"
+        },
+        {
+            "id": "column_1",
+            "label": "DMCC SR Number",
+            "name": "inspDmcc"
+        },
+        {
+            "id": "column_2",
+            "label": "ID",
+            "name": "id"
+        },
+        {
+            "id": "column_3",
+            "label": "License Number",
+            "name": "serReq_licenc_no"
+        },
+        {
+            "id": "column_4",
+            "label": "Location",
+            "name": "inspLocation"
+        }
+    ],
+    "filters": [],
+    "id": "list_ofc_inspection_form_1",
+    "name": "List - Inspection Summery",
+    "order": "",
+    "orderBy": "",
+    "pageSize": 0,
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
+}
