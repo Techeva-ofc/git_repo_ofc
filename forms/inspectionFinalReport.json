@@ -103,7 +103,7 @@
                     "className": "org.joget.apps.form.lib.TextField",
                     "properties": {
                         "encryption": "",
-                        "id": "companyname",
+                        "id": "report_companyname",
                         "label": "Company Name",
                         "maxlength": "",
                         "placeholder": "",
