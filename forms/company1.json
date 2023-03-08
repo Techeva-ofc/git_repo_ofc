@@ -11,7 +11,7 @@
                         "encryption": "",
                         "id": "ownerFirstName",
                         "label": "Owner First Name",
-                        "maxlength": "50",
+                        "maxlength": "",
                         "placeholder": "",
                         "readonly": "",
                         "readonlyLabel": "",
@@ -19,12 +19,8 @@
                         "storeNumeric": "",
                         "style": "",
                         "validator": {
-                            "className": "org.joget.apps.form.lib.DefaultValidator",
-                            "properties": {
-                                "mandatory": "true",
-                                "message": "Please enter Owner First Name",
-                                "type": "alphanumeric"
-                            }
+                            "className": "",
+                            "properties": {}
                         },
                         "value": "",
                         "workflowVariable": ""
@@ -44,12 +40,8 @@
                         "storeNumeric": "",
                         "style": "",
                         "validator": {
-                            "className": "org.joget.apps.form.lib.DefaultValidator",
-                            "properties": {
-                                "mandatory": "true",
-                                "message": "Please enter Owner Last Name",
-                                "type": "alphanumeric"
-                            }
+                            "className": "",
+                            "properties": {}
                         },
                         "value": "",
                         "workflowVariable": ""
