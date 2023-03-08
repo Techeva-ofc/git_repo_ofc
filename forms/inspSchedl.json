@@ -257,8 +257,14 @@
         "description": "",
         "id": "inspSchedl",
         "loadBinder": {
-            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-            "properties": {}
+            "className": "org.joget.apps.form.lib.BeanShellFormBinder",
+            "properties": {
+                "autoHandleFiles": "",
+                "autoHandleWorkflowVariable": "true",
+                "cacheInterval": "",
+                "script": "var values = FormUtil.getValues(\"checklisttype_multi\");\r\nfor (var i = 0; i < values.length; i++) {\r\n    console.log(values[i]);\r\n}",
+                "useAjax": ""
+            }
         },
         "name": "Inspection Schedule",
         "noPermissionMessage": "",
