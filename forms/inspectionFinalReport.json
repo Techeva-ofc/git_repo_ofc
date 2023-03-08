@@ -21,9 +21,10 @@
                         "id": "aofcno",
                         "label": "AOFC No",
                         "maxlength": "",
+                        "permissionHidden": "",
                         "placeholder": "",
-                        "readonly": "",
-                        "readonlyLabel": "",
+                        "readonly": "true",
+                        "readonlyLabel": "true",
                         "size": "",
                         "storeNumeric": "",
                         "style": "",
@@ -31,7 +32,7 @@
                             "className": "",
                             "properties": {}
                         },
-                        "value": "",
+                        "value": "AOFC : 15978",
                         "workflowVariable": ""
                     }
                 },
@@ -186,8 +187,29 @@
             "properties": {"width": "100%"}
         }],
         "properties": {
+            "comment": "",
             "id": "section1",
-            "label": "Section"
+            "join": "",
+            "label": "",
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "permissionReadonly": "",
+            "readonly": "",
+            "readonlyLabel": "",
+            "regex": "",
+            "reverse": "",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "visibilityControl": "",
+            "visibilityValue": ""
         }
     }],
     "properties": {
