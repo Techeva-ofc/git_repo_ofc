@@ -11,7 +11,72 @@
     },
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
-    "columns": [],
+    "columns": [
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_0",
+            "label": "dateCreated",
+            "name": "dateCreated",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_1",
+            "label": "C_serReqDmccSrNo",
+            "name": "C_serReqDmccSrNo",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_2",
+            "label": "c_licenseNumber",
+            "name": "c_licenseNumber",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_3",
+            "label": "c_companyName",
+            "name": "c_companyName",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_4",
+            "label": "c_companyLocation",
+            "name": "c_companyLocation",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_6",
+            "label": "c_tower_name",
+            "name": "c_tower_name",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_7",
+            "label": "c_tower_seq_no",
+            "name": "c_tower_seq_no",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_5",
+            "label": "c_status",
+            "name": "c_status",
+            "sortable": "false"
+        }
+    ],
     "considerFilterWhenGetTotal": "",
     "filters": [],
     "id": "list_ofc_inspection_form_1",
