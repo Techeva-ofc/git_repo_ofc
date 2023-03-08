@@ -1,0 +1,77 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "inspection_report"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "id": "column_0",
+            "label": "",
+            "name": "field10"
+        },
+        {
+            "id": "column_1",
+            "label": "ID",
+            "name": "id"
+        },
+        {
+            "id": "column_2",
+            "label": "inspCheckpoints",
+            "name": "inspCheckpoints"
+        },
+        {
+            "id": "column_3",
+            "label": "",
+            "name": "inspectionReportGrid"
+        },
+        {
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "options": [
+                        {
+                            "grouping": "",
+                            "label": "Select",
+                            "value": "Select"
+                        },
+                        {
+                            "grouping": "",
+                            "label": "Customer Absent",
+                            "value": "Customer Absent"
+                        },
+                        {
+                            "grouping": "",
+                            "label": "Closed Premises",
+                            "value": "Closed Premises"
+                        },
+                        {
+                            "grouping": "",
+                            "label": "Others",
+                            "value": "Others"
+                        }
+                    ],
+                    "optionsBinder": {
+                        "className": "",
+                        "properties": {}
+                    }
+                }
+            },
+            "id": "column_4",
+            "label": "Provide Reason for Non-Compliance",
+            "name": "reasonnoncompliance"
+        }
+    ],
+    "filters": [],
+    "id": "list_inspection_report_1",
+    "name": "List - Inspection Report",
+    "order": "",
+    "orderBy": "",
+    "pageSize": 0,
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
+}
