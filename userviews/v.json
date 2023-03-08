@@ -1042,7 +1042,7 @@
                     "properties": {
                         "actionAfterSaved": "",
                         "actionOnCancel": "",
-                        "cancelButtonLabel": "Cancel",
+                        "cancelButtonLabel": "",
                         "customFooter": "",
                         "customHeader": "",
                         "customId": "inspectionScheduleReportForm",
@@ -1050,7 +1050,7 @@
                         "fieldPassover": "",
                         "fieldPassoverMethod": "append",
                         "formId": "inspection_report",
-                        "id": "DFDF3B6673B74F3A85954F9CC7D4E6DC",
+                        "id": "271935C83AA849CA809AEC5D7B85742E",
                         "keyName": "",
                         "label": "Inspection Schedule Report Form",
                         "loadDataWithKey": "",
@@ -1063,7 +1063,7 @@
                         "redirectUrlAfterComplete": "",
                         "redirectUrlOnCancel": "",
                         "showInPopupDialog": "",
-                        "submitButtonLabel": "Save",
+                        "submitButtonLabel": "",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
