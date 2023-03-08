@@ -208,8 +208,8 @@
             "confirmation": "",
             "datalist_type": "row_action",
             "href": "",
-            "hrefColumn": "",
-            "hrefParam": "",
+            "hrefColumn": "C_serReqDmccSrNo",
+            "hrefParam": "serReqDmccSrNo",
             "label": "View Report",
             "rules": [{
                 "field": "c_status",
