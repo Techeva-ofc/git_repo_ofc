@@ -2,27 +2,31 @@
     "actions": [],
     "binder": {
         "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
-        "properties": {"formDefId": "inspSchedl"}
+        "properties": {
+            "aggregateField": [],
+            "customSelectionValue": "",
+            "extraCondition": "",
+            "filters": [],
+            "formDefId": "ofc_checklist_form",
+            "functionColumns": [],
+            "groupBy": "",
+            "joins": [
+                {
+                    "fieldId": "",
+                    "joinFieldId": "checkpointCode",
+                    "tableName": "ofc_checklist_tab"
+                },
+                {
+                    "fieldId": "",
+                    "joinFieldId": "checkpointCode",
+                    "tableName": "ofc_checklist_tab"
+                }
+            ]
+        }
     },
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
-    "columns": [
-        {
-            "id": "column_1",
-            "label": "Inspection Date",
-            "name": "inspSchedlDate"
-        },
-        {
-            "id": "column_2",
-            "label": "InspectionStatus",
-            "name": "InspectionStatus"
-        },
-        {
-            "id": "column_3",
-            "label": "Inspector Name",
-            "name": "inspectorNames"
-        }
-    ],
+    "columns": [],
     "considerFilterWhenGetTotal": "",
     "filters": [],
     "id": "list_inspSchedl",
