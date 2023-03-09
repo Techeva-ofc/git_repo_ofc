@@ -51,6 +51,14 @@
             "label": "c_companyName",
             "name": "c_companyName",
             "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_1",
+            "label": "c_status",
+            "name": "c_status",
+            "sortable": "false"
         }
     ],
     "considerFilterWhenGetTotal": "",
@@ -62,7 +70,18 @@
     "orderBy": "",
     "pageSize": "0",
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
-    "rowActions": [],
+    "rowActions": [{
+        "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+        "icon": "<i class=\"fas fa-link\"><\/i>",
+        "id": "rowAction_0",
+        "label": "Hyperlink",
+        "name": "Data List Hyperlink Action",
+        "properties": {
+            "label": "Hyperlink",
+            "target": "_self"
+        },
+        "type": "text"
+    }],
     "showPageSizeSelector": "true",
     "useSession": "false"
 }
