@@ -36,25 +36,35 @@
    <environmentVariableList>
       <environmentVariable>
          <id>counter</id>
+         <appId>ofc_app</appId>
+         <appVersion>10</appVersion>
          <value>5</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
       <environmentVariable>
          <id>ofc_serviceReq_form_assp_counter</id>
+         <appId>ofc_app</appId>
+         <appVersion>10</appVersion>
          <value>5</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
       <environmentVariable>
          <id>PERMISSION_</id>
+         <appId>ofc_app</appId>
+         <appVersion>10</appVersion>
          <remarks>permissionRequest:8C13941FFEEB4033B804D5F2D89B4827</remarks>
       </environmentVariable>
       <environmentVariable>
          <id>serReqForm_assp_counter</id>
+         <appId>ofc_app</appId>
+         <appVersion>10</appVersion>
          <value>6</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
       <environmentVariable>
          <id>serviceRequestView_assp_counter</id>
+         <appId>ofc_app</appId>
+         <appVersion>10</appVersion>
          <value>2</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
