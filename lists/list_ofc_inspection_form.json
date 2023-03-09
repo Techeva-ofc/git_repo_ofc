@@ -311,12 +311,20 @@
                 "hrefColumn": "C_serReqDmccSrNo",
                 "hrefParam": "serReqDmccSrNo",
                 "label": "Schedule",
-                "rules": [{
-                    "field": "c_status",
-                    "join": "AND",
-                    "operator": "=",
-                    "value": "Payment Completed"
-                }],
+                "rules": [
+                    {
+                        "field": "c_status",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Payment Completed"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Inspection Re-Scheduled"
+                    }
+                ],
                 "target": "popup"
             },
             "type": "text"
