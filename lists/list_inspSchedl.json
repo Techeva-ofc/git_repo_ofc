@@ -7,43 +7,15 @@
             "customSelectionValue": "",
             "extraCondition": "",
             "filters": [],
-            "formDefId": "ofc_checklist_form",
+            "formDefId": "inspSchedl",
             "functionColumns": [],
             "groupBy": "",
-            "joins": [
-                {
-                    "fieldId": "",
-                    "joinFieldId": "checkpointCode",
-                    "tableName": "ofc_checklist_tab"
-                },
-                {
-                    "fieldId": "",
-                    "joinFieldId": "checkpointCode",
-                    "tableName": "ofc_checklist_tab"
-                }
-            ]
+            "joins": []
         }
     },
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
-    "columns": [
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_0",
-            "label": "Checkpoint Code",
-            "name": "checkpointCode",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_1",
-            "label": "Checkpoint Name",
-            "name": "checkpointName",
-            "sortable": "false"
-        }
-    ],
+    "columns": [],
     "considerFilterWhenGetTotal": "",
     "filters": [],
     "id": "list_inspSchedl",
