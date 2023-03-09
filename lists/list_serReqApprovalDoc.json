@@ -1,0 +1,32 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "serReqApprovalDoc"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "id": "column_1",
+            "label": "Document Type",
+            "name": "doctype"
+        },
+        {
+            "id": "column_0",
+            "label": "Description(optional)",
+            "name": "description"
+        }
+    ],
+    "considerFilterWhenGetTotal": "",
+    "filters": [],
+    "id": "list_serReqApprovalDoc",
+    "name": "List - Document for Approval",
+    "order": "",
+    "orderBy": "",
+    "pageSize": 0,
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
+}
