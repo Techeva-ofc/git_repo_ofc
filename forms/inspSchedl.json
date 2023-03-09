@@ -84,7 +84,7 @@
                             "controlField": "",
                             "id": "checklisttype_multi",
                             "label": "Checklist Type",
-                            "multiple": "true",
+                            "multiple": "",
                             "options": [],
                             "optionsBinder": {
                                 "className": "org.joget.apps.form.lib.FormOptionsBinder",
