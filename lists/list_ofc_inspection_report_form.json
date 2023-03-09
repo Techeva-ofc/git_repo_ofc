@@ -6,7 +6,7 @@
             "jdbcDatasource": "default",
             "optimisePaging": "",
             "primaryKey": "id",
-            "sql": "SELECT sr.id, sr.dateCreated, sr.C_serReqDmccSrNo, c.c_licenseNumber, sr.c_serReqServCat, \r\nc.c_companyName, c.c_companyLocation, t.c_tower_seq_no, t.c_tower_name ,sr.c_status, sr.c_inspSchedlDate, sr.c_inspectionreportStatus\r\nFROM app_fd_ofc_serreqs_tab sr\r\nINNER JOIN app_fd_ofc_company_tab c\r\nON sr.c_companyName = c.id\r\nINNER JOIN app_fd_ofc_location_tab l\r\nON c.c_companyLocation = l.c_locName\r\nINNER JOIN app_fd_ofc_tower_tab t\r\nON c.c_tower_name = t.c_tower_name\r\nWHERE sr.c_status = 'Inspection Completed' or sr.c_status = 'Inspection Re-Scheduled' and sr.c_inspectorNames = sr.c_currentuser\r\n"
+            "sql": "SELECT sr.id, sr.dateCreated, sr.C_serReqDmccSrNo, c.c_licenseNumber, sr.c_serReqServCat, \r\nc.c_companyName, c.c_companyLocation, t.c_tower_seq_no, t.c_tower_name ,sr.c_status, sr.c_inspSchedlDate, sr.c_inspectionreportStatus\r\nFROM app_fd_ofc_serreqs_tab sr\r\nINNER JOIN app_fd_ofc_company_tab c\r\nON sr.c_companyName = c.id\r\nINNER JOIN app_fd_ofc_location_tab l\r\nON c.c_companyLocation = l.c_locName\r\nINNER JOIN app_fd_ofc_tower_tab t\r\nON c.c_tower_name = t.c_tower_name\r\nWHERE sr.c_status = 'Inspection Completed' or sr.c_status = 'Inspection Re-Scheduled' and sr.c_inspectorNames =  'sagar'\r\n"
         }
     },
     "buttonPosition": "bottomLeft",
