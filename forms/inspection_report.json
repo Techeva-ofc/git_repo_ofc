@@ -453,6 +453,13 @@
                                 "readonly": "",
                                 "value": "imageupload",
                                 "width": ""
+                            },
+                            {
+                                "formatType": "",
+                                "label": "Remarks(if any)",
+                                "readonly": "",
+                                "value": "remarks",
+                                "width": ""
                             }
                         ],
                         "pagingOptions": "10,20,50,100",
