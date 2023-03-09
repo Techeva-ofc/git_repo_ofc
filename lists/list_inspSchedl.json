@@ -26,7 +26,24 @@
     },
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
-    "columns": [],
+    "columns": [
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_0",
+            "label": "Checkpoint Code",
+            "name": "checkpointCode",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_1",
+            "label": "Checkpoint Name",
+            "name": "checkpointName",
+            "sortable": "false"
+        }
+    ],
     "considerFilterWhenGetTotal": "",
     "filters": [],
     "id": "list_inspSchedl",
