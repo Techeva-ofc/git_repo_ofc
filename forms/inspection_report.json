@@ -565,6 +565,6 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "tableName": "ofc_serReqs_tab"
+        "tableName": "ofc_insp_report_tab"
     }
 }
