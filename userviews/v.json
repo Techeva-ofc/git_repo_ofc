@@ -1149,7 +1149,7 @@
                         "enableOffline": "",
                         "fieldPassover": "",
                         "fieldPassoverMethod": "append",
-                        "formId": "inspectionFinalReport",
+                        "formId": "viewreport",
                         "id": "FD3BA8BDD7B0458D809BD2B46D3F42E7",
                         "keyName": "",
                         "label": "Inspection Report",
