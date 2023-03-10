@@ -61,7 +61,7 @@
                 "comment": "",
                 "id": "report",
                 "join": "",
-                "label": "Report #requestParam.serReqDmccSrNo#",
+                "label": "Fixed Certificate of Conformity Inspection Report",
                 "loadBinder": {
                     "className": "",
                     "properties": {}
