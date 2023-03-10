@@ -3,32 +3,60 @@
     "elements": [
         {
             "className": "org.joget.apps.form.model.Section",
-            "elements": [{
-                "className": "org.joget.apps.form.model.Column",
-                "elements": [{
-                    "className": "org.joget.apps.form.lib.TextField",
-                    "properties": {
-                        "encryption": "",
-                        "id": "dmccsrno",
-                        "label": "DMCC SR No.",
-                        "maxlength": "",
-                        "permissionHidden": "",
-                        "placeholder": "",
-                        "readonly": "true",
-                        "readonlyLabel": "true",
-                        "size": "",
-                        "storeNumeric": "",
-                        "style": "",
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "value": "#requestParam.serReqDmccSrNo#",
-                        "workflowVariable": "dmcc"
-                    }
-                }],
-                "properties": {"width": "100%"}
-            }],
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [{
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "dmccsrno",
+                            "label": "DMCC SR No.",
+                            "maxlength": "",
+                            "permissionHidden": "",
+                            "placeholder": "",
+                            "readonly": "true",
+                            "readonlyLabel": "true",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "#requestParam.serReqDmccSrNo#",
+                            "workflowVariable": "dmcc"
+                        }
+                    }],
+                    "properties": {"width": "49%"}
+                },
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [{
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "currentuser",
+                            "label": "Reported By",
+                            "maxlength": "",
+                            "permissionHidden": "",
+                            "placeholder": "",
+                            "readonly": "true",
+                            "readonlyLabel": "true",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "#currentUser.fullName#",
+                            "workflowVariable": ""
+                        }
+                    }],
+                    "properties": {"width": "49%"}
+                }
+            ],
             "properties": {
                 "id": "section7",
                 "label": "Section"
@@ -62,28 +90,6 @@
                                 "properties": {}
                             },
                             "value": "#requestParam.KEY#",
-                            "workflowVariable": ""
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.TextField",
-                        "properties": {
-                            "encryption": "",
-                            "id": "currentuser",
-                            "label": "Reported By",
-                            "maxlength": "",
-                            "permissionHidden": "",
-                            "placeholder": "",
-                            "readonly": "true",
-                            "readonlyLabel": "true",
-                            "size": "",
-                            "storeNumeric": "",
-                            "style": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "#currentUser.fullName#",
                             "workflowVariable": ""
                         }
                     },
