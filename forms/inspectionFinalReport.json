@@ -33,9 +33,10 @@
                         "id": "inspectorName",
                         "label": "Report Generate By",
                         "maxlength": "",
+                        "permissionHidden": "",
                         "placeholder": "",
-                        "readonly": "",
-                        "readonlyLabel": "",
+                        "readonly": "true",
+                        "readonlyLabel": "true",
                         "size": "",
                         "storeNumeric": "",
                         "style": "",
@@ -43,7 +44,7 @@
                             "className": "",
                             "properties": {}
                         },
-                        "value": "",
+                        "value": "#currentUser.username#",
                         "workflowVariable": ""
                     }
                 },
@@ -131,7 +132,7 @@
                 "useAjax": ""
             }
         },
-        "name": "Inspection Report View",
+        "name": "View Inspection Report",
         "noPermissionMessage": "",
         "permission": {
             "className": "",
@@ -146,6 +147,6 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "tableName": "ofc_serReqs_tab"
+        "tableName": "ofc_insp_report_tab"
     }
 }
