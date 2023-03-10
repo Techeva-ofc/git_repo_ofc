@@ -21,12 +21,33 @@
             "sortable": "false"
         },
         {
+            "action": {
+                "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+                "properties": {
+                    "confirmation": "Open Service Request Details",
+                    "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/serRequestView?_mode=view",
+                    "hrefColumn": "C_serReqDmccSrNo;id",
+                    "hrefParam": "serReqDmccSrNo;id",
+                    "label": "View",
+                    "target": "popup"
+                }
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
             "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
             "hidden": "false",
             "id": "column_0",
             "label": "C_serReqDmccSrNo",
             "name": "C_serReqDmccSrNo",
-            "sortable": "false"
+            "sortable": "false",
+            "style": "",
+            "width": ""
         },
         {
             "filterable": true,
