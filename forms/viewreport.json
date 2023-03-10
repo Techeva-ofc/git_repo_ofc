@@ -58,8 +58,30 @@
                 }
             ],
             "properties": {
-                "id": "section7",
-                "label": "Section"
+                "comment": "",
+                "id": "report",
+                "join": "",
+                "label": "Report #requestParam.serReqDmccSrNo#",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "readonly": "true",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
             }
         },
         {
