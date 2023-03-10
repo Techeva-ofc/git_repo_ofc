@@ -37,7 +37,7 @@
                         "properties": {
                             "encryption": "",
                             "id": "currentuser",
-                            "label": "INSPECTOR :",
+                            "label": "Inspector :",
                             "maxlength": "",
                             "permissionHidden": "",
                             "placeholder": "",
