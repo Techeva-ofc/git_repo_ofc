@@ -1003,6 +1003,27 @@
                         "userviewCacheDuration": "",
                         "userviewCacheScope": ""
                     }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "buttonPosition": "bottomLeft",
+                        "cacheAllLinks": "",
+                        "cacheListAction": "",
+                        "checkboxPosition": "left",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "reportSummary",
+                        "datalistId": "list_ofc_inspection_report_form",
+                        "enableOffline": "",
+                        "id": "4C2F7141BACF40DB97C4BBDD8BE08820",
+                        "keyName": "",
+                        "label": "Inspection Report Summary",
+                        "rowCount": "true",
+                        "selectionType": "single",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
                 }
             ],
             "properties": {
@@ -1088,27 +1109,6 @@
                     }
                 },
                 {
-                    "className": "org.joget.apps.userview.lib.DataListMenu",
-                    "properties": {
-                        "buttonPosition": "bottomLeft",
-                        "cacheAllLinks": "",
-                        "cacheListAction": "",
-                        "checkboxPosition": "left",
-                        "customFooter": "",
-                        "customHeader": "",
-                        "customId": "reportSummary",
-                        "datalistId": "list_ofc_inspection_report_form",
-                        "enableOffline": "",
-                        "id": "4C2F7141BACF40DB97C4BBDD8BE08820",
-                        "keyName": "",
-                        "label": "Inspection Report Summary",
-                        "rowCount": "true",
-                        "selectionType": "single",
-                        "userviewCacheDuration": "20",
-                        "userviewCacheScope": ""
-                    }
-                },
-                {
                     "className": "org.joget.apps.userview.lib.FormMenu",
                     "properties": {
                         "actionAfterSaved": "",
@@ -1137,24 +1137,6 @@
                         "redirectUrlOnCancel": "",
                         "showInPopupDialog": "",
                         "submitButtonLabel": "",
-                        "userviewCacheDuration": "20",
-                        "userviewCacheScope": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.userview.lib.FormMenu",
-                    "properties": {
-                        "actionAfterSaved": "",
-                        "actionOnCancel": "",
-                        "afterSavedReloadTarget": "true",
-                        "fieldPassoverMethod": "append",
-                        "id": "F25BCF58848A4013BDDD7E46CDD32F59",
-                        "label": "Form",
-                        "readonly": "No",
-                        "readonlyLabel": "false",
-                        "redirectTargetOnCancel": "top",
-                        "redirectTargetOnComplete": "",
-                        "showInPopupDialog": "No",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
