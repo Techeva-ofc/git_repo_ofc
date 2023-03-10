@@ -1003,7 +1003,24 @@
                         "userviewCacheDuration": "",
                         "userviewCacheScope": ""
                     }
+                }
+            ],
+            "properties": {
+                "id": "category-c3069ab6-9844-43ab-b589-4324e47e9eb2",
+                "label": "<i class=\"fa fa-tasks\"><\/i>Inspection Summery",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                    "properties": {
+                        "allowedGroupIds": "G-003;G-006;G-001;G-002",
+                        "orgId": ""
+                    }
                 },
+                "permissionComment": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
                 {
                     "className": "org.joget.apps.userview.lib.FormMenu",
                     "properties": {
@@ -1033,52 +1050,6 @@
                         "redirectUrlOnCancel": "",
                         "showInPopupDialog": "",
                         "submitButtonLabel": "Update",
-                        "userviewCacheDuration": "20",
-                        "userviewCacheScope": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.userview.lib.InboxMenu",
-                    "properties": {
-                        "appFilter": "process",
-                        "assignment-customFooter": "",
-                        "assignment-customHeader": "",
-                        "buttonPosition": "bottomLeft",
-                        "cacheAllLinks": "",
-                        "customId": "report",
-                        "enableOffline": "",
-                        "id": "985EA4DA71D24B6CBF98203C15E8B936",
-                        "label": "Insp report",
-                        "list-customFooter": "",
-                        "list-customHeader": "",
-                        "permissionDeny": "",
-                        "permissionHidden": "true",
-                        "processId": "inspectionReport",
-                        "rowCount": "true",
-                        "showPopup": "",
-                        "userviewCacheDuration": "20",
-                        "userviewCacheScope": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.userview.lib.InboxMenu",
-                    "properties": {
-                        "appFilter": "process",
-                        "assignment-customFooter": "",
-                        "assignment-customHeader": "",
-                        "buttonPosition": "bottomLeft",
-                        "cacheAllLinks": "",
-                        "customId": "report",
-                        "enableOffline": "",
-                        "id": "985EA4DA71D24B6CBF98203C15E8B936",
-                        "label": "Insp report",
-                        "list-customFooter": "",
-                        "list-customHeader": "",
-                        "permissionDeny": "",
-                        "permissionHidden": "true",
-                        "processId": "inspectionReport",
-                        "rowCount": "true",
-                        "showPopup": "",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
@@ -1169,19 +1140,29 @@
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "actionAfterSaved": "",
+                        "actionOnCancel": "",
+                        "afterSavedReloadTarget": "true",
+                        "fieldPassoverMethod": "append",
+                        "id": "F25BCF58848A4013BDDD7E46CDD32F59",
+                        "label": "Form",
+                        "readonly": "No",
+                        "readonlyLabel": "false",
+                        "redirectTargetOnCancel": "top",
+                        "redirectTargetOnComplete": "",
+                        "showInPopupDialog": "No",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
                 }
             ],
             "properties": {
-                "id": "category-c3069ab6-9844-43ab-b589-4324e47e9eb2",
-                "label": "<i class=\"fa fa-tasks\"><\/i>Inspection Summery",
-                "permission": {
-                    "className": "org.joget.apps.userview.lib.GroupPermission",
-                    "properties": {
-                        "allowedGroupIds": "G-003;G-006;G-001;G-002",
-                        "orgId": ""
-                    }
-                },
-                "permissionComment": ""
+                "id": "category-3808E021196F44598C8754F2861694E4",
+                "label": "New Category"
             }
         },
         {
