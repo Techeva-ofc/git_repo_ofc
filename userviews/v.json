@@ -1157,7 +1157,7 @@
                         "messageShowAfterComplete": "",
                         "paramName": "",
                         "permissionDeny": "",
-                        "permissionHidden": "true",
+                        "permissionHidden": "",
                         "readonly": "",
                         "readonlyLabel": "",
                         "redirectTargetOnCancel": "top",
