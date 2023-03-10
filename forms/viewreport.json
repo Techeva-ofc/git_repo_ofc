@@ -12,9 +12,10 @@
                         "id": "dmccsrno",
                         "label": "DMCC SR No.",
                         "maxlength": "",
+                        "permissionHidden": "",
                         "placeholder": "",
-                        "readonly": "",
-                        "readonlyLabel": "",
+                        "readonly": "true",
+                        "readonlyLabel": "true",
                         "size": "",
                         "storeNumeric": "",
                         "style": "",
@@ -23,7 +24,7 @@
                             "properties": {}
                         },
                         "value": "#requestParam.serReqDmccSrNo#",
-                        "workflowVariable": ""
+                        "workflowVariable": "dmcc"
                     }
                 }],
                 "properties": {"width": "100%"}
