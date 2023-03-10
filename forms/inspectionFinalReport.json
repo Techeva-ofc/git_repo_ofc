@@ -22,8 +22,8 @@
                             "className": "",
                             "properties": {}
                         },
-                        "value": "",
-                        "workflowVariable": ""
+                        "value": "#requestParam.serReqDmccSrNo#",
+                        "workflowVariable": "dmccnum"
                     }
                 },
                 {
