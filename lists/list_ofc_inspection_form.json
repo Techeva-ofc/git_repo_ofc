@@ -332,6 +332,29 @@
         {
             "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
             "icon": "<i class=\"fas fa-link\"><\/i>",
+            "id": "rowAction_3",
+            "label": "Hyperlink",
+            "name": "Data List Hyperlink Action",
+            "properties": {
+                "confirmation": "",
+                "datalist_type": "row_action",
+                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/inspectionSchedule",
+                "hrefColumn": "C_serReqDmccSrNo;c_status;c_inspectionreportStatus;id",
+                "hrefParam": "serReqDmccSrNo;status;inspectionstatus;id",
+                "label": "Re-Schedule",
+                "rules": [{
+                    "field": "c_status",
+                    "join": "AND",
+                    "operator": "=",
+                    "value": "Inspection To-Be Scheduled"
+                }],
+                "target": "_self"
+            },
+            "type": "text"
+        },
+        {
+            "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+            "icon": "<i class=\"fas fa-link\"><\/i>",
             "id": "rowAction_1",
             "label": "Hyperlink",
             "name": "Data List Hyperlink Action",
