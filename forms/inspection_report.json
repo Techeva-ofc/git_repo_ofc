@@ -587,7 +587,7 @@
                             },
                             "variables": [
                                 {
-                                    "fieldId": "feesforreschedule",
+                                    "fieldId": "fee_fitout_nonCompliance",
                                     "operation": "sum",
                                     "variableName": "totalfee"
                                 },
