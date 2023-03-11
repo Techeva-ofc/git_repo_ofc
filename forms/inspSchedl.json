@@ -395,7 +395,7 @@
             "properties": {
                 "comment": "",
                 "id": "inspectionreSchedule",
-                "join": ";",
+                "join": "",
                 "label": "inspection Re-Schedule",
                 "loadBinder": {
                     "className": "",
@@ -408,14 +408,14 @@
                 "permissionReadonly": "",
                 "readonly": "",
                 "readonlyLabel": "",
-                "regex": ";",
-                "reverse": "true;",
+                "regex": "",
+                "reverse": "",
                 "storeBinder": {
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "#requestParam.inspectionstatus#;#requestParam.status#",
-                "visibilityValue": "Full Compliance;Inspection To-Be Re-Scheduled"
+                "visibilityControl": "#requestParam.status#",
+                "visibilityValue": "Inspection To-Be Re-Scheduled"
             }
         }
     ],
