@@ -38,7 +38,7 @@
                     "properties": {
                         "encryption": "",
                         "id": "wave_off",
-                        "label": "Wave off (40% / 60% / 20%)",
+                        "label": "Wave off (60% or 40% or 20%)",
                         "maxlength": "",
                         "placeholder": "",
                         "readonly": "",
