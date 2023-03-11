@@ -682,7 +682,7 @@
                         "properties": {
                             "equation": "(fee /100)*(wave)",
                             "hidden": "",
-                            "id": "feetopaid",
+                            "id": "feetopay",
                             "label": "Fee To-Be Paid",
                             "numOfDecimal": "2",
                             "postfix": "",
@@ -699,12 +699,17 @@
                                 {
                                     "fieldId": "feesforreschedule",
                                     "operation": "sum",
-                                    "variableName": "fee"
+                                    "variableName": "totalfee"
                                 },
                                 {
                                     "fieldId": "wave_off",
                                     "operation": "sum",
                                     "variableName": "wave"
+                                },
+                                {
+                                    "fieldId": "feetopay",
+                                    "operation": "sum",
+                                    "variableName": "final_amount"
                                 }
                             ],
                             "workflowVariable": ""
