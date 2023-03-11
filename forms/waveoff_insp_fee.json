@@ -7,10 +7,46 @@
                 "className": "org.joget.apps.form.model.Column",
                 "elements": [
                     {
-                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "className": "org.joget.apps.form.lib.TextField",
                         "properties": {
-                            "id": "id",
-                            "useDefaultWhenEmpty": "",
+                            "encryption": "",
+                            "id": "fee_fitout_nonCompliance",
+                            "label": "Non-Compliance Fee",
+                            "maxlength": "",
+                            "numOfDecimal": "2",
+                            "placeholder": "",
+                            "postfix": "",
+                            "prefix": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "storeNumeric": "true",
+                            "style": "us",
+                            "useThousandSeparator": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.BeanShellValidator",
+                                "properties": {
+                                    "decoration": "",
+                                    "script": "<script type=\"text/javascript\">\r\n$(function()\r\n{\r\n  if(\"#variable.inspectionstatus#\"==\"Other Non-Compliance\")\r\n  {\r\n    $(\"#fee_fitout_nonCompliance\").val(\"5250\");\r\n  }\r\n});\r\n<\/script>"
+                                }
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "wave_off",
+                            "label": "Wave off (40% / 60% / 20%)",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
                             "validator": {
                                 "className": "",
                                 "properties": {}
@@ -20,37 +56,68 @@
                         }
                     },
                     {
-                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "className": "org.joget.plugin.enterprise.CalculationField",
                         "properties": {
-                            "id": "serReqDmccSrNo",
-                            "useDefaultWhenEmpty": "",
+                            "equation": "(totalfee/100)*wave",
+                            "hidden": "",
+                            "id": "waver_amount",
+                            "label": "Waver_amount",
+                            "numOfDecimal": "2",
+                            "postfix": "",
+                            "prefix": "",
+                            "readonlyLabel": "true",
+                            "storeNumeric": "",
+                            "style": "us",
+                            "useThousandSeparator": "",
                             "validator": {
                                 "className": "",
                                 "properties": {}
                             },
-                            "value": "#requestParam.KEY#",
+                            "variables": [
+                                {
+                                    "fieldId": "fee_fitout_nonCompliance",
+                                    "operation": "sum",
+                                    "variableName": "totalfee"
+                                },
+                                {
+                                    "fieldId": "wave_off",
+                                    "operation": "sum",
+                                    "variableName": "wave"
+                                }
+                            ],
                             "workflowVariable": ""
                         }
                     },
                     {
-                        "className": "org.joget.apps.form.lib.TextField",
+                        "className": "org.joget.plugin.enterprise.CalculationField",
                         "properties": {
-                            "encryption": "",
-                            "id": "currentuser",
-                            "label": "Reported By",
-                            "maxlength": "",
-                            "permissionHidden": "",
-                            "placeholder": "",
-                            "readonly": "true",
+                            "equation": "(totalfees-waver_amount)",
+                            "hidden": "",
+                            "id": "feetopay",
+                            "label": "Fee To-Be Paid",
+                            "numOfDecimal": "2",
+                            "postfix": "",
+                            "prefix": "",
                             "readonlyLabel": "true",
-                            "size": "",
                             "storeNumeric": "",
-                            "style": "",
+                            "style": "us",
+                            "useThousandSeparator": "",
                             "validator": {
                                 "className": "",
                                 "properties": {}
                             },
-                            "value": "#currentUser.fullName#",
+                            "variables": [
+                                {
+                                    "fieldId": "fee_fitout_nonCompliance",
+                                    "operation": "sum",
+                                    "variableName": "totalfees"
+                                },
+                                {
+                                    "fieldId": "waver_amount",
+                                    "operation": "sum",
+                                    "variableName": "waver"
+                                }
+                            ],
                             "workflowVariable": ""
                         }
                     }
@@ -59,29 +126,28 @@
             }],
             "properties": {
                 "comment": "",
-                "id": "inspectionReport",
-                "join": "",
-                "label": "Inspection Report",
+                "id": "fee",
+                "join": "or;or",
+                "label": "Wave Off",
                 "loadBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
                 "permission": {
                     "className": "",
                     "properties": {}
                 },
-                "permissionHidden": "",
                 "permissionReadonly": "",
-                "readonly": "true",
+                "readonly": "",
                 "readonlyLabel": "",
-                "regex": "",
-                "reverse": "",
+                "regex": ";",
+                "reverse": ";",
                 "storeBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
-                "visibilityControl": "",
-                "visibilityValue": ""
+                "visibilityControl": "inspectionreportStatus;inspectionreportStatus",
+                "visibilityValue": "Other Non-Compliance;Fitout Non-Compliance"
             }
         },
         {
