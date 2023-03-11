@@ -525,7 +525,7 @@
                         "className": "org.joget.apps.form.lib.TextField",
                         "properties": {
                             "encryption": "",
-                            "id": "feesforreschedule",
+                            "id": "fee_fitout_nonCompliance",
                             "label": "Non-Compliance Fee",
                             "maxlength": "",
                             "numOfDecimal": "2",
