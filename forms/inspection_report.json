@@ -603,7 +603,7 @@
                     {
                         "className": "org.joget.plugin.enterprise.CalculationField",
                         "properties": {
-                            "equation": "(totalfee - (totalfee*(wave/100)))",
+                            "equation": "totalfee -  waver_amount",
                             "hidden": "",
                             "id": "feetopay",
                             "label": "Fee To-Be Paid",
@@ -625,9 +625,9 @@
                                     "variableName": "totalfee"
                                 },
                                 {
-                                    "fieldId": "wave_off",
+                                    "fieldId": "waver_amount",
                                     "operation": "sum",
-                                    "variableName": "wave"
+                                    "variableName": "waver"
                                 }
                             ],
                             "workflowVariable": ""
