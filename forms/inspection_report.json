@@ -605,12 +605,16 @@
                             "id": "feesforreschedule",
                             "label": "Non-Compliance Fee",
                             "maxlength": "",
+                            "numOfDecimal": "2",
                             "placeholder": "",
+                            "postfix": "",
+                            "prefix": "",
                             "readonly": "",
                             "readonlyLabel": "",
                             "size": "",
-                            "storeNumeric": "",
-                            "style": "",
+                            "storeNumeric": "true",
+                            "style": "us",
+                            "useThousandSeparator": "",
                             "validator": {
                                 "className": "",
                                 "properties": {}
