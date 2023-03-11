@@ -329,7 +329,7 @@
                                 "className": "org.joget.apps.form.lib.BeanShellValidator",
                                 "properties": {
                                     "decoration": "",
-                                    "script": "<script type=\"text/javascript\">\r\n$(function()\r\n{\r\n  if(\"#variable.inspectionstatus#\"==\"Other Non-Compliance\")\r\n  {\r\n    $(\"#fee_fitout_nonCompliance\").val(\"N/A\");\r\n  }\r\n});\r\n<\/script>"
+                                    "script": "<script type=\"text/javascript\">\r\n$(function()\r\n{\r\n  if(\"#variable.inspectionstatus#\"==\"Other Non-Compliance\")\r\n  {\r\n    $(\"#fee_fitout_nonCompliance\").val(\"5250\");\r\n  }\r\n});\r\n<\/script>"
                                 }
                             },
                             "value": "",
@@ -467,7 +467,7 @@
                                 "properties": {}
                             },
                             "value": "#requestParam.status#",
-                            "workflowVariable": "inspectionstatus"
+                            "workflowVariable": "status1"
                         }
                     },
                     {
