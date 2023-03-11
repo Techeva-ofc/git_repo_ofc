@@ -332,7 +332,7 @@
                                     "script": "<script type=\"text/javascript\">\r\n$(function()\r\n{\r\n  if(\"#variable.inspectionstatus#\"==\"Other Non-Compliance\")\r\n  {\r\n    $(\"#fee_fitout_nonCompliance\").val(\"N/A\");\r\n  }\r\n});\r\n<\/script>"
                                 }
                             },
-                            "value": "5250",
+                            "value": "",
                             "workflowVariable": ""
                         }
                     },
