@@ -432,6 +432,27 @@
                             "value": "Inspection To-Be Re-Scheduled",
                             "workflowVariable": ""
                         }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.SubForm",
+                        "properties": {
+                            "formDefId": "waveoff_insp_fee",
+                            "id": "waveoff",
+                            "label": "",
+                            "loadBinder": {
+                                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                                "properties": {}
+                            },
+                            "noframe": "",
+                            "parentSubFormId": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "storeBinder": {
+                                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                                "properties": {}
+                            },
+                            "subFormParentId": ""
+                        }
                     }
                 ],
                 "properties": {"width": "100%"}
