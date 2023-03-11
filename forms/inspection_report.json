@@ -603,7 +603,7 @@
                     {
                         "className": "org.joget.plugin.enterprise.CalculationField",
                         "properties": {
-                            "equation": "waver_amount",
+                            "equation": "(totalfees-waver_amount)",
                             "hidden": "",
                             "id": "feetopay",
                             "label": "Fee To-Be Paid",
@@ -637,8 +637,29 @@
                 "properties": {"width": "100%"}
             }],
             "properties": {
-                "id": "section5_2",
-                "label": "Section"
+                "comment": "",
+                "id": "fee",
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
             }
         },
         {
