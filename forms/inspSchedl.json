@@ -158,7 +158,7 @@
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "#requestParam.status#",
+                "visibilityControl": "#requestParam.statu#",
                 "visibilityValue": "Inspection Completed"
             }
         },
