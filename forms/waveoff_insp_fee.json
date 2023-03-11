@@ -70,8 +70,9 @@
                     "className": "",
                     "properties": {}
                 },
+                "permissionHidden": "",
                 "permissionReadonly": "",
-                "readonly": "",
+                "readonly": "true",
                 "readonlyLabel": "",
                 "regex": "",
                 "reverse": "",
@@ -160,8 +161,9 @@
                     "className": "",
                     "properties": {}
                 },
+                "permissionHidden": "",
                 "permissionReadonly": "",
-                "readonly": "",
+                "readonly": "true",
                 "readonlyLabel": "",
                 "regex": "",
                 "reverse": "",
@@ -290,8 +292,9 @@
                     "className": "",
                     "properties": {}
                 },
+                "permissionHidden": "",
                 "permissionReadonly": "",
-                "readonly": "",
+                "readonly": "true",
                 "readonlyLabel": "",
                 "regex": "",
                 "reverse": "",
@@ -539,8 +542,9 @@
                     "className": "",
                     "properties": {}
                 },
+                "permissionHidden": "",
                 "permissionReadonly": "",
-                "readonly": "",
+                "readonly": "true",
                 "readonlyLabel": "",
                 "regex": "",
                 "reverse": "",
