@@ -620,7 +620,7 @@
                 "comment": "",
                 "id": "status",
                 "join": "",
-                "label": "",
+                "label": "#requestParam.status#",
                 "loadBinder": {
                     "className": "",
                     "properties": {}
