@@ -519,10 +519,10 @@
             "properties": {
                 "comment": "",
                 "id": "fee",
-                "join": "",
+                "join": "or;or",
                 "label": "",
                 "loadBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
                 "permission": {
@@ -532,14 +532,14 @@
                 "permissionReadonly": "",
                 "readonly": "",
                 "readonlyLabel": "",
-                "regex": "",
-                "reverse": "",
+                "regex": ";",
+                "reverse": ";",
                 "storeBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
-                "visibilityControl": "",
-                "visibilityValue": ""
+                "visibilityControl": "insp_status_parameter;insp_status_parameter",
+                "visibilityValue": "Other Non-Compliance;Fitout Non-Compliance"
             }
         },
         {
