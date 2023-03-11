@@ -643,7 +643,7 @@
                         "className": "org.joget.apps.form.lib.TextField",
                         "properties": {
                             "encryption": "",
-                            "id": "waveofffee",
+                            "id": "wave_off",
                             "label": "Wave off (40% / 60% / 20%)",
                             "maxlength": "",
                             "placeholder": "",
@@ -657,6 +657,39 @@
                                 "properties": {}
                             },
                             "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.plugin.enterprise.CalculationField",
+                        "properties": {
+                            "equation": "(fee /100)*(wave)",
+                            "hidden": "",
+                            "id": "feetopaid",
+                            "label": "Fee To-Be Paid",
+                            "numOfDecimal": "2",
+                            "postfix": "",
+                            "prefix": "",
+                            "readonlyLabel": "true",
+                            "storeNumeric": "",
+                            "style": "us",
+                            "useThousandSeparator": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "variables": [
+                                {
+                                    "fieldId": "feesforreschedule",
+                                    "operation": "sum",
+                                    "variableName": "fee"
+                                },
+                                {
+                                    "fieldId": "wave_off",
+                                    "operation": "sum",
+                                    "variableName": "wave"
+                                }
+                            ],
                             "workflowVariable": ""
                         }
                     }
