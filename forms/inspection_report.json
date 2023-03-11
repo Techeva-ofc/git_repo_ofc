@@ -603,7 +603,7 @@
                     {
                         "className": "org.joget.plugin.enterprise.CalculationField",
                         "properties": {
-                            "equation": "totalfee-waver_amount",
+                            "equation": "totalfees-waver_amount",
                             "hidden": "",
                             "id": "feetopay",
                             "label": "Fee To-Be Paid",
@@ -622,7 +622,7 @@
                                 {
                                     "fieldId": "fee_fitout_nonCompliance",
                                     "operation": "sum",
-                                    "variableName": "totalfee"
+                                    "variableName": "totalfees"
                                 },
                                 {
                                     "fieldId": "waver_amount",
