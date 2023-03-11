@@ -237,7 +237,7 @@
             }
         }
     ],
-    "hidePageSize": "",
+    "hidePageSize": "true",
     "id": "list_ofc_inspection_report_form",
     "name": "List - View Inspection Report",
     "order": "",
