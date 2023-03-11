@@ -369,29 +369,6 @@
                 "target": "popup"
             },
             "type": "text"
-        },
-        {
-            "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
-            "icon": "<i class=\"fas fa-link\"><\/i>",
-            "id": "rowAction_2",
-            "label": "Hyperlink",
-            "name": "Data List Hyperlink Action",
-            "properties": {
-                "confirmation": "",
-                "datalist_type": "row_action",
-                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/inspectionScheduleReportForm",
-                "hrefColumn": "C_serReqDmccSrNo;id;c_inspectionreportStatus",
-                "hrefParam": "serReqDmccSrNo;id;status",
-                "label": "Generate Report",
-                "rules": [{
-                    "field": "c_status",
-                    "join": "AND",
-                    "operator": "=",
-                    "value": "Inspection Scheduled"
-                }],
-                "target": "_self"
-            },
-            "type": "text"
         }
     ],
     "searchPopup": "",
