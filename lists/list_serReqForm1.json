@@ -6,7 +6,7 @@
             "jdbcDatasource": "default",
             "optimisePaging": "",
             "primaryKey": "id",
-            "sql": "select b.id,b.c_approval_status,b.c_serReqDmccSrNo,b.c_status,d.c_ofc_category_name,a.c_companyName,b.c_paymentDate,c.c_tower_seq_no,c.c_tower_name \nfrom jwdb.app_fd_ofc_company_tab a \njoin jwdb.app_fd_ofc_serReqs_tab b on a.id = b.c_companyName \njoin jwdb.app_fd_ofc_tower_tab c on a.c_tower_name = c.id \njoin jwdb.app_fd_ofc_ofc_category_tab d on b.c_ofc_category_name = d.id \norder by b.c_paymentDate is null,b.c_paymentDate asc, c.c_tower_seq_no asc"
+            "sql": "select b.id,b.c_approval_status,b.c_serReqDmccSrNo,b.c_status,d.c_ofc_category_name,a.c_companyName,b.c_paymentDate,c.c_tower_seq_no,c.c_tower_name \nfrom jwdb.app_fd_ofc_company_tab a \njoin jwdb.app_fd_ofc_serReqs_tab b on a.id = b.c_companyName \njoin jwdb.app_fd_ofc_tower_tab c on a.c_tower_name = c.id \njoin jwdb.app_fd_ofc_ofc_category_tab d on b.c_ofc_category_name = d.id \nwhere a.c_companyName = '#currentUser.firstName#'\norder by b.c_paymentDate is null,b.c_paymentDate asc, c.c_tower_seq_no asc"
         }
     },
     "buttonPosition": "bottomLeft",
