@@ -396,27 +396,7 @@
                 },
                 {
                     "className": "org.joget.apps.form.model.Column",
-                    "elements": [{
-                        "className": "org.joget.apps.form.lib.TextField",
-                        "properties": {
-                            "encryption": "",
-                            "id": "feesforreschedule",
-                            "label": "Non-Compliance Fee",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "size": "",
-                            "storeNumeric": "",
-                            "style": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "500",
-                            "workflowVariable": ""
-                        }
-                    }],
+                    "elements": [],
                     "properties": {"width": "49%"}
                 }
             ],
@@ -444,6 +424,38 @@
                 },
                 "visibilityControl": "inspectionreportStatus",
                 "visibilityValue": "Other Non-Compliance"
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "id": "feesforreschedule",
+                        "label": "Non-Compliance Fee",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "storeNumeric": "",
+                        "style": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "500",
+                        "workflowVariable": ""
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "id": "section5_1",
+                "label": "Section"
             }
         },
         {
