@@ -570,7 +570,7 @@
                     {
                         "className": "org.joget.plugin.enterprise.CalculationField",
                         "properties": {
-                            "equation": "(totalfee*(wave/100))",
+                            "equation": "totalfee - (totalfee*(wave/100))",
                             "hidden": "",
                             "id": "feetopay",
                             "label": "Fee To-Be Paid",
