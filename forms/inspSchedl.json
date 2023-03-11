@@ -158,8 +158,8 @@
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "",
-                "visibilityValue": ""
+                "visibilityControl": "#requestParam.status#",
+                "visibilityValue": "Inspection Completed"
             }
         },
         {
@@ -255,6 +255,167 @@
                 },
                 "visibilityControl": "InspectionStatus",
                 "visibilityValue": "Inspection Started"
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
+                            "id": "serReqDmccSrNo",
+                            "useDefaultWhenEmpty": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.DatePicker",
+                        "properties": {
+                            "allowManual": "true",
+                            "currentDateAs": "",
+                            "dataFormat": "yyyy-MM-dd",
+                            "datePickerType": "dateTime",
+                            "endDateFieldId": "",
+                            "format": "",
+                            "format24hr": "",
+                            "id": "inspreSchedlDate",
+                            "label": "Inspection Date",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "startDateFieldId": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": "",
+                            "yearRange": "c-10:c+10"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "",
+                            "id": "inspectorName_reschedule",
+                            "label": "Inspector Name",
+                            "multiple": "",
+                            "options": [
+                                {
+                                    "grouping": "",
+                                    "label": "Sagar",
+                                    "value": "sagar"
+                                },
+                                {
+                                    "grouping": "",
+                                    "label": "Sarla",
+                                    "value": "sarla"
+                                },
+                                {
+                                    "grouping": "",
+                                    "label": "Imran",
+                                    "value": "imran.akram"
+                                }
+                            ],
+                            "optionsBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.plugin.enterprise.MultiSelectBox",
+                        "properties": {
+                            "controlField": "",
+                            "id": "checklisttype_multi",
+                            "label": "Checklist Type",
+                            "multiple": "",
+                            "options": [],
+                            "optionsBinder": {
+                                "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                                "properties": {
+                                    "addEmptyOption": "true",
+                                    "cacheInterval": "",
+                                    "emptyLabel": "Select",
+                                    "extraCondition": "",
+                                    "formDefId": "checklistTypeFom",
+                                    "groupingColumn": "",
+                                    "idColumn": "",
+                                    "labelColumn": "checklistType",
+                                    "useAjax": "true"
+                                }
+                            },
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "mandatory": "true",
+                                    "message": "mandatory",
+                                    "type": ""
+                                }
+                            },
+                            "value": "",
+                            "width": "40%",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
+                            "id": "InspectionStatus",
+                            "useDefaultWhenEmpty": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "Inspection To-Be Re-Scheduled",
+                            "workflowVariable": ""
+                        }
+                    }
+                ],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "inspectionreSchedule",
+                "join": ";",
+                "label": "inspection Re-Schedule",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": ";",
+                "reverse": "true;",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "#requestParam.inspectionstatus#;#requestParam.status#",
+                "visibilityValue": "Full Compliance;Inspection To-Be Re-Scheduled"
             }
         }
     ],
