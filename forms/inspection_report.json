@@ -454,8 +454,29 @@
                 "properties": {"width": "100%"}
             }],
             "properties": {
-                "id": "section5_1",
-                "label": "Section"
+                "comment": "",
+                "id": "fees",
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
             }
         },
         {
@@ -590,6 +611,61 @@
                 },
                 "visibilityControl": "inspectionreportStatus",
                 "visibilityValue": "Fitout Non-Compliance"
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "feesforreschedule",
+                            "label": "Non-Compliance Fee",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "5250",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "waveofffee",
+                            "label": "Wave off (40% / 60% / 20%)",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    }
+                ],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "id": "section5_2",
+                "label": "Section"
             }
         },
         {
