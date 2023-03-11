@@ -123,7 +123,7 @@
                                 "label": "Remarks(if any)",
                                 "readonly": "",
                                 "value": "remarks",
-                                "width": "250px"
+                                "width": "500px"
                             }
                         ],
                         "pagingOptions": "10,20,50,100",
