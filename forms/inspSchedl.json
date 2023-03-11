@@ -140,7 +140,7 @@
                 "comment": "",
                 "id": "inspectionSchedule",
                 "join": "",
-                "label": "Inspection Schedule -  #requestParam.status#",
+                "label": "Schedule Inspection",
                 "loadBinder": {
                     "className": "",
                     "properties": {}
