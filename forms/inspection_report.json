@@ -427,7 +427,7 @@
                 "comment": "",
                 "id": "fee",
                 "join": "or;or",
-                "label": "",
+                "label": "Wave Off",
                 "loadBinder": {
                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
