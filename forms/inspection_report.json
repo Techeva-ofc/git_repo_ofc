@@ -647,40 +647,7 @@
                     {
                         "className": "org.joget.plugin.enterprise.CalculationField",
                         "properties": {
-                            "equation": "waveOff",
-                            "hidden": "",
-                            "id": "amountreduced",
-                            "label": "Calculation Field",
-                            "numOfDecimal": "2",
-                            "postfix": "",
-                            "prefix": "",
-                            "readonlyLabel": "",
-                            "storeNumeric": "",
-                            "style": "us",
-                            "useThousandSeparator": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "variables": [
-                                {
-                                    "fieldId": "feesforreschedule",
-                                    "operation": "sum",
-                                    "variableName": "totalfee"
-                                },
-                                {
-                                    "fieldId": "wave_off",
-                                    "operation": "sum",
-                                    "variableName": "waveOff"
-                                }
-                            ],
-                            "workflowVariable": ""
-                        }
-                    },
-                    {
-                        "className": "org.joget.plugin.enterprise.CalculationField",
-                        "properties": {
-                            "equation": "totalfee- (totalfee*(wave/100))",
+                            "equation": "totalfee - (totalfee*(wave/100))",
                             "hidden": "",
                             "id": "feetopay",
                             "label": "Fee To-Be Paid",
@@ -705,11 +672,6 @@
                                     "fieldId": "wave_off",
                                     "operation": "sum",
                                     "variableName": "wave"
-                                },
-                                {
-                                    "fieldId": "feetopay",
-                                    "operation": "sum",
-                                    "variableName": "final_amount"
                                 }
                             ],
                             "workflowVariable": ""
