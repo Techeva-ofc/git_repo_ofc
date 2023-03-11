@@ -567,7 +567,7 @@
                 "comment": "",
                 "id": "status",
                 "join": "",
-                "label": "#requestParam.status#",
+                "label": "Status of Inspection",
                 "loadBinder": {
                     "className": "",
                     "properties": {}
