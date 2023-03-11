@@ -647,7 +647,7 @@
                     {
                         "className": "org.joget.plugin.enterprise.CalculationField",
                         "properties": {
-                            "equation": "(totalfee/100)*waveOff",
+                            "equation": "waveOff",
                             "hidden": "",
                             "id": "amountreduced",
                             "label": "Calculation Field",
