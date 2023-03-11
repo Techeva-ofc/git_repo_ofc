@@ -546,74 +546,59 @@
             "className": "org.joget.apps.form.model.Section",
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
-                "elements": [
-                    {
-                        "className": "org.joget.apps.form.lib.SelectBox",
-                        "properties": {
-                            "controlField": "",
-                            "id": "inspectionreportStatus",
-                            "label": "Status",
-                            "multiple": "",
-                            "options": [
-                                {
-                                    "grouping": "",
-                                    "label": "Select",
-                                    "value": "select"
-                                },
-                                {
-                                    "grouping": "",
-                                    "label": "Partial Compliance",
-                                    "value": "Partial Compliance"
-                                },
-                                {
-                                    "grouping": "",
-                                    "label": "Full Compliance",
-                                    "value": "Full Compliance"
-                                },
-                                {
-                                    "grouping": "",
-                                    "label": "Other Non-Compliance",
-                                    "value": "Other Non-Compliance"
-                                },
-                                {
-                                    "grouping": "",
-                                    "label": "Fitout Non-Compliance",
-                                    "value": "Fitout Non-Compliance"
-                                }
-                            ],
-                            "optionsBinder": {
-                                "className": "",
-                                "properties": {}
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "inspectionreportStatus",
+                        "label": "Status",
+                        "multiple": "",
+                        "options": [
+                            {
+                                "grouping": "",
+                                "label": "Select",
+                                "value": "select"
                             },
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "size": "",
-                            "validator": {
-                                "className": "org.joget.apps.form.lib.DefaultValidator",
-                                "properties": {
-                                    "mandatory": "true",
-                                    "message": "Please enter the status",
-                                    "type": ""
-                                }
+                            {
+                                "grouping": "",
+                                "label": "Partial Compliance",
+                                "value": "Partial Compliance"
                             },
-                            "value": "",
-                            "workflowVariable": "status"
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.HiddenField",
-                        "properties": {
-                            "id": "insp_status_parameter",
-                            "useDefaultWhenEmpty": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
+                            {
+                                "grouping": "",
+                                "label": "Full Compliance",
+                                "value": "Full Compliance"
                             },
-                            "value": "#requestParam.status#",
-                            "workflowVariable": ""
-                        }
+                            {
+                                "grouping": "",
+                                "label": "Other Non-Compliance",
+                                "value": "Other Non-Compliance"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Fitout Non-Compliance",
+                                "value": "Fitout Non-Compliance"
+                            }
+                        ],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "Please enter the status",
+                                "type": ""
+                            }
+                        },
+                        "value": "",
+                        "workflowVariable": "status"
                     }
-                ],
+                }],
                 "properties": {"width": "100%"}
             }],
             "properties": {
@@ -640,6 +625,51 @@
                 },
                 "visibilityControl": "",
                 "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "id": "insp_status_parameter",
+                        "useDefaultWhenEmpty": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "#requestParam.status#",
+                        "workflowVariable": ""
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "section8",
+                "join": "or;or",
+                "label": "",
+                "loadBinder": {
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": ";",
+                "reverse": ";",
+                "storeBinder": {
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                    "properties": {}
+                },
+                "visibilityControl": "insp_status_parameter;insp_status_parameter",
+                "visibilityValue": "Fitout Non-Compliance;Other Non-Compliance"
             }
         }
     ],
