@@ -603,7 +603,7 @@
                     {
                         "className": "org.joget.plugin.enterprise.CalculationField",
                         "properties": {
-                            "equation": "totalfees-waver_amount",
+                            "equation": "waver_amount",
                             "hidden": "",
                             "id": "feetopay",
                             "label": "Fee To-Be Paid",
