@@ -53,59 +53,6 @@
                             "value": "#currentUser.fullName#",
                             "workflowVariable": ""
                         }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.SelectBox",
-                        "properties": {
-                            "controlField": "",
-                            "id": "inspectionreportStatus",
-                            "label": "Status",
-                            "multiple": "",
-                            "options": [
-                                {
-                                    "grouping": "",
-                                    "label": "Select",
-                                    "value": "select"
-                                },
-                                {
-                                    "grouping": "",
-                                    "label": "Partial Compliance",
-                                    "value": "Partial Compliance"
-                                },
-                                {
-                                    "grouping": "",
-                                    "label": "Full Compliance",
-                                    "value": "Full Compliance"
-                                },
-                                {
-                                    "grouping": "",
-                                    "label": "Other Non-Compliance",
-                                    "value": "Other Non-Compliance"
-                                },
-                                {
-                                    "grouping": "",
-                                    "label": "Fitout Non-Compliance",
-                                    "value": "Fitout Non-Compliance"
-                                }
-                            ],
-                            "optionsBinder": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "size": "",
-                            "validator": {
-                                "className": "org.joget.apps.form.lib.DefaultValidator",
-                                "properties": {
-                                    "mandatory": "true",
-                                    "message": "Please enter the status",
-                                    "type": ""
-                                }
-                            },
-                            "value": "",
-                            "workflowVariable": "status"
-                        }
                     }
                 ],
                 "properties": {"width": "100%"}
@@ -483,30 +430,6 @@
             "className": "org.joget.apps.form.model.Section",
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
-                "elements": [],
-                "properties": {"width": "100%"}
-            }],
-            "properties": {
-                "id": "section5_1",
-                "label": "Section"
-            }
-        },
-        {
-            "className": "org.joget.apps.form.model.Section",
-            "elements": [{
-                "className": "org.joget.apps.form.model.Column",
-                "elements": [],
-                "properties": {"width": "100%"}
-            }],
-            "properties": {
-                "id": "section5",
-                "label": "Section"
-            }
-        },
-        {
-            "className": "org.joget.apps.form.model.Section",
-            "elements": [{
-                "className": "org.joget.apps.form.model.Column",
                 "elements": [{
                     "className": "org.joget.plugin.enterprise.AdvancedGrid",
                     "properties": {
@@ -689,7 +612,59 @@
             "className": "org.joget.apps.form.model.Section",
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
-                "elements": [],
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "inspectionreportStatus",
+                        "label": "Status",
+                        "multiple": "",
+                        "options": [
+                            {
+                                "grouping": "",
+                                "label": "Select",
+                                "value": "select"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Partial Compliance",
+                                "value": "Partial Compliance"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Full Compliance",
+                                "value": "Full Compliance"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Other Non-Compliance",
+                                "value": "Other Non-Compliance"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Fitout Non-Compliance",
+                                "value": "Fitout Non-Compliance"
+                            }
+                        ],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "Please enter the status",
+                                "type": ""
+                            }
+                        },
+                        "value": "",
+                        "workflowVariable": "status"
+                    }
+                }],
                 "properties": {"width": "100%"}
             }],
             "properties": {
