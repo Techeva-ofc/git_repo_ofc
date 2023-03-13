@@ -201,6 +201,14 @@
                                     "label": "Type",
                                     "value": "ofc_chklistType_tab.checklistType",
                                     "width": ""
+                                },
+                                {
+                                    "editable": "no",
+                                    "format": "",
+                                    "formatType": "text",
+                                    "label": "Type",
+                                    "value": "ofc_chklistType_tab.checklistType",
+                                    "width": ""
                                 }
                             ],
                             "pageSize": "20",
