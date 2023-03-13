@@ -69,7 +69,7 @@
                         "numOfDecimal": "2",
                         "postfix": "",
                         "prefix": "",
-                        "readonlyLabel": "",
+                        "readonlyLabel": "true",
                         "storeNumeric": "true",
                         "style": "us",
                         "useThousandSeparator": "",
