@@ -207,13 +207,13 @@
                             },
                             "submit-label-normal": "",
                             "submit-label-readonly": "",
-                            "uniqueKey": "ofc_chklistType_tab.checklistType",
+                            "uniqueKey": "checkpointCode",
                             "validateMaxRow": "",
                             "validateMinRow": "",
                             "validator": {
                                 "className": "org.joget.plugin.enterprise.MultirowBasicValidator",
                                 "properties": {"validationrules": [{
-                                    "fieldId": "chk",
+                                    "fieldId": "checkpointCode",
                                     "mandatory": "true",
                                     "message": "",
                                     "validationType": ""
