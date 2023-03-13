@@ -177,58 +177,7 @@
                                     "autoHandleFiles": "",
                                     "autoHandleWorkflowVariable": "true",
                                     "cacheInterval": "",
-                                    "script": "import java.sql.ResultSet;\r\nimport java.sql.SQLException;\r\nimport javax.sql.DataSource;\r\nimport org.joget.apps.app.model.AppDefinition;\r\nimport org.joget.apps.app.service.AppService;\r\nimport org.joget.apps.app.service.AppUtil;\r\nimport org.joget.apps.form.model.Element;\r\nimport org.joget.apps.form.model.FormData;\r\nimport org.joget.apps.form.model.FormRow;\r\nimport org.joget.apps.form.model.FormRowSet;\r\nimport org.joget.apps.form.model.FormStoreBinder;\r\nimport org.joget.apps.form.service.FormUtil;\r\nimport org.joget.plugin.base.PluginManager;\r\nimport org.joget.commons.util.LogUtil;\r\nimport org.json.JSONArray;\r\nimport org.json.JSONObject;\r\n//here we are update inspectionScheduled in c_status column\r\npublic void updateinspectionScheduled() {\r\n             System.out.println(\"serReqDmccSrNo ------ iD \");\r\n         Connection con = null;\r\n         try{ \r\n             Class.forName(\"com.mysql.jdbc.Driver\").newInstance();\r\n             con = DriverManager.getConnection(\"jdbc:mysql://localhost:3307/jwdb?characterEncoding=UTF-8\", \"root\", \"\");\r\n             if (!con.isClosed()) {\r\n                 String serReqDmccSrNo = \"#form.app_fd_ofc_serreqs_tab.serReqDmccSrNo#\";\r\n                 String id = \"#form.app_fd_ofc_serreqs_tab.id#\";\r\n                System.out.println(\"serReqDmccSrNo ---------\"+serReqDmccSrNo+\" iD \"+id);\r\n                 \r\n\t\tString type = \"#form.app_fd_ofc_serreqs_tab.checklisttype_multi#\";\r\n\r\nSystem.out.println(type);\r\n\r\n}\r\nelse {\r\n                 System.out.println(\"Connection Problem\");\r\n             }\r\n         } catch (Exception ex) {\r\n             ex.printStackTrace(); \r\n             }\r\n    \r\n}\r\nupdateinspectionScheduled();\r\n",
-                                    "useAjax": ""
-                                }
-                            },
-                            "submit-label-normal": "",
-                            "submit-label-readonly": "",
-                            "uniqueKey": "",
-                            "validateMaxRow": "",
-                            "validateMinRow": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "width": "900"
-                        }
-                    },
-                    {
-                        "className": "org.joget.plugin.enterprise.ListGrid",
-                        "properties": {
-                            "abortRelatedRunningProcesses": "",
-                            "buttonLabel": "",
-                            "deleteFiles": "",
-                            "deleteGridData": "",
-                            "deleteMessage": "Delete row?",
-                            "deleteSubformData": "",
-                            "disabledAdd": "",
-                            "disabledDelete": "",
-                            "enableSorting": "",
-                            "errorMessage": "Invalid number of rows",
-                            "formDefId": "",
-                            "height": "500",
-                            "id": "field18",
-                            "label": "List Grid",
-                            "listId": "list_ofc_checklist_form",
-                            "loadBinder": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "options": [],
-                            "pageSize": "20",
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "requestParams": [],
-                            "showRowNumber": "",
-                            "sortField": "sort",
-                            "storeBinder": {
-                                "className": "org.joget.apps.form.lib.BeanShellFormBinder",
-                                "properties": {
-                                    "autoHandleFiles": "",
-                                    "autoHandleWorkflowVariable": "true",
-                                    "cacheInterval": "",
-                                    "script": "import java.sql.ResultSet;\r\nimport java.sql.SQLException;\r\nimport javax.sql.DataSource;\r\nimport org.joget.apps.app.model.AppDefinition;\r\nimport org.joget.apps.app.service.AppService;\r\nimport org.joget.apps.app.service.AppUtil;\r\nimport org.joget.apps.form.model.Element;\r\nimport org.joget.apps.form.model.FormData;\r\nimport org.joget.apps.form.model.FormRow;\r\nimport org.joget.apps.form.model.FormRowSet;\r\nimport org.joget.apps.form.model.FormStoreBinder;\r\nimport org.joget.apps.form.service.FormUtil;\r\nimport org.joget.plugin.base.PluginManager;\r\nimport org.joget.commons.util.LogUtil;\r\nimport org.json.JSONArray;\r\nimport org.json.JSONObject;\r\n//here we are update inspectionScheduled in c_status column\r\npublic void updateinspectionScheduled() {\r\n             System.out.println(\"serReqDmccSrNo ------ iD \");\r\n         Connection con = null;\r\n         try{ \r\n             Class.forName(\"com.mysql.jdbc.Driver\").newInstance();\r\n             con = DriverManager.getConnection(\"jdbc:mysql://localhost:3307/jwdb?characterEncoding=UTF-8\", \"root\", \"\");\r\n             if (!con.isClosed()) {\r\n                 String serReqDmccSrNo = \"#form.app_fd_ofc_serreqs_tab.serReqDmccSrNo#\";\r\n                 String id = \"#form.app_fd_ofc_serreqs_tab.id#\";\r\n                System.out.println(\"serReqDmccSrNo ---------\"+serReqDmccSrNo+\" iD \"+id);\r\n                 \r\n\t\tString type = \"#form.app_fd_ofc_serreqs_tab.checklisttype_multi#\";\r\n\r\nSystem.out.println(type);\r\n\r\n}\r\nelse {\r\n                 System.out.println(\"Connection Problem\");\r\n             }\r\n         } catch (Exception ex) {\r\n             ex.printStackTrace(); \r\n             }\r\n    \r\n}\r\nupdateinspectionScheduled();\r\n",
+                                    "script": "import java.sql.ResultSet;\r\nimport java.sql.SQLException;\r\nimport javax.sql.DataSource;\r\nimport org.joget.apps.app.model.AppDefinition;\r\nimport org.joget.apps.app.service.AppService;\r\nimport org.joget.apps.app.service.AppUtil;\r\nimport org.joget.apps.form.model.Element;\r\nimport org.joget.apps.form.model.FormData;\r\nimport org.joget.apps.form.model.FormRow;\r\nimport org.joget.apps.form.model.FormRowSet;\r\nimport org.joget.apps.form.model.FormStoreBinder;\r\nimport org.joget.apps.form.service.FormUtil;\r\nimport org.joget.plugin.base.PluginManager;\r\nimport org.joget.commons.util.LogUtil;\r\nimport org.json.JSONArray;\r\nimport org.json.JSONObject;\r\n//here we are update inspectionScheduled in c_status column\r\npublic void updateinspectionScheduled() {\r\n             System.out.println(\"serReqDmccSrNo ------ iD \");\r\n         Connection con = null;\r\n         try{ \r\n            \r\n                 String serReqDmccSrNo = \"#form.app_fd_ofc_serreqs_tab.serReqDmccSrNo#\";\r\n                 String id = \"#form.app_fd_ofc_serreqs_tab.id#\";\r\n                System.out.println(\"serReqDmccSrNo ---------\"+serReqDmccSrNo+\" iD \"+id);\r\n                 \r\n\t\tString type = \"#form.app_fd_ofc_serreqs_tab.checklisttype_multi#\";\r\n\r\nSystem.out.println(type);\r\n\r\n}\r\n catch (Exception ex) {\r\n             ex.printStackTrace(); \r\n             }\r\n    \r\n}\r\nupdateinspectionScheduled();\r\n",
                                     "useAjax": ""
                                 }
                             },
