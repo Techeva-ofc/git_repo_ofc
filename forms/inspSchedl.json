@@ -170,8 +170,8 @@
                             "errorMessage": "Invalid number of rows",
                             "formDefId": "",
                             "height": "500",
-                            "id": "field18",
-                            "label": "List Grid",
+                            "id": "selectchecklist",
+                            "label": "Choose Checklist",
                             "listId": "list_ofc_checklist_form",
                             "loadBinder": {
                                 "className": "",
@@ -215,12 +215,17 @@
                             },
                             "submit-label-normal": "",
                             "submit-label-readonly": "",
-                            "uniqueKey": "",
+                            "uniqueKey": "checkpointCode",
                             "validateMaxRow": "",
                             "validateMinRow": "",
                             "validator": {
-                                "className": "",
-                                "properties": {}
+                                "className": "org.joget.plugin.enterprise.MultirowBasicValidator",
+                                "properties": {"validationrules": [{
+                                    "fieldId": "Code",
+                                    "mandatory": "true",
+                                    "message": "Duplicate checklist entry",
+                                    "validationType": ""
+                                }]}
                             },
                             "width": "900"
                         }
