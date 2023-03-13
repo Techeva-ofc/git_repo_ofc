@@ -226,7 +226,7 @@
                         "properties": {
                             "encryption": "",
                             "id": "field19",
-                            "label": "Text Field",
+                            "label": "#requestParam.checklisttype_multi#",
                             "maxlength": "",
                             "placeholder": "",
                             "readonly": "",
