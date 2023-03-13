@@ -357,7 +357,20 @@
                 "hrefColumn": "",
                 "hrefParam": "",
                 "label": "View Inspection Report",
-                "rules": [],
+                "rules": [
+                    {
+                        "field": "c_status",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Inspection Completed"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Inspection To-Be Re-Scheduled"
+                    }
+                ],
                 "target": "_self"
             },
             "type": "text"
