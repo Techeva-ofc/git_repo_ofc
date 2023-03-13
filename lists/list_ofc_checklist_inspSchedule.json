@@ -6,12 +6,20 @@
             "aggregateField": [],
             "customSelectionValue": "",
             "extraCondition": "",
-            "filters": [{
-                "field": "checkListTypeData",
-                "join": "AND",
-                "operator": "=",
-                "value": "#requestParam.checktype#"
-            }],
+            "filters": [
+                {
+                    "field": "checkListTypeData",
+                    "join": "AND",
+                    "operator": "=",
+                    "value": "#requestParam.checktype#"
+                },
+                {
+                    "field": "checkListTypeData",
+                    "join": "AND",
+                    "operator": "=",
+                    "value": "#requestParam.checktype#"
+                }
+            ],
             "formDefId": "ofc_checklist_form",
             "functionColumns": [],
             "groupBy": "",
