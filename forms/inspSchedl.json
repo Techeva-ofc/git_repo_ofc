@@ -159,7 +159,7 @@
                             "height": "500",
                             "id": "field18",
                             "label": "List Grid",
-                            "listId": "list_ofc_checklist_form",
+                            "listId": "list_ofc_checklist_inspSchedule",
                             "loadBinder": {
                                 "className": "",
                                 "properties": {}
