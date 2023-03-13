@@ -154,6 +154,73 @@
                             "value": "Inspection Scheduled",
                             "workflowVariable": ""
                         }
+                    },
+                    {
+                        "className": "org.joget.plugin.enterprise.ListGrid",
+                        "properties": {
+                            "abortRelatedRunningProcesses": "",
+                            "buttonLabel": "",
+                            "deleteFiles": "",
+                            "deleteGridData": "",
+                            "deleteMessage": "Delete row?",
+                            "deleteSubformData": "",
+                            "disabledAdd": "true",
+                            "disabledDelete": "",
+                            "enableSorting": "true",
+                            "errorMessage": "Invalid number of rows",
+                            "formDefId": "",
+                            "height": "500",
+                            "id": "selectcheckpoint",
+                            "label": "Choose Checklist",
+                            "listId": "list_ofc_checklist_form",
+                            "loadBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "options": [
+                                {
+                                    "editable": "no",
+                                    "format": "",
+                                    "formatType": "text",
+                                    "label": "Code",
+                                    "value": "checkpointCode",
+                                    "width": ""
+                                },
+                                {
+                                    "editable": "no",
+                                    "format": "",
+                                    "formatType": "text",
+                                    "label": "Checklist",
+                                    "value": "checkpointName",
+                                    "width": ""
+                                }
+                            ],
+                            "pageSize": "20",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "requestParams": [],
+                            "showRowNumber": "",
+                            "sortField": "sort",
+                            "storeBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "submit-label-normal": "",
+                            "submit-label-readonly": "",
+                            "uniqueKey": "ofc_chklistType_tab.checklistType",
+                            "validateMaxRow": "",
+                            "validateMinRow": "",
+                            "validator": {
+                                "className": "org.joget.plugin.enterprise.MultirowBasicValidator",
+                                "properties": {"validationrules": [{
+                                    "fieldId": "chk",
+                                    "mandatory": "true",
+                                    "message": "",
+                                    "validationType": ""
+                                }]}
+                            },
+                            "width": "900"
+                        }
                     }
                 ],
                 "properties": {"width": "100%"}
