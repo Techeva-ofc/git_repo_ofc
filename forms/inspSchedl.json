@@ -211,26 +211,13 @@
                     {
                         "className": "org.joget.apps.form.lib.HiddenField",
                         "properties": {
-                            "id": "field19",
+                            "id": "typeofchecklist",
                             "useDefaultWhenEmpty": "",
                             "validator": {
                                 "className": "",
                                 "properties": {}
                             },
                             "value": "#variable.type#",
-                            "workflowVariable": ""
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.HiddenField",
-                        "properties": {
-                            "id": "InspectionStatus",
-                            "useDefaultWhenEmpty": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "Inspection Scheduled",
                             "workflowVariable": ""
                         }
                     }
