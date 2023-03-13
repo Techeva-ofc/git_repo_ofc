@@ -193,6 +193,14 @@
                                     "label": "Checklist",
                                     "value": "checkpointName",
                                     "width": ""
+                                },
+                                {
+                                    "editable": "no",
+                                    "format": "",
+                                    "formatType": "text",
+                                    "label": "Type",
+                                    "value": "ofc_chklistType_tab.checklistType",
+                                    "width": ""
                                 }
                             ],
                             "pageSize": "20",
@@ -211,13 +219,8 @@
                             "validateMaxRow": "",
                             "validateMinRow": "",
                             "validator": {
-                                "className": "org.joget.plugin.enterprise.MultirowBasicValidator",
-                                "properties": {"validationrules": [{
-                                    "fieldId": "checkpointCode",
-                                    "mandatory": "true",
-                                    "message": "",
-                                    "validationType": ""
-                                }]}
+                                "className": "",
+                                "properties": {}
                             },
                             "width": "900"
                         }
