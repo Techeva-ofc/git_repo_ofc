@@ -221,7 +221,7 @@
                             "validator": {
                                 "className": "org.joget.plugin.enterprise.MultirowBasicValidator",
                                 "properties": {"validationrules": [{
-                                    "fieldId": "Code",
+                                    "fieldId": "checkpointCode",
                                     "mandatory": "true",
                                     "message": "Duplicate checklist entry",
                                     "validationType": ""
