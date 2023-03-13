@@ -95,7 +95,7 @@
                 {
                     "className": "org.joget.plugin.enterprise.CalculationField",
                     "properties": {
-                        "equation": "(totalfee-waver_amount)",
+                        "equation": "(totalfee-waver)",
                         "hidden": "",
                         "id": "feetopay",
                         "label": "Fee To-Be Paid",
