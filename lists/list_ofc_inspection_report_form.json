@@ -145,7 +145,7 @@
             "headerAlignment": "",
             "hidden": "false",
             "id": "column_8",
-            "label": "Report Status",
+            "label": "Inspection Status",
             "name": "c_inspectionreportStatus",
             "sortable": "false",
             "style": "",
