@@ -207,40 +207,6 @@
                             },
                             "width": "900"
                         }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.HiddenField",
-                        "properties": {
-                            "id": "typeofchecklist",
-                            "useDefaultWhenEmpty": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "#variable.type#",
-                            "workflowVariable": ""
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.TextField",
-                        "properties": {
-                            "encryption": "",
-                            "id": "field19",
-                            "label": "#requestParam.checklisttype_multi#",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "size": "",
-                            "storeNumeric": "",
-                            "style": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "#variable.type#",
-                            "workflowVariable": ""
-                        }
                     }
                 ],
                 "properties": {"width": "100%"}
