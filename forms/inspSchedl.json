@@ -156,6 +156,30 @@
                         }
                     },
                     {
+                        "className": "org.joget.plugin.enterprise.AjaxSubForm",
+                        "properties": {
+                            "ajax": "",
+                            "collapsible": "",
+                            "collapsibleExpanded": "true",
+                            "collapsibleLabelCollapsed": "View Details",
+                            "collapsibleLabelExpanded": "Hide Details",
+                            "formDefId": "checklistTypeFom",
+                            "hideEmpty": "",
+                            "id": "field19",
+                            "label": "",
+                            "noLoad": "",
+                            "noframe": "",
+                            "parentSubFormId": "checklisttype_multi",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "storeBinder": {
+                                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                                "properties": {}
+                            },
+                            "subFormParentId": ""
+                        }
+                    },
+                    {
                         "className": "org.joget.plugin.enterprise.ListGrid",
                         "properties": {
                             "abortRelatedRunningProcesses": "",
