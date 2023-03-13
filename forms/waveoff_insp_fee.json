@@ -23,10 +23,11 @@
                         "style": "us",
                         "useThousandSeparator": "",
                         "validator": {
-                            "className": "org.joget.apps.form.lib.BeanShellValidator",
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
                             "properties": {
-                                "decoration": "",
-                                "script": "<script type=\"text/javascript\">\r\n$(function()\r\n{\r\n  if(\"#variable.inspectionstatus#\"==\"Other Non-Compliance\")\r\n  {\r\n    $(\"#fee_fitout_nonCompliance\").val(\"5250\");\r\n  }\r\n});\r\n<\/script>"
+                                "mandatory": "true",
+                                "message": "Mandatory",
+                                "type": ""
                             }
                         },
                         "value": "",
@@ -47,8 +48,12 @@
                         "storeNumeric": "",
                         "style": "",
                         "validator": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "Mandatory",
+                                "type": ""
+                            }
                         },
                         "value": "",
                         "workflowVariable": ""
@@ -65,7 +70,7 @@
                         "postfix": "",
                         "prefix": "",
                         "readonlyLabel": "true",
-                        "storeNumeric": "",
+                        "storeNumeric": "true",
                         "style": "us",
                         "useThousandSeparator": "",
                         "validator": {
@@ -90,7 +95,7 @@
                 {
                     "className": "org.joget.plugin.enterprise.CalculationField",
                     "properties": {
-                        "equation": "(totalfees-waver_amount)",
+                        "equation": "(totalfee-waver_amount)",
                         "hidden": "",
                         "id": "feetopay",
                         "label": "Fee To-Be Paid",
@@ -98,7 +103,7 @@
                         "postfix": "",
                         "prefix": "",
                         "readonlyLabel": "true",
-                        "storeNumeric": "",
+                        "storeNumeric": "true",
                         "style": "us",
                         "useThousandSeparator": "",
                         "validator": {
@@ -109,7 +114,7 @@
                             {
                                 "fieldId": "fee_fitout_nonCompliance",
                                 "operation": "sum",
-                                "variableName": "totalfees"
+                                "variableName": "totalfee"
                             },
                             {
                                 "fieldId": "waver_amount",
