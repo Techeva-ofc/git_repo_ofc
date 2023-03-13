@@ -164,14 +164,14 @@
                             "deleteGridData": "",
                             "deleteMessage": "Delete row?",
                             "deleteSubformData": "",
-                            "disabledAdd": "true",
+                            "disabledAdd": "",
                             "disabledDelete": "",
-                            "enableSorting": "true",
+                            "enableSorting": "",
                             "errorMessage": "Invalid number of rows",
                             "formDefId": "",
                             "height": "500",
-                            "id": "selectcheckpoint",
-                            "label": "Choose Checklist",
+                            "id": "field18",
+                            "label": "List Grid",
                             "listId": "list_ofc_checklist_form",
                             "loadBinder": {
                                 "className": "",
@@ -190,16 +190,8 @@
                                     "editable": "no",
                                     "format": "",
                                     "formatType": "text",
-                                    "label": "Checklist",
+                                    "label": "Checkpoint",
                                     "value": "checkpointName",
-                                    "width": ""
-                                },
-                                {
-                                    "editable": "no",
-                                    "format": "",
-                                    "formatType": "text",
-                                    "label": "Type",
-                                    "value": "ofc_chklistType_tab.checklistType",
                                     "width": ""
                                 },
                                 {
@@ -223,7 +215,7 @@
                             },
                             "submit-label-normal": "",
                             "submit-label-readonly": "",
-                            "uniqueKey": "checkpointCode",
+                            "uniqueKey": "",
                             "validateMaxRow": "",
                             "validateMinRow": "",
                             "validator": {
