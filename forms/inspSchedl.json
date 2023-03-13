@@ -174,8 +174,11 @@
                             "label": "Choose Checklist",
                             "listId": "list_ofc_checklist_form",
                             "loadBinder": {
-                                "className": "",
-                                "properties": {}
+                                "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                                "properties": {
+                                    "foreignKey": "referencekey",
+                                    "formDefId": "inspectionSchedule_subform"
+                                }
                             },
                             "options": [
                                 {
@@ -210,8 +213,11 @@
                             "showRowNumber": "",
                             "sortField": "sort",
                             "storeBinder": {
-                                "className": "",
-                                "properties": {}
+                                "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                                "properties": {
+                                    "foreignKey": "referencekey",
+                                    "formDefId": "inspectionSchedule_subform"
+                                }
                             },
                             "submit-label-normal": "",
                             "submit-label-readonly": "",
