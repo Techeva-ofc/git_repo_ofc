@@ -161,8 +161,11 @@
                             "label": "List Grid",
                             "listId": "list_ofc_checklist_inspSchedule",
                             "loadBinder": {
-                                "className": "",
-                                "properties": {}
+                                "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                                "properties": {
+                                    "foreignKey": "referencekey",
+                                    "formDefId": "inspectionSchedule_subform"
+                                }
                             },
                             "options": [
                                 {
@@ -180,6 +183,14 @@
                                     "label": "Checkpoint",
                                     "value": "checkpointName",
                                     "width": ""
+                                },
+                                {
+                                    "editable": "no",
+                                    "format": "",
+                                    "formatType": "text",
+                                    "label": "Type",
+                                    "value": "ofc_chklistType_tab.checklistType",
+                                    "width": ""
                                 }
                             ],
                             "pageSize": "20",
@@ -193,8 +204,11 @@
                             "showRowNumber": "",
                             "sortField": "sort",
                             "storeBinder": {
-                                "className": "",
-                                "properties": {}
+                                "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                                "properties": {
+                                    "foreignKey": "referencekey",
+                                    "formDefId": "inspectionSchedule_subform"
+                                }
                             },
                             "submit-label-normal": "",
                             "submit-label-readonly": "",
