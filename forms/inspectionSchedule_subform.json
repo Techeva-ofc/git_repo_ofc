@@ -1,0 +1,23 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [{
+        "className": "org.joget.apps.form.model.Section",
+        "elements": [{
+            "className": "org.joget.apps.form.model.Column",
+            "elements": [],
+            "properties": {"width": "100%"}
+        }],
+        "properties": {
+            "id": "section1",
+            "label": "Section"
+        }
+    }],
+    "properties": {
+        "description": "",
+        "id": "inspectionSchedule_subform",
+        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "name": "Inspection Schedule Subform",
+        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "tableName": "ofc_schdl_sub_tab"
+    }
+}
