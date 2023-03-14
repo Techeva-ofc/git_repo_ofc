@@ -48,30 +48,18 @@
                     }
                 },
                 {
-                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "className": "org.joget.apps.form.lib.TextField",
                     "properties": {
-                        "controlField": "",
+                        "encryption": "",
                         "id": "checkListTypeData",
-                        "label": "CheckList Type",
-                        "multiple": "",
-                        "options": [],
-                        "optionsBinder": {
-                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
-                            "properties": {
-                                "addEmptyOption": "",
-                                "cacheInterval": "",
-                                "emptyLabel": "",
-                                "extraCondition": "",
-                                "formDefId": "checklistTypeFom",
-                                "groupingColumn": "",
-                                "idColumn": "",
-                                "labelColumn": "checklistType",
-                                "useAjax": ""
-                            }
-                        },
+                        "label": "Type",
+                        "maxlength": "",
+                        "placeholder": "",
                         "readonly": "",
                         "readonlyLabel": "",
                         "size": "",
+                        "storeNumeric": "",
+                        "style": "",
                         "validator": {
                             "className": "",
                             "properties": {}
