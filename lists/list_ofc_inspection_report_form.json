@@ -13,6 +13,14 @@
     "checkboxPosition": "left",
     "columns": [
         {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_5",
+            "label": "c_checklisttype_multi",
+            "name": "c_checklisttype_multi",
+            "sortable": "false"
+        },
+        {
             "action": {
                 "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
                 "properties": {
