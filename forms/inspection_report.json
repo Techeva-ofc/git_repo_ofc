@@ -142,7 +142,7 @@
                     "className": "org.joget.plugin.enterprise.AdvancedGrid",
                     "properties": {
                         "deleteMessage": "Delete row?",
-                        "disabledAdd": "",
+                        "disabledAdd": "true",
                         "disabledDelete": "true",
                         "errorMessage": "Invalid number of rows",
                         "formDefId": "inspectionSchedule_subform",
