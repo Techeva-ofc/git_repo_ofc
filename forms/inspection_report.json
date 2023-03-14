@@ -187,6 +187,13 @@
                                 "readonly": "",
                                 "value": "remark",
                                 "width": ""
+                            },
+                            {
+                                "formatType": "",
+                                "label": "Type",
+                                "readonly": "",
+                                "value": "type",
+                                "width": ""
                             }
                         ],
                         "pagingOptions": "10,20,50,100",
