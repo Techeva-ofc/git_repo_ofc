@@ -156,7 +156,7 @@
                                 "autoHandleFiles": "",
                                 "autoHandleWorkflowVariable": "true",
                                 "jdbcDatasource": "default",
-                                "sql": "select SR.ID, concat( s.c_checkpointCode,'-',s.c_checkpointName) FROM app_fd_ofc_schdl_sub_tab s\r\ninner join app_fd_ofc_serreqs_tab sr\r\nwhere sr.c_checklisttype_multi is not null \r\nand s.c_referencekey = sr.id\r\nAND sr.c_serReqDmccSrNo = '#requestParam.serReqDmccSrNo#';"
+                                "sql": "select ID, s.c_checkpointCode,s.c_checkpointName FROM app_fd_ofc_schdl_sub_tab s"
                             }
                         },
                         "options": [
