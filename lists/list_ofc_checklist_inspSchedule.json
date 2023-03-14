@@ -1,11 +1,31 @@
 {
     "actions": [],
     "binder": {
-        "className": "",
-        "name": "",
-        "properties": {}
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {
+            "aggregateField": [],
+            "customSelectionValue": "",
+            "extraCondition": "",
+            "filters": [{
+                "field": "checkListTypeData",
+                "join": "AND",
+                "operator": "=",
+                "value": "#requestParam.checktype#"
+            }],
+            "formDefId": "ofc_checklist_form",
+            "functionColumns": [],
+            "groupBy": "",
+            "joins": [{
+                "fieldId": "",
+                "joinFieldId": "checkListTypeData",
+                "tableName": "ofc_chklistType_tab"
+            }]
+        }
     },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
     "columns": [],
+    "considerFilterWhenGetTotal": "",
     "description": "",
     "filters": [],
     "id": "list_ofc_checklist_inspSchedule",
@@ -13,5 +33,8 @@
     "order": "",
     "orderBy": "",
     "pageSize": "0",
-    "rowActions": []
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
 }
