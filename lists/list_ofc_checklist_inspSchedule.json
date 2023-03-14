@@ -42,20 +42,26 @@
             "sortable": "false"
         },
         {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
             "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
             "hidden": "false",
             "id": "column_2",
-            "label": "ofc_chklistType_tab.checklistType",
+            "label": "Type",
             "name": "ofc_chklistType_tab.checklistType",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_3",
-            "label": "CheckList Type",
-            "name": "checkListTypeData",
-            "sortable": "false"
+            "sortable": "false",
+            "style": "",
+            "width": ""
         }
     ],
     "considerFilterWhenGetTotal": "",
