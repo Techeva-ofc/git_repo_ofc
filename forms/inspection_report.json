@@ -164,21 +164,21 @@
                             {
                                 "formatType": "",
                                 "label": "Code",
-                                "readonly": "",
+                                "readonly": "true",
                                 "value": "checkpointCode",
                                 "width": ""
                             },
                             {
                                 "formatType": "",
                                 "label": "Name",
-                                "readonly": "",
+                                "readonly": "true",
                                 "value": "checkpointName",
                                 "width": ""
                             },
                             {
                                 "formatType": "",
                                 "label": "Type",
-                                "readonly": "",
+                                "readonly": "true",
                                 "value": "checkListTypeData",
                                 "width": ""
                             },
