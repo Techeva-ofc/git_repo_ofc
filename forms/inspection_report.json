@@ -177,16 +177,16 @@
                             },
                             {
                                 "formatType": "",
-                                "label": "Type",
-                                "readonly": "true",
-                                "value": "checkListTypeData",
+                                "label": "Image",
+                                "readonly": "",
+                                "value": "ref_image",
                                 "width": ""
                             },
                             {
                                 "formatType": "",
-                                "label": "Image",
+                                "label": "Remarks(If any)",
                                 "readonly": "",
-                                "value": "ref_image",
+                                "value": "remark",
                                 "width": ""
                             }
                         ],
