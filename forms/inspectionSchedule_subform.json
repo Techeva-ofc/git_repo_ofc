@@ -27,19 +27,6 @@
                     }
                 },
                 {
-                    "className": "org.joget.apps.form.lib.HiddenField",
-                    "properties": {
-                        "id": "checkpointStatus",
-                        "useDefaultWhenEmpty": "",
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "value": "Yes",
-                        "workflowVariable": ""
-                    }
-                },
-                {
                     "className": "org.joget.apps.form.lib.TextField",
                     "properties": {
                         "encryption": "",
