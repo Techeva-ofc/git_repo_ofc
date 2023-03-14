@@ -1155,7 +1155,7 @@
                     "properties": {
                         "actionAfterSaved": "",
                         "actionOnCancel": "",
-                        "cancelButtonLabel": "",
+                        "cancelButtonLabel": "Cancel",
                         "customFooter": "",
                         "customHeader": "",
                         "customId": "inspectionScheduleReportForm",
@@ -1178,7 +1178,7 @@
                         "redirectUrlAfterComplete": "",
                         "redirectUrlOnCancel": "",
                         "showInPopupDialog": "",
-                        "submitButtonLabel": "",
+                        "submitButtonLabel": "Submit",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
