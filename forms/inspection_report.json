@@ -197,7 +197,7 @@
                                     "autoHandleFiles": "",
                                     "autoHandleWorkflowVariable": "true",
                                     "jdbcDatasource": "default",
-                                    "sql": "select SR.ID,s.c_checkpointCode,s.c_checkpointName FROM app_fd_ofc_schdl_sub_tab s\r\ninner join app_fd_ofc_serreqs_tab sr\r\nwhere sr.c_checklisttype_multi is not null \r\nand s.c_referencekey = sr.id\r\nAND sr.c_serReqDmccSrNo = 'DMCC1672';"
+                                    "sql": "select SR.ID,s.c_checkpointCode,s.c_checkpointName,sr.c_checklisttype_multi FROM app_fd_ofc_schdl_sub_tab s\r\ninner join app_fd_ofc_serreqs_tab sr\r\nwhere sr.c_checklisttype_multi is not null \r\nand s.c_referencekey = sr.id\r\nAND sr.c_serReqDmccSrNo = 'DMCC1672';"
                                 }
                             },
                             "maxHeight": "",
