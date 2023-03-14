@@ -1,0 +1,261 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "login_type",
+                        "label": "Login Type",
+                        "multiple": "",
+                        "options": [
+                            {
+                                "grouping": "",
+                                "label": "Email",
+                                "value": "email"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Mobile",
+                                "value": "mobile"
+                            }
+                        ],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "section1",
+                "join": "",
+                "label": "Section",
+                "loadBinder": {
+                    "className": "org.joget.plugin.enterprise.ParentFormBinder",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "org.joget.plugin.enterprise.ParentFormBinder",
+                    "properties": {}
+                },
+                "visibilityControl": "username",
+                "visibilityValue": "Mobile"
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "id": "email",
+                        "label": "Email",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "storeNumeric": "",
+                        "style": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "",
+                                "type": "email"
+                            }
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "email_section",
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "login_type",
+                "visibilityValue": "email"
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "id": "mobile_number",
+                        "label": "Mobile",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "storeNumeric": "",
+                        "style": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "",
+                                "type": "numeric"
+                            }
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "mobile_section",
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "login_type",
+                "visibilityValue": "mobile"
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.PasswordField",
+                    "properties": {
+                        "id": "password",
+                        "label": "Password",
+                        "maxlength": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "",
+                                "type": ""
+                            }
+                        },
+                        "value": "%%%%2q0lKaWCeIogZXUCqm0k0Q==%%%%"
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "password_section",
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        }
+    ],
+    "properties": {
+        "description": "",
+        "id": "sso_ods_login",
+        "loadBinder": {
+            "className": "",
+            "properties": {}
+        },
+        "name": "SSO ODS",
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "org.joget.apps.app.lib.BeanShellTool",
+            "properties": {"script": "import java.io.OutputStreamWriter;\nimport java.io.BufferedReader;\nimport java.io.DataOutputStream;\nimport java.io.OutputStream;\nimport java.io.InputStreamReader;\nimport java.net.HttpURLConnection;\nimport java.net.URL;\nimport java.lang.System;\nimport java.lang.String;\n\n\npublic callapi(){\n    \n    \n\n\t\t// url is missing?\n        //String url = \"https://selfsolve.apple.com/wcResults.do\";\n\ttry {\n        String url = \"https://ondemanduat.concordiadubai.com:81/api/v1/ODS/Login\";\n\n        System.out.println(\"url ::\"+url);\n        HttpURLConnection httpClient = (HttpURLConnection) new URL(url).openConnection();\n         \n        //add reuqest header\n        httpClient.setRequestMethod(\"POST\");\n       // httpClient.setRequestProperty(\"User-Agent\", \"Mozilla/5.0\");\n        //httpClient.setRequestProperty(\"Accept-Language\", \"en-US,en;q=0.5\");\n\n        String requestBody = \"{\\\"email_id\\\":\\\"rapidtestid101@gmail.com\\\",\\\"password\\\":\\\"Qwerty@123\\\"}\";\n        \n\n        // Send post request\n        httpClient.setDoOutput(true);\n            OutputStream os = httpClient.getOutputStream();\n            byte[] input = requestBody.getBytes(\"utf-8\");\n        os.write(input, 0, input.length);\t\t\t\n        \n        // DataOutputStream wr = new DataOutputStream(httpClient.getOutputStream());\n        //     wr.writeBytes(urlParameters);\n        //     wr.flush();\n        \n\n        int responseCode = httpClient.getResponseCode();\n        System.out.println(\"\\nSending 'POST' request to URL : \" + url);\n        System.out.println(\"Post parameters : \" + urlParameters);\n        System.out.println(\"Response Code : \" + responseCode);\n\n        BufferedReader in = new BufferedReader(\n                new InputStreamReader(httpClient.getInputStream()));\n\n            String line;\n            StringBuilder response = new StringBuilder();\n\n            while ((line = in.readLine()) != null) {\n                response.append(line);\n            }\n\n            //print result\n            System.out.println(response.toString());\n\n\t}catch(Exception e) {\n\t\te.printStackTrace();\n\t}\n}\n    \n    callapi();"}
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "",
+            "properties": {}
+        },
+        "tableName": "ofc_ods_login"
+    }
+}
