@@ -1,0 +1,682 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.HiddenField",
+                            "properties": {
+                                "id": "id",
+                                "useDefaultWhenEmpty": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "serReqUserName",
+                                "label": "User Name",
+                                "maxlength": "30",
+                                "placeholder": "",
+                                "readonly": "",
+                                "readonlyLabel": "",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.Radio",
+                            "properties": {
+                                "controlField": "",
+                                "id": "primeCustomer",
+                                "label": "Prime Customer",
+                                "options": [
+                                    {
+                                        "grouping": "",
+                                        "label": "Yes",
+                                        "value": "yes"
+                                    },
+                                    {
+                                        "grouping": "",
+                                        "label": "No",
+                                        "value": "no"
+                                    }
+                                ],
+                                "optionsBinder": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "readonly": "",
+                                "readonlyLabel": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "yes",
+                                "workflowVariable": ""
+                            }
+                        }
+                    ],
+                    "properties": {"width": "49%"}
+                },
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "serReqDmccSrNo",
+                                "label": "DMCC SR No.",
+                                "maxlength": "",
+                                "placeholder": "",
+                                "readonly": "",
+                                "readonlyLabel": "",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.SelectBox",
+                            "properties": {
+                                "controlField": "",
+                                "id": "companyName",
+                                "label": "Company Name",
+                                "multiple": "",
+                                "options": [],
+                                "optionsBinder": {
+                                    "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                                    "properties": {
+                                        "addEmptyOption": "true",
+                                        "cacheInterval": "",
+                                        "emptyLabel": "Select",
+                                        "extraCondition": "",
+                                        "formDefId": "comanyMaster",
+                                        "groupingColumn": "",
+                                        "idColumn": "",
+                                        "labelColumn": "companyName",
+                                        "useAjax": "true"
+                                    }
+                                },
+                                "readonly": "",
+                                "readonlyLabel": "",
+                                "size": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "",
+                                "workflowVariable": ""
+                            }
+                        }
+                    ],
+                    "properties": {"width": "49%"}
+                }
+            ],
+            "properties": {
+                "comment": "",
+                "id": "serReqSumr",
+                "join": "",
+                "label": "Service Request Form",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "readonly": "true",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.SelectBox",
+                            "properties": {
+                                "controlField": "",
+                                "id": "ofc_category_name",
+                                "label": "Service Categoy",
+                                "multiple": "",
+                                "options": [],
+                                "optionsBinder": {
+                                    "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                                    "properties": {
+                                        "addEmptyOption": "true",
+                                        "cacheInterval": "",
+                                        "emptyLabel": "Select",
+                                        "extraCondition": "",
+                                        "formDefId": "ofc_category1",
+                                        "groupingColumn": "",
+                                        "idColumn": "",
+                                        "labelColumn": "ofc_category_name",
+                                        "useAjax": "true"
+                                    }
+                                },
+                                "readonly": "",
+                                "readonlyLabel": "",
+                                "size": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.TextArea",
+                            "properties": {
+                                "cols": "20",
+                                "id": "serReqDesc",
+                                "label": "Description",
+                                "placeholder": "",
+                                "readonly": "",
+                                "readonlyLabel": "",
+                                "rows": "5",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.FileUpload",
+                            "properties": {
+                                "attachment": "",
+                                "fileType": "",
+                                "fileTypeMsg": "Invalid file type",
+                                "id": "serReqCustomerDoc",
+                                "label": "Document upload by Customer",
+                                "maxSize": "",
+                                "maxSizeMsg": "File size limit exceeded",
+                                "multiple": "true",
+                                "padding": "",
+                                "permissionPlugin": {
+                                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                                    "properties": {
+                                        "allowedGroupIds": "G-009;G-010",
+                                        "orgId": ""
+                                    }
+                                },
+                                "permissionType": "custom",
+                                "readonly": "",
+                                "removeFile": "",
+                                "resizeHeight": "",
+                                "resizeMethod": "",
+                                "resizeQuality": "0.8",
+                                "resizeWidth": "",
+                                "size": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                }
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.FileUpload",
+                            "properties": {
+                                "attachment": "",
+                                "fileType": "",
+                                "fileTypeMsg": "Invalid file type",
+                                "id": "serReqFopDrawUpload",
+                                "label": "Approved FOP Drawing",
+                                "maxSize": "",
+                                "maxSizeMsg": "File size limit exceeded",
+                                "multiple": "true",
+                                "padding": "",
+                                "permissionPlugin": {
+                                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                                    "properties": {
+                                        "allowedGroupIds": "G-003;G-001;G-002",
+                                        "orgId": ""
+                                    }
+                                },
+                                "permissionType": "custom",
+                                "readonly": "",
+                                "removeFile": "",
+                                "resizeHeight": "",
+                                "resizeMethod": "",
+                                "resizeQuality": "0.8",
+                                "resizeWidth": "",
+                                "size": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                }
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.FileUpload",
+                            "properties": {
+                                "attachment": "",
+                                "fileType": "",
+                                "fileTypeMsg": "Invalid file type",
+                                "id": "serReqCorncordiarDoc",
+                                "label": "Document upload by Concordia",
+                                "maxSize": "",
+                                "maxSizeMsg": "File size limit exceeded",
+                                "multiple": "true",
+                                "padding": "",
+                                "permissionPlugin": {
+                                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                                    "properties": {
+                                        "allowedGroupIds": "G-003;G-001;G-002",
+                                        "orgId": ""
+                                    }
+                                },
+                                "permissionType": "custom",
+                                "readonly": "",
+                                "removeFile": "",
+                                "resizeHeight": "",
+                                "resizeMethod": "",
+                                "resizeQuality": "0.8",
+                                "resizeWidth": "",
+                                "size": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                }
+                            }
+                        }
+                    ],
+                    "properties": {
+                        "customWidth": "",
+                        "horizontal": "",
+                        "label": "",
+                        "width": "49%"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [{
+                        "className": "org.joget.plugin.enterprise.AjaxSubForm",
+                        "properties": {
+                            "ajax": "true",
+                            "collapsible": "",
+                            "collapsibleExpanded": "true",
+                            "collapsibleLabelCollapsed": "View Details",
+                            "collapsibleLabelExpanded": "Hide Details",
+                            "formDefId": "company1",
+                            "hideEmpty": "",
+                            "id": "companyDetails",
+                            "label": "",
+                            "noLoad": "",
+                            "noframe": "true",
+                            "parentSubFormId": "companyName",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "storeBinder": {
+                                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                                "properties": {}
+                            },
+                            "subFormParentId": ""
+                        }
+                    }],
+                    "properties": {"width": "49%"}
+                }
+            ],
+            "properties": {
+                "comment": "",
+                "id": "serReqSumr1",
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "readonly": "true",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "primeCustomer",
+                "visibilityValue": "yes"
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.SelectBox",
+                            "properties": {
+                                "controlField": "",
+                                "id": "ofc_category_name",
+                                "label": "Service Categoy",
+                                "multiple": "",
+                                "options": [],
+                                "optionsBinder": {
+                                    "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                                    "properties": {
+                                        "addEmptyOption": "true",
+                                        "cacheInterval": "",
+                                        "emptyLabel": "Select",
+                                        "extraCondition": "",
+                                        "formDefId": "ofc_category1",
+                                        "groupingColumn": "",
+                                        "idColumn": "",
+                                        "labelColumn": "ofc_category_name",
+                                        "useAjax": "true"
+                                    }
+                                },
+                                "readonly": "",
+                                "readonlyLabel": "",
+                                "size": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.plugin.enterprise.AjaxSubForm",
+                            "properties": {
+                                "ajax": "true",
+                                "collapsible": "",
+                                "collapsibleExpanded": "true",
+                                "collapsibleLabelCollapsed": "View Details",
+                                "collapsibleLabelExpanded": "Hide Details",
+                                "formDefId": "ofc_category1",
+                                "hideEmpty": "",
+                                "id": "serReqOfcCat",
+                                "label": "",
+                                "noLoad": "",
+                                "noframe": "true",
+                                "parentSubFormId": "ofc_category_name",
+                                "permissionHidden": "",
+                                "readonly": "",
+                                "readonlyLabel": "",
+                                "storeBinder": {
+                                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                                    "properties": {}
+                                },
+                                "subFormParentId": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.FileUpload",
+                            "properties": {
+                                "attachment": "",
+                                "fileType": "",
+                                "fileTypeMsg": "Invalid file type",
+                                "id": "serReqCustomerDoc",
+                                "label": "Document upload by Customer",
+                                "maxSize": "",
+                                "maxSizeMsg": "File size limit exceeded",
+                                "multiple": "true",
+                                "padding": "",
+                                "permissionType": "",
+                                "readonly": "",
+                                "removeFile": "",
+                                "resizeHeight": "",
+                                "resizeMethod": "",
+                                "resizeQuality": "0.8",
+                                "resizeWidth": "",
+                                "size": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                }
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.FileUpload",
+                            "properties": {
+                                "attachment": "",
+                                "fileType": "",
+                                "fileTypeMsg": "Invalid file type",
+                                "id": "serReqFopDrawUpload",
+                                "label": "Approved FOP Drawing",
+                                "maxSize": "",
+                                "maxSizeMsg": "File size limit exceeded",
+                                "multiple": "true",
+                                "padding": "",
+                                "permissionType": "",
+                                "readonly": "",
+                                "removeFile": "",
+                                "resizeHeight": "",
+                                "resizeMethod": "",
+                                "resizeQuality": "0.8",
+                                "resizeWidth": "",
+                                "size": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                }
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.FileUpload",
+                            "properties": {
+                                "attachment": "",
+                                "fileType": "",
+                                "fileTypeMsg": "Invalid file type",
+                                "id": "serReqCorncordiarDoc",
+                                "label": "Document upload by Concordia",
+                                "maxSize": "",
+                                "maxSizeMsg": "File size limit exceeded",
+                                "multiple": "true",
+                                "padding": "",
+                                "permissionType": "",
+                                "readonly": "",
+                                "removeFile": "",
+                                "resizeHeight": "",
+                                "resizeMethod": "",
+                                "resizeQuality": "0.8",
+                                "resizeWidth": "",
+                                "size": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "New"
+                            }
+                        }
+                    ],
+                    "properties": {
+                        "customWidth": "",
+                        "horizontal": "",
+                        "label": "",
+                        "width": "49%"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [{
+                        "className": "org.joget.plugin.enterprise.AjaxSubForm",
+                        "properties": {
+                            "ajax": "true",
+                            "collapsible": "",
+                            "collapsibleExpanded": "true",
+                            "collapsibleLabelCollapsed": "View Details",
+                            "collapsibleLabelExpanded": "Hide Details",
+                            "formDefId": "company1",
+                            "hideEmpty": "",
+                            "id": "companyDetails",
+                            "label": "",
+                            "noLoad": "",
+                            "noframe": "true",
+                            "parentSubFormId": "companyName",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "storeBinder": {
+                                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                                "properties": {}
+                            },
+                            "subFormParentId": ""
+                        }
+                    }],
+                    "properties": {"width": "49%"}
+                }
+            ],
+            "properties": {
+                "comment": "",
+                "id": "serReqSumr2",
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "readonly": "true",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "primeCustomer",
+                "visibilityValue": "no"
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.plugin.enterprise.AjaxSubForm",
+                    "properties": {
+                        "ajax": "true",
+                        "collapsible": "",
+                        "collapsibleExpanded": "true",
+                        "collapsibleLabelCollapsed": "View Details",
+                        "collapsibleLabelExpanded": "Hide Details",
+                        "formDefId": "serReqDocMissing",
+                        "hideEmpty": "",
+                        "id": "missingdocuments",
+                        "label": "",
+                        "noLoad": "",
+                        "noframe": "true",
+                        "parentSubFormId": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "storeBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "subFormParentId": ""
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "form_missing",
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "readonly": "true",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        }
+    ],
+    "properties": {
+        "description": "",
+        "id": "serviceRequestView",
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "name": "Service Request View",
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.BeanShellFormBinder",
+            "properties": {
+                "autoHandleFiles": "",
+                "autoHandleWorkflowVariable": "true",
+                "cacheInterval": "",
+                "script": "import org.apache.http.HttpResponse;\r\nimport org.apache.http.client.HttpClient;\r\nimport org.apache.http.client.methods.HttpPost;\r\nimport org.apache.http.entity.StringEntity;\r\nimport org.apache.http.impl.client.HttpClients;\r\nimport org.apache.http.util.EntityUtils;\r\nimport java.lang.String;\r\nimport org.apache.http.client.config.CookieSpecs;\r\nimport org.apache.http.client.config.RequestConfig;\r\nimport org.json.JSONObject;\r\nimport java.sql.*;\r\nimport java.util.*;\r\nimport java.sql.Connection;\r\nimport java.sql.PreparedStatement;\r\n\r\n\t// Here we are saving the order details in db\r\n\tpublic  setOrderDetailsInDB(String orderReference, String merchantOrderReference, String access_token) {\r\n\r\n\t\ttry {\r\n\r\n\t\t\tClass.forName(\"com.mysql.jdbc.Driver\").newInstance();\r\n\t\t\tConnection con = DriverManager.getConnection(\"jdbc:mysql://localhost:3307/jwdb?characterEncoding=UTF-8\",\r\n\t\t\t\t\t\"root\", \"\");\r\n\t\t\tif (!con.isClosed()) {\r\n\r\n\t\t\t\tString id = \"#form.ofc_serReqs_tab.id#\";\r\n\t\t\t\t// create the java mysql update PreparedStatement\r\n\t\t\t\tString query = \"update app_fd_ofc_serreqs_tab set c_merchantOrderReference = ?, c_orderReference = ?, c_bearer_access_token = ?  where id = ?\";\r\n\r\n\t\t\t\tPreparedStatement preparedStmt = con.prepareStatement(query);\r\n\t\t\t\tpreparedStmt.setString(1, merchantOrderReference);\r\n\t\t\t\tpreparedStmt.setString(2, orderReference);\r\n\t\t\t\tpreparedStmt.setString(3, \"Bearer \" + access_token);\r\n\t\t\t\tpreparedStmt.setString(4, id);\r\n\r\n\t\t\t\t// execute the java PreparedStatement\r\n\t\t\t\tpreparedStmt.executeUpdate();\r\n\r\n\t\t\t\tcon.close();\r\n\t\t\t} else {\r\n\t\t\t\t//////System.out.println(\"Connection Problem\");\r\n\t\t\t}\r\n\t\t} catch (Exception ex) {\r\n\r\n\t\t\tex.printStackTrace();\r\n\t\t}\r\n\r\n\t}\r\npublic createOrder(String accessToken) {\r\n\r\n\t\t// getting amount for payment request form Ajax sub form in process workflow\r\n\t\t// (Service Request View)\r\n\t\tString amountStr = \"#form.ofc_ofc_category_tab.serReqTotAmt[{form.ofc_serReqs_tab.ofc_category_name}]#\";\r\n\t\tString companyNameUsername = \"#form.ofc_company_tab.companyName[{form.ofc_serReqs_tab.companyName}]#\";\r\n\t\tString companyNamOrEmail = \"#form.ofc_serReqs_tab.serReqUserName#\";\r\n\r\n\t\tString finalAmount = \"\";\r\n\t\tint totalAmount = 0;\r\n\r\n\t\t// here we are removing decimal points because create order payload only support\r\n\t\t// non-decimal amount\r\n\t\tif (!amountStr.equals(\"0.00\")) {\r\n\t\t\tString amountInDecimalString = amountStr;\r\n\t\t\tString amountWithoutDecimal = amountInDecimalString.replace(\".00\", \"\");\r\n\t\t\ttotalAmount = Integer.parseInt(amountWithoutDecimal);\r\n\t\t\ttotalAmount = totalAmount * 100;\r\n\t\t\tfinalAmount = Integer.toString(totalAmount);\r\n\r\n\t\t} else {\r\n\r\n\t\t\tfinalAmount = amountStr;\r\n\t\t}\r\n\r\n\t\t// randomly generates a UUID for merchantOrderReference\r\n\t\tUUID uuid = UUID.randomUUID();\r\n\t\tString merchantOrderReference = uuid.toString();\r\n\t\tint statusCode = 0;\r\n\t\t// Define the URL and JSON payload\r\n\t\tString url = \"https://api-gateway.sandbox.ngenius-payments.com/transactions/outlets/a2c3b529-68c7-44eb-8a2a-3aeb12d83ae6/orders\";// Create\r\n\t\tString cancelUrl = \"http://127.0.0.1:8080/jw/web/userview/ofc_app/v/_/serReqForm_crud1\";\r\n\t\tString redirectUrl = \"http://127.0.0.1:8080/jw/web/userview/ofc_app/v/_/paymentRedirectPage?url=%2Fjw%2Fweb%2Fuserview%2Fofc_app%2Fv%2F_%2FpaymentRedirectPage\";\r\n\t\t// Create order Request\r\n\t\tString jsonPayload = \"{\\\"action\\\":\\\"PURCHASE\\\",\\\"amount\\\":{\\\"currencyCode\\\":\\\"AED\\\",\\\"value\\\":\" + finalAmount\r\n\t\t\t\t+ \"},\\\"merchantOrderReference\\\":\\\"\" + merchantOrderReference\r\n\t\t\t\t+ \"\\\",\\\"merchantAttributes\\\":{\\\"redirectUrl\\\":\\\"\" + redirectUrl\r\n\t\t\t\t+ \"\\\",\\\"skipConfirmationPage\\\":\\\"true\\\",\\\"cancelText\\\":\\\"GoBacktoApplication\\\",\\\"cancelUrl\\\":\\\"\"\r\n\t\t\t\t+ cancelUrl + \"\\\"},\\\"emailAddress\\\":\\\"\" + companyNamOrEmail + \"\\\",\\\"billingAddress\\\":{\\\"firstName\\\":\\\"\"\r\n\t\t\t\t+ companyNameUsername\r\n\t\t\t\t+ \"\\\",\\\"lastName\\\":\\\"Kumar\\\",\\\"address1\\\":\\\"Dubai\\\",\\\"city\\\":\\\"Dubai\\\",\\\"countryCode\\\":\\\"UAE\\\"}}\";\r\n\r\n\t\ttry {\r\n\t\t\t// Create the HttpClient and HttpPost objects\r\n\t\t\tHttpClient httpClient = HttpClients.custom()\r\n\t\t\t\t\t.setDefaultRequestConfig(RequestConfig.custom().setCookieSpec(CookieSpecs.STANDARD).build())\r\n\t\t\t\t\t.build();\r\n\t\t\tHttpPost httpPost = new HttpPost(url);\r\n\r\n\t\t\t// Set the request headers\r\n\t\t\thttpPost.setHeader(\"Authorization\", \"Bearer \" + accessToken);\r\n\t\t\thttpPost.setHeader(\"Content-Type\", \"application/vnd.ni-payment.v2+json\");\r\n\t\t\thttpPost.setHeader(\"Accept\", \"application/vnd.ni-payment.v2+json\");\r\n\r\n\t\t\t// Set the request body\r\n\t\t\tStringEntity requestEntity = new StringEntity(jsonPayload);\r\n\t\t\thttpPost.setEntity(requestEntity);\r\n\r\n\t\t\t// Send the request and receive the response\r\n\t\t\tHttpResponse response = httpClient.execute(httpPost);\r\n\r\n\t\t\t// Set the request body\r\n\t\t\tstatusCode = response.getStatusLine().getStatusCode();\r\n\t\t\tString responseBody = EntityUtils.toString(response.getEntity());\r\n\r\n\t\t\t// Print the response status code and body\r\n\t\t\t//////System.out.println(\"Response Status Code: \" + statusCode);\r\n\t\t\t//////System.out.println(\"Response Body: \" + responseBody);\r\n\r\n\t\t\t// getting the order reference\r\n\t\t\tJSONObject jsonData = new JSONObject(responseBody);\r\n\t\t\tString orderReference = (String) jsonData.get(\"reference\");\r\n\r\n\t\t\t// calling order details save method\r\n\t\t\tsetOrderDetailsInDB(orderReference, merchantOrderReference, accessToken);\r\n\r\n\t\t\t// getting payment link from response\r\n\t\t\tJSONObject links = jsonData.getJSONObject(\"_links\");\r\n\t\t\tJSONObject payment = links.getJSONObject(\"payment\");\r\n\t\t\tString paymentLink = payment.getString(\"href\");\r\n\r\n\t\t\t//////System.out.println(\"paymentLink \" + paymentLink);\r\n\r\n\t\t\t// Execute payment link\r\n\t\t\tjava.awt.Desktop.getDesktop().browse(java.net.URI.create(paymentLink));\r\n\r\n\t\t} catch (Exception e) {\r\n\t\t\tSystem.out.println(\"Response Status Code: \" + statusCode);\r\n\t\t\t\r\n\t\t\ttry {\r\n\t\t\t    String redirectUrl = \"http://localhost:8080/jw/web/userview/ofc_app/v/_/serReqForm_crud1\";\r\n\t\t\t\t\t// Redirect page to service request summary\r\n\t\t\t\t\tjava.awt.Desktop.getDesktop().browse(java.net.URI.create(redirectUrl));\r\n\t\t\t\t} catch (IOException e) {\r\n\t\t\t\t\t// TODO Auto-generated catch block\r\n\t\t\t\t\te.printStackTrace();\r\n\t\t\t\t}\r\n\t\t\t\r\n\t\t\te.printStackTrace();\r\n\t\t}\r\n\r\n\t}\r\n\r\n\r\n\r\n// Here we are getting the access token\r\n\tpublic  getAccessToken() {\r\n\r\n\t\tint statusCode = 0;\r\n\t\ttry {\r\n\r\n\t\t\tString url = \"https://api-gateway.sandbox.ngenius-payments.com/identity/auth/access-token\";\r\n\t\t\tString authorization = \"Authorization\";\r\n\t\t\tString authorizationValue = \"Basic OGQwZWZiNTQtMmQ0YS00YmNlLTg5ODMtMTczMGEyZmRkOGU3OjQzNzNhMTFmLTMxYTgtNGE5NC05OWU5LWI4Y2FhYTI0MTJjZQ==\";\r\n\t\t\tString contentType = \"Content-Type\";\r\n\t\t\tString contentTypeValue = \"application/vnd.ni-identity.v1+json\";\r\n\r\n\t\t\t// Create the HttpClient and HttpPost objects and code for remove cookie warring\r\n\t\t\tHttpClient httpClient = HttpClients.custom()\r\n\t\t\t\t\t.setDefaultRequestConfig(RequestConfig.custom().setCookieSpec(CookieSpecs.STANDARD).build())\r\n\t\t\t\t\t.build();\r\n\t\t\tHttpPost httpPost = new HttpPost(url);\r\n\r\n\t\t\t// Set the request headers\r\n\t\t\thttpPost.setHeader(authorization, authorizationValue);\r\n\t\t\thttpPost.setHeader(contentType, contentTypeValue);\r\n\r\n\t\t\t// Send the request and receive the response\r\n\t\t\tHttpResponse response = httpClient.execute(httpPost);\r\n\r\n\t\t\t// Get the response status code and body\r\n\t\t\tstatusCode = response.getStatusLine().getStatusCode();\r\n\t\t\tString responseBody = EntityUtils.toString(response.getEntity());\r\n\r\n\t\t\t// getting the order access token\r\n\t\t\tJSONObject jsonData = new JSONObject(responseBody);\r\n\t\t\tString access_token = (String) jsonData.get(\"access_token\");\r\n           \r\n           // Print the response status code and body\r\n\t\t\t//////System.out.println(\"getAccessToken() Response Status Code: \" + statusCode);\r\n\t\t\t//////System.out.println(\"getAccessToken() Response Body: \" + responseBody);\r\n\t\t\t//////System.out.println(\"getAccessToken() access_token Body: \" + access_token);\r\n\t\t\r\n\t\t\t// method call for create order\r\n\t\t\tcreateOrder(access_token);\r\n\r\n\t\t\t\r\n\r\n\t\t} catch (Exception ex) {\r\n\r\n\t\t\tSystem.out.println(\"getAccessToken() Status code : \" + statusCode);\r\n\t\t\tex.printStackTrace();\r\n\r\n\t\t}\r\n\r\n\t}\r\n\t//method calling\r\n\tgetAccessToken() ;",
+                "useAjax": ""
+            }
+        },
+        "tableName": "ofc_serReqs_tab"
+    }
+}

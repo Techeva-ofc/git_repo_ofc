@@ -1,0 +1,52 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [{
+        "className": "org.joget.apps.form.model.Section",
+        "elements": [{
+            "className": "org.joget.apps.form.model.Column",
+            "elements": [{
+                "className": "org.joget.apps.form.lib.CustomHTML",
+                "properties": {
+                    "autoPopulate": "",
+                    "id": "message",
+                    "label": "",
+                    "value": "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n<style>\r\n.alert {\r\n  padding: 20px;\r\n  background-color: #f44336;\r\n  color: white;\r\n  opacity: 1;\r\n  transition: opacity 0.6s;\r\n  margin-bottom: 15px;\r\n}\r\n\r\n.alert.success {background-color: #04AA6D;}\r\n.alert.info {background-color: #2196F3;}\r\n.alert.warning {background-color: #ff9800;}\r\n\r\n.closebtn {\r\n  margin-left: 15px;\r\n  color: white;\r\n  font-weight: bold;\r\n  float: right;\r\n  font-size: 35px;\r\n  line-height: 22px;\r\n  cursor: pointer;\r\n  transition: 0.3s;\r\n}\r\n\r\n.closebtn:hover {\r\n  color: black;\r\n}\r\n<\/style>\r\n<\/head>\r\n<body>\r\n\r\n<!--<h2>Alert Messages<\/h2>-->\r\n<!--<p>Click on the \"x\" symbol to close the alert message.<\/p>-->\r\n<!--<div class=\"alert\">\r\n  <span class=\"closebtn\">&times;<\/span>  \r\n  <strong>Danger!<\/strong> Indicates a dangerous or potentially negative action.\r\n<\/div>-->\r\n\r\n<div class=\"alert info\">\r\n  <span class=\"closebtn\">&times;<\/span>  \r\n  <strong><h1>info!<\/h1><\/strong><h1>Please wait, Payment is not received in the account<\/h1>.\r\n<\/div>\r\n\r\n<!--<div class=\"alert info\">\r\n  <span class=\"closebtn\">&times;<\/span>  \r\n  <strong>Info!<\/strong> Indicates a neutral informative change or action.\r\n<\/div>-->\r\n\r\n<!--<div class=\"alert warning\">\r\n  <span class=\"closebtn\">&times;<\/span>  \r\n  <strong>Warning!<\/strong> Indicates a warning that might need attention.\r\n<\/div>-->\r\n\r\n<script>\r\nvar close = document.getElementsByClassName(\"closebtn\");\r\nvar i;\r\n\r\nfor (i = 0; i < close.length; i++) {\r\n  close[i].onclick = function(){\r\n    var div = this.parentElement;\r\n    div.style.opacity = \"0\";\r\n    setTimeout(function(){ div.style.display = \"none\"; }, 600);\r\n  }\r\n}\r\n<\/script>\r\n\r\n<\/body>\r\n<\/html>"
+                }
+            }],
+            "properties": {"width": "100%"}
+        }],
+        "properties": {
+            "comment": "",
+            "id": "paymentNotSettledForm",
+            "join": "",
+            "label": "Payment Not Settled Form",
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "permissionReadonly": "",
+            "readonly": "",
+            "readonlyLabel": "",
+            "regex": "",
+            "reverse": "",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "visibilityControl": "",
+            "visibilityValue": ""
+        }
+    }],
+    "properties": {
+        "description": "",
+        "id": "paymentNotSettledForm",
+        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "name": "Payment Not Settled Form",
+        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "tableName": "paymenNotRefund_tab"
+    }
+}
