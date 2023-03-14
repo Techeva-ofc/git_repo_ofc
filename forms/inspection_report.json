@@ -192,7 +192,7 @@
                         ],
                         "pagingOptions": "10,20,50,100",
                         "permissionHidden": "",
-                        "readonly": "true",
+                        "readonly": "",
                         "recordPerPage": "20",
                         "search": "",
                         "showRowNumber": "true",
