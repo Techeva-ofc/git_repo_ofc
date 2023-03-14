@@ -232,6 +232,16 @@
                                     "regexValidator": "",
                                     "value": "checkListTypeData",
                                     "width": ""
+                                },
+                                {
+                                    "format": "",
+                                    "formatType": "",
+                                    "formula": "",
+                                    "label": "",
+                                    "readonly": "",
+                                    "regexValidator": "",
+                                    "value": "type",
+                                    "width": ""
                                 }
                             ],
                             "readonly": "",
