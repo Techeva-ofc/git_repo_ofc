@@ -67,14 +67,6 @@
             "label": "c_status",
             "name": "c_status",
             "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_7",
-            "label": "c_inspSchedlDate",
-            "name": "c_inspSchedlDate",
-            "sortable": "false"
         }
     ],
     "considerFilterWhenGetTotal": "",
@@ -137,12 +129,7 @@
                 "hrefColumn": "C_serReqDmccSrNo",
                 "hrefParam": "serReqDmccSrNo",
                 "label": "View Report",
-                "rules": [{
-                    "field": "c_status",
-                    "join": "AND",
-                    "operator": "=",
-                    "value": "Inspection Completed"
-                }],
+                "rules": [],
                 "target": "popup"
             },
             "type": "text"
