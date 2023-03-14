@@ -202,7 +202,7 @@
                             "minSpareRows": "1",
                             "options": [
                                 {
-                                    "format": "inspectionSchedule_subform",
+                                    "format": "",
                                     "formatType": "",
                                     "formula": "",
                                     "label": "Code",
@@ -222,7 +222,7 @@
                                     "width": ""
                                 },
                                 {
-                                    "format": "",
+                                    "format": "inspectionSchedule_subform",
                                     "formatType": "",
                                     "formula": "",
                                     "label": "Type",
