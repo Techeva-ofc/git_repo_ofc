@@ -197,18 +197,18 @@
                                     "autoHandleFiles": "",
                                     "autoHandleWorkflowVariable": "true",
                                     "jdbcDatasource": "default",
-                                    "sql": "select SR.ID,s.c_checkpointCode,s.c_checkpointName,chk.c_checklistType FROM app_fd_ofc_schdl_sub_tab s\r\ninner join app_fd_ofc_serreqs_tab sr\r\ninner join app_fd_ofc_chklisttype_tab chk\r\nwhere sr.c_checklisttype_multi is not null \r\nand s.c_referencekey = sr.id\r\nand sr.c_checklisttype_multi = chk.id\r\nAND sr.c_serReqDmccSrNo = 'DMCC1672';"
+                                    "sql": "select SR.ID,s.c_checkpointCode,s.c_checkpointName,chk.c_checklistType FROM app_fd_ofc_schdl_sub_tab s\r\ninner join app_fd_ofc_serreqs_tab sr\r\nON s.c_referencekey = sr.id\r\ninner join app_fd_ofc_chklisttype_tab chk\r\nON sr.c_checklisttype_multi = chk.id\r\nwhere sr.c_checklisttype_multi is not null \r\nAND sr.c_serReqDmccSrNo = 'DMCC1672';"
                                 }
                             },
                             "maxHeight": "",
-                            "minSpareRows": "1",
+                            "minSpareRows": "0",
                             "options": [
                                 {
                                     "format": "",
                                     "formatType": "",
                                     "formula": "",
                                     "label": "Code",
-                                    "readonly": "",
+                                    "readonly": "true",
                                     "regexValidator": "",
                                     "value": "checkpointCode",
                                     "width": ""
@@ -218,7 +218,7 @@
                                     "formatType": "",
                                     "formula": "",
                                     "label": "Name",
-                                    "readonly": "",
+                                    "readonly": "true",
                                     "regexValidator": "",
                                     "value": "checkpointName",
                                     "width": ""
@@ -228,7 +228,7 @@
                                     "formatType": "",
                                     "formula": "",
                                     "label": "Type",
-                                    "readonly": "",
+                                    "readonly": "true",
                                     "regexValidator": "",
                                     "value": "checkListTypeData",
                                     "width": ""
