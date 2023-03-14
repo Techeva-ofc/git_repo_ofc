@@ -145,7 +145,7 @@
                         "disabledAdd": "",
                         "disabledDelete": "",
                         "errorMessage": "Invalid number of rows",
-                        "formDefId": "inspSchedl",
+                        "formDefId": "inspectionSchedule_subform",
                         "hint": "Click to edit. OK to save.",
                         "id": "inspCheckpoints",
                         "keyToSave": "9",
@@ -159,29 +159,7 @@
                                 "sql": "select ID, s.c_checkpointCode,s.c_checkpointName FROM app_fd_ofc_schdl_sub_tab s"
                             }
                         },
-                        "options": [
-                            {
-                                "formatType": "",
-                                "label": "Checkpoint",
-                                "readonly": "",
-                                "value": "checkpoints",
-                                "width": "500px"
-                            },
-                            {
-                                "formatType": "",
-                                "label": "Image upload",
-                                "readonly": "",
-                                "value": "imageupload",
-                                "width": "250px"
-                            },
-                            {
-                                "formatType": "",
-                                "label": "Remarks(if any)",
-                                "readonly": "",
-                                "value": "remarks",
-                                "width": "500px"
-                            }
-                        ],
+                        "options": [],
                         "pagingOptions": "10,20,50,100",
                         "readonly": "",
                         "recordPerPage": "20",
