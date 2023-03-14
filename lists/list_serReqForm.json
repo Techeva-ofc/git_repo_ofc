@@ -287,19 +287,19 @@
             "rules": [
                 {
                     "field": "c_approval_status",
-                    "join": "AND",
+                    "join": "OR",
                     "operator": "=",
                     "value": "Approved"
                 },
                 {
                     "field": "c_status",
-                    "join": "AND",
+                    "join": "OR",
                     "operator": "=",
                     "value": "Payment Pending"
                 },
                 {
                     "field": "c_status",
-                    "join": "AND",
+                    "join": "OR",
                     "operator": "=",
                     "value": "Payment Panding"
                 }
