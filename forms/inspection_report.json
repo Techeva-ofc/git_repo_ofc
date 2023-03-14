@@ -176,13 +176,6 @@
                             },
                             {
                                 "formatType": "",
-                                "label": "Type",
-                                "readonly": "",
-                                "value": "type",
-                                "width": ""
-                            },
-                            {
-                                "formatType": "",
                                 "label": "Reference Image Upload",
                                 "readonly": "",
                                 "value": "ref_image",
