@@ -156,7 +156,7 @@
                                 "autoHandleFiles": "",
                                 "autoHandleWorkflowVariable": "true",
                                 "jdbcDatasource": "default",
-                                "sql": "select s.c_checkpointCode,s.c_checkpointName,chk.c_checklistType FROM app_fd_ofc_schdl_sub_tab s\r\ninner join app_fd_ofc_serreqs_tab sr\r\nON s.c_referencekey = sr.id\r\ninner join app_fd_ofc_chklisttype_tab chk\r\nON sr.c_checklisttype_multi = chk.id\r\nwhere sr.c_checklisttype_multi is not null \r\nAND sr.c_serReqDmccSrNo = 'DMCC1672';"
+                                "sql": "select s.c_checkpointCode,s.c_checkpointName,s.c_type FROM app_fd_ofc_schdl_sub_tab s\r\ninner join app_fd_ofc_serreqs_tab sr\r\nON s.c_referencekey = sr.id\r\nwhere sr.c_checklisttype_multi is not null \r\nAND sr.c_serReqDmccSrNo = 'DMCC1672';"
                             }
                         },
                         "options": [
@@ -176,6 +176,13 @@
                             },
                             {
                                 "formatType": "",
+                                "label": "Type",
+                                "readonly": "",
+                                "value": "type",
+                                "width": ""
+                            },
+                            {
+                                "formatType": "",
                                 "label": "Reference Image Upload",
                                 "readonly": "",
                                 "value": "ref_image",
@@ -186,13 +193,6 @@
                                 "label": "Remarks(If any)",
                                 "readonly": "",
                                 "value": "remark",
-                                "width": ""
-                            },
-                            {
-                                "formatType": "",
-                                "label": "Type",
-                                "readonly": "",
-                                "value": "type",
                                 "width": ""
                             }
                         ],
