@@ -1208,7 +1208,7 @@
                         "readonlyLabel": "",
                         "redirectTargetOnCancel": "top",
                         "redirectTargetOnComplete": "",
-                        "redirectUrlAfterComplete": "",
+                        "redirectUrlAfterComplete": "ofc_inspection_form_crud",
                         "redirectUrlOnCancel": "",
                         "showInPopupDialog": "",
                         "submitButtonLabel": "",
