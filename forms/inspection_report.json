@@ -142,18 +142,70 @@
                     "className": "org.joget.plugin.enterprise.AdvancedGrid",
                     "properties": {
                         "deleteMessage": "Delete row?",
-                        "disabledAdd": "false",
-                        "disabledDelete": "false",
+                        "disabledAdd": "true",
+                        "disabledDelete": "true",
                         "errorMessage": "Invalid number of rows",
+                        "formDefId": "inspectionSchedule_subform",
                         "hint": "Click to edit. Tab to save.",
-                        "id": "field11",
+                        "id": "inspCheckpoints",
                         "keyToSave": "9",
-                        "label": "Advanced Grid",
+                        "label": "",
+                        "loadBinder": {
+                            "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
+                            "properties": {
+                                "autoHandleFiles": "",
+                                "autoHandleWorkflowVariable": "true",
+                                "jdbcDatasource": "default",
+                                "sql": "select s.c_checkpointCode,s.c_checkpointName,chk.c_checklistType FROM app_fd_ofc_schdl_sub_tab s\r\ninner join app_fd_ofc_serreqs_tab sr\r\nON s.c_referencekey = sr.id\r\ninner join app_fd_ofc_chklisttype_tab chk\r\nON sr.c_checklisttype_multi = chk.id\r\nwhere sr.c_checklisttype_multi is not null \r\nAND sr.c_serReqDmccSrNo = 'DMCC1672';"
+                            }
+                        },
+                        "options": [
+                            {
+                                "formatType": "",
+                                "label": "Code",
+                                "readonly": "true",
+                                "value": "checkpointCode",
+                                "width": ""
+                            },
+                            {
+                                "formatType": "",
+                                "label": "Check point",
+                                "readonly": "true",
+                                "value": "checkpointName",
+                                "width": ""
+                            },
+                            {
+                                "formatType": "",
+                                "label": "Reference Image Upload",
+                                "readonly": "",
+                                "value": "ref_image",
+                                "width": ""
+                            },
+                            {
+                                "formatType": "",
+                                "label": "Remarks(If any)",
+                                "readonly": "",
+                                "value": "remark",
+                                "width": ""
+                            }
+                        ],
                         "pagingOptions": "10,20,50,100",
-                        "readonly": "False",
+                        "readonly": "",
                         "recordPerPage": "20",
-                        "search": "False",
-                        "showRowNumber": "true"
+                        "search": "",
+                        "showRowNumber": "true",
+                        "sortIndx": "",
+                        "storeBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "uniqueKey": "",
+                        "validateMaxRow": "",
+                        "validateMinRow": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        }
                     }
                 }],
                 "properties": {"width": "100%"}
