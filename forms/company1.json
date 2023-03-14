@@ -201,12 +201,8 @@
                         "storeNumeric": "",
                         "style": "",
                         "validator": {
-                            "className": "org.joget.apps.form.lib.DefaultValidator",
-                            "properties": {
-                                "mandatory": "true",
-                                "message": "Please enter valid Mobile Number",
-                                "type": "numeric"
-                            }
+                            "className": "",
+                            "properties": {}
                         },
                         "value": "",
                         "workflowVariable": ""
