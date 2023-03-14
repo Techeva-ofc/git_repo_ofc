@@ -1155,7 +1155,7 @@
                     "properties": {
                         "actionAfterSaved": "",
                         "actionOnCancel": "",
-                        "cancelButtonLabel": "",
+                        "cancelButtonLabel": "Cancel",
                         "customFooter": "",
                         "customHeader": "",
                         "customId": "inspectionSchedule",
