@@ -138,150 +138,70 @@
             "className": "org.joget.apps.form.model.Section",
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
-                "elements": [
-                    {
-                        "className": "org.joget.plugin.enterprise.AdvancedGrid",
-                        "properties": {
-                            "deleteMessage": "Delete row?",
-                            "disabledAdd": "",
-                            "disabledDelete": "",
-                            "errorMessage": "Invalid number of rows",
-                            "formDefId": "inspectionSchedule_subform",
-                            "hint": "Click to edit. OK to save.",
-                            "id": "inspCheckpoints",
-                            "keyToSave": "9",
-                            "label": "",
-                            "loadBinder": {
-                                "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
-                                "properties": {
-                                    "autoHandleFiles": "",
-                                    "autoHandleWorkflowVariable": "true",
-                                    "jdbcDatasource": "default",
-                                    "sql": "select SR.ID,s.c_checkpointCode,s.c_checkpointName,chk.c_checklistType FROM app_fd_ofc_schdl_sub_tab s\r\ninner join app_fd_ofc_serreqs_tab sr\r\nON s.c_referencekey = sr.id\r\ninner join app_fd_ofc_chklisttype_tab chk\r\nON sr.c_checklisttype_multi = chk.id\r\nwhere sr.c_checklisttype_multi is not null \r\nAND sr.c_serReqDmccSrNo = 'DMCC1672';"
-                                }
-                            },
-                            "options": [
-                                {
-                                    "formatType": "",
-                                    "label": "Code",
-                                    "readonly": "",
-                                    "value": "checkpointCode",
-                                    "width": ""
-                                },
-                                {
-                                    "formatType": "",
-                                    "label": "Name",
-                                    "readonly": "",
-                                    "value": "checkpointName",
-                                    "width": ""
-                                },
-                                {
-                                    "formatType": "",
-                                    "label": "Type",
-                                    "readonly": "",
-                                    "value": "checkListTypeData",
-                                    "width": ""
-                                }
-                            ],
-                            "pagingOptions": "10,20,50,100",
-                            "readonly": "",
-                            "recordPerPage": "20",
-                            "search": "",
-                            "showRowNumber": "true",
-                            "sortIndx": "",
-                            "storeBinder": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "uniqueKey": "",
-                            "validateMaxRow": "",
-                            "validateMinRow": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
+                "elements": [{
+                    "className": "org.joget.plugin.enterprise.AdvancedGrid",
+                    "properties": {
+                        "deleteMessage": "Delete row?",
+                        "disabledAdd": "true",
+                        "disabledDelete": "true",
+                        "errorMessage": "Invalid number of rows",
+                        "formDefId": "inspectionSchedule_subform",
+                        "hint": "Click to edit. OK to save.",
+                        "id": "inspCheckpoints",
+                        "keyToSave": "9",
+                        "label": "",
+                        "loadBinder": {
+                            "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
+                            "properties": {
+                                "autoHandleFiles": "",
+                                "autoHandleWorkflowVariable": "true",
+                                "jdbcDatasource": "default",
+                                "sql": "select s.c_checkpointCode,s.c_checkpointName,chk.c_checklistType FROM app_fd_ofc_schdl_sub_tab s\r\ninner join app_fd_ofc_serreqs_tab sr\r\nON s.c_referencekey = sr.id\r\ninner join app_fd_ofc_chklisttype_tab chk\r\nON sr.c_checklisttype_multi = chk.id\r\nwhere sr.c_checklisttype_multi is not null \r\nAND sr.c_serReqDmccSrNo = 'DMCC1672';"
                             }
-                        }
-                    },
-                    {
-                        "className": "org.joget.plugin.enterprise.SpreadSheetGrid",
-                        "properties": {
-                            "customSettings": "",
-                            "disabledAdd": "",
-                            "disabledDelete": "",
-                            "errorMessage": "Invalid number of rows",
-                            "fixedColumnsLeft": "0",
-                            "headerSorting": "true",
-                            "id": "checklistsprdsheet",
-                            "label": "",
-                            "loadBinder": {
-                                "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
-                                "properties": {
-                                    "autoHandleFiles": "",
-                                    "autoHandleWorkflowVariable": "true",
-                                    "jdbcDatasource": "default",
-                                    "sql": "select SR.ID,s.c_checkpointCode,s.c_checkpointName,chk.c_checklistType FROM app_fd_ofc_schdl_sub_tab s\r\ninner join app_fd_ofc_serreqs_tab sr\r\nON s.c_referencekey = sr.id\r\ninner join app_fd_ofc_chklisttype_tab chk\r\nON sr.c_checklisttype_multi = chk.id\r\nwhere sr.c_checklisttype_multi is not null \r\nAND sr.c_serReqDmccSrNo = 'DMCC1672';"
-                                }
+                        },
+                        "options": [
+                            {
+                                "formatType": "",
+                                "label": "Code",
+                                "readonly": "",
+                                "value": "checkpointCode",
+                                "width": ""
                             },
-                            "maxHeight": "",
-                            "minSpareRows": "0",
-                            "options": [
-                                {
-                                    "format": "",
-                                    "formatType": "",
-                                    "formula": "",
-                                    "label": "Code",
-                                    "readonly": "true",
-                                    "regexValidator": "",
-                                    "value": "checkpointCode",
-                                    "width": ""
-                                },
-                                {
-                                    "format": "",
-                                    "formatType": "",
-                                    "formula": "",
-                                    "label": "Name",
-                                    "readonly": "true",
-                                    "regexValidator": "",
-                                    "value": "checkpointName",
-                                    "width": ""
-                                },
-                                {
-                                    "format": "#requestParam.checktype#",
-                                    "formatType": "encrypted",
-                                    "formula": "",
-                                    "label": "Type",
-                                    "readonly": "true",
-                                    "regexValidator": "",
-                                    "value": "checkListTypeData",
-                                    "width": ""
-                                },
-                                {
-                                    "format": "",
-                                    "formatType": "",
-                                    "formula": "",
-                                    "label": "",
-                                    "readonly": "",
-                                    "regexValidator": "",
-                                    "value": "type",
-                                    "width": ""
-                                }
-                            ],
-                            "readonly": "",
-                            "showRowNumber": "true",
-                            "sortingField": "",
-                            "storeBinder": {
-                                "className": "",
-                                "properties": {}
+                            {
+                                "formatType": "",
+                                "label": "Name",
+                                "readonly": "",
+                                "value": "checkpointName",
+                                "width": ""
                             },
-                            "validateMaxRow": "",
-                            "validateMinRow": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
+                            {
+                                "formatType": "",
+                                "label": "Type",
+                                "readonly": "",
+                                "value": "checkListTypeData",
+                                "width": ""
                             }
+                        ],
+                        "pagingOptions": "10,20,50,100",
+                        "permissionHidden": "",
+                        "readonly": "true",
+                        "recordPerPage": "20",
+                        "search": "",
+                        "showRowNumber": "true",
+                        "sortIndx": "",
+                        "storeBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "uniqueKey": "",
+                        "validateMaxRow": "",
+                        "validateMinRow": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
                         }
                     }
-                ],
+                }],
                 "properties": {"width": "100%"}
             }],
             "properties": {
