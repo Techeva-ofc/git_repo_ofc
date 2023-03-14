@@ -224,8 +224,8 @@
                                     "width": ""
                                 },
                                 {
-                                    "format": "",
-                                    "formatType": "",
+                                    "format": "#requestParam.checktype#",
+                                    "formatType": "encrypted",
                                     "formula": "",
                                     "label": "Type",
                                     "readonly": "true",
