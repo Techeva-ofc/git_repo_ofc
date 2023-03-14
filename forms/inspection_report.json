@@ -180,6 +180,13 @@
                                 "readonly": "",
                                 "value": "checkListTypeData",
                                 "width": ""
+                            },
+                            {
+                                "formatType": "",
+                                "label": "Image",
+                                "readonly": "",
+                                "value": "ref_image",
+                                "width": ""
                             }
                         ],
                         "pagingOptions": "10,20,50,100",
