@@ -60,12 +60,13 @@
                             "properties": {
                                 "encryption": "",
                                 "id": "checkpoint",
-                                "label": "Text Field",
+                                "label": "Check Point Type :",
                                 "maxlength": "",
+                                "permissionHidden": "",
                                 "placeholder": "",
-                                "readonly": "",
-                                "readonlyLabel": "",
-                                "size": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "size": "15",
                                 "storeNumeric": "",
                                 "style": "",
                                 "validator": {
