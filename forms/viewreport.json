@@ -216,51 +216,19 @@
                 {
                     "className": "org.joget.apps.form.model.Column",
                     "elements": [{
-                        "className": "org.joget.plugin.enterprise.SpreadSheetGrid",
+                        "className": "org.joget.apps.form.lib.CustomHTML",
                         "properties": {
-                            "customSettings": "",
-                            "disabledAdd": "",
-                            "disabledDelete": "",
-                            "errorMessage": "Invalid number of rows",
-                            "fixedColumnsLeft": "0",
-                            "headerSorting": "true",
-                            "id": "reason",
-                            "label": "Reasons :",
-                            "loadBinder": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "maxHeight": "",
-                            "minSpareRows": "1",
-                            "options": [],
-                            "readonly": "",
-                            "showRowNumber": "true",
-                            "sortingField": "",
-                            "storeBinder": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "validateMaxRow": "",
-                            "validateMinRow": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            }
+                            "autoPopulate": "",
+                            "id": "field10",
+                            "label": "",
+                            "value": "<span class=\"label\">#i18n.Job No.# #<\/span>  <b>#requestParam.serReqDmccSrNo#<\/b><br/><br/>\r\n<span class=\"label\">#i18n.Employee#<\/span>  <b>#requestParam.company#<\/b><br/><br/>\r\n<span class=\"label\">#i18n.Schedule Date#<\/span> <b>#requestParam.scheduledate#<\/b><br/><br/>\r\n"
                         }
                     }],
                     "properties": {"width": "49%"}
                 },
                 {
                     "className": "org.joget.apps.form.model.Column",
-                    "elements": [{
-                        "className": "org.joget.apps.form.lib.CustomHTML",
-                        "properties": {
-                            "autoPopulate": "",
-                            "id": "field10",
-                            "label": "",
-                            "value": "<span class=\"label\">#i18n.Job No.# #<\/span>  <b>#requestParam.serReqDmccSrNo#<\/b><br/><br/>\r\n<span class=\"label\">#i18n.Title#<\/span>  <b>#requestParam.company#<\/b><br/><br/>\r\n<span class=\"label\">#i18n.Claimant Remark#<\/span> <b>#requestParam.scheduledate#<\/b><br/><br/>\r\n<span class=\"label\">#i18n.Submitted by#<\/span>  <b>#requestParam.reportstatus#<\/b><br/><br/>\r\n"
-                        }
-                    }],
+                    "elements": [],
                     "properties": {"width": "49%"}
                 }
             ],
