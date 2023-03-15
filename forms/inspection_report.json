@@ -100,7 +100,7 @@
                                     "className": "",
                                     "properties": {}
                                 },
-                                "value": "#requestParam.scheduledate#",
+                                "value": "#date.EEE, d MMM yyyy h:mm:ss a#",
                                 "workflowVariable": ""
                             }
                         }
