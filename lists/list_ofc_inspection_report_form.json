@@ -278,7 +278,12 @@
                 "hrefColumn": "C_serReqDmccSrNo;c_companyName;c_inspSchedlDate;c_inspectionreportStatus;c_reportdate",
                 "hrefParam": "serReqDmccSrNo;company;scheduledate;reportstatus;reportdate",
                 "label": "View Report",
-                "rules": [],
+                "rules": [{
+                    "field": "c_status",
+                    "join": "AND",
+                    "operator": "=",
+                    "value": "Inspection Completed"
+                }],
                 "target": "_self"
             },
             "type": "text"
