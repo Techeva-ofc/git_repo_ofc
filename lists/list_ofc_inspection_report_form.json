@@ -24,7 +24,7 @@
             "format": {
                 "className": "org.joget.plugin.enterprise.DateFormatter",
                 "properties": {
-                    "dataFormat": "dd-MM-yyyy",
+                    "dataFormat": "dd-MM-YYYY",
                     "dateStoreInUTC": "",
                     "displayFormat": "dd/MM/yyyy"
                 }
