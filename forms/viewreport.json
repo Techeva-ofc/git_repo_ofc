@@ -254,7 +254,7 @@
                             "autoPopulate": "",
                             "id": "field10",
                             "label": "",
-                            "value": "<span class=\"label\">#i18n.Ref# #<\/span>  <b>#form.ofc_serReqs_tab.serReqDmccSrNo#<\/b><br/><br/>\r\n"
+                            "value": "<span class=\"label\">#i18n.Ref# #<\/span>  <b>#requestParam.serReqDmccSrNo#<\/b><br/><br/>\r\n"
                         }
                     }
                 ],
@@ -269,9 +269,25 @@
     "properties": {
         "description": "",
         "id": "viewreport",
-        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "name": "View Inspection Report",
-        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "tableName": "ofc_serReqs_tab"
     }
 }
