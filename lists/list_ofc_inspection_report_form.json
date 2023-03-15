@@ -26,7 +26,7 @@
                 "properties": {
                     "dataFormat": "dd-MM-yyyy hh:mm aa",
                     "dateStoreInUTC": "",
-                    "displayFormat": "dd/MM/yy hh:mm aa"
+                    "displayFormat": "dd-MM-yy hh:mm aa"
                 }
             },
             "headerAlignment": "",
