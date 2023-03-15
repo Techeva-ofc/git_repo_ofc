@@ -1209,8 +1209,8 @@
                         "redirectTargetOnCancel": "window",
                         "redirectTargetOnComplete": "",
                         "redirectUrlAfterComplete": "reportsummary",
-                        "redirectUrlOnCancel": "reportsummary",
-                        "showInPopupDialog": "",
+                        "redirectUrlOnCancel": "",
+                        "showInPopupDialog": "Yes",
                         "submitButtonLabel": "",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
