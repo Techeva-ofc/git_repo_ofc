@@ -216,11 +216,11 @@
             }
         }
     ],
-    "hidePageSize": "",
+    "hidePageSize": "true",
     "id": "list_ofc_inspection_report_form",
     "name": "List - View Inspection Report",
-    "order": "",
-    "orderBy": "",
+    "order": "1",
+    "orderBy": "c_inspSchedlDate",
     "pageSize": "0",
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
     "responsiveView": [
