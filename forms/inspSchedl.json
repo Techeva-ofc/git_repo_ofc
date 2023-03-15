@@ -395,6 +395,27 @@
                         }
                     },
                     {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "jobid_reschedule",
+                            "label": "Job No.",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "#variable.jobid#",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
                         "className": "org.joget.apps.form.lib.HiddenField",
                         "properties": {
                             "id": "serReqDmccSrNo",
