@@ -109,7 +109,7 @@
                             "className": "org.joget.apps.form.lib.TextField",
                             "properties": {
                                 "encryption": "",
-                                "id": "checklisttype_param",
+                                "id": "reportdate",
                                 "label": "Date:",
                                 "maxlength": "",
                                 "permissionHidden": "",
@@ -123,7 +123,7 @@
                                     "className": "",
                                     "properties": {}
                                 },
-                                "value": "#date.EEE, d MMM yyyy h:mm:ss a#",
+                                "value": "#date.dd MMM yyyy h:mm aa#",
                                 "workflowVariable": ""
                             }
                         }
