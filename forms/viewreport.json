@@ -11,7 +11,7 @@
                         "autoPopulate": "",
                         "id": "title",
                         "label": "",
-                        "value": "<b><span style=\"font-size:50px;\"><center>Check List Report<\/center><\/span>\n<\/b>\n<hr>"
+                        "value": "<b><span style=\"font-size:500px;\"><center>Check List Report<\/center><\/span>\n<\/b>\n<hr>"
                     }
                 }],
                 "properties": {"width": "100%"}
