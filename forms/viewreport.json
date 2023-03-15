@@ -212,10 +212,10 @@
         },
         {
             "className": "org.joget.apps.form.model.Section",
-            "elements": [{
-                "className": "org.joget.apps.form.model.Column",
-                "elements": [
-                    {
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [{
                         "className": "org.joget.plugin.enterprise.SpreadSheetGrid",
                         "properties": {
                             "customSettings": "",
@@ -247,19 +247,23 @@
                                 "properties": {}
                             }
                         }
-                    },
-                    {
+                    }],
+                    "properties": {"width": "49%"}
+                },
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [{
                         "className": "org.joget.apps.form.lib.CustomHTML",
                         "properties": {
                             "autoPopulate": "",
                             "id": "field10",
                             "label": "",
-                            "value": "<span class=\"label\">#i18n.Ref# #<\/span>  <b>#requestParam.serReqDmccSrNo#<\/b><br/><br/>\r\n"
+                            "value": "<span class=\"label\">#i18n.Job No.# #<\/span>  <b>#requestParam.serReqDmccSrNo#<\/b><br/><br/>\r\n<span class=\"label\">#i18n.Title#<\/span>  <b>#requestParam.company#<\/b><br/><br/>\r\n<span class=\"label\">#i18n.Claimant Remark#<\/span> <b>#requestParam.scheduledate#<\/b><br/><br/>\r\n<span class=\"label\">#i18n.Submitted by#<\/span>  <b>#requestParam.reportstatus#<\/b><br/><br/>\r\n"
                         }
-                    }
-                ],
-                "properties": {"width": "100%"}
-            }],
+                    }],
+                    "properties": {"width": "49%"}
+                }
+            ],
             "properties": {
                 "id": "section4",
                 "label": "Section"
