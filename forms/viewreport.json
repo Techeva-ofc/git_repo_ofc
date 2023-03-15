@@ -254,16 +254,7 @@
                             "autoPopulate": "",
                             "id": "field10",
                             "label": "",
-                            "value": "<span class=\"label\">#i18n.Ref# #<\/span>  <b>#form.app_fd_ofc_serReqs_tab.inspSchedlDate#<\/b><br/><br/>\r\n"
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.CustomHTML",
-                        "properties": {
-                            "autoPopulate": "",
-                            "id": "field10",
-                            "label": "",
-                            "value": "<span class=\"label\">#i18n.Ref# #<\/span>  <b>#form.app_fd_ofc_serReqs_tab.inspSchedlDate#<\/b><br/><br/>\r\n"
+                            "value": "<span class=\"label\">#i18n.Ref# #<\/span>  <b>#form.ofc_serReqs_tab.inspSchedlDate#<\/b><br/><br/>\r\n"
                         }
                     }
                 ],
