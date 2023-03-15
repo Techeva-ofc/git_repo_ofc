@@ -1221,7 +1221,7 @@
                     "properties": {
                         "actionAfterSaved": "",
                         "actionOnCancel": "",
-                        "cancelButtonLabel": "",
+                        "cancelButtonLabel": "Cancel",
                         "customFooter": "",
                         "customHeader": "",
                         "customId": "inspectionschedule",
@@ -1239,10 +1239,10 @@
                         "readonlyLabel": "",
                         "redirectTargetOnCancel": "top",
                         "redirectTargetOnComplete": "",
-                        "redirectUrlAfterComplete": "",
-                        "redirectUrlOnCancel": "",
+                        "redirectUrlAfterComplete": "ofc_inspection_form_crud",
+                        "redirectUrlOnCancel": "ofc_inspection_form_crud",
                         "showInPopupDialog": "",
-                        "submitButtonLabel": "",
+                        "submitButtonLabel": "Schedule",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
