@@ -77,6 +77,59 @@
                 "id": "section4",
                 "label": "Section"
             }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.plugin.enterprise.SpreadSheetGrid",
+                    "properties": {
+                        "customSettings": "",
+                        "disabledAdd": "",
+                        "disabledDelete": "",
+                        "errorMessage": "Invalid number of rows",
+                        "fixedColumnsLeft": "0",
+                        "headerSorting": "true",
+                        "id": "field4",
+                        "label": "Spreadsheet",
+                        "loadBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "maxHeight": "",
+                        "minSpareRows": "1",
+                        "options": [{
+                            "format": "",
+                            "formatType": "",
+                            "formula": "",
+                            "label": "Check Point Code",
+                            "readonly": "",
+                            "regexValidator": "",
+                            "value": "checkpointCode",
+                            "width": ""
+                        }],
+                        "readonly": "",
+                        "showRowNumber": "true",
+                        "sortingField": "",
+                        "storeBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "validateMaxRow": "",
+                        "validateMinRow": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        }
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "id": "section3",
+                "label": "Section"
+            }
         }
     ],
     "properties": {
