@@ -20,6 +20,17 @@
                         }
                     },
                     {
+                        "className": "org.joget.apps.form.lib.IdGeneratorField",
+                        "properties": {
+                            "envVariable": "counter",
+                            "format": "AOFC-??????",
+                            "hidden": "",
+                            "id": "jobid",
+                            "label": "Job No.",
+                            "workflowVariable": "jobid"
+                        }
+                    },
+                    {
                         "className": "org.joget.apps.form.lib.TextField",
                         "properties": {
                             "encryption": "",
