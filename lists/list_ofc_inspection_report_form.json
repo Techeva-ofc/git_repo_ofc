@@ -40,8 +40,15 @@
         },
         {
             "action": {
-                "className": "",
-                "properties": {}
+                "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+                "properties": {
+                    "confirmation": "",
+                    "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/serRequestView?_mode=view",
+                    "hrefColumn": "id",
+                    "hrefParam": "id",
+                    "label": "View",
+                    "target": "_self"
+                }
             },
             "alignment": "",
             "datalist_type": "column",
