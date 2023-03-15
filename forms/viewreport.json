@@ -117,6 +117,13 @@
                                 "readonly": "true",
                                 "value": "checkpointName",
                                 "width": ""
+                            },
+                            {
+                                "formatType": "",
+                                "label": "Status",
+                                "readonly": "true",
+                                "value": "remark_insp_checkpoint",
+                                "width": ""
                             }
                         ],
                         "pagingOptions": "10,20,50,100",
