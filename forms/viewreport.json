@@ -11,7 +11,7 @@
                         "autoPopulate": "",
                         "id": "title",
                         "label": "",
-                        "value": "<h1><center>Check List Report<\/center><\/h1>\n<hr>"
+                        "value": "<b><span style=\"font-size:50px;\"><center>Check List Report<\/center><\/span>\n<\/b>\n<hr>"
                     }
                 }],
                 "properties": {"width": "100%"}
@@ -39,7 +39,15 @@
                 },
                 {
                     "className": "org.joget.apps.form.model.Column",
-                    "elements": [],
+                    "elements": [{
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "autoPopulate": "",
+                            "id": "inspectstatus",
+                            "label": "",
+                            "value": "<span class=\"label\">#i18n.Inspection#<\/span>  <b>Fixed Certificate of Conformity Inspection<\/b><br/><br/>\n<span class=\"label\">Completed Date<\/span>  <b>#requestParam.reportdate#<\/b><br/><br/>\n<span class=\"label\">#i18n.Event Status#<\/span>  <b>#requestParam.reportstatus#<\/b><br/><br/>\n"
+                        }
+                    }],
                     "properties": {"width": "49%"}
                 }
             ],
