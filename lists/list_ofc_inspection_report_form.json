@@ -15,14 +15,6 @@
         {
             "filterable": true,
             "hidden": "false",
-            "id": "column_7",
-            "label": "c_checklistType",
-            "name": "c_checklistType",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
             "id": "column_0",
             "label": "C_serReqDmccSrNo",
             "name": "C_serReqDmccSrNo",
