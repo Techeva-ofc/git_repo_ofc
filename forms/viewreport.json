@@ -53,7 +53,7 @@
                             "properties": {
                                 "encryption": "",
                                 "id": "employee",
-                                "label": "Employee",
+                                "label": "#form.app_fd_ofc_serReqs_tab.inspectorNames#",
                                 "maxlength": "",
                                 "placeholder": "",
                                 "readonly": "",
