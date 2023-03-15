@@ -11,14 +11,36 @@
                         "autoPopulate": "",
                         "id": "title",
                         "label": "",
-                        "value": "<b><span style=\"font-size:500px;\"><center>Check List Report<\/center><\/span>\n<\/b>\n<hr>"
+                        "value": "<img src=\"/images/Concordia-Logo-Square.png\"   height=\"15%\" width=\"15%\"/>\n<h1><center>Check List Report<\/center><\/h1>\n<hr>"
                     }
                 }],
                 "properties": {"width": "100%"}
             }],
             "properties": {
+                "comment": "",
                 "id": "section1",
-                "label": "Section"
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "readonly": "true",
+                "readonlyLabel": "true",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
             }
         },
         {
