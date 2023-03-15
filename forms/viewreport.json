@@ -65,7 +65,7 @@
                                     "className": "",
                                     "properties": {}
                                 },
-                                "value": "",
+                                "value": "#form.app_fd_ofc_serReqs_tab.inspectorNames#",
                                 "workflowVariable": ""
                             }
                         },
@@ -86,7 +86,7 @@
                                     "className": "",
                                     "properties": {}
                                 },
-                                "value": "",
+                                "value": "#form.app_fd_ofc_serReqs_tab.inspSchedlDate#",
                                 "workflowVariable": ""
                             }
                         }
