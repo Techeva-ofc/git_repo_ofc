@@ -83,39 +83,61 @@
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
                 "elements": [{
-                    "className": "org.joget.plugin.enterprise.SpreadSheetGrid",
+                    "className": "org.joget.plugin.enterprise.AdvancedGrid",
                     "properties": {
-                        "customSettings": "",
-                        "disabledAdd": "",
-                        "disabledDelete": "",
+                        "deleteMessage": "Delete row?",
+                        "disabledAdd": "true",
+                        "disabledDelete": "true",
                         "errorMessage": "Invalid number of rows",
-                        "fixedColumnsLeft": "0",
-                        "headerSorting": "true",
-                        "id": "field4",
-                        "label": "Spreadsheet",
+                        "formDefId": "inspectionSchedule_subform",
+                        "hint": "Click to edit. Tab to save.",
+                        "id": "checkpointreport",
+                        "keyToSave": "9",
+                        "label": "",
                         "loadBinder": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
+                            "properties": {
+                                "autoHandleFiles": "",
+                                "autoHandleWorkflowVariable": "true",
+                                "jdbcDatasource": "default",
+                                "sql": "select sr.id,s.c_checkpointCode,s.c_checkpointName,s.c_remark_insp_checkpoint FROM app_fd_ofc_schdl_sub_tab s\r\ninner join app_fd_ofc_serreqs_tab sr\r\nON s.c_referencekey = sr.id\r\nwhere sr.c_checklisttype_multi is not null \r\nAND sr.c_serReqDmccSrNo = '#requestParam.serReqDmccSrNo#'"
+                            }
                         },
-                        "maxHeight": "",
-                        "minSpareRows": "1",
-                        "options": [{
-                            "format": "",
-                            "formatType": "",
-                            "formula": "",
-                            "label": "Check Point Code",
-                            "readonly": "",
-                            "regexValidator": "",
-                            "value": "checkpointCode",
-                            "width": ""
-                        }],
-                        "readonly": "",
+                        "options": [
+                            {
+                                "formatType": "",
+                                "label": "CheckPointCode",
+                                "readonly": "true",
+                                "value": "checkpointCode",
+                                "width": ""
+                            },
+                            {
+                                "formatType": "",
+                                "label": "CheckPointName",
+                                "readonly": "true",
+                                "value": "checkpointName",
+                                "width": ""
+                            },
+                            {
+                                "formatType": "",
+                                "label": "Status",
+                                "readonly": "true",
+                                "value": "remark_insp_checkpoint",
+                                "width": ""
+                            }
+                        ],
+                        "pagingOptions": "10,20,50,100",
+                        "permissionHidden": "",
+                        "readonly": "true",
+                        "recordPerPage": "20",
+                        "search": "",
                         "showRowNumber": "true",
-                        "sortingField": "",
+                        "sortIndx": "",
                         "storeBinder": {
                             "className": "",
                             "properties": {}
                         },
+                        "uniqueKey": "",
                         "validateMaxRow": "",
                         "validateMinRow": "",
                         "validator": {
