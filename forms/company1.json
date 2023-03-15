@@ -23,7 +23,7 @@
                             "properties": {
                                 "mandatory": "true",
                                 "message": "Please enter Owner First Name",
-                                "type": "alphanumeric"
+                                "type": ""
                             }
                         },
                         "value": "",
