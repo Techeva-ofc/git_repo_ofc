@@ -1209,7 +1209,7 @@
                         "redirectTargetOnCancel": "window",
                         "redirectTargetOnComplete": "",
                         "redirectUrlAfterComplete": "",
-                        "redirectUrlOnCancel": "reportsummary",
+                        "redirectUrlOnCancel": "reportSummary",
                         "showInPopupDialog": "Yes",
                         "submitButtonLabel": "",
                         "userviewCacheDuration": "20",
