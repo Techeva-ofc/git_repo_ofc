@@ -180,8 +180,9 @@
                 "properties": {}
             },
             "headerAlignment": "",
-            "hidden": "false",
+            "hidden": "true",
             "id": "column_12",
+            "include_export": "",
             "label": "Order Reference",
             "name": "c_orderReference",
             "sortable": "false",
