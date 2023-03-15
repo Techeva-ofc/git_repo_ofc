@@ -24,9 +24,8 @@
             "format": {
                 "className": "org.joget.plugin.enterprise.DateFormatter",
                 "properties": {
-                    "dataFormat": "dd-MM-yyyy hh:mm aa",
-                    "dateStoreInUTC": "",
-                    "displayFormat": "dd-MM-yy hh:mm aa"
+                    "dateStoreInUTC": "true",
+                    "displayFormat": "dd-MM-yyyy hh:mm aa"
                 }
             },
             "headerAlignment": "",
