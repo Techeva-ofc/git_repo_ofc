@@ -6,7 +6,7 @@
             "jdbcDatasource": "default",
             "optimisePaging": "",
             "primaryKey": "id",
-            "sql": "SELECT sr.id,sr.c_jobid,sr.dateCreated,sr.c_reportdate,sr.C_serReqDmccSrNo, c.c_licenseNumber, sr.c_serReqServCat, c.c_companyName, c.c_companyLocation, t.c_tower_seq_no, t.c_tower_name ,sr.c_status, sr.c_inspSchedlDate, sr.c_inspectionreportStatus\r\nFROM app_fd_ofc_serreqs_tab sr\r\nINNER JOIN app_fd_ofc_company_tab c\r\nON sr.c_companyName = c.id\r\nINNER JOIN app_fd_ofc_location_tab l\r\nON c.c_companyLocation = l.c_locName\r\nINNER JOIN app_fd_ofc_tower_tab t\r\nON c.c_tower_name = t.c_tower_name\r\nWHERE sr.c_status = 'Inspection Completed' \r\nor sr.c_status = 'Inspection To-Be Re-Scheduled'\r\nor sr.c_status = 'Inspection Scheduled'\r\norder by sr.c_inspSchedlDate\r\n\r\n"
+            "sql": "SELECT sr.id,sr.c_jobid,sr.c_licenseactivity,sr.dateCreated,sr.c_reportdate,sr.C_serReqDmccSrNo, c.c_licenseNumber, sr.c_serReqServCat, c.c_companyName, c.c_companyLocation, t.c_tower_seq_no, t.c_tower_name ,sr.c_status, sr.c_inspSchedlDate, sr.c_inspectionreportStatus\r\nFROM app_fd_ofc_serreqs_tab sr\r\nINNER JOIN app_fd_ofc_company_tab c\r\nON sr.c_companyName = c.id\r\nINNER JOIN app_fd_ofc_location_tab l\r\nON c.c_companyLocation = l.c_locName\r\nINNER JOIN app_fd_ofc_tower_tab t\r\nON c.c_tower_name = t.c_tower_name\r\nWHERE sr.c_status = 'Inspection Completed' \r\nor sr.c_status = 'Inspection To-Be Re-Scheduled'\r\nor sr.c_status = 'Inspection Scheduled'\r\norder by sr.c_inspSchedlDate\r\n\r\n"
         }
     },
     "buttonPosition": "bottomLeft",
@@ -326,8 +326,8 @@
                 "confirmation": "",
                 "datalist_type": "row_action",
                 "href": "",
-                "hrefColumn": "c_jobid;c_reportdate;c_licenseNumber;;c_companyName;c_companyLocation;;",
-                "hrefParam": "jobid;date;license;account_number;companyname;location;unit;licenseactivity",
+                "hrefColumn": "c_jobid;c_reportdate;c_licenseNumber;;c_companyName;c_companyLocation;",
+                "hrefParam": "jobid;date;license;account_number;companyname;location;licenseactivity",
                 "label": "Generate OFC Certificate",
                 "rules": [],
                 "target": "_self"
