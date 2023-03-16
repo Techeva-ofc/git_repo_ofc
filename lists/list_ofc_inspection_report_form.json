@@ -226,12 +226,44 @@
     "disableResponsive": "",
     "filters": [
         {
+            "datalist_type": "filter",
+            "filterParamName": "d-5602826-fn_c_inspSchedlDate",
+            "hidden": "",
+            "id": "filter_4",
+            "label": "Schedule Date",
+            "name": "c_inspSchedlDate",
+            "type": {
+                "className": "org.joget.plugin.enterprise.DateDataListFilterType",
+                "properties": {
+                    "defaultValue": "",
+                    "format": "dd/mm/yy",
+                    "formatJava": "dd/MM/yyyy",
+                    "yearRange": "c-10:c+10"
+                }
+            }
+        },
+        {
+            "datalist_type": "filter",
+            "filterParamName": "d-5602826-fn_c_companyLocation",
+            "hidden": "",
+            "id": "filter_3",
+            "label": "Location",
+            "name": "c_companyLocation",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {"defaultValue": ""}
+            }
+        },
+        {
+            "datalist_type": "filter",
+            "filterParamName": "d-5602826-fn_c_status",
+            "hidden": "",
             "id": "filter_2",
-            "label": "c_status",
+            "label": "Status",
             "name": "c_status",
             "type": {
                 "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-                "properties": {}
+                "properties": {"defaultValue": ""}
             }
         },
         {
