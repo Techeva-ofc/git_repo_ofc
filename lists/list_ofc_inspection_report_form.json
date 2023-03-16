@@ -226,6 +226,15 @@
     "disableResponsive": "",
     "filters": [
         {
+            "id": "filter_2",
+            "label": "c_status",
+            "name": "c_status",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {}
+            }
+        },
+        {
             "datalist_type": "filter",
             "filterParamName": "d-5602826-fn_c_companyName",
             "hidden": "",
