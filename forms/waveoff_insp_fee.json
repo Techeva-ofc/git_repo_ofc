@@ -39,7 +39,7 @@
                     "properties": {
                         "encryption": "",
                         "id": "wave_off",
-                        "label": "Wave off (60% or 40% or 20%)",
+                        "label": "Waive off (60% or 40% or 20%)",
                         "maxlength": "",
                         "placeholder": "",
                         "readonly": "",
@@ -65,7 +65,7 @@
                         "equation": "(totalfee/100)*wave",
                         "hidden": "",
                         "id": "waver_amount",
-                        "label": "Waver_amount",
+                        "label": "Waiver_amount",
                         "numOfDecimal": "2",
                         "postfix": "",
                         "prefix": "",
