@@ -326,7 +326,7 @@
                 "confirmation": "",
                 "datalist_type": "row_action",
                 "href": "",
-                "hrefColumn": "c_jobid;c_reportdate;c_licenseNumber;;c_companyName;c_companyLocation;",
+                "hrefColumn": "c_jobid;c_reportdate;c_licenseNumber;C_serReqDmccSrNo;c_companyName;c_companyLocation;c_licenseactivity",
                 "hrefParam": "jobid;date;license;account_number;companyname;location;licenseactivity",
                 "label": "Generate OFC Certificate",
                 "rules": [],
