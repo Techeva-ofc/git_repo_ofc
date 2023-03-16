@@ -54,28 +54,6 @@
                                 "value": "#currentUser.fullName#",
                                 "workflowVariable": ""
                             }
-                        },
-                        {
-                            "className": "org.joget.apps.form.lib.TextField",
-                            "properties": {
-                                "encryption": "",
-                                "id": "checkpoint",
-                                "label": "Check Point Type :",
-                                "maxlength": "",
-                                "permissionHidden": "",
-                                "placeholder": "",
-                                "readonly": "true",
-                                "readonlyLabel": "true",
-                                "size": "15",
-                                "storeNumeric": "",
-                                "style": "",
-                                "validator": {
-                                    "className": "",
-                                    "properties": {}
-                                },
-                                "value": "#requestParam.typeofcheckpoint#",
-                                "workflowVariable": ""
-                            }
                         }
                     ],
                     "properties": {"width": "49%"}
