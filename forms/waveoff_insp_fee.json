@@ -132,7 +132,7 @@
             "comment": "",
             "id": "fee",
             "join": "or;or",
-            "label": "Wave Off",
+            "label": "Waive Off",
             "loadBinder": {
                 "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                 "properties": {}
@@ -141,8 +141,9 @@
                 "className": "",
                 "properties": {}
             },
+            "permissionHidden": "",
             "permissionReadonly": "",
-            "readonly": "",
+            "readonly": "true",
             "readonlyLabel": "",
             "regex": ";",
             "reverse": ";",
