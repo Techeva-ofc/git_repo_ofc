@@ -174,7 +174,7 @@
                             "deleteGridData": "",
                             "deleteMessage": "Delete row?",
                             "deleteSubformData": "",
-                            "disabledAdd": "true",
+                            "disabledAdd": "",
                             "disabledDelete": "",
                             "enableSorting": "",
                             "errorMessage": "Invalid number of rows",
@@ -184,12 +184,10 @@
                             "label": "Checkpoint List",
                             "listId": "list_ofc_checklist_inspSchedule",
                             "loadBinder": {
-                                "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
+                                "className": "org.joget.plugin.enterprise.MultirowFormBinder",
                                 "properties": {
-                                    "autoHandleFiles": "",
-                                    "autoHandleWorkflowVariable": "true",
-                                    "jdbcDatasource": "default",
-                                    "sql": "select sr.id,ck.c_checklistType,chk.c_checkpointCode,chk.c_checkpointName \nfrom app_fd_ofc_checklist_tab chk\ninner join app_fd_ofc_serreqs_tab sr\non sr.c_checklisttype_multi = chk.c_checkListTypeData\ninner join app_fd_ofc_chklisttype_tab ck\non chk.c_checkListTypeData = ck.id\n"
+                                    "foreignKey": "referencekey",
+                                    "formDefId": "inspectionSchedule_subform"
                                 }
                             },
                             "options": [
