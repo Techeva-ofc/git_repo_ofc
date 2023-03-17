@@ -184,12 +184,10 @@
                             "label": "Checkpoint List",
                             "listId": "list_ofc_checklist_inspSchedule",
                             "loadBinder": {
-                                "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
+                                "className": "org.joget.plugin.enterprise.MultirowFormBinder",
                                 "properties": {
-                                    "autoHandleFiles": "",
-                                    "autoHandleWorkflowVariable": "true",
-                                    "jdbcDatasource": "default",
-                                    "sql": "select sr.id,chk.c_checkListTypeData,chk.c_checkpointCode,chk.c_checkpointName, ck.c_checklistType\r\nfrom app_fd_ofc_checklist_tab chk\r\ninner join app_fd_ofc_serreqs_tab sr\r\non sr.c_checklisttype_multi = chk.c_checkListTypeData\r\ninner join app_fd_ofc_chklisttype_tab ck\r\non chk.c_checkListTypeData = ck.id\r\nwhere sr.c_checklisttype_multi = '#form.app_fd_ofc_serreqs_tab.checklisttype_multi#'"
+                                    "foreignKey": "referencekey",
+                                    "formDefId": "inspectionSchedule_subform"
                                 }
                             },
                             "options": [
