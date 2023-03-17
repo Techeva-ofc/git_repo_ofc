@@ -259,11 +259,8 @@
                             "label": "",
                             "listId": "list_ofc_checklist_inspSchedule",
                             "loadBinder": {
-                                "className": "org.joget.plugin.enterprise.MultirowFormBinder",
-                                "properties": {
-                                    "foreignKey": "referencekey",
-                                    "formDefId": "inspectionSchedule_subform"
-                                }
+                                "className": "",
+                                "properties": {}
                             },
                             "options": [
                                 {
@@ -302,11 +299,8 @@
                             "showRowNumber": "",
                             "sortField": "sort",
                             "storeBinder": {
-                                "className": "org.joget.plugin.enterprise.MultirowFormBinder",
-                                "properties": {
-                                    "foreignKey": "referencekey",
-                                    "formDefId": "inspectionSchedule_subform"
-                                }
+                                "className": "",
+                                "properties": {}
                             },
                             "submit-label-normal": "",
                             "submit-label-readonly": "",
