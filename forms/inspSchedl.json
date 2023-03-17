@@ -241,6 +241,15 @@
                         }
                     },
                     {
+                        "className": "org.joget.apps.form.lib.Grid",
+                        "properties": {
+                            "errorMessage": "Invalid number of rows",
+                            "id": "field21",
+                            "label": "Grid",
+                            "readonly": "False"
+                        }
+                    },
+                    {
                         "className": "org.joget.plugin.enterprise.ListGrid",
                         "properties": {
                             "abortRelatedRunningProcesses": "",
@@ -291,11 +300,7 @@
                             "pageSize": "20",
                             "readonly": "",
                             "readonlyLabel": "",
-                            "requestParams": [{
-                                "defaultValue": "",
-                                "field": "checklisttype_multi",
-                                "param": "checktype"
-                            }],
+                            "requestParams": [],
                             "showRowNumber": "",
                             "sortField": "sort",
                             "storeBinder": {
