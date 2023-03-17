@@ -166,24 +166,6 @@
                 "className": "org.joget.apps.form.model.Column",
                 "elements": [
                     {
-                        "className": "org.joget.plugin.enterprise.AdvancedGrid",
-                        "properties": {
-                            "deleteMessage": "Delete row?",
-                            "disabledAdd": "false",
-                            "disabledDelete": "false",
-                            "errorMessage": "Invalid number of rows",
-                            "hint": "Click to edit. Tab to save.",
-                            "id": "field23",
-                            "keyToSave": "9",
-                            "label": "Advanced Grid",
-                            "pagingOptions": "10,20,50,100",
-                            "readonly": "False",
-                            "recordPerPage": "20",
-                            "search": "False",
-                            "showRowNumber": "true"
-                        }
-                    },
-                    {
                         "className": "org.joget.plugin.enterprise.ListGrid",
                         "properties": {
                             "abortRelatedRunningProcesses": "",
@@ -202,10 +184,12 @@
                             "label": "Checkpoint List",
                             "listId": "list_ofc_checklist_inspSchedule",
                             "loadBinder": {
-                                "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                                "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
                                 "properties": {
-                                    "foreignKey": "referencekey",
-                                    "formDefId": "inspectionSchedule_subform"
+                                    "autoHandleFiles": "",
+                                    "autoHandleWorkflowVariable": "true",
+                                    "jdbcDatasource": "default",
+                                    "sql": "select sr.id,chk.c_checkListTypeData,chk.c_checkpointCode,chk.c_checkpointName, ck.c_checklistType\r\nfrom app_fd_ofc_checklist_tab chk\r\ninner join app_fd_ofc_serreqs_tab sr\r\non sr.c_checklisttype_multi = chk.c_checkListTypeData\r\ninner join app_fd_ofc_chklisttype_tab ck\r\non chk.c_checkListTypeData = ck.id\r\nwhere sr.c_checklisttype_multi = '#form.app_fd_ofc_serreqs_tab.checklisttype_multi#'"
                                 }
                             },
                             "options": [
@@ -262,15 +246,6 @@
                                 "properties": {}
                             },
                             "width": "900"
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.Grid",
-                        "properties": {
-                            "errorMessage": "Invalid number of rows",
-                            "id": "field21",
-                            "label": "Grid",
-                            "readonly": "False"
                         }
                     },
                     {
