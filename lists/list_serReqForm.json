@@ -252,12 +252,12 @@
             }
         }
     ],
-    "hidePageSize": "true",
+    "hidePageSize": "",
     "id": "list_serReqForm",
     "name": "List - Service Request Form",
     "order": "1",
     "orderBy": "dateCreated",
-    "pageSize": "0",
+    "pageSize": "20",
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
     "responsiveView": [
         {
