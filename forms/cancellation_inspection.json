@@ -12,7 +12,7 @@
                             "autoPopulate": "",
                             "id": "button",
                             "label": "",
-                            "value": "<button type=\"button\">Cancellation<\/button><br>\n<button type=\"button\">Re-Schedule<\/button>\n<button onclick=\"document.location='default.asp'\">HTML Tutorial<\/button>"
+                            "value": "<button type=\"button\">Cancellation<\/button><br>\n<button type=\"button\">Re-Schedule<\/button>\n<button onclick=\"section2\">HTML Tutorial<\/button>"
                         }
                     },
                     {
@@ -117,8 +117,29 @@
                 "properties": {"width": "100%"}
             }],
             "properties": {
+                "comment": "",
                 "id": "section2",
-                "label": "Section"
+                "join": "",
+                "label": "Section",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
             }
         },
         {
