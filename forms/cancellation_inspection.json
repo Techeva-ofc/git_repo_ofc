@@ -3,42 +3,75 @@
     "elements": [
         {
             "className": "org.joget.apps.form.model.Section",
-            "elements": [{
-                "className": "org.joget.apps.form.model.Column",
-                "elements": [{
-                    "className": "org.joget.apps.form.lib.Radio",
-                    "properties": {
-                        "controlField": "",
-                        "id": "insp_choice",
-                        "label": "Choose the option",
-                        "options": [
-                            {
-                                "grouping": "",
-                                "label": "Cancellation",
-                                "value": "cancel"
-                            },
-                            {
-                                "grouping": "",
-                                "label": "Re-Schedule",
-                                "value": "reschedule"
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.CustomHTML",
+                            "properties": {
+                                "autoPopulate": "",
+                                "id": "schedule",
+                                "label": "",
+                                "value": "<b><span class=\"label\" style=\"font-size:14.0pt\">DMCC<\/span><\/b>\n<b><span class=\"label\">Company<\/span><b>   \n<b><span class=\"label\">Schedule date<\/span><b>  \n<b><span class=\"label\">Tower name<\/span><b>   \n<b><span class=\"label\">tower seq.no<\/span><b>   \n<b><span class=\"label\">Location<\/span><b>   \n<span class=\"label\">#i18n.Event Status#<\/span>  <b>#requestParam.reportstatus#<\/b><br/><br/>\n"
                             }
-                        ],
-                        "optionsBinder": {
-                            "className": "",
-                            "properties": {}
                         },
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "value": "",
-                        "workflowVariable": ""
-                    }
-                }],
-                "properties": {"width": "100%"}
-            }],
+                        {
+                            "className": "org.joget.apps.form.lib.CustomHTML",
+                            "properties": {
+                                "autoPopulate": "",
+                                "id": "schedule",
+                                "label": "",
+                                "value": "<b><span class=\"label\" style=\"font-size:14.0pt\">DMCC<\/span><\/b>\n<b><span class=\"label\">Company<\/span><b>   \n<b><span class=\"label\">Schedule date<\/span><b>  \n<b><span class=\"label\">Tower name<\/span><b>   \n<b><span class=\"label\">tower seq.no<\/span><b>   \n<b><span class=\"label\">Location<\/span><b>   \n<span class=\"label\">#i18n.Event Status#<\/span>  <b>#requestParam.reportstatus#<\/b><br/><br/>\n"
+                            }
+                        }
+                    ],
+                    "properties": {"width": "49%"}
+                },
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [{
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "",
+                            "id": "action",
+                            "label": "Action",
+                            "multiple": "",
+                            "options": [
+                                {
+                                    "grouping": "",
+                                    "label": "",
+                                    "value": ""
+                                },
+                                {
+                                    "grouping": "",
+                                    "label": "Cancellation",
+                                    "value": "cancel"
+                                },
+                                {
+                                    "grouping": "",
+                                    "label": "Reschedule",
+                                    "value": "reschedule"
+                                }
+                            ],
+                            "optionsBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    }],
+                    "properties": {"width": "49%"}
+                }
+            ],
             "properties": {
                 "comment": "",
                 "id": "inspschedule_info",
@@ -107,9 +140,9 @@
             }],
             "properties": {
                 "comment": "",
-                "id": "section2",
+                "id": "reschedule",
                 "join": "",
-                "label": "Section",
+                "label": "Reschedule the Inspection",
                 "loadBinder": {
                     "className": "",
                     "properties": {}
@@ -137,6 +170,76 @@
                 "className": "org.joget.apps.form.model.Column",
                 "elements": [
                     {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "autoPopulate": "",
+                            "id": "confirm",
+                            "label": "",
+                            "value": "<span>Please confirm that you would like to cancel this inspection and provide the reason for cacncellation<\/span>"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CheckBox",
+                        "properties": {
+                            "id": "field8",
+                            "label": "Check Box",
+                            "readonly": "False",
+                            "readonlyLabel": "False"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CheckBox",
+                        "properties": {
+                            "id": "field9",
+                            "label": "Check Box",
+                            "readonly": "False",
+                            "readonlyLabel": "False"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CheckBox",
+                        "properties": {
+                            "id": "field10",
+                            "label": "Check Box",
+                            "readonly": "False",
+                            "readonlyLabel": "False"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CheckBox",
+                        "properties": {
+                            "id": "field11",
+                            "label": "Check Box",
+                            "readonly": "False",
+                            "readonlyLabel": "False"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CheckBox",
+                        "properties": {
+                            "controlField": "",
+                            "id": "others",
+                            "label": "Others",
+                            "options": [{
+                                "grouping": "",
+                                "label": "Others",
+                                "value": "other"
+                            }],
+                            "optionsBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
                         "className": "org.joget.apps.form.lib.TextArea",
                         "properties": {
                             "cols": "20",
@@ -150,16 +253,43 @@
                     {
                         "className": "org.joget.apps.form.lib.HiddenField",
                         "properties": {
-                            "id": "field6",
-                            "useDefaultWhenEmpty": ""
+                            "id": "cancel",
+                            "useDefaultWhenEmpty": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "cancel",
+                            "workflowVariable": ""
                         }
                     }
                 ],
                 "properties": {"width": "100%"}
             }],
             "properties": {
-                "id": "section3",
-                "label": "Section"
+                "comment": "",
+                "id": "cancel",
+                "join": "",
+                "label": "Cancel the Inspection",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
             }
         }
     ],
