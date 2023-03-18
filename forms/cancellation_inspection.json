@@ -5,49 +5,38 @@
             "className": "org.joget.apps.form.model.Section",
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
-                "elements": [
-                    {
-                        "className": "org.joget.apps.form.lib.CustomHTML",
-                        "properties": {
-                            "autoPopulate": "",
-                            "id": "button",
-                            "label": "",
-                            "value": "<button type=\"button\">Cancellation<\/button><br>\n<button type=\"button\">Re-Schedule<\/button>\n<button onclick=\"section2\">HTML Tutorial<\/button>"
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.Radio",
-                        "properties": {
-                            "controlField": "",
-                            "id": "insp_choice",
-                            "label": "Choose the option",
-                            "options": [
-                                {
-                                    "grouping": "",
-                                    "label": "Cancellation",
-                                    "value": "cancel"
-                                },
-                                {
-                                    "grouping": "",
-                                    "label": "Re-Schedule",
-                                    "value": "reschedule"
-                                }
-                            ],
-                            "optionsBinder": {
-                                "className": "",
-                                "properties": {}
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.Radio",
+                    "properties": {
+                        "controlField": "",
+                        "id": "insp_choice",
+                        "label": "Choose the option",
+                        "options": [
+                            {
+                                "grouping": "",
+                                "label": "Cancellation",
+                                "value": "cancel"
                             },
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "",
-                            "workflowVariable": ""
-                        }
+                            {
+                                "grouping": "",
+                                "label": "Re-Schedule",
+                                "value": "reschedule"
+                            }
+                        ],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
                     }
-                ],
+                }],
                 "properties": {"width": "100%"}
             }],
             "properties": {
