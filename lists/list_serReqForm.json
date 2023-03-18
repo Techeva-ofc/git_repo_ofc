@@ -22,8 +22,20 @@
             "exclude_export": "",
             "filterable": true,
             "format": {
-                "className": "",
-                "properties": {}
+                "className": "org.joget.plugin.enterprise.NestedDatalistFormatter",
+                "properties": {
+                    "addEmptyRow": "true",
+                    "customHeaderColor": "true",
+                    "exportOptions": "",
+                    "headerColor": "#C5E6CF",
+                    "headerFontColor": "#FFFFFF",
+                    "listId": "nestedlist",
+                    "requestParams": [{
+                        "defaultValue": "",
+                        "hrefColumn": "c_serReqDmccSrNo",
+                        "param": "companyinfo"
+                    }]
+                }
             },
             "headerAlignment": "",
             "hidden": "false",
