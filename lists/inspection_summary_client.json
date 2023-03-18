@@ -341,6 +341,12 @@
                     "join": "OR",
                     "operator": "=",
                     "value": "Image(s) to-be Uploaded"
+                },
+                {
+                    "field": "c_status",
+                    "join": "OR",
+                    "operator": "=",
+                    "value": "Image(s) to-be Uploaded"
                 }
             ],
             "target": "_self"
