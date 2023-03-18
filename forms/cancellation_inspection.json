@@ -1,38 +1,147 @@
 {
     "className": "org.joget.apps.form.model.Form",
-    "elements": [{
-        "className": "org.joget.apps.form.model.Section",
-        "elements": [{
-            "className": "org.joget.apps.form.model.Column",
-            "elements": [],
-            "properties": {"width": "100%"}
-        }],
-        "properties": {
-            "comment": "",
-            "id": "inspschedule_info",
-            "join": "",
-            "label": "Schedule",
-            "loadBinder": {
-                "className": "",
-                "properties": {}
-            },
-            "permission": {
-                "className": "",
-                "properties": {}
-            },
-            "permissionReadonly": "",
-            "readonly": "",
-            "readonlyLabel": "",
-            "regex": "",
-            "reverse": "",
-            "storeBinder": {
-                "className": "",
-                "properties": {}
-            },
-            "visibilityControl": "",
-            "visibilityValue": ""
+    "elements": [
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.Radio",
+                    "properties": {
+                        "controlField": "",
+                        "id": "insp_choice",
+                        "label": "Choose the option",
+                        "options": [
+                            {
+                                "grouping": "",
+                                "label": "Cancellation",
+                                "value": "cancel"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Re-Schedule",
+                                "value": "reschedule"
+                            }
+                        ],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "inspschedule_info",
+                "join": "",
+                "label": "Create Inspection",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.DatePicker",
+                        "properties": {
+                            "allowManual": "False",
+                            "currentDateAs": "",
+                            "dataFormat": "yyyy-MM-dd",
+                            "datePickerType": "",
+                            "id": "field1",
+                            "label": "Date Picker",
+                            "readonly": "False",
+                            "readonlyLabel": "False",
+                            "yearRange": "c-10:c+10"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextArea",
+                        "properties": {
+                            "cols": "20",
+                            "id": "field2",
+                            "label": "Text Area",
+                            "readonly": "False",
+                            "readonlyLabel": "False",
+                            "rows": "5"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
+                            "id": "field4",
+                            "useDefaultWhenEmpty": ""
+                        }
+                    }
+                ],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "id": "section2",
+                "label": "Section"
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.TextArea",
+                        "properties": {
+                            "cols": "20",
+                            "id": "field5",
+                            "label": "Text Area",
+                            "readonly": "False",
+                            "readonlyLabel": "False",
+                            "rows": "5"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
+                            "id": "field6",
+                            "useDefaultWhenEmpty": ""
+                        }
+                    }
+                ],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "id": "section3",
+                "label": "Section"
+            }
         }
-    }],
+    ],
     "properties": {
         "description": "",
         "id": "cancellation_inspection",
