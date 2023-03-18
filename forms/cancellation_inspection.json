@@ -6,49 +6,38 @@
             "elements": [
                 {
                     "className": "org.joget.apps.form.model.Column",
-                    "elements": [
-                        {
-                            "className": "org.joget.apps.form.lib.CustomHTML",
-                            "properties": {
-                                "autoPopulate": "",
-                                "id": "schedule",
-                                "label": "",
-                                "value": "<img src=\"/images/calendar.png\" height=\"5%\" width=\"5%\"><\/img> \n\n<b>DMCC<\/b><br><br>\n <b><span class=\"label\">Company<\/span><b>   <br><br>\n<b><span class=\"label\">Schedule date<\/span><b>  <br><br>\n"
-                            }
-                        },
-                        {
-                            "className": "org.joget.apps.form.lib.Radio",
-                            "properties": {
-                                "controlField": "",
-                                "id": "insp_choice",
-                                "label": "Choose the option",
-                                "options": [
-                                    {
-                                        "grouping": "",
-                                        "label": "Cancellation",
-                                        "value": "cancel"
-                                    },
-                                    {
-                                        "grouping": "",
-                                        "label": "Re-Schedule",
-                                        "value": "reschedule"
-                                    }
-                                ],
-                                "optionsBinder": {
-                                    "className": "",
-                                    "properties": {}
+                    "elements": [{
+                        "className": "org.joget.apps.form.lib.Radio",
+                        "properties": {
+                            "controlField": "",
+                            "id": "insp_choice",
+                            "label": "Choose the option",
+                            "options": [
+                                {
+                                    "grouping": "",
+                                    "label": "Cancellation",
+                                    "value": "cancel"
                                 },
-                                "readonly": "",
-                                "readonlyLabel": "",
-                                "validator": {
-                                    "className": "",
-                                    "properties": {}
-                                },
-                                "value": "",
-                                "workflowVariable": ""
-                            }
+                                {
+                                    "grouping": "",
+                                    "label": "Re-Schedule",
+                                    "value": "reschedule"
+                                }
+                            ],
+                            "optionsBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
                         }
-                    ],
+                    }],
                     "properties": {"width": "49%"}
                 },
                 {
@@ -134,6 +123,82 @@
                 },
                 "visibilityControl": "",
                 "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [{
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "autoPopulate": "",
+                            "id": "schedule",
+                            "label": "",
+                            "value": "<img src=\"/images/calendar.png\" height=\"5%\" width=\"5%\"><\/img> \n\n<b>DMCC<\/b><br><br>\n <b><span class=\"label\">Company<\/span><b>   <br><br>\n<b><span class=\"label\">Schedule date<\/span><b>  <br><br>\n"
+                        }
+                    }],
+                    "properties": {"width": "49%"}
+                },
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.CustomHTML",
+                            "properties": {
+                                "autoPopulate": "",
+                                "id": "field15",
+                                "label": "",
+                                "value": "<b><span class=\"label\">Tower name<\/span><b>  <br><br> \n<b><span class=\"label\">tower seq.no<\/span><b>   <br><br>\n<b><span class=\"label\">Location<\/span><b>   <br><br>\n<span class=\"label\">#i18n.Event Status#<\/span>  <b>#requestParam.reportstatus#<\/b><br/><br/>\n"
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.SelectBox",
+                            "properties": {
+                                "controlField": "",
+                                "id": "action",
+                                "label": "Action",
+                                "multiple": "",
+                                "options": [
+                                    {
+                                        "grouping": "",
+                                        "label": "",
+                                        "value": ""
+                                    },
+                                    {
+                                        "grouping": "",
+                                        "label": "Cancellation",
+                                        "value": "cancel"
+                                    },
+                                    {
+                                        "grouping": "",
+                                        "label": "Reschedule",
+                                        "value": "reschedule"
+                                    }
+                                ],
+                                "optionsBinder": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "readonly": "",
+                                "readonlyLabel": "",
+                                "size": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "",
+                                "workflowVariable": ""
+                            }
+                        }
+                    ],
+                    "properties": {"width": "49%"}
+                }
+            ],
+            "properties": {
+                "id": "section4",
+                "label": "Section"
             }
         },
         {
