@@ -166,8 +166,17 @@
             "exclude_export": "",
             "filterable": true,
             "format": {
-                "className": "",
-                "properties": {}
+                "className": "org.joget.plugin.enterprise.ProcessStatusDatalistFormatter",
+                "properties": {
+                    "eventClick": "",
+                    "showFutureActivities": "true",
+                    "showProcessName": "",
+                    "showSkippedActivities": "",
+                    "usernameFormat": "name",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": "",
+                    "viewPermission": ""
+                }
             },
             "headerAlignment": "",
             "hidden": "false",
