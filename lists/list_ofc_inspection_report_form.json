@@ -259,7 +259,7 @@
             "filterParamName": "d-5602826-fn_c_status",
             "hidden": "",
             "id": "filter_2",
-            "label": "Status",
+            "label": "SR Status",
             "name": "c_status",
             "type": {
                 "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
@@ -276,6 +276,15 @@
             "type": {
                 "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
                 "properties": {"defaultValue": ""}
+            }
+        },
+        {
+            "id": "filter_5",
+            "label": "c_inspectionreportStatus",
+            "name": "c_inspectionreportStatus",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {}
             }
         },
         {
