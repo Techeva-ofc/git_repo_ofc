@@ -105,28 +105,6 @@
             },
             "headerAlignment": "",
             "hidden": "false",
-            "id": "column_2",
-            "label": "Created On",
-            "name": "dateCreated",
-            "sortable": "true",
-            "style": "",
-            "width": ""
-        },
-        {
-            "action": {
-                "className": "",
-                "properties": {}
-            },
-            "alignment": "",
-            "datalist_type": "column",
-            "exclude_export": "",
-            "filterable": true,
-            "format": {
-                "className": "",
-                "properties": {}
-            },
-            "headerAlignment": "",
-            "hidden": "false",
             "id": "column_0",
             "label": "Payment Date",
             "name": "c_paymentDate",
