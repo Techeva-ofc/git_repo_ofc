@@ -125,8 +125,11 @@
             "exclude_export": "",
             "filterable": true,
             "format": {
-                "className": "",
-                "properties": {}
+                "className": "org.joget.plugin.enterprise.DateFormatter",
+                "properties": {
+                    "dateStoreInUTC": "true",
+                    "displayFormat": "dd/MM/yyyy hh:mm aa"
+                }
             },
             "headerAlignment": "",
             "hidden": "false",
