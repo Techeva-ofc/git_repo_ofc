@@ -29,15 +29,27 @@
                     {
                         "className": "org.joget.apps.form.lib.DatePicker",
                         "properties": {
-                            "allowManual": "False",
-                            "currentDateAs": "",
-                            "dataFormat": "yyyy-MM-dd",
-                            "datePickerType": "",
-                            "id": "field1",
-                            "label": "Date Picker",
-                            "readonly": "False",
-                            "readonlyLabel": "False",
-                            "yearRange": "c-10:c+10"
+                            "allowManual": "true",
+                            "datePickerType": "utcdateTime",
+                            "endDateFieldId": "",
+                            "format24hr": "",
+                            "id": "dateofreschedule",
+                            "label": "Preferred Date & Time",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "showUserTimeZone": "true",
+                            "startDateFieldId": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "mandatory": "true",
+                                    "message": "mandatory",
+                                    "type": ""
+                                }
+                            },
+                            "value": "",
+                            "workflowVariable": ""
                         }
                     },
                     {
