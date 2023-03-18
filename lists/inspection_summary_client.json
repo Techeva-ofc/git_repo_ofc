@@ -319,7 +319,7 @@
         "properties": {
             "confirmation": "",
             "datalist_type": "row_action",
-            "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/inspectionreportview",
+            "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/reportclientform",
             "hrefColumn": "C_serReqDmccSrNo;c_companyName;c_inspSchedlDate;c_inspectionreportStatus;c_reportdate;id",
             "hrefParam": "serReqDmccSrNo;company;scheduledate;reportstatus;reportdate;id",
             "label": "Upload Image(s)",
@@ -335,12 +335,6 @@
                     "join": "AND",
                     "operator": "=",
                     "value": "Partial Compliance"
-                },
-                {
-                    "field": "c_status",
-                    "join": "OR",
-                    "operator": "=",
-                    "value": "Image(s) to-be Uploaded"
                 },
                 {
                     "field": "c_status",
