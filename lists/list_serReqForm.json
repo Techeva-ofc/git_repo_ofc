@@ -33,7 +33,7 @@
                     "requestParams": [{
                         "defaultValue": "",
                         "hrefColumn": "c_serReqDmccSrNo",
-                        "param": "companyinfo"
+                        "param": "dmcclist"
                     }]
                 }
             },
