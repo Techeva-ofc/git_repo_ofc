@@ -13,7 +13,7 @@
                                 "autoPopulate": "",
                                 "id": "schedule",
                                 "label": "",
-                                "value": "<b><span class=\"label\" style=\"font-size:14.0pt\">DMCC<\/span><\/b><br><br>\n<b><span class=\"label\">Company<\/span><b>   <br><br>\n<b><span class=\"label\">Schedule date<\/span><b>  <br><br>\n<b><span class=\"label\">Tower name<\/span><b>  <br><br> \n<b><span class=\"label\">tower seq.no<\/span><b>   <br><br>\n<b><span class=\"label\">Location<\/span><b>   <br><br>\n<span class=\"label\">#i18n.Event Status#<\/span>  <b>#requestParam.reportstatus#<\/b><br/><br/>\n"
+                                "value": "<span><img src=\"/images/calendar.png\" height=\"5%\" width=\"5%\"><\/img><br><b><DMCC<\/b><\/span><br><br>\n<b><span class=\"label\">Company<\/span><b>   <br><br>\n<b><span class=\"label\">Schedule date<\/span><b>  <br><br>\n<b><span class=\"label\">Tower name<\/span><b>  <br><br> \n<b><span class=\"label\">tower seq.no<\/span><b>   <br><br>\n<b><span class=\"label\">Location<\/span><b>   <br><br>\n<span class=\"label\">#i18n.Event Status#<\/span>  <b>#requestParam.reportstatus#<\/b><br/><br/>\n"
                             }
                         },
                         {
@@ -98,6 +98,11 @@
                     "className": "org.joget.apps.form.model.Column",
                     "elements": [],
                     "properties": {"width": "49%"}
+                },
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [],
+                    "properties": {"width": "49%"}
                 }
             ],
             "properties": {
@@ -131,38 +136,6 @@
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
                 "elements": [
-                    {
-                        "className": "org.joget.apps.form.lib.Radio",
-                        "properties": {
-                            "controlField": "",
-                            "id": "insp_choice",
-                            "label": "Choose the option",
-                            "options": [
-                                {
-                                    "grouping": "",
-                                    "label": "Cancellation",
-                                    "value": "cancel"
-                                },
-                                {
-                                    "grouping": "",
-                                    "label": "Re-Schedule",
-                                    "value": "reschedule"
-                                }
-                            ],
-                            "optionsBinder": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "",
-                            "workflowVariable": ""
-                        }
-                    },
                     {
                         "className": "org.joget.apps.form.lib.DatePicker",
                         "properties": {
