@@ -177,6 +177,13 @@
                             },
                             {
                                 "formatType": "",
+                                "label": "Status",
+                                "readonly": "",
+                                "value": "status",
+                                "width": ""
+                            },
+                            {
+                                "formatType": "",
                                 "label": "Reference Image Upload",
                                 "readonly": "",
                                 "value": "ref_image",
