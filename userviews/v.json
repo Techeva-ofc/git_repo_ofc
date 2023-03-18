@@ -1548,6 +1548,27 @@
                     }
                 },
                 {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "buttonPosition": "bottomLeft",
+                        "cacheAllLinks": "",
+                        "cacheListAction": "",
+                        "checkboxPosition": "no",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "inspectioninbox",
+                        "datalistId": "inspection_summary_client",
+                        "enableOffline": "",
+                        "id": "45092783E9B041AEA702369906856928",
+                        "keyName": "",
+                        "label": "Inbox",
+                        "rowCount": "true",
+                        "selectionType": "single",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
                     "className": "org.joget.apps.userview.lib.FormMenu",
                     "properties": {
                         "actionAfterSaved": "",
