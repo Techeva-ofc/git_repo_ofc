@@ -22,13 +22,16 @@
             "exclude_export": "",
             "filterable": true,
             "format": {
-                "className": "",
-                "properties": {}
+                "className": "org.joget.plugin.enterprise.DateFormatter",
+                "properties": {
+                    "dateStoreInUTC": "true",
+                    "displayFormat": "dd/MM/yyyy hh:mm a"
+                }
             },
             "headerAlignment": "",
             "hidden": "false",
             "id": "column_6",
-            "label": "DateCreated",
+            "label": "Created On",
             "name": "dateCreated",
             "sortable": "true",
             "style": "",
