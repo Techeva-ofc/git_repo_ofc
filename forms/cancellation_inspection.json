@@ -13,7 +13,7 @@
                                 "autoPopulate": "",
                                 "id": "schedule",
                                 "label": "",
-                                "value": "<span><img src=\"/images/calendar.png\" height=\"5%\" width=\"5%\"><\/img><br><b><DMCC<\/b><\/span><br><br>\n<b><span class=\"label\">Company<\/span><b>   <br><br>\n<b><span class=\"label\">Schedule date<\/span><b>  <br><br>\n<b><span class=\"label\">Tower name<\/span><b>  <br><br> \n<b><span class=\"label\">tower seq.no<\/span><b>   <br><br>\n<b><span class=\"label\">Location<\/span><b>   <br><br>\n<span class=\"label\">#i18n.Event Status#<\/span>  <b>#requestParam.reportstatus#<\/b><br/><br/>\n"
+                                "value": "<img src=\"/images/calendar.png\" height=\"5%\" width=\"5%\"><\/img> \n\n<b>DMCC<\/b><br><br>\n <b><span class=\"label\">Company<\/span><b>   <br><br>\n<b><span class=\"label\">Schedule date<\/span><b>  <br><br>\n"
                             }
                         },
                         {
@@ -92,6 +92,11 @@
                             "workflowVariable": ""
                         }
                     }],
+                    "properties": {"width": "49%"}
+                },
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [],
                     "properties": {"width": "49%"}
                 },
                 {
