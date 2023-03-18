@@ -43,19 +43,36 @@
                     {
                         "className": "org.joget.apps.form.lib.TextArea",
                         "properties": {
-                            "cols": "20",
-                            "id": "field2",
-                            "label": "Text Area",
-                            "readonly": "False",
-                            "readonlyLabel": "False",
-                            "rows": "5"
+                            "cols": "150",
+                            "id": "resonreschedule",
+                            "label": "Reschedule Reason",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "rows": "5",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "mandatory": "true",
+                                    "message": "mandatory",
+                                    "type": ""
+                                }
+                            },
+                            "value": "",
+                            "workflowVariable": ""
                         }
                     },
                     {
                         "className": "org.joget.apps.form.lib.HiddenField",
                         "properties": {
-                            "id": "field4",
-                            "useDefaultWhenEmpty": ""
+                            "id": "rescheduleid",
+                            "useDefaultWhenEmpty": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "reschedule",
+                            "workflowVariable": ""
                         }
                     }
                 ],
@@ -126,7 +143,7 @@
                     {
                         "className": "org.joget.apps.form.lib.HiddenField",
                         "properties": {
-                            "id": "cancel",
+                            "id": "cancelid",
                             "useDefaultWhenEmpty": "",
                             "validator": {
                                 "className": "",
