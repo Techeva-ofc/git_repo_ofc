@@ -166,23 +166,8 @@
             "exclude_export": "",
             "filterable": true,
             "format": {
-                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
-                "properties": {
-                    "options": [
-                        {
-                            "label": "yes",
-                            "value": "yes"
-                        },
-                        {
-                            "label": "no",
-                            "value": "no"
-                        }
-                    ],
-                    "optionsBinder": {
-                        "className": "",
-                        "properties": {}
-                    }
-                }
+                "className": "",
+                "properties": {}
             },
             "headerAlignment": "",
             "hidden": "false",
