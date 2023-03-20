@@ -183,7 +183,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "Inspection Report Subform",
+        "name": "Inspection Report Subform_1",
         "noPermissionMessage": "",
         "permission": {
             "className": "",
