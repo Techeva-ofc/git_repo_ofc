@@ -27,7 +27,7 @@
                             "hidden": "",
                             "id": "jobid",
                             "label": "Job No.",
-                            "workflowVariable": "jobid"
+                            "workflowVariable": ""
                         }
                     },
                     {
