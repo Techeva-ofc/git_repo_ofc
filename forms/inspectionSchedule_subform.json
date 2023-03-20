@@ -114,7 +114,7 @@
                                 "groupingColumn": "",
                                 "idColumn": "",
                                 "labelColumn": "report_status",
-                                "useAjax": ""
+                                "useAjax": "true"
                             }
                         },
                         "readonly": "",
