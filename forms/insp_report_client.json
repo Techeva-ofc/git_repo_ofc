@@ -157,7 +157,7 @@
                                 "autoHandleFiles": "",
                                 "autoHandleWorkflowVariable": "true",
                                 "jdbcDatasource": "default",
-                                "sql": "select c_checkpointCode,c_checkpointName, c_ref_image\nfrom app_fd_ofc_schdl_sub_tab"
+                                "sql": "select c_checkpointCode,c_checkpointName, c_ref_image\nfrom app_fd_ofc_schdl_sub_tab s\ninner join app_fd_ofc_serreqs_tab sr\non sr.id = s.c_referencekey\nwhere  sr.c_serReqDmccSrNo = '#requestParam.serReqDmccSrNo#'\n s\ninner join app_fd_ofc_serreqs_tab sr\non sr.id = s.c_referencekey\nwhere  sr.c_serReqDmccSrNo = '#requestParam.serReqDmccSrNo#'\n"
                             }
                         },
                         "options": [
