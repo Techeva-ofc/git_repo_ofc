@@ -51,7 +51,7 @@
                     "className": "org.joget.apps.form.lib.TextField",
                     "properties": {
                         "encryption": "",
-                        "id": "report_type",
+                        "id": "inspreport_type",
                         "label": "Type",
                         "maxlength": "",
                         "placeholder": "",
