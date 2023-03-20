@@ -102,20 +102,26 @@
                         "id": "status",
                         "label": "Status",
                         "multiple": "",
-                        "options": [],
-                        "optionsBinder": {
-                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
-                            "properties": {
-                                "addEmptyOption": "",
-                                "cacheInterval": "",
-                                "emptyLabel": "",
-                                "extraCondition": "",
-                                "formDefId": "insp_report_subform",
-                                "groupingColumn": "",
-                                "idColumn": "",
-                                "labelColumn": "report_status",
-                                "useAjax": "true"
+                        "options": [
+                            {
+                                "grouping": "",
+                                "label": "YES",
+                                "value": "yes"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "NO",
+                                "value": "no"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "N/A",
+                                "value": "na"
                             }
+                        ],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
                         },
                         "readonly": "",
                         "readonlyLabel": "",
