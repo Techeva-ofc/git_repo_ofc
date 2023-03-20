@@ -24,7 +24,7 @@
                         "properties": {
                             "envVariable": "counter",
                             "format": "AOFC-??????",
-                            "hidden": "",
+                            "hidden": "true",
                             "id": "jobid",
                             "label": "Job No.",
                             "workflowVariable": ""
