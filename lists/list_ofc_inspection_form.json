@@ -52,6 +52,28 @@
             },
             "headerAlignment": "",
             "hidden": "false",
+            "id": "column_8",
+            "label": "Inspection Scheduled On",
+            "name": "c_inspSchedlDate",
+            "sortable": "true",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
             "id": "column_3",
             "label": "DMCC Sr No",
             "name": "C_serReqDmccSrNo",
