@@ -146,7 +146,7 @@
                         "disabledAdd": "true",
                         "disabledDelete": "true",
                         "errorMessage": "Invalid number of rows",
-                        "formDefId": "inspectionSchedule_subform",
+                        "formDefId": "insp_report_subform",
                         "hint": "Click to edit. Tab to save.",
                         "id": "inspCheckpoints",
                         "keyToSave": "9",
@@ -157,7 +157,7 @@
                                 "autoHandleFiles": "",
                                 "autoHandleWorkflowVariable": "true",
                                 "jdbcDatasource": "default",
-                                "sql": "select sr.id,s.c_checkpointCode,s.c_checkpointName,s.c_status FROM app_fd_ofc_schdl_sub_tab s\r\ninner join app_fd_ofc_serreqs_tab sr\r\nON s.c_referencekey = sr.id\r\nwhere sr.c_checklisttype_multi is not null \r\nAND sr.c_serReqDmccSrNo = '#requestParam.serReqDmccSrNo#'\r\n"
+                                "sql": "select sr.id,s.c_checkpointCode,s.c_checkpointName FROM app_fd_ofc_schdl_sub_tab s\r\ninner join app_fd_ofc_serreqs_tab sr\r\nON s.c_referencekey = sr.id\r\nwhere sr.c_checklisttype_multi is not null \r\nAND sr.c_serReqDmccSrNo = '#requestParam.serReqDmccSrNo#'\r\n"
                             }
                         },
                         "options": [
@@ -165,35 +165,35 @@
                                 "formatType": "",
                                 "label": "Code",
                                 "readonly": "true",
-                                "value": "checkpointCode",
+                                "value": "report_checkpointCode",
                                 "width": ""
                             },
                             {
                                 "formatType": "",
                                 "label": "Check point",
                                 "readonly": "true",
-                                "value": "checkpointName",
+                                "value": "report_checkpointName",
                                 "width": ""
                             },
                             {
                                 "formatType": "",
                                 "label": "Status",
                                 "readonly": "",
-                                "value": "status",
+                                "value": "report_status",
                                 "width": ""
                             },
                             {
                                 "formatType": "",
                                 "label": "Reference Image Upload",
                                 "readonly": "",
-                                "value": "ref_image",
+                                "value": "report_ref_image",
                                 "width": ""
                             },
                             {
                                 "formatType": "",
                                 "label": "Remarks",
                                 "readonly": "",
-                                "value": "remark",
+                                "value": "report_remark_insp_checkpoint",
                                 "width": ""
                             }
                         ],
