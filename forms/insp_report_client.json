@@ -177,23 +177,9 @@
                             },
                             {
                                 "formatType": "",
-                                "label": "Status",
-                                "readonly": "true",
-                                "value": "status",
-                                "width": ""
-                            },
-                            {
-                                "formatType": "",
                                 "label": "Reference Image Upload",
                                 "readonly": "",
                                 "value": "ref_image",
-                                "width": ""
-                            },
-                            {
-                                "formatType": "",
-                                "label": "Remarks",
-                                "readonly": "true",
-                                "value": "remark_insp_checkpoint",
                                 "width": ""
                             }
                         ],
