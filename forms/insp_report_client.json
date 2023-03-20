@@ -190,8 +190,11 @@
                         "showRowNumber": "true",
                         "sortIndx": "",
                         "storeBinder": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                            "properties": {
+                                "foreignKey": "referencekey",
+                                "formDefId": "inspectionSchedule_subform"
+                            }
                         },
                         "uniqueKey": "",
                         "validateMaxRow": "",
@@ -234,9 +237,19 @@
     "properties": {
         "description": "",
         "id": "insp_report_client",
-        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "name": "Inspection Report Client",
-        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "noPermissionMessage": "",
+        "permission": null,
+        "postProcessor": null,
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "tableName": "ofc_serReqs_tab"
     }
 }
