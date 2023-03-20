@@ -106,17 +106,17 @@
                             {
                                 "grouping": "",
                                 "label": "YES",
-                                "value": "yes"
+                                "value": "Yes"
                             },
                             {
                                 "grouping": "",
                                 "label": "NO",
-                                "value": "no"
+                                "value": "No"
                             },
                             {
                                 "grouping": "",
                                 "label": "N/A",
-                                "value": "na"
+                                "value": "NA"
                             }
                         ],
                         "optionsBinder": {
