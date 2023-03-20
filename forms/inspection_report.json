@@ -206,7 +206,7 @@
                         "storeBinder": {
                             "className": "org.joget.plugin.enterprise.MultirowFormBinder",
                             "properties": {
-                                "foreignKey": "id",
+                                "foreignKey": "report_referencekey",
                                 "formDefId": "insp_report_subform"
                             }
                         },
