@@ -146,7 +146,7 @@
                         "disabledAdd": "true",
                         "disabledDelete": "true",
                         "errorMessage": "Invalid number of rows",
-                        "formDefId": "insp_report_subform",
+                        "formDefId": "inspectionSchedule_subform",
                         "hint": "Click to edit. Tab to save.",
                         "id": "inspCheckpoints",
                         "keyToSave": "9",
@@ -165,35 +165,35 @@
                                 "formatType": "",
                                 "label": "Code",
                                 "readonly": "true",
-                                "value": "report_checkpointCode",
+                                "value": "checkpointCode",
                                 "width": ""
                             },
                             {
                                 "formatType": "",
                                 "label": "Check point",
                                 "readonly": "true",
-                                "value": "report_checkpointName",
+                                "value": "checkpointName",
                                 "width": ""
                             },
                             {
                                 "formatType": "",
                                 "label": "Status",
                                 "readonly": "",
-                                "value": "report_status",
+                                "value": "status",
                                 "width": ""
                             },
                             {
                                 "formatType": "",
                                 "label": "Reference Image Upload",
                                 "readonly": "",
-                                "value": "report_ref_image",
+                                "value": "ref_image",
                                 "width": ""
                             },
                             {
                                 "formatType": "",
                                 "label": "Remarks",
                                 "readonly": "",
-                                "value": "report_remark_insp_checkpoint",
+                                "value": "remark_insp_checkpoint",
                                 "width": ""
                             }
                         ],
