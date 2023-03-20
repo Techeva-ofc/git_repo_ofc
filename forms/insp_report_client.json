@@ -190,11 +190,8 @@
                         "showRowNumber": "true",
                         "sortIndx": "",
                         "storeBinder": {
-                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
-                            "properties": {
-                                "foreignKey": "referencekey",
-                                "formDefId": "inspectionSchedule_subform"
-                            }
+                            "className": "",
+                            "properties": {}
                         },
                         "uniqueKey": "",
                         "validateMaxRow": "",
