@@ -235,8 +235,14 @@
         },
         "name": "Inspection Report Client",
         "noPermissionMessage": "",
-        "permission": null,
-        "postProcessor": null,
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
         "postProcessorRunOn": "create",
         "storeBinder": {
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
