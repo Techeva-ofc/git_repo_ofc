@@ -1,29 +1,12 @@
 {
     "actions": [],
     "binder": {
-        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "className": "org.joget.plugin.enterprise.JdbcDataListBinder",
         "properties": {
-            "aggregateField": [],
-            "customSelectionValue": "",
-            "extraCondition": "",
-            "filters": [
-                {
-                    "field": "InspectionStatus",
-                    "join": "OR",
-                    "operator": "=",
-                    "value": "Fitout Non-Compliance"
-                },
-                {
-                    "field": "InspectionStatus",
-                    "join": "OR",
-                    "operator": "=",
-                    "value": "Other Non-Compliance"
-                }
-            ],
-            "formDefId": "inspection_report",
-            "functionColumns": [],
-            "groupBy": "",
-            "joins": []
+            "jdbcDatasource": "default",
+            "optimisePaging": "",
+            "primaryKey": "id",
+            "sql": "SELECT sr.id,sr.c_jobid,sr.c_licenseactivity,sr.dateCreated,sr.c_reportdate,sr.C_serReqDmccSrNo, c.c_licenseNumber, sr.c_serReqServCat, c.c_companyName, c.c_companyLocation, t.c_tower_seq_no, t.c_tower_name ,sr.c_status, sr.c_inspSchedlDate, sr.c_inspectionreportStatus\r\nFROM app_fd_ofc_serreqs_tab sr\r\nINNER JOIN app_fd_ofc_company_tab c\r\nON sr.c_companyName = c.id\r\nINNER JOIN app_fd_ofc_location_tab l\r\nON c.c_companyLocation = l.c_locName\r\nINNER JOIN app_fd_ofc_tower_tab t\r\nON c.c_tower_name = t.c_tower_name\r\nWHERE sr.c_inspectionreportStatus = 'Other Non-Compliance' \r\nor  sr.c_inspectionreportStatus = 'Fitout Non-Compliance' \r\norder by sr.c_inspSchedlDate ASC"
         }
     },
     "buttonPosition": "bottomLeft",
@@ -33,16 +16,24 @@
             "filterable": true,
             "hidden": "false",
             "id": "column_0",
-            "label": "dmccsrno",
-            "name": "dmccsrno",
+            "label": "c_jobid",
+            "name": "c_jobid",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_2",
+            "label": "c_inspSchedlDate",
+            "name": "c_inspSchedlDate",
             "sortable": "false"
         },
         {
             "filterable": true,
             "hidden": "false",
             "id": "column_1",
-            "label": "companyName",
-            "name": "companyName",
+            "label": "c_inspectionreportStatus",
+            "name": "c_inspectionreportStatus",
             "sortable": "false"
         }
     ],
@@ -55,7 +46,19 @@
     "orderBy": "",
     "pageSize": "0",
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
-    "rowActions": [],
+    "rowActions": [{
+        "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+        "icon": "<i class=\"fas fa-link\"><\/i>",
+        "id": "rowAction_0",
+        "label": "Hyperlink",
+        "name": "Data List Hyperlink Action",
+        "properties": {
+            "datalist_type": "row_action",
+            "label": "Hyperlink",
+            "target": "_self"
+        },
+        "type": "text"
+    }],
     "showPageSizeSelector": "true",
     "useSession": "false"
 }
