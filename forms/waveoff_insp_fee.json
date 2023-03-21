@@ -134,7 +134,7 @@
                 "comment": "",
                 "id": "inspectionReport",
                 "join": "",
-                "label": "Inspection Report",
+                "label": "Inspection Report - Non Compliance",
                 "loadBinder": {
                     "className": "",
                     "properties": {}
@@ -146,6 +146,39 @@
                 "permissionHidden": "",
                 "permissionReadonly": "",
                 "readonly": "true",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "noncompliancesection",
+                "join": "",
+                "label": "Non-Compliance Details",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
                 "readonlyLabel": "",
                 "regex": "",
                 "reverse": "",
@@ -265,7 +298,7 @@
                 "comment": "",
                 "id": "othernoncompliance",
                 "join": "",
-                "label": "Other Non-Compliance",
+                "label": "",
                 "loadBinder": {
                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
@@ -286,6 +319,85 @@
                 },
                 "visibilityControl": "inspectionreportStatus",
                 "visibilityValue": "Other Non-Compliance"
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.TextArea",
+                        "properties": {
+                            "cols": "100",
+                            "id": "fitoutreason",
+                            "label": "Reason",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "rows": "5",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.plugin.enterprise.ImageUpload",
+                        "properties": {
+                            "createThumbnail": "true",
+                            "fileType": ".jpeg;.jpg;.gif;.png",
+                            "fileTypeMsg": "Invalid file type",
+                            "height": "60",
+                            "id": "fitoutimages",
+                            "label": "Upload reference images",
+                            "maxSize": "",
+                            "maxSizeMsg": "File size limit exceeded",
+                            "multiple": "true",
+                            "padding": "",
+                            "permissionType": "",
+                            "readonly": "",
+                            "removeFile": "",
+                            "resizeHeight": "",
+                            "resizeMethod": "",
+                            "resizeQuality": "0.8",
+                            "resizeWidth": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "width": "60"
+                        }
+                    }
+                ],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "fitoutsection",
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "inspectionreportStatus",
+                "visibilityValue": "Fiout Non-Compliance"
             }
         },
         {
