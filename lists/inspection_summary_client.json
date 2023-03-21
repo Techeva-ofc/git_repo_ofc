@@ -310,43 +310,76 @@
             "view": "Tablet"
         }
     ],
-    "rowActions": [{
-        "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
-        "icon": "<i class=\"fas fa-link\"><\/i>",
-        "id": "rowAction_0",
-        "label": "Hyperlink",
-        "name": "Data List Hyperlink Action",
-        "properties": {
-            "confirmation": "",
-            "datalist_type": "row_action",
-            "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/reportclientform",
-            "hrefColumn": "C_serReqDmccSrNo;c_companyName;c_inspSchedlDate;c_inspectionreportStatus;c_reportdate;id",
-            "hrefParam": "serReqDmccSrNo;company;scheduledate;reportstatus;reportdate;id",
-            "label": "Upload Image(s)",
-            "rules": [
-                {
-                    "field": "c_status",
-                    "join": "AND",
-                    "operator": "=",
-                    "value": "Image(s) To-Be Uploaded"
-                },
-                {
-                    "field": "c_inspectionreportStatus",
-                    "join": "AND",
-                    "operator": "=",
-                    "value": "Partial Compliance"
-                },
-                {
-                    "field": "c_status",
-                    "join": "OR",
-                    "operator": "=",
-                    "value": "Image(s) to-be Uploaded"
-                }
-            ],
-            "target": "_self"
+    "rowActions": [
+        {
+            "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+            "icon": "<i class=\"fas fa-link\"><\/i>",
+            "id": "rowAction_0",
+            "label": "Hyperlink",
+            "name": "Data List Hyperlink Action",
+            "properties": {
+                "confirmation": "",
+                "datalist_type": "row_action",
+                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/reportclientform",
+                "hrefColumn": "C_serReqDmccSrNo;c_companyName;c_inspSchedlDate;c_inspectionreportStatus;c_reportdate;id",
+                "hrefParam": "serReqDmccSrNo;company;scheduledate;reportstatus;reportdate;id",
+                "label": "Upload Image(s)",
+                "rules": [
+                    {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Image(s) To-Be Uploaded"
+                    },
+                    {
+                        "field": "c_inspectionreportStatus",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Partial Compliance"
+                    }
+                ],
+                "target": "_self"
+            },
+            "type": "text"
         },
-        "type": "text"
-    }],
+        {
+            "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+            "icon": "<i class=\"fas fa-link\"><\/i>",
+            "id": "rowAction_1",
+            "label": "Hyperlink",
+            "name": "Data List Hyperlink Action",
+            "properties": {
+                "confirmation": "",
+                "datalist_type": "row_action",
+                "href": "",
+                "hrefColumn": "",
+                "hrefParam": "",
+                "label": "Make Payment",
+                "rules": [
+                    {
+                        "field": "c_inspectionreportStatus",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Fitout Non-Compliance"
+                    },
+                    {
+                        "field": "c_inspectionreportStatus",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Other Non-Compliance"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Awaiting payment from the client"
+                    }
+                ],
+                "target": "_self"
+            },
+            "type": "text"
+        }
+    ],
     "searchPopup": "",
     "showDataWhenFilterSet": "",
     "showPageSizeSelector": "true",
