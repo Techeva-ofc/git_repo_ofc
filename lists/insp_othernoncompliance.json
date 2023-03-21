@@ -15,6 +15,14 @@
         {
             "filterable": true,
             "hidden": "false",
+            "id": "column_3",
+            "label": "C_serReqDmccSrNo",
+            "name": "C_serReqDmccSrNo",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
             "id": "column_0",
             "label": "c_jobid",
             "name": "c_jobid",
