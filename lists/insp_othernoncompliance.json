@@ -1,0 +1,17 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "",
+        "name": "",
+        "properties": {}
+    },
+    "columns": [],
+    "description": "",
+    "filters": [],
+    "id": "insp_othernoncompliance",
+    "name": "List - Inspection Waiver OFF",
+    "order": "",
+    "orderBy": "",
+    "pageSize": "0",
+    "rowActions": []
+}
