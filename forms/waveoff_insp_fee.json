@@ -109,7 +109,7 @@
                             "properties": {
                                 "encryption": "",
                                 "id": "reportdate",
-                                "label": "Date:",
+                                "label": "Reported On:",
                                 "maxlength": "",
                                 "permissionHidden": "",
                                 "placeholder": "",
