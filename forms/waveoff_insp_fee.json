@@ -438,7 +438,7 @@
                         "className": "org.joget.apps.form.lib.TextField",
                         "properties": {
                             "encryption": "",
-                            "id": "wave_off",
+                            "id": "waive_off",
                             "label": "Waive off (60% or 40% or 20%)",
                             "maxlength": "",
                             "placeholder": "",
