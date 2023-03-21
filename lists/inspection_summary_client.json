@@ -212,8 +212,9 @@
                 "properties": {}
             },
             "headerAlignment": "",
-            "hidden": "false",
+            "hidden": "true",
             "id": "column_6",
+            "include_export": "",
             "label": "SR Status",
             "name": "c_status",
             "sortable": "false",
