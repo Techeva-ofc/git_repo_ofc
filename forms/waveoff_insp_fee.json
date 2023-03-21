@@ -122,7 +122,7 @@
                                     "className": "",
                                     "properties": {}
                                 },
-                                "value": "#date.dd MMM yyyy h:mm aa#",
+                                "value": "#requestParam.reportdate#",
                                 "workflowVariable": ""
                             }
                         }
