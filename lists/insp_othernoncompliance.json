@@ -53,8 +53,13 @@
         "label": "Hyperlink",
         "name": "Data List Hyperlink Action",
         "properties": {
+            "confirmation": "",
             "datalist_type": "row_action",
-            "label": "Hyperlink",
+            "href": "",
+            "hrefColumn": "",
+            "hrefParam": "",
+            "label": "Waive off",
+            "rules": [],
             "target": "_self"
         },
         "type": "text"
