@@ -368,7 +368,12 @@
                 "hrefColumn": "C_serReqDmccSrNo;id;c_status",
                 "hrefParam": "serReqDmccSrNo;id;status",
                 "label": "Schedule",
-                "rules": [],
+                "rules": [{
+                    "field": "c_status",
+                    "join": "AND",
+                    "operator": "=",
+                    "value": "Payment Completed"
+                }],
                 "target": "popup"
             },
             "type": "text"
