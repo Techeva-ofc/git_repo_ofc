@@ -3,18 +3,6 @@
     "elements": [
         {
             "className": "org.joget.apps.form.model.Section",
-            "elements": [{
-                "className": "org.joget.apps.form.model.Column",
-                "elements": [],
-                "properties": {"width": "100%"}
-            }],
-            "properties": {
-                "id": "section2",
-                "label": "Section"
-            }
-        },
-        {
-            "className": "org.joget.apps.form.model.Section",
             "elements": [
                 {
                     "className": "org.joget.apps.form.model.Column",
@@ -155,8 +143,9 @@
                     "className": "",
                     "properties": {}
                 },
+                "permissionHidden": "",
                 "permissionReadonly": "",
-                "readonly": "",
+                "readonly": "true",
                 "readonlyLabel": "",
                 "regex": "",
                 "reverse": "",
@@ -285,8 +274,9 @@
                     "className": "",
                     "properties": {}
                 },
+                "permissionHidden": "",
                 "permissionReadonly": "",
-                "readonly": "",
+                "readonly": "true",
                 "readonlyLabel": "",
                 "regex": "",
                 "reverse": "",
