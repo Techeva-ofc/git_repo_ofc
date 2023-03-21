@@ -392,10 +392,10 @@
                 "hrefParam": "id;serReqDmccSrNo;status;inspectionstatus",
                 "label": "Re-Schedule",
                 "rules": [{
-                    "field": "c_status",
-                    "join": "AND",
+                    "field": "c_inspectionreportStatus",
+                    "join": "OR",
                     "operator": "=",
-                    "value": "Inspection To-Be Re-Scheduled"
+                    "value": "Other Non-Compliance"
                 }],
                 "target": "popup"
             },
