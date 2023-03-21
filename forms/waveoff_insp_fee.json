@@ -317,7 +317,7 @@
                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
-                "visibilityControl": "inspectionreportStatus",
+                "visibilityControl": "#requestParam.status#",
                 "visibilityValue": "Other Non-Compliance"
             }
         },
@@ -380,7 +380,7 @@
                 "join": "",
                 "label": "",
                 "loadBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
                 "permission": {
@@ -393,10 +393,10 @@
                 "regex": "",
                 "reverse": "",
                 "storeBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
-                "visibilityControl": "inspectionreportStatus",
+                "visibilityControl": "#requestParam.status#",
                 "visibilityValue": "Fiout Non-Compliance"
             }
         },
