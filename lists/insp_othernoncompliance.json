@@ -56,8 +56,8 @@
             "confirmation": "",
             "datalist_type": "row_action",
             "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/waiveroff",
-            "hrefColumn": "",
-            "hrefParam": "",
+            "hrefColumn": "id;C_serReqDmccSrNo",
+            "hrefParam": "id;serReqDmccSrNo",
             "label": "Waive off",
             "rules": [],
             "target": "_self"
