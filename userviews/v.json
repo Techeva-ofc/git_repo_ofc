@@ -1051,8 +1051,14 @@
                 }
             ],
             "properties": {
+                "comment": "",
+                "hide": "yes",
                 "id": "category-F619E16EE7CB48B28CC69E32DD7D1E46",
-                "label": "hidden"
+                "label": "hidden",
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                }
             }
         },
         {
