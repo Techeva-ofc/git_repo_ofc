@@ -1206,7 +1206,7 @@
                         "keyName": "id",
                         "label": "Inspection Summary",
                         "list-customFooter": "",
-                        "list-customHeader": "",
+                        "list-customHeader": "<style>\r\n    body .dataList td.row_action {\r\n        display: inline-block;\r\n        float: left;\r\n        padding: 0 !important;\r\n    }\r\n     \r\n    th.row_action.footable-visible {\r\n        display: inline;\r\n    }\r\n \r\n    .row_action_inner a {\r\n        padding: 10px;\r\n        float: left;\r\n    }\r\n<\/style>",
                         "list-editLinkLabel": "",
                         "list-editLinkTarget": "",
                         "list-moreActions": [{
