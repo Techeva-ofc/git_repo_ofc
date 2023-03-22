@@ -49,7 +49,7 @@
             ],
             "properties": {
                 "id": "category-EE74E4F4426241BD9BC3BC73B1D24AC7",
-                "label": "<i class='fa fa-home'><\/i> Home",
+                "label": "<i class=\"fa fa-home\"><\/i> Home",
                 "permission": {
                     "className": "org.joget.apps.userview.lib.LoggedInUserPermission",
                     "properties": {}
@@ -173,7 +173,7 @@
             ],
             "properties": {
                 "id": "category-3c667d47-854f-458f-97f0-3fb07397f12f",
-                "label": "<i class=\"fa fa-tasks\"><\/i>Manage Emirates",
+                "label": "<i class=\"#appResource.house-solid.svg#\"><\/i>Manage Emirates-#appResource.house-solid.svg#",
                 "permission": {
                     "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
