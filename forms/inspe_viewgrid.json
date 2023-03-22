@@ -23,10 +23,12 @@
                     "label": "Checkpoint List",
                     "listId": "list_ofc_checklist_inspSchedule",
                     "loadBinder": {
-                        "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                        "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
                         "properties": {
-                            "foreignKey": "referencekey",
-                            "formDefId": "inspectionSchedule_subform"
+                            "autoHandleFiles": "",
+                            "autoHandleWorkflowVariable": "true",
+                            "jdbcDatasource": "default",
+                            "sql": "select * from ofc_schdl_sub_tab where c_referencekey = '#requestParam.primaryKey#'"
                         }
                     },
                     "options": [
@@ -116,9 +118,25 @@
     "properties": {
         "description": "",
         "id": "inspe_viewgrid",
-        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "name": "Grid",
-        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "tableName": "ofc_serReqs_tab"
     }
 }
