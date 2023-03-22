@@ -182,6 +182,15 @@
                         "value": "#requestParam.activity#",
                         "workflowVariable": ""
                     }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
+                        "autoPopulate": "",
+                        "id": "field10",
+                        "label": "",
+                        "value": "<p>This is to certify that Concordia DMCC is satisfied that the operations of the above mentioned client/tenant, under\r\nthe stated license number and the declared locations, as assessed during the inspections, is acceptable from\r\nEnvironment, Health & Safety perspectives. Any proposed variations in the operations/locations must be\r\napproved by Concordia DMCC prior to any change.Attention is drawn to all current applicable authority\r\nregulations in regard to ongoing responsibilities towards clean and safe operations.<\/p>\r\n<span><b>Certificate Expiry:<\/b><\/span><b>#form.app_fd_ofc_serreqs_tab.serReqDmccSrNo#\r\n<\/b>"
+                    }
                 }
             ],
             "properties": {"width": "100%"}
