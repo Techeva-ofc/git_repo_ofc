@@ -28,7 +28,7 @@
                             "autoHandleFiles": "",
                             "autoHandleWorkflowVariable": "true",
                             "jdbcDatasource": "default",
-                            "sql": "select * from ofc_schdl_sub_tab where c_referencekey = '#requestParam.primaryKey#'"
+                            "sql": "SELECT * from app_fd_ofc_checklist_tab WHERE c_checkLisTypeData = '#requestParam.primaryKey#'"
                         }
                     },
                     "options": [
