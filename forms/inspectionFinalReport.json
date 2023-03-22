@@ -11,7 +11,7 @@
                         "autoPopulate": "",
                         "id": "logo",
                         "label": "",
-                        "value": "<img src=\"/images/Concordia-Logo-Square.png\"   height=\"15%\" width=\"15%\"/>\n<h1>ANNUAL OPERATIONAL FITNESS CERTIFICATE<\/h1>"
+                        "value": " <style>\n            .my_text\n            {\n                font-family:    sans-serif;\n                font-size: large;\n                font-weight:    bold;\n                font-color: red;\n            }\n        <\/style>\n\n\n\n\n<img src=\"/images/Concordia-Logo-Square.png\"   height=\"15%\" width=\"15%\"/>\n<div class=\"my_text\">\n<h1>ANNUAL OPERATIONAL FITNESS CERTIFICATE<\/h1> <\/div>"
                     }
                 },
                 {
