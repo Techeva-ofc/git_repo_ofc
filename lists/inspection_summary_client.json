@@ -380,7 +380,7 @@
                 "hrefParam": "",
                 "label": "Make Payment",
                 "rules": [{
-                    "field": "c_wavierstate",
+                    "field": "c_waiverstate",
                     "join": "AND",
                     "operator": "=",
                     "value": "WaiverApplied"
