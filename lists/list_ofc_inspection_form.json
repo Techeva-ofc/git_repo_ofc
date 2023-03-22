@@ -441,9 +441,9 @@
             "properties": {
                 "confirmation": "",
                 "datalist_type": "row_action",
-                "href": "",
-                "hrefColumn": ";;c_licenseNumber;C_serReqDmccSrNo;c_companyName;c_companyLocation;",
-                "hrefParam": "jobid;date;license;account_number;companyname;location;licenseactivity",
+                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/ofc_certificate",
+                "hrefColumn": "c_licenseNumber;C_serReqDmccSrNo;c_companyName;c_companyLocation;",
+                "hrefParam": "license;account_number;companyname;location;licenseactivity",
                 "label": "Generate OFC Certificate",
                 "rules": [{
                     "field": "c_status",
