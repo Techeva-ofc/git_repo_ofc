@@ -187,6 +187,7 @@
          <appId>ofc_app</appId>
          <appVersion>13</appVersion>
          <filesize>701</filesize>
+         <permissionClass></permissionClass>
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.house-solid.svg#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
       </appResource>
       <appResource>
