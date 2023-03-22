@@ -28,7 +28,7 @@
                             "autoHandleFiles": "",
                             "autoHandleWorkflowVariable": "true",
                             "jdbcDatasource": "default",
-                            "sql": "SELECT c_checkpointCode,c_checkpointName,c_checkListTypeData from app_fd_ofc_checklist_tab WHERE c_checkListTypeData = '#requestParam.primaryKey#'"
+                            "sql": "SELECT a.c_checkpointCode,a.c_checkpointName,b.c_checklistType from app_fd_ofc_checklist_tab a\r\nINNER JOIN app_fd_ofc_chklisttype_tab b\r\nON  a.c_checkListTypeData = b.id\r\nWHERE  a.c_checkListTypeData = '#requestParam.primaryKey#';"
                         }
                     },
                     "options": [
@@ -53,7 +53,7 @@
                             "format": "",
                             "formatType": "text",
                             "label": "Type",
-                            "value": "ofc_chklistType_tab.checklistType",
+                            "value": "c_checklistType",
                             "width": ""
                         }
                     ],
