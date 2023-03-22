@@ -173,7 +173,7 @@
             ],
             "properties": {
                 "id": "category-3c667d47-854f-458f-97f0-3fb07397f12f",
-                "label": "<i class=\"#appResource.house-solid.svg#\"><\/i>Manage Emirates --   #request.domainURL##appResource.house-solid.svg#",
+                "label": "<i class=\"#request.domainURL##appResource.house-solid.svg#\"><\/i>Manage Emirates --   #request.domainURL##appResource.house-solid.svg#",
                 "permission": {
                     "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
