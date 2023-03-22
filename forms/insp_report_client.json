@@ -153,8 +153,11 @@
                             "keyToSave": "9",
                             "label": "",
                             "loadBinder": {
-                                "className": "",
-                                "properties": {}
+                                "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                                "properties": {
+                                    "foreignKey": "referencekey",
+                                    "formDefId": "inspectionSchedule_subform"
+                                }
                             },
                             "options": [
                                 {
@@ -186,8 +189,11 @@
                             "showRowNumber": "true",
                             "sortIndx": "",
                             "storeBinder": {
-                                "className": "",
-                                "properties": {}
+                                "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                                "properties": {
+                                    "foreignKey": "referencekey",
+                                    "formDefId": "inspectionSchedule_subform"
+                                }
                             },
                             "uniqueKey": "",
                             "validateMaxRow": "",
