@@ -1205,7 +1205,7 @@
                         "id": "c7fa1fb4-7088-472d-9198-f371af8dfab6",
                         "keyName": "id",
                         "label": "Inspection Summary",
-                        "list-customFooter": "",
+                        "list-customFooter": "<style>\r\n    body .dataList td.row_action {\r\n        display: inline-block;\r\n        float: left;\r\n        padding: 0 !important;\r\n    }\r\n     \r\n    th.row_action.footable-visible {\r\n        display: inline;\r\n    }\r\n \r\n    .row_action_inner a {\r\n        padding: 10px;\r\n        float: left;\r\n    }\r\n<\/style>",
                         "list-customHeader": "<style>\r\n    body .dataList td.row_action {\r\n        display: inline-block;\r\n        float: left;\r\n        padding: 0 !important;\r\n    }\r\n     \r\n    th.row_action.footable-visible {\r\n        display: inline;\r\n    }\r\n \r\n    .row_action_inner a {\r\n        padding: 10px;\r\n        float: left;\r\n    }\r\n<\/style>",
                         "list-editLinkLabel": "",
                         "list-editLinkTarget": "",
