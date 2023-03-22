@@ -506,7 +506,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "Inspection Report",
+        "name": "Inspection Compliance Review",
         "noPermissionMessage": "",
         "permission": {
             "className": "",
