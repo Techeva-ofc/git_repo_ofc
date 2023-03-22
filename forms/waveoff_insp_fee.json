@@ -34,6 +34,19 @@
                             }
                         },
                         {
+                            "className": "org.joget.apps.form.lib.HiddenField",
+                            "properties": {
+                                "id": "waiverstate",
+                                "useDefaultWhenEmpty": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "AppliedWavier",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
                             "className": "org.joget.apps.form.lib.TextField",
                             "properties": {
                                 "encryption": "",
