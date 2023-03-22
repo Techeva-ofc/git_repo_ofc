@@ -218,6 +218,14 @@
          <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
       </appResource>
       <appResource>
+         <id>Screenshot_2023-03-16_095758.png</id>
+         <appId>ofc_app</appId>
+         <appVersion>13</appVersion>
+         <filesize>81467</filesize>
+         <permissionClass>org.joget.apps.userview.lib.LoggedInUserPermission</permissionClass>
+         <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;org.joget.apps.userview.lib.LoggedInUserPermission&quot;, &quot;properties&quot;: {}}}</permissionProperties>
+      </appResource>
+      <appResource>
          <id>thumb.png</id>
          <appId>ofc_app</appId>
          <appVersion>13</appVersion>
