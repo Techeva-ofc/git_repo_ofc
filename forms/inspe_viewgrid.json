@@ -91,7 +91,7 @@
                 {
                     "className": "org.joget.apps.form.lib.HiddenField",
                     "properties": {
-                        "id": "field2",
+                        "id": "checktypedata",
                         "useDefaultWhenEmpty": "",
                         "validator": {
                             "className": "",
