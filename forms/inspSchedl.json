@@ -132,68 +132,6 @@
                         }
                     },
                     {
-                        "className": "org.joget.plugin.enterprise.SpreadSheetGrid",
-                        "properties": {
-                            "customSettings": "",
-                            "disabledAdd": "",
-                            "disabledDelete": "",
-                            "errorMessage": "Invalid number of rows",
-                            "fixedColumnsLeft": "0",
-                            "headerSorting": "true",
-                            "id": "field20",
-                            "label": "Spreadsheet",
-                            "loadBinder": {
-                                "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
-                                "properties": {
-                                    "autoHandleFiles": "",
-                                    "autoHandleWorkflowVariable": "true",
-                                    "jdbcDatasource": "default",
-                                    "sql": "SELECT a.c_checkpointCode,a.c_checkpointName,b.c_checklistType from app_fd_ofc_checklist_tab a\r\nINNER JOIN app_fd_ofc_chklisttype_tab b\r\nON  a.c_checkListTypeData = b.id\r\nWHERE  a.c_checkListTypeData = '#requestParam.primaryKey#';"
-                                }
-                            },
-                            "maxHeight": "",
-                            "minSpareRows": "1",
-                            "options": [
-                                {
-                                    "format": "",
-                                    "formatType": "",
-                                    "formula": "",
-                                    "label": "",
-                                    "readonly": "",
-                                    "regexValidator": "",
-                                    "value": "code",
-                                    "width": ""
-                                },
-                                {
-                                    "format": "",
-                                    "formatType": "",
-                                    "formula": "",
-                                    "label": "",
-                                    "readonly": "",
-                                    "regexValidator": "",
-                                    "value": "name",
-                                    "width": ""
-                                }
-                            ],
-                            "readonly": "",
-                            "showRowNumber": "true",
-                            "sortingField": "",
-                            "storeBinder": {
-                                "className": "org.joget.plugin.enterprise.MultirowFormBinder",
-                                "properties": {
-                                    "foreignKey": "referencekey",
-                                    "formDefId": "inspectionSchedule_subform"
-                                }
-                            },
-                            "validateMaxRow": "",
-                            "validateMinRow": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            }
-                        }
-                    },
-                    {
                         "className": "org.joget.plugin.enterprise.AjaxSubForm",
                         "properties": {
                             "ajax": "true",
