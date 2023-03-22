@@ -26,7 +26,7 @@
                 "properties": {}
             },
             "headerAlignment": "",
-            "hidden": "false",
+            "hidden": "true",
             "id": "column_9",
             "include_export": "",
             "label": "c_waiverstate",
