@@ -6,7 +6,7 @@
             "jdbcDatasource": "default",
             "optimisePaging": "",
             "primaryKey": "id",
-            "sql": "SELECT sr.id, sr.c_waiverstate,sr.c_jobid,sr.c_licenseactivity,sr.dateCreated,sr.c_reportdate,sr.C_serReqDmccSrNo, c.c_licenseNumber, sr.c_serReqServCat, c.c_companyName, c.c_companyLocation, t.c_tower_seq_no, t.c_tower_name ,sr.c_status, sr.c_inspSchedlDate, sr.c_inspectionreportStatus\r\nFROM app_fd_ofc_serreqs_tab sr\r\nINNER JOIN \r\n    app_fd_ofc_company_tab c\r\n    ON sr.c_companyName = c.id\r\nINNER JOIN \r\n    app_fd_ofc_location_tab l\r\n    ON c.c_companyLocation = l.c_locName\r\nINNER JOIN \r\n    app_fd_ofc_tower_tab t\r\n    ON c.c_tower_name = t.c_tower_name\r\nWHERE\r\n    sr.c_waiverstate <> 'WaiverApplied'\r\n    and sr.c_inspectionreportStatus = 'Other Non-Compliance' \r\n    or  sr.c_inspectionreportStatus = 'Fitout Non-Compliance' \r\norder by sr.c_inspSchedlDate ASC"
+            "sql": "SELECT sr.id, sr.c_waiverstate,sr.c_jobid,sr.c_licenseactivity,sr.dateCreated,sr.c_reportdate,sr.C_serReqDmccSrNo, c.c_licenseNumber, sr.c_serReqServCat, c.c_companyName, c.c_companyLocation, t.c_tower_seq_no, t.c_tower_name ,sr.c_status, sr.c_inspSchedlDate, sr.c_inspectionreportStatus\r\nFROM app_fd_ofc_serreqs_tab sr\r\nINNER JOIN \r\n    app_fd_ofc_company_tab c\r\n    ON sr.c_companyName = c.id\r\nINNER JOIN \r\n    app_fd_ofc_location_tab l\r\n    ON c.c_companyLocation = l.c_locName\r\nINNER JOIN \r\n    app_fd_ofc_tower_tab t\r\n    ON c.c_tower_name = t.c_tower_name\r\nWHERE\r\n    sr.c_waiverstate = ' '\r\n    and  sr.c_inspectionreportStatus IN ('Fitout Non-Compliance','Other Non-Compliance')\r\n    \r\norder by sr.c_inspSchedlDate ASC"
         }
     },
     "buttonPosition": "bottomLeft",
