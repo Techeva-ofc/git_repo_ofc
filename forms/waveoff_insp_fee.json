@@ -484,7 +484,7 @@
                                     "variableName": "totalfee"
                                 },
                                 {
-                                    "fieldId": "wave_off",
+                                    "fieldId": "waive_off",
                                     "operation": "sum",
                                     "variableName": "wave"
                                 }
