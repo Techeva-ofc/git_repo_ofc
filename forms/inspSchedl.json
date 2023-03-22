@@ -681,7 +681,7 @@
                 "comment": "",
                 "id": "inspection_check_point",
                 "join": "",
-                "label": "FOC Inspection - Check Point",
+                "label": "FOC Inspection - Check Point - #requestParam.primaryKey#",
                 "loadBinder": {
                     "className": "",
                     "properties": {}
