@@ -191,6 +191,7 @@
     ],
     "considerFilterWhenGetTotal": "",
     "description": "",
+    "disableResponsive": "",
     "filters": [
         {
             "datalist_type": "filter",
@@ -286,12 +287,25 @@
             }
         }
     ],
+    "hidePageSize": "",
     "id": "insp_schedule_admin",
-    "name": "List - Inspection Schedule",
+    "name": "List - Inspection Schedule Admin",
     "order": "",
     "orderBy": "",
-    "pageSize": 0,
+    "pageSize": "0",
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "responsiveView": [
+        {
+            "breakpoint": "",
+            "columns": "",
+            "view": "Mobile"
+        },
+        {
+            "breakpoint": "",
+            "columns": "",
+            "view": "Tablet"
+        }
+    ],
     "rowActions": [{
         "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
         "icon": "<i class=\"fas fa-link\"><\/i>",
@@ -315,6 +329,8 @@
         },
         "type": "text"
     }],
+    "searchPopup": "",
+    "showDataWhenFilterSet": "",
     "showPageSizeSelector": "true",
-    "useSession": "false"
+    "useSession": ""
 }
