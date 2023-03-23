@@ -293,34 +293,6 @@
         },
         {
             "datalist_type": "filter",
-            "filterParamName": "d-2081290-fn_c_inspectorNames",
-            "hidden": "",
-            "id": "filter_7",
-            "label": "Inspector",
-            "name": "c_inspectorNames",
-            "type": {
-                "className": "org.joget.plugin.enterprise.SelectBoxDataListFilterType",
-                "properties": {
-                    "controlField": "",
-                    "defaultValue": "",
-                    "multiple": "",
-                    "options": [],
-                    "optionsBinder": {
-                        "className": "org.joget.plugin.enterprise.JdbcOptionsBinder",
-                        "properties": {
-                            "addEmpty": "",
-                            "cacheInterval": "",
-                            "jdbcDatasource": "default",
-                            "sql": "SELECT * FROM dir_user_group  WHERE groupId = 'G-006';",
-                            "useAjax": ""
-                        }
-                    },
-                    "size": ""
-                }
-            }
-        },
-        {
-            "datalist_type": "filter",
             "filterParamName": "d-2997933-fn_c_licenseNumber",
             "hidden": "",
             "id": "filter_4",
