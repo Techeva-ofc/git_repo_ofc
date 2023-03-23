@@ -460,6 +460,12 @@
                         "join": "OR",
                         "operator": "=",
                         "value": "d297187a-e46b-4c0a-95c1-797c47469d6b"
+                    },
+                    {
+                        "field": "c_inspectionreportStatus",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Full Compliance"
                     }
                 ],
                 "target": "_self"
