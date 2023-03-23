@@ -16,34 +16,23 @@
                     }
                 },
                 {
-                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "className": "org.joget.plugin.enterprise.DashboardMenu",
                     "properties": {
-                        "actionAfterSaved": "",
-                        "actionOnCancel": "",
-                        "cancelButtonLabel": "",
+                        "autoHeight": "true",
                         "customFooter": "",
                         "customHeader": "",
                         "customId": "",
+                        "customPortletSetting": [],
+                        "defaultPortletHeight": "250",
+                        "defaultPortletWidth": "1",
                         "enableOffline": "",
-                        "fieldPassover": "",
-                        "fieldPassoverMethod": "append",
-                        "formId": "waveoff_insp_fee",
-                        "id": "6326506F80394F678012219498CC1065",
-                        "keyName": "",
-                        "label": "Form",
-                        "loadDataWithKey": "",
-                        "messageShowAfterComplete": "",
-                        "paramName": "",
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "redirectTargetOnCancel": "top",
-                        "redirectTargetOnComplete": "",
-                        "redirectUrlAfterComplete": "",
-                        "redirectUrlOnCancel": "",
-                        "showInPopupDialog": "",
-                        "submitButtonLabel": "",
+                        "id": "20BEF9AF07234887B35B27E26189398F",
+                        "label": "Dashboard",
+                        "mode": "",
+                        "resizable": "true",
                         "userviewCacheDuration": "20",
-                        "userviewCacheScope": ""
+                        "userviewCacheScope": "",
+                        "userviewId": "v"
                     }
                 }
             ],
@@ -920,6 +909,27 @@
                         "rowCount": "",
                         "selectionType": "single",
                         "userviewCacheDuration": "",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "buttonPosition": "bottomLeft",
+                        "cacheAllLinks": "",
+                        "cacheListAction": "",
+                        "checkboxPosition": "left",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "inspScheduleforAdmin",
+                        "datalistId": "insp_schedule_admin",
+                        "enableOffline": "",
+                        "id": "B0FF8BF52E25409D995ADF0B457F843C",
+                        "keyName": "",
+                        "label": "Scheduled Inspections",
+                        "rowCount": "",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
                 },
