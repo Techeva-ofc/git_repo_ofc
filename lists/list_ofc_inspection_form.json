@@ -442,7 +442,26 @@
                 "hrefColumn": "",
                 "hrefParam": "",
                 "label": "Release Temp.OFC Certificate",
-                "rules": [],
+                "rules": [
+                    {
+                        "field": "c_ofc_category_name",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Activity Amendment"
+                    },
+                    {
+                        "field": "c_ofc_category_name",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Other Amendment"
+                    },
+                    {
+                        "field": "c_ofc_category_name",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Location Amendment"
+                    }
+                ],
                 "target": "_self"
             },
             "type": "text"
