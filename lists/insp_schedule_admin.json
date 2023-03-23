@@ -233,30 +233,39 @@
             }
         },
         {
+            "datalist_type": "filter",
+            "filterParamName": "d-2081290-fn_c_companyName",
+            "hidden": "",
             "id": "filter_2",
-            "label": "c_companyName",
+            "label": "Company",
             "name": "c_companyName",
             "type": {
                 "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-                "properties": {}
+                "properties": {"defaultValue": ""}
             }
         },
         {
+            "datalist_type": "filter",
+            "filterParamName": "d-2081290-fn_c_companyLocation",
+            "hidden": "",
             "id": "filter_3",
-            "label": "c_companyLocation",
+            "label": "Location",
             "name": "c_companyLocation",
             "type": {
                 "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-                "properties": {}
+                "properties": {"defaultValue": ""}
             }
         },
         {
+            "datalist_type": "filter",
+            "filterParamName": "d-2081290-fn_c_status",
+            "hidden": "",
             "id": "filter_1",
-            "label": "c_status",
+            "label": "Status",
             "name": "c_status",
             "type": {
                 "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-                "properties": {}
+                "properties": {"defaultValue": ""}
             }
         },
         {
