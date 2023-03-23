@@ -315,7 +315,7 @@
         "properties": {
             "confirmation": "",
             "datalist_type": "row_action",
-            "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/inspectionReportProcess",
+            "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/inspScheduleforAdmin",
             "hrefColumn": "C_serReqDmccSrNo;id;c_inspSchedlDate;c_inspectionreportStatus",
             "hrefParam": "serReqDmccSrNo;id;scheduledate;status",
             "label": "Schedule",
