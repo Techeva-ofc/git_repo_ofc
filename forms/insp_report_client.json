@@ -261,8 +261,14 @@
             "properties": {}
         },
         "postProcessor": {
-            "className": "",
-            "properties": {}
+            "className": "org.joget.plugin.enterprise.FormDataUpdateTool",
+            "properties": {
+                "fields": [{
+                    "field": "InspectionStatus",
+                    "value": "Image(s) Uploaded"
+                }],
+                "formDefId": "inspection_report"
+            }
         },
         "postProcessorRunOn": "create",
         "storeBinder": {
