@@ -1866,7 +1866,7 @@
         "theme": {
             "className": "org.joget.plugin.enterprise.XadminTheme",
             "properties": {
-                "css": ".action-link.open .dropdown-menu {\r\n    width: max-content;\r\n    left: 0;\r\n    right: 0;\r\n}\r\n \r\n.action-link .dropdown-menu {\r\n    width: max-content;\r\n    left: auto;\r\n    right: 0;\r\n}",
+                "css": "",
                 "disableHelpGuide": "",
                 "disablePush": "",
                 "disablePwa": "",
@@ -1877,7 +1877,7 @@
                 "fontControl": "true",
                 "homeUrl": "#appResource.icon.jpg#",
                 "inbox": "current",
-                "js": "window.addEventListener('load', function () {\r\n \r\n    setTimeout(function(){\r\n        $(\"tbody:visible > tr:visible\").each(function(){\r\n            actionLink = $(\"li.action-link-modal\").clone();\r\n         \r\n            if($(this).find(\"td.row_action a\").size() > 0){\r\n                $(this).find(\"td.row_action a\").each(function(){\r\n                    $(actionLink).find(\"ul\").append( \"<li>\" + $(this).prop(\"outerHTML\") + \"<\/li>\");\r\n                });\r\n                $(this).find(\".footable-last-column\").append( actionLink );\r\n                $(actionLink).removeClass(\"action-link-modal\").show();\r\n                $(this).find(\"td.row_action\").not(\".footable-last-column\").remove();\r\n                $(this).find(\".footable-last-column .row_action_inner\").remove();\r\n            }\r\n        });\r\n         \r\n        if($(\"tbody:visible > tr:visible\").size() > 0){\r\n            $(\"th.row_action\").not(\".footable-last-column\").remove();\r\n        }\r\n         \r\n    }, 1000);\r\n     \r\n \r\n}, false);",
+                "js": "",
                 "loginBackground": "#appResource.footerimage.jpg#",
                 "loginPageBottom": "",
                 "loginPageTop": "",
