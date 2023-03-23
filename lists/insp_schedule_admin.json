@@ -191,7 +191,84 @@
     ],
     "considerFilterWhenGetTotal": "",
     "description": "",
-    "filters": [],
+    "filters": [
+        {
+            "datalist_type": "filter",
+            "filterParamName": "d-2081290-fn_C_serReqDmccSrNo",
+            "hidden": "",
+            "id": "filter_0",
+            "label": "DMCC",
+            "name": "C_serReqDmccSrNo",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {"defaultValue": ""}
+            }
+        },
+        {
+            "datalist_type": "filter",
+            "filterParamName": "d-2081290-fn_c_inspectorNames",
+            "hidden": "",
+            "id": "filter_4",
+            "label": "Inspector",
+            "name": "c_inspectorNames",
+            "type": {
+                "className": "org.joget.plugin.enterprise.SelectBoxDataListFilterType",
+                "properties": {
+                    "controlField": "",
+                    "defaultValue": "",
+                    "multiple": "",
+                    "options": [],
+                    "optionsBinder": {
+                        "className": "org.joget.plugin.enterprise.JdbcOptionsBinder",
+                        "properties": {
+                            "addEmpty": "",
+                            "cacheInterval": "",
+                            "jdbcDatasource": "default",
+                            "sql": "SELECT * FROM dir_user_group  WHERE groupId = 'G-006';",
+                            "useAjax": ""
+                        }
+                    },
+                    "size": ""
+                }
+            }
+        },
+        {
+            "id": "filter_2",
+            "label": "c_companyName",
+            "name": "c_companyName",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {}
+            }
+        },
+        {
+            "id": "filter_3",
+            "label": "c_companyLocation",
+            "name": "c_companyLocation",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {}
+            }
+        },
+        {
+            "id": "filter_1",
+            "label": "c_status",
+            "name": "c_status",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {}
+            }
+        },
+        {
+            "id": "filter_5",
+            "label": "c_inspSchedlDate",
+            "name": "c_inspSchedlDate",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {}
+            }
+        }
+    ],
     "id": "insp_schedule_admin",
     "name": "List - Inspection Schedule",
     "order": "",
