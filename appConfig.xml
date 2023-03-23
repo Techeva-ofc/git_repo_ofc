@@ -30,7 +30,7 @@
          <appVersion>13</appVersion>
          <pluginName>Form Data Audit Trail</pluginName>
          <pluginDescription>Store audit trail of Form Data to app_form_data_audit_trail table.</pluginDescription>
-         <pluginProperties>{&quot;captureLoad&quot;:&quot;true&quot;,&quot;captureSave&quot;:&quot;true&quot;,&quot;captureSavedDatainJson&quot;:&quot;true&quot;,&quot;captureDelete&quot;:&quot;true&quot;,&quot;captureMode&quot;:&quot;selected&quot;,&quot;formDefIds&quot;:&quot;serReqForm&quot;}</pluginProperties>
+         <pluginProperties>{&quot;captureLoad&quot;:&quot;true&quot;,&quot;captureSave&quot;:&quot;true&quot;,&quot;captureSavedDatainJson&quot;:&quot;true&quot;,&quot;captureDelete&quot;:&quot;true&quot;,&quot;captureMode&quot;:&quot;selected&quot;,&quot;formDefIds&quot;:&quot;insp_review_proof;serReqForm&quot;}</pluginProperties>
       </pluginDefaultProperties>
    </pluginDefaultPropertiesList>
    <environmentVariableList>
