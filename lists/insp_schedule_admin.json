@@ -260,12 +260,20 @@
             }
         },
         {
+            "datalist_type": "filter",
+            "filterParamName": "d-2081290-fn_c_inspSchedlDate",
+            "hidden": "",
             "id": "filter_5",
-            "label": "c_inspSchedlDate",
+            "label": "Schedule",
             "name": "c_inspSchedlDate",
             "type": {
-                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-                "properties": {}
+                "className": "org.joget.plugin.enterprise.DateDataListFilterType",
+                "properties": {
+                    "defaultValue": "",
+                    "format": "dd/mm/yy",
+                    "formatJava": "dd/MM/yyyy",
+                    "yearRange": "c-10:c+10"
+                }
             }
         }
     ],
