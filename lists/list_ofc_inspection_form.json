@@ -465,7 +465,7 @@
                     {
                         "field": "c_inspectionreportStatus",
                         "join": "AND",
-                        "operator": "=",
+                        "operator": "<>",
                         "value": "Full Compliance"
                     }
                 ],
