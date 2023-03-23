@@ -22,34 +22,6 @@
             "exclude_export": "",
             "filterable": true,
             "format": {
-                "className": "org.joget.apps.datalist.lib.DefaultFormatter",
-                "properties": {
-                    "color": "",
-                    "field": "ofc_category_name",
-                    "formDefId": "ofc_category1",
-                    "formatting": "",
-                    "size": ""
-                }
-            },
-            "headerAlignment": "",
-            "hidden": "false",
-            "id": "column_10",
-            "label": "c_ofc_category_name",
-            "name": "c_ofc_category_name",
-            "sortable": "false",
-            "style": "",
-            "width": ""
-        },
-        {
-            "action": {
-                "className": "",
-                "properties": {}
-            },
-            "alignment": "",
-            "datalist_type": "column",
-            "exclude_export": "",
-            "filterable": true,
-            "format": {
                 "className": "org.joget.plugin.enterprise.DateFormatter",
                 "properties": {
                     "dateStoreInUTC": "true",
@@ -270,6 +242,35 @@
             "label": "Inspector's Result",
             "name": "c_inspectionreportStatus",
             "sortable": "true",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "org.joget.apps.datalist.lib.DefaultFormatter",
+                "properties": {
+                    "color": "",
+                    "field": "ofc_category_name",
+                    "formDefId": "ofc_category1",
+                    "formatting": "",
+                    "size": ""
+                }
+            },
+            "headerAlignment": "",
+            "hidden": "true",
+            "id": "column_10",
+            "include_export": "",
+            "label": "c_ofc_category_name",
+            "name": "c_ofc_category_name",
+            "sortable": "false",
             "style": "",
             "width": ""
         }
