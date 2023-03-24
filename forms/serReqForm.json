@@ -81,6 +81,38 @@
                                 "value": "",
                                 "workflowVariable": ""
                             }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.Radio",
+                            "properties": {
+                                "controlField": "",
+                                "id": "primeCustomer",
+                                "label": "Prime Customer",
+                                "options": [
+                                    {
+                                        "grouping": "",
+                                        "label": "Yes",
+                                        "value": "yes"
+                                    },
+                                    {
+                                        "grouping": "",
+                                        "label": "No",
+                                        "value": "no"
+                                    }
+                                ],
+                                "optionsBinder": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "readonly": "",
+                                "readonlyLabel": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "no",
+                                "workflowVariable": ""
+                            }
                         }
                     ],
                     "properties": {"width": "49%"}
@@ -189,38 +221,6 @@
                 {
                     "className": "org.joget.apps.form.model.Column",
                     "elements": [
-                        {
-                            "className": "org.joget.apps.form.lib.Radio",
-                            "properties": {
-                                "controlField": "",
-                                "id": "primeCustomer",
-                                "label": "Prime Customer",
-                                "options": [
-                                    {
-                                        "grouping": "",
-                                        "label": "Yes",
-                                        "value": "yes"
-                                    },
-                                    {
-                                        "grouping": "",
-                                        "label": "No",
-                                        "value": "no"
-                                    }
-                                ],
-                                "optionsBinder": {
-                                    "className": "",
-                                    "properties": {}
-                                },
-                                "readonly": "",
-                                "readonlyLabel": "",
-                                "validator": {
-                                    "className": "",
-                                    "properties": {}
-                                },
-                                "value": "no",
-                                "workflowVariable": ""
-                            }
-                        },
                         {
                             "className": "org.joget.plugin.enterprise.AjaxSubForm",
                             "properties": {
