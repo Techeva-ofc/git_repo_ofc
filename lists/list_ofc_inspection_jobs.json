@@ -1,0 +1,257 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.JdbcDataListBinder",
+        "properties": {
+            "jdbcDatasource": "default",
+            "optimisePaging": "true",
+            "primaryKey": "id",
+            "sql": "select b.c_inspectionreportStatus,a.c_companyLocation,b.id,b.c_serReqServCat,b.c_inspSchedlDate,b.c_serReqDmccSrNo,b.c_status,d.c_ofc_category_name,a.c_companyName,b.c_paymentDate,c.c_tower_seq_no,c.c_tower_name from jwdb.app_fd_ofc_company_tab a join jwdb.app_fd_ofc_serReqs_tab b on a.id = b.c_companyName join jwdb.app_fd_ofc_tower_tab c on a.c_tower_name = c.id join jwdb.app_fd_ofc_ofc_category_tab d on b.c_ofc_category_name = d.id where b.c_status='Inspection Scheduled' and SUBSTR(b.c_inspSchedlDate,1,10)=CURDATE() order by b.c_paymentDate is null,b.c_paymentDate asc, c.c_tower_seq_no asc"
+        }
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_7",
+            "label": "DMCC SR No",
+            "name": "c_serReqDmccSrNo",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_1",
+            "label": "Tower Name",
+            "name": "c_tower_name",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_2",
+            "label": "Tower Seq",
+            "name": "c_tower_seq_no",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_0",
+            "label": "Company Location",
+            "name": "c_companyLocation",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_3",
+            "label": "Company Name",
+            "name": "c_companyName",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "org.joget.plugin.enterprise.DateFormatter",
+                "properties": {
+                    "dataFormat": "yyyy-MM-dd hh:mm a",
+                    "dateStoreInUTC": "",
+                    "displayFormat": "hh:mm a"
+                }
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_5",
+            "label": "Scheduled At",
+            "name": "c_inspSchedlDate",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_8",
+            "label": "Service Category",
+            "name": "c_ofc_category_name",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "options": [
+                        {
+                            "label": "Yet to Start",
+                            "value": ""
+                        },
+                        {
+                            "label": "Completed",
+                            "value": "Inspection Completed"
+                        },
+                        {
+                            "label": "Non-Compliance",
+                            "value": "Inspection Incomplete"
+                        }
+                    ],
+                    "optionsBinder": {
+                        "className": "",
+                        "properties": {}
+                    }
+                }
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_4",
+            "label": "Inspection Status",
+            "name": "c_inspectionreportStatus",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        }
+    ],
+    "considerFilterWhenGetTotal": "",
+    "description": "",
+    "disableResponsive": "",
+    "filters": [],
+    "hidePageSize": "",
+    "id": "list_ofc_inspection_jobs",
+    "name": "List - Inspection Jobs",
+    "order": "",
+    "orderBy": "",
+    "pageSize": "0",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "responsiveView": [
+        {
+            "breakpoint": "",
+            "columns": "",
+            "view": "Mobile"
+        },
+        {
+            "breakpoint": "",
+            "columns": "",
+            "view": "Tablet"
+        }
+    ],
+    "rowActions": [{
+        "className": "org.joget.plugin.enterprise.BeanShellDatalistAction",
+        "icon": "<i class=\"fas fa-code\"><\/i>",
+        "id": "rowAction_1",
+        "label": "Bean Shell",
+        "name": "Bean Shell Datalist Action",
+        "properties": {
+            "confirmation": "",
+            "datalist_type": "row_action",
+            "label": "Generate Report",
+            "rules": [],
+            "script": "import org.joget.apps.datalist.model.DataListCollection;\nimport org.displaytag.util.LookupUtil;\nimport org.joget.apps.datalist.model.DataListActionResult;\n\n//Change this variable to the column name you want to retrieve value for\nString dmccSrNo = null,id=null,inspScheduleDate=null,inspReportStatus=null,jobId=null,companyName=null,reportDate=null,status = null; \n//Retrieve value based on selected datalist rows\nDataListCollection rows = datalist.getRows();\nString primaryKeyColumnName = datalist.getBinder().getPrimaryKeyColumnName();\nif (rowKeys != null && rowKeys.length > 0) {\n    for (String key : rowKeys) {\n        for (Object r : rows) {\n            Object id = LookupUtil.getBeanProperty(r, primaryKeyColumnName);\n            if (id != null && id.toString().equals(key)) {\n                dmccSrNo = LookupUtil.getBeanProperty(r, \"c_serReqDmccSrNo\");\n                id = LookupUtil.getBeanProperty(r, \"id\").toString();\n                inspScheduleDate = LookupUtil.getBeanProperty(r, \"c_inspSchedlDate\").toString();\n                inspReportStatus = LookupUtil.getBeanProperty(r, \"c_inspectionreportStatus\");\n                jobId = LookupUtil.getBeanProperty(r, \"c_jobid\");\n                companyName = LookupUtil.getBeanProperty(r, \"c_companyName\").toString();\n                status = LookupUtil.getBeanProperty(r, \"c_status\").toString();\n                reportDate =LookupUtil.getBeanProperty(r, \"c_reportdate\");\n                System.out.println(LookupUtil.getBeanProperty(r, \"c_serReqDmccSrNo\"));\n            }\n        }\n    }\n}\n\n//Redirect based on your preferred URL\nSystem.out.println(status);\nString url = null;\nif(status.equals(\"Inspection Scheduled\")){\n    url = \"http://localhost:8080/jw/web/userview/ofc_app/v/_/inspectionReportProcess?serReqDmccSrNo=\"+dmccSrNo+\"&id=\"+id+\"&scheduledate=\"+inspScheduleDate+\"&status=\"+inspScheduleDate;\n}else{\n    url = \"http://localhost:8080/jw/web/userview/ofc_app/v/_/inspectionreportview?serReqDmccSrNo=\"+dmccSrNo+\"&id=\"+jobId+\"&company=\"+companyName+\"&scheduledate=\"+inspScheduleDate+\"&reportstatus=\"+inspReportStatus+\"&reportdate=\"+reportDate;\n}\nSystem.out.println(\"url here\"+url);\nDataListActionResult result = new DataListActionResult();\nresult.setType(DataListActionResult.TYPE_REDIRECT);\nresult.setUrl(url);\nreturn result;"
+        },
+        "type": "text"
+    }],
+    "searchPopup": "",
+    "showDataWhenFilterSet": "",
+    "showPageSizeSelector": "true",
+    "useSession": ""
+}
