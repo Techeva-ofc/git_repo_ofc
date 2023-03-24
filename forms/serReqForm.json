@@ -46,34 +46,39 @@
                             }
                         },
                         {
-                            "className": "org.joget.apps.form.lib.Radio",
+                            "className": "org.joget.apps.form.lib.SelectBox",
                             "properties": {
                                 "controlField": "",
-                                "id": "primeCustomer",
-                                "label": "Prime Customer",
-                                "options": [
-                                    {
-                                        "grouping": "",
-                                        "label": "Yes",
-                                        "value": "yes"
-                                    },
-                                    {
-                                        "grouping": "",
-                                        "label": "No",
-                                        "value": "no"
-                                    }
-                                ],
+                                "id": "ofc_category_name",
+                                "label": "Service Categoy",
+                                "multiple": "",
+                                "options": [],
                                 "optionsBinder": {
-                                    "className": "",
-                                    "properties": {}
+                                    "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                                    "properties": {
+                                        "addEmptyOption": "true",
+                                        "cacheInterval": "",
+                                        "emptyLabel": "Select",
+                                        "extraCondition": "",
+                                        "formDefId": "ofc_category1",
+                                        "groupingColumn": "",
+                                        "idColumn": "",
+                                        "labelColumn": "ofc_category_name",
+                                        "useAjax": "true"
+                                    }
                                 },
                                 "readonly": "",
                                 "readonlyLabel": "",
+                                "size": "",
                                 "validator": {
-                                    "className": "",
-                                    "properties": {}
+                                    "className": "org.joget.apps.form.lib.DefaultValidator",
+                                    "properties": {
+                                        "mandatory": "true",
+                                        "message": "Please choose Service category",
+                                        "type": ""
+                                    }
                                 },
-                                "value": "no",
+                                "value": "",
                                 "workflowVariable": ""
                             }
                         }
@@ -185,39 +190,34 @@
                     "className": "org.joget.apps.form.model.Column",
                     "elements": [
                         {
-                            "className": "org.joget.apps.form.lib.SelectBox",
+                            "className": "org.joget.apps.form.lib.Radio",
                             "properties": {
                                 "controlField": "",
-                                "id": "ofc_category_name",
-                                "label": "Service Categoy",
-                                "multiple": "",
-                                "options": [],
-                                "optionsBinder": {
-                                    "className": "org.joget.apps.form.lib.FormOptionsBinder",
-                                    "properties": {
-                                        "addEmptyOption": "true",
-                                        "cacheInterval": "",
-                                        "emptyLabel": "Select",
-                                        "extraCondition": "",
-                                        "formDefId": "ofc_category1",
-                                        "groupingColumn": "",
-                                        "idColumn": "",
-                                        "labelColumn": "ofc_category_name",
-                                        "useAjax": "true"
+                                "id": "primeCustomer",
+                                "label": "Prime Customer",
+                                "options": [
+                                    {
+                                        "grouping": "",
+                                        "label": "Yes",
+                                        "value": "yes"
+                                    },
+                                    {
+                                        "grouping": "",
+                                        "label": "No",
+                                        "value": "no"
                                     }
+                                ],
+                                "optionsBinder": {
+                                    "className": "",
+                                    "properties": {}
                                 },
                                 "readonly": "",
                                 "readonlyLabel": "",
-                                "size": "",
                                 "validator": {
-                                    "className": "org.joget.apps.form.lib.DefaultValidator",
-                                    "properties": {
-                                        "mandatory": "true",
-                                        "message": "Please choose Service category",
-                                        "type": ""
-                                    }
+                                    "className": "",
+                                    "properties": {}
                                 },
-                                "value": "",
+                                "value": "no",
                                 "workflowVariable": ""
                             }
                         },
