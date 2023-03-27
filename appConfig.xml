@@ -38,7 +38,7 @@
          <id>counter</id>
          <appId>ofc_app</appId>
          <appVersion>13</appVersion>
-         <value>5</value>
+         <value>1</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
       <environmentVariable>
