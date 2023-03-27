@@ -178,7 +178,7 @@
                                 "autoHandleFiles": "",
                                 "autoHandleWorkflowVariable": "true",
                                 "jdbcDatasource": "default",
-                                "sql": "SELECT a.c_checkpointCode,a.c_checkpointName, c_checkpointStatus\r\nfrom app_fd_ofc_checklist_tab a\r\nINNER JOIN app_fd_ofc_chklisttype_tab b\r\nON  a.c_checkListTypeData = b.id\r\nINNER JOIN app_fd_ofc_serreqs_tab c\r\nON c.c_checklisttype_multi  =  a.c_checkListTypeData\r\nWHERE c.id =  '#requestParam.id#'"
+                                "sql": "SELECT a.c_checkpointCode,a.c_checkpointName, a.tus\r\nfrom app_fd_ofc_checklist_tab a\r\nINNER JOIN app_fd_ofc_chklisttype_tab b\r\nON  a.c_checkListTypeData = b.id\r\nINNER JOIN app_fd_ofc_serreqs_tab c\r\nON c.c_checklisttype_multi  =  a.c_checkListTypeData\r\nWHERE c.id =  '#requestParam.id#'"
                             }
                         },
                         "options": [
