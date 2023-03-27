@@ -16,7 +16,7 @@
                                     "className": "",
                                     "properties": {}
                                 },
-                                "value": "",
+                                "value": "#requestParam.id#",
                                 "workflowVariable": ""
                             }
                         },
@@ -261,13 +261,10 @@
             "properties": {}
         },
         "postProcessor": {
-            "className": "org.joget.plugin.enterprise.FormDataUpdateTool",
+            "className": "org.joget.apps.app.lib.DatabaseUpdateTool",
             "properties": {
-                "fields": [{
-                    "field": "status",
-                    "value": "Image(s) Uploaded"
-                }],
-                "formDefId": "inspection_report"
+                "jdbcDatasource": "default",
+                "query": "update app_fd_ofc_serreqs_tab set c_status = 'Images Uploaded' where  id = '#requestParam.id#'"
             }
         },
         "postProcessorRunOn": "create",
