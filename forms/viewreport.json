@@ -54,7 +54,7 @@
                             "autoPopulate": "",
                             "id": "field10",
                             "label": "",
-                            "value": "<span class=\"label\">#i18n.Job No.#<\/span>  <b>#requestParam.serReqDmccSrNo#<\/b><br/><br/>\r\n<span class=\"label\">#i18n.Employee#<\/span>  <b>#requestParam.company#<\/b><br/><br/>\r\n<span class=\"label\">#i18n.Schedule Date#<\/span> <b>#requestParam.scheduledate#<\/b><br/><br/>\r\n"
+                            "value": "<span class=\"label\">#i18n.Account:#<\/span>  <b>#requestParam.serReqDmccSrNo#<\/b><br/><br/>\r\n<span class=\"label\">#i18n.Employee:#<\/span>  <b>#requestParam.company#<\/b><br/><br/>\r\n<span class=\"label\">#i18n.Schedule Date:#<\/span> <b>#requestParam.scheduledate#<\/b><br/><br/>\r\n"
                         }
                     }],
                     "properties": {"width": "49%"}
@@ -67,7 +67,7 @@
                             "autoPopulate": "",
                             "id": "inspectstatus",
                             "label": "",
-                            "value": "<span class=\"label\">#i18n.Inspection#<\/span>  <b>Fixed Certificate of Conformity Inspection<\/b><br/><br/>\n<span class=\"label\">Completed Date<\/span>  <b>#requestParam.reportdate#<\/b><br/><br/>\n<span class=\"label\">#i18n.Event Status#<\/span>  <b>#requestParam.reportstatus#<\/b><br/><br/>\n"
+                            "value": "<span class=\"label\">#i18n.Inspection:#<\/span>  <b>Fixed Certificate of Conformity Inspection<\/b><br/><br/>\n<span class=\"label\">#i18n.Completed Date:#<\/span>  <b>#requestParam.reportdate#<\/b><br/><br/>\n<span class=\"label\">#i18n.Event Status:#<\/span>  <b>#requestParam.reportstatus#<\/b><br/><br/>\n"
                         }
                     }],
                     "properties": {"width": "49%"}
