@@ -29,7 +29,7 @@
                                     "className": "",
                                     "properties": {}
                                 },
-                                "value": "#requestParam.KEY#",
+                                "value": "#requestParam.serReqDmccSrNo#",
                                 "workflowVariable": ""
                             }
                         },
