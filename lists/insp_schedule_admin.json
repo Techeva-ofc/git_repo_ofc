@@ -6,7 +6,7 @@
             "jdbcDatasource": "default",
             "optimisePaging": "",
             "primaryKey": "id",
-            "sql": "SELECT sr.id, sr.dateCreated, sr.C_serReqDmccSrNo, c.c_licenseNumber, sr.c_serReqServCat, \r\nc.c_companyName, c.c_companyLocation, t.c_tower_seq_no, t.c_tower_name ,sr.c_status, sr.c_inspSchedlDate, sr.c_inspectionreportStatus, sr.c_inspectorNames\r\nFROM app_fd_ofc_serreqs_tab sr\r\nINNER JOIN app_fd_ofc_company_tab c\r\nON sr.c_companyName = c.id\r\nINNER JOIN app_fd_ofc_location_tab l\r\nON c.c_companyLocation = l.c_locName\r\nINNER JOIN app_fd_ofc_tower_tab t\r\nON c.c_tower_name = t.c_tower_name\r\nWHERE sr.c_status = 'Payment Completed' \r\nor \r\nsr.c_status = 'Inspection Scheduled'"
+            "sql": "select * from ((select b.dateCreated,b.c_inspectionreportStatus,a.c_companyLocation,b.id,b.c_serReqServCat,b.c_inspSchedlDate,\nb.c_serReqDmccSrNo,b.c_status,d.c_ofc_category_name,a.c_companyName,b.c_paymentDate,c.c_tower_seq_no,c.c_tower_name \nfrom   jwdb.app_fd_ofc_serReqs_tab b join jwdb.app_fd_ofc_company_tab a   on a.id = b.c_companyName join \njwdb.app_fd_ofc_tower_tab c on a.c_tower_name = c.id join jwdb.app_fd_ofc_ofc_category_tab d on b.c_ofc_category_name = d.id \nwhere b.c_status='Payment Completed' )union all ( ( select b.dateCreated,b.c_inspectionreportStatus,a.c_companyLocation,b.id,b.c_serReqServCat,b.c_inspSchedlDate,\nb.c_serReqDmccSrNo,b.c_status,d.c_ofc_category_name,a.c_companyName,b.c_paymentDate,c.c_tower_seq_no,c.c_tower_name     \nfrom   jwdb.app_fd_ofc_serReqs_tab b join jwdb.app_fd_ofc_company_tab a on a.id = b.c_companyName join \njwdb.app_fd_ofc_tower_tab c on a.c_tower_name = c.id join jwdb.app_fd_ofc_ofc_category_tab d on b.c_ofc_category_name = d.id \nwhere b.c_status='Inspection Scheduled'))) dummy order by c_status desc, c_paymentDate asc ,  CAST(c_tower_seq_no as SIGNED INTEGER) asc"
         }
     },
     "buttonPosition": "bottomLeft",
@@ -22,15 +22,19 @@
             "exclude_export": "",
             "filterable": true,
             "format": {
-                "className": "",
-                "properties": {}
+                "className": "org.joget.plugin.enterprise.DateFormatter",
+                "properties": {
+                    "dataFormat": "yyyy-MM-dd hh:mm:ss",
+                    "dateStoreInUTC": "",
+                    "displayFormat": "dd-MMM-yyyy"
+                }
             },
             "headerAlignment": "",
             "hidden": "false",
-            "id": "column_0",
-            "label": "DMCC SR No.",
-            "name": "C_serReqDmccSrNo",
-            "sortable": "true",
+            "id": "column_6",
+            "label": "Payment On",
+            "name": "c_paymentDate",
+            "sortable": "false",
             "style": "",
             "width": ""
         },
@@ -50,9 +54,9 @@
             "headerAlignment": "",
             "hidden": "false",
             "id": "column_1",
-            "label": "Schedule On",
-            "name": "c_inspSchedlDate",
-            "sortable": "true",
+            "label": "DMCC SR No",
+            "name": "c_serReqDmccSrNo",
+            "sortable": "false",
             "style": "",
             "width": ""
         },
@@ -72,8 +76,8 @@
             "headerAlignment": "",
             "hidden": "false",
             "id": "column_2",
-            "label": "Inspector",
-            "name": "c_inspectorNames",
+            "label": "Tower Name",
+            "name": "c_tower_name",
             "sortable": "false",
             "style": "",
             "width": ""
@@ -94,8 +98,8 @@
             "headerAlignment": "",
             "hidden": "false",
             "id": "column_3",
-            "label": "Company",
-            "name": "c_companyName",
+            "label": "Tower Seq No",
+            "name": "c_tower_seq_no",
             "sortable": "false",
             "style": "",
             "width": ""
@@ -116,7 +120,7 @@
             "headerAlignment": "",
             "hidden": "false",
             "id": "column_4",
-            "label": "Location",
+            "label": "Company Location",
             "name": "c_companyLocation",
             "sortable": "false",
             "style": "",
@@ -138,30 +142,8 @@
             "headerAlignment": "",
             "hidden": "false",
             "id": "column_5",
-            "label": "Tower",
-            "name": "c_tower_name",
-            "sortable": "true",
-            "style": "",
-            "width": ""
-        },
-        {
-            "action": {
-                "className": "",
-                "properties": {}
-            },
-            "alignment": "",
-            "datalist_type": "column",
-            "exclude_export": "",
-            "filterable": true,
-            "format": {
-                "className": "",
-                "properties": {}
-            },
-            "headerAlignment": "",
-            "hidden": "false",
-            "id": "column_6",
-            "label": "Tower Seq.No",
-            "name": "c_tower_seq_no",
+            "label": "Company Name",
+            "name": "c_companyName",
             "sortable": "false",
             "style": "",
             "width": ""
@@ -181,10 +163,32 @@
             },
             "headerAlignment": "",
             "hidden": "false",
-            "id": "column_7",
+            "id": "column_10",
+            "label": "Service Category",
+            "name": "c_ofc_category_name",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_8",
             "label": "Status",
             "name": "c_status",
-            "sortable": "true",
+            "sortable": "false",
             "style": "",
             "width": ""
         }
@@ -192,104 +196,10 @@
     "considerFilterWhenGetTotal": "",
     "description": "",
     "disableResponsive": "",
-    "filters": [
-        {
-            "datalist_type": "filter",
-            "filterParamName": "d-2081290-fn_C_serReqDmccSrNo",
-            "hidden": "",
-            "id": "filter_0",
-            "label": "DMCC",
-            "name": "C_serReqDmccSrNo",
-            "type": {
-                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-                "properties": {"defaultValue": ""}
-            }
-        },
-        {
-            "datalist_type": "filter",
-            "filterParamName": "d-2081290-fn_c_inspectorNames",
-            "hidden": "",
-            "id": "filter_4",
-            "label": "Inspector",
-            "name": "c_inspectorNames",
-            "type": {
-                "className": "org.joget.plugin.enterprise.SelectBoxDataListFilterType",
-                "properties": {
-                    "controlField": "",
-                    "defaultValue": "",
-                    "multiple": "",
-                    "options": [],
-                    "optionsBinder": {
-                        "className": "org.joget.plugin.enterprise.JdbcOptionsBinder",
-                        "properties": {
-                            "addEmpty": "",
-                            "cacheInterval": "",
-                            "jdbcDatasource": "default",
-                            "sql": "SELECT * FROM dir_user_group  WHERE groupId = 'G-006';",
-                            "useAjax": ""
-                        }
-                    },
-                    "size": ""
-                }
-            }
-        },
-        {
-            "datalist_type": "filter",
-            "filterParamName": "d-2081290-fn_c_companyName",
-            "hidden": "",
-            "id": "filter_2",
-            "label": "Company",
-            "name": "c_companyName",
-            "type": {
-                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-                "properties": {"defaultValue": ""}
-            }
-        },
-        {
-            "datalist_type": "filter",
-            "filterParamName": "d-2081290-fn_c_companyLocation",
-            "hidden": "",
-            "id": "filter_3",
-            "label": "Location",
-            "name": "c_companyLocation",
-            "type": {
-                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-                "properties": {"defaultValue": ""}
-            }
-        },
-        {
-            "datalist_type": "filter",
-            "filterParamName": "d-2081290-fn_c_status",
-            "hidden": "",
-            "id": "filter_1",
-            "label": "Status",
-            "name": "c_status",
-            "type": {
-                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-                "properties": {"defaultValue": ""}
-            }
-        },
-        {
-            "datalist_type": "filter",
-            "filterParamName": "d-2081290-fn_c_inspSchedlDate",
-            "hidden": "",
-            "id": "filter_5",
-            "label": "Schedule",
-            "name": "c_inspSchedlDate",
-            "type": {
-                "className": "org.joget.plugin.enterprise.DateDataListFilterType",
-                "properties": {
-                    "defaultValue": "",
-                    "format": "dd/mm/yy",
-                    "formatJava": "dd/MM/yyyy",
-                    "yearRange": "c-10:c+10"
-                }
-            }
-        }
-    ],
+    "filters": [],
     "hidePageSize": "",
     "id": "insp_schedule_admin",
-    "name": "List - Inspection Schedule For Admin",
+    "name": "List - Inspection Scheduler",
     "order": "",
     "orderBy": "",
     "pageSize": "0",
@@ -309,22 +219,17 @@
     "rowActions": [{
         "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
         "icon": "<i class=\"fas fa-link\"><\/i>",
-        "id": "rowAction_1",
+        "id": "rowAction_0",
         "label": "Hyperlink",
         "name": "Data List Hyperlink Action",
         "properties": {
             "confirmation": "",
             "datalist_type": "row_action",
-            "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/inspScheduleforAdmin",
-            "hrefColumn": "C_serReqDmccSrNo;id;c_inspSchedlDate;c_inspectionreportStatus",
-            "hrefParam": "serReqDmccSrNo;id;scheduledate;status",
+            "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/inspectionSchedule",
+            "hrefColumn": "c_serReqDmccSrNo;id;c_status;c_inspectionreportStatus",
+            "hrefParam": "serReqDmccSrNo;id;status;inspectionstatus",
             "label": "Schedule",
-            "rules": [{
-                "field": "c_status",
-                "join": "AND",
-                "operator": "=",
-                "value": "Payment Completed"
-            }],
+            "rules": [],
             "target": "_self"
         },
         "type": "text"
@@ -332,5 +237,5 @@
     "searchPopup": "",
     "showDataWhenFilterSet": "",
     "showPageSizeSelector": "true",
-    "useSession": ""
+    "useSession": "false"
 }
