@@ -72,8 +72,8 @@
                         "storeBinder": {
                             "className": "org.joget.plugin.enterprise.MultirowFormBinder",
                             "properties": {
-                                "foreignKey": "referencekey",
-                                "formDefId": "inspectionSchedule_subform"
+                                "foreignKey": "report_referencekey",
+                                "formDefId": "insp_report_subform"
                             }
                         },
                         "submit-label-normal": "",
