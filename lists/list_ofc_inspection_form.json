@@ -459,7 +459,7 @@
             "properties": {
                 "confirmation": "",
                 "datalist_type": "row_action",
-                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/inspectionreportview",
+                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/insp_report_view",
                 "hrefColumn": "",
                 "hrefParam": "",
                 "label": "View Inspection Report",
