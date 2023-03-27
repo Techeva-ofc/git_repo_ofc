@@ -22,10 +22,10 @@
                     {
                         "className": "org.joget.apps.form.lib.IdGeneratorField",
                         "properties": {
-                            "envVariable": "counter",
+                            "envVariable": "increment",
                             "format": "AOFC-??????",
                             "hidden": "true",
-                            "id": "jobid",
+                            "id": "jobnumber",
                             "label": "Job No.",
                             "workflowVariable": ""
                         }
