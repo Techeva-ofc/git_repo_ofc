@@ -376,8 +376,8 @@
                 "confirmation": "",
                 "datalist_type": "row_action",
                 "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/inspectionReview",
-                "hrefColumn": "id",
-                "hrefParam": "id",
+                "hrefColumn": "id;",
+                "hrefParam": "id;",
                 "label": "Review Proofs",
                 "rules": [
                     {
