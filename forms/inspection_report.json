@@ -179,7 +179,7 @@
                                 "autoHandleFiles": "",
                                 "autoHandleWorkflowVariable": "true",
                                 "jdbcDatasource": "default",
-                                "sql": "select sr.id,s.c_checkpointCode,s.c_checkpointName FROM app_fd_ofc_checklist_tab s\r\ninner join app_fd_ofc_serreqs_tab sr\r\nON s.c_checkListTypeData = sr.c_checklisttype_multi\r\nwhere sr.c_checklisttype_multi is not null\r\nAND sr.c_serReqDmccSrNo = '#requestParam.serReqDmccSrNo#'"
+                                "sql": "SELECT a.c_checkpointCode,a.c_checkpointName, b.c_checklistType from app_fd_ofc_checklist_tab a\r\nINNER JOIN app_fd_ofc_chklisttype_tab b\r\nON  a.c_checkListTypeData = b.id\r\nINNER JOIN app_fd_ofc_serreqs_tab c\r\nON c.c_checklisttype_multi  =  a.c_checkListTypeData\r\nWHERE c.id =  '#requestParam.id#'"
                             }
                         },
                         "options": [
@@ -195,6 +195,13 @@
                                 "label": "Check point",
                                 "readonly": "true",
                                 "value": "checkpointName",
+                                "width": ""
+                            },
+                            {
+                                "formatType": "",
+                                "label": "Status",
+                                "readonly": "",
+                                "value": "status",
                                 "width": ""
                             },
                             {
