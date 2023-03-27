@@ -267,7 +267,7 @@
                 "query": "update app_fd_ofc_serreqs_tab set c_status = 'Images Uploaded' where  id = '#requestParam.id#' and c_serReqDmccSrNo = '#requestParam.serReqDmccSrNo#' and c_serReqDmccSrNo = '#requestParam.serReqDmccSrNo#'"
             }
         },
-        "postProcessorRunOn": "create",
+        "postProcessorRunOn": "both",
         "storeBinder": {
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
