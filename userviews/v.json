@@ -921,6 +921,27 @@
                         "checkboxPosition": "left",
                         "customFooter": "",
                         "customHeader": "",
+                        "customId": "inspection_scheduler",
+                        "datalistId": "insp_schedule_admin",
+                        "enableOffline": "",
+                        "id": "53027D740F15492EA5485B3DC091B14A",
+                        "keyName": "",
+                        "label": "Inspection Scheduler",
+                        "rowCount": "",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "buttonPosition": "bottomLeft",
+                        "cacheAllLinks": "",
+                        "cacheListAction": "",
+                        "checkboxPosition": "left",
+                        "customFooter": "",
+                        "customHeader": "",
                         "customId": "inspScheduleforAdmin",
                         "datalistId": "insp_schedule_admin",
                         "enableOffline": "",
