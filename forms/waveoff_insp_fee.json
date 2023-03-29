@@ -348,7 +348,7 @@
                                 "properties": {
                                     "mandatory": "true",
                                     "message": "Mandatory",
-                                    "type": ""
+                                    "type": "numeric"
                                 }
                             },
                             "value": "",
