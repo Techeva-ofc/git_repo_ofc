@@ -258,7 +258,7 @@
                         "autoPopulate": "",
                         "id": "field16",
                         "label": "",
-                        "value": "<html>\n    <body>\n        <div style=\"color:blue;text-align:right;\">\n    \n    \n    Concordia DMCC<br><br>\nRegistered and licensed as a FREEZONE Company under the Rules and Regulations of DMCCA<br><br>\nP.O. Box 340045, Dubai, United Arab Emirates, Tel: +971 4 4232900, Fax: + 971 4 3748488\n    \n<\/div>\n        \n        \n    <\/body>\n    \n<\/html>\n\n"
+                        "value": "<html>\n    <body>\n        <div style=\"color:blue;text-align:right;\">\n    \n    \n    Concordia DMCC<br>\nRegistered and licensed as a FREEZONE Company under the Rules and Regulations of DMCCA<br>\nP.O. Box 340045, Dubai, United Arab Emirates, Tel: +971 4 4232900, Fax: + 971 4 3748488\n    \n<\/div>\n        \n        \n    <\/body>\n    \n<\/html>\n\n"
                     }
                 }],
                 "properties": {"width": "100%"}
