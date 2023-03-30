@@ -1304,6 +1304,8 @@
                 }
             ],
             "properties": {
+                "comment": "",
+                "hide": "",
                 "id": "category-c3069ab6-9844-43ab-b589-4324e47e9eb2",
                 "label": "<i class=\"fa fa-tasks\"><\/i>Inspection Summery",
                 "permission": {
@@ -1612,10 +1614,10 @@
                 }
             ],
             "properties": {
-                "comment": "",
+                "comment": "Inspector View",
                 "hide": "",
                 "id": "category-7127012CE31246659501BC70C8CCCE1B",
-                "label": "Inspection Records",
+                "label": "Manage Inspections",
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
