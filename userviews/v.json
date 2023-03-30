@@ -922,6 +922,21 @@
             "className": "org.joget.apps.userview.model.UserviewCategory",
             "menus": [
                 {
+                    "className": "org.joget.rbuilder.lib.ReportUserviewMenu",
+                    "properties": {
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "reportsample",
+                        "enableOffline": "",
+                        "id": "1CB898F3F9834B6BB2AF42CBB820D1EE",
+                        "label": "Report",
+                        "reportId": "rp_ofc_certificate",
+                        "reportParams": [],
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
                     "className": "org.joget.apps.userview.lib.RunProcess",
                     "properties": {
                         "actionAfterSaved": "",
