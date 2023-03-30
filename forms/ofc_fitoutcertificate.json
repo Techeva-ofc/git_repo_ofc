@@ -11,7 +11,7 @@
                         "autoPopulate": "",
                         "id": "logo",
                         "label": "",
-                        "value": "<img src=\"/images/Concordia-Logo-Square.png\"   height=\"5%\" width=\"10%\"/>"
+                        "value": "<img src=\"/images/Concordia-Logo-Square.png\"   height=\"25%\" width=\"25%\"/>"
                     }
                 }],
                 "properties": {"width": "100%"}
@@ -23,26 +23,19 @@
         },
         {
             "className": "org.joget.apps.form.model.Section",
-            "elements": [
-                {
-                    "className": "org.joget.apps.form.model.Column",
-                    "elements": [{
-                        "className": "org.joget.apps.form.lib.CustomHTML",
-                        "properties": {
-                            "autoPopulate": "",
-                            "id": "heading",
-                            "label": "",
-                            "value": "<html>\n<style>\n<\/style>\n<body>\n<center><b> <p class=\"top-header\" style=\"font-size:20px;\">ANNUAL OPERATIONAL FITNESS CERTIFICATE<\/p><\/b><\/center>\n<\/body>\n<\/html>"
-                        }
-                    }],
-                    "properties": {"width": "49%"}
-                },
-                {
-                    "className": "org.joget.apps.form.model.Column",
-                    "elements": [],
-                    "properties": {"width": "49%"}
-                }
-            ],
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
+                        "autoPopulate": "",
+                        "id": "heading",
+                        "label": "",
+                        "value": "<html>\n<style>\n<\/style>\n<body>\n<center><b> <p class=\"top-header\" style=\"font-size:20px;\">ANNUAL OPERATIONAL FITNESS CERTIFICATE<\/p><\/b><\/center>\n<\/body>\n<\/html>"
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
             "properties": {
                 "comment": "",
                 "id": "ofc_certificate",
