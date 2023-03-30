@@ -1576,6 +1576,27 @@
                         "buttonPosition": "bottomLeft",
                         "cacheAllLinks": "",
                         "cacheListAction": "",
+                        "checkboxPosition": "no",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "insp_noncompliance",
+                        "datalistId": "inspection_non_compliance",
+                        "enableOffline": "",
+                        "id": "34AEB2CF9FB049C58B02E64D281BCE49",
+                        "keyName": "",
+                        "label": "Non-Compliance Services",
+                        "rowCount": "",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "buttonPosition": "bottomLeft",
+                        "cacheAllLinks": "",
+                        "cacheListAction": "",
                         "checkboxPosition": "left",
                         "customFooter": "",
                         "customHeader": "",
