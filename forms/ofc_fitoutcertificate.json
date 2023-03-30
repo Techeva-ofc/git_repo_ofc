@@ -64,36 +64,24 @@
         },
         {
             "className": "org.joget.apps.form.model.Section",
-            "elements": [
-                {
-                    "className": "org.joget.apps.form.model.Column",
-                    "elements": [{
-                        "className": "org.joget.apps.form.lib.CustomHTML",
-                        "properties": {
-                            "autoPopulate": "",
-                            "id": "info",
-                            "label": "",
-                            "value": "<html>\r\n    <body>\r\n\r\n\r\n<div>\r\n\r\n <div class=\"form-cell\">\r\n    <label field-tooltip=\"AOFC\" class=\"label\" for=\"AOFC\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>Company Name <\/label>\r\n    <div class=\"form-cell-value\"><span>#form.ofc_serReqs_tab.jobno#<\/span><\/div>\r\n<\/div>\r\n    \r\n<div class=\"form-cell\">\r\n    <label field-tooltip=\"reportdate\" class=\"label\" for=\"reportdate\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>Date <\/label>\r\n        <div class=\"form-cell-value\"><span>#form.ofc_serReqs_tab.reportdate#<\/span><\/div>\r\n<\/div>\r\n\r\n<div class=\"form-cell\">\r\n    <label field-tooltip=\"license\" class=\"label\" for=\"license\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>License Number <\/label>\r\n        <div class=\"form-cell-value\"><span>#form.ofc_serReqs_tab.licenseNumber#<\/span><\/div>\r\n<\/div>\r\n\r\n<div class=\"form-cell\">\r\n    <label field-tooltip=\"accountno\" class=\"label\" for=\"accoutno\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>Account No. <\/label>\r\n        <div class=\"form-cell-value\"><span>#form.ofc_serReqs_tab. serReqDmccSrNo #<\/span><\/div>\r\n<\/div>\r\n\r\n<div class=\"form-cell\">\r\n    <label field-tooltip=\"unitsharing\" class=\"label\" for=\"unitsharing\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>Unit Sharing <\/label>\r\n        <div class=\"form-cell-value\"><span>#form.ofc_serReqs_tab.dmcc #<\/span><\/div>\r\n<\/div>\r\n\r\n<div class=\"form-cell\">\r\n    <label field-tooltip=\"compnayName\" class=\"label\" for=\"compnayName\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>Company Name <\/label>\r\n        <div class=\"form-cell-value\"><span>#form.ofc_company_tab.companyName[{form.ofc_serReqs_tab.companyName}]#<\/span><\/div>\r\n        <input id=\"compnayName\" name=\"compnayName\" class=\"textfield_20175\" type=\"hidden\" value=\"#form.ofc_company_tab.companyName[{form.ofc_serReqs_tab.companyName}]#\">\r\n<\/div>\r\n\r\n<div class=\"form-cell\">\r\n    <label field-tooltip=\"address\" class=\"label\" for=\"address\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>Location<\/label>\r\n\r\n    <div class=\"form-cell-value\">\r\n            <div>#form.ofc_company_tab.companyAddress[{form.ofc_serReqs_tab.companyName}]#<\/div>\r\n            <input id=\"address\" name=\"address\" type=\"hidden\" value=\"#form.ofc_company_tab.companyAddress[{form.ofc_serReqs_tab.companyName}]#\">\r\n        <\/div><\/div>\r\n<div class=\"form-cell\">\r\n    <label field-tooltip=\"activity\" class=\"label\" for=\"activity\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>License Activity <\/label>\r\n        <div class=\"form-cell-value\"><span>#form.ofc_serReqs_tab.licenseactivity #<\/span><\/div>\r\n        <div style=\"clear:both;\"><\/div>\r\n<\/div>\r\n<\/div>\r\n\r\n    <\/body>\r\n     <\/html>"
-                        }
-                    }],
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.CustomHTML",
                     "properties": {
-                        "customWidth": "",
-                        "horizontal": "",
+                        "autoPopulate": "",
+                        "id": "info",
                         "label": "",
-                        "width": "49%"
+                        "value": "<html>\r\n    <body>\r\n\r\n\r\n<div>\r\n\r\n <div class=\"form-cell\">\r\n    <label field-tooltip=\"AOFC\" class=\"label\" for=\"AOFC\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>Company Name <\/label>\r\n    <div class=\"form-cell-value\"><span>#form.ofc_serReqs_tab.jobno#<\/span><\/div>\r\n<\/div>\r\n    \r\n<div class=\"form-cell\">\r\n    <label field-tooltip=\"reportdate\" class=\"label\" for=\"reportdate\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>Date <\/label>\r\n        <div class=\"form-cell-value\"><span>#form.ofc_serReqs_tab.reportdate#<\/span><\/div>\r\n<\/div>\r\n\r\n<div class=\"form-cell\">\r\n    <label field-tooltip=\"license\" class=\"label\" for=\"license\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>License Number <\/label>\r\n        <div class=\"form-cell-value\"><span>#form.ofc_serReqs_tab.licenseNumber#<\/span><\/div>\r\n<\/div>\r\n\r\n<div class=\"form-cell\">\r\n    <label field-tooltip=\"accountno\" class=\"label\" for=\"accoutno\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>Account No. <\/label>\r\n        <div class=\"form-cell-value\"><span>#form.ofc_serReqs_tab. serReqDmccSrNo #<\/span><\/div>\r\n<\/div>\r\n\r\n<div class=\"form-cell\">\r\n    <label field-tooltip=\"unitsharing\" class=\"label\" for=\"unitsharing\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>Unit Sharing <\/label>\r\n        <div class=\"form-cell-value\"><span>#form.ofc_serReqs_tab.dmcc #<\/span><\/div>\r\n<\/div>\r\n\r\n<div class=\"form-cell\">\r\n    <label field-tooltip=\"compnayName\" class=\"label\" for=\"compnayName\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>Company Name <\/label>\r\n        <div class=\"form-cell-value\"><span>#form.ofc_company_tab.companyName[{form.ofc_serReqs_tab.companyName}]#<\/span><\/div>\r\n        <input id=\"compnayName\" name=\"compnayName\" class=\"textfield_20175\" type=\"hidden\" value=\"#form.ofc_company_tab.companyName[{form.ofc_serReqs_tab.companyName}]#\">\r\n<\/div>\r\n\r\n<div class=\"form-cell\">\r\n    <label field-tooltip=\"address\" class=\"label\" for=\"address\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>Location<\/label>\r\n\r\n    <div class=\"form-cell-value\">\r\n            <div>#form.ofc_company_tab.companyAddress[{form.ofc_serReqs_tab.companyName}]#<\/div>\r\n            <input id=\"address\" name=\"address\" type=\"hidden\" value=\"#form.ofc_company_tab.companyAddress[{form.ofc_serReqs_tab.companyName}]#\">\r\n        <\/div><\/div>\r\n<div class=\"form-cell\">\r\n    <label field-tooltip=\"activity\" class=\"label\" for=\"activity\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>License Activity <\/label>\r\n        <div class=\"form-cell-value\"><span>#form.ofc_serReqs_tab.licenseactivity #<\/span><\/div>\r\n        <div style=\"clear:both;\"><\/div>\r\n<\/div>\r\n<\/div>\r\n\r\n    <\/body>\r\n     <\/html>"
                     }
-                },
-                {
-                    "className": "org.joget.apps.form.model.Column",
-                    "elements": [],
-                    "properties": {
-                        "customWidth": "",
-                        "horizontal": "",
-                        "label": "",
-                        "width": "49%"
-                    }
+                }],
+                "properties": {
+                    "customWidth": "",
+                    "horizontal": "",
+                    "label": "",
+                    "width": "100%"
                 }
-            ],
+            }],
             "properties": {
                 "comment": "",
                 "id": "taxInvoicePage",
