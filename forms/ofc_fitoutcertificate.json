@@ -35,17 +35,12 @@
                             "value": "<html>\n<style>\n<\/style>\n<body>\n<center><b> <p class=\"top-header\" style=\"font-size:20px;\">ANNUAL OPERATIONAL FITNESS CERTIFICATE<\/p><\/b><\/center>\n<\/body>\n<\/html>"
                         }
                     }],
-                    "properties": {"width": "32%"}
+                    "properties": {"width": "49%"}
                 },
                 {
                     "className": "org.joget.apps.form.model.Column",
                     "elements": [],
-                    "properties": {"width": "32%"}
-                },
-                {
-                    "className": "org.joget.apps.form.model.Column",
-                    "elements": [],
-                    "properties": {"width": "32%"}
+                    "properties": {"width": "49%"}
                 }
             ],
             "properties": {
@@ -92,7 +87,7 @@
                         "customWidth": "",
                         "horizontal": "",
                         "label": "",
-                        "width": "32%"
+                        "width": "49%"
                     }
                 },
                 {
@@ -102,17 +97,7 @@
                         "customWidth": "",
                         "horizontal": "",
                         "label": "",
-                        "width": "32%"
-                    }
-                },
-                {
-                    "className": "org.joget.apps.form.model.Column",
-                    "elements": [],
-                    "properties": {
-                        "customWidth": "",
-                        "horizontal": "",
-                        "label": "",
-                        "width": "32%"
+                        "width": "49%"
                     }
                 }
             ],
@@ -157,17 +142,12 @@
                             "value": "<html>\n    \n<body>\n    \n   <div style=\"font-size:20px;font-family:Times New Roman, Times, serif;\"> \n    This is to certify that Concordia DMCC is satisfied that the operations of the above mentioned client/tenant, under\nthe stated license number and the declared locations, as assessed during the inspections, is acceptable from\nEnvironment, Health & Safety perspectives. Any proposed variations in the operations/locations must be\napproved by Concordia DMCC prior to any change.Attention is drawn to all current applicable authority\nregulations in regard to ongoing responsibilities towards clean and safe operations.\n<\/div>\n\n\n\n<\/body>\n<\/html>"
                         }
                     }],
-                    "properties": {"width": "32%"}
+                    "properties": {"width": "49%"}
                 },
                 {
                     "className": "org.joget.apps.form.model.Column",
                     "elements": [],
-                    "properties": {"width": "32%"}
-                },
-                {
-                    "className": "org.joget.apps.form.model.Column",
-                    "elements": [],
-                    "properties": {"width": "32%"}
+                    "properties": {"width": "49%"}
                 }
             ],
             "properties": {
