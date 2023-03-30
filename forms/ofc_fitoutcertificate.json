@@ -11,7 +11,7 @@
                         "autoPopulate": "",
                         "id": "logo",
                         "label": "",
-                        "value": "<img src=\"/images/Concordia-Logo-Square.png\"   height=\"25%\" width=\"25%\"/>"
+                        "value": "<img src=\"/jw/web/app/ofc_app/resources/Concordia-Logo.png\"   height=\"15%\" width=\"15%\"/>\n<br><br>\n<b> <p class=\"top-header\" style=\"font-size:20px;\">ANNUAL OPERATIONAL FITNESS CERTIFICATE<\/p><\/b>\n"
                     }
                 }],
                 "properties": {"width": "100%"}
@@ -19,47 +19,6 @@
             "properties": {
                 "comment": "",
                 "id": "section7",
-                "join": "",
-                "label": "",
-                "loadBinder": {
-                    "className": "",
-                    "properties": {}
-                },
-                "permission": {
-                    "className": "",
-                    "properties": {}
-                },
-                "permissionReadonly": "",
-                "readonly": "",
-                "readonlyLabel": "",
-                "regex": "",
-                "reverse": "",
-                "storeBinder": {
-                    "className": "",
-                    "properties": {}
-                },
-                "visibilityControl": "",
-                "visibilityValue": ""
-            }
-        },
-        {
-            "className": "org.joget.apps.form.model.Section",
-            "elements": [{
-                "className": "org.joget.apps.form.model.Column",
-                "elements": [{
-                    "className": "org.joget.apps.form.lib.CustomHTML",
-                    "properties": {
-                        "autoPopulate": "",
-                        "id": "heading",
-                        "label": "",
-                        "value": "<html>\n<style>\n<\/style>\n<body>\n<center><b> <p class=\"top-header\" style=\"font-size:20px;\">ANNUAL OPERATIONAL FITNESS CERTIFICATE<\/p><\/b><\/center>\n<\/body>\n<\/html>"
-                    }
-                }],
-                "properties": {"width": "100%"}
-            }],
-            "properties": {
-                "comment": "",
-                "id": "ofc_certificate",
                 "join": "",
                 "label": "",
                 "loadBinder": {
