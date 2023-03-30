@@ -202,7 +202,7 @@
                         "autoPopulate": "",
                         "id": "field14",
                         "label": "",
-                        "value": "<img src=\"/images/sign.png\">  <\/img>\n"
+                        "value": "<img src=\"/images/sign.png\" height=\"20%\" width=\"20%\">  <\/img>\n"
                     }
                 }],
                 "properties": {"width": "100%"}
