@@ -107,52 +107,7 @@
                 },
                 {
                     "className": "org.joget.apps.form.model.Column",
-                    "elements": [
-                        {
-                            "className": "org.joget.apps.form.lib.TextField",
-                            "properties": {
-                                "encryption": "",
-                                "id": "invoiceNo",
-                                "label": "Invoice No",
-                                "maxlength": "",
-                                "permissionHidden": "",
-                                "placeholder": "",
-                                "readonly": "true",
-                                "readonlyLabel": "true",
-                                "size": "",
-                                "storeNumeric": "",
-                                "style": "",
-                                "validator": {
-                                    "className": "",
-                                    "properties": {}
-                                },
-                                "value": "#form.ofc_serReqs_tab.orderReference#",
-                                "workflowVariable": ""
-                            }
-                        },
-                        {
-                            "className": "org.joget.apps.form.lib.TextField",
-                            "properties": {
-                                "encryption": "",
-                                "id": "invoiceDate",
-                                "label": "Invoice Date",
-                                "maxlength": "",
-                                "permissionHidden": "",
-                                "placeholder": "",
-                                "readonly": "true",
-                                "readonlyLabel": "true",
-                                "size": "",
-                                "storeNumeric": "",
-                                "style": "",
-                                "validator": {
-                                    "className": "",
-                                    "properties": {}
-                                },
-                                "value": "#form.ofc_serReqs_tab.paymentDate#",
-                                "workflowVariable": ""
-                            }
-                        }
-                    ],
+                    "elements": [],
                     "properties": {
                         "customWidth": "",
                         "horizontal": "",
@@ -202,27 +157,22 @@
                             "value": "<html>\n    \n<body>\n    \n    <div style=\"font-size:60px;\"> <p>\n    This is to certify that Concordia DMCC is satisfied that the operations of the above mentioned client/tenant, under\nthe stated license number and the declared locations, as assessed during the inspections, is acceptable from\nEnvironment, Health & Safety perspectives. Any proposed variations in the operations/locations must be\napproved by Concordia DMCC prior to any change.Attention is drawn to all current applicable authority\nregulations in regard to ongoing responsibilities towards clean and safe operations.\n<\/p>  \n\n<\/div>\n\n<\/body>\n<\/html>"
                         }
                     }],
-                    "properties": {"width": "32%"}
+                    "properties": {"width": "24%"}
                 },
                 {
                     "className": "org.joget.apps.form.model.Column",
                     "elements": [],
-                    "properties": {"width": "32%"}
+                    "properties": {"width": "24%"}
                 },
                 {
                     "className": "org.joget.apps.form.model.Column",
                     "elements": [],
-                    "properties": {"width": "32%"}
+                    "properties": {"width": "24%"}
                 },
                 {
                     "className": "org.joget.apps.form.model.Column",
                     "elements": [],
-                    "properties": {"width": "32%"}
-                },
-                {
-                    "className": "org.joget.apps.form.model.Column",
-                    "elements": [],
-                    "properties": {"width": "32%"}
+                    "properties": {"width": "24%"}
                 }
             ],
             "properties": {
