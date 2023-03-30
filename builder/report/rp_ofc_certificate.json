@@ -9,7 +9,7 @@
                 "elements": [{
                     "className": "org.joget.rbuilder.lib.FormReportElement",
                     "properties": {
-                        "formDefId": "ofc_report",
+                        "formDefId": "ofc_fitoutcertificate",
                         "hideEmptyValueField": "",
                         "id": "959CEAB3-106A-4E08-C26C-A7EE15AB65E3",
                         "marginBottom": "",
