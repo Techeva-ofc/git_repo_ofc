@@ -199,7 +199,7 @@
                             "autoPopulate": "",
                             "id": "field17",
                             "label": "",
-                            "value": "\n<html>\n    \n<body>\n    <span><p>\n    This is to certify that Concordia DMCC is satisfied that the operations of the above mentioned client/tenant, under\nthe stated license number and the declared locations, as assessed during the inspections, is acceptable from\nEnvironment, Health & Safety perspectives. Any proposed variations in the operations/locations must be\napproved by Concordia DMCC prior to any change.Attention is drawn to all current applicable authority\nregulations in regard to ongoing responsibilities towards clean and safe operations.\n<\/p><\/span><br><br<br><br>\n<span><b>Approved<\/b><\/span>\n    \n<\/body>\n<\/html>\n"
+                            "value": "<html>\r\n<body>\r\n     \r\n<div style=\"font-size:40px;\"> <p>\r\n    This is to certify that Concordia DMCC is satisfied that the operations of the above mentioned client/tenant, under\r\nthe stated license number and the declared locations, as assessed during the inspections, is acceptable from\r\nEnvironment, Health & Safety perspectives. Any proposed variations in the operations/locations must be\r\napproved by Concordia DMCC prior to any change.Attention is drawn to all current applicable authority\r\nregulations in regard to ongoing responsibilities towards clean and safe operations.\r\n<\/p>  \r\n<br><br<br><br>\r\n\r\n<\/body>\r\n<\/html>"
                         }
                     }],
                     "properties": {"width": "32%"}
