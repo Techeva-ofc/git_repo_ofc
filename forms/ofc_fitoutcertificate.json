@@ -193,37 +193,26 @@
             "elements": [
                 {
                     "className": "org.joget.apps.form.model.Column",
-                    "elements": [
-                        {
-                            "className": "org.joget.apps.form.lib.CustomHTML",
-                            "properties": {
-                                "autoPopulate": "",
-                                "id": "compnayDetailsBox",
-                                "label": "",
-                                "value": "<html>\r\n    <body>\r\n\r\n\r\n<div style=\"border: 3px solid black; padding: 3px;\">\r\n             \r\n    <div class=\"form-cell\">\r\n    <label field-tooltip=\"compnayName\" class=\"label\" for=\"compnayName\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>Company Name <\/label>\r\n        <div class=\"form-cell-value\"><span>#form.ofc_company_tab.companyName[{form.ofc_serReqs_tab.companyName}]#<\/span><\/div>\r\n        <input id=\"compnayName\" name=\"compnayName\" class=\"textfield_20175\" type=\"hidden\" value=\"#form.ofc_company_tab.companyName[{form.ofc_serReqs_tab.companyName}]#\">\r\n<\/div>\r\n        <div class=\"form-cell\">\r\n    <label field-tooltip=\"address\" class=\"label\" for=\"address\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>Address <\/label>\r\n        <div class=\"form-cell-value\">\r\n            <div>#form.ofc_company_tab.companyAddress[{form.ofc_serReqs_tab.companyName}]#<\/div>\r\n            <input id=\"address\" name=\"address\" type=\"hidden\" value=\"#form.ofc_company_tab.companyAddress[{form.ofc_serReqs_tab.companyName}]#\">\r\n        <\/div>\r\n        <div style=\"clear:both;\"><\/div>\r\n<\/div>\r\n\r\n        <div class=\"form-cell\">\r\n    <label field-tooltip=\"trnNumber\" class=\"label\" for=\"trnNumber\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>TNR Number <\/label>\r\n        <div class=\"form-cell-value\"><span>#form.ofc_company_tab.tnrNumber[{form.ofc_serReqs_tab.companyName}]#<\/span><\/div>\r\n        <input id=\"trnNumber\" name=\"trnNumber\" class=\"textfield_20177\" type=\"hidden\" value=\"#form.ofc_company_tab.tnrNumber[{form.ofc_serReqs_tab.companyName}]#\">\r\n<\/div>\r\n        <div class=\"form-cell\">\r\n    <label field-tooltip=\"srDmccNo\" class=\"label\" for=\"srDmccNo\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>SR DMCC NO <\/label>\r\n        <div class=\"form-cell-value\"><span>#form.ofc_serReqs_tab.serReqDmccSrNo#<\/span><\/div>\r\n        <input id=\"srDmccNo\" name=\"srDmccNo\" class=\"textfield_20178\" type=\"hidden\" value=\"#form.ofc_serReqs_tab.serReqDmccSrNo#\">\r\n<\/div>\r\n<\/div>\r\n    <\/body>\r\n     <\/html>"
-                            }
-                        },
-                        {
-                            "className": "org.joget.apps.form.lib.CustomHTML",
-                            "properties": {
-                                "autoPopulate": "",
-                                "id": "amountBar",
-                                "label": "",
-                                "value": ""
-                            }
+                    "elements": [{
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "autoPopulate": "",
+                            "id": "field17",
+                            "label": "",
+                            "value": "\n<html>\n    \n<body>\n    <span><p>\n    This is to certify that Concordia DMCC is satisfied that the operations of the above mentioned client/tenant, under\nthe stated license number and the declared locations, as assessed during the inspections, is acceptable from\nEnvironment, Health & Safety perspectives. Any proposed variations in the operations/locations must be\napproved by Concordia DMCC prior to any change.Attention is drawn to all current applicable authority\nregulations in regard to ongoing responsibilities towards clean and safe operations.\n<\/p><\/span><br><br<br><br>\n<span><b>Approved<\/b><\/span>\n    \n<\/body>\n<\/html>\n"
                         }
-                    ],
-                    "properties": {
-                        "customWidth": "",
-                        "horizontal": "",
-                        "label": "",
-                        "width": "49%"
-                    }
+                    }],
+                    "properties": {"width": "32%"}
                 },
                 {
                     "className": "org.joget.apps.form.model.Column",
                     "elements": [],
-                    "properties": {"width": "49%"}
+                    "properties": {"width": "32%"}
+                },
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [],
+                    "properties": {"width": "32%"}
                 }
             ],
             "properties": {
