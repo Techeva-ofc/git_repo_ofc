@@ -185,7 +185,7 @@
                         "autoPopulate": "",
                         "id": "field17",
                         "label": "",
-                        "value": "<div>Certificate Expiry<\/div>\n<div><\/div>\n<div><\/div>\n<div><\/div>\n<div>Approved<\/div>"
+                        "value": "<div>Certificate Expiry<\/div> \n<p><\/p>\n<div><\/div>\n<div><\/div>\n<div><\/div>\n<div>Approved<\/div>"
                     }
                 }],
                 "properties": {"width": "100%"}
