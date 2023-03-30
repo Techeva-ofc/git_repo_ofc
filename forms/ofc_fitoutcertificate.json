@@ -50,43 +50,16 @@
                     "className": "org.joget.apps.form.lib.CustomHTML",
                     "properties": {
                         "autoPopulate": "",
-                        "id": "info",
+                        "id": "field16",
                         "label": "",
-                        "value": "<html>\r\n    <body>\r\n\r\n\r\n<div>\r\n\r\n <div class=\"form-cell\">\r\n    <label field-tooltip=\"AOFC\" class=\"label\" for=\"AOFC\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>Company Name <\/label>\r\n    <div class=\"form-cell-value\"><span>#form.ofc_serReqs_tab.jobno#<\/span><\/div>\r\n<\/div>\r\n    \r\n<div class=\"form-cell\">\r\n    <label field-tooltip=\"reportdate\" class=\"label\" for=\"reportdate\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>Date <\/label>\r\n        <div class=\"form-cell-value\"><span>#form.ofc_serReqs_tab.reportdate#<\/span><\/div>\r\n<\/div>\r\n\r\n<div class=\"form-cell\">\r\n    <label field-tooltip=\"license\" class=\"label\" for=\"license\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>License Number <\/label>\r\n        <div class=\"form-cell-value\"><span>#form.ofc_serReqs_tab.licenseNumber#<\/span><\/div>\r\n<\/div>\r\n\r\n<div class=\"form-cell\">\r\n    <label field-tooltip=\"accountno\" class=\"label\" for=\"accoutno\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>Account No. <\/label>\r\n        <div class=\"form-cell-value\"><span>#form.ofc_serReqs_tab. serReqDmccSrNo #<\/span><\/div>\r\n<\/div>\r\n\r\n<div class=\"form-cell\">\r\n    <label field-tooltip=\"unitsharing\" class=\"label\" for=\"unitsharing\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>Unit Sharing <\/label>\r\n        <div class=\"form-cell-value\"><span>#form.ofc_serReqs_tab.dmcc #<\/span><\/div>\r\n<\/div>\r\n\r\n<div class=\"form-cell\">\r\n    <label field-tooltip=\"compnayName\" class=\"label\" for=\"compnayName\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>Company Name <\/label>\r\n        <div class=\"form-cell-value\"><span>#form.ofc_company_tab.companyName[{form.ofc_serReqs_tab.companyName}]#<\/span><\/div>\r\n        <input id=\"compnayName\" name=\"compnayName\" class=\"textfield_20175\" type=\"hidden\" value=\"#form.ofc_company_tab.companyName[{form.ofc_serReqs_tab.companyName}]#\">\r\n<\/div>\r\n\r\n<div class=\"form-cell\">\r\n    <label field-tooltip=\"address\" class=\"label\" for=\"address\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>Location<\/label>\r\n\r\n    <div class=\"form-cell-value\">\r\n            <div>#form.ofc_company_tab.companyAddress[{form.ofc_serReqs_tab.companyName}]#<\/div>\r\n            <input id=\"address\" name=\"address\" type=\"hidden\" value=\"#form.ofc_company_tab.companyAddress[{form.ofc_serReqs_tab.companyName}]#\">\r\n        <\/div><\/div>\r\n<div class=\"form-cell\">\r\n    <label field-tooltip=\"activity\" class=\"label\" for=\"activity\"><span class=\"form-cell-validator\" style=\"display: inline;\"><\/span>License Activity <\/label>\r\n        <div class=\"form-cell-value\"><span>#form.ofc_serReqs_tab.licenseactivity #<\/span><\/div>\r\n        <div style=\"clear:both;\"><\/div>\r\n<\/div>\r\n<\/div>\r\n\r\n    <\/body>\r\n     <\/html>"
+                        "value": "<html>\r\n    <body>\r\n<table style=\"width: 100%; border: none;\">\r\n          <tbody style=\"border: none; \">\r\n    <tr style=\"text-align: left;\"> \r\n      <td style=\"border: none;\">AOFC No.<\/td>\r\n      <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\"> #form.ofc_serReqs_tab.jobno#<\/td>\r\n<\/tr> <tr><\/tr><tr><\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;\"> Date<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\">#form.ofc_serReqs_tab.reportdate#<\/td>\r\n<\/tr><tr><\/tr><tr><\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;\">License Number<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\">#form.ofc_serReqs_tab.serReqDmccSrNo#<\/td>\r\n<\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;\">Account No<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\">#form.ofc_company_tab.tnrNumber[{form.ofc_serReqs_tab.companyName}]#<\/td>\r\n<\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;\">Company Name<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\"> #form.ofc_company_tab.companyName[{form.ofc_serReqs_tab.companyName}]#<\/td>\r\n<\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;\">Location<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\">#form.ofc_company_tab.companyAddress[{form.ofc_serReqs_tab.companyName}]#<\/td>\r\n<\/tr>\r\n\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;\">Unit Sharing<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\"> N/A <\/td>\r\n<\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;\">License Activity<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\">#form.ofc_serReqs_tab.licenseactivity# <\/td>\r\n<\/tr>\r\n\r\n\r\n<\/tbody> <\/table> <\/body><\/html>"
                     }
                 }],
-                "properties": {
-                    "customWidth": "",
-                    "horizontal": "",
-                    "label": "",
-                    "width": "100%"
-                }
+                "properties": {"width": "100%"}
             }],
             "properties": {
-                "comment": "",
-                "id": "taxInvoicePage",
-                "join": "",
-                "label": "",
-                "loadBinder": {
-                    "className": "",
-                    "properties": {}
-                },
-                "permission": {
-                    "className": "",
-                    "properties": {}
-                },
-                "permissionHidden": "",
-                "permissionReadonly": "",
-                "readonly": "true",
-                "readonlyLabel": "true",
-                "regex": "",
-                "reverse": "",
-                "storeBinder": {
-                    "className": "",
-                    "properties": {}
-                },
-                "visibilityControl": "",
-                "visibilityValue": ""
+                "id": "section8",
+                "label": "Section"
             }
         },
         {
@@ -99,7 +72,7 @@
                         "autoPopulate": "",
                         "id": "field18",
                         "label": "",
-                        "value": "<html>\n    \n<body>\n    \n   <div style=\"font-size:20px;font-family:Times New Roman, Times, serif;\"> \n    This is to certify that Concordia DMCC is satisfied that the operations of the above mentioned client/tenant, under\nthe stated license number and the declared locations, as assessed during the inspections, is acceptable from\nEnvironment, Health & Safety perspectives. Any proposed variations in the operations/locations must be\napproved by Concordia DMCC prior to any change.Attention is drawn to all current applicable authority\nregulations in regard to ongoing responsibilities towards clean and safe operations.\n<\/div>\n\n\n\n<\/body>\n<\/html>"
+                        "value": "<html>\n    \n<body>\n    \n   <div style=\"font-size:16px;font-family:Times New Roman, Times, serif;\"> \n    This is to certify that Concordia DMCC is satisfied that the operations of the above mentioned client/tenant, under\nthe stated license number and the declared locations, as assessed during the inspections, is acceptable from\nEnvironment, Health & Safety perspectives. Any proposed variations in the operations/locations must be\napproved by Concordia DMCC prior to any change.Attention is drawn to all current applicable authority\nregulations in regard to ongoing responsibilities towards clean and safe operations.\n<\/div>\n\n\n\n<\/body>\n<\/html>"
                     }
                 }],
                 "properties": {"width": "100%"}
@@ -293,26 +266,6 @@
                 },
                 "visibilityControl": "",
                 "visibilityValue": ""
-            }
-        },
-        {
-            "className": "org.joget.apps.form.model.Section",
-            "elements": [{
-                "className": "org.joget.apps.form.model.Column",
-                "elements": [{
-                    "className": "org.joget.apps.form.lib.CustomHTML",
-                    "properties": {
-                        "autoPopulate": "",
-                        "id": "field16",
-                        "label": "",
-                        "value": "<html>\r\n    <body>\r\n<table style=\"width: 100%; border: none;\">\r\n          <tbody style=\"border: none; \">\r\n    <tr style=\"text-align: left;\"> \r\n      <td style=\"border: none;\">AOFC No.<\/td>\r\n      <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\"> #form.ofc_serReqs_tab.jobno#<\/td>\r\n<\/tr> <tr><\/tr><tr><\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;\"> Date<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\">#form.ofc_serReqs_tab.reportdate#<\/td>\r\n<\/tr><tr><\/tr><tr><\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;\">License Number<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\">#form.ofc_serReqs_tab.serReqDmccSrNo#<\/td>\r\n<\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;\">Account No<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\">#form.ofc_company_tab.tnrNumber[{form.ofc_serReqs_tab.companyName}]#<\/td>\r\n<\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;\">Company Name<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\"> #form.ofc_company_tab.companyName[{form.ofc_serReqs_tab.companyName}]#<\/td>\r\n<\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;\">Location<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\">#form.ofc_company_tab.companyAddress[{form.ofc_serReqs_tab.companyName}]#<\/td>\r\n<\/tr>\r\n\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;\">Unit Sharing<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\"> N/A <\/td>\r\n<\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;\">License Activity<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\">#form.ofc_serReqs_tab.licenseactivity# <\/td>\r\n<\/tr>\r\n\r\n\r\n<\/tbody> <\/table> <\/body><\/html>"
-                    }
-                }],
-                "properties": {"width": "100%"}
-            }],
-            "properties": {
-                "id": "section8",
-                "label": "Section"
             }
         }
     ],
