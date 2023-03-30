@@ -154,7 +154,7 @@
                             "autoPopulate": "",
                             "id": "field18",
                             "label": "",
-                            "value": "<html>\n    \n<body>\n    \n   <div style=\"font-size:20px;font-family:Times New Roman, Times, serif;\"> \n    This is to certify that Concordia DMCC is satisfied that the operations of the above mentioned client/tenant, under\nthe stated license number and the declared locations, as assessed during the inspections, is acceptable from\nEnvironment, Health & Safety perspectives. Any proposed variations in the operations/locations must be\napproved by Concordia DMCC prior to any change.Attention is drawn to all current applicable authority\nregulations in regard to ongoing responsibilities towards clean and safe operations.\n \n\n<\/div>\n\n<\/body>\n<\/html>"
+                            "value": "<html>\n    \n<body>\n    \n   <div style=\"font-size:20px;font-family:Times New Roman, Times, serif;\"> \n    This is to certify that Concordia DMCC is satisfied that the operations of the above mentioned client/tenant, under\nthe stated license number and the declared locations, as assessed during the inspections, is acceptable from\nEnvironment, Health & Safety perspectives. Any proposed variations in the operations/locations must be\napproved by Concordia DMCC prior to any change.Attention is drawn to all current applicable authority\nregulations in regard to ongoing responsibilities towards clean and safe operations.\n<\/div>\n\n\n\n<\/body>\n<\/html>"
                         }
                     }],
                     "properties": {"width": "32%"}
@@ -172,6 +172,26 @@
             ],
             "properties": {
                 "id": "section8",
+                "label": "Section"
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
+                        "autoPopulate": "",
+                        "id": "field17",
+                        "label": "",
+                        "value": "<div>Certificate Expiry<\/div>\n<div><\/div>\n<div><\/div>\n<div><\/div>\n<div>Approved<\/div>"
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "id": "section9",
                 "label": "Section"
             }
         },
