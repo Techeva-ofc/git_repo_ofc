@@ -1701,7 +1701,7 @@
                 "comment": "Inspector View",
                 "hide": "",
                 "id": "category-7127012CE31246659501BC70C8CCCE1B",
-                "label": "Manage Inspections",
+                "label": "<i class=\"fa fa-users\"><\/i>Manage Inspections",
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
