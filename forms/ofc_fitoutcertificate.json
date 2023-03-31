@@ -11,7 +11,7 @@
                         "autoPopulate": "",
                         "id": "logo",
                         "label": "",
-                        "value": "<img src=\"/jw/web/app/ofc_app/resources/Concordia-Logo.png\"   height=\"15%\" width=\"15%\"/>\n<br><br>\n<b> <p class=\"top-header\" style=\"font-size:20px;\">ANNUAL OPERATIONAL FITNESS CERTIFICATE<\/p><\/b>\n"
+                        "value": "<img src=\"/jw/web/app/ofc_app/resources/Concordia-Logo.png\"   height=\"15%\" width=\"15%\"/>\n<br><br>\n<b> <p class=\"top-header\" style=\"font-size:20px;\">ANNUAL OPERATIONAL FITNESS CERTIFICATE<\/p><\/b>\n<br><br><br><br><br>\n"
                     }
                 }],
                 "properties": {"width": "100%"}
