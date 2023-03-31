@@ -209,7 +209,6 @@
          <appId>ofc_app</appId>
          <appVersion>13</appVersion>
          <filesize>6216</filesize>
-         <permissionClass></permissionClass>
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.logo-concordia.png#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
       </appResource>
       <appResource>
