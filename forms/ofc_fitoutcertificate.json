@@ -52,7 +52,7 @@
                         "autoPopulate": "",
                         "id": "field16",
                         "label": "",
-                        "value": "<html>\r\n    <body>\r\n         <style rel=\u2019stylesheet\u2019 type=\u2019text/css\u2019>\r\ntbody td {\r\nfont-size: 135%;\r\n}\r\n<\/style>\r\n<table style=\"width: 100%; border: none;\">\r\n          <tbody style=\"border: none;\">\r\n    <tr style=\"text-align: left;\"> \r\n      <td style=\"border: none;font-weight:bold;\">AOFC No.<\/td>\r\n      <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\"> #form.ofc_serReqs_tab.jobno#<\/td>\r\n<\/tr> <tr><\/tr><tr><\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;font-weight:bold;\"> Date<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\">#form.ofc_serReqs_tab.reportdate#<\/td>\r\n<\/tr><tr><\/tr><tr><\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;font-weight:bold;\">License Number<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\">#form.ofc_serReqs_tab.serReqDmccSrNo#<\/td>\r\n<\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;font-weight:bold;\">Account No<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\">#form.ofc_company_tab.tnrNumber[{form.ofc_serReqs_tab.companyName}]#<\/td>\r\n<\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;font-weight:bold;\">Company Name<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\"> #form.ofc_company_tab.companyName[{form.ofc_serReqs_tab.companyName}]#<\/td>\r\n<\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;font-weight:bold;\">Location<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\">#form.ofc_company_tab.companyAddress[{form.ofc_serReqs_tab.companyName}]#<\/td>\r\n<\/tr>\r\n\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;font-weight:bold;\">Unit Sharing<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\"> N/A <\/td>\r\n<\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;font-weight:bold;\">License Activity<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\">#form.ofc_serReqs_tab.licenseactivity# <\/td>\r\n<\/tr>\r\n\r\n\r\n<\/tbody> <\/table> <\/font> <\/body><\/html>"
+                        "value": "<html>\r\n    <body>\r\n         <style rel=\u2019stylesheet\u2019 type=\u2019text/css\u2019>\r\ntbody td {\r\nfont-size: 135%;\r\n}\r\n<\/style>\r\n<table style=\"width: 100%; border: none;\">\r\n          <tbody style=\"border: none;\">\r\n    <tr style=\"text-align: left;\"> \r\n      <td style=\"border: none;font-weight:bold;\">AOFC No.<\/td>\r\n      <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\">#form.ofc_serReqs_tab.jobno#<\/td>\r\n<\/tr> <tr><\/tr><tr><\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;font-weight:bold;\">Date<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\">#form.ofc_serReqs_tab.reportdate#<\/td>\r\n<\/tr><tr><\/tr><tr><\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;font-weight:bold;\">License Number<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\">#form.ofc_serReqs_tab.serReqDmccSrNo#<\/td>\r\n<\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;font-weight:bold;\">Account No<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\">#form.ofc_company_tab.tnrNumber[{form.ofc_serReqs_tab.companyName}]#<\/td>\r\n<\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;font-weight:bold;\">Company Name<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\"> #form.ofc_company_tab.companyName[{form.ofc_serReqs_tab.companyName}]#<\/td>\r\n<\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;font-weight:bold;\">Location<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\">#form.ofc_company_tab.companyAddress[{form.ofc_serReqs_tab.companyName}]#<\/td>\r\n<\/tr>\r\n\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;font-weight:bold;\">Unit Sharing<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\"> N/A <\/td>\r\n<\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;font-weight:bold;\">License Activity<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;\">#form.ofc_serReqs_tab.licenseactivity# <\/td>\r\n<\/tr>\r\n\r\n\r\n<\/tbody> <\/table> \r\n<br><Br><Br><Br><br>\r\n\r\n<div style=\"font-size:16px;font-family:Times New Roman, Times, serif;\"> \r\n    This is to certify that Concordia DMCC is satisfied that the operations of the above mentioned client/tenant, under\r\nthe stated license number and the declared locations, as assessed during the inspections, is acceptable from\r\nEnvironment, Health & Safety perspectives. Any proposed variations in the operations/locations must be\r\napproved by Concordia DMCC prior to any change.Attention is drawn to all current applicable authority\r\nregulations in regard to ongoing responsibilities towards clean and safe operations.\r\n<\/div>\r\n\r\n<br><br><br><br><br>\r\n<div>Certificate Expiry<\/div> <p id=\"expiryId\"><\/p>\r\n<p><\/p>\r\n<p><\/p>\r\n<p><\/p>\r\n<div>Approved<\/div>\r\n\r\n\r\n<script>\r\n// Get the issued date value of the input fields\r\nlet dateIssued = document.getElementById(\"date\").value;\r\nlet givenDate = new Date(dateIssued);\r\n\r\n// Add 2 years to the given date\r\ngivenDate.setFullYear(givenDate.getFullYear() + 2);\r\n// Get the issued date paragraph element id\r\nlet expiryId = document.getElementById(\"expiryId\");\r\n// print the two years later date in ISO format (yyyy-mm-dd) \r\nexpiryId.innerHTML = givenDate.toISOString().slice(0, 10);\r\n<\/script>\r\n\r\n\r\n\r\n\r\n\r\n<\/body><\/html>"
                     }
                 }],
                 "properties": {"width": "100%"}
@@ -60,89 +60,6 @@
             "properties": {
                 "comment": "",
                 "id": "section8",
-                "join": "",
-                "label": "",
-                "loadBinder": {
-                    "className": "",
-                    "properties": {}
-                },
-                "permission": {
-                    "className": "",
-                    "properties": {}
-                },
-                "permissionReadonly": "",
-                "readonly": "",
-                "readonlyLabel": "",
-                "regex": "",
-                "reverse": "",
-                "storeBinder": {
-                    "className": "",
-                    "properties": {}
-                },
-                "visibilityControl": "",
-                "visibilityValue": ""
-            }
-        },
-        {
-            "className": "org.joget.apps.form.model.Section",
-            "elements": [{
-                "className": "org.joget.apps.form.model.Column",
-                "elements": [{
-                    "className": "org.joget.apps.form.lib.CustomHTML",
-                    "properties": {
-                        "autoPopulate": "",
-                        "id": "field18",
-                        "label": "",
-                        "value": "<html>\n    \n<body>\n    \n   <div style=\"font-size:16px;font-family:Times New Roman, Times, serif;\"> \n    This is to certify that Concordia DMCC is satisfied that the operations of the above mentioned client/tenant, under\nthe stated license number and the declared locations, as assessed during the inspections, is acceptable from\nEnvironment, Health & Safety perspectives. Any proposed variations in the operations/locations must be\napproved by Concordia DMCC prior to any change.Attention is drawn to all current applicable authority\nregulations in regard to ongoing responsibilities towards clean and safe operations.\n<\/div>\n\n\n\n<\/body>\n<\/html>"
-                    }
-                }],
-                "properties": {"width": "100%"}
-            }],
-            "properties": {
-                "comment": "",
-                "id": "section8",
-                "join": "",
-                "label": "",
-                "loadBinder": {
-                    "className": "",
-                    "properties": {}
-                },
-                "permission": {
-                    "className": "",
-                    "properties": {}
-                },
-                "permissionHidden": "",
-                "permissionReadonly": "",
-                "readonly": "true",
-                "readonlyLabel": "",
-                "regex": "",
-                "reverse": "",
-                "storeBinder": {
-                    "className": "",
-                    "properties": {}
-                },
-                "visibilityControl": "",
-                "visibilityValue": ""
-            }
-        },
-        {
-            "className": "org.joget.apps.form.model.Section",
-            "elements": [{
-                "className": "org.joget.apps.form.model.Column",
-                "elements": [{
-                    "className": "org.joget.apps.form.lib.CustomHTML",
-                    "properties": {
-                        "autoPopulate": "",
-                        "id": "field17",
-                        "label": "",
-                        "value": "<div>Certificate Expiry<\/div> \n<p><\/p>\n<p><\/p>\n<p><\/p>\n<div>Approved<\/div>"
-                    }
-                }],
-                "properties": {"width": "100%"}
-            }],
-            "properties": {
-                "comment": "",
-                "id": "section9",
                 "join": "",
                 "label": "",
                 "loadBinder": {
