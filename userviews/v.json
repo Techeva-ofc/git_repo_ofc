@@ -2078,8 +2078,11 @@
                 "id": "category-F619E16EE7CB48B28CC69E32DD7D1E46",
                 "label": "hidden",
                 "permission": {
-                    "className": "",
-                    "properties": {}
+                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                    "properties": {
+                        "allowedGroupIds": "G-003;G-009;G-006;G-001;G-002",
+                        "orgId": ""
+                    }
                 }
             }
         }
