@@ -206,10 +206,50 @@
                 "id": "category-3c667d47-854f-458f-97f0-3fb07397f12f",
                 "label": "<i class=\"fa fa-tasks\"><\/i>Manage Emirates",
                 "permission": {
-                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
-                    "properties": {}
+                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                    "properties": {
+                        "allowedGroupIds": "G-003;G-001;G-002",
+                        "orgId": ""
+                    }
                 },
                 "permissionComment": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.apps.userview.lib.DataListMenu",
+                "properties": {
+                    "buttonPosition": "bottomLeft",
+                    "cacheAllLinks": "",
+                    "cacheListAction": "",
+                    "checkboxPosition": "left",
+                    "customFooter": "",
+                    "customHeader": "",
+                    "customId": "inspection_wavieroff",
+                    "datalistId": "insp_othernoncompliance",
+                    "enableOffline": "",
+                    "id": "1F777704C8684CE98C40B3C379B2D34A",
+                    "keyName": "",
+                    "label": "Wavier OFF",
+                    "rowCount": "",
+                    "selectionType": "multiple",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": ""
+                }
+            }],
+            "properties": {
+                "comment": "",
+                "hide": "",
+                "id": "category-F644D49403404B27B10FDF31FC068E54",
+                "label": "Waive OFF FEE",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                    "properties": {
+                        "allowedGroupIds": "G-002",
+                        "orgId": ""
+                    }
+                }
             }
         },
         {
@@ -632,8 +672,11 @@
                 "id": "category-0656c558-d29b-4f40-bf51-67b17595921a",
                 "label": "<i class=\"fa fa-tasks\"><\/i>Manage Tower ",
                 "permission": {
-                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
-                    "properties": {}
+                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                    "properties": {
+                        "allowedGroupIds": "G-003;G-001;G-002",
+                        "orgId": ""
+                    }
                 },
                 "permissionComment": ""
             }
@@ -974,8 +1017,11 @@
                 "id": "category-c54667e1-c36c-43b5-a8c6-3755352a20e2",
                 "label": "<i class='fa fa-tasks'><\/i>Manage Checklist Type",
                 "permission": {
-                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
-                    "properties": {}
+                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                    "properties": {
+                        "allowedGroupIds": "G-003;G-001;G-002",
+                        "orgId": ""
+                    }
                 },
                 "permissionComment": ""
             }
@@ -1409,7 +1455,7 @@
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
-                        "allowedGroupIds": "G-003;G-006;G-001;G-002",
+                        "allowedGroupIds": "G-003;G-001;G-002",
                         "orgId": ""
                     }
                 },
@@ -1508,6 +1554,8 @@
                         "loadDataWithKey": "",
                         "messageShowAfterComplete": "",
                         "paramName": "",
+                        "permissionDeny": "",
+                        "permissionHidden": "true",
                         "readonly": "",
                         "readonlyLabel": "",
                         "redirectTargetOnCancel": "top",
@@ -1540,7 +1588,7 @@
                         "messageShowAfterComplete": "",
                         "paramName": "",
                         "permissionDeny": "",
-                        "permissionHidden": "",
+                        "permissionHidden": "true",
                         "readonly": "",
                         "readonlyLabel": "",
                         "redirectTargetOnCancel": "top",
@@ -1573,7 +1621,7 @@
                         "messageShowAfterComplete": "",
                         "paramName": "",
                         "permissionDeny": "",
-                        "permissionHidden": "",
+                        "permissionHidden": "true",
                         "readonly": "Yes",
                         "readonlyLabel": "true",
                         "redirectTargetOnCancel": "top",
@@ -1662,27 +1710,6 @@
                         "id": "34AEB2CF9FB049C58B02E64D281BCE49",
                         "keyName": "",
                         "label": "Non-Compliance Services",
-                        "rowCount": "",
-                        "selectionType": "multiple",
-                        "userviewCacheDuration": "20",
-                        "userviewCacheScope": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.userview.lib.DataListMenu",
-                    "properties": {
-                        "buttonPosition": "bottomLeft",
-                        "cacheAllLinks": "",
-                        "cacheListAction": "",
-                        "checkboxPosition": "left",
-                        "customFooter": "",
-                        "customHeader": "",
-                        "customId": "inspection_wavieroff",
-                        "datalistId": "insp_othernoncompliance",
-                        "enableOffline": "",
-                        "id": "1F777704C8684CE98C40B3C379B2D34A",
-                        "keyName": "",
-                        "label": "Wavier OFF",
                         "rowCount": "",
                         "selectionType": "multiple",
                         "userviewCacheDuration": "20",
@@ -1782,10 +1809,11 @@
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
-                        "allowedGroupIds": "G-003;G-001;G-002",
+                        "allowedGroupIds": "G-006",
                         "orgId": ""
                     }
-                }
+                },
+                "permissionComment": ""
             }
         },
         {
