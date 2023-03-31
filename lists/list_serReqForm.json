@@ -262,7 +262,7 @@
                 "rules": [
                     {
                         "field": "c_approval_status",
-                        "join": "OR",
+                        "join": "AND",
                         "operator": "=",
                         "value": "Approved"
                     },
