@@ -315,16 +315,41 @@
             "properties": {
                 "confirmation": "Your file is ready for download. Click \"OK\" to download.",
                 "datalist_type": "row_action",
-                "footerHtml": "",
+                "footerHtml": "<b>This document is computer generated and does not require the Registrar\u2019s signature or \r\nthe Company\u2019s stamp in order to be considered valid<\/b>",
                 "formDefId": "ofc_fitoutcertificate",
                 "formatting": "",
                 "headerHtml": "",
                 "hideEmptyValueField": "",
                 "label": "Download PDF",
                 "recordIdColumn": "",
-                "repeatFooter": "",
+                "repeatFooter": "true",
                 "repeatHeader": "",
-                "rules": [],
+                "rules": [
+                    {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Payment Completed"
+                    },
+                    {
+                        "field": "c_ofc_category_name",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Activity Amendement"
+                    },
+                    {
+                        "field": "c_ofc_category_name",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Other Amendment"
+                    },
+                    {
+                        "field": "c_ofc_category_name",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Location Amendment"
+                    }
+                ],
                 "showNotSelectedOptions": ""
             },
             "type": "text"
