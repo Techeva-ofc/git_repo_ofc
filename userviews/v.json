@@ -80,7 +80,7 @@
             ],
             "properties": {
                 "id": "category-EE74E4F4426241BD9BC3BC73B1D24AC7",
-                "label": "<i class=\"fa fa-home\"><\/i> Home",
+                "label": "<img src=\"#request.domainURL###appResource.logo-concordia.png#\" width=\"32\" height=\"32\">Home",
                 "permission": {
                     "className": "org.joget.apps.userview.lib.LoggedInUserPermission",
                     "properties": {}
