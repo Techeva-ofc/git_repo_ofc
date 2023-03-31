@@ -292,7 +292,7 @@
             "properties": {
                 "confirmation": "",
                 "datalist_type": "row_action",
-                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/cancelscheudle",
+                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/cancel",
                 "hrefColumn": "",
                 "hrefParam": "",
                 "label": "Cancel / Reschedule",
@@ -302,7 +302,7 @@
                     "operator": "=",
                     "value": "Inspection Scheduled"
                 }],
-                "target": "popup"
+                "target": "_self"
             },
             "type": "text"
         },
