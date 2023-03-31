@@ -379,12 +379,20 @@
                 "hrefColumn": "id;C_serReqDmccSrNo;c_inspectionreportStatus",
                 "hrefParam": "id;serReqDmccSrNo;inspectstatus",
                 "label": "Make Payment",
-                "rules": [{
-                    "field": "c_waiverstate",
-                    "join": "AND",
-                    "operator": "=",
-                    "value": "WaiverApplied"
-                }],
+                "rules": [
+                    {
+                        "field": "c_waiverstate",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "WaiverApplied"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Awaiting payment from the client"
+                    }
+                ],
                 "target": "_self"
             },
             "type": "text"
