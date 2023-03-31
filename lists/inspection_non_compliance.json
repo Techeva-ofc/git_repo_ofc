@@ -243,17 +243,33 @@
     "pageSize": "0",
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
     "rowActions": [{
-        "className": "org.joget.plugin.enterprise.BeanShellDatalistAction",
-        "icon": "<i class=\"fas fa-code\"><\/i>",
+        "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+        "icon": "<i class=\"fas fa-link\"><\/i>",
         "id": "rowAction_0",
-        "label": "Bean Shell",
-        "name": "Bean Shell Datalist Action",
+        "label": "Hyperlink",
+        "name": "Data List Hyperlink Action",
         "properties": {
             "confirmation": "",
             "datalist_type": "row_action",
-            "label": "Bean Shell",
-            "rules": [],
-            "script": "import java.util.ArrayList;\r\nimport java.util.List;\r\nimport org.joget.apps.app.model.AppDefinition;\r\nimport org.joget.apps.app.model.AppPlugin;\r\nimport org.joget.apps.app.service.AppPluginUtil;\r\nimport org.joget.apps.app.service.AppUtil;\r\nimport org.joget.plugin.base.PluginProperty;\r\nimport org.joget.plugin.base.PluginWebSupport;\r\nimport java.lang.String;\r\n\r\ntry{\r\n\r\n\r\n// Create dropdown list\r\nList<String> dropdownList = new ArrayList<String>();\r\nString[] values = {\"One\",\"Two\",\"Three\"};\r\nfor (String value : values) {\r\n    dropdownList.add(value.trim());\r\n}\r\n\r\n// Create plugin web support\r\nPluginWebSupport pluginWebSupport = (PluginWebSupport) AppUtil.getApplicationContext().getBean(\"pluginWebSupport\");\r\n\r\n// Create dropdown menu\r\nPluginProperty dropdownMenu = new PluginProperty(\"dropdownMenu\", \"Dropdown Menu\", PluginProperty.TYPE_COMBOBOX, dropdownList, defaultValue, true, \"Select an option from the dropdown menu\");\r\n\r\n// Add dropdown menu to plugin web support\r\npluginWebSupport.addPluginProperty(AppPluginUtil.getCurrentPlugin(), dropdownMenu);\r\n}catch(Exception e){\r\n    \r\n}"
+            "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/inspectionReview",
+            "hrefColumn": "id;c_status;c_inspectionreportStatus;C_serReqDmccSrNo",
+            "hrefParam": "id;status;reportstatus;dmcc",
+            "label": "Review Proofs",
+            "rules": [
+                {
+                    "field": "c_image_by_client",
+                    "join": "AND",
+                    "operator": "=",
+                    "value": "imageupload"
+                },
+                {
+                    "field": "c_status",
+                    "join": "AND",
+                    "operator": "=",
+                    "value": "Images Uploaded"
+                }
+            ],
+            "target": "_self"
         },
         "type": "text"
     }],
