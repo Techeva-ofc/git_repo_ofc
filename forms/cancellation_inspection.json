@@ -126,64 +126,23 @@
         },
         {
             "className": "org.joget.apps.form.model.Section",
-            "elements": [
-                {
-                    "className": "org.joget.apps.form.model.Column",
-                    "elements": [
-                        {
-                            "className": "org.joget.apps.form.lib.DatePicker",
-                            "properties": {
-                                "allowManual": "true",
-                                "datePickerType": "utcdateTime",
-                                "endDateFieldId": "",
-                                "format24hr": "",
-                                "id": "dateofreschedule",
-                                "label": "Preferred Date & Time",
-                                "placeholder": "",
-                                "readonly": "",
-                                "readonlyLabel": "",
-                                "showUserTimeZone": "true",
-                                "startDateFieldId": "",
-                                "validator": {
-                                    "className": "org.joget.apps.form.lib.DefaultValidator",
-                                    "properties": {
-                                        "mandatory": "true",
-                                        "message": "mandatory",
-                                        "type": ""
-                                    }
-                                },
-                                "value": "",
-                                "workflowVariable": ""
-                            }
-                        },
-                        {
-                            "className": "org.joget.apps.form.lib.HiddenField",
-                            "properties": {
-                                "id": "rescheduleid",
-                                "useDefaultWhenEmpty": "",
-                                "validator": {
-                                    "className": "",
-                                    "properties": {}
-                                },
-                                "value": "reschedule",
-                                "workflowVariable": ""
-                            }
-                        }
-                    ],
-                    "properties": {"width": "49%"}
-                },
-                {
-                    "className": "org.joget.apps.form.model.Column",
-                    "elements": [{
-                        "className": "org.joget.apps.form.lib.TextArea",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.DatePicker",
                         "properties": {
-                            "cols": "150",
-                            "id": "reason",
-                            "label": "Reason",
+                            "allowManual": "true",
+                            "datePickerType": "utcdateTime",
+                            "endDateFieldId": "",
+                            "format24hr": "",
+                            "id": "dateofreschedule",
+                            "label": "Preferred Date & Time",
                             "placeholder": "",
                             "readonly": "",
                             "readonlyLabel": "",
-                            "rows": "5",
+                            "showUserTimeZone": "true",
+                            "startDateFieldId": "",
                             "validator": {
                                 "className": "org.joget.apps.form.lib.DefaultValidator",
                                 "properties": {
@@ -195,10 +154,23 @@
                             "value": "",
                             "workflowVariable": ""
                         }
-                    }],
-                    "properties": {"width": "49%"}
-                }
-            ],
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
+                            "id": "rescheduleid",
+                            "useDefaultWhenEmpty": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "reschedule",
+                            "workflowVariable": ""
+                        }
+                    }
+                ],
+                "properties": {"width": "100%"}
+            }],
             "properties": {
                 "comment": "",
                 "id": "reschedule",
@@ -251,28 +223,6 @@
                             "value": "cancel",
                             "workflowVariable": ""
                         }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.TextArea",
-                        "properties": {
-                            "cols": "150",
-                            "id": "reason",
-                            "label": "Reason",
-                            "placeholder": "",
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "rows": "5",
-                            "validator": {
-                                "className": "org.joget.apps.form.lib.DefaultValidator",
-                                "properties": {
-                                    "mandatory": "true",
-                                    "message": "mandatory",
-                                    "type": ""
-                                }
-                            },
-                            "value": "",
-                            "workflowVariable": ""
-                        }
                     }
                 ],
                 "properties": {"width": "100%"}
@@ -300,7 +250,40 @@
                     "properties": {}
                 },
                 "visibilityControl": "action_item",
-                "visibilityValue": "Cancel Inspection"
+                "visibilityValue": "Cacnel Inspection"
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.TextArea",
+                    "properties": {
+                        "cols": "150",
+                        "id": "reason",
+                        "label": "Cancellation Reason",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "rows": "5",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "mandatory",
+                                "type": ""
+                            }
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "id": "section5",
+                "label": "Section"
             }
         }
     ],
