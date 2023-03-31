@@ -60,6 +60,53 @@
             "className": "org.joget.apps.form.model.Section",
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.Radio",
+                    "properties": {
+                        "controlField": "",
+                        "id": "action_item",
+                        "label": "Confirm the Action",
+                        "options": [
+                            {
+                                "grouping": "",
+                                "label": "Cancel Inspection",
+                                "value": "Cancel Inspection"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Re-Schedule Inspection",
+                                "value": "Re-Schedule Inspection"
+                            }
+                        ],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "mandatory",
+                                "type": ""
+                            }
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "id": "section4",
+                "label": "Section"
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
                 "elements": [
                     {
                         "className": "org.joget.apps.form.lib.DatePicker",
@@ -75,28 +122,6 @@
                             "readonlyLabel": "",
                             "showUserTimeZone": "true",
                             "startDateFieldId": "",
-                            "validator": {
-                                "className": "org.joget.apps.form.lib.DefaultValidator",
-                                "properties": {
-                                    "mandatory": "true",
-                                    "message": "mandatory",
-                                    "type": ""
-                                }
-                            },
-                            "value": "",
-                            "workflowVariable": ""
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.TextArea",
-                        "properties": {
-                            "cols": "150",
-                            "id": "resonreschedule",
-                            "label": "Reschedule Reason",
-                            "placeholder": "",
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "rows": "5",
                             "validator": {
                                 "className": "org.joget.apps.form.lib.DefaultValidator",
                                 "properties": {
@@ -147,8 +172,8 @@
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "",
-                "visibilityValue": ""
+                "visibilityControl": "action_item",
+                "visibilityValue": "Re-Schedule Inspection"
             }
         },
         {
@@ -163,28 +188,6 @@
                             "id": "confirm",
                             "label": "",
                             "value": "<span>Please confirm that you would like to cancel this inspection and provide the reason for cacncellation<\/span>"
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.TextArea",
-                        "properties": {
-                            "cols": "150",
-                            "id": "reason",
-                            "label": "Cancellation Reason",
-                            "placeholder": "",
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "rows": "5",
-                            "validator": {
-                                "className": "org.joget.apps.form.lib.DefaultValidator",
-                                "properties": {
-                                    "mandatory": "true",
-                                    "message": "mandatory",
-                                    "type": ""
-                                }
-                            },
-                            "value": "",
-                            "workflowVariable": ""
                         }
                     },
                     {
@@ -225,8 +228,41 @@
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "",
-                "visibilityValue": ""
+                "visibilityControl": "action_item",
+                "visibilityValue": "Cacnel Inspection"
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.TextArea",
+                    "properties": {
+                        "cols": "150",
+                        "id": "reason",
+                        "label": "Cancellation Reason",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "rows": "5",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "mandatory",
+                                "type": ""
+                            }
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "id": "section5",
+                "label": "Section"
             }
         }
     ],
