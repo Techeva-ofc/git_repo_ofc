@@ -10,6 +10,13 @@
                         {
                             "className": "org.joget.apps.form.lib.HiddenField",
                             "properties": {
+                                "id": "field15",
+                                "useDefaultWhenEmpty": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.HiddenField",
+                            "properties": {
                                 "id": "id",
                                 "useDefaultWhenEmpty": "",
                                 "validator": {
@@ -30,27 +37,6 @@
                                     "properties": {}
                                 },
                                 "value": "#requestParam.KEY#",
-                                "workflowVariable": ""
-                            }
-                        },
-                        {
-                            "className": "org.joget.apps.form.lib.TextField",
-                            "properties": {
-                                "encryption": "",
-                                "id": "sampid",
-                                "label": "id",
-                                "maxlength": "",
-                                "placeholder": "",
-                                "readonly": "",
-                                "readonlyLabel": "",
-                                "size": "",
-                                "storeNumeric": "",
-                                "style": "",
-                                "validator": {
-                                    "className": "",
-                                    "properties": {}
-                                },
-                                "value": "#requestParam.id#",
                                 "workflowVariable": ""
                             }
                         },
