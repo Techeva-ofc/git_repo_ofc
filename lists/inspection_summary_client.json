@@ -387,10 +387,16 @@
                         "value": "WaiverApplied"
                     },
                     {
-                        "field": "c_status",
+                        "field": "c_inspectionreportStatus",
                         "join": "AND",
                         "operator": "=",
-                        "value": "Awaiting payment from the client"
+                        "value": "Other Non-Compliance"
+                    },
+                    {
+                        "field": "c_inspectionreportStatus",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Fitout Non-Compliance"
                     }
                 ],
                 "target": "_self"
