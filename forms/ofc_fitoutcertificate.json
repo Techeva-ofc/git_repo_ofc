@@ -93,7 +93,7 @@
                         "autoPopulate": "",
                         "id": "field14",
                         "label": "",
-                        "value": "<br><br><br><img src=\"/images/sign.png\" height=\"50%\" width=\"40%\"><\/img>\n"
+                        "value": "<br><img src=\"/images/sign.png\" height=\"40%\" width=\"40%\"><\/img>\n<br>"
                     }
                 }],
                 "properties": {"width": "100%"}
