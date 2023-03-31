@@ -10,8 +10,14 @@
                         {
                             "className": "org.joget.apps.form.lib.HiddenField",
                             "properties": {
-                                "id": "field15",
-                                "useDefaultWhenEmpty": ""
+                                "id": "waive_insp_status",
+                                "useDefaultWhenEmpty": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "#requestParam.status#",
+                                "workflowVariable": ""
                             }
                         },
                         {
