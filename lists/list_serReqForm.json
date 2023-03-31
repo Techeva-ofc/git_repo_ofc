@@ -292,7 +292,7 @@
             "properties": {
                 "confirmation": "",
                 "datalist_type": "row_action",
-                "href": "",
+                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/cancelscheudle",
                 "hrefColumn": "",
                 "hrefParam": "",
                 "label": "Cancel / Reschedule",
