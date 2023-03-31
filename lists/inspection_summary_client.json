@@ -381,14 +381,8 @@
                 "label": "Make Payment",
                 "rules": [
                     {
-                        "field": "c_waiverstate",
-                        "join": "AND",
-                        "operator": "=",
-                        "value": "WaiverApplied"
-                    },
-                    {
                         "field": "c_inspectionreportStatus",
-                        "join": "AND",
+                        "join": "OR",
                         "operator": "=",
                         "value": "Other Non-Compliance"
                     },
@@ -397,6 +391,12 @@
                         "join": "OR",
                         "operator": "=",
                         "value": "Fitout Non-Compliance"
+                    },
+                    {
+                        "field": "c_waiverstate",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "WaiverApplied"
                     }
                 ],
                 "target": "_self"
