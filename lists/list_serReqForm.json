@@ -305,6 +305,29 @@
                 "target": "popup"
             },
             "type": "text"
+        },
+        {
+            "className": "org.joget.tutorial.DownloadPdfDatalistAction",
+            "icon": "",
+            "id": "rowAction_2",
+            "label": "Download PDF",
+            "name": "Download PDF Datalist Action",
+            "properties": {
+                "confirmation": "Your file is ready for download. Click \"OK\" to download.",
+                "datalist_type": "row_action",
+                "footerHtml": "",
+                "formDefId": "ofc_fitoutcertificate",
+                "formatting": "",
+                "headerHtml": "",
+                "hideEmptyValueField": "",
+                "label": "Download PDF",
+                "recordIdColumn": "",
+                "repeatFooter": "",
+                "repeatHeader": "",
+                "rules": [],
+                "showNotSelectedOptions": ""
+            },
+            "type": "text"
         }
     ],
     "searchPopup": "",
