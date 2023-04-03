@@ -2,51 +2,18 @@
     "categories": [
         {
             "className": "org.joget.apps.userview.model.UserviewCategory",
-            "menus": [
-                {
-                    "className": "org.joget.apps.userview.lib.HtmlPage",
-                    "properties": {
-                        "content": "<div class=\"ui-welcome\">\n<h1><span style=\"font-size: 24pt;\"><strong><span style=\"color: #78be21;\">JLT Fit-Out Compliance Services<br /><br /><span style=\"font-size: 12pt;\"><img src=\"/jw/web/app/ofc_app/resources/banner1.png\" width=\"98%\" height=\"98%\" alt=\"\" style=\"display: block; margin-left: auto; margin-right: auto;\" /><\/span><\/span><\/strong><\/span><span style=\"font-size: 24pt;\"><span style=\"font-size: 18pt;\"><\/span><\/span><\/h1>\n<h4 _ngcontent-jvl-c101=\"\" class=\"about-section-heading\" style=\"text-align: center;\"><span style=\"font-size: 24pt;\"><span style=\"font-size: 14pt;\">Concordia On-Demand is market leader providing efficient and cost-effective solutions for occupied spaces. Our team of experts are trained and equipped with the latest technology to be your trusted service provider for all your home, office or retail needs.<\/span>&nbsp;<\/span><\/h4>\n<h4 _ngcontent-jvl-c101=\"\" class=\"about-section-heading\" style=\"text-align: center;\"><img src=\"/jw/web/app/ofc_app/resources/thumb.png\" width=\"98%\" height=\"98%\" alt=\"\" /><span style=\"font-size: 12pt;\"><br /><\/span><\/h4>\n<p style=\"text-align: center;\">&copy; CONCORDIA DMCC &ndash; All Rights Reserved. Designated trademarks and brands are the property of their respective owners. Use of this Website constitutes acceptance of the Concordia User Agreement and Policy<\/p>\n<\/div>",
-                        "customId": "welcome",
-                        "enableOffline": "",
-                        "id": "3B6F25A638EF40FFAD3C5DAAC41BA98F",
-                        "label": "Welcome",
-                        "userviewCacheDuration": "",
-                        "userviewCacheScope": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.userview.lib.FormMenu",
-                    "properties": {
-                        "actionAfterSaved": "",
-                        "actionOnCancel": "",
-                        "cancelButtonLabel": "",
-                        "customFooter": "",
-                        "customHeader": "",
-                        "customId": "ofcpage",
-                        "enableOffline": "",
-                        "fieldPassover": "",
-                        "fieldPassoverMethod": "append",
-                        "formId": "ofc_fitoutcertificate",
-                        "id": "519BDD4C07644A6C8FD082A44907C098",
-                        "keyName": "",
-                        "label": "Form",
-                        "loadDataWithKey": "",
-                        "messageShowAfterComplete": "",
-                        "paramName": "",
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "redirectTargetOnCancel": "top",
-                        "redirectTargetOnComplete": "",
-                        "redirectUrlAfterComplete": "",
-                        "redirectUrlOnCancel": "",
-                        "showInPopupDialog": "",
-                        "submitButtonLabel": "",
-                        "userviewCacheDuration": "20",
-                        "userviewCacheScope": ""
-                    }
+            "menus": [{
+                "className": "org.joget.apps.userview.lib.HtmlPage",
+                "properties": {
+                    "content": "<div class=\"ui-welcome\">\n<h1><span style=\"font-size: 24pt;\"><strong><span style=\"color: #78be21;\">JLT Fit-Out Compliance Services<br /><br /><span style=\"font-size: 12pt;\"><img src=\"/jw/web/app/ofc_app/resources/banner1.png\" width=\"98%\" height=\"98%\" alt=\"\" style=\"display: block; margin-left: auto; margin-right: auto;\" /><\/span><\/span><\/strong><\/span><span style=\"font-size: 24pt;\"><span style=\"font-size: 18pt;\"><\/span><\/span><\/h1>\n<h4 _ngcontent-jvl-c101=\"\" class=\"about-section-heading\" style=\"text-align: center;\"><span style=\"font-size: 24pt;\"><span style=\"font-size: 14pt;\">Concordia On-Demand is market leader providing efficient and cost-effective solutions for occupied spaces. Our team of experts are trained and equipped with the latest technology to be your trusted service provider for all your home, office or retail needs.<\/span>&nbsp;<\/span><\/h4>\n<h4 _ngcontent-jvl-c101=\"\" class=\"about-section-heading\" style=\"text-align: center;\"><img src=\"/jw/web/app/ofc_app/resources/thumb.png\" width=\"98%\" height=\"98%\" alt=\"\" /><span style=\"font-size: 12pt;\"><br /><\/span><\/h4>\n<p style=\"text-align: center;\">&copy; CONCORDIA DMCC &ndash; All Rights Reserved. Designated trademarks and brands are the property of their respective owners. Use of this Website constitutes acceptance of the Concordia User Agreement and Policy<\/p>\n<\/div>",
+                    "customId": "welcome",
+                    "enableOffline": "",
+                    "id": "3B6F25A638EF40FFAD3C5DAAC41BA98F",
+                    "label": "Welcome",
+                    "userviewCacheDuration": "",
+                    "userviewCacheScope": ""
                 }
-            ],
+            }],
             "properties": {
                 "comment": "",
                 "hide": "",
@@ -174,12 +141,14 @@
                 }
             ],
             "properties": {
+                "comment": "",
+                "hide": "",
                 "id": "category-3c667d47-854f-458f-97f0-3fb07397f12f",
                 "label": "<i class=\"fa fa-tasks\"><\/i>Manage Emirates",
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
-                        "allowedGroupIds": "G-003;G-001;G-002",
+                        "allowedGroupIds": "G-003",
                         "orgId": ""
                     }
                 },
@@ -609,12 +578,14 @@
                 }
             ],
             "properties": {
+                "comment": "",
+                "hide": "",
                 "id": "category-0656c558-d29b-4f40-bf51-67b17595921a",
-                "label": "<i class=\"fa fa-tasks\"><\/i>Manage Tower ",
+                "label": "<i class=\"fa fa-tasks\"><\/i>Manage Tower",
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
-                        "allowedGroupIds": "G-003;G-001;G-002",
+                        "allowedGroupIds": "G-003",
                         "orgId": ""
                     }
                 },
@@ -657,8 +628,17 @@
                 }
             }],
             "properties": {
+                "comment": "",
+                "hide": "",
                 "id": "category-F619E16EE7CB48B28CC69E32DD7D1E46",
-                "label": "Admin Only"
+                "label": "Admin Only",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                    "properties": {
+                        "allowedGroupIds": "G-003",
+                        "orgId": ""
+                    }
+                }
             }
         },
         {
@@ -886,12 +866,14 @@
                 }
             ],
             "properties": {
+                "comment": "",
+                "hide": "",
                 "id": "category-c54667e1-c36c-43b5-a8c6-3755352a20e2",
                 "label": "<i class='fa fa-tasks'><\/i>Manage Checklist Type",
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
-                        "allowedGroupIds": "G-003;G-001;G-002",
+                        "allowedGroupIds": "G-003",
                         "orgId": ""
                     }
                 },
@@ -1100,7 +1082,7 @@
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
-                        "allowedGroupIds": "G-003;G-001",
+                        "allowedGroupIds": "G-003",
                         "orgId": ""
                     }
                 },
@@ -1548,7 +1530,7 @@
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
-                        "allowedGroupIds": "G-003;G-006;G-001",
+                        "allowedGroupIds": "G-003;G-006",
                         "orgId": ""
                     }
                 },
@@ -1818,8 +1800,16 @@
             ],
             "properties": {
                 "comment": "User only",
+                "hide": "",
                 "id": "category-15503D289D264AAEBD609E6F38E3034E",
-                "label": "User Only"
+                "label": "User Only",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                    "properties": {
+                        "allowedGroupIds": "G-009",
+                        "orgId": ""
+                    }
+                }
             }
         },
         {
@@ -1891,8 +1881,17 @@
                 }
             ],
             "properties": {
+                "comment": "",
+                "hide": "",
                 "id": "category-FBC1B16A050845C0B0F9F24F798AA723",
-                "label": "<i class=\"fa fa-users\"><\/i> Access by Admin, Inspector and User "
+                "label": "<i class=\"fa fa-users\"><\/i> Access by Admin, Inspector and User",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                    "properties": {
+                        "allowedGroupIds": "G-003;G-009;G-006",
+                        "orgId": ""
+                    }
+                }
             }
         }
     ],
