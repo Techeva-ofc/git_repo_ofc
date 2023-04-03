@@ -263,14 +263,14 @@
                     {
                         "field": "c_cancelid",
                         "join": "OR",
-                        "operator": "IS NOT EMPTY",
-                        "value": ""
+                        "operator": "=",
+                        "value": "cancel"
                     },
                     {
                         "field": "c_rescheduleid",
                         "join": "OR",
-                        "operator": "IS NOT EMPTY",
-                        "value": ""
+                        "operator": "=",
+                        "value": "reschedule"
                     },
                     {
                         "field": "c_status",
