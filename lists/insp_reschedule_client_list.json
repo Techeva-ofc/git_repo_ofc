@@ -1,17 +1,254 @@
 {
     "actions": [],
     "binder": {
-        "className": "",
-        "name": "",
-        "properties": {}
+        "className": "org.joget.plugin.enterprise.JdbcDataListBinder",
+        "properties": {
+            "jdbcDatasource": "default",
+            "optimisePaging": "",
+            "primaryKey": "id",
+            "sql": "select * from ((select  b.dateCreated,b.c_inspectionreportStatus,a.c_companyLocation,b.id,b.c_serReqServCat,b.c_inspSchedlDate,\r\nb.c_serReqDmccSrNo,b.c_status,d.c_ofc_category_name,a.c_companyName,b.c_paymentDate,c.c_tower_seq_no,c.c_tower_name, b.c_cancelid,b.c_rescheduleid,b.c_reason,b.c_dateofreschedule\r\nfrom   jwdb.app_fd_ofc_serReqs_tab b join jwdb.app_fd_ofc_company_tab a   on a.id = b.c_companyName join \r\njwdb.app_fd_ofc_tower_tab c on a.c_tower_name = c.id join jwdb.app_fd_ofc_ofc_category_tab d on b.c_ofc_category_name = d.id \r\nWHERE \r\nb.c_status='Payment Completed' AND \r\nd.c_ofc_category_name not in ('Activity Amendment','Location Amendment','Other Amendment') )\r\nunion all ( ( select b.dateCreated,b.c_inspectionreportStatus,a.c_companyLocation,b.id,b.c_serReqServCat,b.c_inspSchedlDate,\r\nb.c_serReqDmccSrNo,b.c_status,d.c_ofc_category_name,a.c_companyName,b.c_paymentDate,c.c_tower_seq_no,c.c_tower_name,b.c_cancelid,b.c_rescheduleid,b.c_reason,b.c_dateofreschedule    \r\nfrom   jwdb.app_fd_ofc_serReqs_tab b join jwdb.app_fd_ofc_company_tab a on a.id = b.c_companyName join \r\njwdb.app_fd_ofc_tower_tab c on a.c_tower_name = c.id join jwdb.app_fd_ofc_ofc_category_tab d on b.c_ofc_category_name = d.id \r\nwhere b.c_status='Inspection Scheduled' or b.c_status = 'Inspection To-Be Re-Scheduled'))) dummy order by c_status desc, c_paymentDate asc ,  CAST(c_tower_seq_no as SIGNED INTEGER) asc"
+        }
     },
-    "columns": [],
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "org.joget.plugin.enterprise.DateFormatter",
+                "properties": {
+                    "dataFormat": "yyyy-MM-dd hh:mm:ss",
+                    "dateStoreInUTC": "",
+                    "displayFormat": "dd-MMM-yyyy"
+                }
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_6",
+            "label": "Payment On",
+            "name": "c_paymentDate",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_1",
+            "label": "DMCC SR No",
+            "name": "c_serReqDmccSrNo",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_2",
+            "label": "Tower Name",
+            "name": "c_tower_name",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_3",
+            "label": "Tower Seq No",
+            "name": "c_tower_seq_no",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_4",
+            "label": "Company Location",
+            "name": "c_companyLocation",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_5",
+            "label": "Company Name",
+            "name": "c_companyName",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_10",
+            "label": "Service Category",
+            "name": "c_ofc_category_name",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_8",
+            "label": "Status",
+            "name": "c_status",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        }
+    ],
+    "considerFilterWhenGetTotal": "",
     "description": "",
+    "disableResponsive": "",
     "filters": [],
+    "hidePageSize": "",
     "id": "insp_reschedule_client_list",
-    "name": "List - Inspection Re-Schedule Requests",
+    "name": "List - Inspection Scheduler",
     "order": "",
     "orderBy": "",
     "pageSize": "0",
-    "rowActions": []
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "responsiveView": [
+        {
+            "breakpoint": "",
+            "columns": "",
+            "view": "Mobile"
+        },
+        {
+            "breakpoint": "",
+            "columns": "",
+            "view": "Tablet"
+        }
+    ],
+    "rowActions": [{
+        "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+        "icon": "<i class=\"fas fa-link\"><\/i>",
+        "id": "rowAction_1",
+        "label": "Hyperlink",
+        "name": "Data List Hyperlink Action",
+        "properties": {
+            "confirmation": "",
+            "datalist_type": "row_action",
+            "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/reScheduleform",
+            "hrefColumn": "id;c_serReqDmccSrNo;c_status;c_inspectionreportStatus;c_reason;c_dateofreschedule;c_rescheduleid",
+            "hrefParam": "id;serReqDmccSrNo;status;inspectionstatus;reason;re_scheduledate;reschdl_id",
+            "label": "Re-Schedule",
+            "rules": [
+                {
+                    "field": "c_status",
+                    "join": "AND",
+                    "operator": "=",
+                    "value": "Payment Completed"
+                },
+                {
+                    "field": "c_rescheduleid",
+                    "join": "OR",
+                    "operator": "=",
+                    "value": "reschedule"
+                }
+            ],
+            "target": "popup"
+        },
+        "type": "text"
+    }],
+    "searchPopup": "",
+    "showDataWhenFilterSet": "",
+    "showPageSizeSelector": "true",
+    "useSession": "false"
 }
