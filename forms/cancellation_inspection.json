@@ -349,7 +349,7 @@
                         "className": "org.joget.apps.form.lib.TextArea",
                         "properties": {
                             "cols": "150",
-                            "id": "reason",
+                            "id": "cancel_reason",
                             "label": "Provide the Reason",
                             "placeholder": "",
                             "readonly": "",
