@@ -109,42 +109,62 @@
             "className": "org.joget.apps.form.model.Section",
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
-                "elements": [{
-                    "className": "org.joget.apps.form.lib.Radio",
-                    "properties": {
-                        "controlField": "",
-                        "id": "action_item",
-                        "label": "Confirm the Action",
-                        "options": [
-                            {
-                                "grouping": "",
-                                "label": "Cancel Inspection",
-                                "value": "Cancel Inspection"
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "autoPopulate": "",
+                            "id": "script_disable_button",
+                            "label": "",
+                            "value": "<html>  \r\n<script>  \r\nfunction verifyAnswer() \r\n{  \r\n//get the selected value from the dropdown list  \r\nvar mylist = document.getElementById(\"action_item\");  \r\nif(mylist[0].checked==true)\r\n    mylist[1].checked = false;\r\nelse\r\n    mylist[1].checked = true;\r\n}  \r\n \r\n<\/script>  \r\n<body>  \r\n<\/html>"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "autoPopulate": "",
+                            "id": "script_disable_button",
+                            "label": "",
+                            "value": "<html>  \r\n<script>  \r\nfunction verifyAnswer() \r\n{  \r\n//get the selected value from the dropdown list  \r\nvar mylist = document.getElementById(\"action_item\");  \r\nif(mylist[0].checked==true)\r\n    mylist[1].checked = false;\r\nelse\r\n    mylist[1].checked = true;\r\n}  \r\n \r\n<\/script>  \r\n<body>  \r\n<\/html>"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.Radio",
+                        "properties": {
+                            "controlField": "",
+                            "id": "action_item",
+                            "label": "Confirm the Action",
+                            "options": [
+                                {
+                                    "grouping": "",
+                                    "label": "Cancel Inspection",
+                                    "value": "Cancel Inspection"
+                                },
+                                {
+                                    "grouping": "",
+                                    "label": "Re-Schedule Inspection",
+                                    "value": "Re-Schedule Inspection"
+                                }
+                            ],
+                            "optionsBinder": {
+                                "className": "",
+                                "properties": {}
                             },
-                            {
-                                "grouping": "",
-                                "label": "Re-Schedule Inspection",
-                                "value": "Re-Schedule Inspection"
-                            }
-                        ],
-                        "optionsBinder": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "validator": {
-                            "className": "org.joget.apps.form.lib.DefaultValidator",
-                            "properties": {
-                                "mandatory": "true",
-                                "message": "mandatory",
-                                "type": ""
-                            }
-                        },
-                        "value": "",
-                        "workflowVariable": ""
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "mandatory": "true",
+                                    "message": "mandatory",
+                                    "type": ""
+                                }
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
                     }
-                }],
+                ],
                 "properties": {"width": "100%"}
             }],
             "properties": {
