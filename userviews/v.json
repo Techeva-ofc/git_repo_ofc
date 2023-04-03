@@ -1397,6 +1397,27 @@
                         "userviewCacheDuration": "",
                         "userviewCacheScope": ""
                     }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "buttonPosition": "bottomLeft",
+                        "cacheAllLinks": "",
+                        "cacheListAction": "",
+                        "checkboxPosition": "no",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "insp_requests",
+                        "datalistId": "insp_reschedule_client_list",
+                        "enableOffline": "",
+                        "id": "61F987CEB97F47868167274938F7E334",
+                        "keyName": "",
+                        "label": "Re-Schedule Requests from Client",
+                        "rowCount": "",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
                 }
             ],
             "properties": {
