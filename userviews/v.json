@@ -1825,17 +1825,17 @@
                 "properties": {
                     "actionAfterSaved": "",
                     "actionOnCancel": "",
-                    "cancelButtonLabel": "Cancel",
+                    "cancelButtonLabel": "",
                     "customFooter": "",
                     "customHeader": "",
-                    "customId": "waiver_form_client",
+                    "customId": "waiveroff",
                     "enableOffline": "",
                     "fieldPassover": "",
                     "fieldPassoverMethod": "append",
-                    "formId": "insp_waive_view",
-                    "id": "35B76DC79D084657BD1B5929FC167989",
+                    "formId": "waveoff_insp_fee",
+                    "id": "339CDB44046F4329A941F85877B99276",
                     "keyName": "",
-                    "label": "Waiver OFF For Client",
+                    "label": "Wavier OFF",
                     "loadDataWithKey": "",
                     "messageShowAfterComplete": "",
                     "paramName": "",
@@ -1843,17 +1843,26 @@
                     "readonlyLabel": "",
                     "redirectTargetOnCancel": "top",
                     "redirectTargetOnComplete": "",
-                    "redirectUrlAfterComplete": "",
-                    "redirectUrlOnCancel": "",
+                    "redirectUrlAfterComplete": "inspection_wavieroff",
+                    "redirectUrlOnCancel": "inspection_wavieroff",
                     "showInPopupDialog": "",
-                    "submitButtonLabel": "Continue To Checkout",
+                    "submitButtonLabel": "",
                     "userviewCacheDuration": "20",
                     "userviewCacheScope": ""
                 }
             }],
             "properties": {
+                "comment": "Waiver OFF - Super Admin",
+                "hide": "",
                 "id": "category-160B4B1E1B764E3186A83DF04904F209",
-                "label": "New Category"
+                "label": "New Category",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                    "properties": {
+                        "allowedGroupIds": "G-002",
+                        "orgId": ""
+                    }
+                }
             }
         },
         {
@@ -1897,37 +1906,6 @@
                     "properties": {
                         "actionAfterSaved": "",
                         "actionOnCancel": "",
-                        "cancelButtonLabel": "",
-                        "customFooter": "",
-                        "customHeader": "",
-                        "customId": "waiveroff",
-                        "enableOffline": "",
-                        "fieldPassover": "",
-                        "fieldPassoverMethod": "append",
-                        "formId": "waveoff_insp_fee",
-                        "id": "339CDB44046F4329A941F85877B99276",
-                        "keyName": "",
-                        "label": "Wavier OFF",
-                        "loadDataWithKey": "",
-                        "messageShowAfterComplete": "",
-                        "paramName": "",
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "redirectTargetOnCancel": "top",
-                        "redirectTargetOnComplete": "",
-                        "redirectUrlAfterComplete": "inspection_wavieroff",
-                        "redirectUrlOnCancel": "inspection_wavieroff",
-                        "showInPopupDialog": "",
-                        "submitButtonLabel": "",
-                        "userviewCacheDuration": "20",
-                        "userviewCacheScope": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.userview.lib.FormMenu",
-                    "properties": {
-                        "actionAfterSaved": "",
-                        "actionOnCancel": "",
                         "cancelButtonLabel": "Cancel",
                         "customFooter": "",
                         "customHeader": "",
@@ -1956,8 +1934,17 @@
                 }
             ],
             "properties": {
+                "comment": "Inspector Only",
+                "hide": "",
                 "id": "category-6B2484AC87644B90AE641443524B3DF4",
-                "label": "New Category"
+                "label": "New Category",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                    "properties": {
+                        "allowedGroupIds": "G-006",
+                        "orgId": ""
+                    }
+                }
             }
         },
         {
@@ -2001,37 +1988,6 @@
                     "properties": {
                         "actionAfterSaved": "",
                         "actionOnCancel": "",
-                        "cancelButtonLabel": "Close",
-                        "customFooter": "",
-                        "customHeader": "",
-                        "customId": "ofc_certificate",
-                        "enableOffline": "",
-                        "fieldPassover": "",
-                        "fieldPassoverMethod": "append",
-                        "formId": "inspectionFinalReport",
-                        "id": "A228C3AEFBAE46969908CBC12001AD3B",
-                        "keyName": "",
-                        "label": "OFC Certificate",
-                        "loadDataWithKey": "",
-                        "messageShowAfterComplete": "",
-                        "paramName": "",
-                        "readonly": "Yes",
-                        "readonlyLabel": "true",
-                        "redirectTargetOnCancel": "top",
-                        "redirectTargetOnComplete": "",
-                        "redirectUrlAfterComplete": "ofc_inspection_form_crud",
-                        "redirectUrlOnCancel": "ofc_inspection_form_crud",
-                        "showInPopupDialog": "Yes",
-                        "submitButtonLabel": "",
-                        "userviewCacheDuration": "20",
-                        "userviewCacheScope": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.userview.lib.FormMenu",
-                    "properties": {
-                        "actionAfterSaved": "",
-                        "actionOnCancel": "",
                         "cancelButtonLabel": "",
                         "customFooter": "",
                         "customHeader": "",
@@ -2057,7 +2013,25 @@
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
-                },
+                }
+            ],
+            "properties": {
+                "comment": "Access by Admin, Inspector and User ",
+                "hide": "yes",
+                "id": "category-F619E16EE7CB48B28CC69E32DD7D1E46",
+                "label": "hidden",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                    "properties": {
+                        "allowedGroupIds": "G-003;G-009;G-006",
+                        "orgId": ""
+                    }
+                }
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
                 {
                     "className": "org.joget.apps.userview.lib.FormMenu",
                     "properties": {
@@ -2088,20 +2062,43 @@
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "actionAfterSaved": "",
+                        "actionOnCancel": "",
+                        "cancelButtonLabel": "Cancel",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "waiver_form_client",
+                        "enableOffline": "",
+                        "fieldPassover": "",
+                        "fieldPassoverMethod": "append",
+                        "formId": "insp_waive_view",
+                        "id": "35B76DC79D084657BD1B5929FC167989",
+                        "keyName": "",
+                        "label": "Waiver OFF For Client",
+                        "loadDataWithKey": "",
+                        "messageShowAfterComplete": "",
+                        "paramName": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "redirectTargetOnCancel": "top",
+                        "redirectTargetOnComplete": "",
+                        "redirectUrlAfterComplete": "",
+                        "redirectUrlOnCancel": "",
+                        "showInPopupDialog": "",
+                        "submitButtonLabel": "Continue To Checkout",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
                 }
             ],
             "properties": {
-                "comment": "",
-                "hide": "yes",
-                "id": "category-F619E16EE7CB48B28CC69E32DD7D1E46",
-                "label": "hidden",
-                "permission": {
-                    "className": "org.joget.apps.userview.lib.GroupPermission",
-                    "properties": {
-                        "allowedGroupIds": "G-003;G-009;G-006;G-001;G-002",
-                        "orgId": ""
-                    }
-                }
+                "comment": "User only",
+                "id": "category-15503D289D264AAEBD609E6F38E3034E",
+                "label": "New Category"
             }
         }
     ],
