@@ -10,8 +10,8 @@
                         "className": "org.joget.apps.form.lib.TextField",
                         "properties": {
                             "encryption": "",
-                            "id": "re_insp_date",
-                            "label": "Scheduled On",
+                            "id": "re_insp_type",
+                            "label": "Type of Inspection",
                             "maxlength": "",
                             "placeholder": "",
                             "readonly": "",
@@ -30,25 +30,43 @@
                     {
                         "className": "org.joget.apps.form.lib.TextField",
                         "properties": {
-                            "encryption": "false",
-                            "id": "field8",
-                            "label": "Text Field",
-                            "readonly": "False",
-                            "readonlyLabel": "False",
-                            "storeNumeric": "False",
-                            "style": ""
+                            "encryption": "",
+                            "id": "re_insp_name",
+                            "label": "Name of Inspector",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
                         }
                     },
                     {
                         "className": "org.joget.apps.form.lib.TextField",
                         "properties": {
-                            "encryption": "false",
-                            "id": "field7",
-                            "label": "Text Field",
-                            "readonly": "False",
-                            "readonlyLabel": "False",
-                            "storeNumeric": "False",
-                            "style": ""
+                            "encryption": "",
+                            "id": "re_insp_date",
+                            "label": "Scheduled On",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
                         }
                     }
                 ],
