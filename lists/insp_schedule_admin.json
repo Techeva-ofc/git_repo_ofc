@@ -261,6 +261,12 @@
                         "value": "Payment Completed"
                     },
                     {
+                        "field": "c_rescheduleid",
+                        "join": "AND",
+                        "operator": "<>",
+                        "value": "reschedule"
+                    },
+                    {
                         "field": "c_inspectionreportStatus",
                         "join": "OR",
                         "operator": "=",
@@ -271,12 +277,6 @@
                         "join": "OR",
                         "operator": "=",
                         "value": "Inspection To-Be Re-Scheduled"
-                    },
-                    {
-                        "field": "c_rescheduleid",
-                        "join": "AND",
-                        "operator": "<>",
-                        "value": "reschedule"
                     }
                 ],
                 "target": "popup"
