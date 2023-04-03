@@ -250,15 +250,27 @@
                 "confirmation": "",
                 "datalist_type": "row_action",
                 "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/inspectionSchedule",
-                "hrefColumn": "id;C_serReqDmccSrNo;c_status;c_inspectionreportStatus",
+                "hrefColumn": "id;;c_status;c_inspectionreportStatus",
                 "hrefParam": "id;serReqDmccSrNo;status;inspectionstatus",
                 "label": "Re-Schedule",
                 "rules": [
                     {
                         "field": "c_inspectionreportStatus",
-                        "join": "AND",
+                        "join": "OR",
                         "operator": "=",
                         "value": "Other Non-Compliance"
+                    },
+                    {
+                        "field": "c_cancelid",
+                        "join": "OR",
+                        "operator": "IS NOT EMPTY",
+                        "value": ""
+                    },
+                    {
+                        "field": "c_rescheduleid",
+                        "join": "OR",
+                        "operator": "IS NOT EMPTY",
+                        "value": ""
                     },
                     {
                         "field": "c_status",
