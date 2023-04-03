@@ -10,6 +10,19 @@
                         {
                             "className": "org.joget.apps.form.lib.HiddenField",
                             "properties": {
+                                "id": "status_reschedule",
+                                "useDefaultWhenEmpty": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "Inspection To-Be Re-Scheduled",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.HiddenField",
+                            "properties": {
                                 "id": "field11",
                                 "useDefaultWhenEmpty": "",
                                 "validator": {
