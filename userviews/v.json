@@ -1271,7 +1271,7 @@
                         "keyName": "id",
                         "label": "Inspection Summary",
                         "list-customFooter": "",
-                        "list-customHeader": "\r\n    ",
+                        "list-customHeader": "",
                         "list-editLinkLabel": "",
                         "list-editLinkTarget": "",
                         "list-moreActions": [{
