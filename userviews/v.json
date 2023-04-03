@@ -599,7 +599,7 @@
                 "properties": {
                     "actionAfterSaved": "",
                     "actionOnCancel": "",
-                    "cancelButtonLabel": "",
+                    "cancelButtonLabel": "Cancel",
                     "customFooter": "",
                     "customHeader": "",
                     "customId": "inspectionSchedule",
@@ -609,7 +609,7 @@
                     "formId": "inspSchedl",
                     "id": "82F4EEC6F7554A0E9653FAB22C3F3C96",
                     "keyName": "",
-                    "label": "Inspection Schedule",
+                    "label": "Schedule Inspection",
                     "loadDataWithKey": "",
                     "messageShowAfterComplete": "",
                     "paramName": "",
