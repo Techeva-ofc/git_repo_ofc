@@ -412,37 +412,6 @@
         {
             "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
             "icon": "<i class=\"fas fa-link\"><\/i>",
-            "id": "rowAction_4",
-            "label": "Hyperlink",
-            "name": "Data List Hyperlink Action",
-            "properties": {
-                "confirmation": "",
-                "datalist_type": "row_action",
-                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/inspectionreportview",
-                "hrefColumn": "",
-                "hrefParam": "",
-                "label": "View Inspection Report",
-                "rules": [
-                    {
-                        "field": "c_status",
-                        "join": "OR",
-                        "operator": "=",
-                        "value": "Inspection Completed"
-                    },
-                    {
-                        "field": "c_status",
-                        "join": "OR",
-                        "operator": "=",
-                        "value": "Inspection To-Be Re-Scheduled"
-                    }
-                ],
-                "target": "popup"
-            },
-            "type": "text"
-        },
-        {
-            "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
-            "icon": "<i class=\"fas fa-link\"><\/i>",
             "id": "rowAction_2",
             "label": "Hyperlink",
             "name": "Data List Hyperlink Action",
@@ -460,6 +429,37 @@
                     "value": "Inspection Completed"
                 }],
                 "target": "_self"
+            },
+            "type": "text"
+        },
+        {
+            "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+            "icon": "<i class=\"fas fa-link\"><\/i>",
+            "id": "rowAction_1",
+            "label": "Hyperlink",
+            "name": "Data List Hyperlink Action",
+            "properties": {
+                "confirmation": "",
+                "datalist_type": "row_action",
+                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/inspectionreportview",
+                "hrefColumn": "C_serReqDmccSrNo;c_companyName;c_inspSchedlDate;c_inspectionreportStatus;c_reportdate;id",
+                "hrefParam": "serReqDmccSrNo;company;scheduledate;reportstatus;reportdate;id",
+                "label": "View Inspection Report",
+                "rules": [
+                    {
+                        "field": "c_status",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Inspection Completed"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Inspection To-Be Re-Scheduled"
+                    }
+                ],
+                "target": "popup"
             },
             "type": "text"
         }
