@@ -125,7 +125,7 @@
                             "autoPopulate": "",
                             "id": "script_disable_button",
                             "label": "",
-                            "value": "<html>  \r\n<script>  \r\nfunction verifyAnswer() \r\n{  \r\n//get the selected value from the dropdown list  \r\nvar mylist = document.getElementById(\"action_item\");  \r\nif(mylist[0].checked==true)\r\n    mylist[1].disabled = true;\r\nelse\r\n    mylist[0].disabled = true;\r\n}  \r\n \r\n<\/script>  \r\n<body>  \r\n<\/html>"
+                            "value": "\r\n<script type=\"text/javascript\"> \r\nfunction verifyAnswer() \r\n{  \r\n//get the selected value from the dropdown list  \r\nvar mylist = document.getElementById(\"action_item\");  \r\nif(mylist[0].checked==true)\r\n    mylist[1].disabled = true;\r\nelse\r\n    mylist[0].disabled = true;\r\n}  \r\n \r\n<\/script>  \r\n"
                         }
                     },
                     {
