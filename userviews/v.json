@@ -1855,7 +1855,7 @@
                 "comment": "Waiver OFF - Super Admin",
                 "hide": "",
                 "id": "category-160B4B1E1B764E3186A83DF04904F209",
-                "label": "New Category",
+                "label": "<i class=\"fa fa-users\"><\/i>Waiver OFF - Super Admin",
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
@@ -1937,7 +1937,7 @@
                 "comment": "Inspector Only",
                 "hide": "",
                 "id": "category-6B2484AC87644B90AE641443524B3DF4",
-                "label": "New Category",
+                "label": "<i class=\"fa fa-users\"><\/i>Inspector Only",
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
@@ -2019,7 +2019,7 @@
                 "comment": "Access by Admin, Inspector and User ",
                 "hide": "yes",
                 "id": "category-F619E16EE7CB48B28CC69E32DD7D1E46",
-                "label": "hidden",
+                "label": "<i class=\"fa fa-users\"><\/i> Access by Admin, Inspector and User ",
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
@@ -2098,7 +2098,7 @@
             "properties": {
                 "comment": "User only",
                 "id": "category-15503D289D264AAEBD609E6F38E3034E",
-                "label": "New Category"
+                "label": "User Only"
             }
         }
     ],
