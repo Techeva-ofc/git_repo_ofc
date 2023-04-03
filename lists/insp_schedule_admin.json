@@ -250,8 +250,8 @@
                 "confirmation": "",
                 "datalist_type": "row_action",
                 "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/reScheduleform",
-                "hrefColumn": "id;c_serReqDmccSrNo;c_status;c_inspectionreportStatus;c_reason;c_dateofreschedule;c_rescheduleid",
-                "hrefParam": "id;serReqDmccSrNo;status;inspectionstatus;reason;re_scheduledate;reschdl_id",
+                "hrefColumn": "id;c_serReqDmccSrNo;c_status;c_inspectionreportStatus",
+                "hrefParam": "id;serReqDmccSrNo;status;inspectionstatus",
                 "label": "Re-Schedule",
                 "rules": [
                     {
@@ -261,22 +261,10 @@
                         "value": "Payment Completed"
                     },
                     {
-                        "field": "c_rescheduleid",
-                        "join": "AND",
-                        "operator": "<>",
-                        "value": "reschedule"
-                    },
-                    {
                         "field": "c_inspectionreportStatus",
                         "join": "OR",
                         "operator": "=",
                         "value": "Other Non-Compliance"
-                    },
-                    {
-                        "field": "c_status",
-                        "join": "OR",
-                        "operator": "=",
-                        "value": "Inspection To-Be Re-Scheduled"
                     }
                 ],
                 "target": "popup"
