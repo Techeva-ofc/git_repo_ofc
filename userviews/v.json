@@ -1891,7 +1891,37 @@
         },
         {
             "className": "org.joget.apps.userview.model.UserviewCategory",
-            "menus": [],
+            "menus": [{
+                "className": "org.joget.apps.userview.lib.FormMenu",
+                "properties": {
+                    "actionAfterSaved": "",
+                    "actionOnCancel": "",
+                    "cancelButtonLabel": "Close",
+                    "customFooter": "",
+                    "customHeader": "",
+                    "customId": "viewRport",
+                    "enableOffline": "",
+                    "fieldPassover": "",
+                    "fieldPassoverMethod": "append",
+                    "formId": "viewreport",
+                    "id": "0D5DEF8BB04D433BA431BE8C273B9DD1",
+                    "keyName": "",
+                    "label": "View Inspection Report",
+                    "loadDataWithKey": "",
+                    "messageShowAfterComplete": "",
+                    "paramName": "",
+                    "readonly": "Yes",
+                    "readonlyLabel": "true",
+                    "redirectTargetOnCancel": "top",
+                    "redirectTargetOnComplete": "",
+                    "redirectUrlAfterComplete": "",
+                    "redirectUrlOnCancel": "",
+                    "showInPopupDialog": "",
+                    "submitButtonLabel": "",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": ""
+                }
+            }],
             "properties": {
                 "id": "category-FBC1B16A050845C0B0F9F24F798AA723",
                 "label": "<i class=\"fa fa-users\"><\/i> Access by Admin, Inspector and User "
