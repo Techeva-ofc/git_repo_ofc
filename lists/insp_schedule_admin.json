@@ -249,7 +249,7 @@
             "properties": {
                 "confirmation": "",
                 "datalist_type": "row_action",
-                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/reScheduleform",
+                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/inspectionSchedule",
                 "hrefColumn": "id;c_serReqDmccSrNo;c_status;c_inspectionreportStatus;c_rescheduleid",
                 "hrefParam": "id;serReqDmccSrNo;status;inspectionstatus;reschedulestate",
                 "label": "Re-Schedule",
