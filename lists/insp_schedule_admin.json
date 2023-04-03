@@ -227,8 +227,8 @@
                 "confirmation": "",
                 "datalist_type": "row_action",
                 "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/inspectionSchedule",
-                "hrefColumn": "c_serReqDmccSrNo;id;c_status",
-                "hrefParam": "serReqDmccSrNo;id;status",
+                "hrefColumn": "c_serReqDmccSrNo;id;c_status;c_rescheduleid",
+                "hrefParam": "serReqDmccSrNo;id;status;reschedulestate",
                 "label": "Schedule",
                 "rules": [{
                     "field": "c_status",
