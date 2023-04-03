@@ -636,7 +636,7 @@
                         "cancelButtonLabel": "Close",
                         "customFooter": "",
                         "customHeader": "",
-                        "customId": "viewRportAdmin",
+                        "customId": "viewRport",
                         "enableOffline": "",
                         "fieldPassover": "",
                         "fieldPassoverMethod": "append",
