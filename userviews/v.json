@@ -902,21 +902,6 @@
             "className": "org.joget.apps.userview.model.UserviewCategory",
             "menus": [
                 {
-                    "className": "org.joget.rbuilder.lib.ReportUserviewMenu",
-                    "properties": {
-                        "customFooter": "",
-                        "customHeader": "",
-                        "customId": "reportsample",
-                        "enableOffline": "",
-                        "id": "1CB898F3F9834B6BB2AF42CBB820D1EE",
-                        "label": "Report",
-                        "reportId": "rp_ofc_certificate",
-                        "reportParams": [],
-                        "userviewCacheDuration": "20",
-                        "userviewCacheScope": ""
-                    }
-                },
-                {
                     "className": "org.joget.apps.userview.lib.RunProcess",
                     "properties": {
                         "actionAfterSaved": "",
@@ -1007,39 +992,6 @@
                         "rowCount": "true",
                         "showDetail": "",
                         "showPopup": "",
-                        "userviewCacheDuration": "20",
-                        "userviewCacheScope": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.userview.lib.FormMenu",
-                    "properties": {
-                        "actionAfterSaved": "",
-                        "actionOnCancel": "",
-                        "cancelButtonLabel": "",
-                        "customFooter": "",
-                        "customHeader": "",
-                        "customId": "serRequestView",
-                        "enableOffline": "",
-                        "fieldPassover": "",
-                        "fieldPassoverMethod": "append",
-                        "formId": "serviceRequestView",
-                        "id": "1560676B3F4E421BB874A41FDB72ACD7",
-                        "keyName": "",
-                        "label": "Service Request View Form",
-                        "loadDataWithKey": "",
-                        "messageShowAfterComplete": "",
-                        "paramName": "",
-                        "permissionDeny": "",
-                        "permissionHidden": "",
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "redirectTargetOnCancel": "top",
-                        "redirectTargetOnComplete": "",
-                        "redirectUrlAfterComplete": "",
-                        "redirectUrlOnCancel": "",
-                        "showInPopupDialog": "",
-                        "submitButtonLabel": "Continue To Checkout",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
@@ -1904,12 +1856,12 @@
                         "cancelButtonLabel": "",
                         "customFooter": "",
                         "customHeader": "",
-                        "customId": "serRequestUserView",
+                        "customId": "serRequestView",
                         "enableOffline": "",
                         "fieldPassover": "",
                         "fieldPassoverMethod": "append",
                         "formId": "serviceRequestView",
-                        "id": "36DC4D1C408D4F429481FB5DCBBE0FE7",
+                        "id": "1560676B3F4E421BB874A41FDB72ACD7",
                         "keyName": "",
                         "label": "Service Request View Form",
                         "loadDataWithKey": "",
