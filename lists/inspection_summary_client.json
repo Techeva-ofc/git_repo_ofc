@@ -413,7 +413,7 @@
                 "confirmation": "",
                 "datalist_type": "row_action",
                 "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/cancel",
-                "hrefColumn": "id;c_inspSchedlDate;;C_serReqDmccSrNo;",
+                "hrefColumn": "id;c_inspSchedlDate;c_ofc_category_name;C_serReqDmccSrNo;c_inspectorNames",
                 "hrefParam": "id;sc_date;type;serReqDmccSrNo;name",
                 "label": "Cancel / Reschedule",
                 "rules": [{
