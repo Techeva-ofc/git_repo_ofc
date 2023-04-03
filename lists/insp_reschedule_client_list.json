@@ -231,16 +231,22 @@
             "label": "Re-Schedule",
             "rules": [
                 {
-                    "field": "c_status",
+                    "field": "c_rescheduleid",
                     "join": "AND",
+                    "operator": "=",
+                    "value": "reschedule"
+                },
+                {
+                    "field": "c_status",
+                    "join": "OR",
                     "operator": "=",
                     "value": "Payment Completed"
                 },
                 {
-                    "field": "c_rescheduleid",
+                    "field": "c_status",
                     "join": "OR",
                     "operator": "=",
-                    "value": "reschedule"
+                    "value": "Inspection To-Be Re-Scheduled"
                 }
             ],
             "target": "popup"
