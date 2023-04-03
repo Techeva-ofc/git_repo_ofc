@@ -161,7 +161,7 @@
             "properties": {
                 "comment": "",
                 "id": "inspectionSchedule",
-                "join": "",
+                "join": "or;or",
                 "label": "Schedule Inspection",
                 "loadBinder": {
                     "className": "",
@@ -174,14 +174,14 @@
                 "permissionReadonly": "",
                 "readonly": "",
                 "readonlyLabel": "",
-                "regex": "",
-                "reverse": "",
+                "regex": ";",
+                "reverse": ";",
                 "storeBinder": {
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "statusofinspection",
-                "visibilityValue": "Payment Completed"
+                "visibilityControl": "statusofinspection;reschedule",
+                "visibilityValue": "Payment Completed;reschedule"
             }
         },
         {
