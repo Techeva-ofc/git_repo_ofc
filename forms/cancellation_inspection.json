@@ -262,7 +262,7 @@
                     "properties": {
                         "cols": "150",
                         "id": "reason",
-                        "label": "Cancellation Reason",
+                        "label": "Provide the Reason",
                         "placeholder": "",
                         "readonly": "",
                         "readonlyLabel": "",
@@ -282,8 +282,29 @@
                 "properties": {"width": "100%"}
             }],
             "properties": {
+                "comment": "",
                 "id": "section5",
-                "label": "Section"
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
             }
         }
     ],
