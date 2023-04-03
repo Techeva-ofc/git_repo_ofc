@@ -1192,7 +1192,7 @@
                         "enableOffline": "",
                         "id": "5A05C7C9A0694FAAA6C9FD097F2BCDBD",
                         "keyName": "",
-                        "label": "Service Request Summery",
+                        "label": "Service Request Summary",
                         "list-customFooter": "",
                         "list-customHeader": "",
                         "list-editLinkLabel": "",
@@ -1204,60 +1204,6 @@
                         "rowCount": "",
                         "selectionType": "multiple",
                         "userviewCacheDuration": "",
-                        "userviewCacheScope": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.userview.lib.DataListMenu",
-                    "properties": {
-                        "buttonPosition": "bottomLeft",
-                        "cacheAllLinks": "",
-                        "cacheListAction": "",
-                        "checkboxPosition": "no",
-                        "customFooter": "",
-                        "customHeader": "",
-                        "customId": "inspectioninbox",
-                        "datalistId": "inspection_summary_client",
-                        "enableOffline": "",
-                        "id": "45092783E9B041AEA702369906856928",
-                        "keyName": "",
-                        "label": "Inbox",
-                        "rowCount": "true",
-                        "selectionType": "single",
-                        "userviewCacheDuration": "20",
-                        "userviewCacheScope": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.userview.lib.FormMenu",
-                    "properties": {
-                        "actionAfterSaved": "",
-                        "actionOnCancel": "",
-                        "cancelButtonLabel": "Cancel",
-                        "customFooter": "",
-                        "customHeader": "",
-                        "customId": "reportclientform",
-                        "enableOffline": "",
-                        "fieldPassover": "",
-                        "fieldPassoverMethod": "append",
-                        "formId": "insp_report_client",
-                        "id": "68DDAFBF7ADC47CFB4A9A5CAFDBA388F",
-                        "keyName": "",
-                        "label": "Form",
-                        "loadDataWithKey": "",
-                        "messageShowAfterComplete": "",
-                        "paramName": "",
-                        "permissionDeny": "",
-                        "permissionHidden": "true",
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "redirectTargetOnCancel": "top",
-                        "redirectTargetOnComplete": "",
-                        "redirectUrlAfterComplete": "",
-                        "redirectUrlOnCancel": "",
-                        "showInPopupDialog": "",
-                        "submitButtonLabel": "Submit",
-                        "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
                 },
@@ -1332,7 +1278,7 @@
                 "comment": "Service Category for User",
                 "hide": "",
                 "id": "category-133FA284E1184C7B9BFAE7035553C056",
-                "label": "<i class=\"fa fa-users\"><\/i> Service Request Form Approval Process",
+                "label": "<i class=\"fa fa-users\"><\/i> Manage Service Request",
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
@@ -1341,6 +1287,35 @@
                     }
                 },
                 "permissionComment": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.apps.userview.lib.DataListMenu",
+                "properties": {
+                    "buttonPosition": "bottomLeft",
+                    "cacheAllLinks": "",
+                    "cacheListAction": "",
+                    "checkboxPosition": "no",
+                    "customFooter": "",
+                    "customHeader": "",
+                    "customId": "inspectioninbox",
+                    "datalistId": "inspection_summary_client",
+                    "enableOffline": "",
+                    "id": "45092783E9B041AEA702369906856928",
+                    "keyName": "",
+                    "label": "Inbox",
+                    "rowCount": "true",
+                    "selectionType": "single",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": ""
+                }
+            }],
+            "properties": {
+                "comment": "User Only",
+                "id": "category-98B422B318D340C8837D131905F03C40",
+                "label": "<i class=\"fa fa-tasks\"><\/i>Manage Inspections"
             }
         },
         {
@@ -1878,6 +1853,39 @@
                         "redirectUrlOnCancel": "",
                         "showInPopupDialog": "",
                         "submitButtonLabel": "Continue To Checkout",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "actionAfterSaved": "",
+                        "actionOnCancel": "",
+                        "cancelButtonLabel": "Cancel",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "reportclientform",
+                        "enableOffline": "",
+                        "fieldPassover": "",
+                        "fieldPassoverMethod": "append",
+                        "formId": "insp_report_client",
+                        "id": "68DDAFBF7ADC47CFB4A9A5CAFDBA388F",
+                        "keyName": "",
+                        "label": "Upload Images",
+                        "loadDataWithKey": "",
+                        "messageShowAfterComplete": "",
+                        "paramName": "",
+                        "permissionDeny": "",
+                        "permissionHidden": "true",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "redirectTargetOnCancel": "top",
+                        "redirectTargetOnComplete": "",
+                        "redirectUrlAfterComplete": "",
+                        "redirectUrlOnCancel": "",
+                        "showInPopupDialog": "",
+                        "submitButtonLabel": "Submit",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
