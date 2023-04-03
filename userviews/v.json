@@ -594,39 +594,72 @@
         },
         {
             "className": "org.joget.apps.userview.model.UserviewCategory",
-            "menus": [{
-                "className": "org.joget.apps.userview.lib.FormMenu",
-                "properties": {
-                    "actionAfterSaved": "",
-                    "actionOnCancel": "",
-                    "cancelButtonLabel": "Cancel",
-                    "customFooter": "",
-                    "customHeader": "",
-                    "customId": "inspectionSchedule",
-                    "enableOffline": "",
-                    "fieldPassover": "",
-                    "fieldPassoverMethod": "append",
-                    "formId": "inspSchedl",
-                    "id": "82F4EEC6F7554A0E9653FAB22C3F3C96",
-                    "keyName": "",
-                    "label": "Schedule Inspection",
-                    "loadDataWithKey": "",
-                    "messageShowAfterComplete": "",
-                    "paramName": "",
-                    "permissionDeny": "",
-                    "permissionHidden": "",
-                    "readonly": "",
-                    "readonlyLabel": "",
-                    "redirectTargetOnCancel": "top",
-                    "redirectTargetOnComplete": "",
-                    "redirectUrlAfterComplete": "",
-                    "redirectUrlOnCancel": "",
-                    "showInPopupDialog": "",
-                    "submitButtonLabel": "Save",
-                    "userviewCacheDuration": "20",
-                    "userviewCacheScope": ""
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "actionAfterSaved": "",
+                        "actionOnCancel": "",
+                        "cancelButtonLabel": "Cancel",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "inspectionSchedule",
+                        "enableOffline": "",
+                        "fieldPassover": "",
+                        "fieldPassoverMethod": "append",
+                        "formId": "inspSchedl",
+                        "id": "82F4EEC6F7554A0E9653FAB22C3F3C96",
+                        "keyName": "",
+                        "label": "Schedule Inspection",
+                        "loadDataWithKey": "",
+                        "messageShowAfterComplete": "",
+                        "paramName": "",
+                        "permissionDeny": "",
+                        "permissionHidden": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "redirectTargetOnCancel": "top",
+                        "redirectTargetOnComplete": "",
+                        "redirectUrlAfterComplete": "",
+                        "redirectUrlOnCancel": "",
+                        "showInPopupDialog": "",
+                        "submitButtonLabel": "Save",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "actionAfterSaved": "",
+                        "actionOnCancel": "",
+                        "cancelButtonLabel": "Close",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "viewRport",
+                        "enableOffline": "",
+                        "fieldPassover": "",
+                        "fieldPassoverMethod": "append",
+                        "formId": "viewreport",
+                        "id": "409165DE55B741028ADF8F884448B59E",
+                        "keyName": "",
+                        "label": "View Inspection Report",
+                        "loadDataWithKey": "",
+                        "messageShowAfterComplete": "",
+                        "paramName": "",
+                        "readonly": "Yes",
+                        "readonlyLabel": "true",
+                        "redirectTargetOnCancel": "top",
+                        "redirectTargetOnComplete": "",
+                        "redirectUrlAfterComplete": "",
+                        "redirectUrlOnCancel": "",
+                        "showInPopupDialog": "",
+                        "submitButtonLabel": "",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
                 }
-            }],
+            ],
             "properties": {
                 "comment": "",
                 "hide": "",
@@ -1629,6 +1662,37 @@
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "actionAfterSaved": "",
+                        "actionOnCancel": "",
+                        "cancelButtonLabel": "Close",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "viewRport",
+                        "enableOffline": "",
+                        "fieldPassover": "",
+                        "fieldPassoverMethod": "append",
+                        "formId": "viewreport",
+                        "id": "0D5DEF8BB04D433BA431BE8C273B9DD1",
+                        "keyName": "",
+                        "label": "View Inspection Report",
+                        "loadDataWithKey": "",
+                        "messageShowAfterComplete": "",
+                        "paramName": "",
+                        "readonly": "Yes",
+                        "readonlyLabel": "true",
+                        "redirectTargetOnCancel": "top",
+                        "redirectTargetOnComplete": "",
+                        "redirectUrlAfterComplete": "",
+                        "redirectUrlOnCancel": "",
+                        "showInPopupDialog": "",
+                        "submitButtonLabel": "",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
                 }
             ],
             "properties": {
@@ -1775,25 +1839,7 @@
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
-                }
-            ],
-            "properties": {
-                "comment": "User only",
-                "hide": "",
-                "id": "category-15503D289D264AAEBD609E6F38E3034E",
-                "label": "User Only",
-                "permission": {
-                    "className": "org.joget.apps.userview.lib.GroupPermission",
-                    "properties": {
-                        "allowedGroupIds": "G-009",
-                        "orgId": ""
-                    }
-                }
-            }
-        },
-        {
-            "className": "org.joget.apps.userview.model.UserviewCategory",
-            "menus": [
+                },
                 {
                     "className": "org.joget.apps.userview.lib.FormMenu",
                     "properties": {
@@ -1807,7 +1853,7 @@
                         "fieldPassover": "",
                         "fieldPassoverMethod": "append",
                         "formId": "viewreport",
-                        "id": "0D5DEF8BB04D433BA431BE8C273B9DD1",
+                        "id": "2ED0FE60A816413F875EBCADD3672B1D",
                         "keyName": "",
                         "label": "View Inspection Report",
                         "loadDataWithKey": "",
@@ -1838,7 +1884,7 @@
                         "fieldPassover": "",
                         "fieldPassoverMethod": "append",
                         "formId": "serviceRequestView",
-                        "id": "1560676B3F4E421BB874A41FDB72ACD7",
+                        "id": "58DB2DB6EFF5472580DE15DA4A6FD249",
                         "keyName": "",
                         "label": "Service Request View Form",
                         "loadDataWithKey": "",
@@ -1859,6 +1905,55 @@
                     }
                 }
             ],
+            "properties": {
+                "comment": "User only",
+                "hide": "",
+                "id": "category-15503D289D264AAEBD609E6F38E3034E",
+                "label": "User Only",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                    "properties": {
+                        "allowedGroupIds": "G-009",
+                        "orgId": ""
+                    }
+                }
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.apps.userview.lib.FormMenu",
+                "properties": {
+                    "actionAfterSaved": "",
+                    "actionOnCancel": "",
+                    "cancelButtonLabel": "",
+                    "customFooter": "",
+                    "customHeader": "",
+                    "customId": "serRequestView",
+                    "enableOffline": "",
+                    "fieldPassover": "",
+                    "fieldPassoverMethod": "append",
+                    "formId": "serviceRequestView",
+                    "id": "1560676B3F4E421BB874A41FDB72ACD7",
+                    "keyName": "",
+                    "label": "Service Request View Form",
+                    "loadDataWithKey": "",
+                    "messageShowAfterComplete": "",
+                    "paramName": "",
+                    "permissionDeny": "",
+                    "permissionHidden": "",
+                    "readonly": "",
+                    "readonlyLabel": "",
+                    "redirectTargetOnCancel": "top",
+                    "redirectTargetOnComplete": "",
+                    "redirectUrlAfterComplete": "",
+                    "redirectUrlOnCancel": "",
+                    "showInPopupDialog": "",
+                    "submitButtonLabel": "Continue To Checkout",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": ""
+                }
+            }],
             "properties": {
                 "comment": "",
                 "hide": "",
