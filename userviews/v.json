@@ -1687,7 +1687,7 @@
                         "redirectTargetOnCancel": "top",
                         "redirectTargetOnComplete": "",
                         "redirectUrlAfterComplete": "",
-                        "redirectUrlOnCancel": "",
+                        "redirectUrlOnCancel": "insp_history",
                         "showInPopupDialog": "",
                         "submitButtonLabel": "",
                         "userviewCacheDuration": "20",
