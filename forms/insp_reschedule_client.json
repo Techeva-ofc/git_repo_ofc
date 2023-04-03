@@ -76,7 +76,7 @@
                 "comment": "",
                 "id": "inspectionreSchedule",
                 "join": "",
-                "label": "Re-Schedule Inspection",
+                "label": "Requisition on Re-Schedule",
                 "loadBinder": {
                     "className": "",
                     "properties": {}
@@ -272,8 +272,29 @@
                 "properties": {"width": "100%"}
             }],
             "properties": {
+                "comment": "",
                 "id": "section2",
-                "label": "Section"
+                "join": "",
+                "label": "Scheduler",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
             }
         }
     ],
