@@ -327,7 +327,7 @@
             "properties": {
                 "comment": "",
                 "id": "section5",
-                "join": "",
+                "join": "or;or",
                 "label": "",
                 "loadBinder": {
                     "className": "",
@@ -340,14 +340,14 @@
                 "permissionReadonly": "",
                 "readonly": "",
                 "readonlyLabel": "",
-                "regex": "",
-                "reverse": "",
+                "regex": ";",
+                "reverse": ";",
                 "storeBinder": {
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "",
-                "visibilityValue": ""
+                "visibilityControl": "action_item;action_item",
+                "visibilityValue": "Cancel Inspection;Re-Schedule Inspection"
             }
         }
     ],
