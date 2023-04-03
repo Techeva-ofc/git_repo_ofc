@@ -257,7 +257,7 @@
                             "autoPopulate": "",
                             "id": "confirm",
                             "label": "",
-                            "value": "<span>Please confirm that you would like to cancel this inspection and provide the reason for cacncellation<\/span>"
+                            "value": "<span>Please confirm that you would like to cancel this inspection and provide the reason for cancellation<\/span>"
                         }
                     },
                     {
