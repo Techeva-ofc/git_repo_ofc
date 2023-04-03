@@ -620,10 +620,10 @@
                         "readonlyLabel": "",
                         "redirectTargetOnCancel": "top",
                         "redirectTargetOnComplete": "",
-                        "redirectUrlAfterComplete": "",
-                        "redirectUrlOnCancel": "",
+                        "redirectUrlAfterComplete": "inspection_scheduler",
+                        "redirectUrlOnCancel": "inspection_scheduler",
                         "showInPopupDialog": "",
-                        "submitButtonLabel": "Save",
+                        "submitButtonLabel": "Schedule",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
@@ -1297,7 +1297,7 @@
                         "buttonPosition": "bottomLeft",
                         "cacheAllLinks": "",
                         "cacheListAction": "",
-                        "checkboxPosition": "left",
+                        "checkboxPosition": "no",
                         "customFooter": "",
                         "customHeader": "",
                         "customId": "inspection_scheduler",
