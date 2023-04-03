@@ -6,7 +6,7 @@
             "jdbcDatasource": "default",
             "optimisePaging": "",
             "primaryKey": "id",
-            "sql": "SELECT sr.id,sr.c_jobid,sr.c_waiverstate,sr.c_licenseactivity,sr.dateCreated,sr.c_reportdate,sr.C_serReqDmccSrNo, c.c_licenseNumber, sr.c_serReqServCat, c.c_companyName, c.c_companyLocation, t.c_tower_seq_no, t.c_tower_name ,sr.c_status, sr.c_inspSchedlDate, sr.c_inspectionreportStatus\r\nFROM app_fd_ofc_serreqs_tab sr\r\nINNER JOIN app_fd_ofc_company_tab c\r\nON sr.c_companyName = c.id\r\nINNER JOIN app_fd_ofc_location_tab l\r\nON c.c_companyLocation = l.c_locName\r\nINNER JOIN app_fd_ofc_tower_tab t\r\nON c.c_tower_name = t.c_tower_name\r\nWHERE sr.c_status = 'Inspection Completed' \r\nor sr.c_status = 'Inspection To-Be Re-Scheduled'\r\nor sr.c_status = 'Inspection Scheduled'\r\nor sr.c_status = 'Image(s) To-Be Uploaded'\r\nor sr.c_waiverstate = \"WaiverApplied\"\r\nor sr.c_status = 'Awaiting payment from the client'\r\norder by sr.c_inspSchedlDate\r\n\r\n"
+            "sql": "SELECT \r\nsr.id,\r\nsr.c_jobid,\r\nsr.c_waiverstate,\r\nsr.c_licenseactivity,\r\nsr.dateCreated,\r\nsr.c_reportdate,\r\nsr.C_serReqDmccSrNo, \r\nc.c_licenseNumber, \r\nsr.c_serReqServCat, \r\nc.c_companyName, \r\nc.c_companyLocation, \r\nt.c_tower_seq_no, \r\nt.c_tower_name ,\r\nsr.c_status, \r\nsr.c_inspSchedlDate, \r\nsr.c_inspectionreportStatus,\r\nsr.c_inspectorNames,\r\n  d.c_ofc_category_name\r\nFROM \r\napp_fd_ofc_serreqs_tab sr\r\nINNER JOIN \r\n    app_fd_ofc_company_tab c\r\n    ON sr.c_companyName = c.id\r\nINNER JOIN \r\n    app_fd_ofc_location_tab l\r\n    ON c.c_companyLocation = l.c_locName\r\nINNER JOIN \r\n    app_fd_ofc_tower_tab t\r\n    ON c.c_tower_name = t.c_tower_name\r\ninner join app_fd_ofc_ofc_category_tab d \r\non sr.c_ofc_category_name = d.id \r\nWHERE sr.c_status = 'Inspection Completed' \r\nor sr.c_status = 'Inspection To-Be Re-Scheduled'\r\nor sr.c_status = 'Inspection Scheduled'\r\nor sr.c_status = 'Image(s) To-Be Uploaded'\r\nor sr.c_waiverstate = \"WaiverApplied\"\r\nor sr.c_status = 'Awaiting payment from the client'\r\norder by sr.c_inspSchedlDate\r\n\r\n"
         }
     },
     "buttonPosition": "bottomLeft",
@@ -413,7 +413,7 @@
                 "confirmation": "",
                 "datalist_type": "row_action",
                 "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/cancel",
-                "hrefColumn": "id;c_inspSchedlDate;c_ofc_category_name;c_serReqDmccSrNo;c_inspectorNames",
+                "hrefColumn": "id;c_inspSchedlDate;;C_serReqDmccSrNo;",
                 "hrefParam": "id;sc_date;type;serReqDmccSrNo;name",
                 "label": "Cancel / Reschedule",
                 "rules": [{
