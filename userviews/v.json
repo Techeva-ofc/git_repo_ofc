@@ -1166,7 +1166,7 @@
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
-                        "allowedGroupIds": "G-003;G-009;G-001;G-002",
+                        "allowedGroupIds": "G-009",
                         "orgId": ""
                     }
                 },
@@ -1198,8 +1198,16 @@
             }],
             "properties": {
                 "comment": "User Only",
+                "hide": "",
                 "id": "category-98B422B318D340C8837D131905F03C40",
-                "label": "<i class=\"fa fa-tasks\"><\/i>Manage Inspections"
+                "label": "<i class=\"fa fa-tasks\"><\/i>Manage Inspections",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                    "properties": {
+                        "allowedGroupIds": "G-009",
+                        "orgId": ""
+                    }
+                }
             }
         },
         {
