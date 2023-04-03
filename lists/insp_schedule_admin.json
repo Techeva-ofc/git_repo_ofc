@@ -274,8 +274,8 @@
                     },
                     {
                         "field": "c_rescheduleid",
-                        "join": "OR",
-                        "operator": "=",
+                        "join": "AND",
+                        "operator": "<>",
                         "value": "reschedule"
                     }
                 ],
