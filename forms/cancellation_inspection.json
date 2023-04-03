@@ -37,27 +37,12 @@
                             "className": "org.joget.apps.form.lib.HiddenField",
                             "properties": {
                                 "id": "field12",
-                                "useDefaultWhenEmpty": ""
-                            }
-                        },
-                        {
-                            "className": "org.joget.apps.form.lib.TextField",
-                            "properties": {
-                                "encryption": "",
-                                "id": "re_insp_type",
-                                "label": "Type of Inspection",
-                                "maxlength": "",
-                                "placeholder": "",
-                                "readonly": "",
-                                "readonlyLabel": "",
-                                "size": "",
-                                "storeNumeric": "",
-                                "style": "",
+                                "useDefaultWhenEmpty": "",
                                 "validator": {
                                     "className": "",
                                     "properties": {}
                                 },
-                                "value": "#requestParam.type#",
+                                "value": "#requestParam.name#",
                                 "workflowVariable": ""
                             }
                         },
@@ -79,6 +64,27 @@
                                     "properties": {}
                                 },
                                 "value": "#requestParam.name#",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "re_insp_type",
+                                "label": "Type of Inspection",
+                                "maxlength": "",
+                                "placeholder": "",
+                                "readonly": "",
+                                "readonlyLabel": "",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "#requestParam.type#",
                                 "workflowVariable": ""
                             }
                         }
@@ -104,7 +110,7 @@
                                 "className": "",
                                 "properties": {}
                             },
-                            "value": "#requestParam.date#",
+                            "value": "#requestParam.sc_date#",
                             "workflowVariable": ""
                         }
                     }],
@@ -126,8 +132,8 @@
                 },
                 "permissionHidden": "",
                 "permissionReadonly": "",
-                "readonly": "",
-                "readonlyLabel": "",
+                "readonly": "true",
+                "readonlyLabel": "true",
                 "regex": "",
                 "reverse": "",
                 "storeBinder": {
