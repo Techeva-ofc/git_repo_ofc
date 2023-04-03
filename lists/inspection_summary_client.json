@@ -235,12 +235,12 @@
                 "properties": {}
             },
             "headerAlignment": "",
-            "hidden": "true",
+            "hidden": "false",
             "id": "column_6",
             "include_export": "",
             "label": "SR Status",
             "name": "c_status",
-            "sortable": "false",
+            "sortable": "true",
             "style": "",
             "width": ""
         }
