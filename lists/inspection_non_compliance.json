@@ -290,8 +290,8 @@
                 "confirmation": "",
                 "datalist_type": "row_action",
                 "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/srform_user",
-                "hrefColumn": "",
-                "hrefParam": "",
+                "hrefColumn": "id",
+                "hrefParam": "id",
                 "label": "Review Drawings",
                 "rules": [
                     {
