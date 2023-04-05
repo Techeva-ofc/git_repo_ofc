@@ -176,9 +176,23 @@
                                 },
                                 {
                                     "formatType": "",
-                                    "label": "Reference Image Upload",
-                                    "readonly": "",
+                                    "label": "Reference Photo - Partial Compliance",
+                                    "readonly": "true",
                                     "value": "ref_image",
+                                    "width": ""
+                                },
+                                {
+                                    "formatType": "",
+                                    "label": "Remarks",
+                                    "readonly": "true",
+                                    "value": "remark_insp_checkpoint",
+                                    "width": ""
+                                },
+                                {
+                                    "formatType": "",
+                                    "label": "Upload Photo",
+                                    "readonly": "",
+                                    "value": "ref_image_compliance",
                                     "width": ""
                                 }
                             ],
