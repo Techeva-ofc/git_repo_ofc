@@ -199,53 +199,42 @@
             "className": "org.joget.apps.form.model.Section",
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
-                "elements": [
-                    {
-                        "className": "org.joget.apps.form.lib.CustomHTML",
-                        "properties": {
-                            "autoPopulate": "",
-                            "id": "script_disable_button",
-                            "label": "",
-                            "value": "<html>  \r\n<script type=\"text/javascript\"> \r\n\r\nfunction verifyAnswer() \r\n\r\n{  \r\n\r\n//get the selected value from the dropdown list  \r\n\r\nvar mylist = document.getElementById(\"action_item\");  \r\n\r\n\r\n\r\nif(mylist[0].checked==true)\r\n\r\n  mylist[1].disabled = true;\r\n\r\n\r\n\r\nelse if(mylist[1].checked==true)\r\n\r\n  mylist[0].disabled = true;\r\n\r\n}\r\n\r\n\r\n\r\nalert(mylist); \r\n\r\n<\/script>   \r\n<body>  \r\n<\/html>"
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.Radio",
-                        "properties": {
-                            "controlField": "",
-                            "id": "action_item",
-                            "label": "",
-                            "options": [
-                                {
-                                    "grouping": "",
-                                    "label": "Cancel Inspection",
-                                    "value": "Cancel Inspection"
-                                },
-                                {
-                                    "grouping": "",
-                                    "label": "Re-Schedule Inspection",
-                                    "value": "Re-Schedule Inspection"
-                                }
-                            ],
-                            "optionsBinder": {
-                                "className": "",
-                                "properties": {}
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.Radio",
+                    "properties": {
+                        "controlField": "",
+                        "id": "action_item",
+                        "label": "",
+                        "options": [
+                            {
+                                "grouping": "",
+                                "label": "Cancel Inspection",
+                                "value": "Cancel Inspection"
                             },
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "validator": {
-                                "className": "org.joget.apps.form.lib.DefaultValidator",
-                                "properties": {
-                                    "mandatory": "true",
-                                    "message": "mandatory",
-                                    "type": ""
-                                }
-                            },
-                            "value": "",
-                            "workflowVariable": ""
-                        }
+                            {
+                                "grouping": "",
+                                "label": "Re-Schedule Inspection",
+                                "value": "Re-Schedule Inspection"
+                            }
+                        ],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "mandatory",
+                                "type": ""
+                            }
+                        },
+                        "value": "",
+                        "workflowVariable": ""
                     }
-                ],
+                }],
                 "properties": {"width": "100%"}
             }],
             "properties": {
