@@ -180,23 +180,8 @@
             "exclude_export": "",
             "filterable": true,
             "format": {
-                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
-                "properties": {
-                    "options": [
-                        {
-                            "label": "Payment Completed",
-                            "value": "Payment Completed"
-                        },
-                        {
-                            "label": "Validated",
-                            "value": "Validated"
-                        }
-                    ],
-                    "optionsBinder": {
-                        "className": "",
-                        "properties": {}
-                    }
-                }
+                "className": "",
+                "properties": {}
             },
             "headerAlignment": "",
             "hidden": "false",
