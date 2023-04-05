@@ -262,7 +262,7 @@
                     },
                     {
                         "field": "c_inspectionreportStatus",
-                        "join": "OR",
+                        "join": "AND",
                         "operator": "=",
                         "value": "Other Non-Compliance"
                     }
