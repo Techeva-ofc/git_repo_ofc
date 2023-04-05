@@ -10,7 +10,7 @@
                     "attachment": "true",
                     "fileType": ".pdf;.doc;.jpeg;.png",
                     "fileTypeMsg": "Invalid file type",
-                    "id": "serReqCorncordiarDoc",
+                    "id": "customerDoc",
                     "label": "Document upload by Customer",
                     "maxSize": "",
                     "maxSizeMsg": "File size limit exceeded",
