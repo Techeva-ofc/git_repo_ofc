@@ -237,7 +237,7 @@
                         {
                             "backgroundColor": "GREEN",
                             "label": "Image(s) Uploaded",
-                            "value": "Image(s) Uploaded"
+                            "value": "Image Uploaded"
                         }
                     ],
                     "statusCaseSensitivity": ""
