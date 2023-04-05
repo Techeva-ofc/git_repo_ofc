@@ -609,7 +609,7 @@
             "className": "org.joget.apps.app.lib.DatabaseUpdateTool",
             "properties": {
                 "jdbcDatasource": "default",
-                "query": "update app_fd_ofc_serreqs_tab set c_drawingupload = 'drawinguploaded' where  id = '#requestParam.id#' and c_serReqDmccSrNo = '#requestParam.serReqDmccSrNo#'"
+                "query": "update app_fd_ofc_serreqs_tab set c_drawingupload = 'drawinguploaded' where  id = '#requestParam.id#'"
             }
         },
         "postProcessorRunOn": "both",
