@@ -235,7 +235,7 @@
                             "value": "Awaiting Payment from Client"
                         },
                         {
-                            "backgroundColor": "LIME",
+                            "backgroundColor": "CYAN",
                             "label": "Images Uploaded",
                             "value": "Images Uploaded"
                         }
