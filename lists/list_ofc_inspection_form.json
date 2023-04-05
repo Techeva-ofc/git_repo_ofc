@@ -215,7 +215,7 @@
                 "properties": {
                     "options": [
                         {
-                            "backgroundColor": "PURPLE",
+                            "backgroundColor": "SILVER",
                             "label": "Inspection Scheduled",
                             "value": "Inspection Scheduled"
                         },
