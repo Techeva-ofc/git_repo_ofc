@@ -290,7 +290,7 @@
                 "confirmation": "",
                 "datalist_type": "row_action",
                 "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/inspectionReview",
-                "hrefColumn": "id;c_status;c_inspectionreportStatus;C_serReqDmccSrNo",
+                "hrefColumn": "id;c_status;c_inspectionreportStatus;c_serReqDmccSrNo",
                 "hrefParam": "id;status;reportstatus;dmcc",
                 "label": "Review Proofs",
                 "rules": [
