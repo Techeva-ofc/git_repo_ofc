@@ -301,9 +301,28 @@
     "properties": {
         "description": "",
         "id": "insp_reschedule_client",
-        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "name": "Inspection Re-Schdule",
-        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "org.joget.apps.app.lib.DatabaseUpdateTool",
+            "properties": {
+                "jdbcDatasource": "default",
+                "query": "update app_fd_ofc_serreqs_tab set c_status = 'Inspection Scheduled' where  id = '#requestParam.id#'"
+            }
+        },
+        "postProcessorRunOn": "both",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "tableName": "ofc_serReqs_tab"
     }
 }
