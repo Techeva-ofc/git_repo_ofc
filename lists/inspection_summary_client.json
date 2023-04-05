@@ -231,11 +231,8 @@
             "exclude_export": "",
             "filterable": true,
             "format": {
-                "className": "org.joget.marketplace.ColorDatalistFormatter",
-                "properties": {
-                    "fontColor": "#F01414",
-                    "showLabel": "true"
-                }
+                "className": "",
+                "properties": {}
             },
             "headerAlignment": "",
             "hidden": "false",
