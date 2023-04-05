@@ -7,7 +7,7 @@
             "elements": [{
                 "className": "org.joget.apps.form.lib.SubForm",
                 "properties": {
-                    "formDefId": "serReqForm",
+                    "formDefId": "serrequser",
                     "id": "field1",
                     "label": "",
                     "loadBinder": {
