@@ -268,12 +268,6 @@
                         "join": "AND",
                         "operator": "=",
                         "value": "Images Uploaded"
-                    },
-                    {
-                        "field": "c_inspectionreportStatus",
-                        "join": "AND",
-                        "operator": "=",
-                        "value": "Payment Completed"
                     }
                 ],
                 "target": "_self"
