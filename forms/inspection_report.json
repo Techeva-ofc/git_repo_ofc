@@ -104,6 +104,15 @@
                                 "value": "#date.dd MMM yyyy h:mm aa#",
                                 "workflowVariable": ""
                             }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.CustomHTML",
+                            "properties": {
+                                "autoPopulate": "",
+                                "id": "field12",
+                                "label": "",
+                                "value": "<html>\n     \n    <body>\n        <a href=\"http://localhost:8080/jw/web/userview/ofc_app/v/_/serRequestView?&_mode=edit\">View Service Request<\/a>\n    <\/body>\n<\/html>"
+                            }
                         }
                     ],
                     "properties": {"width": "49%"}
