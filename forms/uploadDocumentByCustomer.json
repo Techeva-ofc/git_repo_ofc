@@ -7,14 +7,14 @@
             "elements": [{
                 "className": "org.joget.apps.form.lib.FileUpload",
                 "properties": {
-                    "attachment": "",
-                    "fileType": "",
+                    "attachment": "true",
+                    "fileType": ".pdf;.doc;.jpeg;.png",
                     "fileTypeMsg": "Invalid file type",
                     "id": "serReqCorncordiarDoc",
                     "label": "Document upload by Customer",
                     "maxSize": "",
                     "maxSizeMsg": "File size limit exceeded",
-                    "multiple": "",
+                    "multiple": "true",
                     "padding": "",
                     "permissionPlugin": {
                         "className": "org.joget.apps.userview.lib.GroupPermission",
@@ -25,15 +25,19 @@
                     },
                     "permissionType": "custom",
                     "readonly": "",
-                    "removeFile": "",
+                    "removeFile": "true",
                     "resizeHeight": "",
                     "resizeMethod": "",
                     "resizeQuality": "0.8",
                     "resizeWidth": "",
                     "size": "",
                     "validator": {
-                        "className": "",
-                        "properties": {}
+                        "className": "org.joget.apps.form.lib.DefaultValidator",
+                        "properties": {
+                            "mandatory": "true",
+                            "message": "mandatory",
+                            "type": ""
+                        }
                     }
                 }
             }],
