@@ -347,7 +347,7 @@
                 "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/reportclientform",
                 "hrefColumn": "C_serReqDmccSrNo;c_companyName;c_inspSchedlDate;c_inspectionreportStatus;c_reportdate;id",
                 "hrefParam": "serReqDmccSrNo;company;scheduledate;reportstatus;reportdate;id",
-                "label": "Upload Image(s)",
+                "label": "Upload Picture(s)",
                 "rules": [
                     {
                         "field": "c_status",
