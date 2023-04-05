@@ -98,7 +98,7 @@
                             "className": "org.joget.apps.form.lib.TextField",
                             "properties": {
                                 "encryption": "",
-                                "id": "cancel_date",
+                                "id": "daterecorded",
                                 "label": "Date & Time",
                                 "maxlength": "",
                                 "permissionHidden": "",
