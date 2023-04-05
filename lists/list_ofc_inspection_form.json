@@ -236,8 +236,8 @@
                         },
                         {
                             "backgroundColor": "GREEN",
-                            "label": "Image Uploaded",
-                            "value": "Image Uploaded"
+                            "label": "Images Uploaded",
+                            "value": "Images Uploaded"
                         }
                     ],
                     "statusCaseSensitivity": ""
