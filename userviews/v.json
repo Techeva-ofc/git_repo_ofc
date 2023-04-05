@@ -689,6 +689,37 @@
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "actionAfterSaved": "",
+                        "actionOnCancel": "",
+                        "cancelButtonLabel": "Close",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "ofcpage",
+                        "enableOffline": "",
+                        "fieldPassover": "",
+                        "fieldPassoverMethod": "append",
+                        "formId": "ofc_fitoutcertificate",
+                        "id": "F3CCADB6BA464B71BAE1F0F7746355A1",
+                        "keyName": "",
+                        "label": "OFC Certificate Form",
+                        "loadDataWithKey": "",
+                        "messageShowAfterComplete": "",
+                        "paramName": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "redirectTargetOnCancel": "top",
+                        "redirectTargetOnComplete": "",
+                        "redirectUrlAfterComplete": "",
+                        "redirectUrlOnCancel": "",
+                        "showInPopupDialog": "",
+                        "submitButtonLabel": "",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
                 }
             ],
             "properties": {
