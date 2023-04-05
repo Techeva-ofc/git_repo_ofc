@@ -233,7 +233,13 @@
                 "rules": [
                     {
                         "field": "c_status",
-                        "join": "OR",
+                        "join": "AND",
+                        "operator": "<>",
+                        "value": "Inspection Scheduled"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "AND",
                         "operator": "=",
                         "value": "Payment Completed"
                     },
@@ -242,12 +248,6 @@
                         "join": "OR",
                         "operator": "=",
                         "value": "Compliance"
-                    },
-                    {
-                        "field": "c_status",
-                        "join": "OR",
-                        "operator": "<>",
-                        "value": "Inspection Scheduled"
                     }
                 ],
                 "target": "_self"
