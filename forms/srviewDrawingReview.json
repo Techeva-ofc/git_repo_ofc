@@ -50,72 +50,93 @@
                                 "value": "",
                                 "workflowVariable": ""
                             }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.SelectBox",
+                            "properties": {
+                                "controlField": "",
+                                "id": "companyName",
+                                "label": "Company Name",
+                                "multiple": "",
+                                "options": [],
+                                "optionsBinder": {
+                                    "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                                    "properties": {
+                                        "addEmptyOption": "true",
+                                        "cacheInterval": "",
+                                        "emptyLabel": "Select",
+                                        "extraCondition": "",
+                                        "formDefId": "comanyMaster",
+                                        "groupingColumn": "",
+                                        "idColumn": "",
+                                        "labelColumn": "companyName",
+                                        "useAjax": "true"
+                                    }
+                                },
+                                "permissionHidden": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "size": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "",
+                                "workflowVariable": ""
+                            }
                         }
                     ],
-                    "properties": {"width": "32%"}
+                    "properties": {"width": "49%"}
                 },
                 {
                     "className": "org.joget.apps.form.model.Column",
-                    "elements": [{
-                        "className": "org.joget.apps.form.lib.SelectBox",
-                        "properties": {
-                            "controlField": "",
-                            "id": "companyName",
-                            "label": "Company Name",
-                            "multiple": "",
-                            "options": [],
-                            "optionsBinder": {
-                                "className": "org.joget.apps.form.lib.FormOptionsBinder",
-                                "properties": {
-                                    "addEmptyOption": "true",
-                                    "cacheInterval": "",
-                                    "emptyLabel": "Select",
-                                    "extraCondition": "",
-                                    "formDefId": "comanyMaster",
-                                    "groupingColumn": "",
-                                    "idColumn": "",
-                                    "labelColumn": "companyName",
-                                    "useAjax": "true"
-                                }
-                            },
-                            "permissionHidden": "",
-                            "readonly": "true",
-                            "readonlyLabel": "true",
-                            "size": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "",
-                            "workflowVariable": ""
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "drawing_review_date",
+                                "label": "Reviewed On",
+                                "maxlength": "",
+                                "permissionHidden": "",
+                                "placeholder": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "#currentUser.dateTimeFormat#",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "draw_review_name",
+                                "label": "Reviewed By",
+                                "maxlength": "",
+                                "permissionHidden": "",
+                                "placeholder": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "#currentUser.fullName#",
+                                "workflowVariable": ""
+                            }
                         }
-                    }],
-                    "properties": {"width": "32%"}
-                },
-                {
-                    "className": "org.joget.apps.form.model.Column",
-                    "elements": [{
-                        "className": "org.joget.apps.form.lib.TextField",
-                        "properties": {
-                            "encryption": "",
-                            "id": "licenseNumber",
-                            "label": "License Number",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "size": "",
-                            "storeNumeric": "",
-                            "style": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "",
-                            "workflowVariable": ""
-                        }
-                    }],
-                    "properties": {"width": "32%"}
+                    ],
+                    "properties": {"width": "49%"}
                 }
             ],
             "properties": {
