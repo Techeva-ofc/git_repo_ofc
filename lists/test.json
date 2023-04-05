@@ -23,6 +23,14 @@
         {
             "filterable": true,
             "hidden": "false",
+            "id": "column_2",
+            "label": "createdBy",
+            "name": "createdBy",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
             "id": "column_0",
             "label": "c_serReqCorncordiarDoc",
             "name": "c_serReqCorncordiarDoc",
