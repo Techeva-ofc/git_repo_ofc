@@ -193,27 +193,6 @@
                             "value": "",
                             "workflowVariable": ""
                         }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.SubForm",
-                        "properties": {
-                            "formDefId": "cancel_subform",
-                            "id": "field15",
-                            "label": "",
-                            "loadBinder": {
-                                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                                "properties": {}
-                            },
-                            "noframe": "",
-                            "parentSubFormId": "action_item",
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "storeBinder": {
-                                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                                "properties": {}
-                            },
-                            "subFormParentId": ""
-                        }
                     }
                 ],
                 "properties": {"width": "100%"}
