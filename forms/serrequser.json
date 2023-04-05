@@ -222,102 +222,25 @@
                             }
                         },
                         {
-                            "className": "org.joget.apps.form.lib.FileUpload",
+                            "className": "org.joget.apps.form.lib.SubForm",
                             "properties": {
-                                "attachment": "",
-                                "fileType": "",
-                                "fileTypeMsg": "Invalid file type",
-                                "id": "serReqCustomerDoc",
-                                "label": "Document upload by Customer",
-                                "maxSize": "",
-                                "maxSizeMsg": "File size limit exceeded",
-                                "multiple": "true",
-                                "padding": "",
-                                "permissionPlugin": {
-                                    "className": "org.joget.apps.userview.lib.GroupPermission",
-                                    "properties": {
-                                        "allowedGroupIds": "G-009;G-010",
-                                        "orgId": ""
-                                    }
-                                },
-                                "permissionType": "custom",
-                                "readonly": "",
-                                "removeFile": "",
-                                "resizeHeight": "",
-                                "resizeMethod": "",
-                                "resizeQuality": "0.8",
-                                "resizeWidth": "",
-                                "size": "",
-                                "validator": {
-                                    "className": "",
+                                "formDefId": "uploadDocument",
+                                "id": "field18",
+                                "label": "",
+                                "loadBinder": {
+                                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                                     "properties": {}
-                                }
-                            }
-                        },
-                        {
-                            "className": "org.joget.apps.form.lib.FileUpload",
-                            "properties": {
-                                "attachment": "",
-                                "fileType": "",
-                                "fileTypeMsg": "Invalid file type",
-                                "id": "serReqFopDrawUpload",
-                                "label": "Approved FOP Drawing",
-                                "maxSize": "",
-                                "maxSizeMsg": "File size limit exceeded",
-                                "multiple": "true",
-                                "padding": "",
-                                "permissionPlugin": {
-                                    "className": "org.joget.apps.userview.lib.GroupPermission",
-                                    "properties": {
-                                        "allowedGroupIds": "G-003;G-001;G-002",
-                                        "orgId": ""
-                                    }
                                 },
-                                "permissionType": "custom",
-                                "readonly": "",
-                                "removeFile": "",
-                                "resizeHeight": "",
-                                "resizeMethod": "",
-                                "resizeQuality": "0.8",
-                                "resizeWidth": "",
-                                "size": "",
-                                "validator": {
-                                    "className": "",
+                                "noframe": "true",
+                                "parentSubFormId": "",
+                                "permissionHidden": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "storeBinder": {
+                                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                                     "properties": {}
-                                }
-                            }
-                        },
-                        {
-                            "className": "org.joget.apps.form.lib.FileUpload",
-                            "properties": {
-                                "attachment": "",
-                                "fileType": "",
-                                "fileTypeMsg": "Invalid file type",
-                                "id": "serReqCorncordiarDoc",
-                                "label": "Document upload by Concordia",
-                                "maxSize": "",
-                                "maxSizeMsg": "File size limit exceeded",
-                                "multiple": "true",
-                                "padding": "",
-                                "permissionPlugin": {
-                                    "className": "org.joget.apps.userview.lib.GroupPermission",
-                                    "properties": {
-                                        "allowedGroupIds": "G-003;G-001;G-002",
-                                        "orgId": ""
-                                    }
                                 },
-                                "permissionType": "custom",
-                                "readonly": "",
-                                "removeFile": "",
-                                "resizeHeight": "",
-                                "resizeMethod": "",
-                                "resizeQuality": "0.8",
-                                "resizeWidth": "",
-                                "size": "",
-                                "validator": {
-                                    "className": "",
-                                    "properties": {}
-                                }
+                                "subFormParentId": ""
                             }
                         }
                     ],
@@ -449,82 +372,25 @@
                             }
                         },
                         {
-                            "className": "org.joget.apps.form.lib.FileUpload",
+                            "className": "org.joget.apps.form.lib.SubForm",
                             "properties": {
-                                "attachment": "",
-                                "fileType": "",
-                                "fileTypeMsg": "Invalid file type",
-                                "id": "serReqCustomerDoc",
-                                "label": "Document upload by Customer",
-                                "maxSize": "",
-                                "maxSizeMsg": "File size limit exceeded",
-                                "multiple": "true",
-                                "padding": "",
-                                "permissionType": "",
-                                "readonly": "",
-                                "removeFile": "",
-                                "resizeHeight": "",
-                                "resizeMethod": "",
-                                "resizeQuality": "0.8",
-                                "resizeWidth": "",
-                                "size": "",
-                                "validator": {
-                                    "className": "",
-                                    "properties": {}
-                                }
-                            }
-                        },
-                        {
-                            "className": "org.joget.apps.form.lib.FileUpload",
-                            "properties": {
-                                "attachment": "",
-                                "fileType": "",
-                                "fileTypeMsg": "Invalid file type",
-                                "id": "serReqFopDrawUpload",
-                                "label": "Approved FOP Drawing",
-                                "maxSize": "",
-                                "maxSizeMsg": "File size limit exceeded",
-                                "multiple": "true",
-                                "padding": "",
-                                "permissionType": "",
-                                "readonly": "",
-                                "removeFile": "",
-                                "resizeHeight": "",
-                                "resizeMethod": "",
-                                "resizeQuality": "0.8",
-                                "resizeWidth": "",
-                                "size": "",
-                                "validator": {
-                                    "className": "",
-                                    "properties": {}
-                                }
-                            }
-                        },
-                        {
-                            "className": "org.joget.apps.form.lib.FileUpload",
-                            "properties": {
-                                "attachment": "",
-                                "fileType": "",
-                                "fileTypeMsg": "Invalid file type",
-                                "id": "serReqCorncordiarDoc",
-                                "label": "Document upload by Concordia",
-                                "maxSize": "",
-                                "maxSizeMsg": "File size limit exceeded",
-                                "multiple": "true",
-                                "padding": "",
-                                "permissionType": "",
-                                "readonly": "",
-                                "removeFile": "",
-                                "resizeHeight": "",
-                                "resizeMethod": "",
-                                "resizeQuality": "0.8",
-                                "resizeWidth": "",
-                                "size": "",
-                                "validator": {
-                                    "className": "",
+                                "formDefId": "uploadDocument",
+                                "id": "field17",
+                                "label": "",
+                                "loadBinder": {
+                                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                                     "properties": {}
                                 },
-                                "value": "New"
+                                "noframe": "true",
+                                "parentSubFormId": "",
+                                "permissionHidden": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "storeBinder": {
+                                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                                    "properties": {}
+                                },
+                                "subFormParentId": ""
                             }
                         }
                     ],
@@ -646,6 +512,38 @@
                 },
                 "visibilityControl": "",
                 "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.SubForm",
+                    "properties": {
+                        "formDefId": "uploadDocumentByCustomer",
+                        "id": "field15",
+                        "label": "",
+                        "loadBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "noframe": "true",
+                        "parentSubFormId": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "storeBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "subFormParentId": ""
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "id": "section5",
+                "label": "Section"
             }
         }
     ],
