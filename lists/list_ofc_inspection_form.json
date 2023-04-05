@@ -236,7 +236,7 @@
                         },
                         {
                             "backgroundColor": "GREEN",
-                            "label": "Image(s) Uploaded",
+                            "label": "Image Uploaded",
                             "value": "Image Uploaded"
                         }
                     ],
