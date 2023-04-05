@@ -161,7 +161,7 @@
             "properties": {
                 "comment": "",
                 "id": "inspectionSchedule",
-                "join": "or;or",
+                "join": "or",
                 "label": "Schedule Inspection",
                 "loadBinder": {
                     "className": "",
@@ -174,14 +174,14 @@
                 "permissionReadonly": "",
                 "readonly": "",
                 "readonlyLabel": "",
-                "regex": ";",
-                "reverse": ";",
+                "regex": "",
+                "reverse": "",
                 "storeBinder": {
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "statusofinspection;#requestParam.reschedulestate#",
-                "visibilityValue": "Payment Completed;reschedule"
+                "visibilityControl": "statusofinspection",
+                "visibilityValue": "Payment Completed"
             }
         },
         {
@@ -386,7 +386,7 @@
             "properties": {
                 "comment": "",
                 "id": "inspectionreSchedule",
-                "join": ";",
+                "join": "or;or",
                 "label": "Re-Schedule Inspection",
                 "loadBinder": {
                     "className": "",
