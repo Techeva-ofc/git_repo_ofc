@@ -1803,7 +1803,7 @@
                         "redirectUrlAfterComplete": "",
                         "redirectUrlOnCancel": "",
                         "showInPopupDialog": "",
-                        "submitButtonLabel": "",
+                        "submitButtonLabel": "Submit",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
