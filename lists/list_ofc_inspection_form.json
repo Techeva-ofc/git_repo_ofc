@@ -211,8 +211,37 @@
             "exclude_export": "",
             "filterable": true,
             "format": {
-                "className": "",
-                "properties": {}
+                "className": "org.joget.marketplace.StatusColorDatalistFormatter",
+                "properties": {
+                    "options": [
+                        {
+                            "backgroundColor": "PURPLE",
+                            "label": "Inspection Scheduled",
+                            "value": "Inspection Scheduled"
+                        },
+                        {
+                            "backgroundColor": "GREEN",
+                            "label": "Inspection Completed",
+                            "value": "Inspection Completed"
+                        },
+                        {
+                            "backgroundColor": "RED",
+                            "label": "Inspection To-Be Re-Scheduled",
+                            "value": "Inspection To-Be Re-Scheduled"
+                        },
+                        {
+                            "backgroundColor": "GREY",
+                            "label": "Awaiting Payment from Client",
+                            "value": "Awaiting Payment from Client"
+                        },
+                        {
+                            "backgroundColor": "GREEN",
+                            "label": "Image(s) Uploaded",
+                            "value": "Image(s) Uploaded"
+                        }
+                    ],
+                    "statusCaseSensitivity": ""
+                }
             },
             "headerAlignment": "",
             "hidden": "false",
