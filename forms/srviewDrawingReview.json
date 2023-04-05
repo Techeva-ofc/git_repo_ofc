@@ -109,7 +109,7 @@
                                     "className": "",
                                     "properties": {}
                                 },
-                                "value": "#currentUser.dateTimeFormat#",
+                                "value": "#date.dd MMM yyyy h:mm aa#",
                                 "workflowVariable": ""
                             }
                         },
@@ -193,28 +193,6 @@
                         }
                     },
                     {
-                        "className": "org.joget.apps.form.lib.SubForm",
-                        "properties": {
-                            "formDefId": "uploadDocumentByCustomer",
-                            "id": "field5",
-                            "label": "",
-                            "loadBinder": {
-                                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                                "properties": {}
-                            },
-                            "noframe": "true",
-                            "parentSubFormId": "",
-                            "permissionHidden": "",
-                            "readonly": "true",
-                            "readonlyLabel": "true",
-                            "storeBinder": {
-                                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                                "properties": {}
-                            },
-                            "subFormParentId": ""
-                        }
-                    },
-                    {
                         "className": "org.joget.apps.form.lib.SelectBox",
                         "properties": {
                             "controlField": "",
@@ -256,8 +234,84 @@
                 "properties": {"width": "100%"}
             }],
             "properties": {
+                "comment": "",
                 "id": "section2",
-                "label": "Section"
+                "join": "",
+                "label": "Drawings Uploaded By Concordia",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "readonly": "true",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.SubForm",
+                    "properties": {
+                        "formDefId": "uploadDocumentByCustomer",
+                        "id": "field5",
+                        "label": "",
+                        "loadBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "noframe": "",
+                        "parentSubFormId": "",
+                        "permissionHidden": "",
+                        "readonly": "true",
+                        "readonlyLabel": "",
+                        "storeBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "subFormParentId": ""
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "section4",
+                "join": "",
+                "label": "Evaluate Document / Drawing",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
             }
         },
         {
@@ -291,7 +345,7 @@
                 "comment": "",
                 "id": "section3",
                 "join": "",
-                "label": "Section",
+                "label": "Absence of  Document / Drawing",
                 "loadBinder": {
                     "className": "",
                     "properties": {}
