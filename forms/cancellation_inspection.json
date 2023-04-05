@@ -89,40 +89,6 @@
                                 "value": "#date.dd MMM yyyy h:mm aa#",
                                 "workflowVariable": ""
                             }
-                        },
-                        {
-                            "className": "org.joget.apps.form.lib.SelectBox",
-                            "properties": {
-                                "controlField": "",
-                                "id": "ofc_category_name",
-                                "label": "Service Categoy",
-                                "multiple": "",
-                                "options": [],
-                                "optionsBinder": {
-                                    "className": "org.joget.apps.form.lib.FormOptionsBinder",
-                                    "properties": {
-                                        "addEmptyOption": "",
-                                        "cacheInterval": "",
-                                        "emptyLabel": "Select",
-                                        "extraCondition": "",
-                                        "formDefId": "ofc_category1",
-                                        "groupingColumn": "",
-                                        "idColumn": "",
-                                        "labelColumn": "ofc_category_name",
-                                        "useAjax": "true"
-                                    }
-                                },
-                                "permissionHidden": "",
-                                "readonly": "true",
-                                "readonlyLabel": "true",
-                                "size": "",
-                                "validator": {
-                                    "className": "",
-                                    "properties": {}
-                                },
-                                "value": "",
-                                "workflowVariable": ""
-                            }
                         }
                     ],
                     "properties": {"width": "49%"}
@@ -165,23 +131,36 @@
                             }
                         },
                         {
-                            "className": "org.joget.apps.form.lib.TextField",
+                            "className": "org.joget.apps.form.lib.SelectBox",
                             "properties": {
-                                "encryption": "",
-                                "id": "re_insp_name",
-                                "label": "Name of Inspector",
-                                "maxlength": "",
-                                "placeholder": "",
-                                "readonly": "",
-                                "readonlyLabel": "",
+                                "controlField": "",
+                                "id": "ofc_category_name",
+                                "label": "Service Categoy",
+                                "multiple": "",
+                                "options": [],
+                                "optionsBinder": {
+                                    "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                                    "properties": {
+                                        "addEmptyOption": "",
+                                        "cacheInterval": "",
+                                        "emptyLabel": "Select",
+                                        "extraCondition": "",
+                                        "formDefId": "ofc_category1",
+                                        "groupingColumn": "",
+                                        "idColumn": "",
+                                        "labelColumn": "ofc_category_name",
+                                        "useAjax": "true"
+                                    }
+                                },
+                                "permissionHidden": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
                                 "size": "",
-                                "storeNumeric": "",
-                                "style": "",
                                 "validator": {
                                     "className": "",
                                     "properties": {}
                                 },
-                                "value": "#requestParam.name#",
+                                "value": "",
                                 "workflowVariable": ""
                             }
                         }
