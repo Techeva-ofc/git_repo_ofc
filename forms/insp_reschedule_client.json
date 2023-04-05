@@ -47,28 +47,53 @@
                 },
                 {
                     "className": "org.joget.apps.form.model.Column",
-                    "elements": [{
-                        "className": "org.joget.apps.form.lib.TextField",
-                        "properties": {
-                            "encryption": "",
-                            "id": "dateofreschedule",
-                            "label": "Date Preferred by Client",
-                            "maxlength": "",
-                            "permissionHidden": "",
-                            "placeholder": "",
-                            "readonly": "true",
-                            "readonlyLabel": "true",
-                            "size": "",
-                            "storeNumeric": "",
-                            "style": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "#requestParam.re_scheduledate#",
-                            "workflowVariable": ""
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "dateofreschedule",
+                                "label": "Date Preferred by Client",
+                                "maxlength": "",
+                                "permissionHidden": "",
+                                "placeholder": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "#requestParam.re_scheduledate#",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.DatePicker",
+                            "properties": {
+                                "allowManual": "",
+                                "datePickerType": "utcdateTime",
+                                "endDateFieldId": "",
+                                "format24hr": "",
+                                "id": "dateofreschedule",
+                                "label": "Date Preferred By Client",
+                                "permissionHidden": "",
+                                "placeholder": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "showUserTimeZone": "true",
+                                "startDateFieldId": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "",
+                                "workflowVariable": ""
+                            }
                         }
-                    }],
+                    ],
                     "properties": {"width": "49%"}
                 }
             ],
