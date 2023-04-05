@@ -244,7 +244,7 @@
         "properties": {
             "confirmation": "",
             "datalist_type": "row_action",
-            "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/generateRepo",
+            "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/generateReport",
             "hrefColumn": ";id;c_inspSchedlDate;c_ofc_category_name;c_inspectionreportStatus",
             "hrefParam": "serReqDmccSrNo;id;scheduledate;typeofcheckpoint;status",
             "label": "Generate Report",
