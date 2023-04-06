@@ -454,7 +454,7 @@
                 "rules": [
                     {
                         "field": "c_status",
-                        "join": "AND",
+                        "join": "OR",
                         "operator": "=",
                         "value": "Payment Completed"
                     },
@@ -462,13 +462,19 @@
                         "field": "c_inspectionreportStatus",
                         "join": "OR",
                         "operator": "=",
-                        "value": "Fitout Non-Compliance"
+                        "value": "Partial Compliance"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Pae"
                     },
                     {
                         "field": "c_inspectionreportStatus",
-                        "join": "OR",
+                        "join": "AND",
                         "operator": "=",
-                        "value": "Partial Compliance"
+                        "value": "Fitout Non-Compliance"
                     }
                 ],
                 "target": "_self"
