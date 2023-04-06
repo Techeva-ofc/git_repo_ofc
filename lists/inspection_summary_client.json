@@ -422,6 +422,12 @@
                         "join": "OR",
                         "operator": "=",
                         "value": "Fitout Non-Compliance"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Payment Completed"
                     }
                 ],
                 "target": "_self"
