@@ -173,7 +173,7 @@
                                 "className": "",
                                 "properties": {}
                             },
-                            "value": "dd-MM-yyyy",
+                            "value": "#date.dd-MM-yyyy#",
                             "workflowVariable": "",
                             "yearRange": "c-10:c+10"
                         }
