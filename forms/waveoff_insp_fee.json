@@ -287,10 +287,37 @@
                 "elements": [{
                     "className": "org.joget.apps.form.lib.Radio",
                     "properties": {
-                        "id": "field15",
-                        "label": "Radio",
-                        "readonly": "False",
-                        "readonlyLabel": "False"
+                        "controlField": "",
+                        "id": "waiveoption",
+                        "label": "Is Waiver Applicable?",
+                        "options": [
+                            {
+                                "grouping": "",
+                                "label": "Yes",
+                                "value": "Yes"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "No",
+                                "value": "No"
+                            }
+                        ],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "mandatory",
+                                "type": ""
+                            }
+                        },
+                        "value": "",
+                        "workflowVariable": ""
                     }
                 }],
                 "properties": {"width": "100%"}
