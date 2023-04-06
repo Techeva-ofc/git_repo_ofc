@@ -1,0 +1,711 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [{
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "autoPopulate": "",
+                            "id": "field1",
+                            "label": "",
+                            "value": "<html>\n    \n    <img src=#appResource.logo-2.png#>\n    \n<\/html>"
+                        }
+                    }],
+                    "properties": {"width": "49%"}
+                },
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "invoiceNo",
+                                "label": "Invoice No",
+                                "maxlength": "",
+                                "permissionHidden": "",
+                                "placeholder": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "#form.ofc_serReqs_tab.orderReference#",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "invoiceDate",
+                                "label": "Invoice Date",
+                                "maxlength": "",
+                                "permissionHidden": "",
+                                "placeholder": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "#form.ofc_serReqs_tab.paymentDate#\"",
+                                "workflowVariable": ""
+                            }
+                        }
+                    ],
+                    "properties": {"width": "49%"}
+                }
+            ],
+            "properties": {
+                "comment": "",
+                "id": "taxInvoice",
+                "join": "",
+                "label": "Tax invoice",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "readonly": "true",
+                "readonlyLabel": "true",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "compnayName",
+                            "label": "Company Name",
+                            "maxlength": "",
+                            "permissionHidden": "",
+                            "placeholder": "",
+                            "readonly": "true",
+                            "readonlyLabel": "true",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "#form.ofc_company_tab.companyName[{form.ofc_serReqs_tab.companyName}]#",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextArea",
+                        "properties": {
+                            "cols": "",
+                            "id": "address",
+                            "label": "Address",
+                            "permissionHidden": "",
+                            "placeholder": "",
+                            "readonly": "true",
+                            "readonlyLabel": "true",
+                            "rows": "5",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "#form.ofc_company_tab.companyAddress[{form.ofc_serReqs_tab.companyName}]#",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "trnNumber",
+                            "label": "TNR Number",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "#form.ofc_company_tab.tnrNumber[{form.ofc_serReqs_tab.companyName}]#",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "srDmccNo",
+                            "label": "SR DMCC NO",
+                            "maxlength": "",
+                            "permissionHidden": "",
+                            "placeholder": "",
+                            "readonly": "true",
+                            "readonlyLabel": "true",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "#form.ofc_serReqs_tab.serReqDmccSrNo#",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "autoPopulate": "",
+                            "id": "amountBar",
+                            "label": "",
+                            "value": "<html>\n    \n    <body>\n        \n        <table>\n  <thead>\n    <tr>\n     \n      <th>Service Activity<\/th>\n      <th>Description<\/th>\n      <th>Quantity<\/th>\n      <th>Unti Price (AED)<\/th>\n      <th>Net Amount (AED)<\/th>\n      <th>VAT(%)<\/th>\n      <th>VAT (AED)<\/th>\n      <th>Total Amount (AED)<\/th>\n    <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>#form.ofc_ofc_category_tab.ofc_category_name[{form.ofc_serReqs_tab.ofc_category_name}]#<\/td>\n      <td style=\"text-align: center;\">-<\/td>\n      <td style=\"text-align: center;\">1<\/td>\n      <td style=\"text-align: center;\">#form.ofc_ofc_category_tab.serReq_fees[{form.ofc_serReqs_tab.ofc_category_name}]#<\/td>\n     <td style=\"text-align: center;\">#form.ofc_ofc_category_tab.serReq_fees[{form.ofc_serReqs_tab.ofc_category_name}]#<\/td>\n      <td style=\"text-align: center;\">5<\/td>\n      <td style=\"text-align: center;\">#form.ofc_ofc_category_tab.serReq_vat[{form.ofc_serReqs_tab.ofc_category_name}]#<\/td>\n      <td style=\"text-align: center;\">#form.ofc_ofc_category_tab.serReqTotAmt[{form.ofc_serReqs_tab.ofc_category_name}]#<\/td>\n    <\/tr>\n    \n    <tr> \n     \n       <td style=\"text-align: right;\" colspan=\"4\"><b>Total:<\/b><\/td>\n       <td style=\"text-align: center;\" colspan=\"2\">#form.ofc_ofc_category_tab.serReq_fees[{form.ofc_serReqs_tab.ofc_category_name}]#<\/td>\n      <td style=\"text-align: center;\">#form.ofc_ofc_category_tab.serReq_vat[{form.ofc_serReqs_tab.ofc_category_name}]#<\/td>\n      <td style=\"text-align: center;\">#form.ofc_ofc_category_tab.serReqTotAmt[{form.ofc_serReqs_tab.ofc_category_name}]#<\/td>\n   \n        \n    <\/tr>\n    \n  <\/tbody>\n<\/table>\n        \n    <\/body>\n    \n    \n<\/html>"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "autoPopulate": "",
+                            "id": "bankDetails",
+                            "label": "",
+                            "value": "<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title><\/title>\r\n  <\/head>\r\n  <body>\r\n    <main>\r\n      <p><\/p>\r\n    <\/main>\r\n    <footer>\r\n      <p>Bank Details Account&#8209;&#8209;&#8209;Name Concordia DMCC&#8209;&#8209;&#8209;Payment Terms - 100% Payment on application<\/p>\r\n    <\/footer>\r\n  <\/body>\r\n<\/html>"
+                        }
+                    }
+                ],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "compnayDetails",
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "readonly": "true",
+                "readonlyLabel": "true",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "bankName",
+                                "label": "Bank Name",
+                                "maxlength": "",
+                                "permissionHidden": "",
+                                "placeholder": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "-",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "accountNo",
+                                "label": "A/C No",
+                                "maxlength": "",
+                                "permissionHidden": "",
+                                "placeholder": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "-",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "ibnNo",
+                                "label": "IBAN No",
+                                "maxlength": "",
+                                "permissionHidden": "",
+                                "placeholder": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "-",
+                                "workflowVariable": ""
+                            }
+                        }
+                    ],
+                    "properties": {"width": "49%"}
+                },
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [{
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "autoPopulate": "",
+                            "id": "field13",
+                            "label": "",
+                            "value": "<html>\n    \n    <img src=#appResource.received_stamp.jpg#>\n    \n<\/html>"
+                        }
+                    }],
+                    "properties": {"width": "49%"}
+                }
+            ],
+            "properties": {
+                "comment": "",
+                "id": "bankDetails",
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "readonly": "true",
+                "readonlyLabel": "true",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
+                        "autoPopulate": "",
+                        "id": "footer",
+                        "label": "",
+                        "value": "<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title><\/title>\r\n  <\/head>\r\n  <body>\r\n    <main>\r\n      <p><\/p>\r\n    <\/main>\r\n    <footer style=\"text-align:center;\">\r\n      <p>Concordia DMCC<\/p>\r\n      <p>TRN - 100235716600003<\/p>\r\n      <p>PO Box: 340045, Dubai, UAE<\/p>\r\n      <p>Tel: +971 044232900 Fax: +971 043748488 Email: info@concordiadubai.co<\/p>\r\n      \r\n       <p style=\"text-align:left;\"> Terms and Conditions are available on request <br>Exchange Rate : 1 AED = 1 AED <\/p>\r\n    <\/footer>\r\n    \r\n  <\/body>\r\n<\/html>"
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "section4",
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "compnayName",
+                            "label": "Company Name",
+                            "maxlength": "",
+                            "permissionHidden": "",
+                            "placeholder": "",
+                            "readonly": "true",
+                            "readonlyLabel": "true",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "#form.ofc_company_tab.companyName[{form.ofc_serReqs_tab.companyName}]#",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextArea",
+                        "properties": {
+                            "cols": "",
+                            "id": "address",
+                            "label": "Address",
+                            "permissionHidden": "",
+                            "placeholder": "",
+                            "readonly": "true",
+                            "readonlyLabel": "true",
+                            "rows": "5",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "#form.ofc_company_tab.companyAddress[{form.ofc_serReqs_tab.companyName}]#",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "trnNumber",
+                            "label": "TNR Number",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "#form.ofc_company_tab.tnrNumber[{form.ofc_serReqs_tab.companyName}]#",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "srDmccNo",
+                            "label": "SR DMCC NO",
+                            "maxlength": "",
+                            "permissionHidden": "",
+                            "placeholder": "",
+                            "readonly": "true",
+                            "readonlyLabel": "true",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "#form.ofc_serReqs_tab.serReqDmccSrNo#",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "autoPopulate": "",
+                            "id": "amountBar",
+                            "label": "",
+                            "value": "<html>\n    \n    <body>\n        \n        <table>\n  <thead>\n    <tr>\n     \n      <th>Service Activity<\/th>\n      <th>Description<\/th>\n      <th>Quantity<\/th>\n      <th>Unti Price (AED)<\/th>\n      <th>Net Amount (AED)<\/th>\n      <th>VAT(%)<\/th>\n      <th>VAT (AED)<\/th>\n      <th>Total Amount (AED)<\/th>\n    <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>#form.ofc_ofc_category_tab.ofc_category_name[{form.ofc_serReqs_tab.ofc_category_name}]#<\/td>\n      <td style=\"text-align: center;\">-<\/td>\n      <td style=\"text-align: center;\">1<\/td>\n      <td style=\"text-align: center;\">#form.ofc_ofc_category_tab.serReq_fees[{form.ofc_serReqs_tab.ofc_category_name}]#<\/td>\n     <td style=\"text-align: center;\">#form.ofc_ofc_category_tab.serReq_fees[{form.ofc_serReqs_tab.ofc_category_name}]#<\/td>\n      <td style=\"text-align: center;\">5<\/td>\n      <td style=\"text-align: center;\">#form.ofc_ofc_category_tab.serReq_vat[{form.ofc_serReqs_tab.ofc_category_name}]#<\/td>\n      <td style=\"text-align: center;\">#form.ofc_ofc_category_tab.serReqTotAmt[{form.ofc_serReqs_tab.ofc_category_name}]#<\/td>\n    <\/tr>\n    \n    <tr> \n     \n       <td style=\"text-align: right;\" colspan=\"4\"><b>Total:<\/b><\/td>\n       <td style=\"text-align: center;\" colspan=\"2\">#form.ofc_ofc_category_tab.serReq_fees[{form.ofc_serReqs_tab.ofc_category_name}]#<\/td>\n      <td style=\"text-align: center;\">#form.ofc_ofc_category_tab.serReq_vat[{form.ofc_serReqs_tab.ofc_category_name}]#<\/td>\n      <td style=\"text-align: center;\">#form.ofc_ofc_category_tab.serReqTotAmt[{form.ofc_serReqs_tab.ofc_category_name}]#<\/td>\n   \n        \n    <\/tr>\n    \n  <\/tbody>\n<\/table>\n        \n    <\/body>\n    \n    \n<\/html>"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "autoPopulate": "",
+                            "id": "bankDetails",
+                            "label": "",
+                            "value": "<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title><\/title>\r\n  <\/head>\r\n  <body>\r\n    <main>\r\n      <p><\/p>\r\n    <\/main>\r\n    <footer>\r\n      <p>Bank Details Account&#8209;&#8209;&#8209;Name Concordia DMCC&#8209;&#8209;&#8209;Payment Terms - 100% Payment on application<\/p>\r\n    <\/footer>\r\n  <\/body>\r\n<\/html>"
+                        }
+                    }
+                ],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "compnayDetails",
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "readonly": "true",
+                "readonlyLabel": "true",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "bankName",
+                                "label": "Bank Name",
+                                "maxlength": "",
+                                "permissionHidden": "",
+                                "placeholder": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "-",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "accountNo",
+                                "label": "A/C No",
+                                "maxlength": "",
+                                "permissionHidden": "",
+                                "placeholder": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "-",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "ibnNo",
+                                "label": "IBAN No",
+                                "maxlength": "",
+                                "permissionHidden": "",
+                                "placeholder": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "-",
+                                "workflowVariable": ""
+                            }
+                        }
+                    ],
+                    "properties": {"width": "49%"}
+                },
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [{
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "autoPopulate": "",
+                            "id": "field13",
+                            "label": "",
+                            "value": "<html>\n    \n    <img src=#appResource.received_stamp.jpg#>\n    \n<\/html>"
+                        }
+                    }],
+                    "properties": {"width": "49%"}
+                }
+            ],
+            "properties": {
+                "comment": "",
+                "id": "bankDetails",
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "readonly": "true",
+                "readonlyLabel": "true",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
+                        "autoPopulate": "",
+                        "id": "footer",
+                        "label": "",
+                        "value": "<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title><\/title>\r\n  <\/head>\r\n  <body>\r\n    <main>\r\n      <p><\/p>\r\n    <\/main>\r\n    <footer style=\"text-align:center;\">\r\n      <p>Concordia DMCC<\/p>\r\n      <p>TRN - 100235716600003<\/p>\r\n      <p>PO Box: 340045, Dubai, UAE<\/p>\r\n      <p>Tel: +971 044232900 Fax: +971 043748488 Email: info@concordiadubai.co<\/p>\r\n      \r\n       <p style=\"text-align:left;\"> Terms and Conditions are available on request <br>Exchange Rate : 1 AED = 1 AED <\/p>\r\n    <\/footer>\r\n    \r\n  <\/body>\r\n<\/html>"
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "section4",
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        }
+    ],
+    "properties": {
+        "description": "",
+        "id": "invoiceForm",
+        "loadBinder": {
+            "className": "",
+            "properties": {}
+        },
+        "name": "Tax Invoice",
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "",
+            "properties": {}
+        },
+        "tableName": "ofc_serReqs_tab"
+    }
+}
