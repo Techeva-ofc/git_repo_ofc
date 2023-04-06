@@ -183,7 +183,7 @@
                         "padding": "",
                         "permissionType": "",
                         "readonly": "",
-                        "removeFile": "",
+                        "removeFile": "true",
                         "resizeHeight": "",
                         "resizeMethod": "",
                         "resizeQuality": "0.8",
