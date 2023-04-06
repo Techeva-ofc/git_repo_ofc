@@ -415,7 +415,7 @@
             "className": "org.joget.apps.app.lib.DatabaseUpdateTool",
             "properties": {
                 "jdbcDatasource": "default",
-                "query": "UPDATE app_fd_ofc_serreqs_tab SET c_status = (CASE WHEN draw_status = 'Compliance' THEN 'Compliance' ELSE 'Non-Compliance' END)  where id = '#requestParam.id#'\n "
+                "query": "UPDATE app_fd_ofc_serreqs_tab SET c_status = (CASE WHEN  c_draw_status = 'Compliance' THEN 'Compliance' ELSE 'Non-Compliance' END)  where id = '#requestParam.id#'\n "
             }
         },
         "postProcessorRunOn": "both",
