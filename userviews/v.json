@@ -1570,6 +1570,27 @@
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "buttonPosition": "bottomLeft",
+                        "cacheAllLinks": "",
+                        "cacheListAction": "",
+                        "checkboxPosition": "no",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "drawinglist",
+                        "datalistId": "drawingList",
+                        "enableOffline": "",
+                        "id": "D7D78ADB00DF40EEAD42FE6299F0CEFD",
+                        "keyName": "",
+                        "label": "Review Drawing Summary",
+                        "rowCount": "",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
                 }
             ],
             "properties": {
