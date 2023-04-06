@@ -6,7 +6,7 @@
             "jdbcDatasource": "default",
             "optimisePaging": "",
             "primaryKey": "id",
-            "sql": "SELECT sr.id,sr.c_image_by_client,sr.c_jobid,\r\nsr.c_licenseactivity,sr.dateCreated,sr.c_reportdate,\r\nsr.c_serReqDmccSrNo, c.c_licenseNumber, sr.c_serReqServCat, \r\nc.c_companyName, c.c_companyLocation, t.c_tower_seq_no, t.c_tower_name,sr.c_inspectionreportstatus,sr.c_inspSchedlDate,sr.c_inspectorNames,sr.c_status\r\nFROM app_fd_ofc_serreqs_tab sr\r\nINNER JOIN app_fd_ofc_company_tab c\r\nON sr.c_companyName = c.id\r\nINNER JOIN app_fd_ofc_location_tab l\r\nON c.c_companyLocation = l.c_locName\r\nINNER JOIN app_fd_ofc_tower_tab t\r\nON c.c_tower_name = t.c_tower_name\r\n\r\nwhere sr.c_inspectionreportstatus = 'Full Compliance'\r\nor sr.c_inspectionreportstatus = 'Other Non-Compliance'\r\nor sr.c_inspectionreportstatus = 'Partial Compliance'\r\nor sr.c_inspectionreportstatus = 'Fitout Non-Compliance'\r\n\r\norder by sr.c_inspSchedlDate"
+            "sql": "select b.c_image_by_client,b.c_drawingupload,b.c_jobid,b.c_reportdate,b.c_inspectionreportStatus,a.c_companyLocation,b.id,b.c_serReqServCat,b.c_inspSchedlDate,b.c_serReqDmccSrNo,b.c_status,d.c_ofc_category_name,a.c_companyName,b.c_paymentDate,c.c_tower_seq_no,c.c_tower_name \nfrom \n    jwdb.app_fd_ofc_company_tab a \njoin \n    jwdb.app_fd_ofc_serReqs_tab b on a.id = b.c_companyName \njoin\n    jwdb.app_fd_ofc_tower_tab c on a.c_tower_name = c.id \njoin \n    jwdb.app_fd_ofc_ofc_category_tab d on b.c_ofc_category_name = d.id where b.c_status not in ('Payment Pending','Inspection Scheduled','Inspection Completed') \nand b.c_inspectionreportStatus is not null \nand  b.c_inspectionreportStatus <> 'Full Compliance'\nor b.c_status = 'Image(s) To-Be Uploaded'\nor b.c_status = 'Awaiting payment from the client'\nor b.c_status = 'Images Uploaded'\nor b.c_drawingupload = 'drawinguploaded'\n\norder by b.c_inspSchedlDate is null,b.c_inspSchedlDate desc"
         }
     },
     "buttonPosition": "bottomLeft",
@@ -148,6 +148,14 @@
             "width": ""
         },
         {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_9",
+            "label": "c_inspectionreportStatus",
+            "name": "c_inspectionreportStatus",
+            "sortable": "false"
+        },
+        {
             "action": {
                 "className": "",
                 "properties": {}
@@ -187,28 +195,6 @@
             "id": "column_6",
             "label": "Service Status",
             "name": "c_status",
-            "sortable": "true",
-            "style": "",
-            "width": ""
-        },
-        {
-            "action": {
-                "className": "",
-                "properties": {}
-            },
-            "alignment": "",
-            "datalist_type": "column",
-            "exclude_export": "",
-            "filterable": true,
-            "format": {
-                "className": "",
-                "properties": {}
-            },
-            "headerAlignment": "",
-            "hidden": "false",
-            "id": "column_5",
-            "label": "Inspection Status",
-            "name": "c_inspectionreportstatus",
             "sortable": "true",
             "style": "",
             "width": ""
