@@ -191,32 +191,6 @@
                             "value": "",
                             "workflowVariable": ""
                         }
-                    },
-                    {
-                        "className": "org.joget.plugin.enterprise.CalculationField",
-                        "properties": {
-                            "equation": "( fee + #form.ofc_ofc_category_tab.serReqTotAmt[{form.ofc_serReqs_tab.ofc_category_name}]# )",
-                            "hidden": "",
-                            "id": "totalFeeSerReqWithfastTrack",
-                            "label": "Grand Total:",
-                            "numOfDecimal": "2",
-                            "postfix": "",
-                            "prefix": "",
-                            "readonlyLabel": "",
-                            "storeNumeric": "",
-                            "style": "us",
-                            "useThousandSeparator": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "variables": [{
-                                "fieldId": "fasttrackTotAmt",
-                                "operation": "sum",
-                                "variableName": "fee"
-                            }],
-                            "workflowVariable": ""
-                        }
                     }
                 ],
                 "properties": {"width": "100%"}
