@@ -448,7 +448,7 @@
                 "confirmation": "",
                 "datalist_type": "row_action",
                 "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/serRequestView?&_mode=edit",
-                "hrefColumn": "id;C_serReqDmccSrNo;c_inspectionreportStatus",
+                "hrefColumn": "id;;",
                 "hrefParam": "id;serReqDmccSrNo;inspectstatus",
                 "label": "Payment",
                 "rules": [
@@ -459,7 +459,7 @@
                         "value": "Payment Completed"
                     },
                     {
-                        "field": "c_inspectionreportStatus",
+                        "field": "c_inspectionreportstatus",
                         "join": "OR",
                         "operator": "=",
                         "value": "Fitout Non-Compliance"
