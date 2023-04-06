@@ -150,108 +150,27 @@
                 "className": "org.joget.apps.form.model.Column",
                 "elements": [
                     {
-                        "className": "org.joget.apps.form.lib.CustomHTML",
-                        "properties": {
-                            "autoPopulate": "",
-                            "id": "script_disable_button",
-                            "label": "",
-                            "value": "<html>  \r\n<script type=\"text/javascript\"> \r\n\r\nfunction verifyAnswer() \r\n\r\n{  \r\n\r\n//get the selected value from the dropdown list  \r\n\r\nvar mylist = document.getElementById(\"action_item\");  \r\n\r\n\r\n\r\nif(mylist[0].checked==true)\r\n\r\n  mylist[1].disabled = true;\r\n\r\n\r\n\r\nelse if(mylist[1].checked==true)\r\n\r\n  mylist[0].disabled = true;\r\n\r\n}\r\n\r\n\r\n\r\nalert(mylist); \r\n\r\n<\/script>   \r\n<body>  \r\n<\/html>"
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.Radio",
-                        "properties": {
-                            "controlField": "",
-                            "id": "action_item",
-                            "label": "Confirm the Action",
-                            "options": [
-                                {
-                                    "grouping": "",
-                                    "label": "Cancel Inspection",
-                                    "value": "Cancel Inspection"
-                                },
-                                {
-                                    "grouping": "",
-                                    "label": "Re-Schedule Inspection",
-                                    "value": "Re-Schedule Inspection"
-                                }
-                            ],
-                            "optionsBinder": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "validator": {
-                                "className": "org.joget.apps.form.lib.DefaultValidator",
-                                "properties": {
-                                    "mandatory": "true",
-                                    "message": "mandatory",
-                                    "type": ""
-                                }
-                            },
-                            "value": "",
-                            "workflowVariable": ""
-                        }
-                    }
-                ],
-                "properties": {"width": "100%"}
-            }],
-            "properties": {
-                "comment": "",
-                "id": "section4",
-                "join": "",
-                "label": "",
-                "loadBinder": {
-                    "className": "",
-                    "properties": {}
-                },
-                "permission": {
-                    "className": "",
-                    "properties": {}
-                },
-                "permissionReadonly": "",
-                "readonly": "",
-                "readonlyLabel": "",
-                "regex": "",
-                "reverse": "",
-                "storeBinder": {
-                    "className": "",
-                    "properties": {}
-                },
-                "visibilityControl": "",
-                "visibilityValue": ""
-            }
-        },
-        {
-            "className": "org.joget.apps.form.model.Section",
-            "elements": [{
-                "className": "org.joget.apps.form.model.Column",
-                "elements": [
-                    {
                         "className": "org.joget.apps.form.lib.DatePicker",
                         "properties": {
-                            "allowManual": "true",
-                            "datePickerType": "utcdateTime",
+                            "allowManual": "",
+                            "currentDateAs": "minDate",
+                            "dataFormat": "",
+                            "datePickerType": "",
                             "endDateFieldId": "",
-                            "format24hr": "",
+                            "format": "dd-M-yyyy",
                             "id": "dateofreschedule",
                             "label": "Preferred Date & Time",
                             "placeholder": "",
                             "readonly": "",
                             "readonlyLabel": "",
-                            "showUserTimeZone": "true",
                             "startDateFieldId": "",
                             "validator": {
-                                "className": "org.joget.apps.form.lib.DefaultValidator",
-                                "properties": {
-                                    "mandatory": "true",
-                                    "message": "mandatory",
-                                    "type": ""
-                                }
+                                "className": "",
+                                "properties": {}
                             },
                             "value": "",
-                            "workflowVariable": ""
+                            "workflowVariable": "",
+                            "yearRange": "c-10:c+10"
                         }
                     },
                     {
