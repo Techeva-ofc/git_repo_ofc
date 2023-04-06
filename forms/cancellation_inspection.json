@@ -255,7 +255,7 @@
             "className": "org.joget.apps.app.lib.DatabaseUpdateTool",
             "properties": {
                 "jdbcDatasource": "default",
-                "query": "update app_fd_ofc_serreqs_tab set c_status = 'Inspection To-Be Re-Scheduled' where c_rescheduleid = 'reschedule';"
+                "query": "update app_fd_ofc_serreqs_tab set c_status = 'Inspection To-Be Re-Scheduled';"
             }
         },
         "postProcessorRunOn": "both",
