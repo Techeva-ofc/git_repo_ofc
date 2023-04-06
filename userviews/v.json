@@ -2017,7 +2017,7 @@
                         "redirectTargetOnCancel": "top",
                         "redirectTargetOnComplete": "",
                         "redirectUrlAfterComplete": "",
-                        "redirectUrlOnCancel": "",
+                        "redirectUrlOnCancel": "ofc_inspection_form_crud",
                         "showInPopupDialog": "",
                         "submitButtonLabel": "",
                         "userviewCacheDuration": "20",
