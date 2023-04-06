@@ -445,7 +445,7 @@
                         "value": "Payment Completed"
                     },
                     {
-                        "field": "c_inspectionreportstatus",
+                        "field": "c_inspectionreportStatus",
                         "join": "OR",
                         "operator": "=",
                         "value": "Fitout Non-Compliance"
