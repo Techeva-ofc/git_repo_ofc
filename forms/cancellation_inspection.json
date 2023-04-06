@@ -158,8 +158,8 @@
                             "datePickerType": "",
                             "endDateFieldId": "",
                             "format": "dd-M-yyyy",
-                            "id": "dateofreschedule",
-                            "label": "Preferred Date & Time",
+                            "id": "inspSchedlDate",
+                            "label": "Prefer Date(*Note : Admin can modify this schedule based on the date available)",
                             "placeholder": "",
                             "readonly": "",
                             "readonlyLabel": "",
@@ -235,84 +235,6 @@
                 },
                 "visibilityControl": "action_item",
                 "visibilityValue": "Re-Schedule Inspection"
-            }
-        },
-        {
-            "className": "org.joget.apps.form.model.Section",
-            "elements": [{
-                "className": "org.joget.apps.form.model.Column",
-                "elements": [
-                    {
-                        "className": "org.joget.apps.form.lib.CustomHTML",
-                        "properties": {
-                            "autoPopulate": "",
-                            "id": "confirm",
-                            "label": "",
-                            "value": "<span>Please confirm that you would like to cancel this inspection and provide the reason for cancellation<\/span>"
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.HiddenField",
-                        "properties": {
-                            "id": "cancelid",
-                            "useDefaultWhenEmpty": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "cancel",
-                            "workflowVariable": ""
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.TextArea",
-                        "properties": {
-                            "cols": "150",
-                            "id": "cancel_reason",
-                            "label": "Provide the Reason",
-                            "placeholder": "",
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "rows": "5",
-                            "validator": {
-                                "className": "org.joget.apps.form.lib.DefaultValidator",
-                                "properties": {
-                                    "mandatory": "true",
-                                    "message": "mandatory",
-                                    "type": ""
-                                }
-                            },
-                            "value": "",
-                            "workflowVariable": ""
-                        }
-                    }
-                ],
-                "properties": {"width": "100%"}
-            }],
-            "properties": {
-                "comment": "",
-                "id": "cancel",
-                "join": "",
-                "label": "Cancel the Inspection",
-                "loadBinder": {
-                    "className": "",
-                    "properties": {}
-                },
-                "permission": {
-                    "className": "",
-                    "properties": {}
-                },
-                "permissionReadonly": "",
-                "readonly": "",
-                "readonlyLabel": "",
-                "regex": "",
-                "reverse": "",
-                "storeBinder": {
-                    "className": "",
-                    "properties": {}
-                },
-                "visibilityControl": "action_item",
-                "visibilityValue": "Cancel Inspection"
             }
         }
     ],
