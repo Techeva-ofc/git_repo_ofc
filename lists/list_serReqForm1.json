@@ -425,12 +425,6 @@
                 "label": "Generate OFC Certificate",
                 "rules": [
                     {
-                        "field": "c_status",
-                        "join": "AND",
-                        "operator": "=",
-                        "value": "Payment Completed"
-                    },
-                    {
                         "field": "c_ofc_category_name",
                         "join": "OR",
                         "operator": "=",
@@ -447,6 +441,12 @@
                         "join": "OR",
                         "operator": "=",
                         "value": "Location Amendment"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Payment Completed"
                     }
                 ],
                 "target": "_self"
