@@ -112,34 +112,12 @@
                 "className": "org.joget.apps.form.model.Column",
                 "elements": [
                     {
-                        "className": "org.joget.apps.form.lib.TextField",
-                        "properties": {
-                            "encryption": "",
-                            "id": "feetopay",
-                            "label": "Fitout Non-Compliance Fee",
-                            "maxlength": "",
-                            "permissionHidden": "",
-                            "placeholder": "",
-                            "readonly": "true",
-                            "readonlyLabel": "true",
-                            "size": "",
-                            "storeNumeric": "",
-                            "style": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "",
-                            "workflowVariable": ""
-                        }
-                    },
-                    {
                         "className": "org.joget.plugin.enterprise.CalculationField",
                         "properties": {
-                            "equation": "(Fast-Track Fee Total-VAT)",
+                            "equation": "(totalamt - VAT)",
                             "hidden": "",
-                            "id": "fastTrackFee",
-                            "label": "Fast-Track Fee",
+                            "id": "fee_fitout_non_compliance",
+                            "label": "Fitout Non-Compliance Fee",
                             "numOfDecimal": "2",
                             "postfix": "",
                             "prefix": "",
@@ -153,12 +131,12 @@
                             },
                             "variables": [
                                 {
-                                    "fieldId": "fasttrackTotAmt",
+                                    "fieldId": "feetopay",
                                     "operation": "sum",
-                                    "variableName": "Fast-Track Fee Total"
+                                    "variableName": "totalamt"
                                 },
                                 {
-                                    "fieldId": "fasttrack_vat",
+                                    "fieldId": "noncompliance_vat",
                                     "operation": "sum",
                                     "variableName": "VAT"
                                 }
@@ -169,9 +147,9 @@
                     {
                         "className": "org.joget.plugin.enterprise.CalculationField",
                         "properties": {
-                            "equation": "(Fast-Track Total/100)*5",
+                            "equation": "(totalamt/100)*5",
                             "hidden": "",
-                            "id": "fasttrack_vat",
+                            "id": "noncompliance_vat",
                             "label": "VAT(5%)",
                             "numOfDecimal": "2",
                             "postfix": "",
@@ -185,9 +163,9 @@
                                 "properties": {}
                             },
                             "variables": [{
-                                "fieldId": "fasttrackTotAmt",
+                                "fieldId": "feetopay",
                                 "operation": "sum",
-                                "variableName": "Fast-Track Total"
+                                "variableName": "totalamt"
                             }],
                             "workflowVariable": ""
                         }
@@ -196,25 +174,21 @@
                         "className": "org.joget.apps.form.lib.TextField",
                         "properties": {
                             "encryption": "",
-                            "id": "fasttrackTotAmt",
-                            "label": "Fast-Track Fee   Total(VAT Inclusive)",
+                            "id": "feetopay",
+                            "label": "Fitout Non-Compliance Fee (VAT Inclusive)",
                             "maxlength": "",
-                            "numOfDecimal": "2",
                             "permissionHidden": "",
                             "placeholder": "",
-                            "postfix": "",
-                            "prefix": "",
                             "readonly": "true",
                             "readonlyLabel": "true",
                             "size": "",
                             "storeNumeric": "",
-                            "style": "us",
-                            "useThousandSeparator": "",
+                            "style": "",
                             "validator": {
                                 "className": "",
                                 "properties": {}
                             },
-                            "value": "1500.00",
+                            "value": "",
                             "workflowVariable": ""
                         }
                     },
