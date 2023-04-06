@@ -415,7 +415,7 @@
             "className": "org.joget.apps.app.lib.DatabaseUpdateTool",
             "properties": {
                 "jdbcDatasource": "default",
-                "query": "update app_fd_ofc_serreqs_tab set c_status = 'Reviewed Drawing' where id = '#requestParam.id#'"
+                "query": "update app_fd_ofc_serreqs_tab set c_status = '#form.app_fd_ofc_serreqs_tab.c_draw_status#' where id = '#requestParam.id#'"
             }
         },
         "postProcessorRunOn": "both",
