@@ -460,9 +460,15 @@
                     },
                     {
                         "field": "c_inspectionreportStatus",
-                        "join": "AND",
+                        "join": "OR",
                         "operator": "=",
                         "value": "Fitout Non-Compliance"
+                    },
+                    {
+                        "field": "c_inspectionreportStatus",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Partial Compliance"
                     }
                 ],
                 "target": "_self"
