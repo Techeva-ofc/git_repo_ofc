@@ -158,12 +158,11 @@
                         "className": "org.joget.apps.form.lib.DatePicker",
                         "properties": {
                             "allowManual": "true",
-                            "currentDateAs": "",
-                            "dataFormat": "yyyy-MM-dd",
-                            "datePickerType": "dateTime",
+                            "currentDateAs": "minDate",
+                            "dataFormat": "dd-MM-yyyy",
+                            "datePickerType": "",
                             "endDateFieldId": "",
                             "format": "",
-                            "format24hr": "",
                             "id": "inspreSchedlDate",
                             "label": "Inspection Date",
                             "placeholder": "",
@@ -174,7 +173,7 @@
                                 "className": "",
                                 "properties": {}
                             },
-                            "value": "",
+                            "value": "dd-MM-yyyy",
                             "workflowVariable": "",
                             "yearRange": "c-10:c+10"
                         }
