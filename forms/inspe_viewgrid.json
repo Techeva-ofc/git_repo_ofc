@@ -108,7 +108,7 @@
             "comment": "",
             "id": "fitoutnoncompliance",
             "join": "",
-            "label": "Fill below  #requestParam.primaryKey#",
+            "label": "Fill below",
             "loadBinder": {
                 "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                 "properties": {}
