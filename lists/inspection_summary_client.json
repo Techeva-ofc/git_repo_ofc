@@ -298,7 +298,7 @@
                         "field": "c_status",
                         "join": "AND",
                         "operator": "=",
-                        "value": "Payment Completed"
+                        "value": "Pae"
                     },
                     {
                         "field": "c_inspectionreportStatus",
