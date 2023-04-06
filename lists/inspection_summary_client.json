@@ -344,11 +344,16 @@
             "properties": {
                 "confirmation": "",
                 "datalist_type": "row_action",
-                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/reportclientform",
+                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/srDrawing",
                 "hrefColumn": "id",
                 "hrefParam": "id",
                 "label": "Upload Drawing(s)",
-                "rules": [],
+                "rules": [{
+                    "field": "c_status",
+                    "join": "AND",
+                    "operator": "=",
+                    "value": "Paid Fee"
+                }],
                 "target": "_self"
             },
             "type": "text"
