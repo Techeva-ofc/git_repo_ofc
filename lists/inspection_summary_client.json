@@ -424,28 +424,10 @@
                         "value": "Fitout Non-Compliance"
                     },
                     {
-                        "field": "c_waiverstate",
-                        "join": "AND",
-                        "operator": "=",
-                        "value": "WaiverApplied"
-                    },
-                    {
-                        "field": "c_inspectionreportStatus",
+                        "field": "c_draw_status",
                         "join": "OR",
                         "operator": "=",
-                        "value": "Fitout Non-Compliance"
-                    },
-                    {
-                        "field": "c_waiverstate",
-                        "join": "AND",
-                        "operator": "=",
-                        "value": "WaiverApplied"
-                    },
-                    {
-                        "field": "c_inspectionreportStatus",
-                        "join": "OR",
-                        "operator": "=",
-                        "value": "Fitout Non-Compliance"
+                        "value": "Compliance"
                     },
                     {
                         "field": "c_waiverstate",
