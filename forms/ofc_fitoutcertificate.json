@@ -214,7 +214,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "Payment Fast-Track Slip Page",
+        "name": "OFC Certificate Page",
         "noPermissionMessage": "",
         "permission": {
             "className": "",
