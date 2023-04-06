@@ -480,21 +480,21 @@
                 "confirmation": "",
                 "datalist_type": "row_action",
                 "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/serRequestView?&_mode=edit",
-                "hrefColumn": "id",
-                "hrefParam": "id",
+                "hrefColumn": "id;C_serReqDmccSrNo;c_inspectionreportStatus",
+                "hrefParam": "id;serReqDmccSrNo;inspectstatus",
                 "label": "Payment",
                 "rules": [
                     {
                         "field": "c_status",
                         "join": "OR",
                         "operator": "=",
-                        "value": "Payment Pending"
+                        "value": "Payment Completed"
                     },
                     {
-                        "field": "c_status",
+                        "field": "c_inspectionreportStatus",
                         "join": "OR",
                         "operator": "=",
-                        "value": "Payment Panding"
+                        "value": "Fitout Non-Compliance"
                     },
                     {
                         "field": "c_approval_status",
