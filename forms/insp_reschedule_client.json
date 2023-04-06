@@ -159,7 +159,7 @@
                         "properties": {
                             "allowManual": "true",
                             "currentDateAs": "minDate",
-                            "dataFormat": "dd-MM-yyyy",
+                            "dataFormat": "",
                             "datePickerType": "",
                             "endDateFieldId": "",
                             "format": "dd-MM-yyyy",
