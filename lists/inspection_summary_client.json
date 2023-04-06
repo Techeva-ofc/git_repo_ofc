@@ -422,12 +422,6 @@
                         "join": "OR",
                         "operator": "=",
                         "value": "Fitout Non-Compliance"
-                    },
-                    {
-                        "field": "c_draw_status",
-                        "join": "OR",
-                        "operator": "=",
-                        "value": "Compliance"
                     }
                 ],
                 "target": "_self"
