@@ -305,6 +305,12 @@
                         "join": "AND",
                         "operator": "=",
                         "value": "Fitout Non-Compliance"
+                    },
+                    {
+                        "field": "c_drawingupload",
+                        "join": "AND",
+                        "operator": "<>",
+                        "value": "drawinguploaded"
                     }
                 ],
                 "target": "_self"
