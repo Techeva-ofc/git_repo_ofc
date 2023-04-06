@@ -1,0 +1,256 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.SubForm",
+                    "properties": {
+                        "elementUniqueKey": "4926",
+                        "formDefId": "serReqForm",
+                        "id": "subform",
+                        "label": "",
+                        "loadBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "noframe": "true",
+                        "parentSubFormId": "",
+                        "readonly": "true",
+                        "readonlyLabel": "true",
+                        "storeBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "subFormParentId": ""
+                    }
+                }],
+                "properties": {
+                    "elementUniqueKey": "4924",
+                    "width": "100%"
+                }
+            }],
+            "properties": {
+                "comment": "",
+                "id": "section1",
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "org.joget.apps.form.lib.BeanShellFormBinder",
+                    "properties": {
+                        "autoHandleFiles": "",
+                        "autoHandleWorkflowVariable": "true",
+                        "cacheInterval": "",
+                        "script": "import java.io.IOException;\r\nimport java.sql.Connection;\r\nimport java.sql.DriverManager;\r\nimport java.sql.PreparedStatement;\r\nimport java.text.SimpleDateFormat;\r\nimport java.util.Date;\r\n\t\r\n\t// This code will execute when user service request for prime use with 0.00\r\n\t// amount so status will update as \"Payment Completed\"\r\n\tpublic  updateOrderStatusForPrime() {\r\n\t\tString redirectUrl = \"http://localhost:8080/jw/web/userview/ofc_app/v/_/serReqForm_crud\";\r\n\t\tString id = \"#form.ofc_serReqs_tab.id#\";\r\n\t\tString serReqfees = \"#form.ofc_ofc_category_tab.serReq_fees[{form.ofc_serReqs_tab.ofc_category_name}]#\";\r\n\r\n\t\tif (serReqfees.equalsIgnoreCase(\"0.00\")) {\r\n\t\t\ttry {\r\n\r\n\t\t\t\tSimpleDateFormat formatter = new SimpleDateFormat(\"yyyy-MM-dd HH:mm:ss\");\r\n\t\t\t\tDate date = new Date();\r\n\t\t\t\t//System.out.println(\"Date=======================\");\r\n\t\t\t\tString paymentDate = formatter.format(date).toString();\r\n\t\t\t//\tSystem.out.println(paymentDate);\r\n\r\n\t\t\t\tClass.forName(\"com.mysql.jdbc.Driver\").newInstance();\r\n\t\t\t\tConnection con = DriverManager.getConnection(\"jdbc:mysql://localhost:3307/jwdb?characterEncoding=UTF-8\",\r\n\t\t\t\t\t\t\"root\", \"\");\r\n\t\t\t\tif (!con.isClosed()) {\r\n\r\n\t\t\t\t\tString paymentComplete = \"Payment Completed\";\r\n\r\n\t\t\t\t\t// create sql query\r\n\t\t\t\t\tString query = \"update app_fd_ofc_serreqs_tab set c_status = ?,c_paymentDate =? where id = ?\";\r\n\r\n\t\t\t\t\t// create the java mysql update PreparedStatement c_bearer_access_token\r\n\t\t\t\t\tPreparedStatement preparedStmt = con.prepareStatement(query);\r\n\t\t\t\t\tpreparedStmt.setString(1, paymentComplete);\r\n\t\t\t\t\tpreparedStmt.setString(2, paymentDate);\r\n\t\t\t\t\tpreparedStmt.setString(3, id);\r\n\r\n\t\t\t\t\t// execute the java PreparedStatement\r\n\t\t\t\t\tpreparedStmt.executeUpdate();\r\n\r\n\t\t\t\t\tcon.close();\r\n\t\t\t\t} else {\r\n\t\t\t\t\tSystem.out.println(\"Connection Problem\");\r\n\t\t\t\t}\r\n\t\t\t} catch (Exception ex) {\r\n\t\t\t\tex.printStackTrace();\r\n\t\t\t} finally {\r\n\t\t\t\ttry {\r\n\t\t\t\t\t// Redirect page to service request summary\r\n\t\t\t\t\tjava.awt.Desktop.getDesktop().browse(java.net.URI.create(redirectUrl));\r\n\t\t\t\t} catch (IOException e) {\r\n\t\t\t\t\t// TODO Auto-generated catch block\r\n\t\t\t\t\te.printStackTrace();\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n\t\r\n\t//method calling\r\n\tupdateOrderStatusForPrime();",
+                        "useAjax": ""
+                    }
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
+                            "id": "approval_status",
+                            "useDefaultWhenEmpty": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.SubForm",
+                        "properties": {
+                            "elementUniqueKey": "4937",
+                            "formDefId": "serReqForm_approval_action",
+                            "id": "approval",
+                            "label": "",
+                            "loadBinder": {
+                                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                                "properties": {}
+                            },
+                            "noframe": "true",
+                            "parentSubFormId": "last_approve",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "storeBinder": {
+                                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                                "properties": {}
+                            },
+                            "subFormParentId": "parent_id"
+                        }
+                    }
+                ],
+                "properties": {
+                    "elementUniqueKey": "4933",
+                    "width": "100%"
+                }
+            }],
+            "properties": {
+                "elementUniqueKey": "4927",
+                "id": "section2",
+                "label": "Approval",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "regex": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.plugin.enterprise.FormGrid",
+                    "properties": {
+                        "disabledAdd": "true",
+                        "disabledDelete": "true",
+                        "elementUniqueKey": "4944",
+                        "enableSorting": "",
+                        "errorMessage": "Invalid number of rows.",
+                        "formDefId": "serReqForm_approval_action",
+                        "height": "500",
+                        "id": "trails",
+                        "label": "",
+                        "loadBinder": {
+                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                            "properties": {
+                                "foreignKey": "parent_id",
+                                "formDefId": "serReqForm_approval_action"
+                            }
+                        },
+                        "options": [
+                            {
+                                "format": "",
+                                "formatType": "text",
+                                "label": "Approver",
+                                "value": "approver",
+                                "width": ""
+                            },
+                            {
+                                "format": "",
+                                "formatType": "text",
+                                "label": "Status",
+                                "value": "status",
+                                "width": ""
+                            },
+                            {
+                                "format": "",
+                                "formatType": "html",
+                                "label": "Remarks",
+                                "value": "remarks",
+                                "width": ""
+                            },
+                            {
+                                "format": "",
+                                "formatType": "text",
+                                "label": "Date",
+                                "value": "approval_date",
+                                "width": ""
+                            }
+                        ],
+                        "readonly": "true",
+                        "readonlyLabel": "",
+                        "showRowNumber": "",
+                        "sortField": "sort",
+                        "storeBinder": {
+                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                            "properties": {
+                                "foreignKey": "parent_id",
+                                "formDefId": "serReqForm_approval_action"
+                            }
+                        },
+                        "submit-label-normal": "Submit",
+                        "submit-label-readonly": "Close",
+                        "validateMaxRow": "",
+                        "validateMinRow": "",
+                        "width": "900"
+                    }
+                }],
+                "properties": {
+                    "elementUniqueKey": "4942",
+                    "width": "100%"
+                }
+            }],
+            "properties": {
+                "elementUniqueKey": "4938",
+                "id": "section3",
+                "label": "Approval Trails",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "regex": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        }
+    ],
+    "properties": {
+        "description": "",
+        "id": "serReqForm_approval",
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "name": "Service Request Form Approval",
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "tableName": "ofc_serReqs_tab"
+    }
+}
