@@ -2186,7 +2186,7 @@
             ],
             "properties": {
                 "comment": "",
-                "hide": "",
+                "hide": "yes",
                 "id": "category-FBC1B16A050845C0B0F9F24F798AA723",
                 "label": "<i class=\"fa fa-users\"><\/i> Access by Admin, Inspector and User",
                 "permission": {
