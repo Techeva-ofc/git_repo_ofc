@@ -162,7 +162,7 @@
                             "dataFormat": "",
                             "datePickerType": "",
                             "endDateFieldId": "",
-                            "format": "dd-MM-yy",
+                            "format": "dd-M-yy",
                             "id": "inspreSchedlDate",
                             "label": "Inspection Date",
                             "placeholder": "",
