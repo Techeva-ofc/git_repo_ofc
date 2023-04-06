@@ -425,9 +425,9 @@
                     },
                     {
                         "field": "c_status",
-                        "join": "AND",
+                        "join": "OR",
                         "operator": "=",
-                        "value": "Payment Completed"
+                        "value": "Awaiting payment from the client"
                     }
                 ],
                 "target": "_self"
