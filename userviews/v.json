@@ -1737,7 +1737,7 @@
                     "properties": {
                         "actionAfterSaved": "",
                         "actionOnCancel": "",
-                        "cancelButtonLabel": "",
+                        "cancelButtonLabel": "Close",
                         "customFooter": "",
                         "customHeader": "",
                         "customId": "reviewDrawing",
@@ -1755,10 +1755,10 @@
                         "readonlyLabel": "",
                         "redirectTargetOnCancel": "top",
                         "redirectTargetOnComplete": "",
-                        "redirectUrlAfterComplete": "",
-                        "redirectUrlOnCancel": "",
+                        "redirectUrlAfterComplete": "reportSummary",
+                        "redirectUrlOnCancel": "reportSummary",
                         "showInPopupDialog": "",
-                        "submitButtonLabel": "",
+                        "submitButtonLabel": "Save",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
