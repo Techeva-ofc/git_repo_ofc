@@ -1951,7 +1951,7 @@
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
-                        "allowedGroupIds": "G-009",
+                        "allowedGroupIds": "G-003;G-009",
                         "orgId": ""
                     }
                 }
@@ -1959,39 +1959,72 @@
         },
         {
             "className": "org.joget.apps.userview.model.UserviewCategory",
-            "menus": [{
-                "className": "org.joget.apps.userview.lib.FormMenu",
-                "properties": {
-                    "actionAfterSaved": "",
-                    "actionOnCancel": "",
-                    "cancelButtonLabel": "",
-                    "customFooter": "",
-                    "customHeader": "",
-                    "customId": "serRequestView",
-                    "enableOffline": "",
-                    "fieldPassover": "",
-                    "fieldPassoverMethod": "append",
-                    "formId": "serviceRequestView",
-                    "id": "1560676B3F4E421BB874A41FDB72ACD7",
-                    "keyName": "",
-                    "label": "Service Request View Form",
-                    "loadDataWithKey": "",
-                    "messageShowAfterComplete": "",
-                    "paramName": "",
-                    "permissionDeny": "",
-                    "permissionHidden": "",
-                    "readonly": "",
-                    "readonlyLabel": "",
-                    "redirectTargetOnCancel": "top",
-                    "redirectTargetOnComplete": "",
-                    "redirectUrlAfterComplete": "",
-                    "redirectUrlOnCancel": "",
-                    "showInPopupDialog": "",
-                    "submitButtonLabel": "Continue To Checkout",
-                    "userviewCacheDuration": "20",
-                    "userviewCacheScope": ""
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "actionAfterSaved": "",
+                        "actionOnCancel": "",
+                        "cancelButtonLabel": "",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "serRequestView",
+                        "enableOffline": "",
+                        "fieldPassover": "",
+                        "fieldPassoverMethod": "append",
+                        "formId": "serviceRequestView",
+                        "id": "1560676B3F4E421BB874A41FDB72ACD7",
+                        "keyName": "",
+                        "label": "Service Request View Form",
+                        "loadDataWithKey": "",
+                        "messageShowAfterComplete": "",
+                        "paramName": "",
+                        "permissionDeny": "",
+                        "permissionHidden": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "redirectTargetOnCancel": "top",
+                        "redirectTargetOnComplete": "",
+                        "redirectUrlAfterComplete": "",
+                        "redirectUrlOnCancel": "",
+                        "showInPopupDialog": "",
+                        "submitButtonLabel": "Continue To Checkout",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "actionAfterSaved": "",
+                        "actionOnCancel": "",
+                        "cancelButtonLabel": "Close",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "ofcpage",
+                        "enableOffline": "",
+                        "fieldPassover": "",
+                        "fieldPassoverMethod": "append",
+                        "formId": "ofc_fitoutcertificate",
+                        "id": "716F6682A53B4F0F9803BC9F82C198E3",
+                        "keyName": "",
+                        "label": "OFC Certificate Page",
+                        "loadDataWithKey": "",
+                        "messageShowAfterComplete": "",
+                        "paramName": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "redirectTargetOnCancel": "top",
+                        "redirectTargetOnComplete": "",
+                        "redirectUrlAfterComplete": "",
+                        "redirectUrlOnCancel": "",
+                        "showInPopupDialog": "",
+                        "submitButtonLabel": "",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
                 }
-            }],
+            ],
             "properties": {
                 "comment": "",
                 "hide": "",
