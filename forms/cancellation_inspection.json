@@ -215,7 +215,7 @@
                 "comment": "",
                 "id": "reschedule",
                 "join": "",
-                "label": "Reschedule the Inspection",
+                "label": "Re-Schedule Request",
                 "loadBinder": {
                     "className": "",
                     "properties": {}
@@ -233,8 +233,8 @@
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "action_item",
-                "visibilityValue": "Re-Schedule Inspection"
+                "visibilityControl": "",
+                "visibilityValue": ""
             }
         }
     ],
