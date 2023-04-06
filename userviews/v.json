@@ -1838,7 +1838,7 @@
                     "properties": {
                         "actionAfterSaved": "",
                         "actionOnCancel": "",
-                        "cancelButtonLabel": "",
+                        "cancelButtonLabel": "Close",
                         "customFooter": "",
                         "customHeader": "",
                         "customId": "cancel",
@@ -1848,7 +1848,7 @@
                         "formId": "cancellation_inspection",
                         "id": "0EFCCFCD77314C8D858AE46EF5E8D08E",
                         "keyName": "",
-                        "label": "Cancel / Reschedule",
+                        "label": "Re-Schedule",
                         "loadDataWithKey": "",
                         "messageShowAfterComplete": "",
                         "paramName": "",
@@ -1859,7 +1859,7 @@
                         "redirectUrlAfterComplete": "",
                         "redirectUrlOnCancel": "",
                         "showInPopupDialog": "",
-                        "submitButtonLabel": "",
+                        "submitButtonLabel": "Submit",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
