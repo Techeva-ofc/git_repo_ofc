@@ -238,16 +238,16 @@
                         "value": "Payment Completed"
                     },
                     {
-                        "field": "c_draw_status",
-                        "join": "OR",
-                        "operator": "=",
-                        "value": "Compliance"
-                    },
-                    {
                         "field": "c_status",
                         "join": "AND",
                         "operator": "<>",
                         "value": "Inspection Scheduled"
+                    },
+                    {
+                        "field": "c_draw_status",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Compliance"
                     }
                 ],
                 "target": "_self"
