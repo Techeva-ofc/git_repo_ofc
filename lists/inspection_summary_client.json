@@ -148,14 +148,6 @@
             "width": ""
         },
         {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_5",
-            "label": "c_inspectionreportStatus",
-            "name": "c_inspectionreportStatus",
-            "sortable": "false"
-        },
-        {
             "action": {
                 "className": "",
                 "properties": {}
@@ -174,6 +166,28 @@
             "label": "Tower Name",
             "name": "c_tower_name",
             "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_5",
+            "label": "Inspection Status",
+            "name": "c_inspectionreportStatus",
+            "sortable": "true",
             "style": "",
             "width": ""
         },
