@@ -28,9 +28,9 @@
         {
             "filterable": true,
             "hidden": "false",
-            "id": "column_2",
-            "label": "ofc_serReqs_tab.srDmccNo",
-            "name": "ofc_serReqs_tab.srDmccNo",
+            "id": "column_0",
+            "label": "ofc_serReqs_tab.serReqDmccSrNo",
+            "name": "ofc_serReqs_tab.serReqDmccSrNo",
             "sortable": "false"
         },
         {
