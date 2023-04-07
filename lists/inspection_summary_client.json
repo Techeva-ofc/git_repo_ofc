@@ -430,10 +430,10 @@
                         "value": "Fitout Non-Compliance"
                     },
                     {
-                        "field": "c_waiverstate",
-                        "join": "AND",
+                        "field": "c_draw_status",
+                        "join": "OR",
                         "operator": "=",
-                        "value": "WaiverApplied"
+                        "value": "Compliance"
                     }
                 ],
                 "target": "_self"
