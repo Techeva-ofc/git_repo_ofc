@@ -2247,6 +2247,43 @@
                     }
                 }
             }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.apps.userview.lib.DataListMenu",
+                "properties": {
+                    "buttonPosition": "bottomLeft",
+                    "cacheAllLinks": "",
+                    "cacheListAction": "",
+                    "checkboxPosition": "left",
+                    "customFooter": "",
+                    "customHeader": "",
+                    "customId": "listdra",
+                    "datalistId": "listuploadeddrawing",
+                    "enableOffline": "",
+                    "id": "50002F85CD3C43788C77CFE1D63FB779",
+                    "keyName": "",
+                    "label": "List",
+                    "rowCount": "",
+                    "selectionType": "multiple",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": ""
+                }
+            }],
+            "properties": {
+                "comment": "",
+                "hide": "",
+                "id": "category-449F62159BD142B3970CC6E62A23F5F0",
+                "label": "New Category",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                    "properties": {
+                        "allowedGroupIds": "G-005",
+                        "orgId": ""
+                    }
+                }
+            }
         }
     ],
     "className": "org.joget.apps.userview.model.Userview",
