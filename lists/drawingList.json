@@ -167,20 +167,12 @@
             "hrefColumn": "id",
             "hrefParam": "id",
             "label": "Review Drawing",
-            "rules": [
-                {
-                    "field": "c_status",
-                    "join": "AND",
-                    "operator": "<>",
-                    "value": "Compliance"
-                },
-                {
-                    "field": "c_draw_status",
-                    "join": "AND",
-                    "operator": "=",
-                    "value": "Drawing / Document Uploaded"
-                }
-            ],
+            "rules": [{
+                "field": "c_draw_status",
+                "join": "AND",
+                "operator": "=",
+                "value": "Drawing / Document Uploaded"
+            }],
             "target": "_self"
         },
         "type": "text"
