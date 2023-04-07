@@ -176,9 +176,23 @@
                                 },
                                 {
                                     "formatType": "",
-                                    "label": "Reference Image Upload",
-                                    "readonly": "",
+                                    "label": "Image Uploaded By Concordia",
+                                    "readonly": "true",
                                     "value": "ref_image",
+                                    "width": ""
+                                },
+                                {
+                                    "formatType": "",
+                                    "label": "Comment from Concordia",
+                                    "readonly": "true",
+                                    "value": "remark_insp_checkpoint",
+                                    "width": ""
+                                },
+                                {
+                                    "formatType": "",
+                                    "label": "Upload Compliance Image",
+                                    "readonly": "",
+                                    "value": "ref_img_noncompliance",
                                     "width": ""
                                 }
                             ],
