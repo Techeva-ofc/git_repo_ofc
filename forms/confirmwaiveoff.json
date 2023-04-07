@@ -4,7 +4,42 @@
         "className": "org.joget.apps.form.model.Section",
         "elements": [{
             "className": "org.joget.apps.form.model.Column",
-            "elements": [],
+            "elements": [{
+                "className": "org.joget.apps.form.lib.CheckBox",
+                "properties": {
+                    "controlField": "",
+                    "id": "waiveconfirm",
+                    "label": "Are you sure want to send report for waive off?",
+                    "options": [
+                        {
+                            "grouping": "",
+                            "label": "Yes",
+                            "value": "Yes"
+                        },
+                        {
+                            "grouping": "",
+                            "label": "No",
+                            "value": "No"
+                        }
+                    ],
+                    "optionsBinder": {
+                        "className": "",
+                        "properties": {}
+                    },
+                    "readonly": "",
+                    "readonlyLabel": "",
+                    "validator": {
+                        "className": "org.joget.apps.form.lib.DefaultValidator",
+                        "properties": {
+                            "mandatory": "true",
+                            "message": "mandatory",
+                            "type": ""
+                        }
+                    },
+                    "value": "",
+                    "workflowVariable": ""
+                }
+            }],
             "properties": {"width": "100%"}
         }],
         "properties": {
