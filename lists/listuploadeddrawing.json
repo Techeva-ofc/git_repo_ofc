@@ -26,12 +26,26 @@
     "checkboxPosition": "left",
     "columns": [
         {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
             "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
             "hidden": "false",
             "id": "column_0",
-            "label": "ofc_serReqs_tab.serReqDmccSrNo",
+            "label": "DMCC SR No.",
             "name": "ofc_serReqs_tab.serReqDmccSrNo",
-            "sortable": "false"
+            "sortable": "false",
+            "style": "",
+            "width": ""
         },
         {
             "filterable": true,
