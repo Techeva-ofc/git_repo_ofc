@@ -61,8 +61,8 @@
             "confirmation": "",
             "datalist_type": "row_action",
             "href": "",
-            "hrefColumn": "customerDoc",
-            "hrefParam": "filename",
+            "hrefColumn": "customerDoc;id",
+            "hrefParam": "filename;id",
             "label": "Download Drawing",
             "rules": [],
             "target": "_self"
