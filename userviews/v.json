@@ -1816,37 +1816,6 @@
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
-                },
-                {
-                    "className": "org.joget.apps.userview.lib.FormMenu",
-                    "properties": {
-                        "actionAfterSaved": "",
-                        "actionOnCancel": "",
-                        "cancelButtonLabel": "Close",
-                        "customFooter": "",
-                        "customHeader": "",
-                        "customId": "reviewDrawing",
-                        "enableOffline": "",
-                        "fieldPassover": "",
-                        "fieldPassoverMethod": "append",
-                        "formId": "srviewDrawingReview",
-                        "id": "0DF0CDCDACF042739243B52EC33A2DB8",
-                        "keyName": "",
-                        "label": "Review Drawing Form",
-                        "loadDataWithKey": "",
-                        "messageShowAfterComplete": "",
-                        "paramName": "",
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "redirectTargetOnCancel": "top",
-                        "redirectTargetOnComplete": "",
-                        "redirectUrlAfterComplete": "reportSummary",
-                        "redirectUrlOnCancel": "reportSummary",
-                        "showInPopupDialog": "",
-                        "submitButtonLabel": "Save",
-                        "userviewCacheDuration": "20",
-                        "userviewCacheScope": ""
-                    }
                 }
             ],
             "properties": {
@@ -2275,6 +2244,53 @@
                 "comment": "",
                 "hide": "",
                 "id": "category-449F62159BD142B3970CC6E62A23F5F0",
+                "label": "New Category",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                    "properties": {
+                        "allowedGroupIds": "G-005",
+                        "orgId": ""
+                    }
+                }
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.apps.userview.lib.FormMenu",
+                "properties": {
+                    "actionAfterSaved": "",
+                    "actionOnCancel": "",
+                    "cancelButtonLabel": "Close",
+                    "customFooter": "",
+                    "customHeader": "",
+                    "customId": "reviewDrawing",
+                    "enableOffline": "",
+                    "fieldPassover": "",
+                    "fieldPassoverMethod": "append",
+                    "formId": "srviewDrawingReview",
+                    "id": "0DF0CDCDACF042739243B52EC33A2DB8",
+                    "keyName": "",
+                    "label": "Review Drawing Form",
+                    "loadDataWithKey": "",
+                    "messageShowAfterComplete": "",
+                    "paramName": "",
+                    "readonly": "",
+                    "readonlyLabel": "",
+                    "redirectTargetOnCancel": "top",
+                    "redirectTargetOnComplete": "",
+                    "redirectUrlAfterComplete": "reportSummary",
+                    "redirectUrlOnCancel": "reportSummary",
+                    "showInPopupDialog": "",
+                    "submitButtonLabel": "Save",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": ""
+                }
+            }],
+            "properties": {
+                "comment": "",
+                "hide": "yes",
+                "id": "category-6A0C12492DEE434EB394B9D95538A853",
                 "label": "New Category",
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
