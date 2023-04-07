@@ -1289,7 +1289,7 @@
                         "buttonPosition": "bottomLeft",
                         "cacheAllLinks": "",
                         "cacheListAction": "",
-                        "checkboxPosition": "no",
+                        "checkboxPosition": "left",
                         "customId": "ofc_inspection_form_crud",
                         "datalistId": "list_ofc_inspection_form",
                         "edit-afterSaved": "list",
