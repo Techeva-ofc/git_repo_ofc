@@ -2112,7 +2112,7 @@
                     "properties": {
                         "actionAfterSaved": "",
                         "actionOnCancel": "",
-                        "cancelButtonLabel": "",
+                        "cancelButtonLabel": "Cancel",
                         "customFooter": "",
                         "customHeader": "",
                         "customId": "pay",
@@ -2131,9 +2131,9 @@
                         "redirectTargetOnCancel": "top",
                         "redirectTargetOnComplete": "",
                         "redirectUrlAfterComplete": "",
-                        "redirectUrlOnCancel": "",
+                        "redirectUrlOnCancel": "inspectioninbox",
                         "showInPopupDialog": "",
-                        "submitButtonLabel": "",
+                        "submitButtonLabel": "Checkout",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
