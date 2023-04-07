@@ -5,7 +5,7 @@
         "elements": [{
             "className": "org.joget.apps.form.model.Column",
             "elements": [{
-                "className": "org.joget.apps.form.lib.CheckBox",
+                "className": "org.joget.apps.form.lib.Radio",
                 "properties": {
                     "controlField": "",
                     "id": "waiveconfirm",
