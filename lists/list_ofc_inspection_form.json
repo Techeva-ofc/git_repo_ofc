@@ -402,12 +402,6 @@
                         "field": "c_status",
                         "join": "OR",
                         "operator": "=",
-                        "value": "Inspection To-Be Re-Scheduled"
-                    },
-                    {
-                        "field": "c_status",
-                        "join": "OR",
-                        "operator": "=",
                         "value": "Compliance"
                     }
                 ],
