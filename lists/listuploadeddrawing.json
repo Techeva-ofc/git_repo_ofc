@@ -28,9 +28,9 @@
         {
             "filterable": true,
             "hidden": "false",
-            "id": "column_0",
-            "label": "ID",
-            "name": "id",
+            "id": "column_2",
+            "label": "ofc_serReqs_tab.srDmccNo",
+            "name": "ofc_serReqs_tab.srDmccNo",
             "sortable": "false"
         },
         {
@@ -39,14 +39,6 @@
             "id": "column_1",
             "label": "Document upload by Customer",
             "name": "customerDoc",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_2",
-            "label": "ofc_serReqs_tab.srDmccNo",
-            "name": "ofc_serReqs_tab.srDmccNo",
             "sortable": "false"
         }
     ],
