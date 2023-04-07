@@ -269,16 +269,16 @@
                 "label": "Re-Schedule",
                 "rules": [
                     {
+                        "field": "c_inspectionreportStatus",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Other Non-Compliance"
+                    },
+                    {
                         "field": "c_status",
                         "join": "AND",
                         "operator": "=",
-                        "value": "Payment Completed"
-                    },
-                    {
-                        "field": "c_inspectionreportStatus",
-                        "join": "OR",
-                        "operator": "=",
-                        "value": "Other Non-Compliance"
+                        "value": "Inspection To-Be Rescheduled"
                     }
                 ],
                 "target": "popup"
