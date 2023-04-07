@@ -397,6 +397,12 @@
                         "join": "OR",
                         "operator": "=",
                         "value": "Paid Fee"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Images Uploaded"
                     }
                 ],
                 "target": "popup"
