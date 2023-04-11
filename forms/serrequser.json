@@ -223,7 +223,7 @@
                 "comment": "",
                 "id": "serReqSumr",
                 "join": "",
-                "label": "Service Request Form",
+                "label": "Upload Drawing / Document",
                 "loadBinder": {
                     "className": "",
                     "properties": {}
@@ -472,7 +472,7 @@
                 "comment": "",
                 "id": "serReqSumr1",
                 "join": "",
-                "label": "",
+                "label": "Business Information",
                 "loadBinder": {
                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
