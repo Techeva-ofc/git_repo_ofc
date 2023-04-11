@@ -581,6 +581,48 @@
                                 "properties": {}
                             }
                         }
+                    },
+                    {
+                        "className": "org.joget.plugin.enterprise.SpreadSheetGrid",
+                        "properties": {
+                            "customSettings": "",
+                            "disabledAdd": "",
+                            "disabledDelete": "",
+                            "errorMessage": "Invalid number of rows",
+                            "fixedColumnsLeft": "0",
+                            "headerSorting": "true",
+                            "id": "doc_grid",
+                            "label": "",
+                            "loadBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "maxHeight": "",
+                            "minSpareRows": "1",
+                            "options": [{
+                                "format": "Upload Document By Customer",
+                                "formatType": "image",
+                                "formula": "",
+                                "label": "Document",
+                                "readonly": "",
+                                "regexValidator": "",
+                                "value": "customerDoc",
+                                "width": ""
+                            }],
+                            "readonly": "",
+                            "showRowNumber": "true",
+                            "sortingField": "",
+                            "storeBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "validateMaxRow": "",
+                            "validateMinRow": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            }
+                        }
                     }
                 ],
                 "properties": {"width": "100%"}
