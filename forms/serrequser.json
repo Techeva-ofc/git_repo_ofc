@@ -359,28 +359,6 @@
                                 "value": "",
                                 "workflowVariable": ""
                             }
-                        },
-                        {
-                            "className": "org.joget.apps.form.lib.SubForm",
-                            "properties": {
-                                "formDefId": "uploadDocument",
-                                "id": "field18",
-                                "label": "",
-                                "loadBinder": {
-                                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                                    "properties": {}
-                                },
-                                "noframe": "true",
-                                "parentSubFormId": "",
-                                "permissionHidden": "",
-                                "readonly": "true",
-                                "readonlyLabel": "true",
-                                "storeBinder": {
-                                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                                    "properties": {}
-                                },
-                                "subFormParentId": ""
-                            }
                         }
                     ],
                     "properties": {
@@ -513,8 +491,8 @@
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "primeCustomer",
-                "visibilityValue": "yes"
+                "visibilityControl": "",
+                "visibilityValue": ""
             }
         },
         {
@@ -522,22 +500,20 @@
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
                 "elements": [{
-                    "className": "org.joget.plugin.enterprise.AjaxSubForm",
+                    "className": "org.joget.apps.form.lib.SubForm",
                     "properties": {
-                        "ajax": "true",
-                        "collapsible": "",
-                        "collapsibleExpanded": "true",
-                        "collapsibleLabelCollapsed": "View Details",
-                        "collapsibleLabelExpanded": "Hide Details",
-                        "formDefId": "serReqDocMissing",
-                        "hideEmpty": "",
-                        "id": "missingdocuments",
+                        "formDefId": "uploadDocument",
+                        "id": "field18",
                         "label": "",
-                        "noLoad": "",
+                        "loadBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
                         "noframe": "true",
                         "parentSubFormId": "",
-                        "readonly": "",
-                        "readonlyLabel": "",
+                        "permissionHidden": "",
+                        "readonly": "true",
+                        "readonlyLabel": "true",
                         "storeBinder": {
                             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                             "properties": {}
