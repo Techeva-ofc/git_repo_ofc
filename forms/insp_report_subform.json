@@ -9,7 +9,7 @@
                     "className": "org.joget.apps.form.lib.TextField",
                     "properties": {
                         "encryption": "",
-                        "id": "report_checkpointName",
+                        "id": "checkpointName",
                         "label": "Checkpoint Name",
                         "maxlength": "",
                         "placeholder": "",
@@ -30,7 +30,7 @@
                     "className": "org.joget.apps.form.lib.TextField",
                     "properties": {
                         "encryption": "",
-                        "id": "report_remark_insp_checkpoint",
+                        "id": "remark_insp_checkpoint",
                         "label": "Remarks",
                         "maxlength": "",
                         "placeholder": "",
