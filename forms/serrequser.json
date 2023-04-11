@@ -642,8 +642,104 @@
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "",
+                "visibilityControl": "drawingupload",
                 "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.plugin.enterprise.AdvancedGrid",
+                    "properties": {
+                        "deleteMessage": "Delete row?",
+                        "disabledAdd": "true",
+                        "disabledDelete": "true",
+                        "errorMessage": "Invalid number of rows",
+                        "formDefId": "insp_report_subform",
+                        "hint": "Click to edit. Tab to save.",
+                        "id": "uploadelement",
+                        "keyToSave": "9",
+                        "label": "",
+                        "loadBinder": {
+                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                            "properties": {
+                                "foreignKey": "report_referencekey",
+                                "formDefId": "insp_report_subform"
+                            }
+                        },
+                        "options": [
+                            {
+                                "formatType": "",
+                                "label": "Document",
+                                "readonly": "true",
+                                "value": "checkpointName",
+                                "width": ""
+                            },
+                            {
+                                "formatType": "",
+                                "label": "Remarks",
+                                "readonly": "true",
+                                "value": "remark_insp_checkpoint",
+                                "width": ""
+                            },
+                            {
+                                "formatType": "",
+                                "label": "Upload File",
+                                "readonly": "",
+                                "value": "fileupload",
+                                "width": ""
+                            }
+                        ],
+                        "pagingOptions": "10,20,50,100",
+                        "readonly": "",
+                        "recordPerPage": "20",
+                        "search": "",
+                        "showRowNumber": "true",
+                        "sortIndx": "",
+                        "storeBinder": {
+                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                            "properties": {
+                                "foreignKey": "report_referencekey",
+                                "formDefId": "insp_report_subform"
+                            }
+                        },
+                        "uniqueKey": "",
+                        "validateMaxRow": "",
+                        "validateMinRow": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        }
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "section5_1",
+                "join": "",
+                "label": "Please Upload Drawings / Documents",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "drawingupload",
+                "visibilityValue": "drawinguploaded"
             }
         },
         {
