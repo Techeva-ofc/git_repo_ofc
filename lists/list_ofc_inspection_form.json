@@ -1,22 +1,5 @@
 {
-    "actions": [{
-        "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
-        "icon": "<i class=\"fas fa-link\"><\/i>",
-        "id": "action_0",
-        "label": "Hyperlink",
-        "name": "Data List Hyperlink Action",
-        "properties": {
-            "confirmation": "",
-            "datalist_type": "action",
-            "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/confirmwaiveoff",
-            "hrefColumn": "id",
-            "hrefParam": "id",
-            "label": "Send Waive OFF Request",
-            "target": "popup",
-            "visible": ""
-        },
-        "type": "text"
-    }],
+    "actions": [],
     "binder": {
         "className": "org.joget.plugin.enterprise.JdbcDataListBinder",
         "properties": {
