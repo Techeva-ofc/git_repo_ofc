@@ -285,16 +285,16 @@
                                 },
                                 {
                                     "formatType": "",
-                                    "label": "Remarks",
+                                    "label": "File Uploaded By Client",
                                     "readonly": "true",
-                                    "value": "report_remark_insp_checkpoint",
+                                    "value": "fileupload",
                                     "width": ""
                                 },
                                 {
                                     "formatType": "",
-                                    "label": "File Uploaded By Client",
-                                    "readonly": "true",
-                                    "value": "fileupload",
+                                    "label": "Remarks",
+                                    "readonly": "",
+                                    "value": "report_remark_insp_checkpoint",
                                     "width": ""
                                 },
                                 {
