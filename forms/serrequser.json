@@ -24,9 +24,9 @@
                             "className": "org.joget.apps.form.lib.TextField",
                             "properties": {
                                 "encryption": "",
-                                "id": "serReqUserName",
-                                "label": "User Name",
-                                "maxlength": "30",
+                                "id": "serReqDmccSrNo",
+                                "label": "DMCC SR No.",
+                                "maxlength": "",
                                 "placeholder": "",
                                 "readonly": "",
                                 "readonlyLabel": "",
@@ -42,50 +42,12 @@
                             }
                         },
                         {
-                            "className": "org.joget.apps.form.lib.Radio",
-                            "properties": {
-                                "controlField": "",
-                                "id": "primeCustomer",
-                                "label": "Prime Customer",
-                                "options": [
-                                    {
-                                        "grouping": "",
-                                        "label": "Yes",
-                                        "value": "yes"
-                                    },
-                                    {
-                                        "grouping": "",
-                                        "label": "No",
-                                        "value": "no"
-                                    }
-                                ],
-                                "optionsBinder": {
-                                    "className": "",
-                                    "properties": {}
-                                },
-                                "readonly": "",
-                                "readonlyLabel": "",
-                                "validator": {
-                                    "className": "",
-                                    "properties": {}
-                                },
-                                "value": "yes",
-                                "workflowVariable": ""
-                            }
-                        }
-                    ],
-                    "properties": {"width": "49%"}
-                },
-                {
-                    "className": "org.joget.apps.form.model.Column",
-                    "elements": [
-                        {
                             "className": "org.joget.apps.form.lib.TextField",
                             "properties": {
                                 "encryption": "",
-                                "id": "serReqDmccSrNo",
-                                "label": "DMCC SR No.",
-                                "maxlength": "",
+                                "id": "serReqUserName",
+                                "label": "User Name",
+                                "maxlength": "30",
                                 "placeholder": "",
                                 "readonly": "",
                                 "readonlyLabel": "",
@@ -132,9 +94,169 @@
                                 "value": "",
                                 "workflowVariable": ""
                             }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.Radio",
+                            "properties": {
+                                "controlField": "",
+                                "id": "primeCustomer",
+                                "label": "Prime Customer",
+                                "options": [
+                                    {
+                                        "grouping": "",
+                                        "label": "Yes",
+                                        "value": "yes"
+                                    },
+                                    {
+                                        "grouping": "",
+                                        "label": "No",
+                                        "value": "no"
+                                    }
+                                ],
+                                "optionsBinder": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "readonly": "",
+                                "readonlyLabel": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "yes",
+                                "workflowVariable": ""
+                            }
                         }
                     ],
-                    "properties": {"width": "49%"}
+                    "properties": {"width": "32%"}
+                },
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "currentuser",
+                                "label": "Inspector",
+                                "maxlength": "",
+                                "permissionHidden": "",
+                                "placeholder": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.SelectBox",
+                            "properties": {
+                                "controlField": "",
+                                "id": "inspectionreportStatus",
+                                "label": "Inspection Status",
+                                "multiple": "",
+                                "options": [
+                                    {
+                                        "grouping": "",
+                                        "label": "Select",
+                                        "value": "select"
+                                    },
+                                    {
+                                        "grouping": "",
+                                        "label": "Partial Compliance",
+                                        "value": "Partial Compliance"
+                                    },
+                                    {
+                                        "grouping": "",
+                                        "label": "Full Compliance",
+                                        "value": "Full Compliance"
+                                    },
+                                    {
+                                        "grouping": "",
+                                        "label": "Other Non-Compliance",
+                                        "value": "Other Non-Compliance"
+                                    },
+                                    {
+                                        "grouping": "",
+                                        "label": "Fitout Non-Compliance",
+                                        "value": "Fitout Non-Compliance"
+                                    }
+                                ],
+                                "optionsBinder": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "permissionHidden": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "size": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "",
+                                "workflowVariable": "status"
+                            }
+                        }
+                    ],
+                    "properties": {"width": "32%"}
+                },
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "draw_review_name",
+                                "label": "Drawing / Document Reviewed By",
+                                "maxlength": "",
+                                "permissionHidden": "",
+                                "placeholder": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "drawing_review_date",
+                                "label": "Reviewed On",
+                                "maxlength": "",
+                                "permissionHidden": "",
+                                "placeholder": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "",
+                                "workflowVariable": ""
+                            }
+                        }
+                    ],
+                    "properties": {"width": "32%"}
                 }
             ],
             "properties": {
