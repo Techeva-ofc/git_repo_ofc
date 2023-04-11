@@ -224,28 +224,101 @@
             "className": "org.joget.apps.form.model.Section",
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
-                "elements": [{
-                    "className": "org.joget.apps.form.lib.SubForm",
-                    "properties": {
-                        "formDefId": "uploadDocumentByCustomer",
-                        "id": "field5",
-                        "label": "",
-                        "loadBinder": {
-                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                            "properties": {}
-                        },
-                        "noframe": "",
-                        "parentSubFormId": "",
-                        "permissionHidden": "",
-                        "readonly": "true",
-                        "readonlyLabel": "",
-                        "storeBinder": {
-                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                            "properties": {}
-                        },
-                        "subFormParentId": ""
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.SubForm",
+                        "properties": {
+                            "formDefId": "uploadDocumentByCustomer",
+                            "id": "field5",
+                            "label": "",
+                            "loadBinder": {
+                                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                                "properties": {}
+                            },
+                            "noframe": "",
+                            "parentSubFormId": "",
+                            "permissionHidden": "",
+                            "readonly": "true",
+                            "readonlyLabel": "",
+                            "storeBinder": {
+                                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                                "properties": {}
+                            },
+                            "subFormParentId": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.plugin.enterprise.AdvancedGrid",
+                        "properties": {
+                            "deleteMessage": "Delete row?",
+                            "disabledAdd": "true",
+                            "disabledDelete": "true",
+                            "errorMessage": "Invalid number of rows",
+                            "formDefId": "insp_report_subform",
+                            "hint": "Click to edit. Tab to save.",
+                            "id": "uploadelement",
+                            "keyToSave": "9",
+                            "label": "",
+                            "loadBinder": {
+                                "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                                "properties": {
+                                    "foreignKey": "report_referencekey",
+                                    "formDefId": "insp_report_subform"
+                                }
+                            },
+                            "options": [
+                                {
+                                    "formatType": "",
+                                    "label": "Document",
+                                    "readonly": "true",
+                                    "value": "checkpointName",
+                                    "width": ""
+                                },
+                                {
+                                    "formatType": "",
+                                    "label": "Remarks",
+                                    "readonly": "true",
+                                    "value": "report_remark_insp_checkpoint",
+                                    "width": ""
+                                },
+                                {
+                                    "formatType": "",
+                                    "label": "File Uploaded By Client",
+                                    "readonly": "true",
+                                    "value": "fileupload",
+                                    "width": ""
+                                },
+                                {
+                                    "formatType": "",
+                                    "label": "Status of Document",
+                                    "readonly": "",
+                                    "value": "docstatus",
+                                    "width": ""
+                                }
+                            ],
+                            "pagingOptions": "10,20,50,100",
+                            "readonly": "",
+                            "recordPerPage": "20",
+                            "search": "",
+                            "showRowNumber": "true",
+                            "sortIndx": "",
+                            "storeBinder": {
+                                "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                                "properties": {
+                                    "foreignKey": "report_referencekey",
+                                    "formDefId": "insp_report_subform"
+                                }
+                            },
+                            "uniqueKey": "",
+                            "validateMaxRow": "",
+                            "validateMinRow": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            }
+                        }
                     }
-                }],
+                ],
                 "properties": {"width": "100%"}
             }],
             "properties": {
@@ -415,7 +488,7 @@
             "className": "org.joget.apps.app.lib.DatabaseUpdateTool",
             "properties": {
                 "jdbcDatasource": "default",
-                "query": "UPDATE app_fd_ofc_serreqs_tab SET c_status = (CASE WHEN  c_draw_status = 'Compliance' THEN 'Compliance' ELSE 'Non-Compliance' END)  where id = '#requestParam.id#'\n "
+                "query": "UPDATE app_fd_ofc_serreqs_tab SET c_status = (CASE WHEN  c_draw_status = 'Compliance' THEN 'Drawing Compliance' ELSE 'Drawing Non-Compliance' END)  where id = '#requestParam.id#'\n "
             }
         },
         "postProcessorRunOn": "both",
