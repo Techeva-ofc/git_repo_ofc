@@ -30,6 +30,15 @@
                             }
                         },
                         {
+                            "className": "org.joget.apps.form.lib.CustomHTML",
+                            "properties": {
+                                "autoPopulate": "",
+                                "id": "link",
+                                "label": "DMCC SR No.",
+                                "value": "<div>\n     \n   <b> <span><a href=\"http://localhost:8080/jw/web/userview/ofc_app/v/_/serRequestView?_mode=view\" target=\"_blank\">#form.ofc_serReqs_tab.serReqDmccSrNo#<\/a>\n    <\/span>\n    <\/b>\n<\/div>"
+                            }
+                        },
+                        {
                             "className": "org.joget.apps.form.lib.TextField",
                             "properties": {
                                 "encryption": "",
