@@ -158,7 +158,7 @@
                                     "autoHandleFiles": "",
                                     "autoHandleWorkflowVariable": "true",
                                     "jdbcDatasource": "default",
-                                    "sql": "SELECT c_checkpointCode, c_checkpointName, c_ref_image,c_remark_insp_checkpoint, c_ref_img_noncompliance FROM app_fd_ofc_schdl_sub_tab WHERE c_status = 'no';\r\n"
+                                    "sql": "SELECT c_checkpointCode, c_checkpointName, c_ref_image,c_remark_insp_checkpoint, c_ref_img_noncompliance FROM app_fd_ofc_schdl_sub_tab \r\nWHERE c_status = 'no' and id ='#requestParam.id#';\r\n"
                                 }
                             },
                             "options": [
