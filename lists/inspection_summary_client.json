@@ -359,7 +359,7 @@
                         "field": "c_status",
                         "join": "OR",
                         "operator": "=",
-                        "value": "Non-Compliance"
+                        "value": "Drawing Non-Compliance"
                     },
                     {
                         "field": "c_inspectionreportStatus",
