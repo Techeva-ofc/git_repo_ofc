@@ -642,8 +642,8 @@
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "drawingupload",
-                "visibilityValue": ""
+                "visibilityControl": "#requestParam.status#",
+                "visibilityValue": "Paid Fee"
             }
         },
         {
@@ -738,8 +738,8 @@
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "drawingupload",
-                "visibilityValue": "drawinguploaded"
+                "visibilityControl": "#requestParam.status#",
+                "visibilityValue": "Drawing Non-Compliance"
             }
         },
         {
