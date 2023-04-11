@@ -6,28 +6,36 @@
             "className": "org.joget.apps.form.model.Column",
             "elements": [
                 {
-                    "className": "org.joget.apps.form.lib.TextField",
+                    "className": "org.joget.apps.form.lib.FileUpload",
                     "properties": {
-                        "encryption": "",
-                        "id": "docname",
-                        "label": "Document",
-                        "maxlength": "",
-                        "placeholder": "",
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "size": "",
-                        "storeNumeric": "",
-                        "style": "",
-                        "validator": {
-                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                        "attachment": "true",
+                        "fileType": "",
+                        "fileTypeMsg": "Invalid file type",
+                        "id": "customerDoc",
+                        "label": "Document upload by Customer",
+                        "maxSize": "",
+                        "maxSizeMsg": "File size limit exceeded",
+                        "multiple": "true",
+                        "padding": "",
+                        "permissionPlugin": {
+                            "className": "org.joget.apps.userview.lib.GroupPermission",
                             "properties": {
-                                "mandatory": "true",
-                                "message": "mandatory",
-                                "type": ""
+                                "allowedGroupIds": "G-009;G-010",
+                                "orgId": ""
                             }
                         },
-                        "value": "",
-                        "workflowVariable": ""
+                        "permissionType": "custom",
+                        "readonly": "",
+                        "removeFile": "",
+                        "resizeHeight": "",
+                        "resizeMethod": "",
+                        "resizeQuality": "0.8",
+                        "resizeWidth": "",
+                        "size": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        }
                     }
                 },
                 {
@@ -66,39 +74,6 @@
                         },
                         "value": "",
                         "workflowVariable": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.form.lib.FileUpload",
-                    "properties": {
-                        "attachment": "true",
-                        "fileType": "",
-                        "fileTypeMsg": "Invalid file type",
-                        "id": "customerDoc",
-                        "label": "Document upload by Customer",
-                        "maxSize": "",
-                        "maxSizeMsg": "File size limit exceeded",
-                        "multiple": "true",
-                        "padding": "",
-                        "permissionPlugin": {
-                            "className": "org.joget.apps.userview.lib.GroupPermission",
-                            "properties": {
-                                "allowedGroupIds": "G-009;G-010",
-                                "orgId": ""
-                            }
-                        },
-                        "permissionType": "custom",
-                        "readonly": "",
-                        "removeFile": "",
-                        "resizeHeight": "",
-                        "resizeMethod": "",
-                        "resizeQuality": "0.8",
-                        "resizeWidth": "",
-                        "size": "",
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        }
                     }
                 }
             ],
