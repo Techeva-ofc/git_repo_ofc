@@ -237,6 +237,103 @@
                     "className": "org.joget.plugin.enterprise.AdvancedGrid",
                     "properties": {
                         "deleteMessage": "Delete row?",
+                        "disabledAdd": "",
+                        "disabledDelete": "",
+                        "errorMessage": "Invalid number of rows",
+                        "formDefId": "inspectionSchedule_subform",
+                        "hint": "Click to edit. Tab to save.",
+                        "id": "insp_result_grid",
+                        "keyToSave": "9",
+                        "label": "",
+                        "loadBinder": {
+                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                            "properties": {
+                                "foreignKey": "referencekey",
+                                "formDefId": "inspectionSchedule_subform"
+                            }
+                        },
+                        "options": [
+                            {
+                                "formatType": "",
+                                "label": "Document",
+                                "readonly": "true",
+                                "value": "checkpointName",
+                                "width": ""
+                            },
+                            {
+                                "formatType": "",
+                                "label": "Comments",
+                                "readonly": "true",
+                                "value": "remark_insp_checkpoint",
+                                "width": ""
+                            },
+                            {
+                                "formatType": "",
+                                "label": "Reference",
+                                "readonly": "true",
+                                "value": "ref_image",
+                                "width": ""
+                            }
+                        ],
+                        "pagingOptions": "10,20,50,100",
+                        "readonly": "",
+                        "recordPerPage": "20",
+                        "search": "",
+                        "showRowNumber": "true",
+                        "sortIndx": "",
+                        "storeBinder": {
+                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                            "properties": {
+                                "foreignKey": "referencekey",
+                                "formDefId": "inspectionSchedule_subform"
+                            }
+                        },
+                        "uniqueKey": "",
+                        "validateMaxRow": "",
+                        "validateMinRow": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        }
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "section5",
+                "join": "",
+                "label": "Reported By Inspector",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "readonly": "true",
+                "readonlyLabel": "true",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.plugin.enterprise.AdvancedGrid",
+                    "properties": {
+                        "deleteMessage": "Delete row?",
                         "disabledAdd": "true",
                         "disabledDelete": "true",
                         "errorMessage": "Invalid number of rows",
@@ -400,81 +497,6 @@
                 },
                 "visibilityControl": "",
                 "visibilityValue": ""
-            }
-        },
-        {
-            "className": "org.joget.apps.form.model.Section",
-            "elements": [{
-                "className": "org.joget.apps.form.model.Column",
-                "elements": [{
-                    "className": "org.joget.plugin.enterprise.AdvancedGrid",
-                    "properties": {
-                        "deleteMessage": "Delete row?",
-                        "disabledAdd": "",
-                        "disabledDelete": "",
-                        "errorMessage": "Invalid number of rows",
-                        "formDefId": "inspectionSchedule_subform",
-                        "hint": "Click to edit. Tab to save.",
-                        "id": "insp_result_grid",
-                        "keyToSave": "9",
-                        "label": "Report By Inspector",
-                        "loadBinder": {
-                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
-                            "properties": {
-                                "foreignKey": "referencekey",
-                                "formDefId": "inspectionSchedule_subform"
-                            }
-                        },
-                        "options": [
-                            {
-                                "formatType": "",
-                                "label": "Document",
-                                "readonly": "true",
-                                "value": "checkpointName",
-                                "width": ""
-                            },
-                            {
-                                "formatType": "",
-                                "label": "Comments",
-                                "readonly": "true",
-                                "value": "remark_insp_checkpoint",
-                                "width": ""
-                            },
-                            {
-                                "formatType": "",
-                                "label": "Reference",
-                                "readonly": "true",
-                                "value": "ref_image",
-                                "width": ""
-                            }
-                        ],
-                        "pagingOptions": "10,20,50,100",
-                        "readonly": "",
-                        "recordPerPage": "20",
-                        "search": "",
-                        "showRowNumber": "true",
-                        "sortIndx": "",
-                        "storeBinder": {
-                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
-                            "properties": {
-                                "foreignKey": "referencekey",
-                                "formDefId": "inspectionSchedule_subform"
-                            }
-                        },
-                        "uniqueKey": "",
-                        "validateMaxRow": "",
-                        "validateMinRow": "",
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        }
-                    }
-                }],
-                "properties": {"width": "100%"}
-            }],
-            "properties": {
-                "id": "section5",
-                "label": "Section"
             }
         }
     ],
