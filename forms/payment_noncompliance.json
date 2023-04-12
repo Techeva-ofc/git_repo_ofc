@@ -70,7 +70,7 @@
                     {
                         "className": "org.joget.apps.form.lib.HiddenField",
                         "properties": {
-                            "id": "noncompliance_paymentdate",
+                            "id": "noncompliance_merchantno",
                             "useDefaultWhenEmpty": "",
                             "validator": {
                                 "className": "",
@@ -83,7 +83,7 @@
                     {
                         "className": "org.joget.apps.form.lib.HiddenField",
                         "properties": {
-                            "id": "noncompliance_merchantno",
+                            "id": "noncompliance_paymentdate",
                             "useDefaultWhenEmpty": "",
                             "validator": {
                                 "className": "",
