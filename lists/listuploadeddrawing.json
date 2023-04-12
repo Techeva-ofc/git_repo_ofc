@@ -38,16 +38,6 @@
                     "fieldId": "ofc_company_tab.companyName",
                     "joinFieldId": "ofc_serReqs_tab.companyName",
                     "tableName": "ofc_company_tab"
-                },
-                {
-                    "fieldId": "ofc_company_tab.companyName",
-                    "joinFieldId": "ofc_serReqs_tab.companyName",
-                    "tableName": "ofc_company_tab"
-                },
-                {
-                    "fieldId": "ofc_company_tab.companyName",
-                    "joinFieldId": "ofc_serReqs_tab.companyName",
-                    "tableName": "ofc_company_tab"
                 }
             ]
         }
