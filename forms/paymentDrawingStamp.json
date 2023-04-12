@@ -133,88 +133,77 @@
             "className": "org.joget.apps.form.model.Section",
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
-                "elements": [
-                    {
-                        "className": "org.joget.apps.form.lib.CustomHTML",
-                        "properties": {
-                            "autoPopulate": "",
-                            "id": "field9",
-                            "label": "",
-                            "value": "<style>\r\n/* Change the div ID to match the grid element ID that you are transforming for. */\r\ndiv#field1 table thead {\r\n    float: left;\r\n}\r\ndiv#field1 table tbody {\r\n    display: flex;\r\n}\r\ndiv#field1 table thead th {\r\n    display: block;  \r\n}\r\ndiv#field1 table tbody td {\r\n    display: block;\r\n    clear: none;\r\n}\r\ndiv#field1 table tbody td .tablesaw-cell-label {\r\n    display: none;\r\n}\r\n<\/style>"
-                        }
-                    },
-                    {
-                        "className": "org.joget.plugin.enterprise.AdvancedGrid",
-                        "properties": {
-                            "deleteMessage": "Delete row?",
-                            "disabledAdd": "true",
-                            "disabledDelete": "true",
-                            "errorMessage": "Invalid number of rows",
-                            "formDefId": "insp_report_subform",
-                            "hint": "Click to edit. Tab to save.",
-                            "id": "uploadelement",
-                            "keyToSave": "9",
-                            "label": "",
-                            "loadBinder": {
-                                "className": "org.joget.plugin.enterprise.MultirowFormBinder",
-                                "properties": {
-                                    "foreignKey": "report_referencekey",
-                                    "formDefId": "insp_report_subform"
-                                }
-                            },
-                            "options": [
-                                {
-                                    "formatType": "",
-                                    "label": "Document",
-                                    "readonly": "true",
-                                    "value": "checkpointName",
-                                    "width": ""
-                                },
-                                {
-                                    "formatType": "",
-                                    "label": "File Uploaded",
-                                    "readonly": "true",
-                                    "value": "newfile",
-                                    "width": ""
-                                },
-                                {
-                                    "formatType": "",
-                                    "label": "Status",
-                                    "readonly": "true",
-                                    "value": "docstatus",
-                                    "width": ""
-                                },
-                                {
-                                    "formatType": "",
-                                    "label": "Remarks",
-                                    "readonly": "true",
-                                    "value": "remarks",
-                                    "width": ""
-                                }
-                            ],
-                            "pagingOptions": "10,20,50,100",
-                            "readonly": "",
-                            "recordPerPage": "20",
-                            "search": "",
-                            "showRowNumber": "true",
-                            "sortIndx": "",
-                            "storeBinder": {
-                                "className": "org.joget.plugin.enterprise.MultirowFormBinder",
-                                "properties": {
-                                    "foreignKey": "report_referencekey",
-                                    "formDefId": "insp_report_subform"
-                                }
-                            },
-                            "uniqueKey": "",
-                            "validateMaxRow": "",
-                            "validateMinRow": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
+                "elements": [{
+                    "className": "org.joget.plugin.enterprise.AdvancedGrid",
+                    "properties": {
+                        "deleteMessage": "Delete row?",
+                        "disabledAdd": "true",
+                        "disabledDelete": "true",
+                        "errorMessage": "Invalid number of rows",
+                        "formDefId": "insp_report_subform",
+                        "hint": "Click to edit. Tab to save.",
+                        "id": "uploadelement",
+                        "keyToSave": "9",
+                        "label": "",
+                        "loadBinder": {
+                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                            "properties": {
+                                "foreignKey": "report_referencekey",
+                                "formDefId": "insp_report_subform"
                             }
+                        },
+                        "options": [
+                            {
+                                "formatType": "",
+                                "label": "Document",
+                                "readonly": "true",
+                                "value": "checkpointName",
+                                "width": ""
+                            },
+                            {
+                                "formatType": "",
+                                "label": "File Uploaded",
+                                "readonly": "true",
+                                "value": "newfile",
+                                "width": ""
+                            },
+                            {
+                                "formatType": "",
+                                "label": "Status",
+                                "readonly": "true",
+                                "value": "docstatus",
+                                "width": ""
+                            },
+                            {
+                                "formatType": "",
+                                "label": "Remarks",
+                                "readonly": "true",
+                                "value": "remarks",
+                                "width": ""
+                            }
+                        ],
+                        "pagingOptions": "10,20,50,100",
+                        "readonly": "",
+                        "recordPerPage": "20",
+                        "search": "",
+                        "showRowNumber": "true",
+                        "sortIndx": "",
+                        "storeBinder": {
+                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                            "properties": {
+                                "foreignKey": "report_referencekey",
+                                "formDefId": "insp_report_subform"
+                            }
+                        },
+                        "uniqueKey": "",
+                        "validateMaxRow": "",
+                        "validateMinRow": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
                         }
                     }
-                ],
+                }],
                 "properties": {"width": "100%"}
             }],
             "properties": {
@@ -334,9 +323,25 @@
     "properties": {
         "description": "",
         "id": "paymentDrawingStamp",
-        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "name": "Payment - Drawing Stamping",
-        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "tableName": "ofc_serReqs_tab"
     }
 }
