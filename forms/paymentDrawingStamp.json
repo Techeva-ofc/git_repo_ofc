@@ -234,7 +234,7 @@
                                 "className": "",
                                 "properties": {}
                             },
-                            "value": "#requestParam.amendfee#  in AED",
+                            "value": "#requestParam.fee#  in AED",
                             "workflowVariable": ""
                         }
                     },
