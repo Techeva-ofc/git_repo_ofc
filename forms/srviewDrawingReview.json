@@ -409,7 +409,7 @@
                 "join": "or;or",
                 "label": "Evaluate Document / Drawing",
                 "loadBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
                 "permission": {
@@ -422,7 +422,7 @@
                 "regex": ";",
                 "reverse": "true;true",
                 "storeBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
                 "visibilityControl": "#requestParam.reviewstatus#;#requestParam.reviewstatus#",
@@ -519,7 +519,7 @@
                 "join": "or;or",
                 "label": "Evaluate Document / Drawing",
                 "loadBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
                 "permission": {
@@ -532,7 +532,7 @@
                 "regex": ";",
                 "reverse": ";",
                 "storeBinder": {
-                    "className": "",
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
                 "visibilityControl": "#requestParam.reviewstatus#;#requestParam.reviewstatus#",
