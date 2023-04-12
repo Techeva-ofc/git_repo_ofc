@@ -351,15 +351,9 @@
                 "rules": [
                     {
                         "field": "c_status",
-                        "join": "OR",
+                        "join": "AND",
                         "operator": "=",
                         "value": "Paid Fee"
-                    },
-                    {
-                        "field": "c_status",
-                        "join": "OR",
-                        "operator": "=",
-                        "value": "Drawing Non-Compliance"
                     },
                     {
                         "field": "c_inspectionreportStatus",
@@ -460,6 +454,37 @@
                     }
                 ],
                 "target": "popup"
+            },
+            "type": "text"
+        },
+        {
+            "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+            "icon": "<i class=\"fas fa-link\"><\/i>",
+            "id": "rowAction_1",
+            "label": "Hyperlink",
+            "name": "Data List Hyperlink Action",
+            "properties": {
+                "confirmation": "",
+                "datalist_type": "row_action",
+                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/srDrawing",
+                "hrefColumn": "id;c_status",
+                "hrefParam": "id;status",
+                "label": "Upload Drawing(s)",
+                "rules": [
+                    {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Drawing Non-Compliance"
+                    },
+                    {
+                        "field": "c_inspectionreportStatus",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Fitout Non-Compliance"
+                    }
+                ],
+                "target": "_self"
             },
             "type": "text"
         }
