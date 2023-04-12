@@ -327,7 +327,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "Payment - Drawing Stamping",
+        "name": "Payment - OFC Amendment",
         "noPermissionMessage": "",
         "permission": {
             "className": "",
