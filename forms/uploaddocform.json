@@ -567,12 +567,10 @@
                         "keyToSave": "9",
                         "label": "",
                         "loadBinder": {
-                            "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
+                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
                             "properties": {
-                                "autoHandleFiles": "",
-                                "autoHandleWorkflowVariable": "true",
-                                "jdbcDatasource": "default",
-                                "sql": "SELECT c_checkpointName, c_remark_insp_checkpoint, c_fileupload\nFROM app_fd_ofc_schdl_sub_tab WHERE c_status = 'no' and id = '#requestParam.id#';"
+                                "foreignKey": "report_referencekey",
+                                "formDefId": "insp_report_subform"
                             }
                         },
                         "options": [
@@ -580,21 +578,21 @@
                                 "formatType": "",
                                 "label": "Document",
                                 "readonly": "true",
-                                "value": "checkpointName",
+                                "value": "review_checkpointName",
                                 "width": ""
                             },
                             {
                                 "formatType": "",
                                 "label": "Remarks",
                                 "readonly": "true",
-                                "value": "remark_insp_checkpoint",
+                                "value": "review_remarks",
                                 "width": ""
                             },
                             {
                                 "formatType": "",
                                 "label": "Upload File",
                                 "readonly": "",
-                                "value": "fileupload",
+                                "value": "review_fileupload",
                                 "width": ""
                             }
                         ],
