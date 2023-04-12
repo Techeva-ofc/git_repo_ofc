@@ -406,7 +406,7 @@
             "properties": {
                 "comment": "",
                 "id": "section4",
-                "join": ";",
+                "join": "",
                 "label": "Evaluate Document / Drawing",
                 "loadBinder": {
                     "className": "",
@@ -419,14 +419,14 @@
                 "permissionReadonly": "",
                 "readonly": "",
                 "readonlyLabel": "",
-                "regex": ";",
-                "reverse": "true;true",
+                "regex": "",
+                "reverse": "",
                 "storeBinder": {
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "#requestParam.reviewstatus#;#requestParam.reviewstatus#",
-                "visibilityValue": "Compliance;Non-Compliance"
+                "visibilityControl": "#requestParam.reviewstatus#",
+                "visibilityValue": ""
             }
         },
         {
