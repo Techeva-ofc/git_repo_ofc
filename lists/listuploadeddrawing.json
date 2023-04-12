@@ -21,6 +21,22 @@
     "checkboxPosition": "left",
     "columns": [
         {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_1",
+            "label": "Date Modified",
+            "name": "dateModified",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_4",
+            "label": "Created By Name",
+            "name": "createdByName",
+            "sortable": "false"
+        },
+        {
             "action": {
                 "className": "",
                 "properties": {}
