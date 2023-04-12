@@ -179,6 +179,14 @@
             "label": "Remarks",
             "name": "remarks",
             "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_2",
+            "label": "Status",
+            "name": "docstatus",
+            "sortable": "false"
         }
     ],
     "considerFilterWhenGetTotal": "",
