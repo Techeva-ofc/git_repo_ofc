@@ -26,6 +26,14 @@
     "checkboxPosition": "left",
     "columns": [
         {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_2",
+            "label": "ofc_serReqs_tab.daterecorded",
+            "name": "ofc_serReqs_tab.daterecorded",
+            "sortable": "false"
+        },
+        {
             "action": {
                 "className": "",
                 "properties": {}
