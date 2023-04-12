@@ -34,6 +34,14 @@
             "sortable": "false"
         },
         {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_3",
+            "label": "ofc_serReqs_tab.dateofupload",
+            "name": "ofc_serReqs_tab.dateofupload",
+            "sortable": "false"
+        },
+        {
             "action": {
                 "className": "",
                 "properties": {}
