@@ -494,7 +494,7 @@
                 "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/paymentamendment",
                 "hrefColumn": "id;c_status;c_inspectionreportStatus;",
                 "hrefParam": "id;srstatus;inspstatus;fee",
-                "label": "Payment",
+                "label": "OFC Amendment Payment",
                 "rules": [{
                     "field": "c_status",
                     "join": "OR",
