@@ -6,18 +6,13 @@
             "aggregateField": [],
             "customSelectionValue": "",
             "extraCondition": "",
-            "filters": [{
-                "field": "customerDoc",
-                "join": "AND",
-                "operator": "IS NOT NULL",
-                "value": ""
-            }],
-            "formDefId": "uploadDocumentByCustomer",
+            "filters": [],
+            "formDefId": "insp_report_subform",
             "functionColumns": [],
             "groupBy": "",
             "joins": [{
                 "fieldId": "ofc_serReqs_tab.id",
-                "joinFieldId": "id",
+                "joinFieldId": "report_referencekey",
                 "tableName": "ofc_serReqs_tab"
             }]
         }
@@ -25,22 +20,6 @@
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
     "columns": [
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_2",
-            "label": "ofc_serReqs_tab.daterecorded",
-            "name": "ofc_serReqs_tab.daterecorded",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_3",
-            "label": "ofc_serReqs_tab.dateofupload",
-            "name": "ofc_serReqs_tab.dateofupload",
-            "sortable": "false"
-        },
         {
             "action": {
                 "className": "",
@@ -66,9 +45,17 @@
         {
             "filterable": true,
             "hidden": "false",
-            "id": "column_1",
-            "label": "Document upload by Customer",
-            "name": "customerDoc",
+            "id": "column_2",
+            "label": "File Upload",
+            "name": "fileupload",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_3",
+            "label": "New File Upload",
+            "name": "newfile",
             "sortable": "false"
         }
     ],
