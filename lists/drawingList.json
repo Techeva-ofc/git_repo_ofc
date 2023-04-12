@@ -164,8 +164,8 @@
             "confirmation": "",
             "datalist_type": "row_action",
             "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/reviewDrawing",
-            "hrefColumn": "id",
-            "hrefParam": "id",
+            "hrefColumn": "id;c_status;c_draw_status",
+            "hrefParam": "id;status;reviewstatus",
             "label": "Review Drawing",
             "rules": [{
                 "field": "c_status",
