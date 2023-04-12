@@ -165,7 +165,7 @@
                             "collapsibleExpanded": "true",
                             "collapsibleLabelCollapsed": "View Details",
                             "collapsibleLabelExpanded": "Hide Details",
-                            "formDefId": "insp_viewgrid",
+                            "formDefId": "inspe_viewgrid",
                             "hideEmpty": "",
                             "id": "field20",
                             "label": "",
