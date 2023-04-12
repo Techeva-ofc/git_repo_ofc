@@ -354,21 +354,21 @@
                                 "formatType": "",
                                 "label": "Document",
                                 "readonly": "true",
-                                "value": "review_checkpointName",
+                                "value": "checkpointName",
                                 "width": ""
                             },
                             {
                                 "formatType": "",
                                 "label": "File Uploaded By Client",
                                 "readonly": "true",
-                                "value": "review_fileupload",
+                                "value": "fileupload",
                                 "width": ""
                             },
                             {
                                 "formatType": "",
                                 "label": "Remarks",
                                 "readonly": "",
-                                "value": "review_remarks",
+                                "value": "remarks",
                                 "width": ""
                             },
                             {
