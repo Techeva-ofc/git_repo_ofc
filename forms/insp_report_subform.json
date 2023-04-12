@@ -10,7 +10,7 @@
                         "className": "org.joget.apps.form.lib.TextField",
                         "properties": {
                             "encryption": "",
-                            "id": "review_checkpointName",
+                            "id": "checkpointName",
                             "label": "Checkpoint Name",
                             "maxlength": "",
                             "placeholder": "",
@@ -31,7 +31,7 @@
                         "className": "org.joget.apps.form.lib.TextField",
                         "properties": {
                             "encryption": "",
-                            "id": "review_remarks",
+                            "id": "remarks",
                             "label": "Remarks",
                             "maxlength": "",
                             "placeholder": "",
@@ -54,7 +54,7 @@
                             "attachment": "true",
                             "fileType": "",
                             "fileTypeMsg": "Invalid file type",
-                            "id": "review_fileupload",
+                            "id": "fileupload",
                             "label": "File Upload",
                             "maxSize": "",
                             "maxSizeMsg": "File size limit exceeded",
