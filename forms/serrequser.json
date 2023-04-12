@@ -572,7 +572,7 @@
                                 "autoHandleFiles": "",
                                 "autoHandleWorkflowVariable": "true",
                                 "jdbcDatasource": "default",
-                                "sql": "SELECT c_checkpointName, c_remark_insp_checkpoint, c_fileupload\nFROM app_fd_ofc_schdl_sub_tab WHERE c_status = 'no' and id = '#requestParam.id#';"
+                                "sql": "SELECT c_checkpointName, c_remark_insp_checkpoint, c_fileupload\nFROM app_fd_ofc_schdl_sub_tab WHERE c_referencekey = '#requestParam.id#' and c_status = 'no' "
                             }
                         },
                         "options": [
