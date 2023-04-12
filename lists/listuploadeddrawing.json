@@ -23,11 +23,18 @@
             "formDefId": "insp_report_subform",
             "functionColumns": [],
             "groupBy": "",
-            "joins": [{
-                "fieldId": "ofc_serReqs_tab.id",
-                "joinFieldId": "report_referencekey",
-                "tableName": "ofc_serReqs_tab"
-            }]
+            "joins": [
+                {
+                    "fieldId": "ofc_serReqs_tab.id",
+                    "joinFieldId": "report_referencekey",
+                    "tableName": "ofc_serReqs_tab"
+                },
+                {
+                    "fieldId": "ofc_company_tab.companyName",
+                    "joinFieldId": "ofc_serReqs_tab.companyName",
+                    "tableName": "ofc_company_tab"
+                }
+            ]
         }
     },
     "buttonPosition": "bottomLeft",
