@@ -433,116 +433,6 @@
             "className": "org.joget.apps.form.model.Section",
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
-                "elements": [{
-                    "className": "org.joget.plugin.enterprise.AdvancedGrid",
-                    "properties": {
-                        "deleteMessage": "Delete row?",
-                        "disabledAdd": "true",
-                        "disabledDelete": "true",
-                        "errorMessage": "Invalid number of rows",
-                        "formDefId": "insp_report_subform",
-                        "hint": "Click to edit. Tab to save.",
-                        "id": "uploadelement",
-                        "keyToSave": "9",
-                        "label": "",
-                        "loadBinder": {
-                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
-                            "properties": {
-                                "foreignKey": "report_referencekey",
-                                "formDefId": "insp_report_subform"
-                            }
-                        },
-                        "options": [
-                            {
-                                "formatType": "",
-                                "label": "Document",
-                                "readonly": "true",
-                                "value": "checkpointName",
-                                "width": ""
-                            },
-                            {
-                                "formatType": "",
-                                "label": "Reference File",
-                                "readonly": "true",
-                                "value": "fileupload",
-                                "width": ""
-                            },
-                            {
-                                "formatType": "",
-                                "label": "File Uploaded By client",
-                                "readonly": "",
-                                "value": "newfile",
-                                "width": ""
-                            },
-                            {
-                                "formatType": "",
-                                "label": "Status of Document",
-                                "readonly": "",
-                                "value": "docstatus",
-                                "width": ""
-                            },
-                            {
-                                "formatType": "",
-                                "label": "Remarks",
-                                "readonly": "",
-                                "value": "remarks",
-                                "width": ""
-                            }
-                        ],
-                        "pagingOptions": "10,20,50,100",
-                        "readonly": "",
-                        "recordPerPage": "20",
-                        "search": "",
-                        "showRowNumber": "true",
-                        "sortIndx": "",
-                        "storeBinder": {
-                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
-                            "properties": {
-                                "foreignKey": "report_referencekey",
-                                "formDefId": "insp_report_subform"
-                            }
-                        },
-                        "uniqueKey": "",
-                        "validateMaxRow": "",
-                        "validateMinRow": "",
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        }
-                    }
-                }],
-                "properties": {"width": "100%"}
-            }],
-            "properties": {
-                "comment": "",
-                "id": "historygrid",
-                "join": ";",
-                "label": "Evaluate Document / Drawing",
-                "loadBinder": {
-                    "className": "",
-                    "properties": {}
-                },
-                "permission": {
-                    "className": "",
-                    "properties": {}
-                },
-                "permissionReadonly": "",
-                "readonly": "",
-                "readonlyLabel": "",
-                "regex": ";",
-                "reverse": ";",
-                "storeBinder": {
-                    "className": "",
-                    "properties": {}
-                },
-                "visibilityControl": "#requestParam.reviewstatus#;#requestParam.reviewstatus#",
-                "visibilityValue": "Compliance;Non-Compliance"
-            }
-        },
-        {
-            "className": "org.joget.apps.form.model.Section",
-            "elements": [{
-                "className": "org.joget.apps.form.model.Column",
                 "elements": [
                     {
                         "className": "org.joget.apps.form.lib.SelectBox",
@@ -630,6 +520,116 @@
                 },
                 "visibilityControl": "",
                 "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.plugin.enterprise.AdvancedGrid",
+                    "properties": {
+                        "deleteMessage": "Delete row?",
+                        "disabledAdd": "true",
+                        "disabledDelete": "true",
+                        "errorMessage": "Invalid number of rows",
+                        "formDefId": "insp_report_subform",
+                        "hint": "Click to edit. Tab to save.",
+                        "id": "uploadelement",
+                        "keyToSave": "9",
+                        "label": "",
+                        "loadBinder": {
+                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                            "properties": {
+                                "foreignKey": "report_referencekey",
+                                "formDefId": "insp_report_subform"
+                            }
+                        },
+                        "options": [
+                            {
+                                "formatType": "",
+                                "label": "Document",
+                                "readonly": "true",
+                                "value": "checkpointName",
+                                "width": ""
+                            },
+                            {
+                                "formatType": "",
+                                "label": "Reference File",
+                                "readonly": "true",
+                                "value": "fileupload",
+                                "width": ""
+                            },
+                            {
+                                "formatType": "",
+                                "label": "File Uploaded By client",
+                                "readonly": "",
+                                "value": "newfile",
+                                "width": ""
+                            },
+                            {
+                                "formatType": "",
+                                "label": "Status of Document",
+                                "readonly": "",
+                                "value": "docstatus",
+                                "width": ""
+                            },
+                            {
+                                "formatType": "",
+                                "label": "Remarks",
+                                "readonly": "",
+                                "value": "remarks",
+                                "width": ""
+                            }
+                        ],
+                        "pagingOptions": "10,20,50,100",
+                        "readonly": "",
+                        "recordPerPage": "20",
+                        "search": "",
+                        "showRowNumber": "true",
+                        "sortIndx": "",
+                        "storeBinder": {
+                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                            "properties": {
+                                "foreignKey": "report_referencekey",
+                                "formDefId": "insp_report_subform"
+                            }
+                        },
+                        "uniqueKey": "",
+                        "validateMaxRow": "",
+                        "validateMinRow": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        }
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "section7",
+                "join": "or;or",
+                "label": "Evaluate Document / Drawing",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": ";",
+                "reverse": ";",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "#requestParam.reviewstatus#;#requestParam.reviewstatus#",
+                "visibilityValue": "Compliance;Non-Compliance"
             }
         }
     ],
