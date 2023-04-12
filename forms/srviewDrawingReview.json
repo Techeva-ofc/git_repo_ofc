@@ -515,8 +515,8 @@
             }],
             "properties": {
                 "comment": "",
-                "id": "section4_1",
-                "join": "",
+                "id": "historygrid",
+                "join": ";",
                 "label": "Evaluate Document / Drawing",
                 "loadBinder": {
                     "className": "",
@@ -529,14 +529,14 @@
                 "permissionReadonly": "",
                 "readonly": "",
                 "readonlyLabel": "",
-                "regex": "",
-                "reverse": "",
+                "regex": ";",
+                "reverse": ";",
                 "storeBinder": {
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "",
-                "visibilityValue": ""
+                "visibilityControl": "draw_status;draw_status",
+                "visibilityValue": "Compliance;Non-Compliance"
             }
         },
         {
