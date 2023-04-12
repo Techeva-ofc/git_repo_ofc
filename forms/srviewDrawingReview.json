@@ -425,8 +425,8 @@
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "#requestParam.reviewstatus#",
-                "visibilityValue": ""
+                "visibilityControl": "#requestParam.status#",
+                "visibilityValue": "Paid Fee"
             }
         },
         {
