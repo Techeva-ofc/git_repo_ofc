@@ -425,7 +425,7 @@
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "draw_status;draw_status",
+                "visibilityControl": "#requestParam.reviewstatus#;#requestParam.reviewstatus#",
                 "visibilityValue": "Compliance;Non-Compliance"
             }
         },
@@ -535,7 +535,7 @@
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "draw_status;draw_status",
+                "visibilityControl": "#requestParam.reviewstatus#;#requestParam.reviewstatus#",
                 "visibilityValue": "Compliance;Non-Compliance"
             }
         },
