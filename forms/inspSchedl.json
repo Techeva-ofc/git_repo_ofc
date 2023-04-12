@@ -34,11 +34,11 @@
                         "className": "org.joget.apps.form.lib.DatePicker",
                         "properties": {
                             "allowManual": "true",
-                            "currentDateAs": "",
+                            "currentDateAs": "minDate",
                             "dataFormat": "yyyy-MM-dd",
                             "datePickerType": "dateTime",
                             "endDateFieldId": "",
-                            "format": "",
+                            "format": "dd-MM-yyyy",
                             "format24hr": "",
                             "id": "inspSchedlDate",
                             "label": "Inspection Date",
