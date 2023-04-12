@@ -84,6 +84,6 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "tableName": "ofc_serReqs_tab"
+        "tableName": "payment_redirect_tab"
     }
 }
