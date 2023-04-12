@@ -167,6 +167,6 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "tableName": "ofc_reviewdrawing"
+        "tableName": "ofc_schdl_sub_tab"
     }
 }
