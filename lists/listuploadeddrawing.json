@@ -6,7 +6,20 @@
             "aggregateField": [],
             "customSelectionValue": "",
             "extraCondition": "",
-            "filters": [],
+            "filters": [
+                {
+                    "field": "ofc_serReqs_tab.status",
+                    "join": "AND",
+                    "operator": "=",
+                    "value": "Drawing Compliance"
+                },
+                {
+                    "field": "ofc_serReqs_tab.inspectionreportStatus",
+                    "join": "AND",
+                    "operator": "=",
+                    "value": "Fitout Non-Compliance"
+                }
+            ],
             "formDefId": "insp_report_subform",
             "functionColumns": [],
             "groupBy": "",
@@ -20,30 +33,6 @@
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
     "columns": [
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_1",
-            "label": "Date Modified",
-            "name": "dateModified",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_4",
-            "label": "Created By Name",
-            "name": "createdByName",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_5",
-            "label": "Modified By Name",
-            "name": "modifiedByName",
-            "sortable": "false"
-        },
         {
             "action": {
                 "className": "",
@@ -67,20 +56,114 @@
             "width": ""
         },
         {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
             "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
             "hidden": "false",
-            "id": "column_2",
-            "label": "File Upload",
-            "name": "fileupload",
-            "sortable": "false"
+            "id": "column_7",
+            "label": "Company",
+            "name": "ofc_serReqs_tab.companyName",
+            "sortable": "false",
+            "style": "",
+            "width": ""
         },
         {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
             "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_4",
+            "label": "Client Name",
+            "name": "createdByName",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_1",
+            "label": "Compliance Date",
+            "name": "dateModified",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_5",
+            "label": "Drawing Reviewer",
+            "name": "modifiedByName",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
             "hidden": "false",
             "id": "column_3",
-            "label": "New File Upload",
+            "label": "Drawing Uploaded",
             "name": "newfile",
-            "sortable": "false"
+            "sortable": "false",
+            "style": "",
+            "width": ""
         },
         {
             "filterable": true,
@@ -88,14 +171,6 @@
             "id": "column_6",
             "label": "Remarks",
             "name": "remarks",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_7",
-            "label": "Status",
-            "name": "docstatus",
             "sortable": "false"
         }
     ],
