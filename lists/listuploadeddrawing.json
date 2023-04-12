@@ -151,6 +151,14 @@
             "width": ""
         },
         {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_7",
+            "label": "File Upload",
+            "name": "fileupload",
+            "sortable": "false"
+        },
+        {
             "action": {
                 "className": "",
                 "properties": {}
