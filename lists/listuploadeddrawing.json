@@ -37,6 +37,14 @@
             "sortable": "false"
         },
         {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_5",
+            "label": "Modified By Name",
+            "name": "modifiedByName",
+            "sortable": "false"
+        },
+        {
             "action": {
                 "className": "",
                 "properties": {}
@@ -72,6 +80,22 @@
             "id": "column_3",
             "label": "New File Upload",
             "name": "newfile",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_6",
+            "label": "Remarks",
+            "name": "remarks",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_7",
+            "label": "Status",
+            "name": "docstatus",
             "sortable": "false"
         }
     ],
