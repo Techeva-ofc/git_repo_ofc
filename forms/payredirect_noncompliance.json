@@ -1,0 +1,89 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [{
+        "className": "org.joget.apps.form.model.Section",
+        "elements": [{
+            "className": "org.joget.apps.form.model.Column",
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "id": "orderReferenceIdField",
+                        "useDefaultWhenEmpty": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "#requestParam.ref#",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
+                        "autoPopulate": "",
+                        "id": "message",
+                        "label": "",
+                        "value": "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n<style>\r\n.alert {\r\n  padding: 20px;\r\n  background-color: #f44336;\r\n  color: white;\r\n  opacity: 1;\r\n  transition: opacity 0.6s;\r\n  margin-bottom: 15px;\r\n}\r\n\r\n.alert.success {background-color: #04AA6D;}\r\n.alert.info {background-color: #2196F3;}\r\n.alert.warning {background-color: #ff9800;}\r\n\r\n.closebtn {\r\n  margin-left: 15px;\r\n  color: white;\r\n  font-weight: bold;\r\n  float: right;\r\n  font-size: 22px;\r\n  line-height: 20px;\r\n  cursor: pointer;\r\n  transition: 0.3s;\r\n}\r\n\r\n.closebtn:hover {\r\n  color: black;\r\n}\r\n<\/style>\r\n<\/head>\r\n<body>\r\n\r\n<!--<h2>Alert Messages<\/h2>-->\r\n<!--<p>Click on the \"x\" symbol to close the alert message.<\/p>-->\r\n<!--<div class=\"alert\">\r\n  <span class=\"closebtn\">&times;<\/span>  \r\n  <strong><h1> <h1> Danger!<\/h1><\/h1><\/strong> Indicates a dangerous or potentially negative action.\r\n<\/div>-->\r\n\r\n<div class=\"alert success\">\r\n  <span class=\"closebtn\">&times;<\/span>  \r\n  <strong><h1><h1>Success!<\/h1><\/stro<h1><h1> Thankyou Payment successfully  Completed.<\/h1><\/h1>.\r\n<\/div>\r\n\r\n<!--<div class=\"alert info\">\r\n  <span class=\"closebtn\">&times;<\/span>  \r\n  <strong>Info!<\/strong> Indicates a neutral informative change or action.\r\n<\/div>-->\r\n\r\n<!--<div class=\"alert warning\">\r\n  <span class=\"closebtn\">&times;<\/span>  \r\n  <strong>Warning!<\/strong> Indicates a warning that might need attention.\r\n<\/div>-->\r\n\r\n<script>\r\nvar close = document.getElementsByClassName(\"closebtn\");\r\nvar i;\r\n\r\nfor (i = 0; i < close.length; i++) {\r\n  close[i].onclick = function(){\r\n    var div = this.parentElement;\r\n    div.style.opacity = \"0\";\r\n    setTimeout(function(){ div.style.display = \"none\"; }, 600);\r\n  }\r\n}\r\n<\/script>\r\n\r\n<\/body>\r\n<\/html>"
+                    }
+                }
+            ],
+            "properties": {"width": "100%"}
+        }],
+        "properties": {
+            "comment": "",
+            "id": "paymentRedirectPage",
+            "join": "",
+            "label": "Payment Redirect Form",
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "permissionReadonly": "",
+            "readonly": "",
+            "readonlyLabel": "",
+            "regex": "",
+            "reverse": "",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "visibilityControl": "",
+            "visibilityValue": ""
+        }
+    }],
+    "properties": {
+        "description": "",
+        "id": "payredirect_noncompliance",
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.BeanShellFormBinder",
+            "properties": {
+                "autoHandleFiles": "",
+                "autoHandleWorkflowVariable": "true",
+                "cacheInterval": "",
+                "script": "import java.io.IOException;\r\nimport java.sql.*;\r\nimport java.sql.Connection;\r\nimport java.sql.PreparedStatement;\r\nimport java.sql.ResultSet;\r\nimport java.sql.SQLException;\r\nimport org.apache.http.HttpResponse;\r\nimport org.apache.http.client.HttpClient;\r\nimport org.apache.http.client.methods.HttpGet;\r\nimport org.apache.http.impl.client.HttpClients;\r\nimport org.apache.http.util.EntityUtils;\r\nimport org.json.JSONObject;\r\nimport java.text.SimpleDateFormat;\r\nimport java.util.Date;\r\n\r\n// here we are update the order status\r\n\tpublic updateOrderStatus(String orderStaus, String orderReference) {\r\n\r\n\t\ttry {\r\n\r\n\t\t\tSimpleDateFormat formatter = new SimpleDateFormat(\"dd-MM-yyyy\");\r\n\t\t\tDate date = new Date();\r\n\t\t//\tSystem.out.println(\"Date=================\");\r\n\t\t    String paymentDate = formatter.format(date).toString();\r\n\t\t\t//System.out.println(paymentDate);\r\n\r\n\t\t\tClass.forName(\"com.mysql.jdbc.Driver\").newInstance();\r\n\t\t\tConnection con = DriverManager.getConnection(\"jdbc:mysql://localhost:3307/jwdb?characterEncoding=UTF-8\",\r\n\t\t\t\t\t\"root\", \"\");\r\n\t\t\tif (!con.isClosed()) {\r\n\r\n\t\t\t\tString paymentComplete = \"Paid Fee\";\r\n\t\t\t\tString paymentPending = \"Payment Pending\";\r\n\r\n\t\t\t\t// create the java mysql update PreparedStatement c_bearer_access_token\r\n\t\t\t\tString query = \"update app_fd_ofc_serreqs_tab set c_status = ?, c_noncompliance_paymentdate = ? where c_noncompliance_paymentrefno  = ?\";\r\n\t\t\t\tPreparedStatement preparedStmt = con.prepareStatement(query);\r\n\r\n\t\t\t\tif (orderStaus.equalsIgnoreCase(\"PURCHASED\")) {\r\n\t\t\t\t\t//System.out.println(\"Order success PURCHASED============\");\r\n\t\t\t\t\tpreparedStmt.setString(1, paymentComplete);\r\n\t\t\t\t} else {\r\n\t\t\t\t\t//System.out.println(\"Order success Pending============\");\r\n\t\t\t\t\tpreparedStmt.setString(1, paymentPending);\r\n\t\t\t\t}\r\n\t\t\t\tpreparedStmt.setString(2, paymentDate);\r\n\t\t\t\tpreparedStmt.setString(3, orderReference);\r\n\t\t\t\t// execute the java PreparedStatement\r\n\t\t\t\tpreparedStmt.executeUpdate();\r\n\r\n\t\t\t\tcon.close();\r\n\t\t\t} else {\r\n\t\t\t\tSystem.out.println(\"Connection Problem\");\r\n\t\t\t}\r\n\t\t} catch (Exception ex) {\r\n\t\t\tex.printStackTrace();\r\n\r\n\t\t} finally {\r\n\r\n\t\t\tString redirectUrl = \"http://localhost:8080/jw/web/userview/ofc_app/v/_/serReqForm_crud1\";\r\n\r\n\t\t\ttry {\r\n\t\t\t\tjava.awt.Desktop.getDesktop().browse(java.net.URI.create(redirectUrl));\r\n\t\t\t} catch (IOException e) {\r\n\t\t\t\t// TODO Auto-generated catch block\r\n\t\t\t\te.printStackTrace();\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n\r\n\t// Here we are creating request for order status retrive API\r\n\tpublic  getOrderStatus(String orderReference, String access_token) {\r\n\r\n\t\tString outletId = \"a2c3b529-68c7-44eb-8a2a-3aeb12d83ae6/orders\";\r\n\t\tString orderStausUrl = \"https://api-gateway.sandbox.ngenius-payments.com/transactions/outlets/\" + outletId + \"/\"\r\n\t\t\t\t+ orderReference;\r\n\r\n\t\ttry {\r\n\t\t\t// Create the HttpClient and HttpPost objects\r\n\t\t\tHttpClient httpClient = HttpClients.createDefault();\r\n\t\t\tHttpGet httpGet = new HttpGet(orderStausUrl);\r\n\r\n\t\t\t// set headers\r\n\t\t\thttpGet.setHeader(\"Authorization\", access_token);\r\n\t\t\thttpGet.setHeader(\"Content-Type\", \"application/vnd.ni-payment.v2+json\");\r\n\t\t\thttpGet.setHeader(\"Accept\", \"application/vnd.ni-payment.v2+json\");\r\n\r\n\t\t\t// Send the request and receive the response\r\n\t\t\tHttpResponse response = httpClient.execute(httpGet);\r\n\r\n\t\t\tint statusCode = response.getStatusLine().getStatusCode();\r\n\t\t\tString responseBody = EntityUtils.toString(response.getEntity());\r\n\r\n\t\t\t//System.out.println(\"Response Status Code: \" + statusCode);\r\n\t\t\t//System.out.println(\"Response Body: \" + responseBody);\r\n\r\n\t\t\t// here we are getting the state of the order, is order completed or not\r\n\t\t\tJSONObject jsonStatus = new JSONObject(responseBody);\r\n\t\t\tString orderStatus = jsonStatus.getJSONObject(\"_embedded\").getJSONArray(\"payment\").getJSONObject(0)\r\n\t\t\t\t\t.getString(\"state\");\r\n\r\n\t\t\t// update order status in database\r\n\t\t\tupdateOrderStatus(orderStatus, orderReference);\r\n\r\n\t\t} catch (IOException e) {\r\n\t\t\t// TODO Auto-generated catch block\r\n\t\t\te.printStackTrace();\r\n\t\t}\r\n\r\n\t}\r\n\r\n\t// Here we are fetching the access token and orderReference from database\r\n\tpublic   getOrderDetails() {\r\n\r\n\t\tString orderRefrenceFormUrl = \"#requestParam.ref#\";\r\n\t\tString orderReference = \"\";\r\n\t\tString access_token = \"\";\r\n\t\t//System.out.println(\"Reference Ref \" + orderRefrenceFormUrl);\r\n\t\ttry {\r\n\r\n\t\t\tClass.forName(\"com.mysql.jdbc.Driver\").newInstance();\r\n\t\t\tConnection con = DriverManager.getConnection(\"jdbc:mysql://localhost:3307/jwdb?characterEncoding=UTF-8\",\r\n\t\t\t\t\t\"root\", \"\");\r\n\r\n\t\t\tPreparedStatement preparedStatement = con\r\n\t\t\t\t\t.prepareStatement(\"SELECT * FROM app_fd_ofc_serreqs_tab WHERE c_noncompliance_paymentrefno  = ?\");\r\n\t\t\tpreparedStatement.setString(1, orderRefrenceFormUrl);\r\n\r\n\t\t\tResultSet resultSet = preparedStatement.executeQuery();\r\n\t\t\twhile (resultSet.next()) {\r\n\t\t\t\torderReference = resultSet.getString(\"c_noncompliance_paymentrefno\");\r\n\t\t\t\taccess_token = resultSet.getString(\"c_bearer_access_token\");\r\n\t\t\t}\r\n\r\n\t\t\tresultSet.close();\r\n\t\t\tpreparedStatement.close();\r\n\t\t\tcon.close();\r\n\r\n\t\t\t// calling get Order status method\r\n\t\t\tgetOrderStatus(orderReference, access_token);\r\n\r\n\t\t} catch (Exception e) {\r\n\r\n\t\t\te.printStackTrace();\r\n\t\t}\r\n\t}\r\n\r\n\t getOrderDetails();",
+                "useAjax": ""
+            }
+        },
+        "name": "Payment Non-Compliance Redirect",
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "tableName": "payment_redirect_tab"
+    }
+}
