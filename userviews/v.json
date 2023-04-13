@@ -2426,34 +2426,6 @@
         {
             "className": "org.joget.apps.userview.model.UserviewCategory",
             "menus": [{
-                "className": "org.joget.apps.userview.lib.DataListMenu",
-                "properties": {
-                    "buttonPosition": "bottomLeft",
-                    "cacheAllLinks": "",
-                    "cacheListAction": "",
-                    "checkboxPosition": "left",
-                    "customFooter": "",
-                    "customHeader": "",
-                    "customId": "drawingreviewer",
-                    "datalistId": "inspectionReviewDrawing",
-                    "enableOffline": "",
-                    "id": "3A4EF2195CD84622B531AA2C6BC95803",
-                    "keyName": "",
-                    "label": "List",
-                    "rowCount": "",
-                    "selectionType": "multiple",
-                    "userviewCacheDuration": "20",
-                    "userviewCacheScope": ""
-                }
-            }],
-            "properties": {
-                "id": "category-D57A5B865BF34E49923A853C952CA261",
-                "label": "Review Drawing / Document"
-            }
-        },
-        {
-            "className": "org.joget.apps.userview.model.UserviewCategory",
-            "menus": [{
                 "className": "org.joget.apps.userview.lib.FormMenu",
                 "properties": {
                     "actionAfterSaved": "",
@@ -2527,67 +2499,6 @@
                 "comment": "For Super Admin",
                 "id": "category-C35E7A870BDD4E618B124F8CB092703B",
                 "label": "Super Admin Only"
-            }
-        },
-        {
-            "className": "org.joget.apps.userview.model.UserviewCategory",
-            "menus": [
-                {
-                    "className": "org.joget.apps.userview.lib.DataListMenu",
-                    "properties": {
-                        "buttonPosition": "bottomLeft",
-                        "cacheAllLinks": "",
-                        "cacheListAction": "",
-                        "checkboxPosition": "left",
-                        "customFooter": "",
-                        "customHeader": "",
-                        "customId": "listdra",
-                        "datalistId": "listuploadeddrawing",
-                        "enableOffline": "",
-                        "id": "5AB3C1A5F0E74FA3829D778400F786E9",
-                        "keyName": "",
-                        "label": "List",
-                        "rowCount": "",
-                        "selectionType": "multiple",
-                        "userviewCacheDuration": "20",
-                        "userviewCacheScope": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.userview.lib.DataListMenu",
-                    "properties": {
-                        "buttonPosition": "bottomLeft",
-                        "cacheAllLinks": "",
-                        "cacheListAction": "",
-                        "checkboxPosition": "left",
-                        "customFooter": "",
-                        "customHeader": "",
-                        "customId": "drawinglist",
-                        "datalistId": "inspectionReviewDrawing",
-                        "enableOffline": "",
-                        "id": "3A4EF2195CD84622B531AA2C6BC95803",
-                        "keyName": "",
-                        "label": "Review Drawing Summary",
-                        "rowCount": "",
-                        "selectionType": "multiple",
-                        "userviewCacheDuration": "20",
-                        "userviewCacheScope": ""
-                    }
-                }
-            ],
-            "properties": {
-                "comment": "",
-                "hide": "",
-                "id": "category-D57A5B865BF34E49923A853C952CA261",
-                "label": "Review Drawing / Document",
-                "permission": {
-                    "className": "org.joget.apps.userview.lib.GroupPermission",
-                    "properties": {
-                        "allowedGroupIds": "G-005",
-                        "orgId": ""
-                    }
-                },
-                "permissionComment": ""
             }
         },
         {
