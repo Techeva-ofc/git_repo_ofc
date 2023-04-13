@@ -372,13 +372,13 @@
                     {
                         "className": "org.joget.apps.form.lib.HiddenField",
                         "properties": {
-                            "id": "InspectionStatus",
+                            "id": "status",
                             "useDefaultWhenEmpty": "",
                             "validator": {
                                 "className": "",
                                 "properties": {}
                             },
-                            "value": "Inspection To-Be Re-Scheduled",
+                            "value": "Inspection Scheduled",
                             "workflowVariable": ""
                         }
                     },
