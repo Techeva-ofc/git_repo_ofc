@@ -144,65 +144,6 @@
                             "value": "#requestParam.feetopay#",
                             "workflowVariable": ""
                         }
-                    },
-                    {
-                        "className": "org.joget.plugin.enterprise.CalculationField",
-                        "properties": {
-                            "equation": "(totalamt/100)*5",
-                            "hidden": "",
-                            "id": "noncompliance_vat",
-                            "label": "VAT(5%)",
-                            "numOfDecimal": "2",
-                            "postfix": "",
-                            "prefix": "",
-                            "readonlyLabel": "true",
-                            "storeNumeric": "",
-                            "style": "us",
-                            "useThousandSeparator": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "variables": [{
-                                "fieldId": "feetopay",
-                                "operation": "sum",
-                                "variableName": "totalamt"
-                            }],
-                            "workflowVariable": ""
-                        }
-                    },
-                    {
-                        "className": "org.joget.plugin.enterprise.CalculationField",
-                        "properties": {
-                            "equation": "(fee-vat)",
-                            "hidden": "",
-                            "id": "noncompliance_fee",
-                            "label": "Fee (VAT Exclusive)",
-                            "numOfDecimal": "2",
-                            "postfix": "",
-                            "prefix": "",
-                            "readonlyLabel": "true",
-                            "storeNumeric": "",
-                            "style": "us",
-                            "useThousandSeparator": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "variables": [
-                                {
-                                    "fieldId": "feetopay",
-                                    "operation": "sum",
-                                    "variableName": "fee"
-                                },
-                                {
-                                    "fieldId": "noncompliance_vat",
-                                    "operation": "sum",
-                                    "variableName": "vat"
-                                }
-                            ],
-                            "workflowVariable": ""
-                        }
                     }
                 ],
                 "properties": {"width": "100%"}
