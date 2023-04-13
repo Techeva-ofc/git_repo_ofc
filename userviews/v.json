@@ -2368,7 +2368,7 @@
             ],
             "properties": {
                 "comment": "",
-                "hide": "",
+                "hide": "yes",
                 "id": "category-449F62159BD142B3970CC6E62A23F5F0",
                 "label": "Review Drawing / Document",
                 "permission": {
