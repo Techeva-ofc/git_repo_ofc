@@ -37,27 +37,6 @@
                             "className": "org.joget.apps.form.lib.TextField",
                             "properties": {
                                 "encryption": "",
-                                "id": "sampid",
-                                "label": "id",
-                                "maxlength": "",
-                                "placeholder": "",
-                                "readonly": "",
-                                "readonlyLabel": "",
-                                "size": "",
-                                "storeNumeric": "",
-                                "style": "",
-                                "validator": {
-                                    "className": "",
-                                    "properties": {}
-                                },
-                                "value": "#requestParam.id#",
-                                "workflowVariable": ""
-                            }
-                        },
-                        {
-                            "className": "org.joget.apps.form.lib.TextField",
-                            "properties": {
-                                "encryption": "",
                                 "id": "currentuser",
                                 "label": "Reported By",
                                 "maxlength": "",
@@ -204,7 +183,7 @@
                             },
                             {
                                 "formatType": "",
-                                "label": "Reference Image Upload",
+                                "label": "Reference Image Uploaded",
                                 "readonly": "",
                                 "value": "ref_image",
                                 "width": ""
