@@ -153,10 +153,12 @@
                             "keyToSave": "9",
                             "label": "",
                             "loadBinder": {
-                                "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                                "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
                                 "properties": {
-                                    "foreignKey": "referencekey",
-                                    "formDefId": "inspectionSchedule_subform"
+                                    "autoHandleFiles": "",
+                                    "autoHandleWorkflowVariable": "true",
+                                    "jdbcDatasource": "default",
+                                    "sql": "  select c_checkpointCode, c_checkpointName, c_ref_image, c_remark_insp_checkpoint, c_ref_image_compliance \r\n  FROM app_fd_ofc_schdl_sub_tab WHERE c_status = 'no' and c_referencekey = '#requestParam.id#'"
                                 }
                             },
                             "options": [
