@@ -60,7 +60,7 @@
                             "dataFormat": "",
                             "datePickerType": "dateTime",
                             "endDateFieldId": "",
-                            "format": "d-MM-yy",
+                            "format": "dd/M/yy",
                             "format24hr": "",
                             "id": "inspSchedlDate",
                             "label": "Inspection Date",
