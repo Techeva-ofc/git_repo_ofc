@@ -227,7 +227,7 @@
                             "placeholder": "",
                             "readonly": "true",
                             "readonlyLabel": "true",
-                            "size": "",
+                            "size": "50px",
                             "storeNumeric": "",
                             "style": "",
                             "validator": {
