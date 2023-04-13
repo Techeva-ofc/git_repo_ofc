@@ -122,7 +122,7 @@
                                 "formatType": "",
                                 "label": "Status",
                                 "readonly": "true",
-                                "value": "remark_insp_checkpoint",
+                                "value": "status",
                                 "width": ""
                             }
                         ],
