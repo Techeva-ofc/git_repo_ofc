@@ -84,33 +84,31 @@
                             "id": "inspectorNames",
                             "label": "Inspector Name",
                             "multiple": "",
-                            "options": [
-                                {
-                                    "grouping": "",
-                                    "label": "Sagar",
-                                    "value": "sagar"
-                                },
-                                {
-                                    "grouping": "",
-                                    "label": "Sarla",
-                                    "value": "sarla"
-                                },
-                                {
-                                    "grouping": "",
-                                    "label": "Imran",
-                                    "value": "imran.akram"
-                                }
-                            ],
+                            "options": [],
                             "optionsBinder": {
-                                "className": "",
-                                "properties": {}
+                                "className": "org.joget.plugin.enterprise.UserOptionsBinder",
+                                "properties": {
+                                    "addEmptyOption": "true",
+                                    "cacheInterval": "",
+                                    "deptId": "",
+                                    "emptyLabel": "",
+                                    "groupId": "G-006",
+                                    "grouping": "",
+                                    "optionLabel": "fullname",
+                                    "orgId": "",
+                                    "useAjax": "true"
+                                }
                             },
                             "readonly": "",
                             "readonlyLabel": "",
                             "size": "",
                             "validator": {
-                                "className": "",
-                                "properties": {}
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "mandatory": "true",
+                                    "message": "mandatory",
+                                    "type": ""
+                                }
                             },
                             "value": "",
                             "workflowVariable": ""
