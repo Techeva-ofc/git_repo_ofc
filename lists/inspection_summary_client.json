@@ -432,13 +432,13 @@
                 "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/pay",
                 "hrefColumn": "id;c_feetopay;",
                 "hrefParam": "id;feetopay;stampfee",
-                "label": "Payment",
+                "label": "Make Payment",
                 "rules": [
                     {
-                        "field": "c_inspectionreportStatus",
+                        "field": "c_status",
                         "join": "OR",
                         "operator": "=",
-                        "value": "Other Non-Compliance"
+                        "value": "Inspection To-Be Re-Scheduled"
                     },
                     {
                         "field": "c_status",
