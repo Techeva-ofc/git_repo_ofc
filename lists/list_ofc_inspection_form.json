@@ -77,6 +77,28 @@
             },
             "headerAlignment": "",
             "hidden": "false",
+            "id": "column_3",
+            "label": "DMCC SR No.",
+            "name": "c_serReqDmccSrNo",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
             "id": "column_2",
             "label": "License Number",
             "name": "c_licenseNumber",
