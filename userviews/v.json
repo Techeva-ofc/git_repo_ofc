@@ -1638,7 +1638,7 @@
             ],
             "properties": {
                 "comment": "Inspector View",
-                "hide": "yes",
+                "hide": "",
                 "id": "category-7127012CE31246659501BC70C8CCCE1B",
                 "label": "<i class=\"fa fa-users\"><\/i>Manage Inspections",
                 "permission": {
@@ -2368,7 +2368,7 @@
             ],
             "properties": {
                 "comment": "",
-                "hide": "",
+                "hide": "yes",
                 "id": "category-449F62159BD142B3970CC6E62A23F5F0",
                 "label": "Review Drawing / Document",
                 "permission": {
