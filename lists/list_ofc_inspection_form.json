@@ -6,7 +6,7 @@
             "jdbcDatasource": "default",
             "optimisePaging": "",
             "primaryKey": "id",
-            "sql": "SELECT o.c_ofc_category_name,sr.id,sr.c_jobid,sr.c_reportdate,sr.c_licenseactivity, sr.dateCreated, sr.C_serReqDmccSrNo, c.c_licenseNumber, sr.c_serReqServCat, \r\nc.c_companyName, c.c_companyLocation, t.c_tower_seq_no, t.c_tower_name ,sr.c_status, sr.c_inspSchedlDate, sr.c_inspectionreportStatus\r\nFROM app_fd_ofc_serreqs_tab sr\r\nINNER JOIN app_fd_ofc_company_tab c\r\nON sr.c_companyName = c.id\r\nINNER JOIN app_fd_ofc_location_tab l\r\nON c.c_companyLocation = l.c_locName\r\nINNER JOIN app_fd_ofc_tower_tab t\r\nON c.c_tower_name = t.c_tower_name\r\nINNER JOIN (SELECT * FROM app_fd_ofc_ofc_category_tab WHERE c_ofc_category_name <> 'Activity Amendment') o\r\nON o.id = sr.c_ofc_category_name\r\nWHERE sr.c_status = 'Payment Completed' \r\nor sr.c_status = 'Inspection To-Be Re-Scheduled' \r\nor sr.c_status = 'Inspection Completed'\r\nor sr.c_status = 'Inspection Scheduled'\r\nor sr.c_status = 'Image(s) To-Be Uploaded'\r\nor sr.c_status = 'Images Uploaded'\r\nor sr.c_status = 'Paid Fee'\r\nor sr.c_status = 'Compliance'\r\nor sr.c_status = 'Drawing / Document Uploaded'\r\nor sr.c_status = 'Payment Completed for OFC Amendment'"
+            "sql": "SELECT o.c_ofc_category_name,sr.id,sr.c_jobid,sr.c_reportdate,sr.c_licenseactivity, sr.dateCreated, sr.c_serReqDmccSrNo, c.c_licenseNumber, sr.c_serReqServCat, \r\nc.c_companyName, c.c_companyLocation, t.c_tower_seq_no, t.c_tower_name ,sr.c_status, sr.c_inspSchedlDate, sr.c_inspectionreportStatus\r\nFROM app_fd_ofc_serreqs_tab sr\r\nINNER JOIN app_fd_ofc_company_tab c\r\nON sr.c_companyName = c.id\r\nINNER JOIN app_fd_ofc_location_tab l\r\nON c.c_companyLocation = l.c_locName\r\nINNER JOIN app_fd_ofc_tower_tab t\r\nON c.c_tower_name = t.c_tower_name\r\nINNER JOIN (SELECT * FROM app_fd_ofc_ofc_category_tab WHERE c_ofc_category_name <> 'Activity Amendment') o\r\nON o.id = sr.c_ofc_category_name\r\nWHERE sr.c_status = 'Payment Completed' \r\nor sr.c_status = 'Inspection To-Be Re-Scheduled' \r\nor sr.c_status = 'Inspection Completed'\r\nor sr.c_status = 'Inspection Scheduled'\r\nor sr.c_status = 'Image(s) To-Be Uploaded'\r\nor sr.c_status = 'Images Uploaded'\r\nor sr.c_status = 'Paid Fee'\r\nor sr.c_status = 'Compliance'\r\nor sr.c_status = 'Drawing / Document Uploaded'\r\nor sr.c_status = 'Payment Completed for OFC Amendment'"
         }
     },
     "buttonPosition": "bottomLeft",
@@ -58,35 +58,6 @@
             "id": "column_8",
             "label": "Inspection Scheduled On",
             "name": "c_inspSchedlDate",
-            "sortable": "true",
-            "style": "",
-            "width": ""
-        },
-        {
-            "action": {
-                "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
-                "properties": {
-                    "confirmation": "",
-                    "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/serRequestView?_mode=view",
-                    "hrefColumn": "id",
-                    "hrefParam": "id",
-                    "label": "View",
-                    "target": "_self"
-                }
-            },
-            "alignment": "",
-            "datalist_type": "column",
-            "exclude_export": "",
-            "filterable": true,
-            "format": {
-                "className": "",
-                "properties": {}
-            },
-            "headerAlignment": "",
-            "hidden": "false",
-            "id": "column_3",
-            "label": "DMCC Sr No",
-            "name": "C_serReqDmccSrNo",
             "sortable": "true",
             "style": "",
             "width": ""
@@ -250,18 +221,6 @@
     "description": "",
     "disableResponsive": "",
     "filters": [
-        {
-            "datalist_type": "filter",
-            "filterParamName": "d-2997933-fn_C_serReqDmccSrNo",
-            "hidden": "",
-            "id": "filter_5",
-            "label": "Dmcc Sr No",
-            "name": "C_serReqDmccSrNo",
-            "type": {
-                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-                "properties": {"defaultValue": ""}
-            }
-        },
         {
             "datalist_type": "filter",
             "filterParamName": "d-2997933-fn_c_licenseNumber",
