@@ -543,53 +543,44 @@
             "className": "org.joget.apps.form.model.Section",
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
-                "elements": [
-                    {
-                        "className": "org.joget.apps.form.lib.SelectBox",
-                        "properties": {
-                            "controlField": "",
-                            "id": "draw_status",
-                            "label": "Provide the Status",
-                            "multiple": "",
-                            "options": [
-                                {
-                                    "grouping": "",
-                                    "label": "Compliance",
-                                    "value": "Compliance"
-                                },
-                                {
-                                    "grouping": "",
-                                    "label": "Non-Compliance",
-                                    "value": "Non-Compliance"
-                                }
-                            ],
-                            "optionsBinder": {
-                                "className": "",
-                                "properties": {}
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "draw_status",
+                        "label": "Provide the Status",
+                        "multiple": "",
+                        "options": [
+                            {
+                                "grouping": "",
+                                "label": "Compliance",
+                                "value": "Compliance"
                             },
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "size": "",
-                            "validator": {
-                                "className": "org.joget.apps.form.lib.DefaultValidator",
-                                "properties": {
-                                    "mandatory": "true",
-                                    "message": "mandatory",
-                                    "type": ""
-                                }
-                            },
-                            "value": "",
-                            "workflowVariable": ""
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.HiddenField",
-                        "properties": {
-                            "id": "field12",
-                            "useDefaultWhenEmpty": ""
-                        }
+                            {
+                                "grouping": "",
+                                "label": "Non-Compliance",
+                                "value": "Non-Compliance"
+                            }
+                        ],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "mandatory",
+                                "type": ""
+                            }
+                        },
+                        "value": "",
+                        "workflowVariable": ""
                     }
-                ],
+                }],
                 "properties": {"width": "100%"}
             }],
             "properties": {
