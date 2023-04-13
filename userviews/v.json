@@ -2352,45 +2352,6 @@
                 "properties": {
                     "actionAfterSaved": "",
                     "actionOnCancel": "",
-                    "cancelButtonLabel": "Cancel",
-                    "customFooter": "",
-                    "customHeader": "",
-                    "customId": "drawingreviewer1",
-                    "enableOffline": "",
-                    "fieldPassover": "",
-                    "fieldPassoverMethod": "append",
-                    "formId": "srviewDrawingReview",
-                    "id": "62F74CF944104F79853A280210BC0C92",
-                    "keyName": "",
-                    "label": "Review Drawing Form",
-                    "loadDataWithKey": "",
-                    "messageShowAfterComplete": "",
-                    "paramName": "",
-                    "readonly": "",
-                    "readonlyLabel": "",
-                    "redirectTargetOnCancel": "top",
-                    "redirectTargetOnComplete": "",
-                    "redirectUrlAfterComplete": "drawingreviewer",
-                    "redirectUrlOnCancel": "drawingreviewer",
-                    "showInPopupDialog": "",
-                    "submitButtonLabel": "Update Status",
-                    "userviewCacheDuration": "20",
-                    "userviewCacheScope": ""
-                }
-            }],
-            "properties": {
-                "comment": "For Drawing Reviewer",
-                "id": "category-128E0237A1014D3DA322CC9395895EE9",
-                "label": "New Category"
-            }
-        },
-        {
-            "className": "org.joget.apps.userview.model.UserviewCategory",
-            "menus": [{
-                "className": "org.joget.apps.userview.lib.FormMenu",
-                "properties": {
-                    "actionAfterSaved": "",
-                    "actionOnCancel": "",
                     "cancelButtonLabel": "Close",
                     "customFooter": "",
                     "customHeader": "",
@@ -2507,6 +2468,51 @@
                         "orgId": ""
                     }
                 }
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.apps.userview.lib.FormMenu",
+                "properties": {
+                    "actionAfterSaved": "",
+                    "actionOnCancel": "",
+                    "cancelButtonLabel": "Close",
+                    "customFooter": "",
+                    "customHeader": "",
+                    "customId": "waiveroff",
+                    "enableOffline": "",
+                    "fieldPassover": "",
+                    "fieldPassoverMethod": "append",
+                    "formId": "waveoff_insp_fee",
+                    "id": "DBE2B6552185416D9F1756BC6771AAFF",
+                    "keyName": "",
+                    "label": "Waiver OFF FEE",
+                    "loadDataWithKey": "",
+                    "messageShowAfterComplete": "",
+                    "paramName": "",
+                    "readonly": "",
+                    "readonlyLabel": "",
+                    "redirectTargetOnCancel": "top",
+                    "redirectTargetOnComplete": "",
+                    "redirectUrlAfterComplete": "inspection_wavieroff",
+                    "redirectUrlOnCancel": "inspection_wavieroff",
+                    "showInPopupDialog": "",
+                    "submitButtonLabel": "Submit",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": ""
+                }
+            }],
+            "properties": {
+                "comment": "For Super Admin",
+                "hide": "yes",
+                "id": "category-C35E7A870BDD4E618B124F8CB092703B",
+                "label": "Super Admin Only",
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionComment": ""
             }
         }
     ],
