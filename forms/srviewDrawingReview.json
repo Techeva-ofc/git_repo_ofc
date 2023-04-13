@@ -337,7 +337,7 @@
                         "disabledAdd": "true",
                         "disabledDelete": "true",
                         "errorMessage": "Invalid number of rows",
-                        "formDefId": "insp_report_subform",
+                        "formDefId": "insp_review_subform",
                         "hint": "Click to edit. Tab to save.",
                         "id": "uploadelement",
                         "keyToSave": "9",
@@ -346,7 +346,7 @@
                             "className": "org.joget.plugin.enterprise.MultirowFormBinder",
                             "properties": {
                                 "foreignKey": "report_referencekey",
-                                "formDefId": "insp_report_subform"
+                                "formDefId": "insp_review_subform"
                             }
                         },
                         "options": [
@@ -389,7 +389,7 @@
                             "className": "org.joget.plugin.enterprise.MultirowFormBinder",
                             "properties": {
                                 "foreignKey": "report_referencekey",
-                                "formDefId": "insp_report_subform"
+                                "formDefId": "insp_review_subform"
                             }
                         },
                         "uniqueKey": "",
