@@ -54,6 +54,27 @@
                                 "value": "#currentUser.fullName#",
                                 "workflowVariable": ""
                             }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "inspectionreportStatus",
+                                "label": "Status of Inspection",
+                                "maxlength": "",
+                                "placeholder": "",
+                                "readonly": "",
+                                "readonlyLabel": "",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "#requestParam.reportstatus#",
+                                "workflowVariable": ""
+                            }
                         }
                     ],
                     "properties": {"width": "49%"}
