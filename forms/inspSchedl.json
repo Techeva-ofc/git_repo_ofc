@@ -53,31 +53,6 @@
                         }
                     },
                     {
-                        "className": "org.joget.apps.form.lib.DatePicker",
-                        "properties": {
-                            "allowManual": "true",
-                            "currentDateAs": "",
-                            "dataFormat": "dd/MM/yyyy",
-                            "datePickerType": "dateTime",
-                            "endDateFieldId": "",
-                            "format": "",
-                            "format24hr": "",
-                            "id": "inspSchedlDate",
-                            "label": "Inspection Date",
-                            "placeholder": "",
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "startDateFieldId": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "",
-                            "workflowVariable": "",
-                            "yearRange": "c-10:c+10"
-                        }
-                    },
-                    {
                         "className": "org.joget.apps.form.lib.SelectBox",
                         "properties": {
                             "controlField": "",
@@ -112,6 +87,31 @@
                             },
                             "value": "",
                             "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.DatePicker",
+                        "properties": {
+                            "allowManual": "true",
+                            "currentDateAs": "",
+                            "dataFormat": "dd/MM/yyyy",
+                            "datePickerType": "dateTime",
+                            "endDateFieldId": "",
+                            "format": "",
+                            "format24hr": "",
+                            "id": "inspSchedlDate",
+                            "label": "Inspection Date",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "startDateFieldId": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": "",
+                            "yearRange": "c-10:c+10"
                         }
                     },
                     {
