@@ -1,0 +1,405 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.JdbcDataListBinder",
+        "properties": {
+            "jdbcDatasource": "default",
+            "optimisePaging": "",
+            "primaryKey": "id",
+            "sql": "SELECT \r\n  sr.id,\r\n  sr.c_image_by_client,\r\n  sr.c_jobid, \r\n  sr.c_licenseactivity, \r\n  sr.dateCreated, \r\n  sr.c_reportdate, \r\n  sr.C_serReqDmccSrNo, \r\n  c.c_licenseNumber, \r\n  sr.c_serReqServCat, \r\n  c.c_companyName, \r\n  c.c_companyLocation, \r\n  t.c_tower_seq_no, \r\n  t.c_tower_name, \r\n  sr.c_status, \r\n  sr.c_inspSchedlDate, \r\n  sr.c_inspectionreportStatus \r\nFROM \r\n  app_fd_ofc_serreqs_tab sr \r\n  INNER JOIN app_fd_ofc_company_tab c ON sr.c_companyName = c.id \r\n  INNER JOIN app_fd_ofc_location_tab l ON c.c_companyLocation = l.c_locName \r\n  INNER JOIN app_fd_ofc_tower_tab t ON c.c_tower_name = t.c_tower_name \r\nWHERE \r\n  sr.c_status = 'Inspection Completed' \r\n  OR sr.c_status = 'Inspection To-Be Re-Scheduled' \r\n  OR sr.c_status = 'Inspection Scheduled' \r\n  OR sr.c_status = 'Image(s) To-Be Uploaded' \r\n  OR sr.c_status = 'Awaiting payment from the client' \r\n  OR sr.c_status = 'Images Uploaded' \r\nORDER BY \r\n  sr.c_inspSchedlDate\r\n"
+        }
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "org.joget.plugin.enterprise.DateFormatter",
+                "properties": {
+                    "dateStoreInUTC": "true",
+                    "displayFormat": "dd-MM-yyyy hh:mm aa"
+                }
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_7",
+            "label": "Scheduled On",
+            "name": "c_inspSchedlDate",
+            "sortable": "true",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_8",
+            "label": "Job No.",
+            "name": "c_jobid",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+                "properties": {
+                    "confirmation": "",
+                    "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/serRequestView?_mode=view",
+                    "hrefColumn": "id",
+                    "hrefParam": "id",
+                    "label": "View",
+                    "target": "_self"
+                }
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_0",
+            "label": "DMCC SR No.",
+            "name": "C_serReqDmccSrNo",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_1",
+            "label": "Company Name",
+            "name": "c_companyName",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_2",
+            "label": "Location",
+            "name": "c_companyLocation",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_3",
+            "label": "Tower Seq No.",
+            "name": "c_tower_seq_no",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_4",
+            "label": "Tower Name",
+            "name": "c_tower_name",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_5",
+            "label": "Inspection Status",
+            "name": "c_inspectionreportStatus",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_6",
+            "label": "SR Status",
+            "name": "c_status",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        }
+    ],
+    "considerFilterWhenGetTotal": "",
+    "description": "",
+    "disableResponsive": "",
+    "filters": [
+        {
+            "datalist_type": "filter",
+            "filterParamName": "d-5602826-fn_c_inspSchedlDate",
+            "hidden": "",
+            "id": "filter_4",
+            "label": "Schedule Date",
+            "name": "c_inspSchedlDate",
+            "type": {
+                "className": "org.joget.plugin.enterprise.DateDataListFilterType",
+                "properties": {
+                    "defaultValue": "",
+                    "format": "dd/mm/yy",
+                    "formatJava": "dd/MM/yyyy",
+                    "yearRange": "c-10:c+10"
+                }
+            }
+        },
+        {
+            "datalist_type": "filter",
+            "filterParamName": "d-5602826-fn_c_companyLocation",
+            "hidden": "",
+            "id": "filter_3",
+            "label": "Location",
+            "name": "c_companyLocation",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {"defaultValue": ""}
+            }
+        },
+        {
+            "datalist_type": "filter",
+            "filterParamName": "d-5602826-fn_c_status",
+            "hidden": "",
+            "id": "filter_2",
+            "label": "SR Status",
+            "name": "c_status",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {"defaultValue": ""}
+            }
+        },
+        {
+            "datalist_type": "filter",
+            "filterParamName": "d-5602826-fn_c_companyName",
+            "hidden": "",
+            "id": "filter_1",
+            "label": "Company Name",
+            "name": "c_companyName",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {"defaultValue": ""}
+            }
+        },
+        {
+            "id": "filter_5",
+            "label": "c_inspectionreportStatus",
+            "name": "c_inspectionreportStatus",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {}
+            }
+        },
+        {
+            "datalist_type": "filter",
+            "filterParamName": "d-5602826-fn_C_serReqDmccSrNo",
+            "hidden": "",
+            "id": "filter_0",
+            "label": "DMCC",
+            "name": "C_serReqDmccSrNo",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {"defaultValue": ""}
+            }
+        }
+    ],
+    "hidePageSize": "true",
+    "id": "list_ofc_inspection_report_form",
+    "name": "List - View Inspection Report",
+    "order": "1",
+    "orderBy": "c_inspSchedlDate",
+    "pageSize": "0",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "responsiveView": [
+        {
+            "breakpoint": "",
+            "columns": "",
+            "view": "Mobile"
+        },
+        {
+            "breakpoint": "",
+            "columns": "",
+            "view": "Tablet"
+        }
+    ],
+    "rowActions": [
+        {
+            "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+            "icon": "<i class=\"fas fa-link\"><\/i>",
+            "id": "rowAction_1",
+            "label": "Hyperlink",
+            "name": "Data List Hyperlink Action",
+            "properties": {
+                "confirmation": "",
+                "datalist_type": "row_action",
+                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/generateReport",
+                "hrefColumn": "C_serReqDmccSrNo;id;c_inspSchedlDate;c_inspectionreportStatus",
+                "hrefParam": "serReqDmccSrNo;id;scheduledate;status",
+                "label": "Generate Report",
+                "rules": [{
+                    "field": "c_status",
+                    "join": "AND",
+                    "operator": "=",
+                    "value": "Inspection Scheduled"
+                }],
+                "target": "_self"
+            },
+            "type": "text"
+        },
+        {
+            "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+            "icon": "<i class=\"fas fa-link\"><\/i>",
+            "id": "rowAction_0",
+            "label": "Hyperlink",
+            "name": "Data List Hyperlink Action",
+            "properties": {
+                "confirmation": "",
+                "datalist_type": "row_action",
+                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/viewRport",
+                "hrefColumn": "C_serReqDmccSrNo;c_companyName;c_inspSchedlDate;c_inspectionreportStatus;c_reportdate;id",
+                "hrefParam": "serReqDmccSrNo;company;scheduledate;reportstatus;reportdate;id",
+                "label": "View Report",
+                "rules": [{
+                    "field": "c_status",
+                    "join": "AND",
+                    "operator": "=",
+                    "value": "Inspection Completed"
+                }],
+                "target": "_self"
+            },
+            "type": "text"
+        },
+        {
+            "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+            "icon": "<i class=\"fas fa-link\"><\/i>",
+            "id": "rowAction_2",
+            "label": "Hyperlink",
+            "name": "Data List Hyperlink Action",
+            "properties": {
+                "confirmation": "",
+                "datalist_type": "row_action",
+                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/inspectionReview",
+                "hrefColumn": "id;c_status;c_inspectionreportStatus;C_serReqDmccSrNo",
+                "hrefParam": "id;status;reportstatus;dmcc",
+                "label": "Review Proofs",
+                "rules": [
+                    {
+                        "field": "c_image_by_client",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "imageupload"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Images Uploaded"
+                    }
+                ],
+                "target": "_self"
+            },
+            "type": "text"
+        }
+    ],
+    "searchPopup": "",
+    "showDataWhenFilterSet": "",
+    "showPageSizeSelector": "true",
+    "useSession": ""
+}
