@@ -180,105 +180,112 @@
         },
         {
             "className": "org.joget.apps.form.model.Section",
-            "elements": [{
-                "className": "org.joget.apps.form.model.Column",
-                "elements": [
-                    {
-                        "className": "org.joget.plugin.enterprise.AdvancedGrid",
-                        "properties": {
-                            "deleteMessage": "Delete row?",
-                            "disabledAdd": "true",
-                            "disabledDelete": "true",
-                            "errorMessage": "Invalid number of rows",
-                            "formDefId": "inspectionSchedule_subform",
-                            "hint": "Click to edit. Tab to save.",
-                            "id": "inspCheckpoints",
-                            "keyToSave": "9",
-                            "label": "",
-                            "loadBinder": {
-                                "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
-                                "properties": {
-                                    "autoHandleFiles": "",
-                                    "autoHandleWorkflowVariable": "true",
-                                    "jdbcDatasource": "default",
-                                    "sql": "  select c_checkpointCode, c_checkpointName, c_ref_image, c_remark_insp_checkpoint, c_ref_image_compliance \r\n  FROM app_fd_ofc_schdl_sub_tab WHERE c_status = 'no' and c_referencekey = '#requestParam.id#'"
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [
+                        {
+                            "className": "org.joget.plugin.enterprise.AdvancedGrid",
+                            "properties": {
+                                "deleteMessage": "Delete row?",
+                                "disabledAdd": "true",
+                                "disabledDelete": "true",
+                                "errorMessage": "Invalid number of rows",
+                                "formDefId": "inspectionSchedule_subform",
+                                "hint": "Click to edit. Tab to save.",
+                                "id": "inspCheckpoints",
+                                "keyToSave": "9",
+                                "label": "",
+                                "loadBinder": {
+                                    "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
+                                    "properties": {
+                                        "autoHandleFiles": "",
+                                        "autoHandleWorkflowVariable": "true",
+                                        "jdbcDatasource": "default",
+                                        "sql": "  select c_checkpointCode, c_checkpointName, c_ref_image, c_remark_insp_checkpoint, c_ref_image_compliance \r\n  FROM app_fd_ofc_schdl_sub_tab WHERE c_status = 'no' and c_referencekey = '#requestParam.id#'"
+                                    }
+                                },
+                                "options": [
+                                    {
+                                        "formatType": "",
+                                        "label": "Code",
+                                        "readonly": "true",
+                                        "value": "checkpointCode",
+                                        "width": ""
+                                    },
+                                    {
+                                        "formatType": "",
+                                        "label": "Check point",
+                                        "readonly": "true",
+                                        "value": "checkpointName",
+                                        "width": ""
+                                    },
+                                    {
+                                        "formatType": "",
+                                        "label": "Image Uploaded By Concordia",
+                                        "readonly": "true",
+                                        "value": "ref_image",
+                                        "width": ""
+                                    },
+                                    {
+                                        "formatType": "",
+                                        "label": "Comment from Concordia",
+                                        "readonly": "true",
+                                        "value": "remark_insp_checkpoint",
+                                        "width": ""
+                                    },
+                                    {
+                                        "formatType": "",
+                                        "label": "Upload Compliance Image",
+                                        "readonly": "",
+                                        "value": "ref_image_compliance",
+                                        "width": ""
+                                    }
+                                ],
+                                "pagingOptions": "10,20,50,100",
+                                "readonly": "",
+                                "recordPerPage": "20",
+                                "search": "",
+                                "showRowNumber": "true",
+                                "sortIndx": "",
+                                "storeBinder": {
+                                    "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                                    "properties": {
+                                        "foreignKey": "referencekey",
+                                        "formDefId": "inspectionSchedule_subform"
+                                    }
+                                },
+                                "uniqueKey": "",
+                                "validateMaxRow": "",
+                                "validateMinRow": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
                                 }
-                            },
-                            "options": [
-                                {
-                                    "formatType": "",
-                                    "label": "Code",
-                                    "readonly": "true",
-                                    "value": "checkpointCode",
-                                    "width": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.HiddenField",
+                            "properties": {
+                                "id": "image_by_client",
+                                "useDefaultWhenEmpty": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
                                 },
-                                {
-                                    "formatType": "",
-                                    "label": "Check point",
-                                    "readonly": "true",
-                                    "value": "checkpointName",
-                                    "width": ""
-                                },
-                                {
-                                    "formatType": "",
-                                    "label": "Image Uploaded By Concordia",
-                                    "readonly": "true",
-                                    "value": "ref_image",
-                                    "width": ""
-                                },
-                                {
-                                    "formatType": "",
-                                    "label": "Comment from Concordia",
-                                    "readonly": "true",
-                                    "value": "remark_insp_checkpoint",
-                                    "width": ""
-                                },
-                                {
-                                    "formatType": "",
-                                    "label": "Upload Compliance Image",
-                                    "readonly": "",
-                                    "value": "ref_image_compliance",
-                                    "width": ""
-                                }
-                            ],
-                            "pagingOptions": "10,20,50,100",
-                            "readonly": "",
-                            "recordPerPage": "20",
-                            "search": "",
-                            "showRowNumber": "true",
-                            "sortIndx": "",
-                            "storeBinder": {
-                                "className": "org.joget.plugin.enterprise.MultirowFormBinder",
-                                "properties": {
-                                    "foreignKey": "referencekey",
-                                    "formDefId": "inspectionSchedule_subform"
-                                }
-                            },
-                            "uniqueKey": "",
-                            "validateMaxRow": "",
-                            "validateMinRow": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
+                                "value": "imageupload",
+                                "workflowVariable": ""
                             }
                         }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.HiddenField",
-                        "properties": {
-                            "id": "image_by_client",
-                            "useDefaultWhenEmpty": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "imageupload",
-                            "workflowVariable": ""
-                        }
-                    }
-                ],
-                "properties": {"width": "100%"}
-            }],
+                    ],
+                    "properties": {"width": "49%"}
+                },
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [],
+                    "properties": {"width": "49%"}
+                }
+            ],
             "properties": {
                 "comment": "",
                 "id": "fitoutnoncompliance",
