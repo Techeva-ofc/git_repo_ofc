@@ -117,7 +117,7 @@
                         "properties": {
                             "encryption": "",
                             "id": "checktype",
-                            "label": "#requestParam.type#",
+                            "label": "Type Of CheckList Inspected",
                             "maxlength": "",
                             "placeholder": "",
                             "readonly": "",
@@ -129,7 +129,7 @@
                                 "className": "",
                                 "properties": {}
                             },
-                            "value": "",
+                            "value": "#requestParam.type#",
                             "workflowVariable": ""
                         }
                     },
