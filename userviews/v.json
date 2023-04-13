@@ -2370,7 +2370,7 @@
                 "comment": "",
                 "hide": "",
                 "id": "category-449F62159BD142B3970CC6E62A23F5F0",
-                "label": "New Category",
+                "label": "Review Drawing / Document",
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
