@@ -349,7 +349,7 @@
             "properties": {
                 "comment": "",
                 "id": "othernoncompliance",
-                "join": ";",
+                "join": "",
                 "label": "Other Non-Compliance",
                 "loadBinder": {
                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
@@ -362,14 +362,14 @@
                 "permissionReadonly": "",
                 "readonly": "",
                 "readonlyLabel": "",
-                "regex": ";",
-                "reverse": ";true",
+                "regex": "",
+                "reverse": "",
                 "storeBinder": {
                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
-                "visibilityControl": "inspectionreportStatus;srstatus",
-                "visibilityValue": "Other Non-Compliance;Inspection Scheduled"
+                "visibilityControl": "inspectionreportStatus",
+                "visibilityValue": "Other Non-Compliance"
             }
         },
         {
