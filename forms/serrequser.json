@@ -587,7 +587,7 @@
                                 "formatType": "",
                                 "label": "Remarks",
                                 "readonly": "true",
-                                "value": "remark_insp_checkpoint",
+                                "value": "remarks",
                                 "width": ""
                             },
                             {
