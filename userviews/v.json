@@ -1838,7 +1838,7 @@
                         "cancelButtonLabel": "",
                         "customFooter": "",
                         "customHeader": "",
-                        "customId": "paynoncomplianceRedirect",
+                        "customId": "payments",
                         "enableOffline": "",
                         "fieldPassover": "",
                         "fieldPassoverMethod": "append",
