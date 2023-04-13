@@ -561,7 +561,7 @@
                         "disabledAdd": "true",
                         "disabledDelete": "true",
                         "errorMessage": "Invalid number of rows",
-                        "formDefId": "insp_report_subform",
+                        "formDefId": "insp_review_subform",
                         "hint": "Click to edit. Tab to save.",
                         "id": "uploadelement",
                         "keyToSave": "9",
@@ -587,7 +587,7 @@
                                 "formatType": "",
                                 "label": "Remarks",
                                 "readonly": "true",
-                                "value": "remark_insp_checkpoint",
+                                "value": "remarks",
                                 "width": ""
                             },
                             {
