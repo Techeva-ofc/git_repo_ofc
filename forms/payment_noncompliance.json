@@ -151,8 +151,8 @@
             "properties": {
                 "comment": "",
                 "id": "applicationMode",
-                "join": "or;or;or",
-                "label": "Select Your Application Mode",
+                "join": "",
+                "label": "Please Confirm the Fee",
                 "loadBinder": {
                     "className": "",
                     "properties": {}
@@ -161,17 +161,18 @@
                     "className": "",
                     "properties": {}
                 },
+                "permissionHidden": "",
                 "permissionReadonly": "",
-                "readonly": "",
-                "readonlyLabel": "",
-                "regex": ";;",
-                "reverse": ";;",
+                "readonly": "true",
+                "readonlyLabel": "true",
+                "regex": "",
+                "reverse": "",
                 "storeBinder": {
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "serviceCategoryType;serviceCategoryType;serviceCategoryType",
-                "visibilityValue": "New License;Additional License;License Renewal"
+                "visibilityControl": "",
+                "visibilityValue": ""
             }
         }
     ],
