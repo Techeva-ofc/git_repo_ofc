@@ -402,6 +402,101 @@
                             "value": "#requestParam.inspectionstatus#",
                             "workflowVariable": ""
                         }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "",
+                            "id": "reasonnoncompliance",
+                            "label": "Reason Provided By Inspector",
+                            "multiple": "",
+                            "options": [
+                                {
+                                    "grouping": "",
+                                    "label": "Select",
+                                    "value": "Select"
+                                },
+                                {
+                                    "grouping": "",
+                                    "label": "Customer Absent",
+                                    "value": "Customer Absent"
+                                },
+                                {
+                                    "grouping": "",
+                                    "label": "Closed Premises",
+                                    "value": "Closed Premises"
+                                },
+                                {
+                                    "grouping": "",
+                                    "label": "Others",
+                                    "value": "Others"
+                                }
+                            ],
+                            "optionsBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "permissionHidden": "",
+                            "readonly": "true",
+                            "readonlyLabel": "true",
+                            "size": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "remarkfield",
+                            "label": "Remarks",
+                            "maxlength": "",
+                            "permissionHidden": "",
+                            "placeholder": "",
+                            "readonly": "true",
+                            "readonlyLabel": "true",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.plugin.enterprise.ImageUpload",
+                        "properties": {
+                            "createThumbnail": "true",
+                            "fileType": ".jpeg;.jpg;.gif;.png",
+                            "fileTypeMsg": "Invalid file type",
+                            "height": "60",
+                            "id": "imageupload",
+                            "label": "References Uploaded",
+                            "maxSize": "",
+                            "maxSizeMsg": "File size limit exceeded",
+                            "multiple": "",
+                            "padding": "",
+                            "permissionHidden": "",
+                            "permissionType": "",
+                            "readonly": "true",
+                            "removeFile": "",
+                            "resizeHeight": "",
+                            "resizeMethod": "",
+                            "resizeQuality": "0.8",
+                            "resizeWidth": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "width": "60"
+                        }
                     }
                 ],
                 "properties": {"width": "100%"}
