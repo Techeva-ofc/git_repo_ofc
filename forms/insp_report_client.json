@@ -311,7 +311,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "Inspection Report Client",
+        "name": "Inspection Report Client - Upload Image",
         "noPermissionMessage": "",
         "permission": {
             "className": "",
