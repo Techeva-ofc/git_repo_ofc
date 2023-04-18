@@ -8,6 +8,19 @@
     "checkboxPosition": "left",
     "columns": [
         {
+            "id": "column_4",
+            "label": "ID",
+            "name": "id"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_6",
+            "label": "referencekey",
+            "name": "referencekey",
+            "sortable": "false"
+        },
+        {
             "id": "column_0",
             "label": "Checkpoint Code",
             "name": "checkpointCode"
@@ -18,21 +31,67 @@
             "name": "checkpointName"
         },
         {
-            "id": "column_2",
-            "label": "",
-            "name": "checktypedata"
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_8",
+            "label": "OLD Image Upload",
+            "name": "ref_image",
+            "sortable": "false",
+            "style": "",
+            "width": ""
         },
         {
-            "id": "column_3",
-            "label": "",
-            "name": "fileupload"
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_7",
+            "label": "New Image Upload",
+            "name": "ref_image_compliance",
+            "sortable": "false",
+            "style": "",
+            "width": ""
         },
         {
-            "id": "column_4",
-            "label": "ID",
-            "name": "id"
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_9",
+            "label": "Type",
+            "name": "type",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_10",
+            "label": "Remarks",
+            "name": "remark_insp_checkpoint",
+            "sortable": "false"
         }
     ],
+    "considerFilterWhenGetTotal": "",
     "filters": [],
     "id": "list_inspectionSchedule_subform",
     "name": "List - Inspection Schedule Subform",
