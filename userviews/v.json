@@ -2554,6 +2554,34 @@
                 "id": "category-e3363267-69bd-4fba-9cac-a0e517f9d2c4",
                 "label": "<i class='fa fa-tasks'><\/i>Manage Inspection Schedule Subform"
             }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.apps.userview.lib.DataListMenu",
+                "properties": {
+                    "buttonPosition": "bottomLeft",
+                    "cacheAllLinks": "",
+                    "cacheListAction": "",
+                    "checkboxPosition": "left",
+                    "customFooter": "",
+                    "customHeader": "",
+                    "customId": "schdlsubform",
+                    "datalistId": "list_inspectionSchedule_subform",
+                    "enableOffline": "",
+                    "id": "F31BF23ACCD2446EBF6FB4919106C9D3",
+                    "keyName": "",
+                    "label": "List",
+                    "rowCount": "",
+                    "selectionType": "multiple",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": ""
+                }
+            }],
+            "properties": {
+                "id": "category-214D3322BF64408A8E32D3AD537ED72D",
+                "label": "View Images Uploaded"
+            }
         }
     ],
     "className": "org.joget.apps.userview.model.Userview",
