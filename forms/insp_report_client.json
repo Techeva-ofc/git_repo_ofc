@@ -252,9 +252,9 @@
                                     "autoHandleWorkflowVariable": "true",
                                     "check_sql": "select * from app_fd_ofc_schdl_sub_tab where \nc_referencekey = '#requestParam.id?sql#'",
                                     "delete_sql": "DELETE\r\nFROM\r\n   app_fd_ofc_schdl_sub_tab\r\nWHERE\r\n  c_referencekey = {'#requestParam.id?sql#'}",
-                                    "insert_sql": "INSERT app_fd_ofc_schdl_sub_tab (\r\n    id,\r\n    c_ref_image_history,\r\n    c_referencekey)\r\nVALUES (\r\n    {id},\r\n    {ref_image_compliance},\r\n    {'#requestParam.id?sql#'})",
+                                    "insert_sql": "INSERT app_fd_ofc_schdl_sub_tab (\r\n    id,\r\n    c_ref_image_history)\r\nVALUES (\r\n    {id},\r\n    {ref_image_compliance})",
                                     "jdbcDatasource": "default",
-                                    "update_sql": "INSERT app_fd_ofc_schdl_sub_tab (\r\n    id,\r\n    c_ref_image_history,\r\n    c_referencekey)\r\nVALUES (\r\n    {uuid},\r\n    {ref_image_compliance},\r\n    {'#requestParam.id?sql#'})"
+                                    "update_sql": "INSERT app_fd_ofc_schdl_sub_tab (\r\n    id,\r\n    c_ref_image_history,\r\n    c_referencekey)\r\nVALUES (\r\n    {uuid},\r\n    {ref_image_compliance})"
                                 }
                             },
                             "uniqueKey": "",
