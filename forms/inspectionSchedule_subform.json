@@ -196,58 +196,31 @@
                     }
                 },
                 {
-                    "className": "org.joget.plugin.enterprise.ListGrid",
+                    "className": "org.joget.plugin.enterprise.ImageUpload",
                     "properties": {
-                        "abortRelatedRunningProcesses": "",
-                        "buttonLabel": "",
-                        "deleteFiles": "",
-                        "deleteGridData": "",
-                        "deleteMessage": "Delete row?",
-                        "deleteSubformData": "",
-                        "disabledAdd": "",
-                        "disabledDelete": "",
-                        "enableSorting": "",
-                        "errorMessage": "Invalid number of rows",
-                        "formDefId": "",
-                        "height": "500",
-                        "id": "field9",
-                        "label": "List Grid",
-                        "listId": "list_inspectionSchedule_subform",
-                        "loadBinder": {
-                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
-                            "properties": {
-                                "foreignKey": "referencekey",
-                                "formDefId": "inspectionSchedule_subform"
-                            }
-                        },
-                        "options": [{
-                            "editable": "no",
-                            "format": "",
-                            "formatType": "text",
-                            "label": "Images Uploaded",
-                            "value": "ref_image_compliance",
-                            "width": ""
-                        }],
-                        "pageSize": "20",
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "requestParams": [],
-                        "showRowNumber": "",
-                        "sortField": "sort",
-                        "storeBinder": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "submit-label-normal": "",
-                        "submit-label-readonly": "",
-                        "uniqueKey": "",
-                        "validateMaxRow": "",
-                        "validateMinRow": "",
+                        "createThumbnail": "true",
+                        "fileType": ".jpeg;.jpg;.gif;.png",
+                        "fileTypeMsg": "Invalid file type",
+                        "height": "60",
+                        "id": "ref_image_history",
+                        "label": "Images Uploaded History",
+                        "maxSize": "",
+                        "maxSizeMsg": "File size limit exceeded",
+                        "multiple": "true",
+                        "padding": "",
+                        "permissionHidden": "",
+                        "permissionType": "",
+                        "readonly": "true",
+                        "removeFile": "",
+                        "resizeHeight": "",
+                        "resizeMethod": "",
+                        "resizeQuality": "0.8",
+                        "resizeWidth": "",
                         "validator": {
                             "className": "",
                             "properties": {}
                         },
-                        "width": "900"
+                        "width": "60"
                     }
                 }
             ],
