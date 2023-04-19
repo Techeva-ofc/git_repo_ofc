@@ -250,7 +250,7 @@
                                 "properties": {
                                     "autoHandleFiles": "",
                                     "autoHandleWorkflowVariable": "true",
-                                    "check_sql": "select * from app_fd_ofc_schdl_sub_tab where \nc_referencekey = '#requestParam.id?sql#'",
+                                    "check_sql": "select c_checkpointCode,c_checkpointName,c_ref_image,\n        c_remark_insp_checkpoint,\n        ref_image_compliance\nfrom app_fd_ofc_schdl_sub_tab where c_referencekey = '#requestParam.id?sql#'",
                                     "delete_sql": "DELETE\r\nFROM\r\n   app_fd_ofc_schdl_sub_tab\r\nWHERE\r\n  c_referencekey = {'#requestParam.id?sql#'}",
                                     "insert_sql": "INSERT app_fd_ofc_schdl_sub_tab (\r\n    id,\r\n    c_ref_image_history)\r\nVALUES (\r\n    {id},\r\n    {ref_image_compliance})",
                                     "jdbcDatasource": "default",
