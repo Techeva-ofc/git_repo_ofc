@@ -50,6 +50,19 @@
                         "value": "",
                         "workflowVariable": ""
                     }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "id": "parentkey_reference",
+                        "useDefaultWhenEmpty": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
                 }
             ],
             "properties": {"width": "100%"}
