@@ -6,12 +6,20 @@
             "jdbcDatasource": "default",
             "optimisePaging": "",
             "primaryKey": "id",
-            "sql": "SELECT sr.id,sr.c_jobid,sr.c_reportdate,sr.c_licenseactivity, sr.dateCreated, sr.C_serReqDmccSrNo, c.c_licenseNumber, sr.c_serReqServCat, \r\nc.c_companyName, c.c_companyLocation, t.c_tower_seq_no, t.c_tower_name ,sr.c_status, sr.c_inspSchedlDate, sr.c_inspectionreportStatus\r\nFROM app_fd_ofc_serreqs_tab sr\r\nINNER JOIN app_fd_ofc_company_tab c\r\nON sr.c_companyName = c.id\r\nINNER JOIN app_fd_ofc_location_tab l\r\nON c.c_companyLocation = l.c_locName\r\nINNER JOIN app_fd_ofc_tower_tab t\r\nON c.c_tower_name = t.c_tower_name\r\n\r\nWHERE sr.c_status = 'Payment Completed' \r\nor sr.c_status = 'Inspection Completed'\r\nor sr.c_status = 'Inspection Scheduled'\r\nor sr.c_status = 'Image(s) To-Be Uploaded'\r\nor sr.c_status = 'Images Uploaded'\r\nor sr.c_status = 'Paid Fee'\r\nor sr.c_status = 'Compliance'\r\nor sr.c_status = 'Drawing / Document Uploaded'\r\nor sr.c_status = 'Payment Completed for OFC Amendment'\r\nor sr.c_status = 'Inspection To-Be Re-Scheduled' \r\n"
+            "sql": "SELECT c.c_compactivity,sr.id,sr.c_jobid,sr.c_reportdate,sr.c_licenseactivity, sr.dateCreated, sr.C_serReqDmccSrNo, c.c_licenseNumber, sr.c_serReqServCat, \r\nc.c_companyName, c.c_companyLocation, t.c_tower_seq_no, t.c_tower_name ,sr.c_status, sr.c_inspSchedlDate, sr.c_inspectionreportStatus\r\nFROM app_fd_ofc_serreqs_tab sr\r\nINNER JOIN app_fd_ofc_company_tab c\r\nON sr.c_companyName = c.id\r\nINNER JOIN app_fd_ofc_location_tab l\r\nON c.c_companyLocation = l.c_locName\r\nINNER JOIN app_fd_ofc_tower_tab t\r\nON c.c_tower_name = t.c_tower_name\r\n\r\nWHERE sr.c_status = 'Payment Completed' \r\nor sr.c_status = 'Inspection Completed'\r\nor sr.c_status = 'Inspection Scheduled'\r\nor sr.c_status = 'Image(s) To-Be Uploaded'\r\nor sr.c_status = 'Images Uploaded'\r\nor sr.c_status = 'Paid Fee'\r\nor sr.c_status = 'Compliance'\r\nor sr.c_status = 'Drawing / Document Uploaded'\r\nor sr.c_status = 'Payment Completed for OFC Amendment'\r\nor sr.c_status = 'Inspection To-Be Re-Scheduled' \r\n"
         }
     },
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
     "columns": [
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_10",
+            "label": "c_compactivity",
+            "name": "c_compactivity",
+            "sortable": "false"
+        },
         {
             "action": {
                 "className": "",
