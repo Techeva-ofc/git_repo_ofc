@@ -130,7 +130,7 @@
                         "properties": {
                             "encryption": "",
                             "id": "field6",
-                            "label": "#requestParam.activity#",
+                            "label": "#requestParam.companyname#",
                             "maxlength": "",
                             "placeholder": "",
                             "readonly": "",
