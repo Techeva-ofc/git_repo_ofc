@@ -57,8 +57,11 @@
                         "label": "",
                         "listId": "list_ofc_unitArea_form",
                         "loadBinder": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                            "properties": {
+                                "foreignKey": "parentkey_reference",
+                                "formDefId": "ofc_unitArea_subform"
+                            }
                         },
                         "options": [
                             {
@@ -84,7 +87,7 @@
                         "requestParams": [
                             {
                                 "defaultValue": "",
-                                "field": "tower_name",
+                                "field": "",
                                 "param": "unitAreaTower"
                             },
                             {
@@ -96,8 +99,11 @@
                         "showRowNumber": "",
                         "sortField": "sort",
                         "storeBinder": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                            "properties": {
+                                "foreignKey": "parentkey_reference",
+                                "formDefId": "ofc_unitArea_subform"
+                            }
                         },
                         "submit-label-normal": "",
                         "submit-label-readonly": "",
