@@ -57,11 +57,8 @@
                         "label": "",
                         "listId": "list_ofc_unitArea_form",
                         "loadBinder": {
-                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
-                            "properties": {
-                                "foreignKey": "parentkey_reference",
-                                "formDefId": "ofc_unitArea_subform"
-                            }
+                            "className": "",
+                            "properties": {}
                         },
                         "options": [
                             {
