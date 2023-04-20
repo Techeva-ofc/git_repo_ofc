@@ -121,6 +121,27 @@
                                 "className": "",
                                 "properties": {}
                             },
+                            "value": "#requestParam.activity#",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "field6",
+                            "label": "#requestParam.activity#",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
                             "value": "",
                             "workflowVariable": ""
                         }
