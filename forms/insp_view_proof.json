@@ -201,13 +201,6 @@
                                 "readonly": "",
                                 "value": "remark_insp_checkpoint",
                                 "width": ""
-                            },
-                            {
-                                "formatType": "",
-                                "label": "Image",
-                                "readonly": "",
-                                "value": "testimg",
-                                "width": ""
                             }
                         ],
                         "pagingOptions": "10,20,50,100",
