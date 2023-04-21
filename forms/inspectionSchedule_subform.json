@@ -202,33 +202,6 @@
                         "fileType": ".jpeg;.jpg;.gif;.png",
                         "fileTypeMsg": "Invalid file type",
                         "height": "60",
-                        "id": "testimg",
-                        "label": "Image Upload",
-                        "maxSize": "",
-                        "maxSizeMsg": "File size limit exceeded",
-                        "multiple": "",
-                        "padding": "",
-                        "permissionType": "",
-                        "readonly": "",
-                        "removeFile": "",
-                        "resizeHeight": "",
-                        "resizeMethod": "",
-                        "resizeQuality": "0.8",
-                        "resizeWidth": "",
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "width": "60"
-                    }
-                },
-                {
-                    "className": "org.joget.plugin.enterprise.ImageUpload",
-                    "properties": {
-                        "createThumbnail": "true",
-                        "fileType": ".jpeg;.jpg;.gif;.png",
-                        "fileTypeMsg": "Invalid file type",
-                        "height": "60",
                         "id": "ref_image_history",
                         "label": "Images Uploaded History",
                         "maxSize": "",
