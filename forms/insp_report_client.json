@@ -238,6 +238,13 @@
                                     "readonly": "",
                                     "value": "ref_image_compliance",
                                     "width": ""
+                                },
+                                {
+                                    "formatType": "",
+                                    "label": "",
+                                    "readonly": "",
+                                    "value": "testimg",
+                                    "width": ""
                                 }
                             ],
                             "pagingOptions": "10,20,50,100",
