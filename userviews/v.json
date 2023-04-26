@@ -142,7 +142,7 @@
                 "comment": "",
                 "hide": "",
                 "id": "category-3c667d47-854f-458f-97f0-3fb07397f12f",
-                "label": "<i class=\"fa fa-tasks\"><\/i> <img src=\"#appResource.icon.jpg#\"> Manage Emirates",
+                "label": "<i class=\"fa fa-tasks\"><\/i> <img src=\"#appResource.icon.jpg#\" width=\"15\" height=\"15\"> Manage Emirates",
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
