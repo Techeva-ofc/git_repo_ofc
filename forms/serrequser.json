@@ -154,7 +154,7 @@
                 "permissionHidden": "",
                 "permissionReadonly": "",
                 "readonly": "true",
-                "readonlyLabel": "",
+                "readonlyLabel": "true",
                 "regex": "",
                 "reverse": "",
                 "storeBinder": {
@@ -374,7 +374,7 @@
                 "permissionHidden": "",
                 "permissionReadonly": "",
                 "readonly": "true",
-                "readonlyLabel": "",
+                "readonlyLabel": "true",
                 "regex": "",
                 "reverse": "",
                 "storeBinder": {
