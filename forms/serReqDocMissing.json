@@ -17,7 +17,7 @@
                     "disabledDelete": "",
                     "enableSorting": "",
                     "errorMessage": "Invalid number of rows",
-                    "formDefId": "serReqDocMissing",
+                    "formDefId": "serReqDocMissingSubform",
                     "height": "500",
                     "id": "ofc_serReqApprovalDoc_grid",
                     "label": "",
