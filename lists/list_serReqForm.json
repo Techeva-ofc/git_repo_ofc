@@ -319,7 +319,7 @@
             "properties": {
                 "confirmation": "",
                 "datalist_type": "row_action",
-                "href": "",
+                "href": "uploaddocumentmissing",
                 "hrefColumn": "",
                 "hrefParam": "",
                 "label": "Attach Document",
@@ -376,7 +376,7 @@
                 "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/cancel",
                 "hrefColumn": "id;c_inspSchedlDate;c_inspectorNames;c_ofc_category_name;c_serReqDmccSrNo",
                 "hrefParam": "id;sc_date;name;type;serReqDmccSrNo",
-                "label": "Cancel / Re-Schedule",
+                "label": "Re-Schedule",
                 "rules": [{
                     "field": "c_status",
                     "join": "AND",
