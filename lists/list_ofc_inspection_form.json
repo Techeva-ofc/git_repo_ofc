@@ -466,7 +466,7 @@
                 "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/ofcpage",
                 "hrefColumn": "id",
                 "hrefParam": "id",
-                "label": "Release OFC Certificate",
+                "label": "Release Temp.OFC Certificate",
                 "rules": [
                     {
                         "field": "c_inspectionreportStatus",
