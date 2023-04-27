@@ -2398,6 +2398,8 @@
                 }
             }],
             "properties": {
+                "comment": "",
+                "hide": "yes",
                 "id": "category-D57A5B865BF34E49923A853C952CA261",
                 "label": "Review Drawing / Document",
                 "permission": {
