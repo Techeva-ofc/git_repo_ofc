@@ -176,23 +176,16 @@
                             },
                             {
                                 "formatType": "",
-                                "label": "Reference Image Uploaded",
-                                "readonly": "true",
-                                "value": "ref_image",
-                                "width": ""
-                            },
-                            {
-                                "formatType": "",
-                                "label": "Uploaded Image",
-                                "readonly": "",
-                                "value": "ref_image_compliance",
-                                "width": ""
-                            },
-                            {
-                                "formatType": "",
                                 "label": "Status",
                                 "readonly": "",
                                 "value": "status",
+                                "width": ""
+                            },
+                            {
+                                "formatType": "",
+                                "label": "Reference Image Uploaded",
+                                "readonly": "",
+                                "value": "ref_image",
                                 "width": ""
                             },
                             {
