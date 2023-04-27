@@ -123,22 +123,13 @@
             "properties": {
                 "comment": "",
                 "runInMultiThread": "",
-                "tools": [
-                    {
-                        "className": "org.joget.tutorial.WorkflowVariableUpdateTool",
-                        "properties": {"workflowVarMapping": [{
-                            "changeValueTo": "#form.ofc_ofc_category_tab.ofc_category_name[{form.ofc_serReqs_tab.ofc_category_name}]#",
-                            "variable": "serviceCategoryType"
-                        }]}
-                    },
-                    {
-                        "className": "org.joget.apps.app.lib.DatabaseUpdateTool",
-                        "properties": {
-                            "jdbcDatasource": "default",
-                            "query": "select * from  ofc_serReqs_tab.ofc_category_name \r\n"
-                        }
-                    }
-                ]
+                "tools": [{
+                    "className": "org.joget.tutorial.WorkflowVariableUpdateTool",
+                    "properties": {"workflowVarMapping": [{
+                        "changeValueTo": "#form.ofc_ofc_category_tab.ofc_category_name[{form.ofc_serReqs_tab.ofc_category_name}]#",
+                        "variable": "serviceCategoryType"
+                    }]}
+                }]
             }
         },
         "postProcessorRunOn": "create",
