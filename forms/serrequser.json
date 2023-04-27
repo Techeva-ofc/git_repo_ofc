@@ -738,7 +738,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "Service Request View",
+        "name": "Service Request View_v1",
         "noPermissionMessage": "",
         "permission": {
             "className": "",
