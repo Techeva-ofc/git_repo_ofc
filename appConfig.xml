@@ -1,0 +1,71 @@
+<appDefinition>
+   <appId>ofc_app</appId>
+   <id>ofc_app</id>
+   <version></version>
+   <name>Operational Fitness Certificate</name>
+   <packageDefinitionList/>
+   <formDefinitionList/>
+   <userviewDefinitionList/>
+   <datalistDefinitionList/>
+   <builderDefinitionList/>
+   <pluginDefaultPropertiesList>
+      <pluginDefaultProperties>
+         <id>org.joget.apps.app.lib.EmailTool</id>
+         <appId>ofc_app</appId>
+         <appVersion>4</appVersion>
+         <pluginName>Email Tool</pluginName>
+         <pluginDescription>Sends email message to targeted recipient(s)</pluginDescription>
+         <pluginProperties>{&quot;toSpecific&quot;:&quot;saxena.sarla@gmail.com&quot;,&quot;toParticipantId&quot;:&quot;sarlasaxena@gmail.com&quot;,&quot;cc&quot;:&quot;saxena.sarla@gmail.com&quot;,&quot;bcc&quot;:&quot;lck.sxn@gmail.com&quot;,&quot;subject&quot;:&quot;Operational Fitness Request email&quot;,&quot;message&quot;:&quot;Please accept the request\n\nRegards,\nOperational Fitness Certificate&quot;,&quot;isHtml&quot;:&quot;&quot;,&quot;from&quot;:&quot;saxena.sarla@gmail.com&quot;,&quot;host&quot;:&quot;smtp.gmail.com&quot;,&quot;port&quot;:&quot;465&quot;,&quot;security&quot;:&quot;SSL&quot;,&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;%%%%MvBdrWa0tvz7N2UR0ZjLDw==%%%%&quot;,&quot;formDefId&quot;:&quot;&quot;,&quot;fields&quot;:[],&quot;files&quot;:[],&quot;icsAttachement&quot;:&quot;&quot;}</pluginProperties>
+      </pluginDefaultProperties>
+      <pluginDefaultProperties>
+         <id>org.joget.apps.app.lib.ProcessDataCollectorAuditTrail</id>
+         <appId>ofc_app</appId>
+         <appVersion>4</appVersion>
+         <pluginName>Process Data Collector</pluginName>
+         <pluginDescription>Save process data into app_report_* tables for reporting purposes</pluginDescription>
+         <pluginProperties>{}</pluginProperties>
+      </pluginDefaultProperties>
+      <pluginDefaultProperties>
+         <id>org.joget.plugin.enterprise.FormDataAuditTrailPlugin</id>
+         <appId>ofc_app</appId>
+         <appVersion>4</appVersion>
+         <pluginName>Form Data Audit Trail</pluginName>
+         <pluginDescription>Store audit trail of Form Data to app_form_data_audit_trail table.</pluginDescription>
+         <pluginProperties>{&quot;captureLoad&quot;:&quot;true&quot;,&quot;captureSave&quot;:&quot;true&quot;,&quot;captureSavedDatainJson&quot;:&quot;true&quot;,&quot;captureDelete&quot;:&quot;true&quot;,&quot;captureMode&quot;:&quot;selected&quot;,&quot;formDefIds&quot;:&quot;insp_review_proof;serReqForm&quot;}</pluginProperties>
+      </pluginDefaultProperties>
+   </pluginDefaultPropertiesList>
+   <environmentVariableList>
+      <environmentVariable>
+         <id>counter</id>
+         <value>6</value>
+         <remarks>Used for plugin: Id Generator Field</remarks>
+      </environmentVariable>
+      <environmentVariable>
+         <id>ofc_serviceReq_form_assp_counter</id>
+         <value>5</value>
+         <remarks>Used for plugin: Id Generator Field</remarks>
+      </environmentVariable>
+      <environmentVariable>
+         <id>PERMISSION_</id>
+         <remarks>permissionRequest:8C13941FFEEB4033B804D5F2D89B4827</remarks>
+      </environmentVariable>
+      <environmentVariable>
+         <id>serReqForm_assp_counter</id>
+         <value>6</value>
+         <remarks>Used for plugin: Id Generator Field</remarks>
+      </environmentVariable>
+      <environmentVariable>
+         <id>serviceRequestView_assp_counter</id>
+         <value>2</value>
+         <remarks>Used for plugin: Id Generator Field</remarks>
+      </environmentVariable>
+   </environmentVariableList>
+   <messageList/>
+   <resourceList/>
+   <license>QAzPBJl5PamQ03yarC2D5tEJktpiORMM11qkIqc2hGQgt/NsaVpwqA==</license>
+   <description>14 Apr APP UAT version
+
+
+
+</description>
+</appDefinition>

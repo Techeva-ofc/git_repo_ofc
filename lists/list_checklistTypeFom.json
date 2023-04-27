@@ -1,0 +1,66 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "checklistTypeFom"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [{
+        "action": {
+            "className": "",
+            "properties": {}
+        },
+        "alignment": "",
+        "datalist_type": "column",
+        "exclude_export": "",
+        "format": {
+            "className": "",
+            "properties": {}
+        },
+        "headerAlignment": "",
+        "hidden": "false",
+        "id": "column_0",
+        "label": "Checklist Type",
+        "name": "checklistType",
+        "sortable": "true",
+        "style": "",
+        "width": ""
+    }],
+    "considerFilterWhenGetTotal": "",
+    "description": "",
+    "disableResponsive": "",
+    "filters": [{
+        "id": "filter_0",
+        "label": "Checklist Type",
+        "name": "checklistType",
+        "type": {
+            "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+            "properties": {}
+        }
+    }],
+    "hidePageSize": "true",
+    "id": "list_checklistTypeFom",
+    "name": "List - Checklist Type",
+    "order": "1",
+    "orderBy": "dateModified",
+    "pageSize": "0",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "responsiveView": [
+        {
+            "breakpoint": "",
+            "columns": "",
+            "view": "Mobile"
+        },
+        {
+            "breakpoint": "",
+            "columns": "",
+            "view": "Tablet"
+        }
+    ],
+    "rowActions": [],
+    "searchPopup": "",
+    "showDataWhenFilterSet": "",
+    "showPageSizeSelector": "true",
+    "useSession": ""
+}
