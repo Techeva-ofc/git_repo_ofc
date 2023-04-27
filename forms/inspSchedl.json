@@ -20,27 +20,6 @@
                         }
                     },
                     {
-                        "className": "org.joget.apps.form.lib.TextField",
-                        "properties": {
-                            "encryption": "",
-                            "id": "field22",
-                            "label": "#form.ofc_serReqs_tab.status#",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "size": "",
-                            "storeNumeric": "",
-                            "style": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "",
-                            "workflowVariable": ""
-                        }
-                    },
-                    {
                         "className": "org.joget.apps.form.lib.IdGeneratorField",
                         "properties": {
                             "envVariable": "counter",
@@ -451,6 +430,206 @@
                 },
                 "visibilityControl": "statusofinspection",
                 "visibilityValue": "Paid Fee"
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "fee_fitout_nonCompliance",
+                            "label": "Non-Compliance Fee",
+                            "maxlength": "",
+                            "numOfDecimal": "2",
+                            "placeholder": "",
+                            "postfix": "",
+                            "prefix": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "storeNumeric": "true",
+                            "style": "us",
+                            "useThousandSeparator": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "mandatory": "true",
+                                    "message": "Mandatory",
+                                    "type": ""
+                                }
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "wave_off",
+                            "label": "Waive off (60% or 40% or 20%)",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "mandatory": "true",
+                                    "message": "Mandatory",
+                                    "type": ""
+                                }
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.plugin.enterprise.CalculationField",
+                        "properties": {
+                            "equation": "(totalfee/100)*wave",
+                            "hidden": "",
+                            "id": "waver_amount",
+                            "label": "Waiver_amount",
+                            "numOfDecimal": "2",
+                            "postfix": "",
+                            "prefix": "",
+                            "readonlyLabel": "true",
+                            "storeNumeric": "true",
+                            "style": "us",
+                            "useThousandSeparator": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "variables": [
+                                {
+                                    "fieldId": "fee_fitout_nonCompliance",
+                                    "operation": "sum",
+                                    "variableName": "totalfee"
+                                },
+                                {
+                                    "fieldId": "wave_off",
+                                    "operation": "sum",
+                                    "variableName": "wave"
+                                }
+                            ],
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.plugin.enterprise.CalculationField",
+                        "properties": {
+                            "equation": "(totalfee-waver)",
+                            "hidden": "",
+                            "id": "feetopay",
+                            "label": "Fee To-Be Paid",
+                            "numOfDecimal": "2",
+                            "postfix": "",
+                            "prefix": "",
+                            "readonlyLabel": "true",
+                            "storeNumeric": "true",
+                            "style": "us",
+                            "useThousandSeparator": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "variables": [
+                                {
+                                    "fieldId": "fee_fitout_nonCompliance",
+                                    "operation": "sum",
+                                    "variableName": "totalfee"
+                                },
+                                {
+                                    "fieldId": "waver_amount",
+                                    "operation": "sum",
+                                    "variableName": "waver"
+                                }
+                            ],
+                            "workflowVariable": ""
+                        }
+                    }
+                ],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "fee",
+                "join": "",
+                "label": "Waive Off",
+                "loadBinder": {
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "readonly": "true",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "id": "statusofinspection",
+                        "useDefaultWhenEmpty": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "#form.ofc_serReqs_tab.status#",
+                        "workflowVariable": ""
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "section4",
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
             }
         }
     ],
