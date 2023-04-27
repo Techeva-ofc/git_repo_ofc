@@ -2559,8 +2559,14 @@
                 }
             }],
             "properties": {
+                "comment": "",
+                "hide": "yes",
                 "id": "category-e3363267-69bd-4fba-9cac-a0e517f9d2c4",
-                "label": "<i class='fa fa-tasks'><\/i>Manage Inspection Schedule Subform"
+                "label": "<i class='fa fa-tasks'><\/i>Manage Inspection Schedule Subform",
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                }
             }
         },
         {
@@ -2587,8 +2593,14 @@
                 }
             }],
             "properties": {
+                "comment": "",
+                "hide": "yes",
                 "id": "category-214D3322BF64408A8E32D3AD537ED72D",
-                "label": "View Images Uploaded"
+                "label": "View Images Uploaded",
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                }
             }
         }
     ],
