@@ -530,12 +530,10 @@
                             "keyToSave": "9",
                             "label": "",
                             "loadBinder": {
-                                "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
+                                "className": "org.joget.plugin.enterprise.MultirowFormBinder",
                                 "properties": {
-                                    "autoHandleFiles": "",
-                                    "autoHandleWorkflowVariable": "true",
-                                    "jdbcDatasource": "default",
-                                    "sql": "select c_doctype,c_description,c_fileupload FROM app_fd_ofc_doc_miss_subform  where c_referencekey = '#requestParam.id'\r\n"
+                                    "foreignKey": "referencekey",
+                                    "formDefId": "serReqDocMissingSubform"
                                 }
                             },
                             "options": [
