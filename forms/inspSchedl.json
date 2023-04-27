@@ -402,19 +402,6 @@
                             "value": "#requestParam.inspectionstatus#",
                             "workflowVariable": ""
                         }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.HiddenField",
-                        "properties": {
-                            "id": "statusofinspection",
-                            "useDefaultWhenEmpty": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "#form.ofc_serReqs_tab.status#",
-                            "workflowVariable": ""
-                        }
                     }
                 ],
                 "properties": {"width": "100%"}
@@ -443,6 +430,30 @@
                 },
                 "visibilityControl": "statusofinspection",
                 "visibilityValue": "Paid Fee"
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "id": "statusofinspection",
+                        "useDefaultWhenEmpty": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "#form.ofc_serReqs_tab.status#",
+                        "workflowVariable": ""
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "id": "section3",
+                "label": "Section"
             }
         }
     ],
