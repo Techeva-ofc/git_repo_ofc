@@ -2247,7 +2247,7 @@
             }],
             "properties": {
                 "comment": "Super Admin\n",
-                "hide": "",
+                "hide": "yes",
                 "id": "category-34597A5E667544CE9C24552E33E7831C",
                 "label": "Waiver OFF",
                 "permission": {
