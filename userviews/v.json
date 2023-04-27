@@ -1686,7 +1686,7 @@
             }],
             "properties": {
                 "comment": "Waiver OFF - Super Admin",
-                "hide": "",
+                "hide": "yes",
                 "id": "category-160B4B1E1B764E3186A83DF04904F209",
                 "label": "<i class=\"fa fa-users\"><\/i>Waiver OFF - Super Admin",
                 "permission": {
