@@ -563,7 +563,7 @@
             "properties": {
                 "comment": "",
                 "id": "fee",
-                "join": "or;or;",
+                "join": "",
                 "label": "Waive Off",
                 "loadBinder": {
                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
@@ -577,14 +577,14 @@
                 "permissionReadonly": "",
                 "readonly": "true",
                 "readonlyLabel": "",
-                "regex": ";;",
-                "reverse": ";;",
+                "regex": "",
+                "reverse": "",
                 "storeBinder": {
                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
-                "visibilityControl": "statusofinspection;statusofinspection;#currentUser.groups.name#",
-                "visibilityValue": "Other Non-Compliance;Fitout Non-Compliance;Super Admin"
+                "visibilityControl": "",
+                "visibilityValue": ""
             }
         },
         {
