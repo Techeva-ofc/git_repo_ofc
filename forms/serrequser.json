@@ -686,6 +686,19 @@
                                 "properties": {}
                             }
                         }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
+                            "id": "docuploadstatus",
+                            "useDefaultWhenEmpty": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "attached",
+                            "workflowVariable": ""
+                        }
                     }
                 ],
                 "properties": {"width": "100%"}
