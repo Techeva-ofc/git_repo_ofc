@@ -319,9 +319,9 @@
             "properties": {
                 "confirmation": "",
                 "datalist_type": "row_action",
-                "href": "uploaddocumentmissing",
-                "hrefColumn": "",
-                "hrefParam": "",
+                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/uploaddocumentmissing",
+                "hrefColumn": "id",
+                "hrefParam": "id",
                 "label": "Attach Document",
                 "rules": [{
                     "field": "c_approval_status",
