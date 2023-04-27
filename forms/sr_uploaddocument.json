@@ -511,6 +511,98 @@
                 "visibilityControl": "",
                 "visibilityValue": ""
             }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.plugin.enterprise.AdvancedGrid",
+                        "properties": {
+                            "deleteMessage": "Delete row?",
+                            "disabledAdd": "true",
+                            "disabledDelete": "true",
+                            "errorMessage": "Invalid number of rows",
+                            "formDefId": "serReqDocMissingSubform",
+                            "hint": "Click to edit. Tab to save.",
+                            "id": "docuploadlist",
+                            "keyToSave": "9",
+                            "label": "",
+                            "loadBinder": {
+                                "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
+                                "properties": {
+                                    "autoHandleFiles": "",
+                                    "autoHandleWorkflowVariable": "true",
+                                    "jdbcDatasource": "default",
+                                    "sql": "select c_doctype,c_description,c_fileupload FROM app_fd_ofc_doc_miss_subform  where c_referencekey = '#requestParam.id' and c_description <> 'Approved'\r\n"
+                                }
+                            },
+                            "options": [
+                                {
+                                    "formatType": "",
+                                    "label": "Document",
+                                    "readonly": "true",
+                                    "value": "doctype",
+                                    "width": ""
+                                },
+                                {
+                                    "formatType": "",
+                                    "label": "Approval Status",
+                                    "readonly": "true",
+                                    "value": "description",
+                                    "width": ""
+                                },
+                                {
+                                    "formatType": "",
+                                    "label": "Attach Document",
+                                    "readonly": "",
+                                    "value": "fileupload",
+                                    "width": ""
+                                }
+                            ],
+                            "pagingOptions": "10,20,50,100",
+                            "readonly": "",
+                            "recordPerPage": "20",
+                            "search": "",
+                            "showRowNumber": "true",
+                            "sortIndx": "",
+                            "storeBinder": {
+                                "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                                "properties": {
+                                    "foreignKey": "referencekey",
+                                    "formDefId": "serReqDocMissingSubform"
+                                }
+                            },
+                            "uniqueKey": "",
+                            "validateMaxRow": "",
+                            "validateMinRow": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            }
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
+                            "id": "docuploadstatus",
+                            "useDefaultWhenEmpty": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "attached",
+                            "workflowVariable": ""
+                        }
+                    }
+                ],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "id": "section5",
+                "label": "Section"
+            }
         }
     ],
     "properties": {
