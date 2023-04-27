@@ -213,7 +213,7 @@
             }],
             "properties": {
                 "comment": "",
-                "hide": "",
+                "hide": "yes",
                 "id": "category-F644D49403404B27B10FDF31FC068E54",
                 "label": "Waive OFF FEE",
                 "permission": {
