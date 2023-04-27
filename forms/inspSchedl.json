@@ -629,26 +629,8 @@
             "properties": {}
         },
         "postProcessor": {
-            "className": "org.joget.apps.app.lib.EmailTool",
-            "properties": {
-                "bcc": "",
-                "cc": "",
-                "fields": [],
-                "files": [],
-                "formDefId": "",
-                "from": "",
-                "host": "",
-                "icsAttachement": "",
-                "isHtml": "",
-                "message": "",
-                "password": "%%%%****SECURE_VALUE****-0%%%%",
-                "port": "",
-                "security": "",
-                "subject": "",
-                "toParticipantId": "",
-                "toSpecific": "",
-                "username": ""
-            }
+            "className": "",
+            "properties": {}
         },
         "postProcessorRunOn": "both",
         "storeBinder": {
