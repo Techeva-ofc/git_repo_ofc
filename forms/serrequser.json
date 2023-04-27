@@ -639,7 +639,7 @@
                                     "autoHandleFiles": "",
                                     "autoHandleWorkflowVariable": "true",
                                     "jdbcDatasource": "default",
-                                    "sql": "select c_doctype,c_description,c_fileupload FROM app_fd_ofc_doc_miss_subform  where c_referencekey = '#requestParam.id' and c_description = 'Approved'\r\n"
+                                    "sql": "select c_doctype,c_description,c_fileupload FROM app_fd_ofc_doc_miss_subform  where c_referencekey = '#requestParam.id' and c_description <> 'Approved'\r\n"
                                 }
                             },
                             "options": [
