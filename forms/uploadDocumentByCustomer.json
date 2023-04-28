@@ -7,14 +7,14 @@
             "elements": [{
                 "className": "org.joget.apps.form.lib.FileUpload",
                 "properties": {
-                    "attachment": "",
+                    "attachment": "true",
                     "fileType": "",
                     "fileTypeMsg": "Invalid file type",
                     "id": "customerDoc",
                     "label": "Document upload by Customer",
                     "maxSize": "",
                     "maxSizeMsg": "File size limit exceeded",
-                    "multiple": "true",
+                    "multiple": "",
                     "padding": "",
                     "permissionPlugin": {
                         "className": "org.joget.apps.userview.lib.GroupPermission",
