@@ -335,91 +335,91 @@
       <appResource>
          <id>AOFC-right-img.jpg</id>
          <appId>ofc_app</appId>
-         <appVersion>4</appVersion>
+         <appVersion>22</appVersion>
          <filesize>9266</filesize>
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.AOFC-right-img.jpg#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>banner1.png</id>
          <appId>ofc_app</appId>
-         <appVersion>4</appVersion>
+         <appVersion>22</appVersion>
          <filesize>262144</filesize>
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.banner1.png#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>conditional-multi-process-tool-6.0.1.jar</id>
          <appId>ofc_app</appId>
-         <appVersion>4</appVersion>
+         <appVersion>22</appVersion>
          <filesize>127143</filesize>
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.conditional-multi-process-tool-6.0.1.jar#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>footerimage.jpg</id>
          <appId>ofc_app</appId>
-         <appVersion>4</appVersion>
+         <appVersion>22</appVersion>
          <filesize>49352</filesize>
          <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>icon.jpg</id>
          <appId>ofc_app</appId>
-         <appVersion>4</appVersion>
+         <appVersion>22</appVersion>
          <filesize>20631</filesize>
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.icon.jpg#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>logo-2.png</id>
          <appId>ofc_app</appId>
-         <appVersion>4</appVersion>
+         <appVersion>22</appVersion>
          <filesize>5317</filesize>
          <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>logo-concordia.png</id>
          <appId>ofc_app</appId>
-         <appVersion>4</appVersion>
+         <appVersion>22</appVersion>
          <filesize>6216</filesize>
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.logo-concordia.png#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>logo-white.png</id>
          <appId>ofc_app</appId>
-         <appVersion>4</appVersion>
+         <appVersion>22</appVersion>
          <filesize>6773</filesize>
          <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>logo.png</id>
          <appId>ofc_app</appId>
-         <appVersion>4</appVersion>
+         <appVersion>22</appVersion>
          <filesize>10875</filesize>
          <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>received_stamp.jpg</id>
          <appId>ofc_app</appId>
-         <appVersion>4</appVersion>
+         <appVersion>22</appVersion>
          <filesize>3423</filesize>
          <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>sign.png</id>
          <appId>ofc_app</appId>
-         <appVersion>4</appVersion>
+         <appVersion>22</appVersion>
          <filesize>81467</filesize>
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.sign.png#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>thumb.png</id>
          <appId>ofc_app</appId>
-         <appVersion>4</appVersion>
+         <appVersion>22</appVersion>
          <filesize>893541</filesize>
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.thumb.png#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>WorkflowVariable_UpdateTool-6.0.0.jar</id>
          <appId>ofc_app</appId>
-         <appVersion>4</appVersion>
+         <appVersion>22</appVersion>
          <filesize>6962</filesize>
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.WorkflowVariable_UpdateTool-6.0.0.jar#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
       </appResource>
