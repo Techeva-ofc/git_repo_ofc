@@ -171,6 +171,7 @@
                   <processDefId>serReqForm_approver_process</processDefId>
                   <activityDefId>inprogress</activityDefId>
                   <pluginName>org.joget.apps.app.lib.DatabaseUpdateTool</pluginName>
+                  <pluginProperties>{&quot;jdbcDatasource&quot;:&quot;default&quot;,&quot;query&quot;:&quot;update app_fd_ofc_serreqs_tab set c_status = &apos;Upload Document&apos; where id = &apos;#form.ofc_serReqs_tab.id#&apos;&quot;}</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
