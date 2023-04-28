@@ -1789,7 +1789,7 @@
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
-                        "allowedGroupIds": "G-003",
+                        "allowedGroupIds": "G-003;G-001;G-002",
                         "orgId": ""
                     }
                 },
@@ -2398,7 +2398,7 @@
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
-                        "allowedGroupIds": "concordia-2;concordia-4;concordia-3",
+                        "allowedGroupIds": "G-003;G-001;G-002",
                         "orgId": ""
                     }
                 },
@@ -2436,7 +2436,7 @@
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
-                        "allowedGroupIds": "concordia-05",
+                        "allowedGroupIds": "G-005;G-001",
                         "orgId": ""
                     }
                 },
@@ -2484,7 +2484,7 @@
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
-                        "allowedGroupIds": "concordia-05",
+                        "allowedGroupIds": "G-005;G-001",
                         "orgId": ""
                     }
                 },
@@ -2532,7 +2532,7 @@
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
-                        "allowedGroupIds": "concordia-6",
+                        "allowedGroupIds": "G-002",
                         "orgId": ""
                     }
                 },
@@ -2587,13 +2587,13 @@
             ],
             "properties": {
                 "comment": "",
-                "hide": "",
+                "hide": "yes",
                 "id": "category-328FB1D0C75E45EB8C5C0EB0CE53DFF5",
                 "label": "Service Request Summary",
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
-                        "allowedGroupIds": "concordia-01;concordia-6",
+                        "allowedGroupIds": "",
                         "orgId": ""
                     }
                 }
