@@ -384,7 +384,7 @@
                                     "className": "",
                                     "properties": {}
                                 },
-                                "value": "Payment Pending",
+                                "value": "On Approval",
                                 "workflowVariable": ""
                             }
                         },
