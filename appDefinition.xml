@@ -122,6 +122,14 @@
                </packageActivityPlugin>
             </entry>
             <entry>
+               <string>serReqForm_approver_process::updatepaymentpending</string>
+               <packageActivityPlugin>
+                  <processDefId>serReqForm_approver_process</processDefId>
+                  <activityDefId>updatepaymentpending</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.DatabaseUpdateTool</pluginName>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
                <string>serReqForm_approver_process::temporaryOFCCertificate</string>
                <packageActivityPlugin>
                   <processDefId>serReqForm_approver_process</processDefId>
