@@ -234,7 +234,7 @@
                   <processDefId>serReqForm_approver_process</processDefId>
                   <activityDefId>update_status</activityDefId>
                   <pluginName>org.joget.plugin.enterprise.FormDataUpdateTool</pluginName>
-                  <pluginProperties>{&quot;formDefId&quot;:&quot;serReqForm_approval&quot;,&quot;fields&quot;:[{&quot;field&quot;:&quot;approval_status&quot;,&quot;value&quot;:&quot;#variable.statusofapproval#&quot;}]}</pluginProperties>
+                  <pluginProperties>{&quot;formDefId&quot;:&quot;serReqForm_approval&quot;,&quot;fields&quot;:[{&quot;field&quot;:&quot;approval_status&quot;,&quot;value&quot;:&quot;#variable.status#&quot;}]}</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
