@@ -197,10 +197,12 @@
                             "keyToSave": "9",
                             "label": "",
                             "loadBinder": {
-                                "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                                "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
                                 "properties": {
-                                    "foreignKey": "referencekey",
-                                    "formDefId": "inspectionSchedule_subform"
+                                    "autoHandleFiles": "",
+                                    "autoHandleWorkflowVariable": "",
+                                    "jdbcDatasource": "default",
+                                    "sql": "select a.*,c_referenceKey,b.check_point_id, GROUP_CONCAT(concat(\"<img src='/jw/web/client/app/ofc_app/\",(SELECT appVersion FROM jwdb.app_app where appId = 'ofc_app' and published = '1'ORDER BY appVersion DESC LIMIT 1),\"/form/download/insp_report_client/\",c_referenceKey,\"/\",image,\"'/>\")) as images\n from jwdb.app_fd_ofc_schdl_sub_tab a left join jwdb.app_fd_ofc_insp_images b \non a.id=b.check_point_id \nwhere c_referenceKey = '#requestParam.id#' group by b.check_point_id"
                                 }
                             },
                             "options": [
@@ -238,13 +240,6 @@
                                     "readonly": "",
                                     "value": "ref_image_compliance",
                                     "width": ""
-                                },
-                                {
-                                    "formatType": "",
-                                    "label": "",
-                                    "readonly": "",
-                                    "value": "testimg",
-                                    "width": ""
                                 }
                             ],
                             "pagingOptions": "10,20,50,100",
@@ -254,10 +249,13 @@
                             "showRowNumber": "true",
                             "sortIndx": "",
                             "storeBinder": {
-                                "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                                "className": "org.joget.apps.form.lib.BeanShellFormBinder",
                                 "properties": {
-                                    "foreignKey": "referencekey",
-                                    "formDefId": "inspectionSchedule_subform"
+                                    "autoHandleFiles": "",
+                                    "autoHandleWorkflowVariable": "",
+                                    "cacheInterval": "",
+                                    "script": "\nimport java.lang.System;\nimport java.lang.String;\nimport org.joget.apps.app.service.AppUtil;\nimport org.joget.apps.form.model.Element;\nimport org.joget.apps.form.model.FormData;\nimport org.joget.apps.form.model.FormRow;\nimport org.joget.apps.form.model.FormRowSet;\nimport org.joget.apps.form.service.FormUtil;\nimport org.joget.plugin.base.PluginManager;\nimport org.joget.apps.form.model.FormStoreBinder;\nimport org.joget.apps.app.service.AppUtil;\nimport java.sql.Connection;\nimport java.sql.DriverManager;\nimport java.sql.ResultSet;\nimport java.sql.SQLException;\nimport java.sql.PreparedStatement;\nimport javax.sql.DataSource;\n\n                PreparedStatement stmt = null;\n\t\t\t\tConnection connection = null;\n\n        try{\n            System.out.println(\"#appVersion# app version\");\n         PluginManager pluginManager = (PluginManager) AppUtil.getApplicationContext().getBean(\"pluginManager\");\n         FormStoreBinder binder = (FormStoreBinder) pluginManager.getPlugin(\"org.joget.apps.form.lib.WorkflowFormBinder\");\n         binder.store(element, rows, formData);\n         \n        \n\t\t\t\tDataSource ds = (DataSource)AppUtil.getApplicationContext().getBean(\"setupDataSource\");\n                 connection = ds.getConnection();\n\t\t\t\t for(FormRow row:rows){\n\t\t\t\t String images = row.getProperty(\"ref_image_compliance\");\n\t\t\t\t String id = row.getProperty(\"id\");\n\t\t\t\t if(images!=null){\n                stmt = connection.prepareStatement(\"delete from app_fd_ofc_insp_images where check_point_id =?\");\n                stmt.setString(1,id);\n                stmt.executeQuery();\n\t\t\t\tif(!images.equals(\"\")){\n\t\t\t\tString[] imgs = images.split(\";\");\n\t\t\t\tfor(String imgName:imgs){\n\t\t\t\tstmt = connection.prepareStatement(\"insert into app_fd_ofc_insp_images (image,check_point_id) values (?,?)\");\n\t\t\t\tstmt.setString(1,imgName);\n\t\t\t\tstmt.setString(2,id);\n\t\t\t\tstmt.executeQuery();\n\t\t\t\t}\n\t\t\t\t}\n\t\t\t\t}\n\t\t\t\t}\n        }catch(Exception e){\n            System.out.println(\"exception \"+e.getMessage());\n        }finally{\n            if(stmt!=null){\n                stmt.close();\n            }\n            if(connection!=null){\n                connection.close();\n            }\n        }\n         \n",
+                                    "useAjax": ""
                                 }
                             },
                             "uniqueKey": "",
