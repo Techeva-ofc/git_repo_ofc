@@ -18,6 +18,12 @@
                     "join": "OR",
                     "operator": "=",
                     "value": "In-Progress"
+                },
+                {
+                    "field": "status",
+                    "join": "OR",
+                    "operator": "=",
+                    "value": "On Approval"
                 }
             ],
             "formDefId": "serReqForm",
