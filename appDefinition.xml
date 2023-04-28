@@ -243,12 +243,11 @@
                </packageActivityPlugin>
             </entry>
             <entry>
-               <string>serReqForm_approver_process::update_status</string>
+               <string>serReqForm_approver_process::email_on_inprogress</string>
                <packageActivityPlugin>
                   <processDefId>serReqForm_approver_process</processDefId>
-                  <activityDefId>update_status</activityDefId>
-                  <pluginName>org.joget.plugin.enterprise.FormDataUpdateTool</pluginName>
-                  <pluginProperties>{&quot;formDefId&quot;:&quot;serReqForm_approval&quot;,&quot;fields&quot;:[{&quot;field&quot;:&quot;approval_status&quot;,&quot;value&quot;:&quot;#variable.status#&quot;}]}</pluginProperties>
+                  <activityDefId>email_on_inprogress</activityDefId>
+                  <pluginName>org.joget.plugin.enterprise.ExportFormEmailTool</pluginName>
                </packageActivityPlugin>
             </entry>
             <entry>
@@ -258,6 +257,15 @@
                   <activityDefId>fullOFCCertificate</activityDefId>
                   <pluginName>org.joget.plugin.enterprise.ExportFormEmailTool</pluginName>
                   <pluginProperties>{&quot;formDefId&quot;:&quot;ofc_fitoutcertificate&quot;,&quot;fileName&quot;:&quot;DMCC#form.ofc_serReqs_tab.serReqDmccSrNo#_OFC_Certificate&quot;,&quot;hideEmptyValueField&quot;:&quot;&quot;,&quot;showNotSelectedOptions&quot;:&quot;&quot;,&quot;toSpecific&quot;:&quot;dt-sagar@alphadxb.com&quot;,&quot;toParticipantId&quot;:&quot;#form.ofc_serReqs_tab.serReqUserName#&quot;,&quot;cc&quot;:&quot;&quot;,&quot;bcc&quot;:&quot;&quot;,&quot;subject&quot;:&quot;[DMCC No. : #form.ofc_serReqs_tab.serReqDmccSrNo#]  OFC Certificate&quot;,&quot;message&quot;:&quot;Dear  #form.ofc_company_tab.companyName[{form.ofc_serReqs_tab.companyName}]#,\nDMCC No. : #form.ofc_serReqs_tab.serReqDmccSrNo#\n#form.ofc_ofc_category_tab.ofc_category_name[{form.ofc_serReqs_tab.ofc_category_name}]#\n\n \n\nYour OFC has been released.\nPlease find the attachments.\n\n \n\nAlso you can download certificate from the portal\nhttp:\/\/localhost:8080\/jw\/web\/userview\/ofc_app\/v\/_\/_index\n\n\nThank you,\nConcordia Fitout Team&quot;,&quot;isHtml&quot;:&quot;&quot;,&quot;from&quot;:&quot;dt-sagar@alphadxb.com&quot;,&quot;host&quot;:&quot;smtp.gmail.com&quot;,&quot;port&quot;:&quot;sagargupta21091996@gmail.com&quot;,&quot;security&quot;:&quot;TLS&quot;,&quot;username&quot;:&quot;sagargupta21091996@gmail.com&quot;,&quot;password&quot;:&quot;%%%%qGA02PcoeMrxdsibB25w7DSU1Md8sCdhTMZRdAYqw6c=%%%%&quot;,&quot;formatting&quot;:&quot;&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;repeatHeader&quot;:&quot;&quot;,&quot;footerHtml&quot;:&quot;&quot;,&quot;repeatFooter&quot;:&quot;&quot;,&quot;attachmentFormDefId&quot;:&quot;&quot;,&quot;fields&quot;:[],&quot;files&quot;:[],&quot;icsAttachement&quot;:&quot;&quot;}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>serReqForm_approver_process::update_status</string>
+               <packageActivityPlugin>
+                  <processDefId>serReqForm_approver_process</processDefId>
+                  <activityDefId>update_status</activityDefId>
+                  <pluginName>org.joget.plugin.enterprise.FormDataUpdateTool</pluginName>
+                  <pluginProperties>{&quot;formDefId&quot;:&quot;serReqForm_approval&quot;,&quot;fields&quot;:[{&quot;field&quot;:&quot;approval_status&quot;,&quot;value&quot;:&quot;#variable.status#&quot;}]}</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
