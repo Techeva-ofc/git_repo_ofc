@@ -92,8 +92,29 @@
                 "properties": {"width": "100%"}
             }],
             "properties": {
+                "comment": "",
                 "id": "section4",
-                "label": "Section"
+                "join": "",
+                "label": "Section",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "approval_status",
+                "visibilityValue": "In-Progress"
             }
         },
         {
@@ -124,8 +145,29 @@
                 "properties": {"width": "100%"}
             }],
             "properties": {
+                "comment": "",
                 "id": "section5",
-                "label": "Section"
+                "join": "",
+                "label": "Section",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "true",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "approval_status",
+                "visibilityValue": "In-Progress"
             }
         },
         {
