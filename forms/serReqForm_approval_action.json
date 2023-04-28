@@ -52,11 +52,6 @@
                                 "grouping": "",
                                 "label": "In-Progress",
                                 "value": "In-Progress"
-                            },
-                            {
-                                "grouping": "",
-                                "label": "",
-                                "value": ""
                             }
                         ],
                         "optionsBinder": {
