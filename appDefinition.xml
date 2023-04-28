@@ -229,15 +229,6 @@
                </packageActivityPlugin>
             </entry>
             <entry>
-               <string>serReqForm_approver_process::email_on_rejected</string>
-               <packageActivityPlugin>
-                  <processDefId>serReqForm_approver_process</processDefId>
-                  <activityDefId>email_on_rejected</activityDefId>
-                  <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
-                  <pluginProperties>{&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.plugin.enterprise.ExportFormEmailTool&quot;,&quot;properties&quot;:{&quot;formDefId&quot;:&quot;serReqForm&quot;,&quot;fileName&quot;:&quot;OFC ServiceRequest&quot;,&quot;hideEmptyValueField&quot;:&quot;&quot;,&quot;showNotSelectedOptions&quot;:&quot;&quot;,&quot;toSpecific&quot;:&quot;dt-sagar@alphadxb.com&quot;,&quot;toParticipantId&quot;:&quot;#form.ofc_serReqs_tab.serReqUserName#&quot;,&quot;cc&quot;:&quot;&quot;,&quot;bcc&quot;:&quot;dt-sagar@alphadxb.com&quot;,&quot;subject&quot;:&quot;OFC REJECTED - Your Service request as been Rejected (#currentUser.dateTimeFormat#)&quot;,&quot;message&quot;:&quot;Dear  #form.ofc_company_tab.companyName[{form.ofc_serReqs_tab.companyName}]#,\nDMCC No. : #form.ofc_serReqs_tab.serReqDmccSrNo#\n#form.ofc_serReqs_tab.serReqServCat# service request for the Fitout Portal is rejected !!\n\nBest Regards,\nConcordia Fitout Team.&quot;,&quot;isHtml&quot;:&quot;&quot;,&quot;from&quot;:&quot;dt-sagar@alphadxb.com&quot;,&quot;host&quot;:&quot;smtp.gmail.com&quot;,&quot;port&quot;:&quot;587&quot;,&quot;security&quot;:&quot;TLS&quot;,&quot;username&quot;:&quot;sagargupta21091996@gmail.com&quot;,&quot;password&quot;:&quot;%%%%0kpcID1KleRRCHaXRpGDNzLl5Ta6M4mWWt6h34Kwq9s=%%%%&quot;,&quot;formatting&quot;:&quot;&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;repeatHeader&quot;:&quot;&quot;,&quot;footerHtml&quot;:&quot;&quot;,&quot;repeatFooter&quot;:&quot;&quot;,&quot;attachmentFormDefId&quot;:&quot;serReqForm&quot;,&quot;fields&quot;:[],&quot;files&quot;:[],&quot;icsAttachement&quot;:&quot;&quot;}},{&quot;className&quot;:&quot;org.joget.apps.app.lib.DatabaseUpdateTool&quot;,&quot;properties&quot;:{&quot;jdbcDatasource&quot;:&quot;default&quot;,&quot;query&quot;:&quot;insert into notification_log (event_id,event_detail,event_status,event_name) values (&apos;#form.ofc_serReqs_tab.id#&apos;,&apos;Email on Rejection&apos;,&apos;Completed&apos;,&apos;Rejection email has been forwaded to #form.ofc_serReqs_tab.serReqUserName#&apos;);&quot;}}],&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;}</pluginProperties>
-               </packageActivityPlugin>
-            </entry>
-            <entry>
                <string>serReqForm_approver_process::update_status</string>
                <packageActivityPlugin>
                   <processDefId>serReqForm_approver_process</processDefId>
