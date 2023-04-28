@@ -302,8 +302,8 @@
                <packageParticipant>
                   <processDefId>serReqForm_approver_process</processDefId>
                   <participantId>customer</participantId>
-                  <type>user</type>
-                  <value>ashiq.ahamed</value>
+                  <type>group</type>
+                  <value>G-009</value>
                </packageParticipant>
             </entry>
             <entry>
