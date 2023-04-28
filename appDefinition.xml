@@ -93,7 +93,7 @@
                   <formId>serReqForm_approval</formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
          </packageActivityFormMap>
