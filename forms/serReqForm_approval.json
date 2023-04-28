@@ -161,9 +161,13 @@
                 "elements": [{
                     "className": "org.joget.plugin.enterprise.FormGrid",
                     "properties": {
+                        "abortRelatedRunningProcesses": "",
+                        "deleteFiles": "",
+                        "deleteGridData": "",
+                        "deleteMessage": "",
+                        "deleteSubformData": "",
                         "disabledAdd": "true",
                         "disabledDelete": "true",
-                        "elementUniqueKey": "4944",
                         "enableSorting": "",
                         "errorMessage": "Invalid number of rows.",
                         "formDefId": "serReqForm_approval_action",
@@ -194,23 +198,17 @@
                             },
                             {
                                 "format": "",
-                                "formatType": "html",
-                                "label": "Remarks",
-                                "value": "remarks",
-                                "width": ""
-                            },
-                            {
-                                "format": "",
                                 "formatType": "text",
                                 "label": "Date",
                                 "value": "approval_date",
                                 "width": ""
                             }
                         ],
+                        "pageSize": "",
+                        "permissionHidden": "",
                         "readonly": "true",
                         "readonlyLabel": "",
                         "showRowNumber": "",
-                        "sortField": "sort",
                         "storeBinder": {
                             "className": "org.joget.plugin.enterprise.MultirowFormBinder",
                             "properties": {
@@ -220,8 +218,13 @@
                         },
                         "submit-label-normal": "Submit",
                         "submit-label-readonly": "Close",
+                        "uniqueKey": "",
                         "validateMaxRow": "",
                         "validateMinRow": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
                         "width": "900"
                     }
                 }],
