@@ -139,15 +139,6 @@
                             },
                             "subFormParentId": "parent_id"
                         }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.CustomHTML",
-                        "properties": {
-                            "autoPopulate": "",
-                            "id": "field7",
-                            "label": "",
-                            "value": "<script>\r\n\r\n// Get the form and submit button elements\r\nvar form = document.getElementById(\"serReqForm_approval\");\r\nvar submitButton = document.getElementById(\"submit\");\r\n\r\n// Add event listener for form submission\r\nform.addEventListener(\"submit\", function(event) {\r\n\r\nvar inspSchedlDate = document.querySelector('input[name=\"inspSchedlDate\"]'); // Get the element by name\r\nvar inputValue = inspSchedlDate.value; // Get the value of the element\r\n \r\nlet originalDate = new Date(inputValue);\r\n\r\n// Subtract 2 hours from the specific date and time\r\noriginalDate.setHours(originalDate.getHours() - 2);\r\n\r\n// Format the date and time with AM/PM\r\nvar hours = originalDate.getHours();\r\nvar amPM = hours >= 12 ? 'PM' : 'AM';\r\n// Format the date and time\r\nvar formattedDate = (\"0\" + originalDate.getDate()).slice(-2) + \"/\"\r\n                    + (\"0\" + (originalDate.getMonth() + 1)).slice(-2) + \"/\"\r\n                    + originalDate.getFullYear() + \" \"\r\n                    + (\"0\" + originalDate.getHours()).slice(-2) + \":\"\r\n                    + (\"0\" + originalDate.getMinutes()).slice(-2)+ \" \"\r\n                    + amPM;\r\n                   \r\nlet rescheduleLinkExpireDate = document.getElementById(\"custRescheduleLinkExpireDateTime\");\r\nrescheduleLinkExpireDate.value = formattedDate ;\r\n//// alert(formattedDate);  \r\n  \r\n  \r\n  \r\n});\r\n \r\n\r\n\r\n\r\n\r\n\r\n////alert(\"Form submitted!\"+inputValue);\r\n\r\n\r\n<\/script>"
-                        }
                     }
                 ],
                 "properties": {
