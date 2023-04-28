@@ -303,7 +303,7 @@
                   <processDefId>serReqForm_approver_process</processDefId>
                   <participantId>customer</participantId>
                   <type>group</type>
-                  <value>users</value>
+                  <value>G-009,users</value>
                </packageParticipant>
             </entry>
             <entry>
