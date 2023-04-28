@@ -501,16 +501,16 @@
                 "label": "Generate OFC Certificate",
                 "rules": [
                     {
+                        "field": "c_ofc_category_name",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Activity Amendment"
+                    },
+                    {
                         "field": "c_status",
                         "join": "AND",
                         "operator": "=",
                         "value": "Payment Completed"
-                    },
-                    {
-                        "field": "c_ofc_category_name",
-                        "join": "AND",
-                        "operator": "=",
-                        "value": "Activity Amendment"
                     },
                     {
                         "field": "c_ofc_category_name",
@@ -519,10 +519,22 @@
                         "value": "Other Amendment"
                     },
                     {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Payment Completed"
+                    },
+                    {
                         "field": "c_ofc_category_name",
                         "join": "OR",
                         "operator": "=",
                         "value": "Location Amendment"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Payment Completed"
                     }
                 ],
                 "target": "_self"
