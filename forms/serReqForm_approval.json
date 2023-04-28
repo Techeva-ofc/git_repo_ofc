@@ -69,24 +69,72 @@
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
                 "elements": [{
-                    "className": "org.joget.apps.form.lib.SubForm",
+                    "className": "org.joget.plugin.enterprise.AdvancedGrid",
                     "properties": {
-                        "formDefId": "sr_uploaddocument_grid",
-                        "id": "field5",
+                        "deleteMessage": "Delete row?",
+                        "disabledAdd": "true",
+                        "disabledDelete": "true",
+                        "errorMessage": "Invalid number of rows",
+                        "formDefId": "serReqDocMissingSubform",
+                        "hint": "Click to edit. Tab to save.",
+                        "id": "docuploadlist",
+                        "keyToSave": "9",
                         "label": "",
                         "loadBinder": {
-                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                            "properties": {}
+                            "className": "org.joget.plugin.enterprise.JdbcLoadBinder",
+                            "properties": {
+                                "autoHandleFiles": "",
+                                "autoHandleWorkflowVariable": "true",
+                                "jdbcDatasource": "default",
+                                "sql": "select c_doctype,c_description,c_fileupload FROM app_fd_ofc_doc_miss_subform  where c_referencekey = '#form.ofc_serreqs_tab.id#'\r\n\r\n"
+                            }
                         },
-                        "noframe": "true",
-                        "parentSubFormId": "",
+                        "options": [
+                            {
+                                "formatType": "",
+                                "label": "Document",
+                                "readonly": "true",
+                                "value": "doctype",
+                                "width": ""
+                            },
+                            {
+                                "formatType": "",
+                                "label": "Approval Status",
+                                "readonly": "",
+                                "value": "description",
+                                "width": ""
+                            },
+                            {
+                                "formatType": "",
+                                "label": "Attach Document",
+                                "readonly": "",
+                                "value": "fileupload",
+                                "width": ""
+                            }
+                        ],
+                        "pagingOptions": "10,20,50,100",
                         "readonly": "",
-                        "readonlyLabel": "",
+                        "recordPerPage": "20",
+                        "search": "",
+                        "showRowNumber": "true",
+                        "sortIndx": "",
                         "storeBinder": {
-                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                            "properties": {}
+                            "className": "org.joget.apps.form.lib.BeanShellFormBinder",
+                            "properties": {
+                                "autoHandleFiles": "",
+                                "autoHandleWorkflowVariable": "true",
+                                "cacheInterval": "",
+                                "script": "\nimport java.lang.System;\nimport java.lang.String;\nimport org.joget.apps.app.service.AppUtil;\nimport org.joget.apps.form.model.Element;\nimport org.joget.apps.form.model.FormData;\nimport org.joget.apps.form.model.FormRow;\nimport org.joget.apps.form.model.FormRowSet;\nimport org.joget.apps.form.service.FormUtil;\nimport org.joget.plugin.base.PluginManager;\nimport org.joget.apps.form.model.FormStoreBinder;\nimport org.joget.apps.app.service.AppUtil;\nimport java.sql.Connection;\nimport java.sql.DriverManager;\nimport java.sql.ResultSet;\nimport java.sql.SQLException;\nimport java.sql.PreparedStatement;\nimport javax.sql.DataSource;\n\n                PreparedStatement stmt = null;\n\t\t\t\tConnection connection = null;\n\n        try{\n            System.out.println(\"#appVersion# app version\");\n         PluginManager pluginManager = (PluginManager) AppUtil.getApplicationContext().getBean(\"pluginManager\");\n         FormStoreBinder binder = (FormStoreBinder) pluginManager.getPlugin(\"org.joget.apps.form.lib.WorkflowFormBinder\");\n         binder.store(element, rows, formData);\n         \n        \n\t\t\t\tDataSource ds = (DataSource)AppUtil.getApplicationContext().getBean(\"setupDataSource\");\n                 connection = ds.getConnection();\n\t\t\t\t for(FormRow row:rows){\n\t\t\t\t String file = row.getProperty(\"fileupload\");\n\t\t\t\t String id = row.getProperty(\"id\");\n\t\t\t\t if(file!=null){\n                stmt = connection.prepareStatement(\"delete from app_fd_ofc_file_history where check_point_id =?\");\n                stmt.setString(1,id);\n                stmt.executeQuery();\n\t\t\t\tif(!file.equals(\"\")){\n\t\t\t\tString[] list = file.split(\";\");\n\t\t\t\tfor(String filename:list){\n\t\t\t\tstmt = connection.prepareStatement(\"insert into app_fd_ofc_file_history (file,doctype_id) values (?,?)\");\n\t\t\t\tstmt.setString(1,imgName);\n\t\t\t\tstmt.setString(2,id);\n\t\t\t\tstmt.executeQuery();\n\t\t\t\t}\n\t\t\t\t}\n\t\t\t\t}\n\t\t\t\t}\n        }catch(Exception e){\n            System.out.println(\"exception \"+e.getMessage());\n        }finally{\n            if(stmt!=null){\n                stmt.close();\n            }\n            if(connection!=null){\n                connection.close();\n            }\n        }\n         \n",
+                                "useAjax": ""
+                            }
                         },
-                        "subFormParentId": ""
+                        "uniqueKey": "",
+                        "validateMaxRow": "",
+                        "validateMinRow": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        }
                     }
                 }],
                 "properties": {"width": "100%"}
@@ -109,59 +157,6 @@
                 "readonlyLabel": "",
                 "regex": "",
                 "reverse": "",
-                "storeBinder": {
-                    "className": "",
-                    "properties": {}
-                },
-                "visibilityControl": "approval_status",
-                "visibilityValue": "In-Progress"
-            }
-        },
-        {
-            "className": "org.joget.apps.form.model.Section",
-            "elements": [{
-                "className": "org.joget.apps.form.model.Column",
-                "elements": [{
-                    "className": "org.joget.apps.form.lib.SubForm",
-                    "properties": {
-                        "formDefId": "serReqDocMissing",
-                        "id": "field7",
-                        "label": "",
-                        "loadBinder": {
-                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                            "properties": {}
-                        },
-                        "noframe": "true",
-                        "parentSubFormId": "",
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "storeBinder": {
-                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                            "properties": {}
-                        },
-                        "subFormParentId": ""
-                    }
-                }],
-                "properties": {"width": "100%"}
-            }],
-            "properties": {
-                "comment": "",
-                "id": "section5",
-                "join": "",
-                "label": "Section",
-                "loadBinder": {
-                    "className": "",
-                    "properties": {}
-                },
-                "permission": {
-                    "className": "",
-                    "properties": {}
-                },
-                "permissionReadonly": "",
-                "readonly": "",
-                "readonlyLabel": "",
-                "regex": "",
-                "reverse": "true",
                 "storeBinder": {
                     "className": "",
                     "properties": {}
