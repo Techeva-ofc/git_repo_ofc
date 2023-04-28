@@ -127,6 +127,7 @@
                   <processDefId>serReqForm_approver_process</processDefId>
                   <activityDefId>updatepaymentpending</activityDefId>
                   <pluginName>org.joget.apps.app.lib.DatabaseUpdateTool</pluginName>
+                  <pluginProperties>{&quot;jdbcDatasource&quot;:&quot;default&quot;,&quot;query&quot;:&quot;update app_fd_ofc_serreqs_tab set c_status = &apos;Payment Pending&apos; &quot;}</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
