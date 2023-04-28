@@ -166,6 +166,14 @@
                </packageActivityPlugin>
             </entry>
             <entry>
+               <string>serReqForm_approver_process::inprogress</string>
+               <packageActivityPlugin>
+                  <processDefId>serReqForm_approver_process</processDefId>
+                  <activityDefId>inprogress</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.DatabaseUpdateTool</pluginName>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
                <string>serReqForm_approver_process::paymentReminderAmedment2</string>
                <packageActivityPlugin>
                   <processDefId>serReqForm_approver_process</processDefId>
