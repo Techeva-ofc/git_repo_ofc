@@ -905,7 +905,7 @@
                 {
                     "className": "org.joget.plugin.enterprise.DataListInboxMenu",
                     "properties": {
-                        "activityDefId": "approval",
+                        "activityDefId": "approval;approval_attachdocument",
                         "appFilter": "activity",
                         "assignment-customFooter": "",
                         "assignment-customHeader": "",
@@ -1302,7 +1302,7 @@
                 {
                     "className": "org.joget.plugin.enterprise.DataListInboxMenu",
                     "properties": {
-                        "activityDefId": "paymet",
+                        "activityDefId": "paymet;activity_attachdocument",
                         "appFilter": "activity",
                         "assignment-customFooter": "",
                         "assignment-customHeader": "",
