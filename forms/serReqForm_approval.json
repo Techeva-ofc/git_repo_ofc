@@ -86,7 +86,7 @@
                                 "autoHandleFiles": "",
                                 "autoHandleWorkflowVariable": "true",
                                 "jdbcDatasource": "default",
-                                "sql": "select c_doctype,c_description,c_fielupload where c_referencekey = '#requestParam.id#'"
+                                "sql": "select c_doctype,c_description,c_fielupload from app_fd_ofc_doc_miss_subform where c_referencekey = '#requestParam.id#'"
                             }
                         },
                         "options": [
