@@ -15,7 +15,7 @@
                     "deleteSubformData": "",
                     "disabledAdd": "",
                     "disabledDelete": "",
-                    "enableSorting": "true",
+                    "enableSorting": "",
                     "errorMessage": "Invalid number of rows",
                     "formDefId": "",
                     "height": "500",
