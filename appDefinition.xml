@@ -85,6 +85,17 @@
                   <disableSaveAsDraft>true</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
+            <entry>
+               <string>serReqForm_approver_process::approval_attachdocument</string>
+               <packageActivityForm>
+                  <processDefId>serReqForm_approver_process</processDefId>
+                  <activityDefId>approval_attachdocument</activityDefId>
+                  <formId>serReqForm_approval</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
          </packageActivityFormMap>
          <packageActivityPluginMap>
             <entry>
