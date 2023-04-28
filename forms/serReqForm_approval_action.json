@@ -18,10 +18,13 @@
                 {
                     "className": "org.joget.apps.form.lib.HiddenField",
                     "properties": {
-                        "elementUniqueKey": "4915",
                         "id": "approver",
                         "useDefaultWhenEmpty": "",
-                        "value": "#currentUser.username#",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "#currentUser.fullName#",
                         "workflowVariable": ""
                     }
                 },
