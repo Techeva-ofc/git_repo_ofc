@@ -252,6 +252,14 @@
                </packageActivityPlugin>
             </entry>
             <entry>
+               <string>serReqForm_approver_process::fullOFCCertificate</string>
+               <packageActivityPlugin>
+                  <processDefId>serReqForm_approver_process</processDefId>
+                  <activityDefId>fullOFCCertificate</activityDefId>
+                  <pluginName>org.joget.plugin.enterprise.ExportFormEmailTool</pluginName>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
                <string>serReqForm_approver_process::email_on_approved</string>
                <packageActivityPlugin>
                   <processDefId>serReqForm_approver_process</processDefId>
