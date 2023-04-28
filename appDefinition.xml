@@ -64,6 +64,17 @@
                </packageActivityForm>
             </entry>
             <entry>
+               <string>serReqForm_approver_process::activity_attachdocument</string>
+               <packageActivityForm>
+                  <processDefId>serReqForm_approver_process</processDefId>
+                  <activityDefId>activity_attachdocument</activityDefId>
+                  <formId>sr_uploaddocument</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
                <string>serReqForm_approver_process::approval</string>
                <packageActivityForm>
                   <processDefId>serReqForm_approver_process</processDefId>
