@@ -1675,7 +1675,7 @@
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
-                        "allowedGroupIds": "concordia-3",
+                        "allowedGroupIds": "G-006",
                         "orgId": ""
                     }
                 },
@@ -1789,7 +1789,7 @@
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
-                        "allowedGroupIds": "concordia-2",
+                        "allowedGroupIds": "G-003",
                         "orgId": ""
                     }
                 },
