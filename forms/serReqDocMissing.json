@@ -52,7 +52,7 @@
                     "readonlyLabel": "",
                     "requestParams": [],
                     "showRowNumber": "",
-                    "sortField": "description",
+                    "sortField": "sort",
                     "storeBinder": {
                         "className": "org.joget.plugin.enterprise.MultirowFormBinder",
                         "properties": {
