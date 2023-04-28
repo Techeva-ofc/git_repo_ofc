@@ -6,7 +6,20 @@
             "aggregateField": [],
             "customSelectionValue": "",
             "extraCondition": "",
-            "filters": [],
+            "filters": [
+                {
+                    "field": "approval_status",
+                    "join": "OR",
+                    "operator": "=",
+                    "value": "Approved"
+                },
+                {
+                    "field": "approval_status",
+                    "join": "OR",
+                    "operator": "=",
+                    "value": "In-Progress"
+                }
+            ],
             "formDefId": "serReqForm",
             "functionColumns": [],
             "groupBy": "",
