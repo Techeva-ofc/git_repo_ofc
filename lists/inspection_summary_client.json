@@ -343,6 +343,12 @@
                         "join": "OR",
                         "operator": "=",
                         "value": "Fitout Non-Compliance"
+                    },
+                    {
+                        "field": "c_inspectionreportStatus",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Other Non-Compliance"
                     }
                 ],
                 "showNotSelectedOptions": ""
