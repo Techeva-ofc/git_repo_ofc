@@ -33,12 +33,12 @@
                         "properties": {
                             "formDefId": "uploadDocumentByCustomer",
                             "id": "field5",
-                            "label": "",
+                            "label": "Upload Document",
                             "loadBinder": {
                                 "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                                 "properties": {}
                             },
-                            "noframe": "true",
+                            "noframe": "",
                             "parentSubFormId": "",
                             "readonly": "",
                             "readonlyLabel": "",
