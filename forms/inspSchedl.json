@@ -94,7 +94,7 @@
                         "properties": {
                             "allowManual": "true",
                             "currentDateAs": "",
-                            "dataFormat": "dd/MM/yyyy",
+                            "dataFormat": "",
                             "datePickerType": "dateTime",
                             "endDateFieldId": "",
                             "format": "",
