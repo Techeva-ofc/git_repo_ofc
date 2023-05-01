@@ -76,11 +76,8 @@
             "properties": {}
         },
         "postProcessor": {
-            "className": "org.joget.apps.app.lib.DatabaseUpdateTool",
-            "properties": {
-                "jdbcDatasource": "default",
-                "query": "update \nset c_amendment_expirydate = '#form. app_fd_payment_redirect_tab_amendmentExpireDate#'"
-            }
+            "className": "",
+            "properties": {}
         },
         "postProcessorRunOn": "both",
         "storeBinder": {
