@@ -464,6 +464,66 @@
                 "showNotSelectedOptions": ""
             },
             "type": "text"
+        },
+        {
+            "className": "org.joget.tutorial.DownloadPdfDatalistAction",
+            "icon": "",
+            "id": "rowAction_5",
+            "label": "Download PDF",
+            "name": "Download PDF Datalist Action",
+            "properties": {
+                "confirmation": "",
+                "datalist_type": "row_action",
+                "footerHtml": "",
+                "formDefId": "ofc_amendment",
+                "formatting": "",
+                "headerHtml": "",
+                "hideEmptyValueField": "",
+                "label": "Download OFC Certificate",
+                "recordIdColumn": "id",
+                "repeatFooter": "",
+                "repeatHeader": "",
+                "rules": [
+                    {
+                        "field": "c_ofc_category_name",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Activity Amendment"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Payment Completed"
+                    },
+                    {
+                        "field": "c_ofc_category_name",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Other Amendment"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Payment Completed"
+                    },
+                    {
+                        "field": "c_ofc_category_name",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Location Amendment"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Payment Completed"
+                    }
+                ],
+                "showNotSelectedOptions": ""
+            },
+            "type": "text"
         }
     ],
     "searchPopup": "",
