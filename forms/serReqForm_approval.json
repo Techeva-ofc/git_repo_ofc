@@ -8,16 +8,16 @@
                 "elements": [{
                     "className": "org.joget.apps.form.lib.SubForm",
                     "properties": {
-                        "elementUniqueKey": "4926",
-                        "formDefId": "serReqForm",
+                        "formDefId": "sr_for_approval",
                         "id": "subform",
                         "label": "",
                         "loadBinder": {
                             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                             "properties": {}
                         },
-                        "noframe": "true",
+                        "noframe": "",
                         "parentSubFormId": "",
+                        "permissionHidden": "",
                         "readonly": "true",
                         "readonlyLabel": "true",
                         "storeBinder": {
@@ -27,41 +27,11 @@
                         "subFormParentId": ""
                     }
                 }],
-                "properties": {
-                    "elementUniqueKey": "4924",
-                    "width": "100%"
-                }
+                "properties": {"width": "100%"}
             }],
             "properties": {
-                "comment": "",
-                "id": "section1",
-                "join": "",
-                "label": "",
-                "loadBinder": {
-                    "className": "",
-                    "properties": {}
-                },
-                "permission": {
-                    "className": "",
-                    "properties": {}
-                },
-                "permissionReadonly": "",
-                "readonly": "",
-                "readonlyLabel": "",
-                "regex": "",
-                "reverse": "",
-                "storeBinder": {
-                    "className": "org.joget.apps.form.lib.BeanShellFormBinder",
-                    "properties": {
-                        "autoHandleFiles": "",
-                        "autoHandleWorkflowVariable": "true",
-                        "cacheInterval": "",
-                        "script": "import java.io.IOException;\r\nimport java.sql.Connection;\r\nimport java.sql.DriverManager;\r\nimport java.sql.PreparedStatement;\r\nimport java.text.SimpleDateFormat;\r\nimport java.util.Date;\r\n\t\r\n\t// This code will execute when user service request for prime use with 0.00\r\n\t// amount so status will update as \"Payment Completed\"\r\n\tpublic  updateOrderStatusForPrime() {\r\n\t\tString redirectUrl = \"http://localhost:8080/jw/web/userview/ofc_app/v/_/serReqForm_crud\";\r\n\t\tString id = \"#form.ofc_serReqs_tab.id#\";\r\n\t\tString serReqfees = \"#form.ofc_ofc_category_tab.serReqTotAmt[{form.ofc_serReqs_tab.ofc_category_name}]#\";\r\n\r\n\t\tif (serReqfees.equals(\"0.00\")) {\r\n\t\t    System.out.println(\"updateOrderStatusForPrime===========\"+serReqfees);\r\n\t\t\ttry {\r\n\r\n\t\t\t\tSimpleDateFormat formatter = new SimpleDateFormat(\"yyyy-MM-dd HH:mm:ss\");\r\n\t\t\t\tDate date = new Date();\r\n\t\t\t\t//System.out.println(\"Date=======================\");\r\n\t\t\t\tString paymentDate = formatter.format(date).toString();\r\n\t\t\t\tSystem.out.println(paymentDate);\r\n\r\n\t\t\t\tClass.forName(\"com.mysql.jdbc.Driver\").newInstance();\r\n\t\t\t\tConnection con = DriverManager.getConnection(\"jdbc:mysql://localhost:3307/jwdb?characterEncoding=UTF-8\",\r\n\t\t\t\t\t\t\"root\", \"\");\r\n\t\t\t\tif (!con.isClosed()) {\r\n\r\n\t\t\t\t\tString paymentComplete = \"Payment Completed\";\r\n\r\n\t\t\t\t\t// create sql query\r\n\t\t\t\t\tString query = \"update app_fd_ofc_serreqs_tab set c_status = ?,c_paymentDate =? where id = ?\";\r\n\r\n\t\t\t\t\t// create the java mysql update PreparedStatement c_bearer_access_token\r\n\t\t\t\t\tPreparedStatement preparedStmt = con.prepareStatement(query);\r\n\t\t\t\t\tpreparedStmt.setString(1, paymentComplete);\r\n\t\t\t\t\tpreparedStmt.setString(2, paymentDate);\r\n\t\t\t\t\tpreparedStmt.setString(3, id);\r\n\r\n\t\t\t\t\t// execute the java PreparedStatement\r\n\t\t\t\t\tpreparedStmt.executeUpdate();\r\n\r\n\t\t\t\t\tcon.close();\r\n\t\t\t\t} else {\r\n\t\t\t\t\tSystem.out.println(\"Connection Problem\");\r\n\t\t\t\t}\r\n\t\t\t} catch (Exception ex) {\r\n\t\t\t\tex.printStackTrace();\r\n\t\t\t} finally {\r\n\t\t\t\ttry {\r\n\t\t\t\t\t// Redirect page to service request summary\r\n\t\t\t\t\tjava.awt.Desktop.getDesktop().browse(java.net.URI.create(redirectUrl));\r\n\t\t\t\t} catch (IOException e) {\r\n\t\t\t\t\t// TODO Auto-generated catch block\r\n\t\t\t\t\te.printStackTrace();\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n\t\r\n\t//method calling\r\n\tupdateOrderStatusForPrime();",
-                        "useAjax": ""
-                    }
-                },
-                "visibilityControl": "",
-                "visibilityValue": ""
+                "id": "section6",
+                "label": "Section"
             }
         },
         {
