@@ -387,7 +387,7 @@
                         "properties": {
                             "encryption": "",
                             "id": "insp_report_status",
-                            "label": "State of SR",
+                            "label": "Inspection Status",
                             "maxlength": "",
                             "placeholder": "",
                             "readonly": "",
