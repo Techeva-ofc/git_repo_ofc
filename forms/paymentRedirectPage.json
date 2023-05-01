@@ -27,7 +27,7 @@
                             "className": "",
                             "properties": {}
                         },
-                        "value": "",
+                        "value": "#form.ofc_serreqs_tab.paymentDate#",
                         "workflowVariable": ""
                     }
                 },
