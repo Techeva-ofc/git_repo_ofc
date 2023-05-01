@@ -49,6 +49,28 @@
             },
             "headerAlignment": "",
             "hidden": "false",
+            "id": "column_9",
+            "label": "Scheduled On",
+            "name": "c_inspSchedlDate",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
             "id": "column_1",
             "label": "Tower Name",
             "name": "c_tower_name",
