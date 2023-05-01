@@ -95,8 +95,30 @@
                 "properties": {"width": "100%"}
             }],
             "properties": {
+                "comment": "",
                 "id": "section5",
-                "label": "Section"
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "readonly": "true",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
             }
         },
         {
