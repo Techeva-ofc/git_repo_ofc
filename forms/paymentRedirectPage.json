@@ -19,6 +19,28 @@
                     }
                 },
                 {
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "id": "paymentDate",
+                        "useDefaultWhenEmpty": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
+                        "autoPopulate": "",
+                        "id": "field4",
+                        "label": "",
+                        "value": "<script>\n//Here we are calcuate expire date for OFC certificate\nlet reportDate = document.getElementById(\"paymentDate\").value;\n// Parse the original date string into a Date object\nlet originalDate = new Date(reportDate);\n\n\n// Add 2 years to the original date\nlet newDate = new Date(originalDate.getTime());\nnewDate.setFullYear(originalDate.getFullYear() + 2);\n\n\n\n// Format the new date as a string in the \"dd MMM yyyy h:mm aa\" format\nlet formattedDate = `${newDate.getDate().toString().padStart(2, \"0\")} ${newDate.toLocaleString('default', { month: 'short' })} ${newDate.getFullYear()} ${newDate.toLocaleString('default', { hour: 'numeric', minute: '2-digit', hour12: true })}`;\nlet reportExpireDate = document.getElementById(\"reportExpireDate\");\nreportExpireDate.value = formattedDate ;\n\n<\/script>"
+                    }
+                },
+                {
                     "className": "org.joget.apps.form.lib.CustomHTML",
                     "properties": {
                         "autoPopulate": "",
