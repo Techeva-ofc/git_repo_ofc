@@ -440,6 +440,30 @@
                         "join": "OR",
                         "operator": "=",
                         "value": "Compliance"
+                    },
+                    {
+                        "field": "c_inspectionreportStatus",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Full Compliance"
+                    },
+                    {
+                        "field": "c_inspectionreportStatus",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Partial Compliance"
+                    },
+                    {
+                        "field": "c_inspectionreportStatus",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Fitout Non-Compliance"
+                    },
+                    {
+                        "field": "c_inspectionreportStatus",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Other Non-Compliance"
                     }
                 ],
                 "target": "popup"
