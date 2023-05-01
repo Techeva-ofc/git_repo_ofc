@@ -336,6 +336,48 @@
     ],
     "rowActions": [
         {
+            "className": "org.joget.tutorial.DownloadPdfDatalistAction",
+            "icon": "",
+            "id": "rowAction_6",
+            "label": "Download PDF",
+            "name": "Download PDF Datalist Action",
+            "properties": {
+                "confirmation": "",
+                "datalist_type": "row_action",
+                "footerHtml": "",
+                "formDefId": "ofc_tempCertificate",
+                "formatting": "",
+                "headerHtml": "",
+                "hideEmptyValueField": "",
+                "label": "Download Temporary OFC Certificate",
+                "recordIdColumn": "",
+                "repeatFooter": "",
+                "repeatHeader": "",
+                "rules": [
+                    {
+                        "field": "c_inspectionreportStatus",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Other Non-Compliance"
+                    },
+                    {
+                        "field": "c_inspectionreportStatus",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Fitout Non-Compliance"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Paid Fee"
+                    }
+                ],
+                "showNotSelectedOptions": ""
+            },
+            "type": "text"
+        },
+        {
             "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
             "icon": "<i class=\"fas fa-link\"><\/i>",
             "id": "rowAction_3",
