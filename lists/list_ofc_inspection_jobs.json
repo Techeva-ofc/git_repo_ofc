@@ -6,7 +6,7 @@
             "jdbcDatasource": "default",
             "optimisePaging": "true",
             "primaryKey": "id",
-            "sql": "select \n  b.c_inspectionreportStatus, \n  a.c_companyLocation, \n  b.id, \n  b.c_serReqServCat, \n  b.c_inspSchedlDate, \n  b.c_serReqDmccSrNo, \n  b.c_status, \n  d.c_ofc_category_name, \n  a.c_companyName, \n  b.c_paymentDate, \n  c.c_tower_seq_no, \n  c.c_tower_name \nfrom \n  jwdb.app_fd_ofc_company_tab a \n  join jwdb.app_fd_ofc_serReqs_tab b on a.id = b.c_companyName \n  join jwdb.app_fd_ofc_tower_tab c on a.c_tower_name = c.id \n  join jwdb.app_fd_ofc_ofc_category_tab d on b.c_ofc_category_name = d.id \nwhere \n  b.c_status = 'Inspection Scheduled' \n  AND SUBSTR(b.c_inspSchedlDate, 1, 10)= CURDATE() \norder by \n  b.c_paymentDate is null, \n  b.c_paymentDate asc, \n  c.c_tower_seq_no asc\n"
+            "sql": "select \n  b.c_inspectionreportStatus, \n  a.c_companyLocation, \n  b.id, \n  b.c_serReqServCat, \n  b.c_inspSchedlDate, \n  b.c_serReqDmccSrNo, \n  b.c_status, \n  d.c_ofc_category_name, \n  a.c_companyName, \n  b.c_paymentDate, \n  c.c_tower_seq_no, \n  c.c_tower_name \nfrom \n  jwdb.app_fd_ofc_company_tab a \n  join jwdb.app_fd_ofc_serReqs_tab b on a.id = b.c_companyName \n  join jwdb.app_fd_ofc_tower_tab c on a.c_tower_name = c.id \n  join jwdb.app_fd_ofc_ofc_category_tab d on b.c_ofc_category_name = d.id \nwhere \n  b.c_status = 'Inspection Scheduled' \n    AND STR_TO_DATE(SUBSTR(b.c_inspSchedlDate, 1, 10), '%m/%d/%Y') = CURDATE() \norder by \n  b.c_paymentDate is null, \n  b.c_paymentDate asc, \n  c.c_tower_seq_no asc\n"
         }
     },
     "buttonPosition": "bottomLeft",
