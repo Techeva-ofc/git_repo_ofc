@@ -50,7 +50,7 @@
             "headerAlignment": "",
             "hidden": "false",
             "id": "column_9",
-            "label": "Scheduled On",
+            "label": "Scheduled At",
             "name": "c_inspSchedlDate",
             "sortable": "false",
             "style": "",
@@ -140,32 +140,6 @@
             "id": "column_3",
             "label": "Company Name",
             "name": "c_companyName",
-            "sortable": "false",
-            "style": "",
-            "width": ""
-        },
-        {
-            "action": {
-                "className": "",
-                "properties": {}
-            },
-            "alignment": "",
-            "datalist_type": "column",
-            "exclude_export": "",
-            "filterable": true,
-            "format": {
-                "className": "org.joget.plugin.enterprise.DateFormatter",
-                "properties": {
-                    "dataFormat": "yyyy-MM-dd hh:mm a",
-                    "dateStoreInUTC": "",
-                    "displayFormat": "hh:mm a"
-                }
-            },
-            "headerAlignment": "",
-            "hidden": "false",
-            "id": "column_5",
-            "label": "Scheduled At",
-            "name": "c_inspSchedlDate",
             "sortable": "false",
             "style": "",
             "width": ""
