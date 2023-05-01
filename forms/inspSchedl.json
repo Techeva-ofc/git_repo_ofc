@@ -442,7 +442,7 @@
                         "properties": {
                             "controlField": "",
                             "id": "reasonnoncompliance",
-                            "label": "Provide Reason for Non-Compliance",
+                            "label": "Reason for Non-Compliance",
                             "multiple": "",
                             "options": [
                                 {
@@ -490,7 +490,7 @@
                         "properties": {
                             "encryption": "",
                             "id": "remarkfield",
-                            "label": "Remarks(If any)",
+                            "label": "Remarks",
                             "maxlength": "",
                             "placeholder": "",
                             "readonly": "",
@@ -514,7 +514,7 @@
                             "fileTypeMsg": "Invalid file type",
                             "height": "60",
                             "id": "imageupload",
-                            "label": "Upload image(s) for reference",
+                            "label": "Illustrative Picture(s)",
                             "maxSize": "",
                             "maxSizeMsg": "File size limit exceeded",
                             "multiple": "",
