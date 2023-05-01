@@ -436,6 +436,137 @@
             "className": "org.joget.apps.form.model.Section",
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "",
+                            "id": "reasonnoncompliance",
+                            "label": "Provide Reason for Non-Compliance",
+                            "multiple": "",
+                            "options": [
+                                {
+                                    "grouping": "",
+                                    "label": "Select",
+                                    "value": "Select"
+                                },
+                                {
+                                    "grouping": "",
+                                    "label": "Customer Absent",
+                                    "value": "Customer Absent"
+                                },
+                                {
+                                    "grouping": "",
+                                    "label": "Closed Premises",
+                                    "value": "Closed Premises"
+                                },
+                                {
+                                    "grouping": "",
+                                    "label": "Others",
+                                    "value": "Others"
+                                }
+                            ],
+                            "optionsBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "mandatory": "true",
+                                    "message": "Mandatory",
+                                    "type": ""
+                                }
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "remarkfield",
+                            "label": "Remarks(If any)",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.plugin.enterprise.ImageUpload",
+                        "properties": {
+                            "createThumbnail": "true",
+                            "fileType": ".jpeg;.jpg;.gif;.png",
+                            "fileTypeMsg": "Invalid file type",
+                            "height": "60",
+                            "id": "imageupload",
+                            "label": "Upload image(s) for reference",
+                            "maxSize": "",
+                            "maxSizeMsg": "File size limit exceeded",
+                            "multiple": "",
+                            "padding": "",
+                            "permissionType": "",
+                            "readonly": "",
+                            "removeFile": "",
+                            "resizeHeight": "",
+                            "resizeMethod": "",
+                            "resizeQuality": "0.8",
+                            "resizeWidth": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "width": "60"
+                        }
+                    }
+                ],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "othernoncompliance",
+                "join": ";",
+                "label": "Reason for Re-Scheduling",
+                "loadBinder": {
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "readonly": "true",
+                "readonlyLabel": "true",
+                "regex": ";",
+                "reverse": ";",
+                "storeBinder": {
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                    "properties": {}
+                },
+                "visibilityControl": "inspectionreportStatus;statusofinspection",
+                "visibilityValue": "Other Non-Compliance;Paid Fee"
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
                 "elements": [{
                     "className": "org.joget.apps.form.lib.HiddenField",
                     "properties": {
