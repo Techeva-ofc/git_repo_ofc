@@ -558,7 +558,7 @@
                 "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/ofcpage",
                 "hrefColumn": ";;c_companyName;;id;;;;",
                 "hrefParam": "license;account_number;companyname;location;id;serReqDmccSrNo;job;report;activity",
-                "label": "Generate OFC Certificate",
+                "label": "View OFC Certificate",
                 "rules": [
                     {
                         "field": "c_ofc_category_name",
