@@ -62,28 +62,6 @@
         },
         {
             "action": {
-                "className": "",
-                "properties": {}
-            },
-            "alignment": "",
-            "datalist_type": "column",
-            "exclude_export": "",
-            "filterable": true,
-            "format": {
-                "className": "",
-                "properties": {}
-            },
-            "headerAlignment": "",
-            "hidden": "false",
-            "id": "column_8",
-            "label": "Job No.",
-            "name": "c_jobid",
-            "sortable": "false",
-            "style": "",
-            "width": ""
-        },
-        {
-            "action": {
                 "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
                 "properties": {
                     "confirmation": "",
@@ -359,12 +337,6 @@
                         "join": "AND",
                         "operator": "=",
                         "value": "Paid Fee"
-                    },
-                    {
-                        "field": "c_inspectionreportStatus",
-                        "join": "OR",
-                        "operator": "=",
-                        "value": "Other Non-Compliance"
                     },
                     {
                         "field": "c_inspectionreportStatus",
