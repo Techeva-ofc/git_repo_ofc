@@ -113,8 +113,8 @@
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "",
-                "visibilityValue": ""
+                "visibilityControl": "approval_status",
+                "visibilityValue": "In-Progress"
             }
         },
         {
