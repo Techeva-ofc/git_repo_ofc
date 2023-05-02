@@ -592,6 +592,15 @@
                             "value": "attached",
                             "workflowVariable": ""
                         }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "autoPopulate": "",
+                            "id": "field7",
+                            "label": "",
+                            "value": "<h3>*Please remove the old file and upload new file<\/h3>"
+                        }
                     }
                 ],
                 "properties": {"width": "100%"}
