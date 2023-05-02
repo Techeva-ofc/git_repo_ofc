@@ -518,6 +518,30 @@
                 "className": "org.joget.apps.form.model.Column",
                 "elements": [
                     {
+                        "className": "org.joget.plugin.enterprise.AjaxSubForm",
+                        "properties": {
+                            "ajax": "true",
+                            "collapsible": "",
+                            "collapsibleExpanded": "true",
+                            "collapsibleLabelCollapsed": "View Details",
+                            "collapsibleLabelExpanded": "Hide Details",
+                            "formDefId": "uploadDocumentByCustomer",
+                            "hideEmpty": "",
+                            "id": "field18",
+                            "label": "",
+                            "noLoad": "",
+                            "noframe": "",
+                            "parentSubFormId": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "storeBinder": {
+                                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                                "properties": {}
+                            },
+                            "subFormParentId": ""
+                        }
+                    },
+                    {
                         "className": "org.joget.apps.form.lib.FileUpload",
                         "properties": {
                             "attachment": "true",
