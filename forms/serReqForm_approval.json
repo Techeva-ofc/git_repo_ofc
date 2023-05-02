@@ -118,32 +118,6 @@
                 "className": "org.joget.apps.form.model.Column",
                 "elements": [
                     {
-                        "className": "org.joget.apps.form.lib.FileUpload",
-                        "properties": {
-                            "attachment": "true",
-                            "fileType": "",
-                            "fileTypeMsg": "Invalid file type",
-                            "id": "docuploadbyclient",
-                            "label": "Document / Drawing Uploaded by Client",
-                            "maxSize": "",
-                            "maxSizeMsg": "File size limit exceeded",
-                            "multiple": "true",
-                            "padding": "",
-                            "permissionType": "",
-                            "readonly": "",
-                            "removeFile": "",
-                            "resizeHeight": "",
-                            "resizeMethod": "",
-                            "resizeQuality": "0.8",
-                            "resizeWidth": "",
-                            "size": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            }
-                        }
-                    },
-                    {
                         "className": "org.joget.plugin.enterprise.AjaxSubForm",
                         "properties": {
                             "ajax": "",
@@ -165,6 +139,15 @@
                                 "properties": {}
                             },
                             "subFormParentId": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "autoPopulate": "",
+                            "id": "field7",
+                            "label": "",
+                            "value": "<h3>*Please remove the old file and upload new file<\/h3>"
                         }
                     }
                 ],
