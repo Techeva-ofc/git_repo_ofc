@@ -518,30 +518,6 @@
                 "className": "org.joget.apps.form.model.Column",
                 "elements": [
                     {
-                        "className": "org.joget.plugin.enterprise.AjaxSubForm",
-                        "properties": {
-                            "ajax": "true",
-                            "collapsible": "",
-                            "collapsibleExpanded": "true",
-                            "collapsibleLabelCollapsed": "View Details",
-                            "collapsibleLabelExpanded": "Hide Details",
-                            "formDefId": "uploadDocumentByCustomer",
-                            "hideEmpty": "",
-                            "id": "field18",
-                            "label": "",
-                            "noLoad": "",
-                            "noframe": "",
-                            "parentSubFormId": "",
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "storeBinder": {
-                                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                                "properties": {}
-                            },
-                            "subFormParentId": ""
-                        }
-                    },
-                    {
                         "className": "org.joget.apps.form.lib.HiddenField",
                         "properties": {
                             "id": "docuploadstatus",
@@ -552,15 +528,6 @@
                             },
                             "value": "attached",
                             "workflowVariable": ""
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.CustomHTML",
-                        "properties": {
-                            "autoPopulate": "",
-                            "id": "field7",
-                            "label": "",
-                            "value": "<h3>*Please remove the old file and upload new file<\/h3>"
                         }
                     },
                     {
