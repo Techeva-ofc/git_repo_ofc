@@ -122,7 +122,7 @@
                         "attachment": "",
                         "fileType": "",
                         "fileTypeMsg": "Invalid file type",
-                        "id": "docuploadbyclient",
+                        "id": "docuploaded",
                         "label": "Upload Drawing / Document",
                         "maxSize": "",
                         "maxSizeMsg": "File size limit exceeded",
@@ -156,62 +156,6 @@
                 "id": "section6",
                 "join": "",
                 "label": "Section",
-                "loadBinder": {
-                    "className": "",
-                    "properties": {}
-                },
-                "permission": {
-                    "className": "",
-                    "properties": {}
-                },
-                "permissionReadonly": "",
-                "readonly": "",
-                "readonlyLabel": "",
-                "regex": "",
-                "reverse": "",
-                "storeBinder": {
-                    "className": "",
-                    "properties": {}
-                },
-                "visibilityControl": "approval_status",
-                "visibilityValue": "In-Progress"
-            }
-        },
-        {
-            "className": "org.joget.apps.form.model.Section",
-            "elements": [{
-                "className": "org.joget.apps.form.model.Column",
-                "elements": [{
-                    "className": "org.joget.plugin.enterprise.AjaxSubForm",
-                    "properties": {
-                        "ajax": "",
-                        "collapsible": "",
-                        "collapsibleExpanded": "true",
-                        "collapsibleLabelCollapsed": "View Details",
-                        "collapsibleLabelExpanded": "Hide Details",
-                        "formDefId": "uploadDocumentByCustomer",
-                        "hideEmpty": "",
-                        "id": "field7",
-                        "label": "",
-                        "noLoad": "",
-                        "noframe": "",
-                        "parentSubFormId": "",
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "storeBinder": {
-                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                            "properties": {}
-                        },
-                        "subFormParentId": ""
-                    }
-                }],
-                "properties": {"width": "100%"}
-            }],
-            "properties": {
-                "comment": "",
-                "id": "section4",
-                "join": "",
-                "label": "Upload Document",
                 "loadBinder": {
                     "className": "",
                     "properties": {}
