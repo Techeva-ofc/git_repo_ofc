@@ -116,32 +116,58 @@
             "className": "org.joget.apps.form.model.Section",
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
-                "elements": [{
-                    "className": "org.joget.apps.form.lib.FileUpload",
-                    "properties": {
-                        "attachment": "true",
-                        "fileType": "",
-                        "fileTypeMsg": "Invalid file type",
-                        "id": "docuploadbyclient",
-                        "label": "Document / Drawing Uploaded by Client",
-                        "maxSize": "",
-                        "maxSizeMsg": "File size limit exceeded",
-                        "multiple": "true",
-                        "padding": "",
-                        "permissionType": "",
-                        "readonly": "",
-                        "removeFile": "",
-                        "resizeHeight": "",
-                        "resizeMethod": "",
-                        "resizeQuality": "0.8",
-                        "resizeWidth": "",
-                        "size": "",
-                        "validator": {
-                            "className": "",
-                            "properties": {}
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.FileUpload",
+                        "properties": {
+                            "attachment": "true",
+                            "fileType": "",
+                            "fileTypeMsg": "Invalid file type",
+                            "id": "docuploadbyclient",
+                            "label": "Document / Drawing Uploaded by Client",
+                            "maxSize": "",
+                            "maxSizeMsg": "File size limit exceeded",
+                            "multiple": "true",
+                            "padding": "",
+                            "permissionType": "",
+                            "readonly": "",
+                            "removeFile": "",
+                            "resizeHeight": "",
+                            "resizeMethod": "",
+                            "resizeQuality": "0.8",
+                            "resizeWidth": "",
+                            "size": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            }
+                        }
+                    },
+                    {
+                        "className": "org.joget.plugin.enterprise.AjaxSubForm",
+                        "properties": {
+                            "ajax": "",
+                            "collapsible": "",
+                            "collapsibleExpanded": "true",
+                            "collapsibleLabelCollapsed": "View Details",
+                            "collapsibleLabelExpanded": "Hide Details",
+                            "formDefId": "uploadDocumentByCustomer",
+                            "hideEmpty": "",
+                            "id": "field7",
+                            "label": "",
+                            "noLoad": "",
+                            "noframe": "",
+                            "parentSubFormId": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "storeBinder": {
+                                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                                "properties": {}
+                            },
+                            "subFormParentId": ""
                         }
                     }
-                }],
+                ],
                 "properties": {"width": "100%"}
             }],
             "properties": {
