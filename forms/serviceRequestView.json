@@ -577,18 +577,6 @@
                 "visibilityControl": "",
                 "visibilityValue": ""
             }
-        },
-        {
-            "className": "org.joget.apps.form.model.Section",
-            "elements": [{
-                "className": "org.joget.apps.form.model.Column",
-                "elements": [],
-                "properties": {"width": "100%"}
-            }],
-            "properties": {
-                "id": "section5",
-                "label": "Section"
-            }
         }
     ],
     "properties": {
