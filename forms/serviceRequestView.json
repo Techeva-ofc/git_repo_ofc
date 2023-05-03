@@ -231,10 +231,11 @@
                                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                                     "properties": {}
                                 },
-                                "noframe": "",
+                                "noframe": "true",
                                 "parentSubFormId": "",
-                                "readonly": "",
-                                "readonlyLabel": "",
+                                "permissionHidden": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
                                 "storeBinder": {
                                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                                     "properties": {}
@@ -413,10 +414,11 @@
                                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                                     "properties": {}
                                 },
-                                "noframe": "",
+                                "noframe": "true",
                                 "parentSubFormId": "",
-                                "readonly": "",
-                                "readonlyLabel": "",
+                                "permissionHidden": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
                                 "storeBinder": {
                                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                                     "properties": {}
