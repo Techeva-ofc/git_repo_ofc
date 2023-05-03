@@ -241,6 +241,39 @@
                                 },
                                 "subFormParentId": ""
                             }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.FileUpload",
+                            "properties": {
+                                "attachment": "",
+                                "fileType": "",
+                                "fileTypeMsg": "Invalid file type",
+                                "id": "docuploadbyclient",
+                                "label": "Drawing / Document Uploaded by Client",
+                                "maxSize": "",
+                                "maxSizeMsg": "File size limit exceeded",
+                                "multiple": "true",
+                                "padding": "",
+                                "permissionPlugin": {
+                                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                                    "properties": {
+                                        "allowedGroupIds": "G-009",
+                                        "orgId": ""
+                                    }
+                                },
+                                "permissionType": "custom",
+                                "readonly": "",
+                                "removeFile": "",
+                                "resizeHeight": "",
+                                "resizeMethod": "",
+                                "resizeQuality": "0.8",
+                                "resizeWidth": "",
+                                "size": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                }
+                            }
                         }
                     ],
                     "properties": {
