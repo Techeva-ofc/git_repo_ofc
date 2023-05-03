@@ -2266,7 +2266,7 @@
                     "properties": {
                         "actionAfterSaved": "",
                         "actionOnCancel": "",
-                        "cancelButtonLabel": "",
+                        "cancelButtonLabel": "Back",
                         "customFooter": "",
                         "customHeader": "",
                         "customId": "serRequestUserView",
@@ -2289,7 +2289,7 @@
                         "redirectUrlAfterComplete": "",
                         "redirectUrlOnCancel": "",
                         "showInPopupDialog": "",
-                        "submitButtonLabel": "Continue To Checkout",
+                        "submitButtonLabel": "",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
