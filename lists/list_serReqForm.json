@@ -65,12 +65,11 @@
                 "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
                 "properties": {
                     "confirmation": "",
-                    "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/serRequestView",
+                    "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/serRequestUserView",
                     "hrefColumn": "id",
                     "hrefParam": "id",
                     "label": "view",
-                    "target": "_self",
-                    "visible": ""
+                    "target": "_self"
                 }
             },
             "alignment": "",
