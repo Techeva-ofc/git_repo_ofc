@@ -2287,7 +2287,7 @@
                         "redirectTargetOnCancel": "top",
                         "redirectTargetOnComplete": "",
                         "redirectUrlAfterComplete": "",
-                        "redirectUrlOnCancel": "",
+                        "redirectUrlOnCancel": "welcome",
                         "showInPopupDialog": "",
                         "submitButtonLabel": "",
                         "userviewCacheDuration": "20",
