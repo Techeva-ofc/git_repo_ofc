@@ -174,7 +174,7 @@
                 "comment": "",
                 "id": "serReqSumr",
                 "join": "",
-                "label": "Service Request Form",
+                "label": "Upload Drawing / Document",
                 "loadBinder": {
                     "className": "",
                     "properties": {}
@@ -185,7 +185,7 @@
                 },
                 "permissionHidden": "",
                 "permissionReadonly": "",
-                "readonly": "true",
+                "readonly": "",
                 "readonlyLabel": "",
                 "regex": "",
                 "reverse": "",
