@@ -147,7 +147,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "Service Request - Upload Document",
+        "name": "Service Request - Upload Document_template",
         "noPermissionMessage": "",
         "permission": {
             "className": "",
