@@ -241,31 +241,6 @@
                                 },
                                 "subFormParentId": ""
                             }
-                        },
-                        {
-                            "className": "org.joget.plugin.enterprise.AjaxSubForm",
-                            "properties": {
-                                "ajax": "",
-                                "collapsible": "",
-                                "collapsibleExpanded": "true",
-                                "collapsibleLabelCollapsed": "View Details",
-                                "collapsibleLabelExpanded": "Hide Details",
-                                "formDefId": "uploadDocumentByCustomer",
-                                "hideEmpty": "",
-                                "id": "field15",
-                                "label": "",
-                                "noLoad": "",
-                                "noframe": "true",
-                                "parentSubFormId": "",
-                                "permissionHidden": "",
-                                "readonly": "true",
-                                "readonlyLabel": "",
-                                "storeBinder": {
-                                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                                    "properties": {}
-                                },
-                                "subFormParentId": ""
-                            }
                         }
                     ],
                     "properties": {
@@ -408,31 +383,6 @@
                                 "noframe": "",
                                 "parentSubFormId": "",
                                 "readonly": "",
-                                "readonlyLabel": "",
-                                "storeBinder": {
-                                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                                    "properties": {}
-                                },
-                                "subFormParentId": ""
-                            }
-                        },
-                        {
-                            "className": "org.joget.plugin.enterprise.AjaxSubForm",
-                            "properties": {
-                                "ajax": "",
-                                "collapsible": "",
-                                "collapsibleExpanded": "true",
-                                "collapsibleLabelCollapsed": "View Details",
-                                "collapsibleLabelExpanded": "Hide Details",
-                                "formDefId": "uploadDocumentByCustomer",
-                                "hideEmpty": "",
-                                "id": "field15",
-                                "label": "",
-                                "noLoad": "",
-                                "noframe": "true",
-                                "parentSubFormId": "",
-                                "permissionHidden": "",
-                                "readonly": "true",
                                 "readonlyLabel": "",
                                 "storeBinder": {
                                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
