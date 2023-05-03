@@ -68,7 +68,7 @@
                <packageActivityForm>
                   <processDefId>serReqForm_approver_process</processDefId>
                   <activityDefId>activity_attachdocument</activityDefId>
-                  <formId>sr_uploaddocument</formId>
+                  <formId>serRequestinformation</formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
