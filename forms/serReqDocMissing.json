@@ -4,78 +4,89 @@
         "className": "org.joget.apps.form.model.Section",
         "elements": [{
             "className": "org.joget.apps.form.model.Column",
-            "elements": [{
-                "className": "org.joget.plugin.enterprise.ListGrid",
-                "properties": {
-                    "abortRelatedRunningProcesses": "",
-                    "buttonLabel": "",
-                    "deleteFiles": "",
-                    "deleteGridData": "",
-                    "deleteMessage": "Delete row?",
-                    "deleteSubformData": "",
-                    "disabledAdd": "",
-                    "disabledDelete": "",
-                    "enableSorting": "",
-                    "errorMessage": "Invalid number of rows",
-                    "formDefId": "",
-                    "height": "500",
-                    "id": "ofc_serReqApprovalDoc_grid",
-                    "label": "",
-                    "listId": "list_serReqApprovalDoc",
-                    "loadBinder": {
-                        "className": "org.joget.plugin.enterprise.MultirowFormBinder",
-                        "properties": {
-                            "foreignKey": "referencekey",
-                            "formDefId": "serReqDocMissingSubform"
-                        }
-                    },
-                    "options": [
-                        {
-                            "editable": "no",
-                            "format": "",
-                            "formatType": "text",
-                            "label": "Type of Document",
-                            "value": "doctype",
-                            "width": "500px"
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
+                        "autoPopulate": "",
+                        "id": "field2",
+                        "label": "",
+                        "value": "<h4>Documents listed below required for approval process<\/h4>"
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.ListGrid",
+                    "properties": {
+                        "abortRelatedRunningProcesses": "",
+                        "buttonLabel": "",
+                        "deleteFiles": "",
+                        "deleteGridData": "",
+                        "deleteMessage": "Delete row?",
+                        "deleteSubformData": "",
+                        "disabledAdd": "",
+                        "disabledDelete": "",
+                        "enableSorting": "",
+                        "errorMessage": "Invalid number of rows",
+                        "formDefId": "",
+                        "height": "500",
+                        "id": "ofc_serReqApprovalDoc_grid",
+                        "label": "",
+                        "listId": "list_serReqApprovalDoc",
+                        "loadBinder": {
+                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                            "properties": {
+                                "foreignKey": "referencekey",
+                                "formDefId": "serReqDocMissingSubform"
+                            }
                         },
-                        {
-                            "editable": "yes",
-                            "format": "",
-                            "formatType": "nl2br",
-                            "label": "Remarks",
-                            "value": "description",
-                            "width": "750px"
-                        }
-                    ],
-                    "pageSize": "20",
-                    "readonly": "",
-                    "readonlyLabel": "",
-                    "requestParams": [],
-                    "showRowNumber": "",
-                    "sortField": "sort",
-                    "storeBinder": {
-                        "className": "org.joget.plugin.enterprise.MultirowFormBinder",
-                        "properties": {
-                            "foreignKey": "referencekey",
-                            "formDefId": "serReqDocMissingSubform"
-                        }
-                    },
-                    "submit-label-normal": "",
-                    "submit-label-readonly": "",
-                    "uniqueKey": "",
-                    "validateMaxRow": "",
-                    "validateMinRow": "",
-                    "validator": {
-                        "className": "",
-                        "properties": {}
-                    },
-                    "width": "900"
+                        "options": [
+                            {
+                                "editable": "no",
+                                "format": "",
+                                "formatType": "text",
+                                "label": "Type of Document",
+                                "value": "doctype",
+                                "width": "500px"
+                            },
+                            {
+                                "editable": "yes",
+                                "format": "",
+                                "formatType": "nl2br",
+                                "label": "Remarks",
+                                "value": "description",
+                                "width": "750px"
+                            }
+                        ],
+                        "pageSize": "20",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "requestParams": [],
+                        "showRowNumber": "",
+                        "sortField": "sort",
+                        "storeBinder": {
+                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                            "properties": {
+                                "foreignKey": "referencekey",
+                                "formDefId": "serReqDocMissingSubform"
+                            }
+                        },
+                        "submit-label-normal": "",
+                        "submit-label-readonly": "",
+                        "uniqueKey": "",
+                        "validateMaxRow": "",
+                        "validateMinRow": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "width": "900"
+                    }
                 }
-            }],
+            ],
             "properties": {
                 "customWidth": "",
                 "horizontal": "",
-                "label": "Documents listed below required for approval process",
+                "label": "",
                 "width": "100%"
             }
         }],
