@@ -392,7 +392,7 @@
             "properties": {
                 "confirmation": "",
                 "datalist_type": "row_action",
-                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/srDrawing",
+                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/uploadforNonCompliance",
                 "hrefColumn": "id;c_status;C_serReqDmccSrNo",
                 "hrefParam": "id;status;dmcc",
                 "label": "Upload Drawing(s)",
