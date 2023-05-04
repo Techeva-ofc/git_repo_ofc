@@ -6,7 +6,7 @@
             "jdbcDatasource": "default",
             "optimisePaging": "",
             "primaryKey": "id",
-            "sql": "SELECT c_add_floor FROM app_fd_ofc_floor_tab ORDER BY  CAST(SUBSTRING(c_add_floor,6) AS INT) ASC"
+            "sql": "SELECT CAST(SUBSTRING(c_add_floor,6) AS INT) FROM app_fd_ofc_floor_tab"
         }
     },
     "buttonPosition": "bottomLeft",
@@ -14,9 +14,9 @@
     "columns": [{
         "filterable": true,
         "hidden": "false",
-        "id": "column_0",
-        "label": "c_add_floor",
-        "name": "c_add_floor",
+        "id": "column_1",
+        "label": "CAST(SUBSTRING(c_add_floor,6) AS INT)",
+        "name": "CAST(SUBSTRING(c_add_floor,6) AS INT)",
         "sortable": "false"
     }],
     "considerFilterWhenGetTotal": "",
@@ -26,8 +26,8 @@
     "hidePageSize": "true",
     "id": "list_ofc_Floor_form",
     "name": "List - Create Floor",
-    "order": "2",
-    "orderBy": "c_add_floor",
+    "order": "",
+    "orderBy": "",
     "pageSize": "0",
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
     "responsiveView": [
