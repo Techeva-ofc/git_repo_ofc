@@ -6,19 +6,12 @@
             "jdbcDatasource": "default",
             "optimisePaging": "",
             "primaryKey": "id",
-            "sql": "SELECT CAST(SUBSTRING(c_add_floor,6) AS INT) FROM app_fd_ofc_floor_tab"
+            "sql": "SELECT c_add_floor FROM app_fd_ofc_floor_tab order by  CAST(SUBSTRING(c_add_floor,6) AS INT) asc"
         }
     },
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
-    "columns": [{
-        "filterable": true,
-        "hidden": "false",
-        "id": "column_1",
-        "label": "CAST(SUBSTRING(c_add_floor,6) AS INT)",
-        "name": "CAST(SUBSTRING(c_add_floor,6) AS INT)",
-        "sortable": "false"
-    }],
+    "columns": [],
     "considerFilterWhenGetTotal": "",
     "description": "",
     "disableResponsive": "",
