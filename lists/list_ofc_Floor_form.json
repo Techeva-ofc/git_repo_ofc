@@ -5,7 +5,7 @@
         "properties": {
             "jdbcDatasource": "default",
             "optimisePaging": "",
-            "primaryKey": "username",
+            "primaryKey": "id",
             "sql": "SELECT c_add_floor FROM app_fd_ofc_floor_tab ORDER BY  CAST(SUBSTRING(c_add_floor,6) AS INT) ASC"
         }
     },
