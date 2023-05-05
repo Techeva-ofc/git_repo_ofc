@@ -47,14 +47,17 @@
                         "multiple": "",
                         "options": [],
                         "optionsBinder": {
-                            "className": "org.joget.plugin.enterprise.JdbcOptionsBinder",
+                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
                             "properties": {
-                                "addEmpty": "true",
+                                "addEmptyOption": "",
                                 "cacheInterval": "",
-                                "emptyLabel": "Select",
-                                "jdbcDatasource": "default",
-                                "sql": "select c_add_floor from jwdb.app_fd_ofc_floor_tab order by c_floor",
-                                "useAjax": "true"
+                                "emptyLabel": "",
+                                "extraCondition": "",
+                                "formDefId": "ofc_Floor_form",
+                                "groupingColumn": "",
+                                "idColumn": "",
+                                "labelColumn": "add_floor",
+                                "useAjax": ""
                             }
                         },
                         "readonly": "",
