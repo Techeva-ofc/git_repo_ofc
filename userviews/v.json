@@ -241,7 +241,7 @@
                         "disabledDelete": "true",
                         "formDefId": "ofc_tower_form",
                         "id": "4AD60F4ABA934F2AA7FD8EDFF63E7126",
-                        "key": "1",
+                        "key": "0",
                         "label": "Import Data",
                         "messageOnError": "Error in Upload !!",
                         "messageOnSuccess": "Successfully uploaded !!",
