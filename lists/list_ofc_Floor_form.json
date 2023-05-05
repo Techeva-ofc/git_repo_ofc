@@ -6,7 +6,7 @@
             "jdbcDatasource": "default",
             "optimisePaging": "",
             "primaryKey": "id",
-            "sql": "SELECT c_add_floor FROM app_fd_ofc_floor_tab order by  CAST(SUBSTRING(c_add_floor,6) AS INT) asc"
+            "sql": "SELECT c_add_floor FROM app_fd_ofc_floor_tab order by  c_floor  asc"
         }
     },
     "buttonPosition": "bottomLeft",
