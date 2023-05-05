@@ -18,14 +18,39 @@
                     "storeNumeric": "",
                     "style": "",
                     "validator": {
-                        "className": "org.joget.apps.form.lib.DuplicateValueValidator",
+                        "className": "org.joget.marketplace.MultiFormValidator",
                         "properties": {
-                            "errorDuplicateMsg": "Duplicate Value Found",
-                            "errorFormatMsg": "",
-                            "fieldId": "add_floor",
-                            "formDefId": "ofc_Floor_form",
-                            "mandatory": "true",
-                            "regex": ""
+                            "fifthValidator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "firstValidator": {
+                                "className": "org.joget.apps.form.lib.DuplicateValueValidator",
+                                "properties": {
+                                    "errorDuplicateMsg": "*Floor number already exists",
+                                    "errorFormatMsg": "",
+                                    "fieldId": "add_floor",
+                                    "formDefId": "ofc_Floor_form",
+                                    "mandatory": "true",
+                                    "regex": ""
+                                }
+                            },
+                            "fourthValidator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "secondValidator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "mandatory": "true",
+                                    "message": "Floor number must contain only number5",
+                                    "type": "numeric"
+                                }
+                            },
+                            "thirdValidator": {
+                                "className": "",
+                                "properties": {}
+                            }
                         }
                     },
                     "value": "",
