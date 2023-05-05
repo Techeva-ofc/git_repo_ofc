@@ -25,14 +25,13 @@
                                 "properties": {}
                             },
                             "firstValidator": {
-                                "className": "org.joget.apps.form.lib.DuplicateValueValidator",
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
                                 "properties": {
-                                    "errorDuplicateMsg": "*Floor number already exists",
-                                    "errorFormatMsg": "",
-                                    "fieldId": "add_floor",
-                                    "formDefId": "ofc_Floor_form",
+                                    "custom-regex": "^(?!0+$)\\d+$",
+                                    "custom-regex-casesensitive": "",
                                     "mandatory": "true",
-                                    "regex": ""
+                                    "message": "must contain only numbers / does not consist only zero",
+                                    "type": "custom"
                                 }
                             },
                             "fourthValidator": {
@@ -40,11 +39,14 @@
                                 "properties": {}
                             },
                             "secondValidator": {
-                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "className": "org.joget.apps.form.lib.DuplicateValueValidator",
                                 "properties": {
+                                    "errorDuplicateMsg": "Floor number already exists",
+                                    "errorFormatMsg": "",
+                                    "fieldId": "add_floor",
+                                    "formDefId": "ofc_Floor_form",
                                     "mandatory": "true",
-                                    "message": "Floor number must contain only number5",
-                                    "type": "numeric"
+                                    "regex": ""
                                 }
                             },
                             "thirdValidator": {
