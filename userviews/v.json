@@ -217,17 +217,17 @@
                         "checkUTF8": "",
                         "columnMapping": [
                             {
-                                "col": "0",
+                                "col": "7",
                                 "field": "c_tower_seq_no",
                                 "formatted": "false"
                             },
                             {
-                                "col": "1",
+                                "col": "8",
                                 "field": "c_tower_name",
                                 "formatted": "false"
                             },
                             {
-                                "col": "2",
+                                "col": "9",
                                 "field": "c_tower_no",
                                 "formatted": "false"
                             }
