@@ -251,6 +251,47 @@
                         "userviewCacheScope": "",
                         "userviewKey": ""
                     }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.CsvImportMenu",
+                    "properties": {
+                        "checkUTF8": "",
+                        "columnMapping": [
+                            {
+                                "col": "0",
+                                "field": "tower_seq_no",
+                                "formatted": "false"
+                            },
+                            {
+                                "col": "1",
+                                "field": "tower_name",
+                                "formatted": "false"
+                            },
+                            {
+                                "col": "2",
+                                "field": "tower_no",
+                                "formatted": "false"
+                            }
+                        ],
+                        "corfirmation": "",
+                        "customCsvDelimiter": "",
+                        "customCsvQuote": "",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "usimme",
+                        "disabledDelete": "",
+                        "formDefId": "ofc_tower_form",
+                        "id": "47C2D303B0714225B2FC6753FC95E272",
+                        "key": "0",
+                        "label": "Import Data",
+                        "messageOnError": "",
+                        "messageOnSuccess": "",
+                        "redirectUrl": "",
+                        "rowStart": "0",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": "",
+                        "userviewKey": ""
+                    }
                 }
             ],
             "properties": {
