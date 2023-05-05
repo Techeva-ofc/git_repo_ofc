@@ -88,9 +88,28 @@
     "properties": {
         "description": "",
         "id": "ofc_Floor_form",
-        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "name": "Create Floor",
-        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "org.joget.apps.app.lib.DatabaseUpdateTool",
+            "properties": {
+                "jdbcDatasource": "default",
+                "query": "update app_fd_ofc_floor_tab set c_add_floor = concat('Floor',c_add_floor) where id = '#form.app_fd_ofc_floor_tab.id#'"
+            }
+        },
+        "postProcessorRunOn": "both",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "tableName": "ofc_floor_tab"
     }
 }
