@@ -26,6 +26,26 @@
                     }
                 },
                 {
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "id": "add_floor",
+                        "useDefaultWhenEmpty": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "id": "field3",
+                        "useDefaultWhenEmpty": ""
+                    }
+                },
+                {
                     "className": "org.joget.apps.form.lib.TextField",
                     "properties": {
                         "encryption": "",
