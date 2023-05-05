@@ -217,17 +217,17 @@
                         "checkUTF8": "",
                         "columnMapping": [
                             {
-                                "col": "8",
+                                "col": "0",
                                 "field": "c_tower_seq_no",
                                 "formatted": "false"
                             },
                             {
-                                "col": "10",
+                                "col": "1",
                                 "field": "c_tower_name",
                                 "formatted": "false"
                             },
                             {
-                                "col": "9",
+                                "col": "2",
                                 "field": "c_tower_no",
                                 "formatted": "false"
                             }
@@ -246,7 +246,7 @@
                         "messageOnError": "Error in Upload !!",
                         "messageOnSuccess": "Successfully uploaded !!",
                         "redirectUrl": "",
-                        "rowStart": "2",
+                        "rowStart": "0",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": "",
                         "userviewKey": ""
