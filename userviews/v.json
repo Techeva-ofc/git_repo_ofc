@@ -217,18 +217,18 @@
                         "checkUTF8": "",
                         "columnMapping": [
                             {
-                                "col": "7",
-                                "field": "c_tower_seq_no",
+                                "col": "0",
+                                "field": "tower_seq_no",
                                 "formatted": "false"
                             },
                             {
-                                "col": "8",
-                                "field": "c_tower_name",
+                                "col": "1",
+                                "field": "tower_name",
                                 "formatted": "false"
                             },
                             {
-                                "col": "9",
-                                "field": "c_tower_no",
+                                "col": "2",
+                                "field": "tower_no",
                                 "formatted": "false"
                             }
                         ],
