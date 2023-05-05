@@ -217,28 +217,18 @@
                         "checkUTF8": "",
                         "columnMapping": [
                             {
-                                "col": "10",
+                                "col": "8",
                                 "field": "c_tower_seq_no",
                                 "formatted": "false"
                             },
                             {
-                                "col": "9",
+                                "col": "10",
                                 "field": "c_tower_name",
                                 "formatted": "false"
                             },
                             {
-                                "col": "11",
+                                "col": "9",
                                 "field": "c_tower_no",
-                                "formatted": "false"
-                            },
-                            {
-                                "col": "13",
-                                "field": "c_towerEmirates",
-                                "formatted": "false"
-                            },
-                            {
-                                "col": "14",
-                                "field": "c_towerLocation",
                                 "formatted": "false"
                             }
                         ],
