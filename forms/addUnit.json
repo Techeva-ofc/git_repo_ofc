@@ -52,7 +52,7 @@
                                 "addEmpty": "",
                                 "cacheInterval": "",
                                 "jdbcDatasource": "default",
-                                "sql": "SELECT * FROM app_fd_ofc_floor_tab ORDER BY c_floor",
+                                "sql": "SELECT c_add_floor  FROM app_fd_ofc_floor_tab ORDER BY c_floor",
                                 "useAjax": ""
                             }
                         },
