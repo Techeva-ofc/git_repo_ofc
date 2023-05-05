@@ -119,7 +119,7 @@
             "className": "org.joget.apps.app.lib.DatabaseUpdateTool",
             "properties": {
                 "jdbcDatasource": "default",
-                "query": "update app_fd_ofc_floor_tab \n\n\n\nset c_add_floor = concat('Floor',c_floor) where id = '#form.app_fd_ofc_floor_tab.id#'"
+                "query": "update app_fd_ofc_floor_tab set c_add_floor = concat('Floor',c_floor) where id = '#form.app_fd_ofc_floor_tab.id#'"
             }
         },
         "postProcessorRunOn": "both",
