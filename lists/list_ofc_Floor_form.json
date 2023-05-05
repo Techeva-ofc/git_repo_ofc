@@ -1,44 +1,21 @@
 {
     "actions": [],
     "binder": {
-        "className": "org.joget.plugin.enterprise.JdbcDataListBinder",
-        "properties": {
-            "jdbcDatasource": "default",
-            "optimisePaging": "",
-            "primaryKey": "id",
-            "sql": "SELECT * FROM app_fd_ofc_floor_tab ORDER BY c_floor"
-        }
+        "className": "",
+        "properties": {}
     },
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
-    "columns": [{
-        "filterable": true,
-        "hidden": "false",
-        "id": "column_0",
-        "label": "c_add_floor",
-        "name": "c_add_floor",
-        "sortable": "false"
-    }],
+    "columns": [],
     "considerFilterWhenGetTotal": "",
     "description": "",
     "disableResponsive": "",
-    "filters": [{
-        "datalist_type": "filter",
-        "filterParamName": "d-7346701-fn_c_add_floor",
-        "hidden": "",
-        "id": "filter_0",
-        "label": "Floor",
-        "name": "c_add_floor",
-        "type": {
-            "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-            "properties": {"defaultValue": ""}
-        }
-    }],
+    "filters": [],
     "hidePageSize": "true",
     "id": "list_ofc_Floor_form",
     "name": "List - Create Floor",
-    "order": "2",
-    "orderBy": "c_floor",
+    "order": "",
+    "orderBy": "",
     "pageSize": "0",
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
     "responsiveView": [
