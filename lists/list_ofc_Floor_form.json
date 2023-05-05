@@ -22,7 +22,18 @@
     "considerFilterWhenGetTotal": "",
     "description": "",
     "disableResponsive": "",
-    "filters": [],
+    "filters": [{
+        "datalist_type": "filter",
+        "filterParamName": "d-7346701-fn_c_add_floor",
+        "hidden": "",
+        "id": "filter_0",
+        "label": "Floor",
+        "name": "c_add_floor",
+        "type": {
+            "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+            "properties": {"defaultValue": ""}
+        }
+    }],
     "hidePageSize": "true",
     "id": "list_ofc_Floor_form",
     "name": "List - Create Floor",
