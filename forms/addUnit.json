@@ -55,7 +55,7 @@
                                 "extraCondition": "",
                                 "formDefId": "ofc_Floor_form",
                                 "groupingColumn": "",
-                                "idColumn": "id",
+                                "idColumn": "floor",
                                 "labelColumn": "add_floor",
                                 "useAjax": "true"
                             }
