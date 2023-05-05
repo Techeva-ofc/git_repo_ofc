@@ -16,12 +16,26 @@
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
     "columns": [{
+        "action": {
+            "className": "",
+            "properties": {}
+        },
+        "alignment": "",
+        "datalist_type": "column",
+        "exclude_export": "",
         "filterable": true,
+        "format": {
+            "className": "",
+            "properties": {}
+        },
+        "headerAlignment": "",
         "hidden": "false",
         "id": "column_0",
-        "label": "add_floor",
+        "label": "Floor Number",
         "name": "add_floor",
-        "sortable": "false"
+        "sortable": "false",
+        "style": "",
+        "width": ""
     }],
     "considerFilterWhenGetTotal": "",
     "description": "",
