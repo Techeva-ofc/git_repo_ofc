@@ -731,7 +731,7 @@
                   <processDefId>serReqForm_approver_process</processDefId>
                   <participantId>adminRescheduler</participantId>
                   <type>group</type>
-                  <value>concordia-2</value>
+                  <value>G-003,concordia-2</value>
                </packageParticipant>
             </entry>
             <entry>
