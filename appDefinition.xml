@@ -758,7 +758,7 @@
                   <processDefId>serReqForm_approver_process</processDefId>
                   <participantId>customerRescheduleRequester</participantId>
                   <type>group</type>
-                  <value>concordia-4,G-009</value>
+                  <value>G-009</value>
                </packageParticipant>
             </entry>
          </packageParticipantMap>
