@@ -758,7 +758,7 @@
                   <processDefId>serReqForm_approver_process</processDefId>
                   <participantId>compliance_nonCompliance</participantId>
                   <type>group</type>
-                  <value>G-003,G-005,concordia-4,G-006,concordia-3,G-009</value>
+                  <value>G-003,G-005,G-006,concordia-3,G-009</value>
                </packageParticipant>
             </entry>
          </packageParticipantMap>
