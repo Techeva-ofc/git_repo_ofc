@@ -663,21 +663,21 @@
                </packageParticipant>
             </entry>
             <entry>
-               <string>serReqForm_approver_process::scheduler</string>
-               <packageParticipant>
-                  <processDefId>serReqForm_approver_process</processDefId>
-                  <participantId>scheduler</participantId>
-                  <type>group</type>
-                  <value>concordia-2</value>
-               </packageParticipant>
-            </entry>
-            <entry>
                <string>serReqForm_approver_process::serReqForm_approver</string>
                <packageParticipant>
                   <processDefId>serReqForm_approver_process</processDefId>
                   <participantId>serReqForm_approver</participantId>
                   <type>group</type>
                   <value>G-003</value>
+               </packageParticipant>
+            </entry>
+            <entry>
+               <string>serReqForm_approver_process::scheduler</string>
+               <packageParticipant>
+                  <processDefId>serReqForm_approver_process</processDefId>
+                  <participantId>scheduler</participantId>
+                  <type>group</type>
+                  <value>G-003,concordia-2</value>
                </packageParticipant>
             </entry>
             <entry>
