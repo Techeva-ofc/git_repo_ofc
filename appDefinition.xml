@@ -740,7 +740,7 @@
                   <processDefId>serReqForm_approver_process</processDefId>
                   <participantId>inspector</participantId>
                   <type>group</type>
-                  <value>G-006,concordia-3</value>
+                  <value>G-006</value>
                </packageParticipant>
             </entry>
             <entry>
