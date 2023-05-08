@@ -337,7 +337,7 @@
                         "disabledAdd": "true",
                         "disabledDelete": "true",
                         "errorMessage": "Invalid number of rows",
-                        "formDefId": "insp_review_subform",
+                        "formDefId": "inspectionSchedule_subform",
                         "hint": "Click to edit. Tab to save.",
                         "id": "uploadelement",
                         "keyToSave": "9",
@@ -345,8 +345,8 @@
                         "loadBinder": {
                             "className": "org.joget.plugin.enterprise.MultirowFormBinder",
                             "properties": {
-                                "foreignKey": "report_referencekey",
-                                "formDefId": "insp_review_subform"
+                                "foreignKey": "referencekey",
+                                "formDefId": "inspectionSchedule_subform"
                             }
                         },
                         "options": [
@@ -361,21 +361,21 @@
                                 "formatType": "",
                                 "label": "File Uploaded By Client",
                                 "readonly": "true",
-                                "value": "fileupload",
+                                "value": "fileuploaded",
                                 "width": ""
                             },
                             {
                                 "formatType": "",
                                 "label": "Remarks",
                                 "readonly": "",
-                                "value": "remarks",
+                                "value": "remark_insp_checkpoint",
                                 "width": ""
                             },
                             {
                                 "formatType": "",
                                 "label": "Status of Document",
                                 "readonly": "",
-                                "value": "docstatus",
+                                "value": "status",
                                 "width": ""
                             }
                         ],
@@ -388,8 +388,8 @@
                         "storeBinder": {
                             "className": "org.joget.plugin.enterprise.MultirowFormBinder",
                             "properties": {
-                                "foreignKey": "report_referencekey",
-                                "formDefId": "insp_review_subform"
+                                "foreignKey": "referencekey",
+                                "formDefId": "inspectionSchedule_subform"
                             }
                         },
                         "uniqueKey": "",
