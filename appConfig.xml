@@ -1,0 +1,82 @@
+<appDefinition>
+   <id>ofc_app</id>
+   <version></version>
+   <name>Operational Fitness Certificate</name>
+   <packageDefinitionList/>
+   <formDefinitionList/>
+   <userviewDefinitionList/>
+   <datalistDefinitionList/>
+   <builderDefinitionList/>
+   <pluginDefaultPropertiesList>
+      <pluginDefaultProperties>
+         <id>org.joget.apps.app.lib.EmailTool</id>
+         <appId>ofc_app</appId>
+         <appVersion>16</appVersion>
+         <pluginName>Email Tool</pluginName>
+         <pluginDescription>Sends email message to targeted recipient(s)</pluginDescription>
+         <pluginProperties>{&quot;toSpecific&quot;:&quot;sagar19941994@gmail.com&quot;,&quot;toParticipantId&quot;:&quot;sagar19941994@gmail.com&quot;,&quot;cc&quot;:&quot;&quot;,&quot;bcc&quot;:&quot;&quot;,&quot;subject&quot;:&quot;Operational Fitness Request email&quot;,&quot;message&quot;:&quot;Please accept the request\n\nRegards,\nOperational Fitness Certificate&quot;,&quot;isHtml&quot;:&quot;&quot;,&quot;from&quot;:&quot;dt.sarla.alpha@gmail.com&quot;,&quot;host&quot;:&quot;smtp.gmail.com&quot;,&quot;port&quot;:&quot;587&quot;,&quot;security&quot;:&quot;TLS&quot;,&quot;username&quot;:&quot;dt.sarla.alpha@gmail.com&quot;,&quot;password&quot;:&quot;%%%%IjTG7hmut+f4O91g/cTi2lWI0iRwnS6GQJ8h/kyex9I=%%%%&quot;,&quot;formDefId&quot;:&quot;&quot;,&quot;fields&quot;:[],&quot;files&quot;:[],&quot;icsAttachement&quot;:&quot;&quot;}</pluginProperties>
+      </pluginDefaultProperties>
+      <pluginDefaultProperties>
+         <id>org.joget.apps.app.lib.ProcessDataCollectorAuditTrail</id>
+         <appId>ofc_app</appId>
+         <appVersion>16</appVersion>
+         <pluginName>Process Data Collector</pluginName>
+         <pluginDescription>Save process data into app_report_* tables for reporting purposes</pluginDescription>
+         <pluginProperties>{}</pluginProperties>
+      </pluginDefaultProperties>
+      <pluginDefaultProperties>
+         <id>org.joget.plugin.enterprise.FormDataAuditTrailPlugin</id>
+         <appId>ofc_app</appId>
+         <appVersion>16</appVersion>
+         <pluginName>Form Data Audit Trail</pluginName>
+         <pluginDescription>Store audit trail of Form Data to app_form_data_audit_trail table.</pluginDescription>
+         <pluginProperties>{&quot;captureLoad&quot;:&quot;true&quot;,&quot;captureSave&quot;:&quot;true&quot;,&quot;captureSavedDatainJson&quot;:&quot;true&quot;,&quot;captureDelete&quot;:&quot;true&quot;,&quot;captureMode&quot;:&quot;selected&quot;,&quot;formDefIds&quot;:&quot;serReqForm&quot;}</pluginProperties>
+      </pluginDefaultProperties>
+   </pluginDefaultPropertiesList>
+   <environmentVariableList>
+      <environmentVariable>
+         <id>counter</id>
+         <appId>ofc_app</appId>
+         <appVersion>16</appVersion>
+         <value>214</value>
+         <remarks>Used for plugin: Id Generator Field</remarks>
+      </environmentVariable>
+      <environmentVariable>
+         <id>ofc_serviceReq_form_assp_counter</id>
+         <appId>ofc_app</appId>
+         <appVersion>16</appVersion>
+         <value>5</value>
+         <remarks>Used for plugin: Id Generator Field</remarks>
+      </environmentVariable>
+      <environmentVariable>
+         <id>PERMISSION_</id>
+         <appId>ofc_app</appId>
+         <appVersion>16</appVersion>
+         <value></value>
+         <remarks>permissionRequest:8C13941FFEEB4033B804D5F2D89B4827</remarks>
+      </environmentVariable>
+      <environmentVariable>
+         <id>serReqForm_assp_counter</id>
+         <appId>ofc_app</appId>
+         <appVersion>16</appVersion>
+         <value>6</value>
+         <remarks>Used for plugin: Id Generator Field</remarks>
+      </environmentVariable>
+      <environmentVariable>
+         <id>serviceRequestView_assp_counter</id>
+         <appId>ofc_app</appId>
+         <appVersion>16</appVersion>
+         <value>2</value>
+         <remarks>Used for plugin: Id Generator Field</remarks>
+      </environmentVariable>
+   </environmentVariableList>
+   <messageList/>
+   <resourceList/>
+   <license>QAzPBJl5PamQ03yarC2D5tEJktpiORMM11qkIqc2hGQgt/NsaVpwqA==</license>
+   <description>06-May-2023 UAT Released
+
+With whole workflow process and audit trail
+
+
+</description>
+</appDefinition>

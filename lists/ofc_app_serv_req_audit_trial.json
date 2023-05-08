@@ -1,0 +1,142 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.JdbcDataListBinder",
+        "properties": {
+            "jdbcDatasource": "default",
+            "optimisePaging": "",
+            "primaryKey": "id",
+            "sql": "SELECT \r\n  * \r\nFROM \r\n  (\r\n    SELECT \r\n      log_id AS id, \r\n      pk_id, \r\n      COLUMNS, \r\n      values_old, \r\n      values_new, \r\n      USER AS userName, \r\n      action_time \r\n    FROM \r\n      jwdb.tables_change_log \r\n    WHERE \r\n      pk_id = '#requestParam.id#' \r\n      AND COLUMNS != 'Untraced' \r\n    UNION ALL \r\n    SELECT \r\n      id, \r\n      event_id AS pk_id, \r\n      event_name AS COLUMNS, \r\n      event_status AS values_old, \r\n      event_detail AS values_new, \r\n       username AS userName, \r\n      action_time AS action_time \r\n    FROM \r\n      jwdb.notification_log \r\n    WHERE \r\n      event_id = '#requestParam.id#'\r\n  ) AS m \r\nORDER BY \r\n  action_time DESC"
+        }
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_8",
+            "label": "Event Name",
+            "name": "COLUMNS",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_0",
+            "label": "Status",
+            "name": "values_old",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_4",
+            "label": "Event Details",
+            "name": "values_new",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_3",
+            "label": "User",
+            "name": "userName",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "org.joget.plugin.enterprise.DateFormatter",
+                "properties": {
+                    "dataFormat": "yyyy-MM-dd hh:mm:ss.0",
+                    "dateStoreInUTC": "",
+                    "displayFormat": "dd-MMM-yyyy hh:mm"
+                }
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_1",
+            "label": "Updated At",
+            "name": "action_time",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        }
+    ],
+    "considerFilterWhenGetTotal": "",
+    "description": "",
+    "filters": [],
+    "id": "ofc_app_serv_req_audit_trial",
+    "name": "Service Request Audit Trial",
+    "order": "",
+    "orderBy": "",
+    "pageSize": "0",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
+}

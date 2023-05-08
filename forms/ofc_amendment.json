@@ -1,0 +1,122 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "autoPopulate": "",
+                            "id": "logo",
+                            "label": "",
+                            "value": "<img src=\"#appResource.logo.png#\"   height=\"15%\" width=\"15%\"/>\n \n\n"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "autoPopulate": "",
+                            "id": "field16",
+                            "label": "",
+                            "value": "<html>\r\n    <body>\r\n<div><div>\r\n<br><br>\r\n<b> <p class=\"top-header\" style=\"font-size:20px;\">ANNUAL OPERATIONAL FITNESS CERTIFICATE<\/p><\/b>\r\n<br><br>\r\n<table style=\"width: 100%; border: none;\">\r\n          <tbody style=\"border: none;\">\r\n              \r\n    <tr style=\"text-align: left;\">\r\n      <td style=\"border: none;font-weight:bold;font-size:16px;\">AOFC No.<\/td>\r\n      <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;color:red;font-weight:bold;font-size:16px;\">#form.ofc_serReqs_tab.serReqDmccSrNo#<\/td>\r\n<\/tr> <tr><\/tr><tr><\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;font-weight:bold;font-size:16px;\">Date<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td id=\"rdate\" style=\"border: none;font-size:16px;\">#form.ofc_serReqs_tab.paymentDate#<\/td>\r\n<\/tr><tr><\/tr><tr><\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;font-weight:bold;font-size:16px;\">License Number<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;font-size:16px;\">#form.ofc_company_tab.licenseNumber[{form.ofc_serReqs_tab.companyName}]#<\/td>\r\n<\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;font-weight:bold;font-size:16px;\">Account No<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;font-size:16px;\">#form.ofc_company_tab.tnrNumber[{form.ofc_serReqs_tab.companyName}]#<\/td>\r\n<\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;font-weight:bold;font-size:16px;\">Company Name<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;font-weight:bold;font-size:16px;\"> #form.ofc_company_tab.companyName[{form.ofc_serReqs_tab.companyName}]#<\/td>\r\n<\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;font-weight:bold;font-size:16px;\">Location<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;font-size:16px;\">#form.ofc_company_tab.companyAddress[{form.ofc_serReqs_tab.companyName}]#<\/td>\r\n<\/tr>\r\n\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;font-weight:bold;font-size:16px;\">Unit Sharing<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;font-size:16px;\"> N/A <\/td>\r\n<\/tr>\r\n<tr style=\"text-align: left;\"> \r\n     \t <td style=\"border: none;font-weight:bold;font-size:16px;\">License Activity<\/td>\r\n     \t <td style=\"border: none;\">:<\/td>\r\n<td style=\"border: none;font-size:16px;\">#form.ofc_company_tab.compActivity[{form.ofc_serReqs_tab.companyName}]#<\/td>\r\n<\/tr>\r\n\r\n\r\n<\/tbody> <\/table> \r\n\r\n\r\n<br><br><br>\r\n\r\n<div style=\"font-size:16px;  text-align: justify;  width: 87%;\"> \r\nThis is to certify that Concordia DMCC is satisfied that the operations of the above mentioned client/tenant,under \r\nthe stated license number and the declared locations, as assessed during the inspections, is acceptable from \r\nEnvironment, Health & Safety perspectives. Any proposed variations in the operations/locations must be\r\napproved by Concordia DMCC prior to any change.Attention is drawn to all current applicable authority\r\nregulations in regard to ongoing responsibilities towards clean and safe operations.\r\n<\/div>\r\n\r\n\r\n    \r\n    \r\n<br>\r\n<div style=\"font-size:16px;font-weight:bold;\">Certificate Expiry : #form.ofc_serReqs_tab.amendmentExpireDate#<\/div> \r\n<p><\/p><br>\r\n<div style=\"font-size:16px;font-weight:bold;\">Approved<\/div>\r\n\r\n<div class=\"custom-div\">\r\n    <img class=\"custom-image\" src=\"/jw/web/app/ofc_app/resources/sign.png\" height=\"30%\" width=\"30%\" alt=\"Example Image\">\r\n  <\/div>\r\n\r\n\r\n \r\n    \r\n    <div style=\"font-weight:bold;\">\r\n    \r\n For Concordia AOFC Team\r\n<br>\r\n<span>Cc.: DMCC License Department<\/span>\r\n<br><br>\r\n<\/div>\r\n\r\n    <div style=\"height=40%;\">\r\n      <img  src=\"/jw/web/app/ofc_app/resources/AOFC-right-img.jpg\" height=\"50%\" alt=\"Example Image\" style=\"position: absolute; top: 0; right: 0; height='10%'  background-repeat: no-repeat;\"> \r\n    <\/div>\r\n    \r\n    <\/div>\r\n    \r\n    <\/div>\r\n  <script>\r\n// Get the issued date value of the input fields\r\nvar dateIssued = document.getElementById(\"rdate\").value;\r\n\r\nvar givenDate = new Date(dateIssued);\r\n\r\n// Add 2 years to the given date\r\ngivenDate.setFullYear(givenDate.getFullYear() + 2);\r\n// Get the issued date paragraph element id\r\nvar expiryId = document.getElementById(\"expiryId\");\r\n// print the two years later date in ISO format (yyyy-mm-dd)\r\nexpiryId.innerHTML = givenDate.toISOString().slice(0, 10);\r\nalert(dateIssued);\r\nalert(expiryId);\r\n<\/script>\r\n \r\n<\/body><\/html>"
+                        }
+                    }
+                ],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "section8",
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
+                        "autoPopulate": "",
+                        "id": "field16",
+                        "label": "",
+                        "value": " <br><div style=\"color:blue;text-align:right;  margin-right: 12%; \">\n Concordia DMCC<br>\nRegistered and licensed as a FREEZONE Company under the Rules and Regulations of DMCCA<br>\nP.O. Box 340045, Dubai, United Arab Emirates, Tel: +971 4 4232900, Fax: + 971 4 3748488\n    \n<\/div>\n        \n        \n \n"
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "section8",
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        }
+    ],
+    "properties": {
+        "description": "",
+        "id": "ofc_amendment",
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "name": "OFC - Amendment Certificate",
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "tableName": "ofc_serReqs_tab"
+    }
+}
