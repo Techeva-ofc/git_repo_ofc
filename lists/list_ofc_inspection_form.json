@@ -52,6 +52,28 @@
             },
             "headerAlignment": "",
             "hidden": "false",
+            "id": "column_2",
+            "label": "Scheduled On",
+            "name": "c_inspSchedlDate",
+            "sortable": "true",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
             "id": "column_0",
             "label": "DMCC SR No.",
             "name": "c_serReqDmccSrNo",
