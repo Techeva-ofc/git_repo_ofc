@@ -176,7 +176,7 @@
                             "properties": {
                                 "encryption": "",
                                 "id": "draw_review_name",
-                                "label": "Drawing / Document Reviewed By",
+                                "label": "Reviewed By",
                                 "maxlength": "",
                                 "permissionHidden": "",
                                 "placeholder": "",
@@ -189,29 +189,7 @@
                                     "className": "",
                                     "properties": {}
                                 },
-                                "value": "",
-                                "workflowVariable": ""
-                            }
-                        },
-                        {
-                            "className": "org.joget.apps.form.lib.TextField",
-                            "properties": {
-                                "encryption": "",
-                                "id": "drawing_review_date",
-                                "label": "Reviewed On",
-                                "maxlength": "",
-                                "permissionHidden": "",
-                                "placeholder": "",
-                                "readonly": "true",
-                                "readonlyLabel": "true",
-                                "size": "",
-                                "storeNumeric": "",
-                                "style": "",
-                                "validator": {
-                                    "className": "",
-                                    "properties": {}
-                                },
-                                "value": "",
+                                "value": "#form.app_fd_ofc_serReqs_tab.modifiedBy#",
                                 "workflowVariable": ""
                             }
                         },
