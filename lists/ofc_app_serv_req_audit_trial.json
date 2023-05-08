@@ -98,7 +98,8 @@
             "format": {
                 "className": "org.joget.plugin.enterprise.DateFormatter",
                 "properties": {
-                    "dateStoreInUTC": "true",
+                    "dataFormat": "dd-MM-yyyy",
+                    "dateStoreInUTC": "",
                     "displayFormat": "dd-MM-yyyy"
                 }
             },
