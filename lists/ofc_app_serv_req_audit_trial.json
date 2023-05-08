@@ -6,20 +6,12 @@
             "jdbcDatasource": "default",
             "optimisePaging": "",
             "primaryKey": "id",
-            "sql": "select * from(select log_id as id,pk_id,columns,values_old, values_new,user as userName ,action_time  from jwdb.tables_change_log  where pk_id = '#requestParam.id#' and columns != 'Untraced'\r\nunion all \r\nselect id,event_id as pk_id,event_name as columns,'Notification' as values_old, event_detail as values_new,'' as userName,createdDate as action_time from jwdb.notification_log where event_id = '#requestParam.id#')  as m order by action_time desc\r\n"
+            "sql": "SELECT \r\n  * \r\nFROM \r\n  (\r\n    SELECT \r\n      log_id AS id, \r\n      pk_id, \r\n      COLUMNS, \r\n      values_old, \r\n      values_new, \r\n      USER AS userName, \r\n      action_time \r\n    FROM \r\n      jwdb.tables_change_log \r\n    WHERE \r\n      pk_id = '#requestParam.id#' \r\n      AND COLUMNS != 'Untraced' \r\n    UNION ALL \r\n    SELECT \r\n      id, \r\n      event_id AS pk_id, \r\n      event_name AS COLUMNS, \r\n      event_status AS values_old, \r\n      event_detail AS values_new, \r\n       username AS userName, \r\n      action_time AS action_time \r\n    FROM \r\n      jwdb.notification_log \r\n    WHERE \r\n      event_id = '#requestParam.id#'\r\n  ) AS m \r\nORDER BY \r\n  action_time DESC"
         }
     },
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
     "columns": [
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_2",
-            "label": "columns",
-            "name": "columns",
-            "sortable": "false"
-        },
         {
             "action": {
                 "className": "",
