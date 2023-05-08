@@ -677,7 +677,7 @@
                   <processDefId>serReqForm_approver_process</processDefId>
                   <participantId>serReqForm_approver</participantId>
                   <type>group</type>
-                  <value>concordia-2</value>
+                  <value>G-003,concordia-2</value>
                </packageParticipant>
             </entry>
             <entry>
@@ -708,21 +708,21 @@
                </packageParticipant>
             </entry>
             <entry>
-               <string>serviceRequestViewTool::processStartWhiteList</string>
-               <packageParticipant>
-                  <processDefId>serviceRequestViewTool</processDefId>
-                  <participantId>processStartWhiteList</participantId>
-                  <type>role</type>
-                  <value>loggedInUser</value>
-               </packageParticipant>
-            </entry>
-            <entry>
                <string>serReqForm_approver_process::serReqForm_applicant</string>
                <packageParticipant>
                   <processDefId>serReqForm_approver_process</processDefId>
                   <participantId>serReqForm_applicant</participantId>
                   <type>group</type>
                   <value>G-003,concordia-2</value>
+               </packageParticipant>
+            </entry>
+            <entry>
+               <string>serviceRequestViewTool::processStartWhiteList</string>
+               <packageParticipant>
+                  <processDefId>serviceRequestViewTool</processDefId>
+                  <participantId>processStartWhiteList</participantId>
+                  <type>role</type>
+                  <value>loggedInUser</value>
                </packageParticipant>
             </entry>
             <entry>
