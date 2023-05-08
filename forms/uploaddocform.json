@@ -214,6 +214,28 @@
                                 "value": "",
                                 "workflowVariable": ""
                             }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "drawing_review_date",
+                                "label": "Reviewed On",
+                                "maxlength": "",
+                                "permissionHidden": "",
+                                "placeholder": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "#form.app_fd_ofc_serReqs_tab.drawing_review_date#",
+                                "workflowVariable": ""
+                            }
                         }
                     ],
                     "properties": {"width": "32%"}
