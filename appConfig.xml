@@ -52,7 +52,6 @@
          <id>PERMISSION_</id>
          <appId>ofc_app</appId>
          <appVersion>16</appVersion>
-         <value></value>
          <remarks>permissionRequest:8C13941FFEEB4033B804D5F2D89B4827</remarks>
       </environmentVariable>
       <environmentVariable>
