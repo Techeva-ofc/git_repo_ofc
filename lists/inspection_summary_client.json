@@ -237,6 +237,12 @@
                 "repeatHeader": "",
                 "rules": [
                     {
+                        "field": "c_inspectionreportStatus",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Fitout Non-Compliance"
+                    },
+                    {
                         "field": "c_status",
                         "join": "AND",
                         "operator": "=",
@@ -246,13 +252,13 @@
                         "field": "c_inspectionreportStatus",
                         "join": "OR",
                         "operator": "=",
-                        "value": "Fitout Non-Compliance"
+                        "value": "Other Non-Compliance"
                     },
                     {
-                        "field": "c_inspectionreportStatus",
-                        "join": "OR",
+                        "field": "c_status",
+                        "join": "AND",
                         "operator": "=",
-                        "value": "Other Non-Compliance"
+                        "value": "Paid Fee"
                     }
                 ],
                 "showNotSelectedOptions": ""
