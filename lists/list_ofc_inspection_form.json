@@ -291,7 +291,7 @@
                 "confirmation": "",
                 "datalist_type": "row_action",
                 "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/viewRport",
-                "hrefColumn": "C_serReqDmccSrNo;c_companyName;c_inspSchedlDate;c_inspectionreportStatus;c_reportdate;id",
+                "hrefColumn": ";c_companyName;;c_inspectionreportStatus;;id",
                 "hrefParam": "serReqDmccSrNo;company;scheduledate;reportstatus;reportdate;id",
                 "label": "View Inspection Report",
                 "rules": [
@@ -355,6 +355,12 @@
                         "join": "OR",
                         "operator": "=",
                         "value": "Fitout Non-Compliance"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Paid Fee"
                     },
                     {
                         "field": "c_inspectionreportStatus",
