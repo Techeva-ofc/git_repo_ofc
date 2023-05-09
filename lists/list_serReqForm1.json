@@ -30,7 +30,7 @@
             "id": "column_1",
             "label": "Payment Date",
             "name": "c_paymentDate",
-            "sortable": "true",
+            "sortable": "false",
             "style": "",
             "width": ""
         },
