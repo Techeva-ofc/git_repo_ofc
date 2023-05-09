@@ -167,14 +167,6 @@
             "width": ""
         },
         {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_0",
-            "label": "c_dateofreschedule",
-            "name": "c_dateofreschedule",
-            "sortable": "false"
-        },
-        {
             "action": {
                 "className": "",
                 "properties": {}
@@ -195,6 +187,14 @@
             "sortable": "false",
             "style": "",
             "width": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_0",
+            "label": "c_inspectionreportStatus",
+            "name": "c_inspectionreportStatus",
+            "sortable": "false"
         }
     ],
     "considerFilterWhenGetTotal": "",
