@@ -587,7 +587,7 @@
                     </Deadline>
                     <TransitionRestrictions>
                         <TransitionRestriction>
-                            <Split Type="AND">
+                            <Split Type="XOR">
                                 <TransitionRefs>
                                     <TransitionRef Id="transition38"/>
                                     <TransitionRef Id="transition37"/>
