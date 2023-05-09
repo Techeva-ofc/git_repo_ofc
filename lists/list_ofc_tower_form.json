@@ -1,0 +1,132 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.JdbcDataListBinder",
+        "properties": {
+            "jdbcDatasource": "default",
+            "optimisePaging": "",
+            "primaryKey": "id",
+            "sql": "SELECT * FROM app_fd_ofc_tower_tab"
+        }
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_0",
+            "label": "Tower Seq.No",
+            "name": "c_tower_seq_no",
+            "sortable": "true",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_1",
+            "label": "Name of Tower",
+            "name": "c_tower_name",
+            "sortable": "true",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_2",
+            "label": "Tower Code",
+            "name": "c_tower_no",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_4",
+            "label": "Created By",
+            "name": "createdByName",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        }
+    ],
+    "considerFilterWhenGetTotal": "",
+    "description": "",
+    "disableResponsive": "",
+    "filters": [],
+    "hidePageSize": "",
+    "id": "list_ofc_tower_form",
+    "name": "List - Create Tower",
+    "order": "2",
+    "orderBy": "c_tower_seq_no",
+    "pageSize": "50",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "responsiveView": [
+        {
+            "breakpoint": "",
+            "columns": "",
+            "view": "Mobile"
+        },
+        {
+            "breakpoint": "",
+            "columns": "",
+            "view": "Tablet"
+        }
+    ],
+    "rowActions": [],
+    "searchPopup": "",
+    "showDataWhenFilterSet": "",
+    "showPageSizeSelector": "true",
+    "useSession": ""
+}
