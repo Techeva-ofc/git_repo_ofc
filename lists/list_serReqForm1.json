@@ -6,7 +6,7 @@
             "jdbcDatasource": "default",
             "optimisePaging": "",
             "primaryKey": "id",
-            "sql": "select \r\n  b.id, \r\n  b.c_approval_status, \r\n  b.c_refund_status,\r\n  b.dateCreated, \r\n  b.dateModified,\r\n  b.c_serReqDmccSrNo, \r\n  b.c_serReqUserName,\r\n  b.c_status, \r\n  b.c_orderReference,\r\n  b.c_refund_initiate_date,\r\n  b.c_refundRemarks,\r\n  b.c_paymentDate,\r\n  b.c_applicationMode,\r\n  d.c_ofc_category_name, \r\n  a.c_companyName,\r\n  c.c_tower_seq_no, \r\n  c.c_tower_name\r\n  \r\n  \r\n  \r\nfrom \r\n  jwdb.app_fd_ofc_company_tab a \r\n  join jwdb.app_fd_ofc_serReqs_tab b on a.id = b.c_companyName \r\n  join jwdb.app_fd_ofc_tower_tab c on a.c_tower_name = c.id \r\n  join jwdb.app_fd_ofc_ofc_category_tab d on b.c_ofc_category_name = d.id \r\n  \r\norder by \r\n  b.c_paymentDate is null, \r\n  b.c_paymentDate asc, \r\n  c.c_tower_seq_no asc"
+            "sql": "select \r\n  b.id, \r\n  b.c_approval_status, \r\n  b.c_refund_status,\r\n  b.dateCreated, \r\n  b.dateModified,\r\n  b.c_serReqDmccSrNo, \r\n  b.c_serReqUserName,\r\n  b.c_status, \r\n  b.c_orderReference,\r\n  b.c_refund_initiate_date,\r\n  b.c_refundRemarks,\r\n  b.c_paymentDate,\r\n  b.c_applicationMode,\r\n  d.c_ofc_category_name, \r\n  a.c_companyName,\r\n  c.c_tower_seq_no, \r\n  c.c_tower_name\r\n  \r\n  \r\n  \r\nfrom \r\n  jwdb.app_fd_ofc_company_tab a \r\n  join jwdb.app_fd_ofc_serReqs_tab b on a.id = b.c_companyName \r\n  join jwdb.app_fd_ofc_tower_tab c on a.c_tower_name = c.id \r\n  join jwdb.app_fd_ofc_ofc_category_tab d on b.c_ofc_category_name = d.id \r\n  \r\n  \r\norder by \r\n  b.c_paymentDate is null, \r\n  b.c_paymentDate asc, \r\n  c.c_tower_seq_no asc"
         }
     },
     "buttonPosition": "bottomLeft",
