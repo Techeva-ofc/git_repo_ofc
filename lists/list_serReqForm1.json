@@ -125,7 +125,7 @@
             "id": "column_0",
             "label": "Tower Seq No.",
             "name": "c_tower_seq_no",
-            "sortable": "true",
+            "sortable": "false",
             "style": "",
             "width": ""
         },
