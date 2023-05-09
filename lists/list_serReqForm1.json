@@ -104,7 +104,7 @@
             "id": "column_3",
             "label": "Tower Name",
             "name": "c_tower_name",
-            "sortable": "true",
+            "sortable": "false",
             "style": "",
             "width": ""
         },
