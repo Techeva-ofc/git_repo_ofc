@@ -43,8 +43,7 @@
                     "hrefColumn": "id",
                     "hrefParam": "id",
                     "label": "Hyperlink",
-                    "target": "_self",
-                    "visible": ""
+                    "target": "_self"
                 }
             },
             "alignment": "",
@@ -60,7 +59,7 @@
             "id": "column_2",
             "label": "DMCC SR No",
             "name": "c_serReqDmccSrNo",
-            "sortable": "true",
+            "sortable": "false",
             "style": "",
             "width": ""
         },
