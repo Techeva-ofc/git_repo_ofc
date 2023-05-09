@@ -148,7 +148,7 @@
             "id": "column_4",
             "label": "Company Name",
             "name": "c_companyName",
-            "sortable": "true",
+            "sortable": "false",
             "style": "",
             "width": ""
         },
@@ -170,7 +170,7 @@
             "id": "column_5",
             "label": "Service Category",
             "name": "c_ofc_category_name",
-            "sortable": "true",
+            "sortable": "false",
             "style": "",
             "width": ""
         },
@@ -192,7 +192,7 @@
             "include_export": "",
             "label": "Approval Status",
             "name": "c_approval_status",
-            "sortable": "true",
+            "sortable": "false",
             "style": "",
             "width": ""
         },
@@ -236,7 +236,7 @@
             "id": "column_6",
             "label": "Status",
             "name": "c_status",
-            "sortable": "true",
+            "sortable": "false",
             "style": "",
             "width": ""
         },
@@ -258,7 +258,7 @@
             "id": "column_11",
             "label": "Refund Status",
             "name": "c_refund_status",
-            "sortable": "true",
+            "sortable": "false",
             "style": "",
             "width": ""
         },
@@ -284,7 +284,7 @@
             "id": "column_9",
             "label": "Refund Initiated Date",
             "name": "c_refund_initiate_date",
-            "sortable": "true",
+            "sortable": "false",
             "style": "",
             "width": ""
         },
@@ -306,7 +306,7 @@
             "id": "column_10",
             "label": "Refund Remarks",
             "name": "c_refundRemarks",
-            "sortable": "true",
+            "sortable": "false",
             "style": "",
             "width": ""
         }
