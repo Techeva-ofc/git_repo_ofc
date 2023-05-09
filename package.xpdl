@@ -782,7 +782,7 @@
                         <ExceptionName>Non-Compliance-R-3</ExceptionName>
                     </Deadline>
                     <Deadline Execution="SYNCHR">
-                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(8*60000)); m;</DeadlineCondition>
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(20*60000)); m;</DeadlineCondition>
                         <ExceptionName>10-Days-Wait</ExceptionName>
                     </Deadline>
                     <TransitionRestrictions>
@@ -1010,19 +1010,19 @@
                     </Implementation>
                     <Performer>compliance_nonCompliance</Performer>
                     <Deadline Execution="ASYNCHR">
-                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(1*60000)); m;</DeadlineCondition>
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(2*60000)); m;</DeadlineCondition>
                         <ExceptionName>Other-Non-Compliance-R-1</ExceptionName>
                     </Deadline>
                     <Deadline Execution="ASYNCHR">
-                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(2*60000)); m;</DeadlineCondition>
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(4*60000)); m;</DeadlineCondition>
                         <ExceptionName>Other-Non-Compliance-R-2</ExceptionName>
                     </Deadline>
                     <Deadline Execution="ASYNCHR">
-                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(3*60000)); m;</DeadlineCondition>
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(8*60000)); m;</DeadlineCondition>
                         <ExceptionName>Other-Non-Compliance-R-3</ExceptionName>
                     </Deadline>
                     <Deadline Execution="SYNCHR">
-                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(6*60000)); m;</DeadlineCondition>
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(20*60000)); m;</DeadlineCondition>
                         <ExceptionName>10-Day-Wait</ExceptionName>
                     </Deadline>
                     <TransitionRestrictions>
@@ -1040,7 +1040,7 @@
                     </TransitionRestrictions>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1315.48828125,223.4765625"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1314.4792175292969,222.56946250976563"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="emailOtherNonComplianceR1" Name="Email Other-Non_Compliance R-1">
