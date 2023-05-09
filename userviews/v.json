@@ -2282,7 +2282,7 @@
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
-                        "allowedGroupIds": "concordia-6",
+                        "allowedGroupIds": "G-006;G-002",
                         "orgId": ""
                     }
                 },
@@ -2625,7 +2625,7 @@
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
-                        "allowedGroupIds": "G-002",
+                        "allowedGroupIds": "G-006;G-002",
                         "orgId": ""
                     }
                 },
