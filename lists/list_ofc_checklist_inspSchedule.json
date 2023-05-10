@@ -1,0 +1,79 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {
+            "aggregateField": [],
+            "customSelectionValue": "",
+            "extraCondition": "",
+            "filters": [{
+                "field": "checkListTypeData",
+                "join": "AND",
+                "operator": "=",
+                "value": "#requestParam.checktype#"
+            }],
+            "formDefId": "ofc_checklist_form",
+            "functionColumns": [],
+            "groupBy": "",
+            "joins": [{
+                "fieldId": "",
+                "joinFieldId": "checkListTypeData",
+                "tableName": "ofc_chklistType_tab"
+            }]
+        }
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_0",
+            "label": "Checkpoint Code",
+            "name": "checkpointCode",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_1",
+            "label": "Checkpoint Name",
+            "name": "checkpointName",
+            "sortable": "false"
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_2",
+            "label": "CheckPoint Type",
+            "name": "ofc_chklistType_tab.checklistType",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        }
+    ],
+    "considerFilterWhenGetTotal": "",
+    "description": "",
+    "filters": [],
+    "id": "list_ofc_checklist_inspSchedule",
+    "name": "List - Fitout Checklist For Inspection Schedule",
+    "order": "",
+    "orderBy": "",
+    "pageSize": "0",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
+}
