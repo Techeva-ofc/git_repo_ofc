@@ -2650,6 +2650,62 @@
                     }
                 }
             }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.plugin.enterprise.CrudMenu",
+                "properties": {
+                    "add-afterSaved": "list",
+                    "add-afterSavedRedirectParamName": "",
+                    "add-afterSavedRedirectParamvalue": "",
+                    "add-afterSavedRedirectUrl": "",
+                    "add-cancelButtonLabel": "",
+                    "add-customFooter": "",
+                    "add-customHeader": "",
+                    "add-messageShowAfterComplete": "",
+                    "add-saveButtonLabel": "",
+                    "addFormId": "ofc_tower_form",
+                    "buttonPosition": "bottomLeft",
+                    "checkboxPosition": "left",
+                    "customId": "ofc_tower_form_crud",
+                    "datalistId": "list_ofc_tower_form",
+                    "edit-afterSaved": "list",
+                    "edit-afterSavedRedirectParamName": "",
+                    "edit-afterSavedRedirectParamvalue": "",
+                    "edit-afterSavedRedirectUrl": "",
+                    "edit-allowRecordTraveling": "",
+                    "edit-backButtonLabel": "",
+                    "edit-customFooter": "",
+                    "edit-customHeader": "",
+                    "edit-firstButtonLabel": "",
+                    "edit-lastButtonLabel": "",
+                    "edit-messageShowAfterComplete": "",
+                    "edit-moreActions": [],
+                    "edit-nextButtonLabel": "",
+                    "edit-prevButtonLabel": "",
+                    "edit-readonly": "",
+                    "edit-readonlyLabel": "",
+                    "edit-saveButtonLabel": "",
+                    "editFormId": "ofc_tower_form",
+                    "id": "00b7c0fa-cf9a-4d0d-b29c-8ce7b5c75fb5",
+                    "keyName": "",
+                    "label": "Manage Create Tower",
+                    "list-customFooter": "",
+                    "list-customHeader": "",
+                    "list-deleteButtonLabel": "",
+                    "list-editLinkLabel": "",
+                    "list-moreActions": [],
+                    "list-newButtonLabel": "",
+                    "list-showDeleteButton": "yes",
+                    "rowCount": "true",
+                    "selectionType": "multiple"
+                }
+            }],
+            "properties": {
+                "id": "category-a9a0f393-2e10-464f-917d-50a3e0815b12",
+                "label": "<i class='fa fa-tasks'><\/i>Manage Create Tower"
+            }
         }
     ],
     "className": "org.joget.apps.userview.model.Userview",
