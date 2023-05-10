@@ -251,47 +251,6 @@
                         "userviewCacheDuration": "",
                         "userviewCacheScope": ""
                     }
-                },
-                {
-                    "className": "org.joget.plugin.enterprise.CsvImportMenu",
-                    "properties": {
-                        "checkUTF8": "",
-                        "columnMapping": [
-                            {
-                                "col": "0",
-                                "field": "tower_seq_no",
-                                "formatted": "false"
-                            },
-                            {
-                                "col": "1",
-                                "field": "tower_name",
-                                "formatted": "false"
-                            },
-                            {
-                                "col": "2",
-                                "field": "tower_no",
-                                "formatted": "false"
-                            }
-                        ],
-                        "corfirmation": "Are you want to upload the data ?",
-                        "customCsvDelimiter": "",
-                        "customCsvQuote": "",
-                        "customFooter": "",
-                        "customHeader": "",
-                        "customId": "create_tower_import",
-                        "disabledDelete": "true",
-                        "formDefId": "ofc_tower_form",
-                        "id": "4AD60F4ABA934F2AA7FD8EDFF63E7126",
-                        "key": "0",
-                        "label": "Import Data",
-                        "messageOnError": "Error in Upload !!",
-                        "messageOnSuccess": "Successfully uploaded !!",
-                        "redirectUrl": "",
-                        "rowStart": "0",
-                        "userviewCacheDuration": "20",
-                        "userviewCacheScope": "",
-                        "userviewKey": ""
-                    }
                 }
             ],
             "properties": {
