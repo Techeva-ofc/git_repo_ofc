@@ -157,47 +157,6 @@
             "className": "org.joget.apps.userview.model.UserviewCategory",
             "menus": [
                 {
-                    "className": "org.joget.plugin.enterprise.CsvImportMenu",
-                    "properties": {
-                        "checkUTF8": "",
-                        "columnMapping": [
-                            {
-                                "col": "0",
-                                "field": "tower_seq_no",
-                                "formatted": "false"
-                            },
-                            {
-                                "col": "1",
-                                "field": "tower_name",
-                                "formatted": "false"
-                            },
-                            {
-                                "col": "2",
-                                "field": "tower_no",
-                                "formatted": "false"
-                            }
-                        ],
-                        "corfirmation": "",
-                        "customCsvDelimiter": "",
-                        "customCsvQuote": "",
-                        "customFooter": "",
-                        "customHeader": "",
-                        "customId": "create_tower_import",
-                        "disabledDelete": "",
-                        "formDefId": "ofc_tower_form",
-                        "id": "90BC6C67796C44E7AF3E55E917BFC3FB",
-                        "key": "0",
-                        "label": "Import Menu",
-                        "messageOnError": "",
-                        "messageOnSuccess": "",
-                        "redirectUrl": "",
-                        "rowStart": "0",
-                        "userviewCacheDuration": "20",
-                        "userviewCacheScope": "",
-                        "userviewKey": ""
-                    }
-                },
-                {
                     "className": "org.joget.plugin.enterprise.CrudMenu",
                     "properties": {
                         "add-afterSaved": "list",
@@ -250,6 +209,47 @@
                         "selectionType": "multiple",
                         "userviewCacheDuration": "",
                         "userviewCacheScope": ""
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.CsvImportMenu",
+                    "properties": {
+                        "checkUTF8": "",
+                        "columnMapping": [
+                            {
+                                "col": "0",
+                                "field": "tower_seq_no",
+                                "formatted": "false"
+                            },
+                            {
+                                "col": "1",
+                                "field": "tower_name",
+                                "formatted": "false"
+                            },
+                            {
+                                "col": "2",
+                                "field": "tower_no",
+                                "formatted": "false"
+                            }
+                        ],
+                        "corfirmation": "",
+                        "customCsvDelimiter": "",
+                        "customCsvQuote": "",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "create_tower_import",
+                        "disabledDelete": "",
+                        "formDefId": "ofc_tower_form",
+                        "id": "90BC6C67796C44E7AF3E55E917BFC3FB",
+                        "key": "0",
+                        "label": "Import Menu",
+                        "messageOnError": "",
+                        "messageOnSuccess": "",
+                        "redirectUrl": "",
+                        "rowStart": "0",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": "",
+                        "userviewKey": ""
                     }
                 }
             ],
