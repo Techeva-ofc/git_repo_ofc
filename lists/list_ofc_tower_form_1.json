@@ -1,0 +1,87 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "ofc_tower_form"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "options": [
+                        {
+                            "grouping": "tower_seq_no",
+                            "label": "OFC",
+                            "value": "ofc"
+                        },
+                        {
+                            "grouping": "",
+                            "label": "FITOUT",
+                            "value": "fitout"
+                        }
+                    ],
+                    "optionsBinder": {
+                        "className": "",
+                        "properties": {}
+                    }
+                }
+            },
+            "id": "column_0",
+            "label": "Business Type",
+            "name": "businessType"
+        },
+        {
+            "id": "column_1",
+            "label": "id",
+            "name": "id"
+        },
+        {
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "options": [],
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "",
+                            "cacheInterval": "",
+                            "emptyLabel": "",
+                            "extraCondition": "",
+                            "formDefId": "locationForm",
+                            "groupingColumn": "",
+                            "idColumn": "",
+                            "labelColumn": "locName",
+                            "useAjax": "true"
+                        }
+                    }
+                }
+            },
+            "id": "column_2",
+            "label": "Location",
+            "name": "locName"
+        },
+        {
+            "id": "column_3",
+            "label": "Tower Name",
+            "name": "tower_name"
+        },
+        {
+            "id": "column_4",
+            "label": "Tower Number",
+            "name": "tower_no"
+        }
+    ],
+    "filters": [],
+    "id": "list_ofc_tower_form_1",
+    "name": "List - Create Tower",
+    "order": "",
+    "orderBy": "",
+    "pageSize": 0,
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
+}
