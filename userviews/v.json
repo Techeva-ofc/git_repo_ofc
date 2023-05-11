@@ -238,7 +238,7 @@
                             },
                             {
                                 "col": "4",
-                                "field": "locName",
+                                "field": "subform_location1_locName",
                                 "formatted": "false"
                             },
                             {
