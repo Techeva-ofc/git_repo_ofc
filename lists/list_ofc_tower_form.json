@@ -21,14 +21,14 @@
                 "className": "",
                 "properties": {}
             },
-            "alignment": "",
+            "alignment": "dataListAlignCenter",
             "datalist_type": "column",
             "filterable": true,
             "format": {
                 "className": "",
                 "properties": {}
             },
-            "headerAlignment": "",
+            "headerAlignment": "dataListAlignCenter",
             "hidden": "true",
             "id": "column_0",
             "include_export": "true",
@@ -43,14 +43,14 @@
                 "className": "",
                 "properties": {}
             },
-            "alignment": "",
+            "alignment": "dataListAlignCenter",
             "datalist_type": "column",
             "exclude_export": "",
             "format": {
                 "className": "",
                 "properties": {}
             },
-            "headerAlignment": "",
+            "headerAlignment": "dataListAlignCenter",
             "hidden": "false",
             "id": "column_3",
             "label": "Tower Seq No.",
@@ -64,14 +64,14 @@
                 "className": "",
                 "properties": {}
             },
-            "alignment": "",
+            "alignment": "dataListAlignCenter",
             "datalist_type": "column",
             "exclude_export": "",
             "format": {
                 "className": "",
                 "properties": {}
             },
-            "headerAlignment": "",
+            "headerAlignment": "dataListAlignCenter",
             "hidden": "false",
             "id": "column_1",
             "label": "Tower Name",
@@ -85,14 +85,14 @@
                 "className": "",
                 "properties": {}
             },
-            "alignment": "",
+            "alignment": "dataListAlignCenter",
             "datalist_type": "column",
             "exclude_export": "",
             "format": {
                 "className": "",
                 "properties": {}
             },
-            "headerAlignment": "",
+            "headerAlignment": "dataListAlignCenter",
             "hidden": "false",
             "id": "column_2",
             "label": "Tower Number",
@@ -106,14 +106,14 @@
                 "className": "",
                 "properties": {}
             },
-            "alignment": "",
+            "alignment": "dataListAlignCenter",
             "datalist_type": "column",
             "filterable": true,
             "format": {
                 "className": "",
                 "properties": {}
             },
-            "headerAlignment": "",
+            "headerAlignment": "dataListAlignCenter",
             "hidden": "true",
             "id": "column_4",
             "include_export": "true",
