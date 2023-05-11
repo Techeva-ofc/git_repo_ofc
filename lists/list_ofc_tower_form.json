@@ -138,9 +138,9 @@
         {
             "filterable": true,
             "hidden": "false",
-            "id": "column_4",
-            "label": "ofc_location_tab.locEmirates",
-            "name": "ofc_location_tab.locEmirates",
+            "id": "column_6",
+            "label": "ofc_emirates_tab.emirates_name",
+            "name": "ofc_emirates_tab.emirates_name",
             "sortable": "false"
         }
     ],
