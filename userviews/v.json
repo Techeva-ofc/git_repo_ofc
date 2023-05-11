@@ -240,6 +240,11 @@
                                 "col": "4",
                                 "field": "locName",
                                 "formatted": "false"
+                            },
+                            {
+                                "col": "5",
+                                "field": "subform_location1_locEmirates",
+                                "formatted": "false"
                             }
                         ],
                         "corfirmation": "",
