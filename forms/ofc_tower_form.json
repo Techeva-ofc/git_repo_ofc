@@ -132,39 +132,6 @@
                     }
                 },
                 {
-                    "className": "org.joget.apps.form.lib.SelectBox",
-                    "properties": {
-                        "controlField": "",
-                        "id": "locName",
-                        "label": "Location",
-                        "multiple": "",
-                        "options": [],
-                        "optionsBinder": {
-                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
-                            "properties": {
-                                "addEmptyOption": "true",
-                                "cacheInterval": "",
-                                "emptyLabel": "Select",
-                                "extraCondition": "",
-                                "formDefId": "locationForm",
-                                "groupingColumn": "",
-                                "idColumn": "",
-                                "labelColumn": "locName",
-                                "useAjax": "true"
-                            }
-                        },
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "size": "",
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "value": "",
-                        "workflowVariable": ""
-                    }
-                },
-                {
                     "className": "org.joget.apps.form.lib.SubForm",
                     "properties": {
                         "formDefId": "location1",
