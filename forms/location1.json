@@ -8,9 +8,9 @@
                 {
                     "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
-                        "controlField": "locEmirates",
-                        "id": "locname_import",
-                        "label": "Location",
+                        "controlField": "",
+                        "id": "locEmirates",
+                        "label": "Emirates",
                         "multiple": "",
                         "options": [],
                         "optionsBinder": {
@@ -20,10 +20,10 @@
                                 "cacheInterval": "",
                                 "emptyLabel": "Select",
                                 "extraCondition": "",
-                                "formDefId": "locationForm",
-                                "groupingColumn": "locEmirates",
+                                "formDefId": "ofc_emirates_form",
+                                "groupingColumn": "",
                                 "idColumn": "",
-                                "labelColumn": "locName",
+                                "labelColumn": "emirates_name",
                                 "useAjax": "true"
                             }
                         },
@@ -41,9 +41,9 @@
                 {
                     "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
-                        "controlField": "",
-                        "id": "locEmirates",
-                        "label": "Emirates",
+                        "controlField": "locEmirates",
+                        "id": "locname_import",
+                        "label": "Location",
                         "multiple": "",
                         "options": [],
                         "optionsBinder": {
@@ -53,10 +53,10 @@
                                 "cacheInterval": "",
                                 "emptyLabel": "Select",
                                 "extraCondition": "",
-                                "formDefId": "ofc_emirates_form",
-                                "groupingColumn": "",
+                                "formDefId": "locationForm",
+                                "groupingColumn": "locEmirates",
                                 "idColumn": "",
-                                "labelColumn": "emirates_name",
+                                "labelColumn": "locName",
                                 "useAjax": "true"
                             }
                         },
