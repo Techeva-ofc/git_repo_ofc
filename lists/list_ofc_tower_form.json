@@ -10,7 +10,11 @@
             "formDefId": "ofc_tower_form",
             "functionColumns": [],
             "groupBy": "",
-            "joins": []
+            "joins": [{
+                "fieldId": "",
+                "joinFieldId": "locName",
+                "tableName": "ofc_location_tab"
+            }]
         }
     },
     "buttonPosition": "bottomLeft",
@@ -102,26 +106,12 @@
             "width": ""
         },
         {
-            "action": {
-                "className": "",
-                "properties": {}
-            },
-            "alignment": "dataListAlignCenter",
-            "datalist_type": "column",
             "filterable": true,
-            "format": {
-                "className": "",
-                "properties": {}
-            },
-            "headerAlignment": "dataListAlignCenter",
-            "hidden": "true",
-            "id": "column_4",
-            "include_export": "true",
-            "label": "Location",
-            "name": "locName",
-            "sortable": "false",
-            "style": "",
-            "width": ""
+            "hidden": "false",
+            "id": "column_5",
+            "label": "ofc_location_tab.locName",
+            "name": "ofc_location_tab.locName",
+            "sortable": "false"
         }
     ],
     "considerFilterWhenGetTotal": "",
