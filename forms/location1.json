@@ -9,7 +9,7 @@
                     "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
                         "controlField": "locEmirates",
-                        "id": "locName",
+                        "id": "locname_import",
                         "label": "Location",
                         "multiple": "",
                         "options": [],
@@ -21,7 +21,7 @@
                                 "emptyLabel": "Select",
                                 "extraCondition": "",
                                 "formDefId": "locationForm",
-                                "groupingColumn": "",
+                                "groupingColumn": "locEmirates",
                                 "idColumn": "",
                                 "labelColumn": "locName",
                                 "useAjax": "true"
