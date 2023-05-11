@@ -142,14 +142,47 @@
                         "optionsBinder": {
                             "className": "org.joget.apps.form.lib.FormOptionsBinder",
                             "properties": {
-                                "addEmptyOption": "",
+                                "addEmptyOption": "true",
                                 "cacheInterval": "",
-                                "emptyLabel": "",
+                                "emptyLabel": "Select",
                                 "extraCondition": "",
                                 "formDefId": "locationForm",
                                 "groupingColumn": "",
                                 "idColumn": "",
                                 "labelColumn": "locName",
+                                "useAjax": "true"
+                            }
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "emirates",
+                        "label": "Emirates",
+                        "multiple": "",
+                        "options": [],
+                        "optionsBinder": {
+                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                            "properties": {
+                                "addEmptyOption": "true",
+                                "cacheInterval": "",
+                                "emptyLabel": "Select",
+                                "extraCondition": "",
+                                "formDefId": "ofc_emirates_form",
+                                "groupingColumn": "",
+                                "idColumn": "",
+                                "labelColumn": "emirates_name",
                                 "useAjax": "true"
                             }
                         },
