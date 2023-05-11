@@ -217,17 +217,17 @@
                         "checkUTF8": "",
                         "columnMapping": [
                             {
-                                "col": "0",
+                                "col": "1",
                                 "field": "tower_seq_no",
                                 "formatted": "false"
                             },
                             {
-                                "col": "1",
+                                "col": "2",
                                 "field": "tower_name",
                                 "formatted": "false"
                             },
                             {
-                                "col": "2",
+                                "col": "3",
                                 "field": "tower_no",
                                 "formatted": "false"
                             }
@@ -246,7 +246,7 @@
                         "messageOnError": "",
                         "messageOnSuccess": "",
                         "redirectUrl": "",
-                        "rowStart": "2",
+                        "rowStart": "1",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": "",
                         "userviewKey": ""
