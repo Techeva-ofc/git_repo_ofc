@@ -23,6 +23,28 @@
             },
             "alignment": "",
             "datalist_type": "column",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "true",
+            "id": "column_0",
+            "include_export": "true",
+            "label": "Business Type",
+            "name": "businessType",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
             "exclude_export": "",
             "format": {
                 "className": "",
@@ -76,6 +98,28 @@
             "label": "Tower Number",
             "name": "tower_no",
             "sortable": "true",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "true",
+            "id": "column_4",
+            "include_export": "true",
+            "label": "Location",
+            "name": "locName",
+            "sortable": "false",
             "style": "",
             "width": ""
         }
