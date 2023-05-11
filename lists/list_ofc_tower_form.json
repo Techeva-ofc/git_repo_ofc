@@ -106,12 +106,26 @@
             "width": ""
         },
         {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "dataListAlignCenter",
+            "datalist_type": "column",
+            "exclude_export": "",
             "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "dataListAlignCenter",
             "hidden": "false",
             "id": "column_5",
-            "label": "ofc_location_tab.locName",
+            "label": "Location",
             "name": "ofc_location_tab.locName",
-            "sortable": "false"
+            "sortable": "false",
+            "style": "",
+            "width": ""
         }
     ],
     "considerFilterWhenGetTotal": "",
