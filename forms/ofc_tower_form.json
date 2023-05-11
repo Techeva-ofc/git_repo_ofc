@@ -168,7 +168,7 @@
                     "className": "org.joget.apps.form.lib.SubForm",
                     "properties": {
                         "formDefId": "location1",
-                        "id": "emirates",
+                        "id": "subform",
                         "label": "",
                         "loadBinder": {
                             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
