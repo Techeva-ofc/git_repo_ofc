@@ -167,7 +167,7 @@
                 {
                     "className": "org.joget.apps.form.lib.SubForm",
                     "properties": {
-                        "formDefId": "ofc_emirates_form",
+                        "formDefId": "location1",
                         "id": "emirates",
                         "label": "",
                         "loadBinder": {
@@ -175,7 +175,7 @@
                             "properties": {}
                         },
                         "noframe": "true",
-                        "parentSubFormId": "",
+                        "parentSubFormId": "locName",
                         "readonly": "",
                         "readonlyLabel": "",
                         "storeBinder": {
