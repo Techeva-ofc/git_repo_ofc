@@ -12,7 +12,7 @@
             "groupBy": "",
             "joins": [
                 {
-                    "fieldId": "",
+                    "fieldId": "ofc_activity_tab.activityName",
                     "joinFieldId": "compActivity",
                     "tableName": "ofc_activity_tab"
                 },
