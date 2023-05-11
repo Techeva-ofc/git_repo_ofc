@@ -8,7 +8,7 @@
                 {
                     "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
-                        "controlField": "",
+                        "controlField": "locEmirates",
                         "id": "locName",
                         "label": "Location",
                         "multiple": "",
@@ -41,7 +41,7 @@
                 {
                     "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
-                        "controlField": "locName",
+                        "controlField": "",
                         "id": "locEmirates",
                         "label": "Emirates",
                         "multiple": "",
