@@ -9,7 +9,7 @@
                     "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
                         "controlField": "",
-                        "id": "locName",
+                        "id": "locName1",
                         "label": "Location",
                         "multiple": "",
                         "options": [],
