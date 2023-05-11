@@ -16,15 +16,15 @@
                         "optionsBinder": {
                             "className": "org.joget.apps.form.lib.FormOptionsBinder",
                             "properties": {
-                                "addEmptyOption": "",
+                                "addEmptyOption": "true",
                                 "cacheInterval": "",
-                                "emptyLabel": "",
+                                "emptyLabel": "Select",
                                 "extraCondition": "",
                                 "formDefId": "locationForm",
                                 "groupingColumn": "",
                                 "idColumn": "",
                                 "labelColumn": "locName",
-                                "useAjax": ""
+                                "useAjax": "true"
                             }
                         },
                         "readonly": "",
@@ -41,7 +41,7 @@
                 {
                     "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
-                        "controlField": "",
+                        "controlField": "locName1",
                         "id": "locEmirates",
                         "label": "Emirates",
                         "multiple": "",
@@ -49,15 +49,15 @@
                         "optionsBinder": {
                             "className": "org.joget.apps.form.lib.FormOptionsBinder",
                             "properties": {
-                                "addEmptyOption": "",
+                                "addEmptyOption": "true",
                                 "cacheInterval": "",
-                                "emptyLabel": "",
+                                "emptyLabel": "Select",
                                 "extraCondition": "",
                                 "formDefId": "ofc_emirates_form",
                                 "groupingColumn": "",
                                 "idColumn": "",
                                 "labelColumn": "emirates_name",
-                                "useAjax": ""
+                                "useAjax": "true"
                             }
                         },
                         "readonly": "",
