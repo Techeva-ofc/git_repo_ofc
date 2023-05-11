@@ -119,7 +119,7 @@
                 "properties": {}
             },
             "headerAlignment": "dataListAlignCenter",
-            "hidden": "true",
+            "hidden": "false",
             "id": "column_5",
             "include_export": "",
             "label": "Location",
