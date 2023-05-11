@@ -419,9 +419,31 @@
     "properties": {
         "description": "",
         "id": "comanyMaster",
-        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "name": "Company",
-        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "org.joget.plugin.enterprise.FormDataUpdateTool",
+            "properties": {
+                "fields": [{
+                    "field": "tower_name",
+                    "value": "#form.app_fd_ofc_tower_tab.tower_name[{#form.app_fd_ofc_company_tab.tower_name#}]#"
+                }],
+                "formDefId": "comanyMaster"
+            }
+        },
+        "postProcessorRunOn": "both",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "tableName": "ofc_company_tab"
     }
 }
