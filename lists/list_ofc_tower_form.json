@@ -128,7 +128,7 @@
             "headerAlignment": "dataListAlignCenter",
             "hidden": "true",
             "id": "column_5",
-            "include_export": "",
+            "include_export": "true",
             "label": "Location",
             "name": "ofc_location_tab.locName",
             "sortable": "false",
