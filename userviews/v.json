@@ -217,6 +217,11 @@
                         "checkUTF8": "",
                         "columnMapping": [
                             {
+                                "col": "0",
+                                "field": "businessType",
+                                "formatted": "false"
+                            },
+                            {
                                 "col": "1",
                                 "field": "tower_seq_no",
                                 "formatted": "false"
@@ -229,6 +234,11 @@
                             {
                                 "col": "3",
                                 "field": "tower_no",
+                                "formatted": "false"
+                            },
+                            {
+                                "col": "4",
+                                "field": "locName",
                                 "formatted": "false"
                             }
                         ],
