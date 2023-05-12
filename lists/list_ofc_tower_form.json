@@ -26,8 +26,9 @@
                 "properties": {}
             },
             "headerAlignment": "",
-            "hidden": "false",
+            "hidden": "true",
             "id": "column_3",
+            "include_export": "true",
             "label": "Business_Type",
             "name": "c_businessType",
             "sortable": "true",
