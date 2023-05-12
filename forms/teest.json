@@ -4,7 +4,74 @@
         "className": "org.joget.apps.form.model.Section",
         "elements": [{
             "className": "org.joget.apps.form.model.Column",
-            "elements": [],
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "field2",
+                        "label": "Select Box",
+                        "multiple": "",
+                        "options": [],
+                        "optionsBinder": {
+                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                            "properties": {
+                                "addEmptyOption": "",
+                                "cacheInterval": "",
+                                "emptyLabel": "",
+                                "extraCondition": "",
+                                "formDefId": "ofc_tower_form",
+                                "groupingColumn": "",
+                                "idColumn": "",
+                                "labelColumn": "tower_name",
+                                "useAjax": ""
+                            }
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "field2",
+                        "id": "field1",
+                        "label": "Select Box",
+                        "multiple": "",
+                        "options": [],
+                        "optionsBinder": {
+                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                            "properties": {
+                                "addEmptyOption": "",
+                                "cacheInterval": "",
+                                "emptyLabel": "",
+                                "extraCondition": "",
+                                "formDefId": "ofc_Floor_form",
+                                "groupingColumn": "",
+                                "idColumn": "",
+                                "labelColumn": "add_floor",
+                                "useAjax": ""
+                            }
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                }
+            ],
             "properties": {"width": "100%"}
         }],
         "properties": {
