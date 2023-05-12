@@ -206,7 +206,7 @@
                         "label": "",
                         "noLoad": "",
                         "noframe": "true",
-                        "parentSubFormId": "",
+                        "parentSubFormId": "tower_name",
                         "readonly": "",
                         "readonlyLabel": "",
                         "storeBinder": {
