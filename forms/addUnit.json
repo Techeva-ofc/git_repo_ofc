@@ -24,7 +24,7 @@
                                 "groupingColumn": "",
                                 "idColumn": "",
                                 "labelColumn": "tower_name",
-                                "useAjax": ""
+                                "useAjax": "true"
                             }
                         },
                         "readonly": "",
