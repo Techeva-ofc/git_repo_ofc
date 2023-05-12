@@ -90,7 +90,7 @@
                                     "extraCondition": "",
                                     "formDefId": "ofc_Floor_form",
                                     "groupingColumn": "",
-                                    "idColumn": "",
+                                    "idColumn": "add_floor",
                                     "labelColumn": "add_floor",
                                     "useAjax": "true"
                                 }
