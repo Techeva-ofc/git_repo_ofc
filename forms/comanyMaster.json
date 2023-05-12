@@ -195,7 +195,7 @@
                 {
                     "className": "org.joget.apps.form.lib.SubForm",
                     "properties": {
-                        "formDefId": "unit1",
+                        "formDefId": "test",
                         "id": "field16",
                         "label": "",
                         "loadBinder": {
