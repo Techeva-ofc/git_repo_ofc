@@ -41,7 +41,7 @@
                 {
                     "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
-                        "controlField": "",
+                        "controlField": "unitAreaTower",
                         "id": "unitFloor",
                         "label": "Floor",
                         "multiple": "",
