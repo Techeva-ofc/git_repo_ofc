@@ -14,7 +14,7 @@
                     "value": "#requestParam.unitAreaTower#"
                 },
                 {
-                    "field": "ofc_floor_tab.add_floor",
+                    "field": "unitAreaFloor",
                     "join": "AND",
                     "operator": "=",
                     "value": "#requestParam.unitAreaFloor#"
