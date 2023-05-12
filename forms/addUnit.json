@@ -9,7 +9,7 @@
                     "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
                         "controlField": "",
-                        "id": "tower_name",
+                        "id": "unitAreaTower",
                         "label": "Tower",
                         "multiple": "",
                         "options": [],
@@ -24,7 +24,7 @@
                                 "groupingColumn": "",
                                 "idColumn": "",
                                 "labelColumn": "tower_name",
-                                "useAjax": "true"
+                                "useAjax": ""
                             }
                         },
                         "readonly": "",
