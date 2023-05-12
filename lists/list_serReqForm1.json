@@ -1,0 +1,561 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.JdbcDataListBinder",
+        "properties": {
+            "jdbcDatasource": "default",
+            "optimisePaging": "",
+            "primaryKey": "id",
+            "sql": "select \r\n  b.id, \r\n  b.c_approval_status, \r\n  b.c_refund_status,\r\n  b.dateCreated, \r\n  b.dateModified,\r\n  b.c_serReqDmccSrNo, \r\n  b.c_serReqUserName,\r\n  b.c_status, \r\n  b.c_orderReference,\r\n  b.c_refund_initiate_date,\r\n  b.c_refundRemarks,\r\n  b.c_paymentDate,\r\n  b.c_applicationMode,\r\n  d.c_ofc_category_name, \r\n  a.c_companyName,\r\n  c.c_tower_seq_no, \r\n  c.c_tower_name\r\n  \r\nfrom \r\n  jwdb.app_fd_ofc_company_tab a \r\n  join jwdb.app_fd_ofc_serReqs_tab b on a.id = b.c_companyName \r\n  join jwdb.app_fd_ofc_tower_tab c on a.c_tower_name = c.id \r\n  join jwdb.app_fd_ofc_ofc_category_tab d on b.c_ofc_category_name = d.id \r\n  \r\n  where \r\n  b.c_status = 'Payment Pending' or \r\n  b.c_status = 'Payment Completed' or\r\n  b.c_status = 'On Approval' or \r\n  b.c_status = 'Upload Document' or\r\n  b.c_status = 'Void' or\r\n   b.c_status = 'Closed'\r\n  \r\norder by \r\n  b.c_paymentDate is null, \r\n  b.c_paymentDate desc, \r\n  c.c_tower_seq_no desc,\r\n  b.c_applicationMode desc\r\n"
+        }
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_1",
+            "label": "Payment Date",
+            "name": "c_paymentDate",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_0",
+            "label": "Tower Seq No.",
+            "name": "c_tower_seq_no",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_13",
+            "label": "Fast-Track",
+            "name": "c_applicationMode",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+                "properties": {
+                    "confirmation": "",
+                    "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/serreview",
+                    "hrefColumn": "id",
+                    "hrefParam": "id",
+                    "label": "Hyperlink",
+                    "target": "_self"
+                }
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_2",
+            "label": "DMCC SR No",
+            "name": "c_serReqDmccSrNo",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_14",
+            "label": "Company Email",
+            "name": "c_serReqUserName",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_3",
+            "label": "Tower Name",
+            "name": "c_tower_name",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_4",
+            "label": "Company Name",
+            "name": "c_companyName",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_5",
+            "label": "Service Category",
+            "name": "c_ofc_category_name",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "true",
+            "id": "column_7",
+            "include_export": "",
+            "label": "Approval Status",
+            "name": "c_approval_status",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_6",
+            "label": "Status",
+            "name": "c_status",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_11",
+            "label": "Refund Status",
+            "name": "c_refund_status",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "org.joget.plugin.enterprise.DateFormatter",
+                "properties": {
+                    "dataFormat": "dd-MM-yyyy",
+                    "dateStoreInUTC": "",
+                    "displayFormat": "dd-MM-yyyy"
+                }
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_9",
+            "label": "Refund Initiated Date",
+            "name": "c_refund_initiate_date",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_10",
+            "label": "Refund Remarks",
+            "name": "c_refundRemarks",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        }
+    ],
+    "considerFilterWhenGetTotal": "",
+    "description": "",
+    "disableResponsive": "",
+    "filters": [
+        {
+            "datalist_type": "filter",
+            "filterParamName": "d-3375228-fn_c_serReqDmccSrNo",
+            "hidden": "",
+            "id": "filter_4",
+            "label": "DMCC SR No",
+            "name": "c_serReqDmccSrNo",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {"defaultValue": ""}
+            }
+        },
+        {
+            "datalist_type": "filter",
+            "filterParamName": "d-3375228-fn_c_companyName",
+            "hidden": "",
+            "id": "filter_3",
+            "label": "Company Name",
+            "name": "c_companyName",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {"defaultValue": ""}
+            }
+        },
+        {
+            "datalist_type": "filter",
+            "filterParamName": "d-3375228-fn_c_tower_name",
+            "hidden": "",
+            "id": "filter_2",
+            "label": "Tower Name",
+            "name": "c_tower_name",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {"defaultValue": ""}
+            }
+        }
+    ],
+    "hidePageSize": "true",
+    "id": "list_serReqForm1",
+    "name": "List - Service Request Form_1",
+    "order": "1",
+    "orderBy": "dateCreated",
+    "pageSize": "0",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "responsiveView": [
+        {
+            "breakpoint": "",
+            "columns": "",
+            "view": "Mobile"
+        },
+        {
+            "breakpoint": "",
+            "columns": "",
+            "view": "Tablet"
+        }
+    ],
+    "rowActions": [
+        {
+            "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+            "icon": "<i class=\"fas fa-link\"><\/i>",
+            "id": "rowAction_0",
+            "label": "Hyperlink",
+            "name": "Data List Hyperlink Action",
+            "properties": {
+                "confirmation": "",
+                "datalist_type": "row_action",
+                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/serviceRequestAuditTrial",
+                "hrefColumn": "id",
+                "hrefParam": "id",
+                "label": "Audit Trail",
+                "rules": [],
+                "target": "_self"
+            },
+            "type": "text"
+        },
+        {
+            "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+            "icon": "<i class=\"fas fa-link\"><\/i>",
+            "id": "rowAction_1",
+            "label": "Hyperlink",
+            "name": "Data List Hyperlink Action",
+            "properties": {
+                "confirmation": "",
+                "datalist_type": "row_action",
+                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/paymetRefundForm1?&_mode=edit",
+                "hrefColumn": "id",
+                "hrefParam": "id",
+                "label": "Refund",
+                "rules": [
+                    {
+                        "field": "c_refund_status",
+                        "join": "AND",
+                        "operator": "<>",
+                        "value": "Refund Completed"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "<>",
+                        "value": "Payment Pending"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "<>",
+                        "value": "Payment Panding"
+                    },
+                    {
+                        "field": "c_orderReference",
+                        "join": "AND",
+                        "operator": "<>",
+                        "value": ""
+                    },
+                    {
+                        "field": "c_refund_status",
+                        "join": "AND",
+                        "operator": "<>",
+                        "value": "Refund Initiated"
+                    }
+                ],
+                "target": "popup"
+            },
+            "type": "text"
+        },
+        {
+            "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+            "icon": "<i class=\"fas fa-link\"><\/i>",
+            "id": "rowAction_2",
+            "label": "Hyperlink",
+            "name": "Data List Hyperlink Action",
+            "properties": {
+                "confirmation": "",
+                "datalist_type": "row_action",
+                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/ofcpage",
+                "hrefColumn": ";;c_companyName;;id;;;;",
+                "hrefParam": "license;account_number;companyname;location;id;serReqDmccSrNo;job;report;activity",
+                "label": "View OFC Certificate",
+                "rules": [
+                    {
+                        "field": "c_ofc_category_name",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Activity Amendment"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Payment Completed"
+                    },
+                    {
+                        "field": "c_ofc_category_name",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Other Amendment"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Payment Completed"
+                    },
+                    {
+                        "field": "c_ofc_category_name",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Location Amendment"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Payment Completed"
+                    }
+                ],
+                "target": "_self"
+            },
+            "type": "text"
+        },
+        {
+            "className": "org.joget.tutorial.DownloadPdfDatalistAction",
+            "icon": "",
+            "id": "rowAction_5",
+            "label": "Download PDF",
+            "name": "Download PDF Datalist Action",
+            "properties": {
+                "confirmation": "",
+                "datalist_type": "row_action",
+                "footerHtml": "",
+                "formDefId": "ofc_amendment",
+                "formatting": "",
+                "headerHtml": "",
+                "hideEmptyValueField": "",
+                "label": "Download OFC Certificate",
+                "recordIdColumn": "id",
+                "repeatFooter": "",
+                "repeatHeader": "",
+                "rules": [
+                    {
+                        "field": "c_ofc_category_name",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Activity Amendment"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Payment Completed"
+                    },
+                    {
+                        "field": "c_ofc_category_name",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Other Amendment"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Payment Completed"
+                    },
+                    {
+                        "field": "c_ofc_category_name",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Location Amendment"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Payment Completed"
+                    }
+                ],
+                "showNotSelectedOptions": ""
+            },
+            "type": "text"
+        }
+    ],
+    "searchPopup": "",
+    "showDataWhenFilterSet": "",
+    "showPageSizeSelector": "true",
+    "useSession": ""
+}
