@@ -193,27 +193,6 @@
                     }
                 },
                 {
-                    "className": "org.joget.apps.form.lib.SubForm",
-                    "properties": {
-                        "formDefId": "test",
-                        "id": "field16",
-                        "label": "",
-                        "loadBinder": {
-                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                            "properties": {}
-                        },
-                        "noframe": "",
-                        "parentSubFormId": "tower_name",
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "storeBinder": {
-                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                            "properties": {}
-                        },
-                        "subFormParentId": ""
-                    }
-                },
-                {
                     "className": "org.joget.plugin.enterprise.AjaxSubForm",
                     "properties": {
                         "ajax": "true",
