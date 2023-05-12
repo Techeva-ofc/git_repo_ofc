@@ -117,7 +117,7 @@
                         "requestParams": [
                             {
                                 "defaultValue": "",
-                                "field": "unitAreaTower",
+                                "field": "tower_name",
                                 "param": "unitAreaTower"
                             },
                             {
