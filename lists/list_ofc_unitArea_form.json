@@ -18,18 +18,6 @@
                     "join": "AND",
                     "operator": "=",
                     "value": "#requestParam.unitAreaFloor#"
-                },
-                {
-                    "field": "unitAreaTower",
-                    "join": "AND",
-                    "operator": "=",
-                    "value": "#requestParam.unitAreaTower#"
-                },
-                {
-                    "field": "ofc_floor_tab.add_floor",
-                    "join": "AND",
-                    "operator": "=",
-                    "value": "#requestParam.unitAreaFloor#"
                 }
             ],
             "formDefId": "ofc_unitArea_form",
