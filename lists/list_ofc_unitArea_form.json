@@ -14,13 +14,25 @@
                     "value": "#requestParam.unitAreaTower#"
                 },
                 {
-                    "field": "unitFloor",
+                    "field": "ofc_floor_tab.add_floor",
+                    "join": "AND",
+                    "operator": "=",
+                    "value": "#requestParam.unitAreaFloor#"
+                },
+                {
+                    "field": "unitAreaTower",
+                    "join": "AND",
+                    "operator": "=",
+                    "value": "#requestParam.unitAreaTower#"
+                },
+                {
+                    "field": "ofc_floor_tab.add_floor",
                     "join": "AND",
                     "operator": "=",
                     "value": "#requestParam.unitAreaFloor#"
                 }
             ],
-            "formDefId": "addUnit",
+            "formDefId": "ofc_unitArea_form",
             "functionColumns": [],
             "groupBy": "",
             "joins": [
@@ -31,7 +43,7 @@
                 },
                 {
                     "fieldId": "",
-                    "joinFieldId": "unitFloor",
+                    "joinFieldId": "unitAreaFloor",
                     "tableName": "ofc_floor_tab"
                 }
             ]
@@ -40,6 +52,48 @@
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
     "columns": [
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_2",
+            "label": "Unit Name",
+            "name": "unitName",
+            "sortable": "true",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_0",
+            "label": "Area(Sq ft.)",
+            "name": "area_sqft",
+            "sortable": "true",
+            "style": "",
+            "width": ""
+        },
         {
             "action": {
                 "className": "",
@@ -87,6 +141,24 @@
     ],
     "considerFilterWhenGetTotal": "",
     "filters": [
+        {
+            "id": "filter_1",
+            "label": "Area(Sq ft.)",
+            "name": "area_sqft",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {}
+            }
+        },
+        {
+            "id": "filter_0",
+            "label": "Unit Name",
+            "name": "unitName",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {}
+            }
+        },
         {
             "datalist_type": "filter",
             "filterParamName": "d-5048916-fn_ofc_tower_tab.tower_name",
