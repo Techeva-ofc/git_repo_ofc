@@ -1,0 +1,344 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.HiddenField",
+                            "properties": {
+                                "id": "id",
+                                "useDefaultWhenEmpty": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "#form.ofc_serReqs_tab.id#",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.HiddenField",
+                            "properties": {
+                                "id": "serReqDmccSrNo",
+                                "useDefaultWhenEmpty": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "#form.ofc_serReqs_tab.serReqDmccSrNo#",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "dmccvalue",
+                                "label": "DMCC SR No.",
+                                "maxlength": "",
+                                "permissionHidden": "",
+                                "placeholder": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "#requestParam.serReqDmccSrNo#",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "currentdate",
+                                "label": "Date:",
+                                "maxlength": "",
+                                "permissionHidden": "",
+                                "placeholder": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "#date.dd MMM yyyy h:mm aa#",
+                                "workflowVariable": ""
+                            }
+                        }
+                    ],
+                    "properties": {"width": "49%"}
+                },
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "inspectionreportStatus",
+                                "label": "Status of Inspection",
+                                "maxlength": "",
+                                "permissionHidden": "",
+                                "placeholder": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "currentuser",
+                                "label": "Reported By",
+                                "maxlength": "",
+                                "permissionHidden": "",
+                                "placeholder": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "reportdate",
+                                "label": "Report Generated On",
+                                "maxlength": "",
+                                "placeholder": "",
+                                "readonly": "",
+                                "readonlyLabel": "",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "#form.ofc_serReqs_tab.reportdate#",
+                                "workflowVariable": ""
+                            }
+                        }
+                    ],
+                    "properties": {"width": "49%"}
+                }
+            ],
+            "properties": {
+                "comment": "",
+                "id": "inspectionReport",
+                "join": "",
+                "label": "Inspection Report",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.plugin.enterprise.AdvancedGrid",
+                        "properties": {
+                            "deleteMessage": "Delete row?",
+                            "disabledAdd": "true",
+                            "disabledDelete": "true",
+                            "errorMessage": "Invalid number of rows",
+                            "formDefId": "inspectionSchedule_subform",
+                            "hint": "Click to edit. Tab to save.",
+                            "id": "inspCheckpoints",
+                            "keyToSave": "9",
+                            "label": "",
+                            "loadBinder": {
+                                "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                                "properties": {
+                                    "foreignKey": "referencekey",
+                                    "formDefId": "inspectionSchedule_subform"
+                                }
+                            },
+                            "options": [
+                                {
+                                    "formatType": "",
+                                    "label": "Code",
+                                    "readonly": "true",
+                                    "value": "checkpointCode",
+                                    "width": ""
+                                },
+                                {
+                                    "formatType": "",
+                                    "label": "Check point",
+                                    "readonly": "true",
+                                    "value": "checkpointName",
+                                    "width": ""
+                                },
+                                {
+                                    "formatType": "",
+                                    "label": "Image Uploaded By Concordia",
+                                    "readonly": "true",
+                                    "value": "ref_image",
+                                    "width": ""
+                                },
+                                {
+                                    "formatType": "",
+                                    "label": "Comment from Concordia",
+                                    "readonly": "true",
+                                    "value": "remark_insp_checkpoint",
+                                    "width": ""
+                                },
+                                {
+                                    "formatType": "",
+                                    "label": "Upload Compliance Image",
+                                    "readonly": "",
+                                    "value": "ref_image_compliance",
+                                    "width": ""
+                                },
+                                {
+                                    "formatType": "",
+                                    "label": "audit field",
+                                    "readonly": "",
+                                    "value": "ref_image_audit",
+                                    "width": ""
+                                }
+                            ],
+                            "pagingOptions": "10,20,50,100",
+                            "readonly": "",
+                            "recordPerPage": "20",
+                            "search": "",
+                            "showRowNumber": "true",
+                            "sortIndx": "",
+                            "storeBinder": {
+                                "className": "org.joget.apps.form.lib.BeanShellFormBinder",
+                                "properties": {
+                                    "autoHandleFiles": "",
+                                    "autoHandleWorkflowVariable": "true",
+                                    "cacheInterval": "",
+                                    "script": "import java.lang.System;\nimport java.lang.String;\nimport org.joget.apps.app.service.AppUtil;\nimport org.joget.apps.form.model.Element;\nimport org.joget.apps.form.model.FormData;\nimport org.joget.apps.form.model.FormRow;\nimport org.joget.apps.form.model.FormRowSet;\nimport org.joget.apps.form.service.FormUtil;\nimport org.joget.plugin.base.PluginManager;\nimport org.joget.apps.form.model.FormStoreBinder;\nimport org.joget.apps.app.service.AppUtil;\nimport java.sql.Connection;\nimport java.sql.DriverManager;\nimport java.sql.ResultSet;\nimport java.sql.SQLException;\nimport java.sql.PreparedStatement;\nimport javax.sql.DataSource;\nimport java.util.Date;\nimport java.text.SimpleDateFormat;\npublic void uploadimageaudit()\n{\n\n                PreparedStatement stmt = null;\n                PreparedStatement updatestmt = null;\n\t\t\t\tConnection connection = null;\n\n        try{\n            System.out.println(\"#appVersion# app version\");\n         PluginManager pluginManager = (PluginManager) AppUtil.getApplicationContext().getBean(\"pluginManager\");\n         FormStoreBinder binder = (FormStoreBinder) pluginManager.getPlugin(\"org.joget.apps.form.lib.WorkflowFormBinder\");\n         binder.store(element, rows, formData);\n         \n        \n\t\t\t\tDataSource ds = (DataSource)AppUtil.getApplicationContext().getBean(\"setupDataSource\");\n                 connection = ds.getConnection();\n                 \n                 System.out.println(\"Connected\");\n             \n             Date cdate = new Date();    \n            SimpleDateFormat formatter = new SimpleDateFormat(\"yyyy-MM-dd HH:mm:ss\"); \n\t\t    String currentDate = formatter.format(cdate);\n                 \n\t\t\t\t for(FormRow row:rows)\n\t\t\t\t {\n\t\t\t\t String images = row.getProperty(\"ref_image_compliance\");\n\t\t\t\t String id = row.getProperty(\"id\"); \n\t\t\t\t String code = row.getProperty(\"checkpointCode\");\n\t\t\t\t String remarks = row.getProperty(\"remark_insp_checkpoint\");\n\t\t\t\t String reference = null;\n\t\t\t\t  \n\t\t\t\t \n\t\t\t\tSystem.out.println(\"--ID-\"+id);\n\t\t\t\t \n\t\t\t\tif(images!=null)\n\t\t\t\t{\n\t\t\t\t    \n\t\t\t\tString[] imgs = images.split(\";\");\n\t\t\t\tfor(String imgName:imgs)\n\t\t\t\t{\n\t\t\t\tstmt = connection.prepareStatement(\"insert into app_fd_ofc_insp_images (c_parentkey,c_checkpointCode,c_ref_image_history,c_dateuploaded,c_remark_insp_checkpoint) values (?,?,?,?,?)\");\n\t\t\t\tstmt.setString(1,id);\n\t\t\t\tstmt.setString(2,code);\n\t\t\t\tstmt.setString(3,imgName);\n\t\t\t\tstmt.setString(4,currentDate);\n\t\t\t\tstmt.setString(5,remarks);\n\t\t\t\tstmt.executeQuery();\n\t\t\t\t}\n\t\t\t\t\tupdatestmt = \"update app_fd_ofc_schdl_sub_tab set c_ref_image_compliance =?, c_ref_image_audit =? where id  = ?\";\n\t\t\t\t\tupdatestmt.setString(1,reference);\n\t\t\t\t\tupdatestmt.setString(2,images);\n\t\t\t\t\tupdatestmt.setString(3,id);\n\t\t\t\t\tupdatestmt.executeQuery();\n\t\t\t\t}\n\t\t\t\t}\n\t\t\t\t}\n       catch(Exception e){\n            System.out.println(\"exception \"+e.getMessage());\n        }finally{\n            if(stmt!=null){\n                stmt.close();\n                updatestmt.close();\n            }\n            if(connection!=null){\n                connection.close();\n            }\n        }\n}\nuploadimageaudit();",
+                                    "useAjax": ""
+                                }
+                            },
+                            "uniqueKey": "",
+                            "validateMaxRow": "",
+                            "validateMinRow": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            }
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
+                            "id": "image_by_client",
+                            "useDefaultWhenEmpty": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "imageupload",
+                            "workflowVariable": "inspectionStatus"
+                        }
+                    }
+                ],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "fitoutnoncompliance",
+                "join": "",
+                "label": "Fill below list",
+                "loadBinder": {
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        }
+    ],
+    "properties": {
+        "description": "",
+        "id": "insp_report_client",
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "name": "Inspection Report Client",
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "org.joget.apps.app.lib.DatabaseUpdateTool",
+            "properties": {
+                "jdbcDatasource": "default",
+                "query": "update app_fd_ofc_serreqs_tab set c_status = 'Images Uploaded' where  id = '#requestParam.id#' and c_serReqDmccSrNo = '#requestParam.serReqDmccSrNo#' and c_serReqDmccSrNo = '#requestParam.serReqDmccSrNo#'"
+            }
+        },
+        "postProcessorRunOn": "both",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "tableName": "ofc_serReqs_tab"
+    }
+}
