@@ -300,7 +300,7 @@
                             "autoPopulate": "",
                             "id": "field37",
                             "label": "",
-                            "value": "$(document).ready(function() {\r\n  // Hide the section initially\r\n  $('#mySection').hide();\r\n\r\n  // Bind an event handler to the select box change event\r\n  $('#ofc_category_name').on('change', function() {\r\n    // Get the selected option value\r\n    var selectedOption = $(this).val();\r\n\r\n    // Show or hide the section based on the selected option value\r\n    if (selectedOption === 'Activity Amendment') {\r\n      $('#mySection').show();\r\n    } else {\r\n      $('#mySection').hide();\r\n    }\r\n  });\r\n});"
+                            "value": "<script src=\"https://code.jquery.com/jquery-3.6.0.min.js\"><\/script>\r\n\r\n$(document).ready(function() {\r\n  // Hide the section initially\r\n  $('#mySection').hide();\r\n\r\n  // Bind an event handler to the select box change event\r\n  $('#ofc_category_name').on('change', function() {\r\n    // Get the selected option value\r\n    var selectedOption = $(this).val();\r\n\r\n    // Show or hide the section based on the selected option value\r\n    if (selectedOption === 'Activity Amendment') {\r\n      $('#mySection').show();\r\n    } else {\r\n      $('#mySection').hide();\r\n    }\r\n  });\r\n});"
                         }
                     }
                 ],
