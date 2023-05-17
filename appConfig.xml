@@ -1,7 +1,7 @@
 <appDefinition>
    <id>testappgit</id>
    <version></version>
-   <name>TEST_APP_GIT-SG</name>
+   <name>TEST_APP_GIT</name>
    <packageDefinitionList/>
    <formDefinitionList/>
    <userviewDefinitionList/>
