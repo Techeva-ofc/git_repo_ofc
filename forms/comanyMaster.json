@@ -155,7 +155,7 @@
                             "className": "",
                             "properties": {}
                         },
-                        "value": "#form.ofc_company_tab.compActivity#",
+                        "value": "#form.app_fd_ofc_company_tab.compActivity#",
                         "workflowVariable": ""
                     }
                 },
