@@ -134,14 +134,6 @@
             "sortable": "false",
             "style": "",
             "width": ""
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_4",
-            "label": "ofc_location_tab.locEmirates",
-            "name": "ofc_location_tab.locEmirates",
-            "sortable": "false"
         }
     ],
     "considerFilterWhenGetTotal": "",
