@@ -155,7 +155,7 @@
                             "className": "",
                             "properties": {}
                         },
-                        "value": "activityname",
+                        "value": "#variable.activityname#",
                         "workflowVariable": ""
                     }
                 },
