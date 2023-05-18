@@ -15,27 +15,53 @@
     },
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
-    "columns": [{
-        "action": {
-            "className": "",
-            "properties": {}
+    "columns": [
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_2",
+            "label": "Company Name",
+            "name": "companyName",
+            "sortable": "true",
+            "style": "",
+            "width": ""
         },
-        "alignment": "",
-        "datalist_type": "column",
-        "exclude_export": "",
-        "format": {
-            "className": "",
-            "properties": {}
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_3",
+            "label": "Tower Name",
+            "name": "tower_name",
+            "sortable": "false"
         },
-        "headerAlignment": "",
-        "hidden": "false",
-        "id": "column_2",
-        "label": "Company Name",
-        "name": "companyName",
-        "sortable": "true",
-        "style": "",
-        "width": ""
-    }],
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_1",
+            "label": "License Number",
+            "name": "licenseNumber",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_0",
+            "label": "Activity",
+            "name": "compActivity",
+            "sortable": "false"
+        }
+    ],
     "considerFilterWhenGetTotal": "",
     "description": "",
     "disableResponsive": "",
