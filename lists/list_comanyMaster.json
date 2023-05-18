@@ -12,17 +12,17 @@
             "groupBy": "",
             "joins": [
                 {
-                    "fieldId": "",
+                    "fieldId": "ofc_activity_tab.id",
                     "joinFieldId": "compActivity",
                     "tableName": "ofc_activity_tab"
                 },
                 {
-                    "fieldId": "",
+                    "fieldId": "ofc_tower_tab.id",
                     "joinFieldId": "tower_name",
                     "tableName": "ofc_tower_tab"
                 },
                 {
-                    "fieldId": "",
+                    "fieldId": "ofc_location_tab.id",
                     "joinFieldId": "locName",
                     "tableName": "ofc_location_tab"
                 }
