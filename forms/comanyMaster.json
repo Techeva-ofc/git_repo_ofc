@@ -155,7 +155,7 @@
                             "className": "",
                             "properties": {}
                         },
-                        "value": "#variable.activityname#",
+                        "value": "#form.ofc_company_tab.compActivity#",
                         "workflowVariable": ""
                     }
                 },
@@ -440,9 +440,25 @@
     "properties": {
         "description": "",
         "id": "comanyMaster",
-        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "name": "Company",
-        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "tableName": "ofc_company_tab"
     }
 }
