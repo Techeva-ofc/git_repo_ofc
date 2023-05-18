@@ -12,17 +12,17 @@
             "groupBy": "",
             "joins": [
                 {
-                    "fieldId": "ofc_activity_tab.id",
+                    "fieldId": "",
                     "joinFieldId": "compActivity",
                     "tableName": "ofc_activity_tab"
                 },
                 {
-                    "fieldId": "ofc_tower_tab.id",
+                    "fieldId": "",
                     "joinFieldId": "tower_name",
                     "tableName": "ofc_tower_tab"
                 },
                 {
-                    "fieldId": "ofc_location_tab.id",
+                    "fieldId": "",
                     "joinFieldId": "locName",
                     "tableName": "ofc_location_tab"
                 }
@@ -31,45 +31,179 @@
     },
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
-    "columns": [{
-        "action": {
-            "className": "",
-            "properties": {}
+    "columns": [
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_2",
+            "label": "Company Name",
+            "name": "companyName",
+            "sortable": "true",
+            "style": "",
+            "width": ""
         },
-        "alignment": "",
-        "datalist_type": "column",
-        "exclude_export": "",
-        "format": {
-            "className": "",
-            "properties": {}
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_1",
+            "label": "Tower Name",
+            "name": "ofc_tower_tab.tower_name",
+            "sortable": "false",
+            "style": "",
+            "width": ""
         },
-        "headerAlignment": "",
-        "hidden": "false",
-        "id": "column_2",
-        "label": "Company Name",
-        "name": "companyName",
-        "sortable": "true",
-        "style": "",
-        "width": ""
-    }],
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_3",
+            "label": "Location",
+            "name": "ofc_location_tab.locName",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_0",
+            "label": "Activity Name",
+            "name": "ofc_activity_tab.activityName",
+            "sortable": "true",
+            "style": "",
+            "width": ""
+        }
+    ],
     "considerFilterWhenGetTotal": "",
     "description": "",
     "disableResponsive": "",
-    "filters": [{
-        "id": "filter_0",
-        "label": "Activity",
-        "name": "compActivity",
-        "type": {
-            "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-            "properties": {}
+    "filters": [
+        {
+            "datalist_type": "filter",
+            "filterParamName": "d-7908264-fn_companyName",
+            "hidden": "",
+            "id": "filter_2",
+            "label": "Company Name",
+            "name": "companyName",
+            "type": {
+                "className": "org.joget.plugin.enterprise.SelectBoxDataListFilterType",
+                "properties": {
+                    "controlField": "",
+                    "defaultValue": "",
+                    "multiple": "",
+                    "options": [],
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "",
+                            "cacheInterval": "",
+                            "emptyLabel": "",
+                            "extraCondition": "",
+                            "formDefId": "comanyMaster",
+                            "groupingColumn": "",
+                            "idColumn": "",
+                            "labelColumn": "companyName",
+                            "useAjax": ""
+                        }
+                    },
+                    "size": ""
+                }
+            }
+        },
+        {
+            "datalist_type": "filter",
+            "filterParamName": "d-7908264-fn_ofc_tower_tab.tower_name",
+            "hidden": "",
+            "id": "filter_4",
+            "label": "Tower Name",
+            "name": "ofc_tower_tab.tower_name",
+            "type": {
+                "className": "org.joget.plugin.enterprise.SelectBoxDataListFilterType",
+                "properties": {
+                    "controlField": "",
+                    "defaultValue": "",
+                    "multiple": "",
+                    "options": [],
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "",
+                            "cacheInterval": "",
+                            "emptyLabel": "",
+                            "extraCondition": "",
+                            "formDefId": "ofc_tower_form",
+                            "groupingColumn": "",
+                            "idColumn": "",
+                            "labelColumn": "tower_name",
+                            "useAjax": ""
+                        }
+                    },
+                    "size": ""
+                }
+            }
+        },
+        {
+            "id": "filter_0",
+            "label": "Activity",
+            "name": "compActivity",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {}
+            }
         }
-    }],
+    ],
     "hidePageSize": "true",
     "id": "list_comanyMaster",
     "name": "List - Company",
     "order": "1",
     "orderBy": "dateModified",
-    "pageSize": "0",
+    "pageSize": "50",
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
     "responsiveView": [
         {
