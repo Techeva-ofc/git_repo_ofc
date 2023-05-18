@@ -10,7 +10,23 @@
             "formDefId": "comanyMaster",
             "functionColumns": [],
             "groupBy": "",
-            "joins": []
+            "joins": [
+                {
+                    "fieldId": "",
+                    "joinFieldId": "compActivity",
+                    "tableName": "ofc_activity_tab"
+                },
+                {
+                    "fieldId": "",
+                    "joinFieldId": "tower_name",
+                    "tableName": "ofc_tower_tab"
+                },
+                {
+                    "fieldId": "",
+                    "joinFieldId": "locName",
+                    "tableName": "ofc_location_tab"
+                }
+            ]
         }
     },
     "buttonPosition": "bottomLeft",
