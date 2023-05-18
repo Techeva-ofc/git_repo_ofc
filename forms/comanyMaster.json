@@ -346,6 +346,48 @@
                         "value": "",
                         "workflowVariable": ""
                     }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.AjaxSubForm",
+                    "properties": {
+                        "ajax": "true",
+                        "collapsible": "",
+                        "collapsibleExpanded": "true",
+                        "collapsibleLabelCollapsed": "View Details",
+                        "collapsibleLabelExpanded": "Hide Details",
+                        "formDefId": "location1",
+                        "hideEmpty": "",
+                        "id": "serReqLocation",
+                        "label": "",
+                        "noLoad": "",
+                        "noframe": "true",
+                        "parentSubFormId": "locName",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "storeBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "subFormParentId": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextArea",
+                    "properties": {
+                        "cols": "20",
+                        "id": "companyAddress",
+                        "label": "Company Address",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "rows": "5",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
                 }
             ],
             "properties": {"width": "100%"}
