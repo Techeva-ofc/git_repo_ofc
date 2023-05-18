@@ -122,6 +122,6 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "tableName": "ofc_location1_tab"
+        "tableName": "ofc_location_tab"
     }
 }
