@@ -136,12 +136,26 @@
             "width": ""
         },
         {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
             "filterable": true,
-            "hidden": "false",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "true",
             "id": "column_4",
+            "include_export": "",
             "label": "ofc_emirates_tab.emirates_name",
             "name": "ofc_emirates_tab.emirates_name",
-            "sortable": "false"
+            "sortable": "false",
+            "style": "",
+            "width": ""
         }
     ],
     "considerFilterWhenGetTotal": "",
