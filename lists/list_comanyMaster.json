@@ -56,6 +56,14 @@
         {
             "filterable": true,
             "hidden": "false",
+            "id": "column_6",
+            "label": "ofc_tower_tab.tower_name",
+            "name": "ofc_tower_tab.tower_name",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
             "id": "column_3",
             "label": "Tower Name",
             "name": "tower_name",
@@ -64,9 +72,9 @@
         {
             "filterable": true,
             "hidden": "false",
-            "id": "column_1",
-            "label": "License Number",
-            "name": "licenseNumber",
+            "id": "column_5",
+            "label": "ofc_location_tab.locName",
+            "name": "ofc_location_tab.locName",
             "sortable": "false"
         },
         {
@@ -75,6 +83,14 @@
             "id": "column_0",
             "label": "Activity",
             "name": "compActivity",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_4",
+            "label": "ofc_activity_tab.activityName",
+            "name": "ofc_activity_tab.activityName",
             "sortable": "false"
         }
     ],
