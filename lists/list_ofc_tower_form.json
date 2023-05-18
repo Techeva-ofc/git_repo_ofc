@@ -134,6 +134,14 @@
             "sortable": "false",
             "style": "",
             "width": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_4",
+            "label": "ofc_emirates_tab.emirates_name",
+            "name": "ofc_emirates_tab.emirates_name",
+            "sortable": "false"
         }
     ],
     "considerFilterWhenGetTotal": "",
