@@ -64,25 +64,9 @@
         {
             "filterable": true,
             "hidden": "false",
-            "id": "column_3",
-            "label": "Tower Name",
-            "name": "tower_name",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
             "id": "column_5",
             "label": "ofc_location_tab.locName",
             "name": "ofc_location_tab.locName",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_0",
-            "label": "Activity",
-            "name": "compActivity",
             "sortable": "false"
         },
         {
