@@ -10,89 +10,32 @@
             "formDefId": "comanyMaster",
             "functionColumns": [],
             "groupBy": "",
-            "joins": [
-                {
-                    "fieldId": "",
-                    "joinFieldId": "tower_name",
-                    "tableName": "ofc_tower_tab"
-                },
-                {
-                    "fieldId": "",
-                    "joinFieldId": "locName",
-                    "tableName": "ofc_location_tab"
-                }
-            ]
+            "joins": []
         }
     },
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
-    "columns": [
-        {
-            "action": {
-                "className": "",
-                "properties": {}
-            },
-            "alignment": "",
-            "datalist_type": "column",
-            "exclude_export": "",
-            "format": {
-                "className": "",
-                "properties": {}
-            },
-            "headerAlignment": "",
-            "hidden": "false",
-            "id": "column_2",
-            "label": "Company Name",
-            "name": "companyName",
-            "sortable": "true",
-            "style": "",
-            "width": ""
+    "columns": [{
+        "action": {
+            "className": "",
+            "properties": {}
         },
-        {
-            "action": {
-                "className": "",
-                "properties": {}
-            },
-            "alignment": "",
-            "datalist_type": "column",
-            "exclude_export": "",
-            "filterable": true,
-            "format": {
-                "className": "",
-                "properties": {}
-            },
-            "headerAlignment": "",
-            "hidden": "false",
-            "id": "column_1",
-            "label": "Tower Name",
-            "name": "ofc_tower_tab.tower_name",
-            "sortable": "false",
-            "style": "",
-            "width": ""
+        "alignment": "",
+        "datalist_type": "column",
+        "exclude_export": "",
+        "format": {
+            "className": "",
+            "properties": {}
         },
-        {
-            "action": {
-                "className": "",
-                "properties": {}
-            },
-            "alignment": "",
-            "datalist_type": "column",
-            "exclude_export": "",
-            "filterable": true,
-            "format": {
-                "className": "",
-                "properties": {}
-            },
-            "headerAlignment": "",
-            "hidden": "false",
-            "id": "column_3",
-            "label": "Location",
-            "name": "ofc_location_tab.locName",
-            "sortable": "false",
-            "style": "",
-            "width": ""
-        }
-    ],
+        "headerAlignment": "",
+        "hidden": "false",
+        "id": "column_2",
+        "label": "Company Name",
+        "name": "companyName",
+        "sortable": "true",
+        "style": "",
+        "width": ""
+    }],
     "considerFilterWhenGetTotal": "",
     "description": "",
     "disableResponsive": "",
