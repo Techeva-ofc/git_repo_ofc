@@ -13,11 +13,6 @@
             "joins": [
                 {
                     "fieldId": "",
-                    "joinFieldId": "compActivity",
-                    "tableName": "ofc_activity_tab"
-                },
-                {
-                    "fieldId": "",
                     "joinFieldId": "tower_name",
                     "tableName": "ofc_tower_tab"
                 },
@@ -94,28 +89,6 @@
             "label": "Location",
             "name": "ofc_location_tab.locName",
             "sortable": "false",
-            "style": "",
-            "width": ""
-        },
-        {
-            "action": {
-                "className": "",
-                "properties": {}
-            },
-            "alignment": "",
-            "datalist_type": "column",
-            "exclude_export": "",
-            "filterable": true,
-            "format": {
-                "className": "",
-                "properties": {}
-            },
-            "headerAlignment": "",
-            "hidden": "false",
-            "id": "column_0",
-            "label": "Activity Name",
-            "name": "ofc_activity_tab.activityName",
-            "sortable": "true",
             "style": "",
             "width": ""
         }
