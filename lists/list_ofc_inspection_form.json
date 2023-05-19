@@ -6,7 +6,7 @@
             "jdbcDatasource": "default",
             "optimisePaging": "",
             "primaryKey": "id",
-            "sql": "select \r\n  b.id, \r\n  b.c_approval_status, \r\n  b.c_refund_status,\r\n  b.dateCreated, \r\n  b.dateModified,\r\n  b.c_serReqDmccSrNo, \r\n  b.c_serReqUserName,\r\n  b.c_status, \r\n  b.c_orderReference,\r\n  b.c_refund_initiate_date,\r\n  b.c_refundRemarks,\r\n  b.c_paymentDate,\r\n  b.c_applicationMode,\r\n  d.c_ofc_category_name, \r\n  a.c_companyName,\r\n  c.c_tower_seq_no, \r\n  c.c_tower_name,\r\n  b.c_inspectionreportStatus,\r\n  b.c_inspSchedlDate\r\nfrom \r\n  jwdb.app_fd_ofc_company_tab a \r\n  join jwdb.app_fd_ofc_serReqs_tab b on a.id = b.c_companyName \r\n  join jwdb.app_fd_ofc_tower_tab c on a.c_tower_name = c.id \r\n  join jwdb.app_fd_ofc_ofc_category_tab d on b.c_ofc_category_name = d.id \r\n  \r\nWHERE  \r\nb.c_inspectionreportStatus IN ('Full Compliance','Partial Compliance','Fitout Non-Compliance','Other Non-Compliance') or\r\nb.c_status = 'Inspection Scheduled'\r\n\r\norder by b.c_inspSchedlDate\r\n"
+            "sql": "select \r\n  b.id, \r\n  b.c_approval_status, \r\n  b.c_refund_status,\r\n  b.dateCreated, \r\n  b.dateModified,\r\n  b.c_serReqDmccSrNo, \r\n  b.c_serReqUserName,\r\n  b.c_status, \r\n  b.c_orderReference,\r\n  b.c_refund_initiate_date,\r\n  b.c_refundRemarks,\r\n  b.c_paymentDate,\r\n  b.c_applicationMode,\r\n  d.c_ofc_category_name, \r\n  a.c_companyName,\r\n  c.c_tower_seq_no, \r\n  c.c_tower_name,\r\n  b.c_inspectionreportStatus,\r\n  b.c_inspSchedlDate,\r\n  b.c_inspectorNames\r\nfrom \r\n  jwdb.app_fd_ofc_company_tab a \r\n  join jwdb.app_fd_ofc_serReqs_tab b on a.id = b.c_companyName \r\n  join jwdb.app_fd_ofc_tower_tab c on a.c_tower_name = c.id \r\n  join jwdb.app_fd_ofc_ofc_category_tab d on b.c_ofc_category_name = d.id \r\n  \r\nWHERE  \r\nb.c_inspectionreportStatus IN ('Full Compliance','Partial Compliance','Fitout Non-Compliance','Other Non-Compliance') or\r\nb.c_status = 'Inspection Scheduled'\r\n\r\norder by b.c_inspSchedlDate\r\n"
         }
     },
     "buttonPosition": "bottomLeft",
@@ -22,17 +22,14 @@
             "exclude_export": "",
             "filterable": true,
             "format": {
-                "className": "org.joget.plugin.enterprise.DateFormatter",
-                "properties": {
-                    "dateStoreInUTC": "true",
-                    "displayFormat": "dd/MM/yyyy hh:mm a"
-                }
+                "className": "",
+                "properties": {}
             },
             "headerAlignment": "",
             "hidden": "false",
-            "id": "column_6",
-            "label": "Created On",
-            "name": "dateCreated",
+            "id": "column_2",
+            "label": "Scheduled On",
+            "name": "c_inspSchedlDate",
             "sortable": "true",
             "style": "",
             "width": ""
@@ -52,9 +49,9 @@
             },
             "headerAlignment": "",
             "hidden": "false",
-            "id": "column_2",
-            "label": "Scheduled On",
-            "name": "c_inspSchedlDate",
+            "id": "column_3",
+            "label": "Inspector",
+            "name": "c_inspectorNames",
             "sortable": "true",
             "style": "",
             "width": ""
@@ -196,6 +193,18 @@
     "description": "",
     "disableResponsive": "",
     "filters": [
+        {
+            "datalist_type": "filter",
+            "filterParamName": "d-2997933-fn_c_inspectorNames",
+            "hidden": "",
+            "id": "filter_2",
+            "label": "Inspector",
+            "name": "c_inspectorNames",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {"defaultValue": ""}
+            }
+        },
         {
             "datalist_type": "filter",
             "filterParamName": "d-2997933-fn_c_companyName",
