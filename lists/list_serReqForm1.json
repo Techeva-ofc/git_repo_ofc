@@ -56,7 +56,7 @@
             "id": "column_1",
             "label": "Payment Date",
             "name": "c_paymentDate",
-            "sortable": "false",
+            "sortable": "true",
             "style": "",
             "width": ""
         },
@@ -78,7 +78,7 @@
             "id": "column_0",
             "label": "Tower Seq No.",
             "name": "c_tower_seq_no",
-            "sortable": "false",
+            "sortable": "true",
             "style": "",
             "width": ""
         },
@@ -100,7 +100,7 @@
             "id": "column_13",
             "label": "Fast-Track",
             "name": "c_applicationMode",
-            "sortable": "false",
+            "sortable": "true",
             "style": "",
             "width": ""
         },
