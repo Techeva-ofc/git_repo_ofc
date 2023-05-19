@@ -1,0 +1,74 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [{
+        "className": "org.joget.apps.form.model.Section",
+        "elements": [{
+            "className": "org.joget.apps.form.model.Column",
+            "elements": [{
+                "className": "org.joget.apps.form.lib.Radio",
+                "properties": {
+                    "controlField": "",
+                    "id": "waiveconfirm",
+                    "label": "Are you sure want to send report for waive off?",
+                    "options": [
+                        {
+                            "grouping": "",
+                            "label": "Yes",
+                            "value": "Yes"
+                        },
+                        {
+                            "grouping": "",
+                            "label": "No",
+                            "value": "No"
+                        }
+                    ],
+                    "optionsBinder": {
+                        "className": "",
+                        "properties": {}
+                    },
+                    "readonly": "",
+                    "readonlyLabel": "",
+                    "validator": {
+                        "className": "org.joget.apps.form.lib.DefaultValidator",
+                        "properties": {
+                            "mandatory": "true",
+                            "message": "mandatory",
+                            "type": ""
+                        }
+                    },
+                    "value": "",
+                    "workflowVariable": ""
+                }
+            }],
+            "properties": {"width": "100%"}
+        }],
+        "properties": {
+            "id": "section1",
+            "label": "Section"
+        }
+    }],
+    "properties": {
+        "description": "",
+        "id": "confirmwaiveoff",
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "name": "Inspection Waive OFF Confirmation",
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "tableName": "ofc_serReqs_tab"
+    }
+}
