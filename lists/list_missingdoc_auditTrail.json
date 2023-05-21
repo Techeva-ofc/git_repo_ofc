@@ -5,8 +5,8 @@
         "properties": {
             "jdbcDatasource": "default",
             "optimisePaging": "",
-            "primaryKey": "username",
-            "sql": "select * from app_fd_ofc_file_history"
+            "primaryKey": "id",
+            "sql": "SELECT a.*,b.c_doctype,b.c_description,b.c_referencekey\nFROM app_fd_ofc_file_history a JOIN app_fd_ofc_doc_miss_subform b ON a.doctype_id = b.c_referencekey"
         }
     },
     "buttonPosition": "bottomLeft",
@@ -23,6 +23,22 @@
         {
             "filterable": true,
             "hidden": "false",
+            "id": "column_2",
+            "label": "uploadedby",
+            "name": "uploadedby",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_4",
+            "label": "c_doctype",
+            "name": "c_doctype",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
             "id": "column_0",
             "label": "file",
             "name": "file",
@@ -31,9 +47,9 @@
         {
             "filterable": true,
             "hidden": "false",
-            "id": "column_2",
-            "label": "uploadedby",
-            "name": "uploadedby",
+            "id": "column_3",
+            "label": "c_description",
+            "name": "c_description",
             "sortable": "false"
         }
     ],
