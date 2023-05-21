@@ -351,7 +351,11 @@
                             "pageSize": "20",
                             "readonly": "",
                             "readonlyLabel": "",
-                            "requestParams": [],
+                            "requestParams": [{
+                                "defaultValue": "",
+                                "field": "id",
+                                "param": "srID"
+                            }],
                             "showRowNumber": "",
                             "sortField": "sort",
                             "storeBinder": {
