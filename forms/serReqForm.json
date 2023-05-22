@@ -56,6 +56,15 @@
                     "className": "org.joget.apps.form.model.Column",
                     "elements": [
                         {
+                            "className": "org.joget.apps.form.lib.CustomHTML",
+                            "properties": {
+                                "autoPopulate": "",
+                                "id": "field41",
+                                "label": "",
+                                "value": "<script>\n     \n  var selectBox = document.getElementById('ofc_category_name');\n\n// Attach the onchange event listener to the select box\n    selectBox.onchange = function() {\n  // Code to execute when the select box value changes\n  var selectedValue = selectBox.value;\n  alert(selectedValue);\n  // Perform additional actions or call functions\n};\n\n    \n    \n    \n<\/script>"
+                            }
+                        },
+                        {
                             "className": "org.joget.apps.form.lib.HiddenField",
                             "properties": {
                                 "id": "id",
@@ -65,19 +74,6 @@
                                     "properties": {}
                                 },
                                 "value": "",
-                                "workflowVariable": ""
-                            }
-                        },
-                        {
-                            "className": "org.joget.apps.form.lib.HiddenField",
-                            "properties": {
-                                "id": "serviceCategoryType",
-                                "useDefaultWhenEmpty": "",
-                                "validator": {
-                                    "className": "",
-                                    "properties": {}
-                                },
-                                "value": "#form.ofc_ofc_category_tab.ofc_category_name[{form.ofc_serReqs_tab.ofc_category_name}]#",
                                 "workflowVariable": ""
                             }
                         },
