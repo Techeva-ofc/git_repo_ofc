@@ -268,7 +268,42 @@
             "elements": [
                 {
                     "className": "org.joget.apps.form.model.Column",
-                    "elements": [],
+                    "elements": [{
+                        "className": "org.joget.apps.form.lib.Radio",
+                        "properties": {
+                            "controlField": "",
+                            "id": "parent_sr",
+                            "label": "Parent SR No.",
+                            "options": [
+                                {
+                                    "grouping": "",
+                                    "label": "An Older System",
+                                    "value": "old_system"
+                                },
+                                {
+                                    "grouping": "",
+                                    "label": "Present System",
+                                    "value": "new_system"
+                                }
+                            ],
+                            "optionsBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "mandatory": "true",
+                                    "message": "mandatory",
+                                    "type": ""
+                                }
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    }],
                     "properties": {"width": "49%"}
                 },
                 {
