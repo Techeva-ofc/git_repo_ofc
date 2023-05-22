@@ -336,7 +336,7 @@
             "properties": {
                 "comment": "",
                 "id": "section6",
-                "join": "",
+                "join": "or;or;or",
                 "label": "Section",
                 "loadBinder": {
                     "className": "",
@@ -349,14 +349,14 @@
                 "permissionReadonly": "",
                 "readonly": "",
                 "readonlyLabel": "",
-                "regex": "",
-                "reverse": "",
+                "regex": ";;",
+                "reverse": ";;",
                 "storeBinder": {
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "ofc_category_name",
-                "visibilityValue": "1b96972e-0bec-4a11-9c8e-b8fb53569551"
+                "visibilityControl": "ofc_category_name;ofc_category_name;ofc_category_name",
+                "visibilityValue": "1b96972e-0bec-4a11-9c8e-b8fb53569551;4fc2a837-c10f-4f7e-91a5-876ce07318c1;d297187a-e46b-4c0a-95c1-797c47469d6b"
             }
         },
         {
