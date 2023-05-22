@@ -135,7 +135,7 @@
                             "properties": {
                                 "encryption": "",
                                 "id": "field40",
-                                "label": "#form.app_fd_ofc_ofc_category_tab.c_ofc_category_name[{form.ofc_serReqs_tab.c_ofc_category_name}]#",
+                                "label": "#form.ofc_serReqs_tab.c_ofc_category_name#",
                                 "maxlength": "",
                                 "placeholder": "",
                                 "readonly": "",
