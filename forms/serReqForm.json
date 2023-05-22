@@ -396,8 +396,9 @@
                         "optionsBinder": {
                             "className": "org.joget.plugin.enterprise.JdbcOptionsBinder",
                             "properties": {
-                                "addEmpty": "",
+                                "addEmpty": "true",
                                 "cacheInterval": "",
+                                "emptyLabel": "Select",
                                 "jdbcDatasource": "default",
                                 "sql": "SELECT c_serReqDmccSrNo  FROM app_fd_ofc_serreqs_tab  a \r\nJOIN app_fd_ofc_company_tab b \r\nON b.id = a.c_companyName\r\nWHERE a.c_companyName  = '#form.app_fd_ofc_serreqs_tab.companyName#';\r\n\r\n",
                                 "useAjax": "true"
