@@ -119,9 +119,9 @@
                                     "extraCondition": "",
                                     "formDefId": "ofc_activity_form",
                                     "groupingColumn": "",
-                                    "idColumn": "",
+                                    "idColumn": "activityName",
                                     "labelColumn": "activityName",
-                                    "useAjax": ""
+                                    "useAjax": "true"
                                 }
                             },
                             "readonly": "",
@@ -438,7 +438,7 @@
                                 "extraCondition": "",
                                 "formDefId": "ofc_activity_form",
                                 "groupingColumn": "",
-                                "idColumn": "activityName",
+                                "idColumn": "",
                                 "labelColumn": "activityName",
                                 "useAjax": ""
                             }
