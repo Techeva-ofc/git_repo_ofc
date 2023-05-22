@@ -69,6 +69,19 @@
                             }
                         },
                         {
+                            "className": "org.joget.apps.form.lib.HiddenField",
+                            "properties": {
+                                "id": "categorytype",
+                                "useDefaultWhenEmpty": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "#form.ofc_ofc_category_tab.ofc_category_name[{form.ofc_serReqs_tab.ofc_category_name}]#",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
                             "className": "org.joget.apps.form.lib.TextField",
                             "properties": {
                                 "encryption": "",
@@ -127,27 +140,6 @@
                                     }
                                 },
                                 "value": "",
-                                "workflowVariable": ""
-                            }
-                        },
-                        {
-                            "className": "org.joget.apps.form.lib.TextField",
-                            "properties": {
-                                "encryption": "",
-                                "id": "field40",
-                                "label": "value",
-                                "maxlength": "",
-                                "placeholder": "",
-                                "readonly": "",
-                                "readonlyLabel": "",
-                                "size": "",
-                                "storeNumeric": "",
-                                "style": "",
-                                "validator": {
-                                    "className": "",
-                                    "properties": {}
-                                },
-                                "value": "#form.app_fd_ofc_serreqs_tab.ofc_category_name#",
                                 "workflowVariable": ""
                             }
                         },
