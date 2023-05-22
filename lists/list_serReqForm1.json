@@ -61,7 +61,7 @@
                 "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
                 "properties": {
                     "confirmation": "",
-                    "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/serRequestUserView",
+                    "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/test",
                     "hrefColumn": "id",
                     "hrefParam": "id",
                     "label": "Hyperlink",
