@@ -131,27 +131,6 @@
                             }
                         },
                         {
-                            "className": "org.joget.apps.form.lib.TextField",
-                            "properties": {
-                                "encryption": "",
-                                "id": "ofc_category_name",
-                                "label": "Selected Category",
-                                "maxlength": "",
-                                "placeholder": "",
-                                "readonly": "",
-                                "readonlyLabel": "",
-                                "size": "",
-                                "storeNumeric": "",
-                                "style": "",
-                                "validator": {
-                                    "className": "",
-                                    "properties": {}
-                                },
-                                "value": "",
-                                "workflowVariable": ""
-                            }
-                        },
-                        {
                             "className": "org.joget.apps.form.lib.Radio",
                             "properties": {
                                 "controlField": "",
@@ -712,7 +691,7 @@
                     "properties": {
                         "customWidth": "",
                         "horizontal": "",
-                        "label": "Service Category Details",
+                        "label": "",
                         "width": "49%"
                     }
                 },
@@ -745,7 +724,7 @@
                     "properties": {
                         "customWidth": "",
                         "horizontal": "",
-                        "label": "Company Information",
+                        "label": "",
                         "width": "49%"
                     }
                 }
