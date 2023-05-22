@@ -61,7 +61,7 @@
                                 "autoPopulate": "",
                                 "id": "field41",
                                 "label": "",
-                                "value": "<p id=\"demo\">Test :  <\/p>\n\n<script>\n  var category = document.getElementById(\"ofc_category_name\");\n  alert(\"welcome\");\n  alert(category);\n  category.addEventListener('change', function() {\n      document.getElementById(\"demo\").innerHTML = category.value;\n      var test = category.value;\n      alert(test);\n \n});\n<\/script>"
+                                "value": "<script>\n  var category = document.getElementById('#form.app_fd_ofc_serreqs_tab.ofc_category_name#');\n  alert(\"welcome\");\n  \n  category.onchange = function() {\n  // Code to execute when the select box value changes\n  var selectedValue = category.value;\n  alert(selectedValue);\n \n});\n<\/script>"
                             }
                         },
                         {
