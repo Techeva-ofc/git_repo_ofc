@@ -134,7 +134,7 @@
                             "className": "org.joget.apps.form.lib.TextField",
                             "properties": {
                                 "encryption": "",
-                                "id": "field41",
+                                "id": "ofc_category_name",
                                 "label": "Selected Category",
                                 "maxlength": "",
                                 "placeholder": "",
@@ -336,7 +336,7 @@
             "properties": {
                 "comment": "",
                 "id": "section6",
-                "join": "or;or;or",
+                "join": "",
                 "label": "Section",
                 "loadBinder": {
                     "className": "",
@@ -349,14 +349,14 @@
                 "permissionReadonly": "",
                 "readonly": "",
                 "readonlyLabel": "",
-                "regex": ";;",
-                "reverse": ";;",
+                "regex": "",
+                "reverse": "",
                 "storeBinder": {
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "serviceCategoryType;serviceCategoryType;serviceCategoryType",
-                "visibilityValue": "Location Amendment;Activity Amendment;Other Amendment"
+                "visibilityControl": "ofc_category_name",
+                "visibilityValue": "1b96972e-0bec-4a11-9c8e-b8fb53569551"
             }
         },
         {
