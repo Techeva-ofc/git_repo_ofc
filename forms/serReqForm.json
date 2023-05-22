@@ -268,6 +268,25 @@
             "elements": [
                 {
                     "className": "org.joget.apps.form.model.Column",
+                    "elements": [],
+                    "properties": {"width": "49%"}
+                },
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [],
+                    "properties": {"width": "49%"}
+                }
+            ],
+            "properties": {
+                "id": "section6",
+                "label": "Section"
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.model.Column",
                     "elements": [
                         {
                             "className": "org.joget.plugin.enterprise.AjaxSubForm",
