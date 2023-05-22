@@ -250,7 +250,7 @@
                 "comment": "",
                 "id": "section6",
                 "join": "or;or;or",
-                "label": "Provide Core Sr No.",
+                "label": "Core Service Request Info",
                 "loadBinder": {
                     "className": "",
                     "properties": {}
