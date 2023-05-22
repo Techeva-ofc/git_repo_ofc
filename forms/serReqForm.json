@@ -110,7 +110,7 @@
                                         "extraCondition": "",
                                         "formDefId": "ofc_category1",
                                         "groupingColumn": "",
-                                        "idColumn": "",
+                                        "idColumn": "ofc_category_name",
                                         "labelColumn": "ofc_category_name",
                                         "useAjax": "true"
                                     }
