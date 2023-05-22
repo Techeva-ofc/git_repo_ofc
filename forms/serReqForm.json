@@ -61,7 +61,7 @@
                                 "autoPopulate": "",
                                 "id": "field41",
                                 "label": "",
-                                "value": "<script>\n  var selectBox = document.getElementById('ofc_category_name');\n  alert(\"welcome\");\n  alert(selectBox);\n// Attach the onchange event listener to the select box\n    selectBox.onchange = function() {\n  // Code to execute when the select box value changes\n  var selectedValue = selectBox.value;\n  alert(selectedValue);\n  // Perform additional actions or call functions\n};\n<\/script>"
+                                "value": "<script>\n  var category = document.getElementById('ofc_category_name');\n  alert(\"welcome\");\n  alert(selectBox);\n  category.addEventListener('change', function() {\n  alert(this.value);\n});\n<\/script>"
                             }
                         },
                         {
