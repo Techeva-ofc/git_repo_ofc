@@ -61,7 +61,7 @@
                                 "autoPopulate": "",
                                 "id": "field41",
                                 "label": "",
-                                "value": "<script>\n  var category = document.getElementById('ofc_category_name');\n  alert(\"welcome\");\n  \n  category.addEventListener('change', function() {\n  alert(category.value);\n});\n<\/script>"
+                                "value": "<script>\n  var category = document.getElementById('ofc_category_name');\n  alert(\"welcome\");\n  alert(category);\n  category.addEventListener('change', function() {\n  alert(category.value);\n});\n<\/script>"
                             }
                         },
                         {
