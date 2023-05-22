@@ -56,6 +56,15 @@
                     "className": "org.joget.apps.form.model.Column",
                     "elements": [
                         {
+                            "className": "org.joget.apps.form.lib.CustomHTML",
+                            "properties": {
+                                "autoPopulate": "",
+                                "id": "field40",
+                                "label": "",
+                                "value": "<script>\n    \n    var dmcc = document.getElementById('serReqDmccSrNo');\n    alert(dmcc);\n    \n    \n    \n<\/script>"
+                            }
+                        },
+                        {
                             "className": "org.joget.apps.form.lib.HiddenField",
                             "properties": {
                                 "id": "id",
