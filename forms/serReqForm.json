@@ -388,20 +388,23 @@
                 "elements": [{
                     "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
-                        "controlField": "",
+                        "controlField": "companyName",
                         "id": "new_sr_no",
                         "label": "Choose SR No.",
                         "multiple": "",
                         "options": [],
                         "optionsBinder": {
-                            "className": "org.joget.plugin.enterprise.JdbcOptionsBinder",
+                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
                             "properties": {
-                                "addEmpty": "true",
+                                "addEmptyOption": "",
                                 "cacheInterval": "",
-                                "emptyLabel": "Select",
-                                "jdbcDatasource": "default",
-                                "sql": "SELECT c_serReqDmccSrNo  FROM app_fd_ofc_serreqs_tab  a \r\nJOIN app_fd_ofc_company_tab b \r\nON b.id = a.c_companyName\r\nWHERE a.c_companyName  = '#form.app_fd_ofc_serreqs_tab.companyName#';\r\n\r\n",
-                                "useAjax": "true"
+                                "emptyLabel": "",
+                                "extraCondition": "",
+                                "formDefId": "serReqForm",
+                                "groupingColumn": "",
+                                "idColumn": "",
+                                "labelColumn": "serReqDmccSrNo",
+                                "useAjax": ""
                             }
                         },
                         "readonly": "",
