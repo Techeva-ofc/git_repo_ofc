@@ -71,7 +71,7 @@
                         {
                             "className": "org.joget.apps.form.lib.HiddenField",
                             "properties": {
-                                "id": "categorytype",
+                                "id": "serviceCategoryType",
                                 "useDefaultWhenEmpty": "",
                                 "validator": {
                                     "className": "",
@@ -328,7 +328,7 @@
             "properties": {
                 "comment": "",
                 "id": "section6",
-                "join": "",
+                "join": "or;or;or",
                 "label": "Section",
                 "loadBinder": {
                     "className": "",
@@ -341,14 +341,14 @@
                 "permissionReadonly": "",
                 "readonly": "",
                 "readonlyLabel": "",
-                "regex": "",
-                "reverse": "",
+                "regex": ";;",
+                "reverse": ";;",
                 "storeBinder": {
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "ofc_category_name",
-                "visibilityValue": "Location Amendment"
+                "visibilityControl": "serviceCategoryType;serviceCategoryType;serviceCategoryType",
+                "visibilityValue": "Location Amendment;Activity Amendment;Other Amendment"
             }
         },
         {
