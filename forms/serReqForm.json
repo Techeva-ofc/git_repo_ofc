@@ -337,7 +337,7 @@
                 "comment": "",
                 "id": "section6",
                 "join": "or;or;or",
-                "label": "Section",
+                "label": "Provide Core Sr No.",
                 "loadBinder": {
                     "className": "",
                     "properties": {}
@@ -712,7 +712,7 @@
                     "properties": {
                         "customWidth": "",
                         "horizontal": "",
-                        "label": "",
+                        "label": "Service Category Details",
                         "width": "49%"
                     }
                 },
@@ -742,7 +742,12 @@
                             "subFormParentId": ""
                         }
                     }],
-                    "properties": {"width": "49%"}
+                    "properties": {
+                        "customWidth": "",
+                        "horizontal": "",
+                        "label": "Company Information",
+                        "width": "49%"
+                    }
                 }
             ],
             "properties": {
