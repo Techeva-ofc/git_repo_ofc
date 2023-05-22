@@ -147,7 +147,7 @@
                                     "className": "",
                                     "properties": {}
                                 },
-                                "value": "ofc_category_name",
+                                "value": "#form.app_fd_ofc_serreqs_tab.ofc_category_name#",
                                 "workflowVariable": ""
                             }
                         },
