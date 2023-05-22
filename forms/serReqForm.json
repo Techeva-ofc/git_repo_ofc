@@ -396,15 +396,15 @@
                         "optionsBinder": {
                             "className": "org.joget.apps.form.lib.FormOptionsBinder",
                             "properties": {
-                                "addEmptyOption": "",
+                                "addEmptyOption": "true",
                                 "cacheInterval": "",
-                                "emptyLabel": "",
+                                "emptyLabel": "Select",
                                 "extraCondition": "",
                                 "formDefId": "serReqForm",
-                                "groupingColumn": "",
+                                "groupingColumn": "companyName",
                                 "idColumn": "",
                                 "labelColumn": "serReqDmccSrNo",
-                                "useAjax": ""
+                                "useAjax": "true"
                             }
                         },
                         "readonly": "",
