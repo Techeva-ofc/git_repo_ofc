@@ -56,15 +56,6 @@
                     "className": "org.joget.apps.form.model.Column",
                     "elements": [
                         {
-                            "className": "org.joget.apps.form.lib.CustomHTML",
-                            "properties": {
-                                "autoPopulate": "",
-                                "id": "field41",
-                                "label": "",
-                                "value": "<script>\n  var category = document.getElementByName('Service Categoy');\n  alert(\"welcome\");\n  \n  category.onchange = function() {\n  // Code to execute when the select box value changes\n  var selectedValue = category.value;\n  alert(selectedValue);\n \n});\n<\/script>"
-                            }
-                        },
-                        {
                             "className": "org.joget.apps.form.lib.HiddenField",
                             "properties": {
                                 "id": "id",
