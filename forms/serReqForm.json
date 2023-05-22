@@ -61,7 +61,7 @@
                                 "autoPopulate": "",
                                 "id": "field40",
                                 "label": "",
-                                "value": "<script>\n    \n    var dmcc = document.getElementById('serReqDmccSrNo');\n    alert(dmcc);\n    \n    \n    \n<\/script>"
+                                "value": "<script>\n    \n   document.getElementById(\"ofc_category_name\").addEventListener(\"change\", function(){\n       alert(\"Start\");\n       var text = document.getElementById(\"ofc_category_name\");\n       alert(text);\n    \n    \n<\/script>"
                             }
                         },
                         {
