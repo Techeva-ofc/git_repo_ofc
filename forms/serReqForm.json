@@ -110,7 +110,7 @@
                                         "extraCondition": "",
                                         "formDefId": "ofc_category1",
                                         "groupingColumn": "",
-                                        "idColumn": "ofc_category_name",
+                                        "idColumn": "",
                                         "labelColumn": "ofc_category_name",
                                         "useAjax": "true"
                                     }
@@ -1080,8 +1080,14 @@
         "description": "",
         "id": "serReqForm",
         "loadBinder": {
-            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-            "properties": {}
+            "className": "org.joget.apps.form.lib.BeanShellFormBinder",
+            "properties": {
+                "autoHandleFiles": "",
+                "autoHandleWorkflowVariable": "true",
+                "cacheInterval": "",
+                "script": "import org.joget.apps.form.model.Element;\r\nimport org.joget.apps.form.model.FormData;\r\nimport org.joget.apps.form.model.FormRow;\r\nimport org.joget.apps.form.service.FormUtil;\r\n\r\n// Get the current form data\r\nFormData formData = FormUtil.getFormData(element);\r\nif (formData != null) {\r\n  // Get the current form row\r\n  FormRow formRow = formData.getRows().get(0);\r\n  \r\n  // Get the value of the select box\r\n  String selectValue = formRow.getProperty(\"ofc_category_name\");\r\n  \r\n  // Set the value of the text field\r\n  formRow.setProperty(\"field40\", selectValue);\r\n}",
+                "useAjax": ""
+            }
         },
         "name": "Service Request Form",
         "noPermissionMessage": "",
