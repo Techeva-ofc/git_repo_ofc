@@ -21,7 +21,7 @@
                             "extraCondition": "",
                             "formDefId": "ofc_emirates_form",
                             "groupingColumn": "",
-                            "idColumn": "emirates_name",
+                            "idColumn": "",
                             "labelColumn": "emirates_name",
                             "useAjax": "true"
                         }
