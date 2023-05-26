@@ -167,6 +167,31 @@
                         "value": "",
                         "workflowVariable": ""
                     }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.AjaxSubForm",
+                    "properties": {
+                        "ajax": "true",
+                        "collapsible": "",
+                        "collapsibleExpanded": "true",
+                        "collapsibleLabelCollapsed": "View Details",
+                        "collapsibleLabelExpanded": "Hide Details",
+                        "formDefId": "location1",
+                        "hideEmpty": "",
+                        "id": "towerLocName",
+                        "label": "",
+                        "noLoad": "",
+                        "noframe": "true",
+                        "parentSubFormId": "locName",
+                        "permissionHidden": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "storeBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "subFormParentId": ""
+                    }
                 }
             ],
             "properties": {"width": "100%"}
