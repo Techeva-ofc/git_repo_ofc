@@ -185,7 +185,7 @@
                                 "extraCondition": "",
                                 "formDefId": "locationForm",
                                 "groupingColumn": "",
-                                "idColumn": "",
+                                "idColumn": "locEmirates",
                                 "labelColumn": "locEmirates",
                                 "useAjax": "true"
                             }
