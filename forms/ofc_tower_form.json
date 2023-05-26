@@ -157,32 +157,15 @@
                         "readonlyLabel": "",
                         "size": "",
                         "validator": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "mandatory",
+                                "type": ""
+                            }
                         },
                         "value": "",
                         "workflowVariable": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.form.lib.SubForm",
-                    "properties": {
-                        "formDefId": "location1",
-                        "id": "subform",
-                        "label": "",
-                        "loadBinder": {
-                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                            "properties": {}
-                        },
-                        "noframe": "true",
-                        "parentSubFormId": "locName",
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "storeBinder": {
-                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                            "properties": {}
-                        },
-                        "subFormParentId": ""
                     }
                 }
             ],
