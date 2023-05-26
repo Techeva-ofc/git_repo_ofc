@@ -142,7 +142,7 @@
                             "properties": {}
                         },
                         "noframe": "true",
-                        "parentSubFormId": "locName",
+                        "parentSubFormId": "",
                         "readonly": "",
                         "readonlyLabel": "",
                         "storeBinder": {
