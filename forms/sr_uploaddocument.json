@@ -1,0 +1,172 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
+                        "autoPopulate": "",
+                        "id": "form",
+                        "label": "",
+                        "value": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n   <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\r\n   <meta charset=\"utf-8\" />\r\n<\/head>\r\n\r\n<body style=\"margin: 0;\">\r\n   <div id=\"p1\" style=\"overflow: hidden; position: relative; background-color: white; width: 909px; height: 1286px;\">\r\n      <!-- Begin shared CSS values -->\r\n      <style class=\"shared-css\" type=\"text/css\">\r\n         .t { \t\r\n\ttransform-origin: bottom left; \t\r\n\tz-index: 2; \t\r\n\tposition: absolute; \t\r\n\twhite-space: pre; \t\r\n\toverflow: visible; \t\r\n\tline-height: 1.5; }\r\n \r\n\t\t.text-container \r\n\t\t{ \twhite-space: pre; } \r\n\r\n\t\t@supports (-webkit-touch-callout: none) { \t.text-container { \t\twhite-space: normal; \t} } \r\n      <\/style> \r\n\t<!-- End shared CSS values -->\r\n      <!-- Begin inline CSS -->\r\n      <style type=\"text/css\">\r\n         #t1_1{left:341px;bottom:1175px;letter-spacing:-0.14px;} \r\n\t\t#t2_1{left:695px;bottom:1178px;letter-spacing:-0.15px;} \r\n\t#t3_1{left:36px;bottom:1140px;letter-spacing:-0.1px;} \r\n\t#t4_1{left:45px;bottom:1110px;letter-spacing:-0.16px;} \r\n\t#t5_1{left:197px;bottom:1110px;} \r\n#t6_1{left:237px;bottom:1110px;letter-spacing:-0.15px;} \r\n#t7_1{left:478px;bottom:1110px;letter-spacing:-0.16px;}\r\n #t8_1{left:598px;bottom:1110px;} \r\n#t9_1{left:638px;bottom:1110px;letter-spacing:-0.15px;} \r\n#ta_1{left:45px;bottom:1080px;letter-spacing:-0.19px;} \r\n#tb_1{left:197px;bottom:1080px;} \r\n#tc_1{left:237px;bottom:1080px;letter-spacing:-0.16px;} \r\n#td_1{left:478px;bottom:1080px;letter-spacing:-0.16px;} \r\n#te_1{left:598px;bottom:1080px;} \r\n#tf_1{left:638px;bottom:1080px;letter-spacing:-0.16px;} \r\n#tg_1{left:36px;bottom:1051px;letter-spacing:-0.1px;} \r\n#th_1{left:45px;bottom:1021px;letter-spacing:-0.16px;} \r\n#ti_1{left:197px;bottom:1021px;} \r\n#tj_1{left:237px;bottom:1021px;letter-spacing:-0.14px;} \r\n#tk_1{left:481px;bottom:1021px;letter-spacing:-0.17px;} \r\n#tl_1{left:598px;bottom:1021px;} \r\n#tm_1{left:638px;bottom:1021px;letter-spacing:-0.17px;} \r\n#tn_1{left:45px;bottom:991px;letter-spacing:-0.15px;} \r\n#to_1{left:197px;bottom:991px;}\r\n #tp_1{left:237px;bottom:991px;letter-spacing:-0.15px;} \r\n#tq_1{left:478px;bottom:991px;letter-spacing:-0.17px;} \r\n#tr_1{left:598px;bottom:991px;} \r\n#ts_1{left:638px;bottom:991px;letter-spacing:-0.19px;} \r\n#tt_1{left:36px;bottom:961px;letter-spacing:-0.1px;} \r\n#tu_1{left:45px;bottom:932px;letter-spacing:-0.16px;} \r\n#tv_1{left:197px;bottom:932px;} \r\n#tw_1{left:237px;bottom:932px;letter-spacing:-0.15px;} \r\n#tx_1{left:45px;bottom:902px;letter-spacing:-0.16px;} \r\n#ty_1{left:197px;bottom:902px;} \r\n#tz_1{left:237px;bottom:902px;letter-spacing:-0.16px;} \r\n#t10_1{left:425px;bottom:843px;letter-spacing:-0.18px;} \r\n#t11_1{left:45px;bottom:813px;letter-spacing:-0.17px;} \r\n#t12_1{left:156px;bottom:813px;letter-spacing:-0.19px;} \r\n#t13_1{left:558px;bottom:813px;letter-spacing:-0.15px;} \r\n#t14_1{left:678px;bottom:813px;letter-spacing:-0.18px;} \r\n#t15_1{left:36px;bottom:783px;letter-spacing:-0.1px;} \r\n#t16_1{left:45px;bottom:753px;letter-spacing:-0.16px;} \r\n#t17_1{left:159px;bottom:753px;letter-spacing:-0.15px;} \r\n#t18_1{left:558px;bottom:753px;letter-spacing:-0.15px;} \r\n#t19_1{left:45px;bottom:713px;letter-spacing:-0.16px;} \r\n#t1a_1{left:159px;bottom:724px;letter-spacing:-0.14px;} \r\n#t1b_1{left:156px;bottom:702px;letter-spacing:-0.15px;} \r\n#t1c_1{left:558px;bottom:713px;letter-spacing:-0.15px;} \r\n#t1d_1{left:45px;bottom:662px;letter-spacing:-0.16px;} \r\n#t1e_1{left:159px;bottom:673px;letter-spacing:-0.14px;} \r\n#t1f_1{left:156px;bottom:651px;letter-spacing:-0.15px;} \r\n#t1g_1{left:558px;bottom:662px;letter-spacing:-0.15px;} \r\n#t1h_1{left:45px;bottom:611px;letter-spacing:-0.16px;} \r\n#t1i_1{left:159px;bottom:621px;letter-spacing:-0.15px;} \r\n#t1j_1{left:156px;bottom:600px;letter-spacing:-0.16px;} \r\n#t1k_1{left:558px;bottom:611px;letter-spacing:-0.15px;} \r\n#t1l_1{left:678px;bottom:611px;letter-spacing:-0.17px;} \r\n#t1m_1{left:45px;bottom:570px;letter-spacing:-0.16px;} \r\n#t1n_1{left:159px;bottom:570px;letter-spacing:-0.14px;} \r\n#t1o_1{left:558px;bottom:570px;letter-spacing:-0.15px;} \r\n#t1p_1{left:678px;bottom:570px;letter-spacing:-0.2px;} \r\n#t1q_1{left:36px;bottom:65px;letter-spacing:-0.1px;} \r\n#t1r_1{left:36px;bottom:36px;letter-spacing:-0.11px;word-spacing:0.1px;} \r\n#t1s_1{left:36px;bottom:14px;letter-spacing:-0.11px;word-spacing:0.1px;}  \r\n.s1_1{font-size:14px;font-family:Helvetica, Arial, sans-serif;color:#000;font-weight:bold;} \r\n.s2_1{font-size:11px;font-family:Helvetica, Arial, sans-serif;color:#000;} \r\n.s3_1{font-size:11px;font-family:Helvetica, Arial, sans-serif;color:#000;font-weight:bold;} \r\n.s4_1{font-size:11px;font-family:Helvetica, Arial, sans-serif;color:#008000;font-weight:bold;} \r\n.s5_1{font-size:11px;font-family:Helvetica, Arial, sans-serif;color:#008000;} \r\n      <\/style> \r\n\r\n<!-- End inline CSS -->\r\n\r\n<!-- Begin page background -->\r\n      <div id=\"pg1Overlay\"\r\n         style=\"width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;\">\r\n      <\/div>\r\n      <div id=\"pg1\" style=\"-webkit-user-select: none;\"> \r\n    \t\t<object width=\"909\" height=\"1286\" data=\"1/1.svg\" type=\"image/svg+xml\" id=\"pdf1\" style=\"width:909px; height:1286px; -moz-transform:scale(1); z-index: 0;\"><\/object>\r\n      <\/div> \r\n<!-- End page background -->\r\n\r\n<!-- Begin text definitions (Positioned/styled in CSS) -->\r\n      <div class=\"text-container\">\r\n\t<span id=\"t1_1\" class=\"t s1_1\">AOFC Document Status <\/span> \r\n\t<span id=\"t2_1\" class=\"t s1_1\">AOFC:36086 <\/span> \r\n\t<span id=\"t3_1\"   class=\"t s2_1\">\r\n------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\r\n         <\/span> \r\n\r\n\t\t<span id=\"t4_1\" class=\"t s3_1\">Doc Submitted By <\/span><span id=\"t5_1\" class=\"t s2_1\">: <\/span>\r\n\t\t<span  id=\"t6_1\" class=\"t s2_1\">Rizza <\/span>\r\n\r\n\t\t<span id=\"t7_1\" class=\"t s3_1\">Submitted Date <\/span>\r\n\t\t<span id=\"t8_1\" class=\"t s2_1\">: <\/span>\r\n\t\t<span id=\"t9_1\" class=\"t s2_1\">16 Sep 2022 3:47:36 PM <\/span>\r\n\r\n\t\t<span id=\"ta_1\" class=\"t s3_1\">Phone <\/span>\r\n\t\t<span id=\"tb_1\" class=\"t s2_1\">: <\/span>\r\n\t\t<span id=\"tc_1\" class=\"t s2_1\">971-50-4606670 <\/span>\r\n\r\n\t\t<span id=\"td_1\" class=\"t s3_1\">Email <\/span>\r\n\t\t<span id=\"te_1\" class=\"t s2_1\">: <\/span>\r\n\t\t<span id=\"tf_1\" class=\"t s2_1\">rizza_bs@hdec.com <\/span>\r\n\r\n\t\t <span id=\"tg_1\" class=\"t s2_1\">\r\n------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\r\n         <\/span> \r\n\r\n\t\t<span id=\"th_1\" class=\"t s3_1\">Tower/Cluster<\/span>\r\n\t\t<span id=\"ti_1\" class=\"t s2_1\">: <\/span>\r\n\t\t<span id=\"tj_1\" class=\"t s2_1\">Jumeirah Business Centre 3-Fitout <\/span>\r\n\r\n\r\n\t\t<span id=\"tk_1\" class=\"t s3_1\">Bldg Address <\/span>\r\n\t\t<span id=\"tl_1\" class=\"t s2_1\">: <\/span>\r\n\t\t<span id=\"tm_1\" class=\"t s2_1\">JLT <\/span> \r\n\r\n\r\n\t\t<span id=\"tn_1\" class=\"t s3_1\">Unit/Level <\/span>\r\n\t\t<span id=\"to_1\" class=\"t s2_1\">: <\/span>\r\n\t\t<span id=\"tp_1\" class=\"t s2_1\">16thFloor:UNIT # 1601 to 1605 <\/span>\r\n\r\n\t\t<span id=\"tq_1\" class=\"t s3_1\">Bldg Code <\/span>\r\n\t\t<span id=\"tr_1\" class=\"t s2_1\">: <\/span>\r\n\t\t<span id=\"ts_1\" class=\"t s2_1\">Y1 <\/span> \r\n\r\n\t\t<span id=\"tt_1\" class=\"t s2_1\">\r\n------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\r\n         <\/span> \r\n\r\n\t\t<span id=\"tu_1\" class=\"t s3_1\">Approval For<\/span>\r\n\t\t<span id=\"tv_1\" class=\"t s2_1\">: <\/span>\t\r\n\t\t<span id=\"tw_1\" class=\"t s2_1\">New Location Address Change in License <\/span> \r\n\r\n\r\n\t\t<span id=\"tx_1\" class=\"t s3_1\">Status <\/span>\r\n\t\t<span id=\"ty_1\" class=\"t s2_1\">: <\/span>\r\n\t\t<span id=\"tz_1\" class=\"t s2_1\">AOFC-Documents Submitted <\/span>\r\n <\/div>\r\n   <\/div>\r\n<\/body>\r\n\r\n<\/html>"
+                    }
+                }],
+                "properties": {
+                    "customWidth": "",
+                    "horizontal": "",
+                    "label": "",
+                    "width": "100%"
+                }
+            }],
+            "properties": {
+                "comment": "",
+                "id": "form_missing",
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionHidden": "",
+                "permissionReadonly": "",
+                "readonly": "true",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
+                            "id": "docuploadstatus",
+                            "useDefaultWhenEmpty": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "attached",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
+                            "id": "docuploaded",
+                            "useDefaultWhenEmpty": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.FileUpload",
+                        "properties": {
+                            "attachment": "",
+                            "fileType": "",
+                            "fileTypeMsg": "Invalid file type",
+                            "id": "docuploadbyclient",
+                            "label": "Upload Drawing / Document",
+                            "maxSize": "",
+                            "maxSizeMsg": "File size limit exceeded",
+                            "multiple": "true",
+                            "padding": "",
+                            "permissionPlugin": {
+                                "className": "org.joget.apps.userview.lib.GroupPermission",
+                                "properties": {
+                                    "allowedGroupIds": "G-009",
+                                    "orgId": ""
+                                }
+                            },
+                            "permissionType": "custom",
+                            "readonly": "",
+                            "removeFile": "",
+                            "resizeHeight": "",
+                            "resizeMethod": "",
+                            "resizeQuality": "0.8",
+                            "resizeWidth": "",
+                            "size": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            }
+                        }
+                    },
+                    {
+                        "className": "org.joget.plugin.enterprise.AjaxSubForm",
+                        "properties": {
+                            "ajax": "true",
+                            "collapsible": "",
+                            "collapsibleExpanded": "true",
+                            "collapsibleLabelCollapsed": "View Details",
+                            "collapsibleLabelExpanded": "Hide Details",
+                            "formDefId": "serReqDocMissing",
+                            "hideEmpty": "",
+                            "id": "missingdocuments",
+                            "label": "",
+                            "noLoad": "",
+                            "noframe": "true",
+                            "parentSubFormId": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "storeBinder": {
+                                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                                "properties": {}
+                            },
+                            "subFormParentId": ""
+                        }
+                    }
+                ],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "id": "section6",
+                "label": "Section"
+            }
+        }
+    ],
+    "properties": {
+        "description": "",
+        "id": "sr_uploaddocument",
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "name": "Service Request - Upload Document_template",
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "org.joget.apps.app.lib.BeanShellTool",
+            "properties": {"script": "import java.lang.System;\r\nimport java.lang.String;\r\nimport org.joget.apps.app.service.AppUtil;\r\nimport org.joget.apps.form.model.Element;\r\nimport org.joget.apps.form.model.FormData;\r\nimport org.joget.apps.form.model.FormRow;\r\nimport org.joget.apps.form.model.FormRowSet;\r\nimport org.joget.apps.form.service.FormUtil;\r\nimport org.joget.plugin.base.PluginManager;\r\nimport org.joget.apps.form.model.FormStoreBinder;\r\nimport org.joget.apps.app.service.AppUtil;\r\nimport java.sql.Connection;\r\nimport java.sql.DriverManager;\r\nimport java.sql.ResultSet;\r\nimport java.sql.SQLException;\r\nimport java.sql.PreparedStatement;\r\nimport javax.sql.DataSource;\r\nimport java.sql.*;\r\nimport java.util.Date;\r\nimport java.text.SimpleDateFormat;\r\n\r\n\r\npublic void updatefile()\r\n{\r\n\r\n                PreparedStatement stmt = null;\r\n                PreparedStatement statement = null;\r\n                \r\n\t\t\t\tConnection connection = null;\r\n\r\n        try{\r\n      \r\n\t\t\t\tDataSource ds = (DataSource)AppUtil.getApplicationContext().getBean(\"setupDataSource\");\r\n                 connection = ds.getConnection();\r\n                 \r\n               \r\n\t\t\t\t String files = \"#form.app_fd_ofc_serReqs_tab.docuploadbyclient#\";\r\n\t\t\t\t String id = \"#form.app_fd_ofc_serReqs_tab.id#\";\r\n\t\t\t\t String currentuser = \"#currentUser.fullName#\";\r\n\t\t\t\t \r\n\t\t\t\t SimpleDateFormat dateFormat = new SimpleDateFormat(\"yyyy-MM-dd HH:mm:ss\");\r\n\r\n                // Get current date and time\r\n                Date currentdate = new Date();\r\n                String currentDate = dateFormat.format(currentdate);\r\n\t\t\t\t \r\n\t\t\t\t \r\n\t\t\t\t System.out.println(\"File-----------\"+files);\r\n\t\t\t\t \t System.out.println(\"id-----------\"+id);\r\n\t\t\t\t \r\n\t\t\t\t \r\n\t\t\t\t \r\n\t\t\t\t if(files!=null)\r\n\t\t\t\t {\r\n                //stmt = connection.prepareStatement(\"delete from app_fd_ofc_insp_images where check_point_id =?\");\r\n                //stmt.setString(1,id);\r\n                //stmt.executeQuery();\r\n\t\t\t\t//if(!images.equals(\"\")){\r\n\t\t\t\tString[] file = files.split(\";\");\r\n\t\t\t\t    for(String filename:file)\r\n\t\t\t\t    {\r\n\t\t\t\t    stmt = connection.prepareStatement(\"insert into app_fd_ofc_file_history (file,doctype_id,dateofupload,uploadedby) values (?,?,?,?)\");\r\n\t\t\t\t    stmt.setString(1,filename);\r\n\t\t\t    \tstmt.setString(2,id);\r\n\t\t\t    \tstmt.setString(3,currentDate);\r\n\t\t\t    \tstmt.setString(4,currentuser);\r\n\t\t\t    \tstmt.executeQuery();\r\n\t\t\t    \t}\r\n\t\t\t    \t\r\n\t\t\t    \tstatement = connection.prepareStatement(\"update  app_fd_ofc_serreqs_tab set c_docuploadbyclient=?, c_docuploaded =? where id=? \");\r\n\t\t\t\t    statement.setString(1,null);\r\n\t\t\t    \tstatement.setString(2,files);\r\n\t\t\t    \tstatement.setString(3,id);\r\n\t\t\t    \tstatement.executeQuery();\r\n\t\t\t    \t\r\n\t\t\t\t}\r\n\t\t\t \r\n\t\t\t\t}\r\n\t\t\t\t\r\n            catch(Exception e)\r\n            {\r\n            System.out.println(\"exception \"+e.getMessage());\r\n            }\r\n            \r\n            finally\r\n            {\r\n            if(stmt!=null)\r\n            {\r\n                stmt.close();\r\n                statement.close();\r\n            }\r\n            if(connection!=null)\r\n            {\r\n                connection.close();\r\n            }\r\n            if(statement!=null)\r\n            {\r\n                \r\n                statement.close();\r\n            }\r\n             }\r\n             \r\n}\r\nupdatefile();\r\n"}
+        },
+        "postProcessorRunOn": "both",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "tableName": "ofc_serReqs_tab"
+    }
+}
