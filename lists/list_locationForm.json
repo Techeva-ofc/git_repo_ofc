@@ -43,62 +43,26 @@
             "width": ""
         },
         {
-            "action": {
-                "className": "",
-                "properties": {}
-            },
-            "alignment": "",
-            "datalist_type": "column",
-            "exclude_export": "",
             "filterable": true,
-            "format": {
-                "className": "",
-                "properties": {}
-            },
-            "headerAlignment": "",
             "hidden": "false",
-            "id": "column_1",
-            "label": "Emirates",
+            "id": "column_3",
+            "label": "ofc_emirates_tab.emirates_name",
             "name": "ofc_emirates_tab.emirates_name",
-            "sortable": "true",
-            "style": "",
-            "width": ""
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_2",
-            "label": "Emirates",
-            "name": "locEmirates",
             "sortable": "false"
         }
     ],
     "considerFilterWhenGetTotal": "",
     "description": "",
     "disableResponsive": "",
-    "filters": [
-        {
-            "id": "filter_0",
-            "label": "Location Name",
-            "name": "locName",
-            "type": {
-                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-                "properties": {}
-            }
-        },
-        {
-            "datalist_type": "filter",
-            "filterParamName": "d-926696-fn_ofc_emirates_tab.emirates_name",
-            "hidden": "",
-            "id": "filter_1",
-            "label": "Emirates Name",
-            "name": "ofc_emirates_tab.emirates_name",
-            "type": {
-                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-                "properties": {"defaultValue": ""}
-            }
+    "filters": [{
+        "id": "filter_0",
+        "label": "Location Name",
+        "name": "locName",
+        "type": {
+            "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+            "properties": {}
         }
-    ],
+    }],
     "hidePageSize": "true",
     "id": "list_locationForm",
     "name": "List - Location",
