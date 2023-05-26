@@ -148,7 +148,7 @@
                                 "extraCondition": "",
                                 "formDefId": "locationForm",
                                 "groupingColumn": "",
-                                "idColumn": "",
+                                "idColumn": "locName",
                                 "labelColumn": "locName",
                                 "useAjax": "true"
                             }
