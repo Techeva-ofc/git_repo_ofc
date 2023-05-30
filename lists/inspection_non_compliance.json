@@ -49,28 +49,6 @@
             },
             "headerAlignment": "",
             "hidden": "false",
-            "id": "column_5",
-            "label": "Job Id",
-            "name": "c_jobid",
-            "sortable": "false",
-            "style": "",
-            "width": ""
-        },
-        {
-            "action": {
-                "className": "",
-                "properties": {}
-            },
-            "alignment": "",
-            "datalist_type": "column",
-            "exclude_export": "",
-            "filterable": true,
-            "format": {
-                "className": "",
-                "properties": {}
-            },
-            "headerAlignment": "",
-            "hidden": "false",
             "id": "column_0",
             "label": "DMCC SR No",
             "name": "c_serReqDmccSrNo",
