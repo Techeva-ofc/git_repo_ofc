@@ -1,11 +1,43 @@
 {
     "actions": [],
     "binder": {
-        "className": "",
-        "name": "",
-        "properties": {}
+        "className": "org.joget.plugin.enterprise.JdbcDataListBinder",
+        "properties": {
+            "jdbcDatasource": "default",
+            "optimisePaging": "",
+            "primaryKey": "id",
+            "sql": "SELECT a.id,a.c_checkpointName,a.c_checkpointCode, b.c_ref_image_history,a.c_referencekey FROM app_fd_ofc_schdl_sub_tab a\r\nINNER JOIN app_fd_ofc_upload_image_audit b\r\nON b.c_parentkey = a.id\r\nINNER JOIN app_fd_ofc_serreqs_tab c\r\nON c.id = a.c_referencekey"
+        }
     },
-    "columns": [],
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_0",
+            "label": "c_checkpointCode",
+            "name": "c_checkpointCode",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_1",
+            "label": "c_checkpointName",
+            "name": "c_checkpointName",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_2",
+            "label": "c_ref_image_history",
+            "name": "c_ref_image_history",
+            "sortable": "false"
+        }
+    ],
+    "considerFilterWhenGetTotal": "",
     "description": "",
     "filters": [],
     "id": "list_ofc_imageaudit_partialcomplaince",
@@ -13,5 +45,8 @@
     "order": "",
     "orderBy": "",
     "pageSize": "0",
-    "rowActions": []
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
 }
