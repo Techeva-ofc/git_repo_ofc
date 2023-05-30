@@ -61,11 +61,8 @@
             "properties": {}
         },
         "postProcessor": {
-            "className": "org.joget.apps.app.lib.DatabaseUpdateTool",
-            "properties": {
-                "jdbcDatasource": "default",
-                "query": "update ofc_serReqs_tab\nset c_waiversend = 'True'\n\nUPDATE app_fd_ofc_serreqs_tab SET c_waiversend = (CASE WHEN  c_draw_status = 'Compliance' THEN 'Drawing Compliance' ELSE 'Drawing Non-Compliance' END),\nc_drawingupload = (CASE WHEN  c_draw_status = 'Compliance' THEN 'drawinguploaded' ELSE '' END),\nc_amendmentfee = (CASE WHEN  c_draw_status = 'Compliance' THEN '200.00' ELSE '0.00' END)\nwhere id = '#requestParam.id#'\n "
-            }
+            "className": "",
+            "properties": {}
         },
         "postProcessorRunOn": "both",
         "storeBinder": {
