@@ -75,7 +75,7 @@
                     "requestParams": [{
                         "defaultValue": "",
                         "hrefColumn": "c_serReqDmccSrNo",
-                        "param": "c_serReqDmccSrNo"
+                        "param": "d-4194991-fn_c_serReqDmccSrNo"
                     }]
                 }
             },
