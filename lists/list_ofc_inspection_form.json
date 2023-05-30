@@ -66,8 +66,18 @@
             "exclude_export": "",
             "filterable": true,
             "format": {
-                "className": "",
-                "properties": {}
+                "className": "org.joget.plugin.enterprise.NestedDatalistFormatter",
+                "properties": {
+                    "addEmptyRow": "true",
+                    "customHeaderColor": "",
+                    "exportOptions": "pdf;excel;csv;xml",
+                    "listId": "list_ofc_imageaudit_partialcomplaince",
+                    "requestParams": [{
+                        "defaultValue": "",
+                        "hrefColumn": "id",
+                        "param": "d-4194991-fn_id"
+                    }]
+                }
             },
             "headerAlignment": "",
             "hidden": "false",
