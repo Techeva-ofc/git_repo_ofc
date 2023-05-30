@@ -277,13 +277,13 @@
                             "options": [
                                 {
                                     "grouping": "",
-                                    "label": "An Older System",
-                                    "value": "old_system"
+                                    "label": "Present System",
+                                    "value": "new_system"
                                 },
                                 {
                                     "grouping": "",
-                                    "label": "Present System",
-                                    "value": "new_system"
+                                    "label": "An Older System",
+                                    "value": "old_system"
                                 }
                             ],
                             "optionsBinder": {
