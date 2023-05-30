@@ -1,5 +1,4 @@
 <appDefinition>
-   <appId>ofc_app</appId>
    <id>ofc_app</id>
    <version></version>
    <name>Operational Fitness Certificate</name>
@@ -53,7 +52,6 @@
          <id>PERMISSION_</id>
          <appId>ofc_app</appId>
          <appVersion>22</appVersion>
-         <value></value>
          <remarks>permissionRequest:8C13941FFEEB4033B804D5F2D89B4827</remarks>
       </environmentVariable>
       <environmentVariable>
