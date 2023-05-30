@@ -407,82 +407,43 @@
             "elements": [
                 {
                     "className": "org.joget.apps.form.model.Column",
-                    "elements": [
-                        {
-                            "className": "org.joget.apps.form.lib.SelectBox",
-                            "properties": {
-                                "controlField": "companyName",
-                                "id": "new_sr_no",
-                                "label": "Choose SR No.",
-                                "multiple": "",
-                                "options": [],
-                                "optionsBinder": {
-                                    "className": "org.joget.apps.form.lib.FormOptionsBinder",
-                                    "properties": {
-                                        "addEmptyOption": "true",
-                                        "cacheInterval": "",
-                                        "emptyLabel": "Select",
-                                        "extraCondition": "",
-                                        "formDefId": "serReqForm",
-                                        "groupingColumn": "companyName",
-                                        "idColumn": "",
-                                        "labelColumn": "serReqDmccSrNo",
-                                        "useAjax": "true"
-                                    }
-                                },
-                                "readonly": "",
-                                "readonlyLabel": "",
-                                "size": "",
-                                "validator": {
-                                    "className": "org.joget.apps.form.lib.DefaultValidator",
-                                    "properties": {
-                                        "mandatory": "true",
-                                        "message": "mandatory",
-                                        "type": ""
-                                    }
-                                },
-                                "value": "",
-                                "workflowVariable": ""
-                            }
-                        },
-                        {
-                            "className": "org.joget.plugin.enterprise.MultiSelectBox",
-                            "properties": {
-                                "controlField": "companyName",
-                                "id": "field40",
-                                "label": "Multi Select Box",
-                                "multiple": "",
-                                "options": [],
-                                "optionsBinder": {
-                                    "className": "org.joget.apps.form.lib.FormOptionsBinder",
-                                    "properties": {
-                                        "addEmptyOption": "true",
-                                        "cacheInterval": "",
-                                        "emptyLabel": "",
-                                        "extraCondition": "",
-                                        "formDefId": "serReqForm",
-                                        "groupingColumn": "companyName",
-                                        "idColumn": "",
-                                        "labelColumn": "serReqDmccSrNo",
-                                        "useAjax": "true"
-                                    }
-                                },
-                                "readonly": "",
-                                "readonlyLabel": "",
-                                "validator": {
-                                    "className": "org.joget.apps.form.lib.DefaultValidator",
-                                    "properties": {
-                                        "mandatory": "true",
-                                        "message": "mandatory",
-                                        "type": ""
-                                    }
-                                },
-                                "value": "",
-                                "width": "40%",
-                                "workflowVariable": ""
-                            }
+                    "elements": [{
+                        "className": "org.joget.plugin.enterprise.MultiSelectBox",
+                        "properties": {
+                            "controlField": "companyName",
+                            "id": "new_sr_no",
+                            "label": "Choose SR.No",
+                            "multiple": "",
+                            "options": [],
+                            "optionsBinder": {
+                                "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                                "properties": {
+                                    "addEmptyOption": "true",
+                                    "cacheInterval": "",
+                                    "emptyLabel": "",
+                                    "extraCondition": "",
+                                    "formDefId": "serReqForm",
+                                    "groupingColumn": "companyName",
+                                    "idColumn": "",
+                                    "labelColumn": "serReqDmccSrNo",
+                                    "useAjax": "true"
+                                }
+                            },
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "mandatory": "true",
+                                    "message": "mandatory",
+                                    "type": ""
+                                }
+                            },
+                            "value": "",
+                            "width": "40%",
+                            "workflowVariable": ""
                         }
-                    ],
+                    }],
                     "properties": {"width": "49%"}
                 },
                 {
