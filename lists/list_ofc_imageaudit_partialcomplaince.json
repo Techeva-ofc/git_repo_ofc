@@ -6,7 +6,7 @@
             "jdbcDatasource": "default",
             "optimisePaging": "",
             "primaryKey": "id",
-            "sql": "SELECT a.id,a.c_checkpointName,a.c_checkpointCode, b.c_ref_image_history,a.c_referencekey,b.c_dateuploaded FROM app_fd_ofc_schdl_sub_tab a\r\nINNER JOIN app_fd_ofc_upload_image_audit b\r\nON b.c_parentkey = a.id\r\nINNER JOIN app_fd_ofc_serreqs_tab c\r\nON c.id = a.c_referencekey"
+            "sql": "SELECT c.id,a.c_checkpointName,a.c_checkpointCode, b.c_ref_image_history,a.c_referencekey,b.c_dateuploaded FROM app_fd_ofc_schdl_sub_tab a\r\nINNER JOIN app_fd_ofc_upload_image_audit b\r\nON b.c_parentkey = a.id\r\nINNER JOIN app_fd_ofc_serreqs_tab c\r\nON c.id = a.c_referencekey"
         }
     },
     "buttonPosition": "bottomLeft",
