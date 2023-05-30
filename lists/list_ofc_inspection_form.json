@@ -74,8 +74,8 @@
                     "listId": "list_ofc_imageaudit_partialcomplaince",
                     "requestParams": [{
                         "defaultValue": "",
-                        "hrefColumn": "id",
-                        "param": "d-4194991-fn_id"
+                        "hrefColumn": "c_serReqDmccSrNo",
+                        "param": "c_serReqDmccSrNo"
                     }]
                 }
             },
