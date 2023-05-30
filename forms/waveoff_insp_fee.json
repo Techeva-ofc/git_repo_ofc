@@ -10,6 +10,19 @@
                         {
                             "className": "org.joget.apps.form.lib.HiddenField",
                             "properties": {
+                                "id": "waive_insp_status",
+                                "useDefaultWhenEmpty": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "#requestParam.status#",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.HiddenField",
+                            "properties": {
                                 "id": "id",
                                 "useDefaultWhenEmpty": "",
                                 "validator": {
@@ -140,39 +153,6 @@
             "className": "org.joget.apps.form.model.Section",
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
-                "elements": [],
-                "properties": {"width": "100%"}
-            }],
-            "properties": {
-                "comment": "",
-                "id": "noncompliancesection",
-                "join": "",
-                "label": "Non-Compliance Details",
-                "loadBinder": {
-                    "className": "",
-                    "properties": {}
-                },
-                "permission": {
-                    "className": "",
-                    "properties": {}
-                },
-                "permissionReadonly": "",
-                "readonly": "",
-                "readonlyLabel": "",
-                "regex": "",
-                "reverse": "",
-                "storeBinder": {
-                    "className": "",
-                    "properties": {}
-                },
-                "visibilityControl": "",
-                "visibilityValue": ""
-            }
-        },
-        {
-            "className": "org.joget.apps.form.model.Section",
-            "elements": [{
-                "className": "org.joget.apps.form.model.Column",
                 "elements": [
                     {
                         "className": "org.joget.apps.form.lib.SelectBox",
@@ -277,7 +257,7 @@
                 "comment": "",
                 "id": "othernoncompliance",
                 "join": "",
-                "label": "",
+                "label": "Non-Compliance Details",
                 "loadBinder": {
                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
@@ -289,14 +269,14 @@
                 "permissionHidden": "",
                 "permissionReadonly": "",
                 "readonly": "true",
-                "readonlyLabel": "",
+                "readonlyLabel": "true",
                 "regex": "",
                 "reverse": "",
                 "storeBinder": {
                     "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                     "properties": {}
                 },
-                "visibilityControl": "#requestParam.status#",
+                "visibilityControl": "waive_insp_status",
                 "visibilityValue": "Other Non-Compliance"
             }
         },
@@ -327,7 +307,7 @@
                                 "properties": {
                                     "mandatory": "true",
                                     "message": "Mandatory",
-                                    "type": ""
+                                    "type": "numeric"
                                 }
                             },
                             "value": "",

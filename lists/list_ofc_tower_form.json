@@ -10,7 +10,18 @@
             "formDefId": "ofc_tower_form",
             "functionColumns": [],
             "groupBy": "",
-            "joins": []
+            "joins": [
+                {
+                    "fieldId": "",
+                    "joinFieldId": "locName",
+                    "tableName": "ofc_location_tab"
+                },
+                {
+                    "fieldId": "",
+                    "joinFieldId": "ofc_location_tab.locEmirates",
+                    "tableName": "ofc_emirates_tab"
+                }
+            ]
         }
     },
     "buttonPosition": "bottomLeft",
@@ -21,19 +32,20 @@
                 "className": "",
                 "properties": {}
             },
-            "alignment": "",
+            "alignment": "dataListAlignCenter",
             "datalist_type": "column",
-            "exclude_export": "",
+            "filterable": true,
             "format": {
                 "className": "",
                 "properties": {}
             },
-            "headerAlignment": "",
-            "hidden": "false",
-            "id": "column_3",
-            "label": "Tower Seq No.",
-            "name": "tower_seq_no",
-            "sortable": "true",
+            "headerAlignment": "dataListAlignCenter",
+            "hidden": "true",
+            "id": "column_0",
+            "include_export": "true",
+            "label": "Business Type",
+            "name": "businessType",
+            "sortable": "false",
             "style": "",
             "width": ""
         },
@@ -42,14 +54,35 @@
                 "className": "",
                 "properties": {}
             },
-            "alignment": "",
+            "alignment": "dataListAlignCenter",
             "datalist_type": "column",
             "exclude_export": "",
             "format": {
                 "className": "",
                 "properties": {}
             },
-            "headerAlignment": "",
+            "headerAlignment": "dataListAlignCenter",
+            "hidden": "false",
+            "id": "column_3",
+            "label": "Tower Seq No.",
+            "name": "tower_seq_no",
+            "sortable": "true",
+            "style": "",
+            "width": "5px"
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "dataListAlignCenter",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "dataListAlignCenter",
             "hidden": "false",
             "id": "column_1",
             "label": "Tower Name",
@@ -63,19 +96,64 @@
                 "className": "",
                 "properties": {}
             },
-            "alignment": "",
+            "alignment": "dataListAlignCenter",
             "datalist_type": "column",
             "exclude_export": "",
             "format": {
                 "className": "",
                 "properties": {}
             },
-            "headerAlignment": "",
+            "headerAlignment": "dataListAlignCenter",
             "hidden": "false",
             "id": "column_2",
             "label": "Tower Number",
             "name": "tower_no",
             "sortable": "true",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "dataListAlignCenter",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "dataListAlignCenter",
+            "hidden": "true",
+            "id": "column_5",
+            "include_export": "true",
+            "label": "Location",
+            "name": "ofc_location_tab.locName",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "true",
+            "id": "column_4",
+            "include_export": "",
+            "label": "ofc_emirates_tab.emirates_name",
+            "name": "ofc_emirates_tab.emirates_name",
+            "sortable": "false",
             "style": "",
             "width": ""
         }

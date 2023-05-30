@@ -49,15 +49,15 @@
                         "optionsBinder": {
                             "className": "org.joget.apps.form.lib.FormOptionsBinder",
                             "properties": {
-                                "addEmptyOption": "true",
+                                "addEmptyOption": "",
                                 "cacheInterval": "",
-                                "emptyLabel": "Select",
+                                "emptyLabel": "",
                                 "extraCondition": "",
                                 "formDefId": "ofc_Floor_form",
                                 "groupingColumn": "",
-                                "idColumn": "add_floor",
+                                "idColumn": "",
                                 "labelColumn": "add_floor",
-                                "useAjax": "true"
+                                "useAjax": ""
                             }
                         },
                         "readonly": "",

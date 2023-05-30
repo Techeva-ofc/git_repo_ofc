@@ -21,7 +21,7 @@
                         "formDefId": "",
                         "height": "500",
                         "id": "grid_checklist_info",
-                        "label": "Checkpoint List",
+                        "label": "",
                         "listId": "list_ofc_checklist_inspSchedule",
                         "loadBinder": {
                             "className": "org.joget.plugin.enterprise.JdbcLoadBinder",

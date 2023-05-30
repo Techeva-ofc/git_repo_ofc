@@ -11,7 +11,7 @@
                         "autoPopulate": "",
                         "id": "title",
                         "label": "",
-                        "value": "<img src=\"/images/Concordia-Logo-Square.png\"   height=\"15%\" width=\"15%\"/>\n<h1><center>Check List Report<\/center><\/h1>\n<hr>"
+                        "value": "<img src=\"/jw/web/app/ofc_app/resources/logo-concordia.png\"   height=\"15%\" width=\"15%\"/>\n<h1><center>Check List Report<\/center><\/h1>\n<hr>"
                     }
                 }],
                 "properties": {"width": "100%"}
@@ -100,7 +100,7 @@
                                 "autoHandleFiles": "",
                                 "autoHandleWorkflowVariable": "true",
                                 "jdbcDatasource": "default",
-                                "sql": "select sr.id,s.c_checkpointCode,s.c_checkpointName,s.c_status,s.c_status FROM app_fd_ofc_schdl_sub_tab s\r\ninner join app_fd_ofc_serreqs_tab sr\r\nON s.c_referencekey = sr.id\r\nwhere sr.c_checklisttype_multi is not null\r\nAND sr.c_serReqDmccSrNo = '#requestParam.serReqDmccSrNo#'"
+                                "sql": "select sr.id,s.c_checkpointCode,s.c_checkpointName,s.c_status FROM app_fd_ofc_schdl_sub_tab s\r\ninner join app_fd_ofc_serreqs_tab sr\r\nON s.c_referencekey = sr.id\r\nwhere sr.c_checklisttype_multi is not null\r\nAND sr.c_serReqDmccSrNo = '#requestParam.serReqDmccSrNo#'"
                             }
                         },
                         "options": [
@@ -122,7 +122,7 @@
                                 "formatType": "",
                                 "label": "Status",
                                 "readonly": "true",
-                                "value": "remark_insp_checkpoint",
+                                "value": "status",
                                 "width": ""
                             }
                         ],

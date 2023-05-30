@@ -19,14 +19,11 @@
                         "storeNumeric": "",
                         "style": "",
                         "validator": {
-                            "className": "org.joget.apps.form.lib.DuplicateValueValidator",
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
                             "properties": {
-                                "errorDuplicateMsg": "Duplicate Location !!",
-                                "errorFormatMsg": "",
-                                "fieldId": "locName",
-                                "formDefId": "locationForm",
                                 "mandatory": "true",
-                                "regex": ""
+                                "message": "Mandatory",
+                                "type": ""
                             }
                         },
                         "value": "",
@@ -44,15 +41,15 @@
                         "optionsBinder": {
                             "className": "org.joget.apps.form.lib.FormOptionsBinder",
                             "properties": {
-                                "addEmptyOption": "",
+                                "addEmptyOption": "true",
                                 "cacheInterval": "",
-                                "emptyLabel": "",
+                                "emptyLabel": "Select",
                                 "extraCondition": "",
                                 "formDefId": "ofc_emirates_form",
                                 "groupingColumn": "",
-                                "idColumn": "",
+                                "idColumn": "emirates_name",
                                 "labelColumn": "emirates_name",
-                                "useAjax": ""
+                                "useAjax": "true"
                             }
                         },
                         "readonly": "",

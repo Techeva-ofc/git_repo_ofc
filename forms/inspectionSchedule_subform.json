@@ -96,6 +96,45 @@
                     }
                 },
                 {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "status",
+                        "label": "Status",
+                        "multiple": "",
+                        "options": [
+                            {
+                                "grouping": "",
+                                "label": "YES",
+                                "value": "yes"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "NO",
+                                "value": "no"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "N/A",
+                                "value": "na"
+                            }
+                        ],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
                     "className": "org.joget.apps.form.lib.TextField",
                     "properties": {
                         "encryption": "",
@@ -127,6 +166,138 @@
                         },
                         "value": "",
                         "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.ImageUpload",
+                    "properties": {
+                        "createThumbnail": "true",
+                        "fileType": ".jpeg;.jpg;.gif;.png",
+                        "fileTypeMsg": "Invalid file type",
+                        "height": "60",
+                        "id": "ref_image_compliance",
+                        "label": "Image Upload",
+                        "maxSize": "",
+                        "maxSizeMsg": "File size limit exceeded",
+                        "multiple": "true",
+                        "padding": "",
+                        "permissionType": "",
+                        "readonly": "",
+                        "removeFile": "",
+                        "resizeHeight": "",
+                        "resizeMethod": "",
+                        "resizeQuality": "0.8",
+                        "resizeWidth": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "width": "60"
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.ImageUpload",
+                    "properties": {
+                        "createThumbnail": "true",
+                        "fileType": ".jpeg;.jpg;.gif;.png",
+                        "fileTypeMsg": "Invalid file type",
+                        "height": "60",
+                        "id": "ref_image_audit",
+                        "label": "Image Upload",
+                        "maxSize": "",
+                        "maxSizeMsg": "File size limit exceeded",
+                        "multiple": "true",
+                        "padding": "",
+                        "permissionType": "",
+                        "readonly": "",
+                        "removeFile": "",
+                        "resizeHeight": "",
+                        "resizeMethod": "",
+                        "resizeQuality": "0.8",
+                        "resizeWidth": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "width": "60"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.FileUpload",
+                    "properties": {
+                        "attachment": "true",
+                        "fileType": "",
+                        "fileTypeMsg": "Invalid file type",
+                        "id": "fileupload",
+                        "label": "File Upload",
+                        "maxSize": "",
+                        "maxSizeMsg": "File size limit exceeded",
+                        "multiple": "true",
+                        "padding": "",
+                        "permissionType": "",
+                        "readonly": "",
+                        "removeFile": "",
+                        "resizeHeight": "",
+                        "resizeMethod": "",
+                        "resizeQuality": "0.8",
+                        "resizeWidth": "",
+                        "size": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        }
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.FileUpload",
+                    "properties": {
+                        "attachment": "true",
+                        "fileType": "",
+                        "fileTypeMsg": "Invalid file type",
+                        "id": "newfile",
+                        "label": "File Upload",
+                        "maxSize": "",
+                        "maxSizeMsg": "File size limit exceeded",
+                        "multiple": "true",
+                        "padding": "",
+                        "permissionType": "",
+                        "readonly": "",
+                        "removeFile": "",
+                        "resizeHeight": "",
+                        "resizeMethod": "",
+                        "resizeQuality": "0.8",
+                        "resizeWidth": "",
+                        "size": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        }
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.FileUpload",
+                    "properties": {
+                        "attachment": "",
+                        "fileType": "",
+                        "fileTypeMsg": "Invalid file type",
+                        "id": "fileuploaded",
+                        "label": "File Upload",
+                        "maxSize": "",
+                        "maxSizeMsg": "File size limit exceeded",
+                        "multiple": "",
+                        "padding": "",
+                        "permissionType": "",
+                        "readonly": "",
+                        "removeFile": "",
+                        "resizeHeight": "",
+                        "resizeMethod": "",
+                        "resizeQuality": "0.8",
+                        "resizeWidth": "",
+                        "size": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        }
                     }
                 }
             ],

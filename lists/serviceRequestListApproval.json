@@ -6,7 +6,26 @@
             "aggregateField": [],
             "customSelectionValue": "",
             "extraCondition": "",
-            "filters": [],
+            "filters": [
+                {
+                    "field": "approval_status",
+                    "join": "OR",
+                    "operator": "=",
+                    "value": "Approved"
+                },
+                {
+                    "field": "approval_status",
+                    "join": "OR",
+                    "operator": "=",
+                    "value": "In-Progress"
+                },
+                {
+                    "field": "status",
+                    "join": "OR",
+                    "operator": "=",
+                    "value": "On Approval"
+                }
+            ],
             "formDefId": "serReqForm",
             "functionColumns": [],
             "groupBy": "",
@@ -47,10 +66,10 @@
             },
             "headerAlignment": "",
             "hidden": "false",
-            "id": "column_8",
-            "label": "Tower Seq No",
-            "name": "ofc_tower_tab.tower_seq_no",
-            "sortable": "false",
+            "id": "column_0",
+            "label": "DMCC SR Number",
+            "name": "serReqDmccSrNo",
+            "sortable": "true",
             "style": "",
             "width": ""
         },
@@ -91,10 +110,10 @@
             },
             "headerAlignment": "",
             "hidden": "false",
-            "id": "column_0",
-            "label": "DMCC SR Number",
-            "name": "serReqDmccSrNo",
-            "sortable": "true",
+            "id": "column_8",
+            "label": "Tower Seq No",
+            "name": "ofc_tower_tab.tower_seq_no",
+            "sortable": "false",
             "style": "",
             "width": ""
         },
@@ -222,15 +241,6 @@
             "type": {
                 "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
                 "properties": {"defaultValue": ""}
-            }
-        },
-        {
-            "id": "filter_2",
-            "label": "Service Categoy",
-            "name": "serReqServCat",
-            "type": {
-                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-                "properties": {}
             }
         }
     ],

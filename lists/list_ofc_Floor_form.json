@@ -2,7 +2,16 @@
     "actions": [],
     "binder": {
         "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
-        "properties": {"formDefId": "ofc_Floor_form"}
+        "properties": {
+            "aggregateField": [],
+            "customSelectionValue": "",
+            "extraCondition": "",
+            "filters": [],
+            "formDefId": "ofc_Floor_form",
+            "functionColumns": [],
+            "groupBy": "",
+            "joins": []
+        }
     },
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
@@ -14,6 +23,7 @@
         "alignment": "",
         "datalist_type": "column",
         "exclude_export": "",
+        "filterable": true,
         "format": {
             "className": "",
             "properties": {}
@@ -23,27 +33,19 @@
         "id": "column_0",
         "label": "Floor Number",
         "name": "add_floor",
-        "sortable": "true",
+        "sortable": "false",
         "style": "",
         "width": ""
     }],
     "considerFilterWhenGetTotal": "",
     "description": "",
     "disableResponsive": "",
-    "filters": [{
-        "id": "filter_0",
-        "label": "Floor Number",
-        "name": "add_floor",
-        "type": {
-            "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-            "properties": {}
-        }
-    }],
+    "filters": [],
     "hidePageSize": "true",
     "id": "list_ofc_Floor_form",
     "name": "List - Create Floor",
-    "order": "1",
-    "orderBy": "dateModified",
+    "order": "",
+    "orderBy": "floor",
     "pageSize": "0",
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
     "responsiveView": [

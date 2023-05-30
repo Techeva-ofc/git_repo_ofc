@@ -6,7 +6,7 @@
             "jdbcDatasource": "default",
             "optimisePaging": "",
             "primaryKey": "id",
-            "sql": "select \r\n  b.id, \r\n  b.c_approval_status, \r\n  b.dateCreated, \r\n  b.dateModified,\r\n  b.c_serReqDmccSrNo, \r\n  b.c_status, \r\n  b.c_orderReference,\r\n  b.c_refund_initiate_date,\r\n  b.c_refundRemarks,\r\n  b.c_paymentDate,\r\n  d.c_ofc_category_name, \r\n  a.c_companyName,\r\n  c.c_tower_seq_no, \r\n  c.c_tower_name\r\nfrom \r\n  jwdb.app_fd_ofc_company_tab a \r\n  join jwdb.app_fd_ofc_serReqs_tab b on a.id = b.c_companyName \r\n  join jwdb.app_fd_ofc_tower_tab c on a.c_tower_name = c.id \r\n  join jwdb.app_fd_ofc_ofc_category_tab d on b.c_ofc_category_name = d.id \r\norder by \r\n  b.c_paymentDate is null, \r\n  b.c_paymentDate asc, \r\n  c.c_tower_seq_no asc\r\n"
+            "sql": "select \r\n  b.id, \r\n  b.c_approval_status, \r\n  b.dateCreated, \r\n  b.dateModified,\r\n  b.c_serReqDmccSrNo, \r\n  b.c_status, \r\n  b.c_orderReference,\r\n  b.c_refund_initiate_date,\r\n  b.c_refundRemarks,\r\n  b.c_paymentDate,\r\n  b.c_applicationMode,\r\n  d.c_ofc_category_name, \r\n  a.c_companyName,\r\n  c.c_tower_seq_no, \r\n  c.c_tower_name,\r\n  b.c_inspSchedlDate,\r\n  b.c_inspectorNames\r\nfrom \r\n  jwdb.app_fd_ofc_company_tab a \r\n  join jwdb.app_fd_ofc_serReqs_tab b on a.id = b.c_companyName \r\n  join jwdb.app_fd_ofc_tower_tab c on a.c_tower_name = c.id \r\n  join jwdb.app_fd_ofc_ofc_category_tab d on b.c_ofc_category_name = d.id \r\nWhere\r\nb.c_status = 'Payment Completed'\r\nor \r\nb.c_status = 'Payment Pending' or b.c_serReqUserName = '#currentUser.email#'\r\nor\r\nb.c_status = 'Upload Document'\r\norder by \r\n  b.c_paymentDate is null, \r\n  b.c_paymentDate asc, \r\n  c.c_tower_seq_no asc\r\n"
         }
     },
     "buttonPosition": "bottomLeft",
@@ -44,8 +44,12 @@
             "exclude_export": "",
             "filterable": true,
             "format": {
-                "className": "",
-                "properties": {}
+                "className": "org.joget.plugin.enterprise.DateFormatter",
+                "properties": {
+                    "dataFormat": "dd-MM-yyyy",
+                    "dateStoreInUTC": "",
+                    "displayFormat": "dd-MM-yyyy"
+                }
             },
             "headerAlignment": "",
             "hidden": "false",
@@ -58,8 +62,15 @@
         },
         {
             "action": {
-                "className": "",
-                "properties": {}
+                "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+                "properties": {
+                    "confirmation": "",
+                    "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/serRequestUserView",
+                    "hrefColumn": "id",
+                    "hrefParam": "id",
+                    "label": "view",
+                    "target": "_self"
+                }
             },
             "alignment": "",
             "datalist_type": "column",
@@ -209,6 +220,28 @@
             "sortable": "true",
             "style": "",
             "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_9",
+            "label": "Fast-Track",
+            "name": "c_applicationMode",
+            "sortable": "false",
+            "style": "",
+            "width": ""
         }
     ],
     "considerFilterWhenGetTotal": "",
@@ -275,16 +308,39 @@
         {
             "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
             "icon": "<i class=\"fas fa-link\"><\/i>",
+            "id": "rowAction_4",
+            "label": "Hyperlink",
+            "name": "Data List Hyperlink Action",
+            "properties": {
+                "confirmation": "",
+                "datalist_type": "row_action",
+                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/uploaddocumentmissing",
+                "hrefColumn": "id",
+                "hrefParam": "id",
+                "label": "Attach Document",
+                "rules": [{
+                    "field": "c_approval_status",
+                    "join": "AND",
+                    "operator": "=",
+                    "value": "In-Progress"
+                }],
+                "target": "_self"
+            },
+            "type": "text"
+        },
+        {
+            "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+            "icon": "<i class=\"fas fa-link\"><\/i>",
             "id": "rowAction_0",
             "label": "Hyperlink",
             "name": "Data List Hyperlink Action",
             "properties": {
                 "confirmation": "",
                 "datalist_type": "row_action",
-                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/serRequestUserView",
+                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/paymentForm",
                 "hrefColumn": "id",
                 "hrefParam": "id",
-                "label": "Payment",
+                "label": "Payment-",
                 "rules": [
                     {
                         "field": "c_approval_status",
@@ -304,6 +360,29 @@
             "type": "text"
         },
         {
+            "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+            "icon": "<i class=\"fas fa-link\"><\/i>",
+            "id": "rowAction_3",
+            "label": "Hyperlink",
+            "name": "Data List Hyperlink Action",
+            "properties": {
+                "confirmation": "",
+                "datalist_type": "row_action",
+                "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/cancel",
+                "hrefColumn": "id;c_inspSchedlDate;c_inspectorNames;c_ofc_category_name;c_serReqDmccSrNo",
+                "hrefParam": "id;sc_date;name;type;serReqDmccSrNo",
+                "label": "Re-Schedule",
+                "rules": [{
+                    "field": "c_status",
+                    "join": "AND",
+                    "operator": "=",
+                    "value": "Inspection Scheduled"
+                }],
+                "target": "_self"
+            },
+            "type": "text"
+        },
+        {
             "className": "org.joget.tutorial.DownloadPdfDatalistAction",
             "icon": "",
             "id": "rowAction_1",
@@ -313,11 +392,11 @@
                 "confirmation": "",
                 "datalist_type": "row_action",
                 "footerHtml": "",
-                "formDefId": "invoiceForm",
+                "formDefId": "imgtest",
                 "formatting": "",
                 "headerHtml": "",
                 "hideEmptyValueField": "",
-                "label": "Download PDF",
+                "label": "Download Invoice",
                 "recordIdColumn": "",
                 "repeatFooter": "",
                 "repeatHeader": "",
@@ -333,6 +412,108 @@
                         "join": "AND",
                         "operator": "<>",
                         "value": "Payment Panding"
+                    },
+                    {
+                        "field": "c_applicationMode",
+                        "join": "AND",
+                        "operator": "<>",
+                        "value": "Yes"
+                    }
+                ],
+                "showNotSelectedOptions": ""
+            },
+            "type": "text"
+        },
+        {
+            "className": "org.joget.tutorial.DownloadPdfDatalistAction",
+            "icon": "",
+            "id": "rowAction_2",
+            "label": "Download PDF",
+            "name": "Download PDF Datalist Action",
+            "properties": {
+                "confirmation": "",
+                "datalist_type": "row_action",
+                "footerHtml": "",
+                "formDefId": "fastTrackPaySlipPage",
+                "formatting": "",
+                "headerHtml": "",
+                "hideEmptyValueField": "",
+                "label": "Download-Invoice",
+                "recordIdColumn": "",
+                "repeatFooter": "",
+                "repeatHeader": "",
+                "rules": [
+                    {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "<>",
+                        "value": "Payment Pending"
+                    },
+                    {
+                        "field": "c_applicationMode",
+                        "join": "AND",
+                        "operator": "<>",
+                        "value": "No"
+                    }
+                ],
+                "showNotSelectedOptions": ""
+            },
+            "type": "text"
+        },
+        {
+            "className": "org.joget.tutorial.DownloadPdfDatalistAction",
+            "icon": "",
+            "id": "rowAction_5",
+            "label": "Download PDF",
+            "name": "Download PDF Datalist Action",
+            "properties": {
+                "confirmation": "",
+                "datalist_type": "row_action",
+                "footerHtml": "",
+                "formDefId": "ofc_amendment",
+                "formatting": "",
+                "headerHtml": "",
+                "hideEmptyValueField": "",
+                "label": "Download OFC Certificate",
+                "recordIdColumn": "id",
+                "repeatFooter": "",
+                "repeatHeader": "",
+                "rules": [
+                    {
+                        "field": "c_ofc_category_name",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Activity Amendment"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Payment Completed"
+                    },
+                    {
+                        "field": "c_ofc_category_name",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Other Amendment"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Payment Completed"
+                    },
+                    {
+                        "field": "c_ofc_category_name",
+                        "join": "OR",
+                        "operator": "=",
+                        "value": "Location Amendment"
+                    },
+                    {
+                        "field": "c_status",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Payment Completed"
                     }
                 ],
                 "showNotSelectedOptions": ""

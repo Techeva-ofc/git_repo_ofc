@@ -3,24 +3,125 @@
     "elements": [
         {
             "className": "org.joget.apps.form.model.Section",
-            "elements": [{
-                "className": "org.joget.apps.form.model.Column",
-                "elements": [{
-                    "className": "org.joget.apps.form.lib.CustomHTML",
-                    "properties": {
-                        "autoPopulate": "",
-                        "id": "schedule",
-                        "label": "",
-                        "value": "<b>DMCC<\/b><br><br>\n <b><span class=\"label\">Company<\/span><b>   <br><br>\n<b><span class=\"label\">Schedule date<\/span><b>  <br><br>\n<b><span class=\"label\">Tower name<\/span><b>  <br><br> \n<b><span class=\"label\">tower seq.no<\/span><b>   <br><br>\n<b><span class=\"label\">Location<\/span><b>   <br><br>\n<span class=\"label\">#i18n.Event Status#<\/span>  <b>#requestParam.reportstatus#<\/b><br/><br/>\n\n"
-                    }
-                }],
-                "properties": {"width": "100%"}
-            }],
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.HiddenField",
+                            "properties": {
+                                "id": "field11",
+                                "useDefaultWhenEmpty": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "#requestParam.sc_date#",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.HiddenField",
+                            "properties": {
+                                "id": "field13",
+                                "useDefaultWhenEmpty": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "#requestParam.type#",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.HiddenField",
+                            "properties": {
+                                "id": "field12",
+                                "useDefaultWhenEmpty": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "#requestParam.name#",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "re_insp_name",
+                                "label": "Name of Inspector",
+                                "maxlength": "",
+                                "placeholder": "",
+                                "readonly": "",
+                                "readonlyLabel": "",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "#requestParam.name#",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "re_insp_type",
+                                "label": "Type of Inspection",
+                                "maxlength": "",
+                                "placeholder": "",
+                                "readonly": "",
+                                "readonlyLabel": "",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "#requestParam.type#",
+                                "workflowVariable": ""
+                            }
+                        }
+                    ],
+                    "properties": {"width": "49%"}
+                },
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [{
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "re_insp_date",
+                            "label": "Scheduled On",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "#requestParam.sc_date#",
+                            "workflowVariable": ""
+                        }
+                    }],
+                    "properties": {"width": "49%"}
+                }
+            ],
             "properties": {
                 "comment": "",
-                "id": "scheduleid",
+                "id": "section4",
                 "join": "",
-                "label": "Inspection Schedule",
+                "label": "Schedule Details",
                 "loadBinder": {
                     "className": "",
                     "properties": {}
@@ -29,9 +130,10 @@
                     "className": "",
                     "properties": {}
                 },
+                "permissionHidden": "",
                 "permissionReadonly": "",
-                "readonly": "",
-                "readonlyLabel": "",
+                "readonly": "true",
+                "readonlyLabel": "true",
                 "regex": "",
                 "reverse": "",
                 "storeBinder": {
@@ -50,49 +152,25 @@
                     {
                         "className": "org.joget.apps.form.lib.DatePicker",
                         "properties": {
-                            "allowManual": "true",
-                            "datePickerType": "utcdateTime",
+                            "allowManual": "",
+                            "currentDateAs": "minDate",
+                            "dataFormat": "",
+                            "datePickerType": "",
                             "endDateFieldId": "",
-                            "format24hr": "",
-                            "id": "dateofreschedule",
-                            "label": "Preferred Date & Time",
+                            "format": "dd-M-yy",
+                            "id": "inspSchedlDate",
+                            "label": "Prefer Date(*Note : Admin can modify this schedule based on the date available)",
                             "placeholder": "",
                             "readonly": "",
                             "readonlyLabel": "",
-                            "showUserTimeZone": "true",
                             "startDateFieldId": "",
                             "validator": {
-                                "className": "org.joget.apps.form.lib.DefaultValidator",
-                                "properties": {
-                                    "mandatory": "true",
-                                    "message": "mandatory",
-                                    "type": ""
-                                }
+                                "className": "",
+                                "properties": {}
                             },
                             "value": "",
-                            "workflowVariable": ""
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.TextArea",
-                        "properties": {
-                            "cols": "150",
-                            "id": "resonreschedule",
-                            "label": "Reschedule Reason",
-                            "placeholder": "",
-                            "readonly": "",
-                            "readonlyLabel": "",
-                            "rows": "5",
-                            "validator": {
-                                "className": "org.joget.apps.form.lib.DefaultValidator",
-                                "properties": {
-                                    "mandatory": "true",
-                                    "message": "mandatory",
-                                    "type": ""
-                                }
-                            },
-                            "value": "",
-                            "workflowVariable": ""
+                            "workflowVariable": "",
+                            "yearRange": "c-10:c+10"
                         }
                     },
                     {
@@ -107,56 +185,13 @@
                             "value": "reschedule",
                             "workflowVariable": ""
                         }
-                    }
-                ],
-                "properties": {"width": "100%"}
-            }],
-            "properties": {
-                "comment": "",
-                "id": "reschedule",
-                "join": "",
-                "label": "Reschedule the Inspection",
-                "loadBinder": {
-                    "className": "",
-                    "properties": {}
-                },
-                "permission": {
-                    "className": "",
-                    "properties": {}
-                },
-                "permissionReadonly": "",
-                "readonly": "",
-                "readonlyLabel": "",
-                "regex": "",
-                "reverse": "",
-                "storeBinder": {
-                    "className": "",
-                    "properties": {}
-                },
-                "visibilityControl": "",
-                "visibilityValue": ""
-            }
-        },
-        {
-            "className": "org.joget.apps.form.model.Section",
-            "elements": [{
-                "className": "org.joget.apps.form.model.Column",
-                "elements": [
-                    {
-                        "className": "org.joget.apps.form.lib.CustomHTML",
-                        "properties": {
-                            "autoPopulate": "",
-                            "id": "confirm",
-                            "label": "",
-                            "value": "<span>Please confirm that you would like to cancel this inspection and provide the reason for cacncellation<\/span>"
-                        }
                     },
                     {
                         "className": "org.joget.apps.form.lib.TextArea",
                         "properties": {
                             "cols": "150",
                             "id": "reason",
-                            "label": "Cancellation Reason",
+                            "label": "Provide the Reason",
                             "placeholder": "",
                             "readonly": "",
                             "readonlyLabel": "",
@@ -172,28 +207,15 @@
                             "value": "",
                             "workflowVariable": ""
                         }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.HiddenField",
-                        "properties": {
-                            "id": "cancelid",
-                            "useDefaultWhenEmpty": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "cancel",
-                            "workflowVariable": ""
-                        }
                     }
                 ],
                 "properties": {"width": "100%"}
             }],
             "properties": {
                 "comment": "",
-                "id": "cancel",
+                "id": "reschedule",
                 "join": "",
-                "label": "Cancel the Inspection",
+                "label": "Re-Schedule Request",
                 "loadBinder": {
                     "className": "",
                     "properties": {}
@@ -219,9 +241,28 @@
     "properties": {
         "description": "",
         "id": "cancellation_inspection",
-        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "name": "Cancellation / Re-Schedule Inspection",
-        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "org.joget.apps.app.lib.DatabaseUpdateTool",
+            "properties": {
+                "jdbcDatasource": "default",
+                "query": "update app_fd_ofc_serreqs_tab set c_status = 'Inspection To-Be Re-Scheduled' where id ='#requestParam.id#';"
+            }
+        },
+        "postProcessorRunOn": "both",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "tableName": "ofc_serReqs_tab"
     }
 }
