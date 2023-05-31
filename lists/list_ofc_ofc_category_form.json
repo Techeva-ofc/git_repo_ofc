@@ -27,7 +27,7 @@
             "name": "ofc_category_code",
             "sortable": "true",
             "style": "",
-            "width": ""
+            "width": "5px"
         },
         {
             "action": {
@@ -77,12 +77,35 @@
     "description": "",
     "disableResponsive": "",
     "filters": [{
+        "datalist_type": "filter",
+        "filterParamName": "d-6590324-fn_ofc_category_name",
+        "hidden": "",
         "id": "filter_0",
         "label": "Service Category Name",
         "name": "ofc_category_name",
         "type": {
-            "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-            "properties": {}
+            "className": "org.joget.plugin.enterprise.SelectBoxDataListFilterType",
+            "properties": {
+                "controlField": "",
+                "defaultValue": "",
+                "multiple": "",
+                "options": [],
+                "optionsBinder": {
+                    "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                    "properties": {
+                        "addEmptyOption": "",
+                        "cacheInterval": "",
+                        "emptyLabel": "",
+                        "extraCondition": "",
+                        "formDefId": "ofc_ofc_category_form",
+                        "groupingColumn": "",
+                        "idColumn": "",
+                        "labelColumn": "ofc_category_name",
+                        "useAjax": "true"
+                    }
+                },
+                "size": ""
+            }
         }
     }],
     "hidePageSize": "true",

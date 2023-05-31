@@ -6,36 +6,15 @@
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
                 "elements": [{
-                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "className": "org.joget.apps.form.lib.HiddenField",
                     "properties": {
-                        "controlField": "",
                         "id": "businessType",
-                        "label": "Business Type",
-                        "multiple": "",
-                        "options": [
-                            {
-                                "grouping": "tower_seq_no",
-                                "label": "OFC",
-                                "value": "ofc"
-                            },
-                            {
-                                "grouping": "",
-                                "label": "FITOUT",
-                                "value": "fitout"
-                            }
-                        ],
-                        "optionsBinder": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "size": "",
+                        "useDefaultWhenEmpty": "",
                         "validator": {
                             "className": "",
                             "properties": {}
                         },
-                        "value": "",
+                        "value": "ofc",
                         "workflowVariable": ""
                     }
                 }],
@@ -82,7 +61,7 @@
                                 "className": "org.joget.apps.form.lib.WorkflowFormBinder",
                                 "properties": {}
                             },
-                            "noframe": "true",
+                            "noframe": "",
                             "parentSubFormId": "",
                             "permissionHidden": "",
                             "readonly": "true",
@@ -108,14 +87,41 @@
                             "storeNumeric": "",
                             "style": "",
                             "validator": {
-                                "className": "org.joget.apps.form.lib.DuplicateValueValidator",
+                                "className": "org.joget.marketplace.MultiFormValidator",
                                 "properties": {
-                                    "errorDuplicateMsg": "Duplicate Sequence Number !!",
-                                    "errorFormatMsg": "",
-                                    "fieldId": "tower_seq_no",
-                                    "formDefId": "ofc_tower_form",
-                                    "mandatory": "true",
-                                    "regex": ""
+                                    "fifthValidator": {
+                                        "className": "",
+                                        "properties": {}
+                                    },
+                                    "firstValidator": {
+                                        "className": "org.joget.apps.form.lib.DefaultValidator",
+                                        "properties": {
+                                            "custom-regex": "^(?!0+$)\\d+$",
+                                            "custom-regex-casesensitive": "",
+                                            "mandatory": "true",
+                                            "message": "Must contain only Number!",
+                                            "type": "custom"
+                                        }
+                                    },
+                                    "fourthValidator": {
+                                        "className": "",
+                                        "properties": {}
+                                    },
+                                    "secondValidator": {
+                                        "className": "org.joget.apps.form.lib.DuplicateValueValidator",
+                                        "properties": {
+                                            "errorDuplicateMsg": "Duplicate Seq.no!",
+                                            "errorFormatMsg": "",
+                                            "fieldId": "tower_seq_no",
+                                            "formDefId": "ofc_tower_form",
+                                            "mandatory": "true",
+                                            "regex": ""
+                                        }
+                                    },
+                                    "thirdValidator": {
+                                        "className": "",
+                                        "properties": {}
+                                    }
                                 }
                             },
                             "value": "",
@@ -136,8 +142,12 @@
                             "storeNumeric": "",
                             "style": "",
                             "validator": {
-                                "className": "",
-                                "properties": {}
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "mandatory": "true",
+                                    "message": "Mandatory",
+                                    "type": "alphanumeric"
+                                }
                             },
                             "value": "",
                             "workflowVariable": ""
@@ -148,7 +158,7 @@
                         "properties": {
                             "encryption": "",
                             "id": "tower_no",
-                            "label": "Tower Number",
+                            "label": "Tower Code",
                             "maxlength": "",
                             "placeholder": "",
                             "readonly": "",
@@ -175,9 +185,9 @@
                             "optionsBinder": {
                                 "className": "org.joget.apps.form.lib.FormOptionsBinder",
                                 "properties": {
-                                    "addEmptyOption": "",
+                                    "addEmptyOption": "true",
                                     "cacheInterval": "",
-                                    "emptyLabel": "",
+                                    "emptyLabel": "Select",
                                     "extraCondition": "",
                                     "formDefId": "locationForm",
                                     "groupingColumn": "",
@@ -229,7 +239,7 @@
                 "comment": "",
                 "id": "mandateTowerSection",
                 "join": ";",
-                "label": "",
+                "label": "Create Tower",
                 "loadBinder": {
                     "className": "",
                     "properties": {}
@@ -310,7 +320,7 @@
                         "properties": {
                             "encryption": "",
                             "id": "tower_no",
-                            "label": "Tower Number",
+                            "label": "Tower Code",
                             "maxlength": "",
                             "placeholder": "",
                             "readonly": "",
@@ -337,7 +347,7 @@
                             "optionsBinder": {
                                 "className": "org.joget.apps.form.lib.FormOptionsBinder",
                                 "properties": {
-                                    "addEmptyOption": "",
+                                    "addEmptyOption": "true",
                                     "cacheInterval": "",
                                     "emptyLabel": "",
                                     "extraCondition": "",

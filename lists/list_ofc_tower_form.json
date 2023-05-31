@@ -1,16 +1,12 @@
 {
     "actions": [],
     "binder": {
-        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "className": "org.joget.plugin.enterprise.JdbcDataListBinder",
         "properties": {
-            "aggregateField": [],
-            "customSelectionValue": "",
-            "extraCondition": "",
-            "filters": [],
-            "formDefId": "ofc_tower_form",
-            "functionColumns": [],
-            "groupBy": "",
-            "joins": []
+            "jdbcDatasource": "default",
+            "optimisePaging": "",
+            "primaryKey": "id",
+            "sql": "SELECT * FROM app_fd_ofc_tower_tab"
         }
     },
     "buttonPosition": "bottomLeft",
@@ -24,6 +20,7 @@
             "alignment": "",
             "datalist_type": "column",
             "exclude_export": "",
+            "filterable": true,
             "format": {
                 "className": "",
                 "properties": {}
@@ -31,8 +28,8 @@
             "headerAlignment": "",
             "hidden": "false",
             "id": "column_3",
-            "label": "Tower Seq No.",
-            "name": "tower_seq_no",
+            "label": "Business_Type",
+            "name": "c_businessType",
             "sortable": "true",
             "style": "",
             "width": ""
@@ -45,6 +42,29 @@
             "alignment": "",
             "datalist_type": "column",
             "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_0",
+            "label": "Tower Seq.No",
+            "name": "c_tower_seq_no",
+            "sortable": "true",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
             "format": {
                 "className": "",
                 "properties": {}
@@ -52,8 +72,8 @@
             "headerAlignment": "",
             "hidden": "false",
             "id": "column_1",
-            "label": "Tower Name",
-            "name": "tower_name",
+            "label": "Name of Tower",
+            "name": "c_tower_name",
             "sortable": "true",
             "style": "",
             "width": ""
@@ -66,6 +86,7 @@
             "alignment": "",
             "datalist_type": "column",
             "exclude_export": "",
+            "filterable": true,
             "format": {
                 "className": "",
                 "properties": {}
@@ -73,9 +94,31 @@
             "headerAlignment": "",
             "hidden": "false",
             "id": "column_2",
-            "label": "Tower Number",
-            "name": "tower_no",
-            "sortable": "true",
+            "label": "Tower Code",
+            "name": "c_tower_no",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_4",
+            "label": "Created By",
+            "name": "createdByName",
+            "sortable": "false",
             "style": "",
             "width": ""
         }
@@ -85,39 +128,108 @@
     "disableResponsive": "",
     "filters": [
         {
+            "datalist_type": "filter",
+            "filterParamName": "d-8282008-fn_c_tower_name",
+            "hidden": "",
             "id": "filter_1",
-            "label": "Tower Name",
-            "name": "tower_name",
+            "label": "Tower",
+            "name": "c_tower_name",
             "type": {
-                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-                "properties": {}
+                "className": "org.joget.plugin.enterprise.SelectBoxDataListFilterType",
+                "properties": {
+                    "defaultValue": "",
+                    "multiple": "autocomplete",
+                    "options": [],
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "",
+                            "cacheInterval": "",
+                            "emptyLabel": "",
+                            "extraCondition": "",
+                            "formDefId": "ofc_tower_form",
+                            "groupingColumn": "",
+                            "idColumn": "",
+                            "labelColumn": "tower_name",
+                            "useAjax": ""
+                        }
+                    },
+                    "size": ""
+                }
             }
         },
         {
+            "datalist_type": "filter",
+            "filterParamName": "d-8282008-fn_c_businessType",
+            "hidden": "",
             "id": "filter_0",
-            "label": "Tower Seq No.",
-            "name": "tower_seq_no",
+            "label": "Business",
+            "name": "c_businessType",
             "type": {
-                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-                "properties": {}
+                "className": "org.joget.plugin.enterprise.SelectBoxDataListFilterType",
+                "properties": {
+                    "controlField": "",
+                    "defaultValue": "",
+                    "multiple": "",
+                    "options": [
+                        {
+                            "grouping": "",
+                            "label": "OFC",
+                            "value": "ofc"
+                        },
+                        {
+                            "grouping": "",
+                            "label": "Fitout",
+                            "value": "fitout"
+                        }
+                    ],
+                    "optionsBinder": {
+                        "className": "",
+                        "properties": {}
+                    },
+                    "size": ""
+                }
             }
         },
         {
+            "datalist_type": "filter",
+            "filterParamName": "d-8282008-fn_c_towerLocation",
+            "hidden": "",
             "id": "filter_2",
-            "label": "Tower Number",
-            "name": "tower_no",
+            "label": "Location",
+            "name": "c_towerLocation",
             "type": {
-                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-                "properties": {}
+                "className": "org.joget.plugin.enterprise.SelectBoxDataListFilterType",
+                "properties": {
+                    "controlField": "",
+                    "defaultValue": "",
+                    "multiple": "",
+                    "options": [],
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "",
+                            "cacheInterval": "",
+                            "emptyLabel": "",
+                            "extraCondition": "",
+                            "formDefId": "locationForm",
+                            "groupingColumn": "",
+                            "idColumn": "",
+                            "labelColumn": "locName",
+                            "useAjax": ""
+                        }
+                    },
+                    "size": ""
+                }
             }
         }
     ],
-    "hidePageSize": "true",
+    "hidePageSize": "",
     "id": "list_ofc_tower_form",
     "name": "List - Create Tower",
-    "order": "1",
-    "orderBy": "dateModified",
-    "pageSize": "0",
+    "order": "2",
+    "orderBy": "c_tower_seq_no",
+    "pageSize": "50",
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
     "responsiveView": [
         {

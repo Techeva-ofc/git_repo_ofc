@@ -39,21 +39,10 @@
                     "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
                         "controlField": "",
-                        "elementUniqueKey": "4917",
                         "id": "status",
                         "label": "Status",
                         "multiple": "",
                         "options": [
-                            {
-                                "grouping": "",
-                                "label": "",
-                                "value": ""
-                            },
-                            {
-                                "grouping": "",
-                                "label": "Clarification Required",
-                                "value": "Clarification Required"
-                            },
                             {
                                 "grouping": "",
                                 "label": "Approved",
@@ -61,8 +50,8 @@
                             },
                             {
                                 "grouping": "",
-                                "label": "Rejected",
-                                "value": "Rejected"
+                                "label": "In-Progress",
+                                "value": "In-Progress"
                             }
                         ],
                         "optionsBinder": {
@@ -75,7 +64,6 @@
                         "validator": {
                             "className": "org.joget.apps.form.lib.DefaultValidator",
                             "properties": {
-                                "custom-regex": "",
                                 "mandatory": "true",
                                 "message": "",
                                 "type": ""
@@ -83,20 +71,6 @@
                         },
                         "value": "",
                         "workflowVariable": "status"
-                    }
-                },
-                {
-                    "className": "org.joget.plugin.enterprise.RichTextEditorField",
-                    "properties": {
-                        "elementUniqueKey": "4918",
-                        "id": "remarks",
-                        "label": "Remarks",
-                        "readonly": "",
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "value": ""
                     }
                 }
             ],

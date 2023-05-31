@@ -119,18 +119,18 @@
     "disableResponsive": "",
     "filters": [
         {
-            "id": "filter_1",
-            "label": "Area(Sq ft.)",
-            "name": "area_sqft",
+            "id": "filter_0",
+            "label": "Unit Name",
+            "name": "unitName",
             "type": {
                 "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
                 "properties": {}
             }
         },
         {
-            "id": "filter_0",
-            "label": "Unit Name",
-            "name": "unitName",
+            "id": "filter_1",
+            "label": "Area(Sq ft.)",
+            "name": "area_sqft",
             "type": {
                 "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
                 "properties": {}
@@ -161,13 +161,13 @@
             }
         }
     ],
-    "hidePageSize": "true",
+    "hidePageSize": "",
     "id": "unitAreaDisplay",
     "name": "List - Unit Area Display",
     "order": "1",
     "orderBy": "dateModified",
-    "pageSize": "0",
-    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "pageSize": "50",
+    "pageSizeSelectorOptions": "10,20,30,40,50,60,70,80,90,100",
     "responsiveView": [
         {
             "breakpoint": "",

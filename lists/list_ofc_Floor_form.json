@@ -6,27 +6,73 @@
     },
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
-    "columns": [{
-        "action": {
-            "className": "",
-            "properties": {}
+    "columns": [
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_0",
+            "label": "Floor Number",
+            "name": "add_floor",
+            "sortable": "true",
+            "style": "",
+            "width": ""
         },
-        "alignment": "",
-        "datalist_type": "column",
-        "exclude_export": "",
-        "format": {
-            "className": "",
-            "properties": {}
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_1",
+            "label": "Created By",
+            "name": "createdByName",
+            "sortable": "true",
+            "style": "",
+            "width": ""
         },
-        "headerAlignment": "",
-        "hidden": "false",
-        "id": "column_0",
-        "label": "Floor Number",
-        "name": "add_floor",
-        "sortable": "true",
-        "style": "",
-        "width": ""
-    }],
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_2",
+            "label": "Date Created",
+            "name": "dateCreated",
+            "sortable": "true",
+            "style": "",
+            "width": ""
+        }
+    ],
     "considerFilterWhenGetTotal": "",
     "description": "",
     "disableResponsive": "",
@@ -39,12 +85,12 @@
             "properties": {}
         }
     }],
-    "hidePageSize": "true",
+    "hidePageSize": "",
     "id": "list_ofc_Floor_form",
     "name": "List - Create Floor",
-    "order": "1",
-    "orderBy": "dateModified",
-    "pageSize": "0",
+    "order": "2",
+    "orderBy": "floor",
+    "pageSize": "50",
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
     "responsiveView": [
         {

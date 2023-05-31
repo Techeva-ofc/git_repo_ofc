@@ -31,12 +31,15 @@
     "description": "",
     "disableResponsive": "",
     "filters": [{
+        "datalist_type": "filter",
+        "filterParamName": "d-1637930-fn_activityName",
+        "hidden": "",
         "id": "filter_0",
         "label": "Activity Name",
         "name": "activityName",
         "type": {
             "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-            "properties": {}
+            "properties": {"defaultValue": ""}
         }
     }],
     "hidePageSize": "true",

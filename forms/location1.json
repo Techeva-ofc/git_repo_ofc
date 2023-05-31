@@ -15,9 +15,9 @@
                     "optionsBinder": {
                         "className": "org.joget.apps.form.lib.FormOptionsBinder",
                         "properties": {
-                            "addEmptyOption": "",
+                            "addEmptyOption": "true",
                             "cacheInterval": "",
-                            "emptyLabel": "",
+                            "emptyLabel": "Select",
                             "extraCondition": "",
                             "formDefId": "ofc_emirates_form",
                             "groupingColumn": "",
