@@ -317,13 +317,13 @@
                 "readonly": "",
                 "readonlyLabel": "",
                 "regex": "",
-                "reverse": "",
+                "reverse": "true",
                 "storeBinder": {
                     "className": "",
                     "properties": {}
                 },
-                "visibilityControl": "",
-                "visibilityValue": ""
+                "visibilityControl": "confirmProposal",
+                "visibilityValue": "Confirm Proposed Date"
             }
         },
         {
