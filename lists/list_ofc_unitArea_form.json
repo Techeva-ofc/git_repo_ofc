@@ -14,19 +14,7 @@
                     "value": "#requestParam.unitAreaTower#"
                 },
                 {
-                    "field": "ofc_floor_tab.add_floor",
-                    "join": "AND",
-                    "operator": "=",
-                    "value": "#requestParam.unitAreaFloor#"
-                },
-                {
-                    "field": "unitAreaTower",
-                    "join": "AND",
-                    "operator": "=",
-                    "value": "#requestParam.unitAreaTower#"
-                },
-                {
-                    "field": "ofc_floor_tab.add_floor",
+                    "field": "unitAreaFloor",
                     "join": "AND",
                     "operator": "=",
                     "value": "#requestParam.unitAreaFloor#"
@@ -52,14 +40,6 @@
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
     "columns": [
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_4",
-            "label": "Tower",
-            "name": "unitAreaTower",
-            "sortable": "false"
-        },
         {
             "action": {
                 "className": "",
