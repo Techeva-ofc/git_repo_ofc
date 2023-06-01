@@ -405,20 +405,14 @@
                             "id": "tower_name",
                             "label": "Tower",
                             "multiple": "",
-                            "options": [],
+                            "options": [{
+                                "grouping": "",
+                                "label": "TestTower",
+                                "value": "TestTower"
+                            }],
                             "optionsBinder": {
-                                "className": "org.joget.apps.form.lib.FormOptionsBinder",
-                                "properties": {
-                                    "addEmptyOption": "true",
-                                    "cacheInterval": "",
-                                    "emptyLabel": "Select",
-                                    "extraCondition": "",
-                                    "formDefId": "ofc_tower_form",
-                                    "groupingColumn": "",
-                                    "idColumn": "tower_name",
-                                    "labelColumn": "tower_name",
-                                    "useAjax": "true"
-                                }
+                                "className": "",
+                                "properties": {}
                             },
                             "readonly": "",
                             "readonlyLabel": "",
