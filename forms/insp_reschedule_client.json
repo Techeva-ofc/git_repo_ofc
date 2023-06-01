@@ -54,8 +54,8 @@
                             "label": "Proposed Schedule By Client",
                             "permissionHidden": "",
                             "placeholder": "",
-                            "readonly": "",
-                            "readonlyLabel": "",
+                            "readonly": "true",
+                            "readonlyLabel": "true",
                             "startDateFieldId": "",
                             "validator": {
                                 "className": "",
