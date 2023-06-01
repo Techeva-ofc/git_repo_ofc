@@ -452,7 +452,7 @@
                 "comment": "",
                 "id": "section3",
                 "join": "",
-                "label": "Section",
+                "label": "Scheduler",
                 "loadBinder": {
                     "className": "",
                     "properties": {}
