@@ -952,6 +952,52 @@
             "className": "org.joget.apps.userview.model.UserviewCategory",
             "menus": [
                 {
+                    "className": "org.joget.plugin.enterprise.DataListInboxMenu",
+                    "properties": {
+                        "activityDefId": "inspectionSchedule",
+                        "appFilter": "activity",
+                        "assignment-customFooter": "",
+                        "assignment-customHeader": "",
+                        "cacheAllLinks": "",
+                        "cacheListAction": "",
+                        "customId": "inspection_scheduler_inbox",
+                        "datalistId": "list_inspSchedl",
+                        "enableOffline": "",
+                        "id": "8F49A26A1F3D4326A5EE2C8B5762D41E",
+                        "keyName": "",
+                        "label": "Inspection Scheduler Inbox",
+                        "list-customFooter": "",
+                        "list-customHeader": "",
+                        "processId": "serReqForm_approver_process",
+                        "rowCount": "true",
+                        "showDetail": "",
+                        "showPopup": "",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "buttonPosition": "bottomLeft",
+                        "cacheAllLinks": "",
+                        "cacheListAction": "",
+                        "checkboxPosition": "no",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "inspection_scheduler",
+                        "datalistId": "list_inspSchedl",
+                        "enableOffline": "",
+                        "id": "ED47EFDB9A9A4E4F9B261E0018768839",
+                        "keyName": "",
+                        "label": "Inspection Scheduler",
+                        "rowCount": "true",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
                     "className": "org.joget.plugin.enterprise.CrudMenu",
                     "properties": {
                         "add-afterSaved": "list",
@@ -1011,52 +1057,6 @@
                         "rowCount": "",
                         "selectionType": "single",
                         "userviewCacheDuration": "",
-                        "userviewCacheScope": ""
-                    }
-                },
-                {
-                    "className": "org.joget.plugin.enterprise.DataListInboxMenu",
-                    "properties": {
-                        "activityDefId": "inspectionSchedule",
-                        "appFilter": "activity",
-                        "assignment-customFooter": "",
-                        "assignment-customHeader": "",
-                        "cacheAllLinks": "",
-                        "cacheListAction": "",
-                        "customId": "inspection_scheduler_inbox",
-                        "datalistId": "list_inspSchedl",
-                        "enableOffline": "",
-                        "id": "8F49A26A1F3D4326A5EE2C8B5762D41E",
-                        "keyName": "",
-                        "label": "Inspection Scheduler Inbox",
-                        "list-customFooter": "",
-                        "list-customHeader": "",
-                        "processId": "serReqForm_approver_process",
-                        "rowCount": "true",
-                        "showDetail": "",
-                        "showPopup": "",
-                        "userviewCacheDuration": "20",
-                        "userviewCacheScope": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.userview.lib.DataListMenu",
-                    "properties": {
-                        "buttonPosition": "bottomLeft",
-                        "cacheAllLinks": "",
-                        "cacheListAction": "",
-                        "checkboxPosition": "no",
-                        "customFooter": "",
-                        "customHeader": "",
-                        "customId": "inspection_scheduler",
-                        "datalistId": "list_inspSchedl",
-                        "enableOffline": "",
-                        "id": "ED47EFDB9A9A4E4F9B261E0018768839",
-                        "keyName": "",
-                        "label": "Inspection Scheduler",
-                        "rowCount": "true",
-                        "selectionType": "multiple",
-                        "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
                 },
