@@ -2665,6 +2665,68 @@
                     }
                 }
             }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.plugin.enterprise.CrudMenu",
+                "properties": {
+                    "add-afterSaved": "list",
+                    "add-cancelButtonLabel": "",
+                    "add-customFooter": "",
+                    "add-customHeader": "",
+                    "add-messageShowAfterComplete": "",
+                    "add-saveButtonLabel": "",
+                    "addFormId": "testcompany",
+                    "buttonPosition": "bottomLeft",
+                    "cacheAllLinks": "",
+                    "cacheListAction": "",
+                    "checkboxPosition": "left",
+                    "customId": "comanyMaster_crud",
+                    "datalistId": "list_comanyMaster",
+                    "edit-afterSaved": "list",
+                    "edit-allowRecordTraveling": "",
+                    "edit-backButtonLabel": "",
+                    "edit-customFooter": "",
+                    "edit-customHeader": "",
+                    "edit-firstButtonLabel": "",
+                    "edit-lastButtonLabel": "",
+                    "edit-messageShowAfterComplete": "",
+                    "edit-moreActions": [],
+                    "edit-nextButtonLabel": "",
+                    "edit-prevButtonLabel": "",
+                    "edit-readonly": "",
+                    "edit-readonlyLabel": "",
+                    "edit-saveButtonLabel": "",
+                    "editFormId": "testcompany",
+                    "enableOffline": "",
+                    "id": "8DFCAE9D855D43EAA98B54252D673DC0",
+                    "keyName": "",
+                    "label": "Manage Company",
+                    "list-abortRelatedRunningProcesses": "",
+                    "list-confirmation": "",
+                    "list-customFooter": "",
+                    "list-customHeader": "",
+                    "list-deleteButtonLabel": "",
+                    "list-deleteFiles": "",
+                    "list-deleteGridData": "",
+                    "list-deleteSubformData": "",
+                    "list-editLinkLabel": "",
+                    "list-editLinkTarget": "",
+                    "list-moreActions": [],
+                    "list-newButtonLabel": "",
+                    "list-newLinkTarget": "",
+                    "list-showDeleteButton": "yes",
+                    "rowCount": "",
+                    "selectionType": "multiple",
+                    "userviewCacheDuration": "",
+                    "userviewCacheScope": ""
+                }
+            }],
+            "properties": {
+                "id": "category-39559C23B2E0489F8D67789B9EB8DA7B",
+                "label": "New Category"
+            }
         }
     ],
     "className": "org.joget.apps.userview.model.Userview",
