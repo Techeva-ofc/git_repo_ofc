@@ -282,13 +282,13 @@
                 "rules": [
                     {
                         "field": "c_inspectionreportStatus",
-                        "join": "AND",
+                        "join": "OR",
                         "operator": "=",
                         "value": "Other Non-Compliance"
                     },
                     {
                         "field": "c_status",
-                        "join": "AND",
+                        "join": "OR",
                         "operator": "=",
                         "value": "Paid Fee"
                     }
