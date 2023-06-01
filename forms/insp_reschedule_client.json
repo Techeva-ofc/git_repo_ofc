@@ -232,6 +232,19 @@
                             "value": "Inspection Scheduled",
                             "workflowVariable": ""
                         }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
+                            "id": "validateStatus",
+                            "useDefaultWhenEmpty": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "True",
+                            "workflowVariable": ""
+                        }
                     }
                 ],
                 "properties": {"width": "100%"}
