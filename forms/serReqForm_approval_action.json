@@ -1,0 +1,140 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [{
+        "className": "org.joget.apps.form.model.Section",
+        "elements": [{
+            "className": "org.joget.apps.form.model.Column",
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "elementUniqueKey": "4914",
+                        "id": "parent_id",
+                        "useDefaultWhenEmpty": "",
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "id": "approver",
+                        "useDefaultWhenEmpty": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "#currentUser.fullName#",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "elementUniqueKey": "4916",
+                        "id": "approval_date",
+                        "useDefaultWhenEmpty": "",
+                        "value": "#date.yyyy-MM-dd HH:mm#",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "status",
+                        "label": "Status",
+                        "multiple": "",
+                        "options": [
+                            {
+                                "grouping": "",
+                                "label": "Approved",
+                                "value": "Approved"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "In-Progress",
+                                "value": "In-Progress"
+                            }
+                        ],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "",
+                                "type": ""
+                            }
+                        },
+                        "value": "",
+                        "workflowVariable": "status"
+                    }
+                }
+            ],
+            "properties": {
+                "elementUniqueKey": "4908",
+                "width": "100%"
+            }
+        }],
+        "properties": {
+            "elementUniqueKey": "4896",
+            "id": "section1",
+            "label": "",
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "regex": "",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "visibilityControl": "",
+            "visibilityValue": ""
+        }
+    }],
+    "properties": {
+        "description": "",
+        "id": "serReqForm_approval_action",
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "name": "Service Request Form Approval Action",
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "org.joget.apps.app.lib.MultiTools",
+            "properties": {
+                "comment": "",
+                "runInMultiThread": "",
+                "tools": [{
+                    "className": "org.joget.tutorial.WorkflowVariableUpdateTool",
+                    "properties": {"workflowVarMapping": [{
+                        "changeValueTo": "#form.ofc_ofc_category_tab.ofc_category_name[{form.ofc_serReqs_tab.ofc_category_name}]#",
+                        "variable": "serviceCategoryType"
+                    }]}
+                }]
+            }
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "tableName": "ofc_serReqs_tab_a"
+    }
+}
