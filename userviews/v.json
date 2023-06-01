@@ -859,6 +859,31 @@
                     }
                 },
                 {
+                    "className": "org.joget.plugin.enterprise.DataListInboxMenu",
+                    "properties": {
+                        "activityDefId": "approval;approval_attachdocument",
+                        "appFilter": "activity",
+                        "assignment-customFooter": "",
+                        "assignment-customHeader": "",
+                        "cacheAllLinks": "",
+                        "cacheListAction": "",
+                        "customId": "serReqForm_inbox",
+                        "datalistId": "serviceRequestListApproval",
+                        "enableOffline": "",
+                        "id": "8089445a-2371-4bd6-be5f-8523d8c794bc",
+                        "keyName": "",
+                        "label": "Service Request Approval",
+                        "list-customFooter": "",
+                        "list-customHeader": "",
+                        "processId": "serReqForm_approver_process",
+                        "rowCount": "true",
+                        "showDetail": "",
+                        "showPopup": "",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
                     "className": "org.joget.plugin.enterprise.CrudMenu",
                     "properties": {
                         "add-afterSaved": "list",
@@ -906,31 +931,6 @@
                         "userviewCacheDuration": "",
                         "userviewCacheScope": ""
                     }
-                },
-                {
-                    "className": "org.joget.plugin.enterprise.DataListInboxMenu",
-                    "properties": {
-                        "activityDefId": "approval;approval_attachdocument",
-                        "appFilter": "activity",
-                        "assignment-customFooter": "",
-                        "assignment-customHeader": "",
-                        "cacheAllLinks": "",
-                        "cacheListAction": "",
-                        "customId": "serReqForm_inbox",
-                        "datalistId": "serviceRequestListApproval",
-                        "enableOffline": "",
-                        "id": "8089445a-2371-4bd6-be5f-8523d8c794bc",
-                        "keyName": "",
-                        "label": "Service Request Approval",
-                        "list-customFooter": "",
-                        "list-customHeader": "",
-                        "processId": "serReqForm_approver_process",
-                        "rowCount": "true",
-                        "showDetail": "",
-                        "showPopup": "",
-                        "userviewCacheDuration": "20",
-                        "userviewCacheScope": ""
-                    }
                 }
             ],
             "properties": {
@@ -951,31 +951,6 @@
         {
             "className": "org.joget.apps.userview.model.UserviewCategory",
             "menus": [
-                {
-                    "className": "org.joget.plugin.enterprise.DataListInboxMenu",
-                    "properties": {
-                        "activityDefId": "inspectionSchedule",
-                        "appFilter": "activity",
-                        "assignment-customFooter": "",
-                        "assignment-customHeader": "",
-                        "cacheAllLinks": "",
-                        "cacheListAction": "",
-                        "customId": "inspection_scheduler_inbox",
-                        "datalistId": "list_inspSchedl",
-                        "enableOffline": "",
-                        "id": "8F49A26A1F3D4326A5EE2C8B5762D41E",
-                        "keyName": "",
-                        "label": "Inspection Scheduler Inbox",
-                        "list-customFooter": "",
-                        "list-customHeader": "",
-                        "processId": "serReqForm_approver_process",
-                        "rowCount": "true",
-                        "showDetail": "",
-                        "showPopup": "",
-                        "userviewCacheDuration": "20",
-                        "userviewCacheScope": ""
-                    }
-                },
                 {
                     "className": "org.joget.apps.userview.lib.DataListMenu",
                     "properties": {
@@ -1057,6 +1032,31 @@
                         "rowCount": "",
                         "selectionType": "single",
                         "userviewCacheDuration": "",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.DataListInboxMenu",
+                    "properties": {
+                        "activityDefId": "inspectionSchedule",
+                        "appFilter": "activity",
+                        "assignment-customFooter": "",
+                        "assignment-customHeader": "",
+                        "cacheAllLinks": "",
+                        "cacheListAction": "",
+                        "customId": "inspection_scheduler_inbox",
+                        "datalistId": "list_inspSchedl",
+                        "enableOffline": "",
+                        "id": "8F49A26A1F3D4326A5EE2C8B5762D41E",
+                        "keyName": "",
+                        "label": "Inspection Scheduler Inbox",
+                        "list-customFooter": "",
+                        "list-customHeader": "",
+                        "processId": "serReqForm_approver_process",
+                        "rowCount": "true",
+                        "showDetail": "",
+                        "showPopup": "",
+                        "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
                 },
