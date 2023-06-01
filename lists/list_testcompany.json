@@ -1,0 +1,66 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "testcompany"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "options": [],
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "true",
+                            "cacheInterval": "",
+                            "emptyLabel": "Select",
+                            "extraCondition": "",
+                            "formDefId": "ofc_activity_form",
+                            "groupingColumn": "",
+                            "idColumn": "activityName",
+                            "labelColumn": "activityName",
+                            "useAjax": "true"
+                        }
+                    }
+                }
+            },
+            "id": "column_0",
+            "label": "Activity",
+            "name": "compActivity"
+        },
+        {
+            "id": "column_1",
+            "label": "addSubListUnitArea",
+            "name": "addSubListUnitArea"
+        },
+        {
+            "id": "column_2",
+            "label": "Company Address",
+            "name": "companyAddress"
+        },
+        {
+            "id": "column_3",
+            "label": "Company Name",
+            "name": "companyName"
+        },
+        {
+            "id": "column_4",
+            "label": "Email Id",
+            "name": "emailId"
+        }
+    ],
+    "filters": [],
+    "id": "list_testcompany",
+    "name": "List - TestCompany",
+    "order": "",
+    "orderBy": "",
+    "pageSize": 0,
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
+}
