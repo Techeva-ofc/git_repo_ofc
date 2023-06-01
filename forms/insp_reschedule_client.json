@@ -120,6 +120,31 @@
                 "className": "org.joget.apps.form.model.Column",
                 "elements": [
                     {
+                        "className": "org.joget.apps.form.lib.CheckBox",
+                        "properties": {
+                            "controlField": "",
+                            "id": "confirmProposal",
+                            "label": "",
+                            "options": [{
+                                "grouping": "",
+                                "label": "Confirm Proposed Date",
+                                "value": "Confirm Proposed Date"
+                            }],
+                            "optionsBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
                         "className": "org.joget.apps.form.lib.DatePicker",
                         "properties": {
                             "allowManual": "true",
