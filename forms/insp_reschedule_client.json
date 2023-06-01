@@ -3,91 +3,98 @@
     "elements": [
         {
             "className": "org.joget.apps.form.model.Section",
-            "elements": [{
-                "className": "org.joget.apps.form.model.Column",
-                "elements": [
-                    {
-                        "className": "org.joget.apps.form.lib.HiddenField",
-                        "properties": {
-                            "id": "serReqDmccSrNo",
-                            "useDefaultWhenEmpty": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "",
-                            "workflowVariable": ""
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.HiddenField",
+                            "properties": {
+                                "id": "serReqDmccSrNo",
+                                "useDefaultWhenEmpty": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "",
+                                "workflowVariable": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
+                                "encryption": "",
+                                "id": "dmccsrno",
+                                "label": "DMCC SR No.",
+                                "maxlength": "",
+                                "permissionHidden": "",
+                                "placeholder": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "size": "",
+                                "storeNumeric": "",
+                                "style": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "#requestParam.serReqDmccSrNo#",
+                                "workflowVariable": "dmcc"
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.DatePicker",
+                            "properties": {
+                                "allowManual": "",
+                                "currentDateAs": "minDate",
+                                "dataFormat": "",
+                                "datePickerType": "",
+                                "endDateFieldId": "",
+                                "format": "dd-M-yy",
+                                "id": "inspSchedlDate",
+                                "label": "Proposed Schedule By Client",
+                                "permissionHidden": "",
+                                "placeholder": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "startDateFieldId": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "",
+                                "workflowVariable": "",
+                                "yearRange": "c-10:c+10"
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.TextArea",
+                            "properties": {
+                                "cols": "100",
+                                "id": "reason",
+                                "label": "Reason Provided",
+                                "permissionHidden": "",
+                                "placeholder": "",
+                                "readonly": "true",
+                                "readonlyLabel": "true",
+                                "rows": "5",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "value": "#requestParam.reason#",
+                                "workflowVariable": ""
+                            }
                         }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.TextField",
-                        "properties": {
-                            "encryption": "",
-                            "id": "dmccsrno",
-                            "label": "DMCC SR No.",
-                            "maxlength": "",
-                            "permissionHidden": "",
-                            "placeholder": "",
-                            "readonly": "true",
-                            "readonlyLabel": "true",
-                            "size": "",
-                            "storeNumeric": "",
-                            "style": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "#requestParam.serReqDmccSrNo#",
-                            "workflowVariable": "dmcc"
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.DatePicker",
-                        "properties": {
-                            "allowManual": "",
-                            "currentDateAs": "minDate",
-                            "dataFormat": "",
-                            "datePickerType": "",
-                            "endDateFieldId": "",
-                            "format": "dd-M-yy",
-                            "id": "inspSchedlDate",
-                            "label": "Proposed Schedule By Client",
-                            "permissionHidden": "",
-                            "placeholder": "",
-                            "readonly": "true",
-                            "readonlyLabel": "true",
-                            "startDateFieldId": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "",
-                            "workflowVariable": "",
-                            "yearRange": "c-10:c+10"
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.TextArea",
-                        "properties": {
-                            "cols": "100",
-                            "id": "reason",
-                            "label": "Reason Provided",
-                            "permissionHidden": "",
-                            "placeholder": "",
-                            "readonly": "true",
-                            "readonlyLabel": "true",
-                            "rows": "5",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "#requestParam.reason#",
-                            "workflowVariable": ""
-                        }
-                    }
-                ],
-                "properties": {"width": "100%"}
-            }],
+                    ],
+                    "properties": {"width": "49%"}
+                },
+                {
+                    "className": "org.joget.apps.form.model.Column",
+                    "elements": [],
+                    "properties": {"width": "49%"}
+                }
+            ],
             "properties": {
                 "comment": "",
                 "id": "inspectionreSchedule",
@@ -112,6 +119,63 @@
                 },
                 "visibilityControl": "statusofinspection",
                 "visibilityValue": "Inspection To-Be Re-Scheduled"
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.CheckBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "confirmProposal",
+                        "label": "",
+                        "options": [{
+                            "grouping": "",
+                            "label": "Confirm Proposed Date",
+                            "value": "Confirm Proposed Date"
+                        }],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "section2_1",
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
             }
         },
         {
@@ -266,63 +330,6 @@
             "className": "org.joget.apps.form.model.Section",
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
-                "elements": [{
-                    "className": "org.joget.apps.form.lib.CheckBox",
-                    "properties": {
-                        "controlField": "",
-                        "id": "confirmProposal",
-                        "label": "",
-                        "options": [{
-                            "grouping": "",
-                            "label": "Confirm Proposed Date",
-                            "value": "Confirm Proposed Date"
-                        }],
-                        "optionsBinder": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "value": "",
-                        "workflowVariable": ""
-                    }
-                }],
-                "properties": {"width": "100%"}
-            }],
-            "properties": {
-                "comment": "",
-                "id": "section2_1",
-                "join": "",
-                "label": "",
-                "loadBinder": {
-                    "className": "",
-                    "properties": {}
-                },
-                "permission": {
-                    "className": "",
-                    "properties": {}
-                },
-                "permissionReadonly": "",
-                "readonly": "",
-                "readonlyLabel": "",
-                "regex": "",
-                "reverse": "",
-                "storeBinder": {
-                    "className": "",
-                    "properties": {}
-                },
-                "visibilityControl": "",
-                "visibilityValue": ""
-            }
-        },
-        {
-            "className": "org.joget.apps.form.model.Section",
-            "elements": [{
-                "className": "org.joget.apps.form.model.Column",
                 "elements": [
                     {
                         "className": "org.joget.apps.form.lib.DatePicker",
@@ -442,8 +449,29 @@
                 "properties": {"width": "100%"}
             }],
             "properties": {
+                "comment": "",
                 "id": "section3",
-                "label": "Section"
+                "join": "",
+                "label": "Section",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "confirmProposal",
+                "visibilityValue": "Confirm Proposed Date"
             }
         }
     ],
