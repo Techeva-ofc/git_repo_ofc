@@ -438,20 +438,14 @@
                             "id": "unitFloor",
                             "label": "Floor",
                             "multiple": "",
-                            "options": [],
+                            "options": [{
+                                "grouping": "",
+                                "label": "Floor1",
+                                "value": "Floor1"
+                            }],
                             "optionsBinder": {
-                                "className": "org.joget.apps.form.lib.FormOptionsBinder",
-                                "properties": {
-                                    "addEmptyOption": "true",
-                                    "cacheInterval": "",
-                                    "emptyLabel": "Select",
-                                    "extraCondition": "",
-                                    "formDefId": "ofc_Floor_form",
-                                    "groupingColumn": "",
-                                    "idColumn": "add_floor",
-                                    "labelColumn": "add_floor",
-                                    "useAjax": "true"
-                                }
+                                "className": "",
+                                "properties": {}
                             },
                             "readonly": "",
                             "readonlyLabel": "",
