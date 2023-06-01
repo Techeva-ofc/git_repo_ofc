@@ -234,13 +234,7 @@
                 },
                 {
                     "field": "c_status",
-                    "join": "OR",
-                    "operator": "=",
-                    "value": "Payment Completed"
-                },
-                {
-                    "field": "c_status",
-                    "join": "OR",
+                    "join": "AND",
                     "operator": "=",
                     "value": "Inspection To-Be Re-Scheduled"
                 }
