@@ -228,7 +228,7 @@
             "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/reScheduleform",
             "hrefColumn": "id;c_serReqDmccSrNo;c_status;c_inspectionreportStatus;c_reason;c_dateofreschedule;c_rescheduleid",
             "hrefParam": "id;serReqDmccSrNo;status;inspectionstatus;reason;re_scheduledate;reschedulestate",
-            "label": "Re-Schedule",
+            "label": "Validate Proposal",
             "rules": [
                 {
                     "field": "c_rescheduleid",
