@@ -1740,7 +1740,7 @@
                         "keyName": "",
                         "label": "Re-Schedule Inspection",
                         "loadDataWithKey": "",
-                        "messageShowAfterComplete": "",
+                        "messageShowAfterComplete": "Re-Schedule has been confirmed, file transferred to Inspection Scheduler",
                         "paramName": "",
                         "readonly": "",
                         "readonlyLabel": "",
@@ -1749,7 +1749,7 @@
                         "redirectUrlAfterComplete": "",
                         "redirectUrlOnCancel": "",
                         "showInPopupDialog": "",
-                        "submitButtonLabel": "Schedule",
+                        "submitButtonLabel": "Confirm",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
