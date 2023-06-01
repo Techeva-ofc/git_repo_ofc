@@ -226,9 +226,9 @@
             "confirmation": "",
             "datalist_type": "row_action",
             "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/reScheduleform",
-            "hrefColumn": "id;c_serReqDmccSrNo;c_status;c_inspectionreportStatus;c_reason;c_dateofreschedule;c_rescheduleid",
-            "hrefParam": "id;serReqDmccSrNo;status;inspectionstatus;reason;re_scheduledate;reschedulestate",
-            "label": "Re-Schedule",
+            "hrefColumn": "id;c_serReqDmccSrNo;c_status;c_inspectionreportStatus;c_reason;c_dateofreschedule;c_rescheduleid;c_inspSchedlDate",
+            "hrefParam": "id;serReqDmccSrNo;status;inspectionstatus;reason;re_scheduledate;reschedulestate;proposeDate",
+            "label": "Validate Proposal",
             "rules": [
                 {
                     "field": "c_rescheduleid",
