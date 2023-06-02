@@ -320,15 +320,9 @@
                     },
                     {
                         "field": "c_waiversend",
-                        "join": "OR",
+                        "join": "AND",
                         "operator": "=",
                         "value": "False"
-                    },
-                    {
-                        "field": "c_waiversend",
-                        "join": "OR",
-                        "operator": "=",
-                        "value": "Null"
                     }
                 ],
                 "target": "popup"
