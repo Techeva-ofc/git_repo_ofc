@@ -326,7 +326,7 @@
                     },
                     {
                         "field": "c_waiversend",
-                        "join": "AND",
+                        "join": "OR",
                         "operator": "=",
                         "value": "False"
                     }
