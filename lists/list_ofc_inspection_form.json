@@ -368,7 +368,7 @@
                 "confirmation": "",
                 "datalist_type": "row_action",
                 "href": "http://localhost:8080/jw/web/userview/ofc_app/v/_/viewRport",
-                "hrefColumn": ";c_companyName;;c_inspectionreportStatus;;id",
+                "hrefColumn": "c_serReqDmccSrNo;c_companyName;c_inspSchedlDate;c_inspectionreportStatus;;id",
                 "hrefParam": "serReqDmccSrNo;company;scheduledate;reportstatus;reportdate;id",
                 "label": "View Inspection Report",
                 "rules": [
