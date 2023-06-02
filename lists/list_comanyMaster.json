@@ -33,6 +33,14 @@
     "checkboxPosition": "left",
     "columns": [
         {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_4",
+            "label": "Email Id",
+            "name": "emailId",
+            "sortable": "false"
+        },
+        {
             "action": {
                 "className": "",
                 "properties": {}
@@ -181,38 +189,6 @@
                             "groupingColumn": "",
                             "idColumn": "",
                             "labelColumn": "tower_name",
-                            "useAjax": ""
-                        }
-                    },
-                    "size": ""
-                }
-            }
-        },
-        {
-            "datalist_type": "filter",
-            "filterParamName": "d-7908264-fn_companyLocation",
-            "hidden": "",
-            "id": "filter_1",
-            "label": "Location",
-            "name": "companyLocation",
-            "type": {
-                "className": "org.joget.plugin.enterprise.SelectBoxDataListFilterType",
-                "properties": {
-                    "controlField": "",
-                    "defaultValue": "",
-                    "multiple": "",
-                    "options": [],
-                    "optionsBinder": {
-                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
-                        "properties": {
-                            "addEmptyOption": "",
-                            "cacheInterval": "",
-                            "emptyLabel": "",
-                            "extraCondition": "",
-                            "formDefId": "comanyMaster",
-                            "groupingColumn": "",
-                            "idColumn": "",
-                            "labelColumn": "companyLocation",
                             "useAjax": ""
                         }
                     },
