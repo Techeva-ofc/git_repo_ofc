@@ -35,6 +35,14 @@
         {
             "filterable": true,
             "hidden": "false",
+            "id": "column_5",
+            "label": "Date Created",
+            "name": "dateCreated",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
             "id": "column_4",
             "label": "Email Id",
             "name": "emailId",
