@@ -50,9 +50,9 @@
             "format": {
                 "className": "org.joget.plugin.enterprise.DateFormatter",
                 "properties": {
-                    "dataFormat": "dd-MM-yyyy",
+                    "dataFormat": "dd-MM-yyyy hh:mm a",
                     "dateStoreInUTC": "",
-                    "displayFormat": "dd-MM-yyyy"
+                    "displayFormat": "dd-MM-yyyy hh:mm a"
                 }
             },
             "headerAlignment": "",
