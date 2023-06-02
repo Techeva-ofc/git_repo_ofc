@@ -319,12 +319,6 @@
                         "value": "Inspection To-Be Re-Scheduled"
                     },
                     {
-                        "field": "c_status",
-                        "join": "OR",
-                        "operator": "=",
-                        "value": "Paid Fee"
-                    },
-                    {
                         "field": "c_waiversend",
                         "join": "OR",
                         "operator": "=",
