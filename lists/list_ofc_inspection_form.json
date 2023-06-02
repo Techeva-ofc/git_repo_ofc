@@ -331,8 +331,8 @@
                         "value": "False"
                     },
                     {
-                        "field": "c_waiverstate",
-                        "join": "AND",
+                        "field": "c_waiversend",
+                        "join": "OR",
                         "operator": "=",
                         "value": "Null"
                     }
