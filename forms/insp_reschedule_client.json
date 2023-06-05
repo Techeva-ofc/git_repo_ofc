@@ -9,6 +9,19 @@
                     {
                         "className": "org.joget.apps.form.lib.HiddenField",
                         "properties": {
+                            "id": "id",
+                            "useDefaultWhenEmpty": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "#form.ofc_serReqs_tab.id#",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
                             "id": "serReqDmccSrNo",
                             "useDefaultWhenEmpty": "",
                             "validator": {
