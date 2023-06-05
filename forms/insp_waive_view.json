@@ -328,6 +328,63 @@
                 "className": "org.joget.apps.form.model.Column",
                 "elements": [
                     {
+                        "className": "org.joget.apps.form.lib.TextArea",
+                        "properties": {
+                            "cols": "75",
+                            "id": "reason_waiveroff",
+                            "label": "Reason Provided",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "rows": "5",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "",
+                            "id": "waiver_category",
+                            "label": "For the reason falls under:",
+                            "multiple": "",
+                            "options": [
+                                {
+                                    "grouping": "",
+                                    "label": "category1",
+                                    "value": "category1"
+                                },
+                                {
+                                    "grouping": "",
+                                    "label": "category2",
+                                    "value": "category2"
+                                },
+                                {
+                                    "grouping": "",
+                                    "label": "category3",
+                                    "value": "category3"
+                                }
+                            ],
+                            "optionsBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
                         "className": "org.joget.apps.form.lib.TextField",
                         "properties": {
                             "encryption": "",
@@ -488,6 +545,18 @@
                 },
                 "visibilityControl": "inspectionreportStatus;inspectionreportStatus",
                 "visibilityValue": "Other Non-Compliance;Fitout Non-Compliance"
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "id": "section5",
+                "label": "Section"
             }
         }
     ],
