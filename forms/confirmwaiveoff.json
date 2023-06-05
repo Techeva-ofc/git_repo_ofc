@@ -1,60 +1,73 @@
 {
     "className": "org.joget.apps.form.model.Form",
-    "elements": [{
-        "className": "org.joget.apps.form.model.Section",
-        "elements": [{
-            "className": "org.joget.apps.form.model.Column",
-            "elements": [
-                {
-                    "className": "org.joget.apps.form.lib.HiddenField",
-                    "properties": {
-                        "id": "waiversend",
-                        "useDefaultWhenEmpty": "",
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "value": "False",
-                        "workflowVariable": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.form.lib.Radio",
-                    "properties": {
-                        "controlField": "",
-                        "id": "waiveconfirm",
-                        "label": "Are you sure want to send report for waive off?",
-                        "options": [
-                            {
-                                "grouping": "",
-                                "label": "Yes",
-                                "value": "Yes"
+    "elements": [
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
+                            "id": "waiversend",
+                            "useDefaultWhenEmpty": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
                             },
-                            {
-                                "grouping": "",
-                                "label": "No",
-                                "value": "No"
-                            }
-                        ],
-                        "optionsBinder": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "validator": {
-                            "className": "org.joget.apps.form.lib.DefaultValidator",
-                            "properties": {
-                                "mandatory": "true",
-                                "message": "mandatory",
-                                "type": ""
-                            }
-                        },
-                        "value": "No",
-                        "workflowVariable": ""
+                            "value": "False",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.Radio",
+                        "properties": {
+                            "controlField": "",
+                            "id": "waiveconfirm",
+                            "label": "Are you sure want to send report for waive off?",
+                            "options": [
+                                {
+                                    "grouping": "",
+                                    "label": "Yes",
+                                    "value": "Yes"
+                                },
+                                {
+                                    "grouping": "",
+                                    "label": "No",
+                                    "value": "No"
+                                }
+                            ],
+                            "optionsBinder": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "mandatory": "true",
+                                    "message": "mandatory",
+                                    "type": ""
+                                }
+                            },
+                            "value": "No",
+                            "workflowVariable": ""
+                        }
                     }
-                },
-                {
+                ],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "id": "section1",
+                "label": "Section"
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
                     "className": "org.joget.apps.form.lib.TextArea",
                     "properties": {
                         "cols": "75",
@@ -71,15 +84,36 @@
                         "value": "",
                         "workflowVariable": ""
                     }
-                }
-            ],
-            "properties": {"width": "100%"}
-        }],
-        "properties": {
-            "id": "section1",
-            "label": "Section"
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "section2",
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
         }
-    }],
+    ],
     "properties": {
         "description": "",
         "id": "confirmwaiveoff",
