@@ -434,10 +434,10 @@
                         "value": "Paid Fee"
                     },
                     {
-                        "field": "c_reason_partialCompliance",
+                        "field": "c_inspectionreportStatus",
                         "join": "OR",
-                        "operator": "<>",
-                        "value": "Null"
+                        "operator": "=",
+                        "value": "Released Temporary OFC"
                     }
                 ],
                 "target": "_self"
