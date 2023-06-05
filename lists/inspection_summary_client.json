@@ -252,13 +252,13 @@
                         "field": "c_inspectionreportStatus",
                         "join": "OR",
                         "operator": "=",
-                        "value": "Other Non-Compliance"
+                        "value": "Partial Compliance"
                     },
                     {
                         "field": "c_status",
                         "join": "AND",
                         "operator": "=",
-                        "value": "Paid Fee"
+                        "value": "Released Temporary OFC"
                     }
                 ],
                 "showNotSelectedOptions": ""
