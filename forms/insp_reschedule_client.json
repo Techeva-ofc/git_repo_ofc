@@ -9,6 +9,13 @@
                     {
                         "className": "org.joget.apps.form.lib.HiddenField",
                         "properties": {
+                            "id": "field15",
+                            "useDefaultWhenEmpty": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.HiddenField",
+                        "properties": {
                             "id": "serReqDmccSrNo",
                             "useDefaultWhenEmpty": "",
                             "validator": {
