@@ -423,7 +423,7 @@
                 "rules": [
                     {
                         "field": "c_inspectionreportStatus",
-                        "join": "AND",
+                        "join": "OR",
                         "operator": "=",
                         "value": "Fitout Non-Compliance"
                     },
@@ -434,10 +434,16 @@
                         "value": "Paid Fee"
                     },
                     {
-                        "field": "c_inspectionreportStatus",
+                        "field": "c_status",
                         "join": "OR",
                         "operator": "=",
                         "value": "Released Temporary OFC"
+                    },
+                    {
+                        "field": "c_inspectionreportStatus",
+                        "join": "AND",
+                        "operator": "=",
+                        "value": "Partial Compliance"
                     }
                 ],
                 "target": "_self"
