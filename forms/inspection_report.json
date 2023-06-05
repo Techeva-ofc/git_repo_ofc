@@ -507,7 +507,7 @@
                     "className": "org.joget.apps.form.lib.TextArea",
                     "properties": {
                         "cols": "50",
-                        "id": "partialComp_reason",
+                        "id": "reason_partialCompliance",
                         "label": "Justify to release Temporary OFC",
                         "placeholder": "",
                         "readonly": "",
