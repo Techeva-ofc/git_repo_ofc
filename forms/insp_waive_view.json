@@ -333,9 +333,10 @@
                             "cols": "75",
                             "id": "reason_waiveroff",
                             "label": "Reason Provided",
+                            "permissionHidden": "",
                             "placeholder": "",
-                            "readonly": "",
-                            "readonlyLabel": "",
+                            "readonly": "true",
+                            "readonlyLabel": "true",
                             "rows": "5",
                             "validator": {
                                 "className": "",
