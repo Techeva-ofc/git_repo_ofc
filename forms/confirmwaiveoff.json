@@ -57,7 +57,7 @@
                 {
                     "className": "org.joget.apps.form.lib.TextArea",
                     "properties": {
-                        "cols": "20",
+                        "cols": "75",
                         "id": "reason_waiveroff",
                         "label": "Provide reason",
                         "placeholder": "",
