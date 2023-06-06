@@ -432,7 +432,7 @@
          <id>logo.png</id>
          <appId>ofc_app</appId>
          <appVersion>3</appVersion>
-         <filesize>10875</filesize>
+         <filesize>10852</filesize>
          <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
       </appResource>
       <appResource>
