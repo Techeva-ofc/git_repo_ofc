@@ -311,20 +311,12 @@
                 "hrefColumn": "id",
                 "hrefParam": "id",
                 "label": "Send Waive OFF Request",
-                "rules": [
-                    {
-                        "field": "c_status",
-                        "join": "AND",
-                        "operator": "=",
-                        "value": "Inspection To-Be Re-Scheduled"
-                    },
-                    {
-                        "field": "c_waiversend",
-                        "join": "AND",
-                        "operator": "=",
-                        "value": "False"
-                    }
-                ],
+                "rules": [{
+                    "field": "c_status",
+                    "join": "AND",
+                    "operator": "=",
+                    "value": "Inspection To-Be Re-Scheduled"
+                }],
                 "target": "popup"
             },
             "type": "text"
