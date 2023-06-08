@@ -63,7 +63,7 @@
                             "datePickerType": "",
                             "endDateFieldId": "",
                             "format": "dd-M-yy",
-                            "id": "inspSchedlDate",
+                            "id": "proposeSchedlDate",
                             "label": "Proposed Schedule By Client",
                             "permissionHidden": "",
                             "placeholder": "",
