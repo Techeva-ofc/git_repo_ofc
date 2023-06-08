@@ -19,8 +19,42 @@
                         "storeNumeric": "",
                         "style": "",
                         "validator": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.marketplace.MultiFormValidator",
+                            "properties": {
+                                "fifthValidator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "firstValidator": {
+                                    "className": "org.joget.apps.form.lib.DefaultValidator",
+                                    "properties": {
+                                        "custom-regex": "^[A-Z][a-zA-Z0-9]*\\.?[0-9]*$",
+                                        "custom-regex-casesensitive": "",
+                                        "mandatory": "true",
+                                        "message": "*invalid code",
+                                        "type": "custom"
+                                    }
+                                },
+                                "fourthValidator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "secondValidator": {
+                                    "className": "org.joget.apps.form.lib.DuplicateValueValidator",
+                                    "properties": {
+                                        "errorDuplicateMsg": "*code already exists!",
+                                        "errorFormatMsg": "",
+                                        "fieldId": "checkpointCode",
+                                        "formDefId": "ofc_checklist_form",
+                                        "mandatory": "true",
+                                        "regex": ""
+                                    }
+                                },
+                                "thirdValidator": {
+                                    "className": "",
+                                    "properties": {}
+                                }
+                            }
                         },
                         "value": "",
                         "workflowVariable": ""
@@ -53,8 +87,14 @@
                         "storeNumeric": "",
                         "style": "",
                         "validator": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "custom-regex": "^[A-Z0-9][a-zA-Z0-9\\s\\W]*$",
+                                "custom-regex-casesensitive": "",
+                                "mandatory": "true",
+                                "message": "*invalid entry",
+                                "type": "custom"
+                            }
                         },
                         "value": "",
                         "workflowVariable": ""
@@ -71,23 +111,27 @@
                         "optionsBinder": {
                             "className": "org.joget.apps.form.lib.FormOptionsBinder",
                             "properties": {
-                                "addEmptyOption": "",
+                                "addEmptyOption": "true",
                                 "cacheInterval": "",
-                                "emptyLabel": "",
+                                "emptyLabel": "Select",
                                 "extraCondition": "",
                                 "formDefId": "checklistTypeFom",
                                 "groupingColumn": "",
                                 "idColumn": "",
                                 "labelColumn": "checklistType",
-                                "useAjax": ""
+                                "useAjax": "true"
                             }
                         },
                         "readonly": "",
                         "readonlyLabel": "",
                         "size": "",
                         "validator": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "*mandatory",
+                                "type": ""
+                            }
                         },
                         "value": "",
                         "workflowVariable": ""
@@ -97,8 +141,29 @@
             "properties": {"width": "100%"}
         }],
         "properties": {
+            "comment": "",
             "id": "section1",
-            "label": "Section"
+            "join": "",
+            "label": "Add Fitout Checklist",
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "permissionReadonly": "",
+            "readonly": "",
+            "readonlyLabel": "",
+            "regex": "",
+            "reverse": "",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "visibilityControl": "",
+            "visibilityValue": ""
         }
     }],
     "properties": {

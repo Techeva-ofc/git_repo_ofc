@@ -15,12 +15,44 @@
                         "placeholder": "",
                         "readonly": "",
                         "readonlyLabel": "",
-                        "size": "",
+                        "size": "10",
                         "storeNumeric": "",
                         "style": "",
                         "validator": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.marketplace.MultiFormValidator",
+                            "properties": {
+                                "fifthValidator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "firstValidator": {
+                                    "className": "org.joget.apps.form.lib.DefaultValidator",
+                                    "properties": {
+                                        "mandatory": "true",
+                                        "message": "*only numbers",
+                                        "type": "numeric"
+                                    }
+                                },
+                                "fourthValidator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "secondValidator": {
+                                    "className": "org.joget.apps.form.lib.DuplicateValueValidator",
+                                    "properties": {
+                                        "errorDuplicateMsg": "*duplicate code!",
+                                        "errorFormatMsg": "",
+                                        "fieldId": "ofc_category_code",
+                                        "formDefId": "ofc_ofc_category_form",
+                                        "mandatory": "true",
+                                        "regex": ""
+                                    }
+                                },
+                                "thirdValidator": {
+                                    "className": "",
+                                    "properties": {}
+                                }
+                            }
                         },
                         "value": "",
                         "workflowVariable": ""
@@ -36,12 +68,46 @@
                         "placeholder": "",
                         "readonly": "",
                         "readonlyLabel": "",
-                        "size": "",
+                        "size": "50",
                         "storeNumeric": "",
                         "style": "",
                         "validator": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.marketplace.MultiFormValidator",
+                            "properties": {
+                                "fifthValidator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "firstValidator": {
+                                    "className": "org.joget.apps.form.lib.DefaultValidator",
+                                    "properties": {
+                                        "custom-regex": "^[a-zA-Z][a-zA-Z0-9\\s\\W]*$",
+                                        "custom-regex-casesensitive": "",
+                                        "mandatory": "true",
+                                        "message": "*must starts with alphabet",
+                                        "type": "custom"
+                                    }
+                                },
+                                "fourthValidator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "secondValidator": {
+                                    "className": "org.joget.apps.form.lib.DuplicateValueValidator",
+                                    "properties": {
+                                        "errorDuplicateMsg": "*Category already exists!",
+                                        "errorFormatMsg": "",
+                                        "fieldId": "ofc_category_name",
+                                        "formDefId": "ofc_ofc_category_form",
+                                        "mandatory": "true",
+                                        "regex": ""
+                                    }
+                                },
+                                "thirdValidator": {
+                                    "className": "",
+                                    "properties": {}
+                                }
+                            }
                         },
                         "value": "",
                         "workflowVariable": ""
@@ -60,13 +126,40 @@
                         "prefix": "",
                         "readonly": "",
                         "readonlyLabel": "",
-                        "size": "",
+                        "size": "10",
                         "storeNumeric": "true",
                         "style": "us",
                         "useThousandSeparator": "",
                         "validator": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.marketplace.MultiFormValidator",
+                            "properties": {
+                                "fifthValidator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "firstValidator": {
+                                    "className": "org.joget.apps.form.lib.DefaultValidator",
+                                    "properties": {
+                                        "custom-regex": "^[1-9][0-9]*\\.?[0-9]*$",
+                                        "custom-regex-casesensitive": "",
+                                        "mandatory": "true",
+                                        "message": "*invalid fee",
+                                        "type": "custom"
+                                    }
+                                },
+                                "fourthValidator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "secondValidator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "thirdValidator": {
+                                    "className": "",
+                                    "properties": {}
+                                }
+                            }
                         },
                         "value": "",
                         "workflowVariable": ""

@@ -16,16 +16,34 @@
         <Participant Id="participant4" Name="Participant 4">
             <ParticipantType Type="ROLE"/>
         </Participant>
-        <Participant Id="serReqForm_assp_applicant" Name="Applicant">
+        <Participant Id="process4_serReqForm_approver" Name="Approver">
             <ParticipantType Type="ROLE"/>
         </Participant>
-        <Participant Id="serReqForm_assp_applicant_hod" Name="Applicant's HOD">
+        <Participant Id="process4_serReqForm_applicant" Name="Applicant">
             <ParticipantType Type="ROLE"/>
         </Participant>
-        <Participant Id="serReqForm_assp_assignee" Name="Assignee">
+        <Participant Id="process5_process4_serReqForm_approver" Name="Approver">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="process5_process4_serReqForm_applicant" Name="Applicant">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="customer" Name="Customer">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="scheduler" Name="Scheduler">
             <ParticipantType Type="ROLE"/>
         </Participant>
         <Participant Id="inspector" Name="Inspector">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="customerRescheduleRequester" Name="Customer Re-schedule Requester">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="adminRescheduler" Name="Admin Re-Scheduler">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="compliance_nonCompliance" Name="Compliance-Noncompliance">
             <ParticipantType Type="ROLE"/>
         </Participant>
     </Participants>
@@ -41,21 +59,84 @@
                         <BasicType Type="STRING"/>
                     </DataType>
                 </DataField>
+                <DataField Id="paymentStatus" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="fastTrackPaymentStatus" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="serviceCategoryType" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="inspectionScheduledStatus" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="dateTimeTohideRescheduleLinkCustomer" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="inspectionStatus" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="inspectionreportStatus" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="drawingStatus" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
             </DataFields>
             <Activities>
-                <Activity Id="email_on_received" Name="Email on Received">
-                    <Implementation>
-                        <Tool Id="default_application"/>
-                    </Implementation>
-                    <Performer>serReqForm_applicant</Performer>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_applicant"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="144,40"/>
-                    </ExtendedAttributes>
-                </Activity>
                 <Activity Id="approval" Name="Approval">
                     <Implementation>
                         <No/>
+                    </Implementation>
+                    <Performer>serReqForm_approver</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="AND"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_approver"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="68.859375,44.9765625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="route1" Name="Route 1">
+                    <Route/>
+                    <Performer>serReqForm_approver</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition108"/>
+                                    <TransitionRef Id="transition107"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_approver"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="454.765625,43.88671875"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="update_status" Name="Update Record Status">
+                    <Implementation>
+                        <Tool Id="default_application"/>
                     </Implementation>
                     <Performer>serReqForm_approver</Performer>
                     <TransitionRestrictions>
@@ -65,12 +146,1894 @@
                     </TransitionRestrictions>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_approver"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="221.8055648803711,45.312489243164066"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="email_on_approved" Name="Email on Approved">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>serReqForm_approver</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_approver"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="675.625,154.1015625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="paymet" Name="Payment">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>customer</Performer>
+                    <Deadline Execution="ASYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(1*60000)); m;</DeadlineCondition>
+                        <ExceptionName>Amendment R-1</ExceptionName>
+                    </Deadline>
+                    <Deadline Execution="ASYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(2*60000)); m;</DeadlineCondition>
+                        <ExceptionName>Amendment R-2</ExceptionName>
+                    </Deadline>
+                    <Deadline Execution="ASYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(3*60000)); m;</DeadlineCondition>
+                        <ExceptionName>Amendment R-3</ExceptionName>
+                    </Deadline>
+                    <Deadline Execution="SYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(5*60000)); m;</DeadlineCondition>
+                        <ExceptionName>10-Days-Wait</ExceptionName>
+                    </Deadline>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition55"/>
+                                    <TransitionRef Id="transition61"/>
+                                    <TransitionRef Id="transition62"/>
+                                    <TransitionRef Id="transition63"/>
+                                    <TransitionRef Id="transition64"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customer"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="641.40625,239.39453125"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="paymentSuccess" Name="Email  Notify Payment Success">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>customer</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customer"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1065.234375,546.75"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="notfyPaymentFail" Name="Email Payment Fail">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>customer</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="AND"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customer"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="881.4791870117188,335.72917"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="inspectionSchedule" Name="Schedule">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>scheduler</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="scheduler"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1922.8125,26.937482988281204"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="notifySchedule" Name="Email Notify Inspection Scheduled">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>scheduler</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="AND">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition95"/>
+                                    <TransitionRef Id="transition103"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="scheduler"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="84.5390625,52.125"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="checkScheduled" Name="check scheduled">
+                    <Route/>
+                    <Performer>scheduler</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="scheduler"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1081.6875,42.703125"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="fastTrackPaymetEmail" Name="Email Notify FastTrack Payment Success">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>customer</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customer"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1618.546875,375.5625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="chekPaymentType" Name="FastTrack OR Normal">
+                    <Route/>
+                    <Performer>customer</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition22"/>
+                                    <TransitionRef Id="transition25"/>
+                                    <TransitionRef Id="transition36"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customer"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1098.729248046875,378.95835701171876"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="serviceCategory" Name="Check Service Category">
+                    <Route/>
+                    <Performer>customer</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition42"/>
+                                    <TransitionRef Id="transition44"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customer"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="967.8515625,244.375"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="notifyAmendment" Name="Email Notify Amendment Payment">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>customer</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customer"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="300.8125,366.1875135058594"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="amedmentRoute" Name="Amendment">
+                    <Route/>
+                    <Performer>customer</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition27"/>
+                                    <TransitionRef Id="transition60"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customer"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="686.8333740234375,368.20835701171876"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="paymentReminderAmedment3" Name="Email Amendment Payment Reminder 3">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>customer</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customer"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="198.9375,182.828125"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="paymentReminderAmedment2" Name="Email Amendment Payment Reminder  2">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>customer</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customer"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="195.890625,109.890625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="paymentReminderAmedment1" Name="Email Amendment Payment Reminder 1">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>customer</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customer"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="194.953125,34.515625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="paymentReminder2" Name="Email Payment Reminder 2">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>customer</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customer"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1550.71875,118.8046875"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="paymentReminder1" Name="Email Payment Reminder 1">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>customer</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customer"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1553.96875,32.375"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="paymentReminder3" Name="Email Payment Reminder 3">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>customer</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customer"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1555.9921875,204.8203125"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="setServiceActivityCategoryWokFlowVar" Name="Set WorkFlowVar Service Category">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>serReqForm_approver</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_approver"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="859.90234375,154.9609375"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="inspectorJobGenerateReport" Name="Generate Report">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>inspector</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="inspector"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="91.7109375,32.0625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="emailFullCompliance" Name="Full Compliance OFC Certificate Email">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1833.8958740234375,10.520826494140636"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="checkCompliance" Name="Check Compliance">
+                    <Route/>
+                    <Performer>inspector</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                            <Split Type="AND">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition48"/>
+                                    <TransitionRef Id="transition49"/>
+                                    <TransitionRef Id="transition73"/>
+                                    <TransitionRef Id="transition83"/>
+                                    <TransitionRef Id="transition118"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="inspector"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1139.9583740234375,65.89582649414064"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="customerReprotForm" Name="Upload Image(s)">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <Deadline Execution="ASYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(2*60000)); m;</DeadlineCondition>
+                        <ExceptionName>Partial-Compliance-R-1</ExceptionName>
+                    </Deadline>
+                    <Deadline Execution="ASYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(3*60000)); m;</DeadlineCondition>
+                        <ExceptionName>Partial-Compliance-R-2</ExceptionName>
+                    </Deadline>
+                    <Deadline Execution="ASYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(4*60000)); m;</DeadlineCondition>
+                        <ExceptionName>Partial-Compliance-R-3</ExceptionName>
+                    </Deadline>
+                    <Deadline Execution="SYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(9*60000)); m;</DeadlineCondition>
+                        <ExceptionName>10-Days-Wait</ExceptionName>
+                    </Deadline>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                            <Split Type="AND">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition54"/>
+                                    <TransitionRef Id="transition58"/>
+                                    <TransitionRef Id="transition65"/>
+                                    <TransitionRef Id="transition70"/>
+                                    <TransitionRef Id="transition71"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="498.890625,229.4296875"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="cancel_rescheduleActivity" Name="Call For Re-Schedule">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>customerRescheduleRequester</Performer>
+                    <Deadline Execution="SYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(10*60000)); m;</DeadlineCondition>
+                        <ExceptionName>Remove Cancel/Re-schedule</ExceptionName>
+                    </Deadline>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition68"/>
+                                    <TransitionRef Id="transition50"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customerRescheduleRequester"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="950.6249923706055,21.423619003906254"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="inspectionRescheduleActivity" Name="Re-Schedule">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>adminRescheduler</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="adminRescheduler"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1871.8750610351562,33.559010239257816"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="encepctionRescheduleEmail" Name="Re-Schedule Email">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>adminRescheduler</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition57"/>
+                                    <TransitionRef Id="transition105"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="adminRescheduler"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="876.7265625,46.4765625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="nonAmendmentPayment" Name="Payment">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>customer</Performer>
+                    <Deadline Execution="ASYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(2*60000)); m;</DeadlineCondition>
+                        <ExceptionName>Non-Amendment R-1</ExceptionName>
+                    </Deadline>
+                    <Deadline Execution="ASYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(3*60000)); m;</DeadlineCondition>
+                        <ExceptionName>Non-Amendment R-2</ExceptionName>
+                    </Deadline>
+                    <Deadline Execution="ASYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(4*60000)); m;</DeadlineCondition>
+                        <ExceptionName>Non-Amendment R-3</ExceptionName>
+                    </Deadline>
+                    <Deadline Execution="SYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(5*60000)); m;</DeadlineCondition>
+                        <ExceptionName>10-Day-Wait</ExceptionName>
+                    </Deadline>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition38"/>
+                                    <TransitionRef Id="transition37"/>
+                                    <TransitionRef Id="transition39"/>
+                                    <TransitionRef Id="transition41"/>
+                                    <TransitionRef Id="transition56"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customer"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1075.979248046875,224.97920051757814"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="wait10DaysAmenddments" Name="Job Void">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>customer</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customer"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="213,254.078125"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="wait10DaysNonAmenddments" Name="Job Void">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>customer</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customer"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1557.9609375,284.71875"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="endRescheduleRequest" Name="Route End Re-ScheduleTime">
+                    <Route/>
+                    <Performer>customerRescheduleRequester</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customerRescheduleRequester"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1324.921875,24.3515625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="activityReviewProofs" Name="Review Proofs">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="190.78125,929.3671875"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="clientRescheduleRequestEmail" Name="Client Re-Schedule Request Email">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>customerRescheduleRequester</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customerRescheduleRequester"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1034.90625,126.890625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="partialComplianceEmail" Name="Email Partial Compliance">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="543.9375,9.3984375"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="routeCheckPartialCompliance" Name="Check Partial Compliance">
+                    <Route/>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition53"/>
+                                    <TransitionRef Id="transition75"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="474.65625,935.1796875"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="partialComplianceR1" Name="Email Partial Compliance R-1">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="206.9765625,100.40625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="partialComplianceR2" Name="Email Partial Compliance R-2">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="206.9296875,181.59375"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="partialComplianceR3" Name="Email Partial Compliance R-3">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="197.953125,259.40625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="partialComplianceJobVoid" Name="Job Void">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="193.96875,333.4921875"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="partialComplianceTemOFC" Name="Partial Compliance Temp OFC Certificate Email">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="2015.859375,923.6015625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="jobClosed" Name="Job Closed">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>customer</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customer"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="157,472.640625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="fioutNonComplianceEmail" Name="EmailFit-out NON - Compliance">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="AND"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="753,70.453125"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="activityFitioutNonCompliance" Name="Make Payment">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <Deadline Execution="ASYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(2*60000)); m;</DeadlineCondition>
+                        <ExceptionName>Non-Compliance-R-1</ExceptionName>
+                    </Deadline>
+                    <Deadline Execution="ASYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(3*60000)); m;</DeadlineCondition>
+                        <ExceptionName>Non-Compliance-R-2</ExceptionName>
+                    </Deadline>
+                    <Deadline Execution="ASYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(4*60000)); m;</DeadlineCondition>
+                        <ExceptionName>Non-Compliance-R-3</ExceptionName>
+                    </Deadline>
+                    <Deadline Execution="SYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(8*60000)); m;</DeadlineCondition>
+                        <ExceptionName>10-Days-Wait</ExceptionName>
+                    </Deadline>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="AND">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition79"/>
+                                    <TransitionRef Id="transition80"/>
+                                    <TransitionRef Id="transition81"/>
+                                    <TransitionRef Id="transition82"/>
+                                    <TransitionRef Id="transition77"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="778.96875,235.4765625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="activityUploadDrawing" Name="Upload Drawing(s)">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <Deadline Execution="ASYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(1*60000)); m;</DeadlineCondition>
+                        <ExceptionName>Drawing R-1</ExceptionName>
+                    </Deadline>
+                    <Deadline Execution="ASYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(2*60000)); m;</DeadlineCondition>
+                        <ExceptionName>Drawing R-2</ExceptionName>
+                    </Deadline>
+                    <Deadline Execution="ASYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(3*60000)); m;</DeadlineCondition>
+                        <ExceptionName>Drawing R-3</ExceptionName>
+                    </Deadline>
+                    <Deadline Execution="SYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(6*60000)); m;</DeadlineCondition>
+                        <ExceptionName>10-Days-Wait</ExceptionName>
+                    </Deadline>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                            <Split Type="AND">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition85"/>
+                                    <TransitionRef Id="transition86"/>
+                                    <TransitionRef Id="transition87"/>
+                                    <TransitionRef Id="transition88"/>
+                                    <TransitionRef Id="transition78"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="774.8203125,481.171875"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="emailNonComplianceR1" Name="Email Non-Compliance R-1">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1008.96484375,93.4765625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="emailNonComplianceR2" Name="Email Non-Compliance R-2">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1008.96484375,175.68359375"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="emailNonComplianceR3" Name="Email Non-Compliance R-3">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1009.98046875,253.22265625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="nonComplianceJobVoid" Name="Job Void">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1011.9921875,327.71484375"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="checkNonCompliance" Name="Check Non-Compliance">
+                    <Route/>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition92"/>
+                                    <TransitionRef Id="transition93"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="583.7916717529297,883.3750287646485"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="emailUploadDrawingR1" Name="Email Upload Drawing R-1">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1013.0390625,405.515625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="emailUploadDrawingR2" Name="Email Upload Drawing R-2">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1012.03125,483.515625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="emailUploadDrawingR3" Name="Email Non-Compliance R-3">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1017.0234375,553.5234375"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="uploadDrawingJobVoid" Name="Job Void">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1017.0208435058594,623.8542005175782"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="activityReviewDrawings" Name="Review Drawings">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="778.9166870117188,636.8750020617675"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="emailFitoutCompliancePaymentInvoice" Name="Email Compliance Invoice">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="626.9097213745117,244.87848350585938"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="emailTempOFC" Name="Email Temp OFC">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="777.9340744018555,316.059056015625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="routeReInspection" Name="Route Re-Inspection">
+                    <Route/>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="AND"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1941.9375,892.40625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="fullOFCCertificate" Name="Full OFC Certificate Email">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>customer</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customer"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="143.9765625,364.8984375"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="emailFitoutOtherNonCompliance" Name="Email Ohter Non Compliance">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1309.453125,36.8203125"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="activityOtherComplianceMakePayment" Name="Make Payment">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <Deadline Execution="ASYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(1*60000)); m;</DeadlineCondition>
+                        <ExceptionName>Other-Non-Compliance-R-1</ExceptionName>
+                    </Deadline>
+                    <Deadline Execution="ASYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(2*60000)); m;</DeadlineCondition>
+                        <ExceptionName>Other-Non-Compliance-R-2</ExceptionName>
+                    </Deadline>
+                    <Deadline Execution="ASYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(3*60000)); m;</DeadlineCondition>
+                        <ExceptionName>Other-Non-Compliance-R-3</ExceptionName>
+                    </Deadline>
+                    <Deadline Execution="SYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(6*60000)); m;</DeadlineCondition>
+                        <ExceptionName>10-Day-Wait</ExceptionName>
+                    </Deadline>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="AND">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition96"/>
+                                    <TransitionRef Id="transition97"/>
+                                    <TransitionRef Id="transition98"/>
+                                    <TransitionRef Id="transition99"/>
+                                    <TransitionRef Id="transition94"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1315.48828125,223.4765625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="emailOtherNonComplianceR1" Name="Email Other-Non_Compliance R-1">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1560.4921875,141.375"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="emailOtherNonComplianceR2" Name="Email Other-Non_Compliance R-2">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1555.5,215.8828125"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="emailOtherNonComplianceR3" Name="Email Other-Non_Compliance R-3">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1551.515625,300.890625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="jobVoidOtherNonCompliance" Name="Job Void">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1558.96484375,371.3671875"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="inprogress" Name="Update Status - In Progress">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>serReqForm_approver</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_approver"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="854.98046875,20.48828125"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="email_on_inprogress" Name="Email on In- Progress">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>serReqForm_approver</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_approver"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1363.4765625,65.3515625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="updatepaymentpending" Name="Update status - Payment Pending">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>serReqForm_approver</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_approver"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="510.99609375,153.49609375"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="approval_attachdocument" Name="Approval-Attach Document">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>serReqForm_approver</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_approver"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="223.96484375,237.96875"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="activity_attachdocument" Name="Attach Document">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>customer</Performer>
+                    <Deadline Execution="ASYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(5*60000)); m;</DeadlineCondition>
+                        <ExceptionName>Documents Non Complaint R-1</ExceptionName>
+                    </Deadline>
+                    <Deadline Execution="ASYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(7*60000)); m;</DeadlineCondition>
+                        <ExceptionName>Documents Non Complaint R-2</ExceptionName>
+                    </Deadline>
+                    <Deadline Execution="ASYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(10*60000)); m;</DeadlineCondition>
+                        <ExceptionName>Documents Non Complaint R-3</ExceptionName>
+                    </Deadline>
+                    <Deadline Execution="SYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(20*60000)); m;</DeadlineCondition>
+                        <ExceptionName>10-Days-Wait</ExceptionName>
+                    </Deadline>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="AND">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition111"/>
+                                    <TransitionRef Id="transition122"/>
+                                    <TransitionRef Id="transition123"/>
+                                    <TransitionRef Id="transition125"/>
+                                    <TransitionRef Id="transition124"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customer"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="636.953125,8.69140625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="activityReScheduleInspection" Name="Re-Schedule Inspection">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>adminRescheduler</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="adminRescheduler"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="2051.666748046875,80.27085701171876"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="activityOTherNonComplianceAmendmentPayment" Name="OFC Amendment Payment">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <Deadline Execution="ASYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(3*60000)); m;</DeadlineCondition>
+                        <ExceptionName>Fitout Non Compliance Amendment  R-1</ExceptionName>
+                    </Deadline>
+                    <Deadline Execution="ASYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(4*60000)); m;</DeadlineCondition>
+                        <ExceptionName>Fitout Non Compliance Amendment  R-2</ExceptionName>
+                    </Deadline>
+                    <Deadline Execution="ASYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(5*60000)); m;</DeadlineCondition>
+                        <ExceptionName>Fitout Non Compliance Amendment  R-3</ExceptionName>
+                    </Deadline>
+                    <Deadline Execution="SYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(10*60000)); m;</DeadlineCondition>
+                        <ExceptionName>Wait-10Days</ExceptionName>
+                    </Deadline>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="AND">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition119"/>
+                                    <TransitionRef Id="transition113"/>
+                                    <TransitionRef Id="transition115"/>
+                                    <TransitionRef Id="transition116"/>
+                                    <TransitionRef Id="transition100"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1279.94140625,509.08203125"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="emailFitoutNonComplianceAmendmentReminder1" Name="Fitout Non Compliance Amendment R-1">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1617.9375,458.109375"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="emailFitoutNonComplianceAmendmentReminder2" Name="Fitout Non Compliance Amendment R-2">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1614.9609375,533.8125"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="emailFitoutNonComplianceAmendmentReminder3" Name="Fitout Non Compliance Amendment R-3">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1620.9609375,608.3671875"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="jobVoidFitoutNonComplianceAmendment" Name="Job Void">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1630.9453125,681.609375"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="emailFitoutNonComplianceFullOFCCertificate" Name="Fitout Non-Compliance Extended OFC Certificate">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1280.83984375,727.3828125"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="jobClosedFitoutNonCompliance" Name="Job Closed">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1287.71484375,838.57421875"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="jobClosedFullCompliance" Name="Job Closed">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="2014.96875,12.8671875"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="emailFitoutNonComplianceAmendmentPaymentReceived" Name="Email Fitoout Non Compliance Payment Recived">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>compliance_nonCompliance</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="compliance_nonCompliance"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1281.4453125,636.5234375"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="emailDocumentsNonComplaintR1" Name="Eamil Documents Non Complaint R-1">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>customer</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customer"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="859.9609375,105.78125"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="emailDocumentsNonComplaintR2" Name="Eamil Documents Non Complaint R-2">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>customer</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customer"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="736.9921875,154.27734375"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="emailDocumentsNonComplaintR3" Name="Eamil Documents Non Complaint R-3">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>customer</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customer"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="570.9375,144.98046875"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="jobVoidDocumentsNonComplaint" Name="Job Void">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>customer</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="customer"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="440.95703125,37.5"/>
+                    </ExtendedAttributes>
+                </Activity>
+            </Activities>
+            <Transitions>
+                <Transition From="approval" Id="transition2" To="update_status">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="update_status" Id="transition5" To="route1">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="paymentSuccess" Id="transition14" To="inspectionSchedule">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="inspectionSchedule" Id="transition10" To="checkScheduled">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="checkScheduled" Id="transition15" To="notifySchedule">
+                    <Condition Type="CONDITION">inspectionScheduledStatus === 'Inspection Scheduled'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;inspectionScheduledStatus&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Inspection Scheduled&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="chekPaymentType" Id="transition22" To="paymentSuccess">
+                    <Condition Type="CONDITION">fastTrackPaymentStatus === 'No'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;fastTrackPaymentStatus&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;No&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="amedmentRoute" Id="transition27" To="notifyAmendment">
+                    <Condition Type="CONDITION">paymentStatus === 'Payment Completed'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;paymentStatus&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Payment Completed&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="chekPaymentType" Id="transition25" To="notfyPaymentFail">
+                    <Condition Type="OTHERWISE"/>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="chekPaymentType" Id="transition36" To="fastTrackPaymetEmail">
+                    <Condition Type="CONDITION">fastTrackPaymentStatus === 'Yes'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;fastTrackPaymentStatus&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Yes&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="email_on_approved" Id="transition43" To="setServiceActivityCategoryWokFlowVar">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="notifyAmendment" Id="transition45" To="fullOFCCertificate">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="inspectorJobGenerateReport" Id="transition47" To="checkCompliance">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="checkCompliance" Id="transition48" To="emailFullCompliance">
+                    <Condition Type="CONDITION">inspectionreportStatus === 'Full Compliance'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;inspectionreportStatus&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Full Compliance&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="inspectionRescheduleActivity" Id="transition52" To="encepctionRescheduleEmail">
+                    <Condition Type="CONDITION">inspectionStatus === 'Inspection Scheduled'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;inspectionStatus&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Inspection Scheduled&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="serviceCategory" Id="transition42" To="paymet">
+                    <Condition Type="CONDITION">serviceCategoryType === 'Other Amendment' || serviceCategoryType === 'Location Amendment' || serviceCategoryType === 'Activity Amendment'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;||&quot;,&quot;variable&quot;:&quot;serviceCategoryType&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Other Amendment&quot;},{&quot;join&quot;:&quot;||&quot;,&quot;variable&quot;:&quot;serviceCategoryType&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Location Amendment&quot;},{&quot;join&quot;:&quot;||&quot;,&quot;variable&quot;:&quot;serviceCategoryType&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Activity Amendment&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="setServiceActivityCategoryWokFlowVar" Id="transition40" To="serviceCategory">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="serviceCategory" Id="transition44" To="nonAmendmentPayment">
+                    <Condition Type="OTHERWISE"/>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="paymet" Id="transition55" To="amedmentRoute">
+                    <Condition Type="CONDITION">paymentStatus === 'Payment Completed'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;paymentStatus&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Payment Completed&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="amedmentRoute" Id="transition60" To="notfyPaymentFail">
+                    <Condition Type="OTHERWISE"/>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="paymet" Id="transition61" To="wait10DaysAmenddments">
+                    <Condition Type="EXCEPTION">10-Days-Wait</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="paymet" Id="transition62" To="paymentReminderAmedment2">
+                    <Condition Type="EXCEPTION">Amendment R-2</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="paymet" Id="transition63" To="paymentReminderAmedment1">
+                    <Condition Type="EXCEPTION">Amendment R-1</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="paymet" Id="transition64" To="paymentReminderAmedment3">
+                    <Condition Type="EXCEPTION">Amendment R-3</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="nonAmendmentPayment" Id="transition38" To="paymentReminder1">
+                    <Condition Type="EXCEPTION">Non-Amendment R-1</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="nonAmendmentPayment" Id="transition37" To="paymentReminder2">
+                    <Condition Type="EXCEPTION">Non-Amendment R-2</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="nonAmendmentPayment" Id="transition39" To="paymentReminder3">
+                    <Condition Type="EXCEPTION">Non-Amendment R-3</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="nonAmendmentPayment" Id="transition41" To="chekPaymentType">
+                    <Condition Type="CONDITION">paymentStatus === 'Payment Completed'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;paymentStatus&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Payment Completed&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="nonAmendmentPayment" Id="transition56" To="wait10DaysNonAmenddments">
+                    <Condition Type="EXCEPTION">10-Day-Wait</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="encepctionRescheduleEmail" Id="transition57" To="inspectorJobGenerateReport">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="customerReprotForm" Id="transition54" To="activityReviewProofs">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;inspectionStatus&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Images Uploaded&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activityReviewProofs" Id="transition59" To="routeCheckPartialCompliance">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="cancel_rescheduleActivity" Id="transition68" To="clientRescheduleRequestEmail">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="clientRescheduleRequestEmail" Id="transition69" To="inspectionRescheduleActivity">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="checkCompliance" Id="transition49" To="partialComplianceEmail">
+                    <Condition Type="CONDITION">inspectionreportStatus === 'Partial Compliance'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;inspectionreportStatus&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Partial Compliance&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="partialComplianceEmail" Id="transition51" To="customerReprotForm">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;inspectionStatus&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Image(s) To-Be Uploaded&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="cancel_rescheduleActivity" Id="transition50" To="endRescheduleRequest">
+                    <Condition Type="EXCEPTION">Remove Cancel/Re-schedule</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="routeCheckPartialCompliance" Id="transition53" To="partialComplianceEmail">
+                    <Condition Type="CONDITION">inspectionreportStatus === 'Partial Compliance'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;inspectionreportStatus&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Partial Compliance&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="customerReprotForm" Id="transition58" To="partialComplianceR2">
+                    <Condition Type="EXCEPTION">Partial-Compliance-R-2</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="customerReprotForm" Id="transition65" To="partialComplianceR1">
+                    <Condition Type="EXCEPTION">Partial-Compliance-R-1</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="customerReprotForm" Id="transition70" To="partialComplianceR3">
+                    <Condition Type="EXCEPTION">Partial-Compliance-R-3</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="customerReprotForm" Id="transition71" To="partialComplianceJobVoid">
+                    <Condition Type="EXCEPTION">10-Days-Wait</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="routeCheckPartialCompliance" Id="transition75" To="partialComplianceTemOFC">
+                    <Condition Type="CONDITION">inspectionreportStatus === 'Full Compliance'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;inspectionreportStatus&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Full Compliance&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="fullOFCCertificate" Id="transition66" To="jobClosed">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="checkCompliance" Id="transition73" To="fioutNonComplianceEmail">
+                    <Condition Type="CONDITION">inspectionreportStatus === 'Fitout Non-Compliance'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;inspectionreportStatus&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Fitout Non-Compliance&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="fioutNonComplianceEmail" Id="transition76" To="activityFitioutNonCompliance">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activityFitioutNonCompliance" Id="transition79" To="emailNonComplianceR1">
+                    <Condition Type="EXCEPTION">Non-Compliance-R-1</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activityFitioutNonCompliance" Id="transition80" To="emailNonComplianceR2">
+                    <Condition Type="EXCEPTION">Non-Compliance-R-2</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activityFitioutNonCompliance" Id="transition81" To="emailNonComplianceR3">
+                    <Condition Type="EXCEPTION">Non-Compliance-R-3</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activityFitioutNonCompliance" Id="transition82" To="nonComplianceJobVoid">
+                    <Condition Type="EXCEPTION">10-Days-Wait</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activityUploadDrawing" Id="transition85" To="emailUploadDrawingR1">
+                    <Condition Type="EXCEPTION">Drawing R-1</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activityUploadDrawing" Id="transition86" To="emailUploadDrawingR2">
+                    <Condition Type="EXCEPTION">Drawing R-2</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activityUploadDrawing" Id="transition87" To="emailUploadDrawingR3">
+                    <Condition Type="EXCEPTION">Drawing R-3</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activityUploadDrawing" Id="transition88" To="uploadDrawingJobVoid">
+                    <Condition Type="EXCEPTION">10-Days-Wait</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activityReviewDrawings" Id="transition90" To="checkNonCompliance">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activityUploadDrawing" Id="transition78" To="activityReviewDrawings">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activityFitioutNonCompliance" Id="transition77" To="emailFitoutCompliancePaymentInvoice">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="emailFitoutCompliancePaymentInvoice" Id="transition89" To="emailTempOFC">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="emailTempOFC" Id="transition91" To="activityUploadDrawing">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="checkNonCompliance" Id="transition92" To="activityUploadDrawing">
+                    <Condition Type="CONDITION">drawingStatus === 'Non-Compliance'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;drawingStatus&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Non-Compliance&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="checkNonCompliance" Id="transition93" To="routeReInspection">
+                    <Condition Type="CONDITION">drawingStatus === 'Compliance'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;drawingStatus&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Compliance&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="checkCompliance" Id="transition83" To="emailFitoutOtherNonCompliance">
+                    <Condition Type="CONDITION">inspectionreportStatus === 'Other Non-Compliance'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;inspectionreportStatus&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Other Non-Compliance&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="emailFitoutOtherNonCompliance" Id="transition84" To="activityOtherComplianceMakePayment">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activityOtherComplianceMakePayment" Id="transition96" To="emailOtherNonComplianceR1">
+                    <Condition Type="EXCEPTION">Other-Non-Compliance-R-1</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activityOtherComplianceMakePayment" Id="transition97" To="emailOtherNonComplianceR2">
+                    <Condition Type="EXCEPTION">Other-Non-Compliance-R-2</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activityOtherComplianceMakePayment" Id="transition98" To="emailOtherNonComplianceR3">
+                    <Condition Type="EXCEPTION">Other-Non-Compliance-R-3</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activityOtherComplianceMakePayment" Id="transition99" To="jobVoidOtherNonCompliance">
+                    <Condition Type="EXCEPTION">10-Day-Wait</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="fastTrackPaymetEmail" Id="transition102" To="inspectionSchedule">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="notifySchedule" Id="transition95" To="inspectorJobGenerateReport">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="notifySchedule" Id="transition103" To="cancel_rescheduleActivity">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="encepctionRescheduleEmail" Id="transition105" To="cancel_rescheduleActivity">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="route1" Id="transition108" To="inprogress">
+                    <Condition Type="CONDITION">status === 'In-Progress'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;status&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;In-Progress&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="inprogress" Id="transition106" To="email_on_inprogress">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="route1" Id="transition107" To="updatepaymentpending">
+                    <Condition Type="CONDITION">status == "Approved"</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="updatepaymentpending" Id="transition109" To="email_on_approved">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="email_on_inprogress" Id="transition110" To="activity_attachdocument">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activity_attachdocument" Id="transition111" To="approval_attachdocument">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="approval_attachdocument" Id="transition112" To="update_status">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="routeReInspection" Id="transition114" To="activityReScheduleInspection">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activityOtherComplianceMakePayment" Id="transition94" To="activityReScheduleInspection">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activityReScheduleInspection" Id="transition104" To="encepctionRescheduleEmail">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="checkCompliance" Id="transition118" To="activityOTherNonComplianceAmendmentPayment">
+                    <Condition Type="CONDITION">drawingStatus === 'Compliance' &amp;&amp; inspectionreportStatus === 'Full Compliance'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;drawingStatus&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Compliance&quot;},{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;inspectionreportStatus&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Full Compliance&quot;}]"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activityOTherNonComplianceAmendmentPayment" Id="transition119" To="emailFitoutNonComplianceAmendmentReminder1">
+                    <Condition Type="EXCEPTION">Fitout Non Compliance Amendment  R-1</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activityOTherNonComplianceAmendmentPayment" Id="transition113" To="emailFitoutNonComplianceAmendmentReminder2">
+                    <Condition Type="EXCEPTION">Fitout Non Compliance Amendment  R-2</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activityOTherNonComplianceAmendmentPayment" Id="transition115" To="emailFitoutNonComplianceAmendmentReminder3">
+                    <Condition Type="EXCEPTION">Fitout Non Compliance Amendment  R-3</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activityOTherNonComplianceAmendmentPayment" Id="transition116" To="jobVoidFitoutNonComplianceAmendment">
+                    <Condition Type="EXCEPTION">Wait-10Days</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="emailFitoutNonComplianceFullOFCCertificate" Id="transition117" To="jobClosedFitoutNonCompliance">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="emailFullCompliance" Id="transition120" To="jobClosedFullCompliance">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="partialComplianceTemOFC" Id="transition121" To="jobClosedFullCompliance">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activityOTherNonComplianceAmendmentPayment" Id="transition100" To="emailFitoutNonComplianceAmendmentPaymentReceived">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="emailFitoutNonComplianceAmendmentPaymentReceived" Id="transition101" To="emailFitoutNonComplianceFullOFCCertificate">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activity_attachdocument" Id="transition122" To="jobVoidDocumentsNonComplaint">
+                    <Condition Type="EXCEPTION">10-Days-Wait</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activity_attachdocument" Id="transition123" To="emailDocumentsNonComplaintR3">
+                    <Condition Type="EXCEPTION">Documents Non Complaint R-3</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activity_attachdocument" Id="transition125" To="emailDocumentsNonComplaintR1">
+                    <Condition Type="EXCEPTION">Documents Non Complaint R-1</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activity_attachdocument" Id="transition124" To="emailDocumentsNonComplaintR2">
+                    <Condition Type="EXCEPTION">Documents Non Complaint R-2</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+            </Transitions>
+            <ExtendedAttributes>
+                <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="serReqForm_applicant;serReqForm_approver;customer;scheduler;customerRescheduleRequester;adminRescheduler;inspector;compliance_nonCompliance"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=serReqForm_applicant,CONNECTING_ACTIVITY_ID=approval,X_OFFSET=108,Y_OFFSET=43,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=customer,CONNECTING_ACTIVITY_ID=notfyPaymentFail,X_OFFSET=935,Y_OFFSET=463,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=customer,CONNECTING_ACTIVITY_ID=paymentReminderAmedment2,X_OFFSET=87,Y_OFFSET=121,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=customer,CONNECTING_ACTIVITY_ID=paymentReminderAmedment1,X_OFFSET=92,Y_OFFSET=49,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=customer,CONNECTING_ACTIVITY_ID=paymentReminder2,X_OFFSET=1756,Y_OFFSET=134,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=customer,CONNECTING_ACTIVITY_ID=paymentReminder1,X_OFFSET=1762,Y_OFFSET=48,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=customer,CONNECTING_ACTIVITY_ID=paymentReminder3,X_OFFSET=1751,Y_OFFSET=217,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=customer,CONNECTING_ACTIVITY_ID=paymentReminderAmedment3,X_OFFSET=90,Y_OFFSET=195,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=customer,CONNECTING_ACTIVITY_ID=wait10DaysAmenddments,X_OFFSET=89,Y_OFFSET=266,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=customer,CONNECTING_ACTIVITY_ID=wait10DaysNonAmenddments,X_OFFSET=1750,Y_OFFSET=303,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=customerRescheduleRequester,CONNECTING_ACTIVITY_ID=endRescheduleRequest,X_OFFSET=1716,Y_OFFSET=32,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=compliance_nonCompliance,CONNECTING_ACTIVITY_ID=partialComplianceR1,X_OFFSET=93,Y_OFFSET=110,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=compliance_nonCompliance,CONNECTING_ACTIVITY_ID=partialComplianceR2,X_OFFSET=90,Y_OFFSET=195,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=compliance_nonCompliance,CONNECTING_ACTIVITY_ID=partialComplianceR3,X_OFFSET=84,Y_OFFSET=270,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=compliance_nonCompliance,CONNECTING_ACTIVITY_ID=partialComplianceJobVoid,X_OFFSET=87,Y_OFFSET=342,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=customer,CONNECTING_ACTIVITY_ID=jobClosed,X_OFFSET=190,Y_OFFSET=591,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=compliance_nonCompliance,CONNECTING_ACTIVITY_ID=emailNonComplianceR1,X_OFFSET=1198,Y_OFFSET=103,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=compliance_nonCompliance,CONNECTING_ACTIVITY_ID=emailNonComplianceR2,X_OFFSET=1195,Y_OFFSET=186,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=compliance_nonCompliance,CONNECTING_ACTIVITY_ID=emailNonComplianceR3,X_OFFSET=1192,Y_OFFSET=265,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=compliance_nonCompliance,CONNECTING_ACTIVITY_ID=nonComplianceJobVoid,X_OFFSET=1189,Y_OFFSET=341,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=compliance_nonCompliance,CONNECTING_ACTIVITY_ID=emailUploadDrawingR1,X_OFFSET=1188,Y_OFFSET=418,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=compliance_nonCompliance,CONNECTING_ACTIVITY_ID=emailUploadDrawingR2,X_OFFSET=1191,Y_OFFSET=494,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=compliance_nonCompliance,CONNECTING_ACTIVITY_ID=emailUploadDrawingR3,X_OFFSET=1195,Y_OFFSET=564,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=compliance_nonCompliance,CONNECTING_ACTIVITY_ID=uploadDrawingJobVoid,X_OFFSET=1192,Y_OFFSET=634,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=compliance_nonCompliance,CONNECTING_ACTIVITY_ID=emailOtherNonComplianceR1,X_OFFSET=1750,Y_OFFSET=151,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=compliance_nonCompliance,CONNECTING_ACTIVITY_ID=emailOtherNonComplianceR2,X_OFFSET=1745,Y_OFFSET=229,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=compliance_nonCompliance,CONNECTING_ACTIVITY_ID=emailOtherNonComplianceR3,X_OFFSET=1751,Y_OFFSET=309,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=compliance_nonCompliance,CONNECTING_ACTIVITY_ID=jobVoidOtherNonCompliance,X_OFFSET=1751,Y_OFFSET=380,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=compliance_nonCompliance,CONNECTING_ACTIVITY_ID=emailFitoutNonComplianceAmendmentReminder1,X_OFFSET=1788,Y_OFFSET=468,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=compliance_nonCompliance,CONNECTING_ACTIVITY_ID=emailFitoutNonComplianceAmendmentReminder2,X_OFFSET=1788,Y_OFFSET=544,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=compliance_nonCompliance,CONNECTING_ACTIVITY_ID=emailFitoutNonComplianceAmendmentReminder3,X_OFFSET=1791,Y_OFFSET=616,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=compliance_nonCompliance,CONNECTING_ACTIVITY_ID=jobVoidFitoutNonComplianceAmendment,X_OFFSET=1831,Y_OFFSET=691,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=compliance_nonCompliance,CONNECTING_ACTIVITY_ID=jobClosedFitoutNonCompliance,X_OFFSET=1534,Y_OFFSET=849,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=compliance_nonCompliance,CONNECTING_ACTIVITY_ID=jobClosedFullCompliance,X_OFFSET=2196,Y_OFFSET=23,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=customer,CONNECTING_ACTIVITY_ID=emailDocumentsNonComplaintR1,X_OFFSET=1056,Y_OFFSET=117,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=customer,CONNECTING_ACTIVITY_ID=emailDocumentsNonComplaintR2,X_OFFSET=932,Y_OFFSET=168,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=customer,CONNECTING_ACTIVITY_ID=emailDocumentsNonComplaintR3,X_OFFSET=492,Y_OFFSET=120,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=customer,CONNECTING_ACTIVITY_ID=jobVoidDocumentsNonComplaint,X_OFFSET=355,Y_OFFSET=43,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+            </ExtendedAttributes>
+        </WorkflowProcess>
+        <WorkflowProcess Id="serviceRequestViewTool" Name="Service Request View Tool">
+            <ProcessHeader DurationUnit="h"/>
+            <DataFields>
+                <DataField Id="serReq_fees" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="companyName" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="serReqDmccSrNo" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+            </DataFields>
+            <Activities>
+                <Activity Id="serviceRequeestView" Name="Service Request View">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>participant4</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="participant4"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="174.98265838623047,31.076390000000004"/>
+                    </ExtendedAttributes>
+                </Activity>
+            </Activities>
+            <ExtendedAttributes>
+                <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="participant4"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=participant4,CONNECTING_ACTIVITY_ID=serviceRequeestView,X_OFFSET=74,Y_OFFSET=45,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=participant4,CONNECTING_ACTIVITY_ID=serviceRequeestView,X_OFFSET=380,Y_OFFSET=41,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+            </ExtendedAttributes>
+        </WorkflowProcess>
+        <WorkflowProcess Id="process4" Name="Service Request Form Approval Process(Copy)">
+            <ProcessHeader DurationUnit="h"/>
+            <DataFields>
+                <DataField Id="status" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+            </DataFields>
+            <Activities>
+                <Activity Id="approval" Name="Approval">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>process4_serReqForm_approver</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process4_serReqForm_approver"/>
                         <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="145,46"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="route1" Name="Route 1">
                     <Route/>
-                    <Performer>serReqForm_approver</Performer>
+                    <Performer>process4_serReqForm_approver</Performer>
                     <TransitionRestrictions>
                         <TransitionRestriction>
                             <Split Type="XOR">
@@ -82,7 +2045,7 @@
                         </TransitionRestriction>
                     </TransitionRestrictions>
                     <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_approver"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process4_serReqForm_approver"/>
                         <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="642,50"/>
                     </ExtendedAttributes>
                 </Activity>
@@ -90,9 +2053,9 @@
                     <Implementation>
                         <Tool Id="default_application"/>
                     </Implementation>
-                    <Performer>serReqForm_approver</Performer>
+                    <Performer>process4_serReqForm_approver</Performer>
                     <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_approver"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process4_serReqForm_approver"/>
                         <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="396,45"/>
                     </ExtendedAttributes>
                 </Activity>
@@ -100,9 +2063,9 @@
                     <Implementation>
                         <Tool Id="default_application"/>
                     </Implementation>
-                    <Performer>serReqForm_approver</Performer>
+                    <Performer>process4_serReqForm_approver</Performer>
                     <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_approver"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process4_serReqForm_approver"/>
                         <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="891,6"/>
                     </ExtendedAttributes>
                 </Activity>
@@ -110,19 +2073,14 @@
                     <Implementation>
                         <Tool Id="default_application"/>
                     </Implementation>
-                    <Performer>serReqForm_approver</Performer>
+                    <Performer>process4_serReqForm_approver</Performer>
                     <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_approver"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process4_serReqForm_approver"/>
                         <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="891,119"/>
                     </ExtendedAttributes>
                 </Activity>
             </Activities>
             <Transitions>
-                <Transition From="email_on_received" Id="transition1" To="approval">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                    </ExtendedAttributes>
-                </Transition>
                 <Transition From="approval" Id="transition2" To="update_status">
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
@@ -147,50 +2105,13 @@
                 </Transition>
             </Transitions>
             <ExtendedAttributes>
-                <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="serReqForm_applicant;serReqForm_approver"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=serReqForm_applicant,CONNECTING_ACTIVITY_ID=email_on_received,X_OFFSET=55,Y_OFFSET=51,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=serReqForm_approver,CONNECTING_ACTIVITY_ID=email_on_approved,X_OFFSET=1101,Y_OFFSET=19,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=serReqForm_approver,CONNECTING_ACTIVITY_ID=email_on_rejected,X_OFFSET=1101,Y_OFFSET=132,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="process4_serReqForm_applicant;process4_serReqForm_approver"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=process4_serReqForm_approver,CONNECTING_ACTIVITY_ID=email_on_approved,X_OFFSET=1101,Y_OFFSET=19,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=process4_serReqForm_approver,CONNECTING_ACTIVITY_ID=email_on_rejected,X_OFFSET=1101,Y_OFFSET=132,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=process4_serReqForm_applicant,CONNECTING_ACTIVITY_ID=approval,X_OFFSET=60,Y_OFFSET=59,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
             </ExtendedAttributes>
         </WorkflowProcess>
-        <WorkflowProcess Id="serviceRequestViewTool" Name="Service Request View Tool">
-            <ProcessHeader DurationUnit="h"/>
-            <DataFields>
-                <DataField Id="serReqTotAmt" IsArray="FALSE">
-                    <DataType>
-                        <BasicType Type="STRING"/>
-                    </DataType>
-                </DataField>
-                <DataField Id="companyName" IsArray="FALSE">
-                    <DataType>
-                        <BasicType Type="STRING"/>
-                    </DataType>
-                </DataField>
-                <DataField Id="serReqDmccSrNo" IsArray="FALSE">
-                    <DataType>
-                        <BasicType Type="STRING"/>
-                    </DataType>
-                </DataField>
-            </DataFields>
-            <Activities>
-                <Activity Id="tool1" Name="Tool 1">
-                    <Implementation>
-                        <Tool Id="default_application"/>
-                    </Implementation>
-                    <Performer>participant4</Performer>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="participant4"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="174.98265838623047,31.076390000000004"/>
-                    </ExtendedAttributes>
-                </Activity>
-            </Activities>
-            <ExtendedAttributes>
-                <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="participant4"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=participant4,CONNECTING_ACTIVITY_ID=tool1,X_OFFSET=74,Y_OFFSET=45,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=participant4,CONNECTING_ACTIVITY_ID=tool1,X_OFFSET=380,Y_OFFSET=41,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
-            </ExtendedAttributes>
-        </WorkflowProcess>
-        <WorkflowProcess Id="serReqForm_assignment_process" Name="Service Request Form Assignment Process">
+        <WorkflowProcess Id="process5" Name="Service Request Form Approval Process(Copy)(Copy)">
             <ProcessHeader DurationUnit="h"/>
             <DataFields>
                 <DataField Id="status" IsArray="FALSE">
@@ -198,474 +2119,101 @@
                         <BasicType Type="STRING"/>
                     </DataType>
                 </DataField>
-                <DataField Id="assignee" IsArray="FALSE">
-                    <DataType>
-                        <BasicType Type="STRING"/>
-                    </DataType>
-                </DataField>
-                <DataField Id="duedate" IsArray="FALSE">
-                    <DataType>
-                        <BasicType Type="STRING"/>
-                    </DataType>
-                </DataField>
             </DataFields>
             <Activities>
-                <Activity Id="assign" Name="Assign">
+                <Activity Id="approval" Name="Approval">
                     <Implementation>
                         <No/>
                     </Implementation>
-                    <Performer>serReqForm_assp_applicant_hod</Performer>
+                    <Performer>process5_process4_serReqForm_approver</Performer>
                     <TransitionRestrictions>
                         <TransitionRestriction>
                             <Join Type="XOR"/>
                         </TransitionRestriction>
                     </TransitionRestrictions>
                     <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_assp_applicant_hod"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="183,23"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process5_process4_serReqForm_approver"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="145,46"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="route1" Name="Route 1">
                     <Route/>
-                    <Performer>serReqForm_assp_applicant_hod</Performer>
+                    <Performer>process5_process4_serReqForm_approver</Performer>
                     <TransitionRestrictions>
                         <TransitionRestriction>
                             <Split Type="XOR">
-                                <TransitionRefs>
-                                    <TransitionRef Id="transition24"/>
-                                    <TransitionRef Id="transition31"/>
-                                </TransitionRefs>
-                            </Split>
-                        </TransitionRestriction>
-                    </TransitionRestrictions>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_assp_applicant_hod"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="415,27"/>
-                    </ExtendedAttributes>
-                </Activity>
-                <Activity Id="resolve" Name="Resolve">
-                    <Implementation>
-                        <No/>
-                    </Implementation>
-                    <Performer>serReqForm_assp_assignee</Performer>
-                    <Deadline Execution="SYNCHR">
-                        <DeadlineCondition>var d = new java.text.SimpleDateFormat('dd/MM/yyyy'); d.parse(duedate);</DeadlineCondition>
-                        <ExceptionName>due</ExceptionName>
-                    </Deadline>
-                    <TransitionRestrictions>
-                        <TransitionRestriction>
-                            <Join Type="XOR"/>
-                            <Split Type="AND">
                                 <TransitionRefs>
                                     <TransitionRef Id="transition6"/>
-                                    <TransitionRef Id="transition27"/>
+                                    <TransitionRef Id="transition7"/>
                                 </TransitionRefs>
                             </Split>
                         </TransitionRestriction>
                     </TransitionRestrictions>
                     <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_assp_assignee"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1151.3099670410156,302.51995849609375"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process5_process4_serReqForm_approver"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="642,50"/>
                     </ExtendedAttributes>
                 </Activity>
-                <Activity Id="clarify" Name="Clarify">
-                    <Implementation>
-                        <No/>
-                    </Implementation>
-                    <Performer>serReqForm_assp_applicant</Performer>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_assp_applicant"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="679.3200073242187,29"/>
-                    </ExtendedAttributes>
-                </Activity>
-                <Activity Id="route2" Name="Route 2">
-                    <Route/>
-                    <Performer>serReqForm_assp_assignee</Performer>
-                    <TransitionRestrictions>
-                        <TransitionRestriction>
-                            <Split Type="XOR">
-                                <TransitionRefs>
-                                    <TransitionRef Id="transition14"/>
-                                    <TransitionRef Id="transition25"/>
-                                    <TransitionRef Id="transition29"/>
-                                    <TransitionRef Id="transition34"/>
-                                </TransitionRefs>
-                            </Split>
-                        </TransitionRestriction>
-                    </TransitionRestrictions>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_assp_assignee"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="772.97998046875,247.81997680664062"/>
-                    </ExtendedAttributes>
-                </Activity>
-                <Activity Id="route3" Name="Route 3">
-                    <Route/>
-                    <Performer>serReqForm_assp_applicant</Performer>
-                    <TransitionRestrictions>
-                        <TransitionRestriction>
-                            <Split Type="XOR">
-                                <TransitionRefs>
-                                    <TransitionRef Id="transition16"/>
-                                    <TransitionRef Id="transition18"/>
-                                </TransitionRefs>
-                            </Split>
-                        </TransitionRestriction>
-                    </TransitionRestrictions>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_assp_applicant"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1165.4899597167968,39"/>
-                    </ExtendedAttributes>
-                </Activity>
-                <Activity Id="verify" Name="Verify">
-                    <Implementation>
-                        <No/>
-                    </Implementation>
-                    <Performer>serReqForm_assp_applicant</Performer>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_assp_applicant"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="997.949951171875,27"/>
-                    </ExtendedAttributes>
-                </Activity>
-                <Activity Id="resolved_notification" Name="Resolved Notification">
+                <Activity Id="update_status" Name="Update Record Status">
                     <Implementation>
                         <Tool Id="default_application"/>
                     </Implementation>
-                    <Performer>serReqForm_assp_applicant</Performer>
+                    <Performer>process5_process4_serReqForm_approver</Performer>
                     <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_assp_applicant"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="841.9799499511719,27.969993591308593"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process5_process4_serReqForm_approver"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="396,45"/>
                     </ExtendedAttributes>
                 </Activity>
-                <Activity Id="reopened_notification" Name="Re-opened Notification">
+                <Activity Id="email_on_approved" Name="Email on Approved">
                     <Implementation>
                         <Tool Id="default_application"/>
                     </Implementation>
-                    <Performer>serReqForm_assp_applicant</Performer>
+                    <Performer>process5_process4_serReqForm_approver</Performer>
                     <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_assp_applicant"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1148.97998046875,134"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process5_process4_serReqForm_approver"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="891,6"/>
                     </ExtendedAttributes>
                 </Activity>
-                <Activity Id="closed_notification" Name="Closed Notification">
+                <Activity Id="email_on_rejected" Name="Email on Rejected">
                     <Implementation>
                         <Tool Id="default_application"/>
                     </Implementation>
-                    <Performer>serReqForm_assp_applicant</Performer>
+                    <Performer>process5_process4_serReqForm_approver</Performer>
                     <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_assp_applicant"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1295,30"/>
-                    </ExtendedAttributes>
-                </Activity>
-                <Activity Id="new_submission_notification" Name="New Submission Notification">
-                    <Implementation>
-                        <Tool Id="default_application"/>
-                    </Implementation>
-                    <Performer>serReqForm_assp_applicant</Performer>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_assp_applicant"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="169,30"/>
-                    </ExtendedAttributes>
-                </Activity>
-                <Activity Id="clarification_needed_notification" Name="Clarification Needed Notification">
-                    <Implementation>
-                        <Tool Id="default_application"/>
-                    </Implementation>
-                    <Performer>serReqForm_assp_applicant</Performer>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_assp_applicant"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="607.9199981689453,153.5"/>
-                    </ExtendedAttributes>
-                </Activity>
-                <Activity Id="updated_notification" Name="Updated Notification">
-                    <Implementation>
-                        <Tool Id="default_application"/>
-                    </Implementation>
-                    <Performer>serReqForm_assp_applicant</Performer>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_assp_applicant"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="731.9099731445312,154.5"/>
-                    </ExtendedAttributes>
-                </Activity>
-                <Activity Id="new_assignment_notification" Name="New Assignment Notification">
-                    <Implementation>
-                        <Tool Id="default_application"/>
-                    </Implementation>
-                    <Performer>serReqForm_assp_assignee</Performer>
-                    <TransitionRestrictions>
-                        <TransitionRestriction>
-                            <Join Type="XOR"/>
-                        </TransitionRestriction>
-                    </TransitionRestrictions>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_assp_assignee"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="380,275.98997497558593"/>
-                    </ExtendedAttributes>
-                </Activity>
-                <Activity Id="assignment_due_notification" Name="Assignment Due Notification">
-                    <Implementation>
-                        <Tool Id="default_application"/>
-                    </Implementation>
-                    <Performer>serReqForm_assp_assignee</Performer>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_assp_assignee"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="152,336.52996826171875"/>
-                    </ExtendedAttributes>
-                </Activity>
-                <Activity Id="assignment_rejected_notification" Name="Assignment Rejected Notification">
-                    <Implementation>
-                        <Tool Id="default_application"/>
-                    </Implementation>
-                    <Performer>serReqForm_assp_assignee</Performer>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_assp_assignee"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="228.99000549316406,230.5"/>
-                    </ExtendedAttributes>
-                </Activity>
-                <Activity Id="rejected_notification" Name="Rejected Notification">
-                    <Implementation>
-                        <Tool Id="default_application"/>
-                    </Implementation>
-                    <Performer>serReqForm_assp_applicant</Performer>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_assp_applicant"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="387,26"/>
-                    </ExtendedAttributes>
-                </Activity>
-                <Activity Id="activity_trail_update" Name="Activity Trail Update for Due Assignment">
-                    <Implementation>
-                        <Tool Id="default_application"/>
-                    </Implementation>
-                    <Performer>serReqForm_assp_assignee</Performer>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="serReqForm_assp_assignee"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="151,96.510009765625"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="process5_process4_serReqForm_approver"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="891,119"/>
                     </ExtendedAttributes>
                 </Activity>
             </Activities>
             <Transitions>
-                <Transition From="assign" Id="transition2" To="route1">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="resolve" Id="transition6" To="route2">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="verify" Id="transition10" To="route3">
+                <Transition From="approval" Id="transition2" To="update_status">
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                     </ExtendedAttributes>
                 </Transition>
-                <Transition From="route2" Id="transition14" To="resolved_notification">
-                    <Condition Type="CONDITION">status === 'Resolved'</Condition>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
-                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;status&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Resolved&quot;}]"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="resolved_notification" Id="transition15" To="verify">
+                <Transition From="update_status" Id="transition5" To="route1">
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                     </ExtendedAttributes>
                 </Transition>
-                <Transition From="route3" Id="transition16" To="reopened_notification">
-                    <Condition Type="CONDITION">status === 'Re-opened'</Condition>
+                <Transition From="route1" Id="transition6" To="email_on_approved">
+                    <Condition Type="CONDITION">status == "Approved"</Condition>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
-                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;status&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Re-opened&quot;}]"/>
                     </ExtendedAttributes>
                 </Transition>
-                <Transition From="reopened_notification" Id="transition17" To="resolve">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="route3" Id="transition18" To="closed_notification">
+                <Transition From="route1" Id="transition7" To="email_on_rejected">
                     <Condition Type="OTHERWISE"/>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                     </ExtendedAttributes>
                 </Transition>
-                <Transition From="new_submission_notification" Id="transition19" To="assign">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="clarify" Id="transition22" To="updated_notification">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="route1" Id="transition24" To="new_assignment_notification">
-                    <Condition Type="CONDITION">status === 'Assigned'</Condition>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
-                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;status&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Assigned&quot;}]"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="route2" Id="transition25" To="new_assignment_notification">
-                    <Condition Type="CONDITION">status === 'Re-assigned'</Condition>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
-                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;status&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Re-assigned&quot;}]"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="new_assignment_notification" Id="transition26" To="resolve">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="resolve" Id="transition27" To="assignment_due_notification">
-                    <Condition Type="EXCEPTION">due</Condition>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="route2" Id="transition29" To="assignment_rejected_notification">
-                    <Condition Type="CONDITION">status === 'Assignment Rejected'</Condition>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
-                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;status&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Assignment Rejected&quot;}]"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="assignment_rejected_notification" Id="transition30" To="assign">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="route1" Id="transition31" To="rejected_notification">
-                    <Condition Type="CONDITION">status === 'Rejected'</Condition>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;status&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Rejected&quot;}]"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="assignment_due_notification" Id="transition33" To="activity_trail_update">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="activity_trail_update" Id="transition28" To="assign">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="route2" Id="transition34" To="clarification_needed_notification">
-                    <Condition Type="CONDITION">status === 'Clarification Needed'</Condition>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
-                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;status&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;Clarification Needed&quot;}]"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="updated_notification" Id="transition35" To="resolve">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="clarification_needed_notification" Id="transition23" To="clarify">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
-                    </ExtendedAttributes>
-                </Transition>
             </Transitions>
             <ExtendedAttributes>
-                <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="serReqForm_assp_applicant;serReqForm_assp_applicant_hod;serReqForm_assp_assignee"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=serReqForm_assp_applicant,CONNECTING_ACTIVITY_ID=new_submission_notification,X_OFFSET=66,Y_OFFSET=37,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=serReqForm_assp_applicant,CONNECTING_ACTIVITY_ID=closed_notification,X_OFFSET=1568,Y_OFFSET=48,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=serReqForm_assp_applicant,CONNECTING_ACTIVITY_ID=rejected_notification,X_OFFSET=579,Y_OFFSET=37,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
-            </ExtendedAttributes>
-        </WorkflowProcess>
-        <WorkflowProcess Id="inspectionReport" Name="Inspection Report Process">
-            <ProcessHeader DurationUnit="h"/>
-            <DataFields>
-                <DataField Id="status" IsArray="FALSE">
-                    <DataType>
-                        <BasicType Type="STRING"/>
-                    </DataType>
-                </DataField>
-            </DataFields>
-            <Activities>
-                <Activity Id="saveReport" Name="Save Report">
-                    <Implementation>
-                        <No/>
-                    </Implementation>
-                    <Performer>inspector</Performer>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="inspector"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="184,33"/>
-                    </ExtendedAttributes>
-                </Activity>
-                <Activity Id="reportSaved" Name="reportSaved">
-                    <Implementation>
-                        <Tool Id="default_application"/>
-                    </Implementation>
-                    <Performer>inspector</Performer>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="inspector"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="454,35"/>
-                    </ExtendedAttributes>
-                </Activity>
-                <Activity Id="checkstatus" Name="Report Status">
-                    <Route/>
-                    <Performer>inspector</Performer>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="inspector"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="714,39.000003051757815"/>
-                    </ExtendedAttributes>
-                </Activity>
-                <Activity Id="sendEmail" Name="Send Email">
-                    <Implementation>
-                        <Tool Id="default_application"/>
-                    </Implementation>
-                    <Performer>inspector</Performer>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="inspector"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="865,4.200000000000003"/>
-                    </ExtendedAttributes>
-                </Activity>
-            </Activities>
-            <Transitions>
-                <Transition From="saveReport" Id="transition1" To="reportSaved">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="reportSaved" Id="transition2" To="checkstatus">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="checkstatus" Id="transition4" To="sendEmail">
-                    <Condition Type="CONDITION">status === 'completed'</Condition>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                        <ExtendedAttribute Name="PBUILDER_TRANSITION_CONDITIONS" Value="[{&quot;join&quot;:&quot;&amp;&amp;&quot;,&quot;variable&quot;:&quot;status&quot;,&quot;operator&quot;:&quot;===&quot;,&quot;value&quot;:&quot;completed&quot;}]"/>
-                    </ExtendedAttributes>
-                </Transition>
-            </Transitions>
-            <ExtendedAttributes>
-                <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="inspector"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=inspector,CONNECTING_ACTIVITY_ID=saveReport,X_OFFSET=75,Y_OFFSET=46,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=inspector,CONNECTING_ACTIVITY_ID=sendEmail,X_OFFSET=1254,Y_OFFSET=34,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=inspector,CONNECTING_ACTIVITY_ID=checkstatus,X_OFFSET=943,Y_OFFSET=97,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="process5_process4_serReqForm_applicant;process5_process4_serReqForm_approver"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=process5_process4_serReqForm_approver,CONNECTING_ACTIVITY_ID=email_on_approved,X_OFFSET=1101,Y_OFFSET=19,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=process5_process4_serReqForm_approver,CONNECTING_ACTIVITY_ID=email_on_rejected,X_OFFSET=1101,Y_OFFSET=132,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=process5_process4_serReqForm_applicant,CONNECTING_ACTIVITY_ID=approval,X_OFFSET=60,Y_OFFSET=59,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
             </ExtendedAttributes>
         </WorkflowProcess>
     </WorkflowProcesses>

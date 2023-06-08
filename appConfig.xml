@@ -1,4 +1,5 @@
 <appDefinition>
+   <appId>ofc_app</appId>
    <id>ofc_app</id>
    <version></version>
    <name>Operational Fitness Certificate</name>
@@ -30,41 +31,31 @@
          <appVersion>5</appVersion>
          <pluginName>Form Data Audit Trail</pluginName>
          <pluginDescription>Store audit trail of Form Data to app_form_data_audit_trail table.</pluginDescription>
-         <pluginProperties>{&quot;captureLoad&quot;:&quot;true&quot;,&quot;captureSave&quot;:&quot;true&quot;,&quot;captureSavedDatainJson&quot;:&quot;true&quot;,&quot;captureDelete&quot;:&quot;true&quot;,&quot;captureMode&quot;:&quot;selected&quot;,&quot;formDefIds&quot;:&quot;serReqForm&quot;}</pluginProperties>
+         <pluginProperties>{&quot;captureLoad&quot;:&quot;true&quot;,&quot;captureSave&quot;:&quot;true&quot;,&quot;captureSavedDatainJson&quot;:&quot;true&quot;,&quot;captureDelete&quot;:&quot;true&quot;,&quot;captureMode&quot;:&quot;selected&quot;,&quot;formDefIds&quot;:&quot;insp_review_proof;serReqForm&quot;}</pluginProperties>
       </pluginDefaultProperties>
    </pluginDefaultPropertiesList>
    <environmentVariableList>
       <environmentVariable>
          <id>counter</id>
-         <appId>ofc_app</appId>
-         <appVersion>5</appVersion>
-         <value>5</value>
+         <value>6</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
       <environmentVariable>
          <id>ofc_serviceReq_form_assp_counter</id>
-         <appId>ofc_app</appId>
-         <appVersion>5</appVersion>
          <value>5</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
       <environmentVariable>
          <id>PERMISSION_</id>
-         <appId>ofc_app</appId>
-         <appVersion>5</appVersion>
          <remarks>permissionRequest:8C13941FFEEB4033B804D5F2D89B4827</remarks>
       </environmentVariable>
       <environmentVariable>
          <id>serReqForm_assp_counter</id>
-         <appId>ofc_app</appId>
-         <appVersion>5</appVersion>
          <value>6</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
       <environmentVariable>
          <id>serviceRequestView_assp_counter</id>
-         <appId>ofc_app</appId>
-         <appVersion>5</appVersion>
          <value>2</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
@@ -72,5 +63,10 @@
    <messageList/>
    <resourceList/>
    <license>QAzPBJl5PamQ03yarC2D5tEJktpiORMM11qkIqc2hGQgt/NsaVpwqA==</license>
-   <description>cloud version 1 - 01-Mar-2023 </description>
+   <description>09-May-2023 UAT Released
+
+With whole workflow process and audit trail
+
+
+</description>
 </appDefinition>

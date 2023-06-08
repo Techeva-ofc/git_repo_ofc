@@ -19,8 +19,12 @@
                         "storeNumeric": "",
                         "style": "",
                         "validator": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "Please enter Company Name",
+                                "type": ""
+                            }
                         },
                         "value": "",
                         "workflowVariable": ""
@@ -32,7 +36,7 @@
                         "encryption": "",
                         "id": "ownerFirstName",
                         "label": "Owner First Name",
-                        "maxlength": "",
+                        "maxlength": "50",
                         "placeholder": "",
                         "readonly": "",
                         "readonlyLabel": "",
@@ -40,8 +44,12 @@
                         "storeNumeric": "",
                         "style": "",
                         "validator": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "Please enter Owner First Name",
+                                "type": "alphanumeric"
+                            }
                         },
                         "value": "",
                         "workflowVariable": ""
@@ -53,7 +61,7 @@
                         "encryption": "",
                         "id": "ownerLastName",
                         "label": "Owner Last Name",
-                        "maxlength": "",
+                        "maxlength": "50",
                         "placeholder": "",
                         "readonly": "",
                         "readonlyLabel": "",
@@ -61,8 +69,12 @@
                         "storeNumeric": "",
                         "style": "",
                         "validator": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "Please enter Owner Last Name",
+                                "type": "alphanumeric"
+                            }
                         },
                         "value": "",
                         "workflowVariable": ""
@@ -90,39 +102,13 @@
                     }
                 },
                 {
-                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "className": "org.joget.plugin.enterprise.MultiSelectBox",
                     "properties": {
                         "controlField": "",
                         "id": "compActivity",
                         "label": "Activity",
-                        "multiple": "",
-                        "options": [
-                            {
-                                "grouping": "",
-                                "label": "Activity1",
-                                "value": "activity1"
-                            },
-                            {
-                                "grouping": "",
-                                "label": "Activity2",
-                                "value": "activity2"
-                            },
-                            {
-                                "grouping": "",
-                                "label": "Activity3",
-                                "value": "activity3"
-                            },
-                            {
-                                "grouping": "",
-                                "label": "Activity4",
-                                "value": "activity4"
-                            },
-                            {
-                                "grouping": "",
-                                "label": "Activity5",
-                                "value": "activity5"
-                            }
-                        ],
+                        "multiple": "true",
+                        "options": [],
                         "optionsBinder": {
                             "className": "org.joget.apps.form.lib.FormOptionsBinder",
                             "properties": {
@@ -134,17 +120,21 @@
                                 "groupingColumn": "",
                                 "idColumn": "",
                                 "labelColumn": "activityName",
-                                "useAjax": "true"
+                                "useAjax": ""
                             }
                         },
                         "readonly": "",
                         "readonlyLabel": "",
-                        "size": "",
                         "validator": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "Please choose at least one Activity",
+                                "type": ""
+                            }
                         },
                         "value": "",
+                        "width": "40%",
                         "workflowVariable": ""
                     }
                 },
@@ -240,8 +230,12 @@
                         "storeNumeric": "",
                         "style": "",
                         "validator": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "Please enter valid Mobile Number",
+                                "type": "numeric"
+                            }
                         },
                         "value": "",
                         "workflowVariable": ""
@@ -274,7 +268,7 @@
                         "encryption": "",
                         "id": "emailId",
                         "label": "Email Id",
-                        "maxlength": "",
+                        "maxlength": "50",
                         "placeholder": "xyz@gmail.com",
                         "readonly": "",
                         "readonlyLabel": "",
@@ -282,8 +276,12 @@
                         "storeNumeric": "",
                         "style": "",
                         "validator": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "Please enter valid email Id",
+                                "type": "email"
+                            }
                         },
                         "value": "",
                         "workflowVariable": ""
@@ -336,8 +334,12 @@
                         "readonlyLabel": "",
                         "size": "",
                         "validator": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "Please choose Location",
+                                "type": ""
+                            }
                         },
                         "value": "",
                         "workflowVariable": ""

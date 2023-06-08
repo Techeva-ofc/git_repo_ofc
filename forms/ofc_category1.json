@@ -6,27 +6,35 @@
             "className": "org.joget.apps.form.model.Column",
             "elements": [
                 {
-                    "className": "org.joget.apps.form.lib.TextField",
+                    "className": "org.joget.plugin.enterprise.CalculationField",
                     "properties": {
-                        "encryption": "",
-                        "id": "serReqTotAmt",
-                        "label": "Service Category Total(VAT Inclusive)",
-                        "maxlength": "",
+                        "equation": "(Service Category Total-VAT)",
+                        "hidden": "",
+                        "id": "serReq_fees",
+                        "label": "Service Category Fee",
                         "numOfDecimal": "2",
-                        "placeholder": "",
                         "postfix": "",
                         "prefix": "",
-                        "readonly": "",
                         "readonlyLabel": "",
-                        "size": "",
-                        "storeNumeric": "true",
+                        "storeNumeric": "",
                         "style": "us",
                         "useThousandSeparator": "",
                         "validator": {
                             "className": "",
                             "properties": {}
                         },
-                        "value": "",
+                        "variables": [
+                            {
+                                "fieldId": "serReqTotAmt",
+                                "operation": "sum",
+                                "variableName": "Service Category Total"
+                            },
+                            {
+                                "fieldId": "serReq_vat",
+                                "operation": "sum",
+                                "variableName": "VAT"
+                            }
+                        ],
                         "workflowVariable": ""
                     }
                 },
@@ -57,35 +65,27 @@
                     }
                 },
                 {
-                    "className": "org.joget.plugin.enterprise.CalculationField",
+                    "className": "org.joget.apps.form.lib.TextField",
                     "properties": {
-                        "equation": "(Service Category Total-VAT)",
-                        "hidden": "",
-                        "id": "serReq_fees",
-                        "label": "Service Category Fee",
+                        "encryption": "",
+                        "id": "serReqTotAmt",
+                        "label": "Service Category Total(VAT Inclusive)",
+                        "maxlength": "",
                         "numOfDecimal": "2",
+                        "placeholder": "",
                         "postfix": "",
                         "prefix": "",
+                        "readonly": "",
                         "readonlyLabel": "",
-                        "storeNumeric": "",
+                        "size": "",
+                        "storeNumeric": "true",
                         "style": "us",
                         "useThousandSeparator": "",
                         "validator": {
                             "className": "",
                             "properties": {}
                         },
-                        "variables": [
-                            {
-                                "fieldId": "serReqTotAmt",
-                                "operation": "sum",
-                                "variableName": "Service Category Total"
-                            },
-                            {
-                                "fieldId": "serReq_vat",
-                                "operation": "sum",
-                                "variableName": "VAT"
-                            }
-                        ],
+                        "value": "0.00",
                         "workflowVariable": ""
                     }
                 }

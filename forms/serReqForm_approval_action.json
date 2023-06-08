@@ -50,8 +50,8 @@
                             },
                             {
                                 "grouping": "",
-                                "label": "Rejected",
-                                "value": "Rejected"
+                                "label": "In-Progress",
+                                "value": "In-Progress"
                             }
                         ],
                         "optionsBinder": {

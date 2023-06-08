@@ -18,8 +18,42 @@
                     "storeNumeric": "",
                     "style": "",
                     "validator": {
-                        "className": "",
-                        "properties": {}
+                        "className": "org.joget.marketplace.MultiFormValidator",
+                        "properties": {
+                            "fifthValidator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "firstValidator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "custom-regex": "^[a-zA-Z][a-zA-Z\\s\\W]*$",
+                                    "custom-regex-casesensitive": "",
+                                    "mandatory": "true",
+                                    "message": "must starts with alphabet, numbers not allowed",
+                                    "type": "custom"
+                                }
+                            },
+                            "fourthValidator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "secondValidator": {
+                                "className": "org.joget.apps.form.lib.DuplicateValueValidator",
+                                "properties": {
+                                    "errorDuplicateMsg": "Activity already exists!",
+                                    "errorFormatMsg": "",
+                                    "fieldId": "activityName",
+                                    "formDefId": "ofc_activity_form",
+                                    "mandatory": "true",
+                                    "regex": ""
+                                }
+                            },
+                            "thirdValidator": {
+                                "className": "",
+                                "properties": {}
+                            }
+                        }
                     },
                     "value": "",
                     "workflowVariable": ""

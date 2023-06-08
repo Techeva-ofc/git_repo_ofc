@@ -88,64 +88,44 @@
     "considerFilterWhenGetTotal": "",
     "description": "",
     "disableResponsive": "",
-    "filters": [
-        {
-            "datalist_type": "filter",
-            "filterParamName": "d-7527271-fn_checkListTypeData",
-            "hidden": "",
-            "id": "filter_2",
-            "label": "CheckList Type",
-            "name": "checkListTypeData",
-            "type": {
-                "className": "org.joget.plugin.enterprise.SelectBoxDataListFilterType",
-                "properties": {
-                    "controlField": "",
-                    "defaultValue": "",
-                    "multiple": "",
-                    "options": [],
-                    "optionsBinder": {
-                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
-                        "properties": {
-                            "addEmptyOption": "",
-                            "cacheInterval": "",
-                            "emptyLabel": "",
-                            "extraCondition": "",
-                            "formDefId": "checklistTypeFom",
-                            "groupingColumn": "",
-                            "idColumn": "",
-                            "labelColumn": "checklistType",
-                            "useAjax": ""
-                        }
-                    },
-                    "size": ""
-                }
-            }
-        },
-        {
-            "id": "filter_1",
-            "label": "Checkpoint Name",
-            "name": "checkpointName",
-            "type": {
-                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-                "properties": {}
-            }
-        },
-        {
-            "id": "filter_0",
-            "label": "Checkpoint Code",
-            "name": "checkpointCode",
-            "type": {
-                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-                "properties": {}
+    "filters": [{
+        "datalist_type": "filter",
+        "filterParamName": "d-7527271-fn_checkListTypeData",
+        "hidden": "",
+        "id": "filter_2",
+        "label": "All",
+        "name": "checkListTypeData",
+        "type": {
+            "className": "org.joget.plugin.enterprise.SelectBoxDataListFilterType",
+            "properties": {
+                "controlField": "",
+                "defaultValue": "",
+                "multiple": "",
+                "options": [],
+                "optionsBinder": {
+                    "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                    "properties": {
+                        "addEmptyOption": "",
+                        "cacheInterval": "",
+                        "emptyLabel": "",
+                        "extraCondition": "",
+                        "formDefId": "checklistTypeFom",
+                        "groupingColumn": "",
+                        "idColumn": "",
+                        "labelColumn": "checklistType",
+                        "useAjax": ""
+                    }
+                },
+                "size": ""
             }
         }
-    ],
-    "hidePageSize": "true",
+    }],
+    "hidePageSize": "",
     "id": "list_ofc_checklist_form",
     "name": "List - Fitout Checklist Form",
     "order": "1",
     "orderBy": "dateModified",
-    "pageSize": "0",
+    "pageSize": "50",
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
     "responsiveView": [
         {
