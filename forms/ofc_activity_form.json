@@ -27,7 +27,7 @@
                             "firstValidator": {
                                 "className": "org.joget.apps.form.lib.DefaultValidator",
                                 "properties": {
-                                    "custom-regex": "^[a-zA-Z][a-zA-Z\\s\\W]*$",
+                                    "custom-regex": "^[a-zA-Z][a-zA-Z\\s\\W]+$",
                                     "custom-regex-casesensitive": "",
                                     "mandatory": "true",
                                     "message": "must starts with alphabet, numbers not allowed",
