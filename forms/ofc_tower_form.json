@@ -144,9 +144,11 @@
                             "validator": {
                                 "className": "org.joget.apps.form.lib.DefaultValidator",
                                 "properties": {
+                                    "custom-regex": "^[a-zA-Z][a-zA-Z\\s\\W]+$",
+                                    "custom-regex-casesensitive": "",
                                     "mandatory": "true",
-                                    "message": "Mandatory",
-                                    "type": "alphanumeric"
+                                    "message": "must starts with alphabet",
+                                    "type": "custom"
                                 }
                             },
                             "value": "",
