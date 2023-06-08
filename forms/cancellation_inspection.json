@@ -158,7 +158,7 @@
                             "datePickerType": "",
                             "endDateFieldId": "",
                             "format": "dd-M-yy",
-                            "id": "inspSchedlDate",
+                            "id": "proposeSchedlDate",
                             "label": "Prefer Date(*Note : Admin can modify this schedule based on the date available)",
                             "placeholder": "",
                             "readonly": "",
