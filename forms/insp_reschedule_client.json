@@ -200,7 +200,7 @@
                         "endDateFieldId": "",
                         "format": "dd-mm-yy",
                         "format24hr": "",
-                        "id": "inspSchedlDate",
+                        "id": "inspreSchedlDate",
                         "label": "Inspection Date",
                         "placeholder": "",
                         "readonly": "",
@@ -261,7 +261,7 @@
             "className": "org.joget.apps.app.lib.DatabaseUpdateTool",
             "properties": {
                 "jdbcDatasource": "default",
-                "query": "update app_fd_ofc_serreqs_tab \nset c_status = 'Inspection To-Be Re-Scheduled' \n\nwhere id = '#requestParam.id#'"
+                "query": "update app_fd_ofc_serreqs_tab \nset c_status = 'Inspection To-Be Re-Scheduled' \nc_inspSchedlDate = (CASE WHEN  c_confirmProposal = 'Confirm Proposed Date' THEN '#form.app_fd_ofc_serreqs_tab.proposeSchedlDate#' END),\nwhere id = '#requestParam.id#'"
             }
         },
         "postProcessorRunOn": "both",
