@@ -213,7 +213,7 @@
                         "endDateFieldId": "",
                         "format": "dd-mm-yy",
                         "format24hr": "",
-                        "id": "inspreSchedlDate",
+                        "id": "inspSchedlDate",
                         "label": "Inspection Date",
                         "placeholder": "",
                         "readonly": "",
@@ -332,7 +332,7 @@
             "className": "org.joget.apps.app.lib.DatabaseUpdateTool",
             "properties": {
                 "jdbcDatasource": "default",
-                "query": "update app_fd_ofc_serreqs_tab set c_status = 'Inspection Scheduled' where id = '#requestParam.id#'"
+                "query": "update app_fd_ofc_serreqs_tab \nset c_status = 'Inspection To-Be Re-Scheduled' \n\nwhere id = '#requestParam.id#'"
             }
         },
         "postProcessorRunOn": "both",
