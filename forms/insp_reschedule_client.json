@@ -7,31 +7,9 @@
                 "className": "org.joget.apps.form.model.Column",
                 "elements": [
                     {
-                        "className": "org.joget.apps.form.lib.CustomHTML",
-                        "properties": {
-                            "autoPopulate": "",
-                            "id": "field9",
-                            "label": "",
-                            "value": "<html>\n    <body style=\"color:blue;\"><\/body>\n<\/html>"
-                        }
-                    },
-                    {
                         "className": "org.joget.apps.form.lib.HiddenField",
                         "properties": {
                             "id": "id",
-                            "useDefaultWhenEmpty": "",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "value": "",
-                            "workflowVariable": ""
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.HiddenField",
-                        "properties": {
-                            "id": "serReqDmccSrNo",
                             "useDefaultWhenEmpty": "",
                             "validator": {
                                 "className": "",
