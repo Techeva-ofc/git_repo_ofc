@@ -268,7 +268,7 @@
                         "dataFormat": "dd-MM-yyyy",
                         "datePickerType": "dateTime",
                         "endDateFieldId": "",
-                        "format": "dd-mm-yyyy",
+                        "format": "dd-mm-yy",
                         "format24hr": "",
                         "id": "inspSchedlDate",
                         "label": "Inspection Date",
