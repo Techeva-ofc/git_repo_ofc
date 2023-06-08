@@ -234,7 +234,7 @@
                 "comment": "",
                 "id": "section2",
                 "join": "",
-                "label": "Scheduler",
+                "label": "Choose alternate date",
                 "loadBinder": {
                     "className": "",
                     "properties": {}
