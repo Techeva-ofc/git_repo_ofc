@@ -164,8 +164,8 @@
     "hidePageSize": "",
     "id": "unitAreaDisplay",
     "name": "List - Unit Area Display",
-    "order": "1",
-    "orderBy": "dateModified",
+    "order": "2",
+    "orderBy": "unitName",
     "pageSize": "50",
     "pageSizeSelectorOptions": "10,20,30,40,50,60,70,80,90,100",
     "responsiveView": [
